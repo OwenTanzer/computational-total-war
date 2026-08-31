@@ -1,0 +1,86 @@
+dataset,column_position,column_name,data_type,required,description
+characters/<race>/<character>.csv,1,record_type,text,true,"Row discriminator: character, node_set, node, skill_level, effect, prerequisite, skill_lock, ancillary_lock, ancillary_grant, or dilemma_grant."
+characters/<race>/<character>.csv,2,game,text,true,game
+characters/<race>/<character>.csv,3,patch,text,true,patch
+characters/<race>/<character>.csv,4,steam_build_id,text,true,steam build id
+characters/<race>/<character>.csv,5,race,text,true,race
+characters/<race>/<character>.csv,6,race_slug,text,true,race slug
+characters/<race>/<character>.csv,7,subculture_key,text,true,subculture key
+characters/<race>/<character>.csv,8,character_name,text,true,character name
+characters/<race>/<character>.csv,9,character_slug,text,true,character slug
+characters/<race>/<character>.csv,10,character_class,text,true,"legendary_lord, lord, or hero."
+characters/<race>/<character>.csv,11,agent_subtype_key,text,true,Stable game database key identifying the character subtype and this file.
+characters/<race>/<character>.csv,12,primary_agent_type,text,false,primary agent type
+characters/<race>/<character>.csv,13,permitted_agent_types,text,false,Pipe-delimited source agent roles permitted for this subtype.
+characters/<race>/<character>.csv,14,permitted_faction_keys,text,false,Pipe-delimited relevant faction keys that permit this subtype.
+characters/<race>/<character>.csv,15,is_legendary_lord,boolean,false,is legendary lord
+characters/<race>/<character>.csv,16,is_unique_agent,boolean,false,is unique agent
+characters/<race>/<character>.csv,17,is_recruitable,boolean,false,is recruitable
+characters/<race>/<character>.csv,18,show_in_ui,boolean,false,show in ui
+characters/<race>/<character>.csv,19,auto_generate,boolean,false,auto generate
+characters/<race>/<character>.csv,20,is_caster,boolean,false,is caster
+characters/<race>/<character>.csv,21,magic_lore,text,false,magic lore
+characters/<race>/<character>.csv,22,recruitment_category,text,false,recruitment category
+characters/<race>/<character>.csv,23,node_set_key,text,false,Applicable character_skill_node_sets key; one subtype file may contain several conditional sets.
+characters/<race>/<character>.csv,24,node_set_name,text,false,node set name
+characters/<race>/<character>.csv,25,node_set_index,number,false,Deterministic one-based index of the node-set variant inside this character file.
+characters/<race>/<character>.csv,26,node_set_agent_key,text,false,node set agent key
+characters/<race>/<character>.csv,27,node_set_for_army,boolean,false,node set for army
+characters/<race>/<character>.csv,28,node_set_for_navy,boolean,false,node set for navy
+characters/<race>/<character>.csv,29,node_set_faction_key,text,false,node set faction key
+characters/<race>/<character>.csv,30,node_set_campaign_key,text,false,node set campaign key
+characters/<race>/<character>.csv,31,node_set_subculture_key,text,false,node set subculture key
+characters/<race>/<character>.csv,32,node_key,text,false,Stable character_skill_nodes key.
+characters/<race>/<character>.csv,33,skill_key,text,false,Stable character_skills key granted by the node.
+characters/<race>/<character>.csv,34,skill_name,text,false,skill name
+characters/<race>/<character>.csv,35,skill_description,text,false,skill description
+characters/<race>/<character>.csv,36,skill_icon_path,text,false,skill icon path
+characters/<race>/<character>.csv,37,node_tier,number,false,Horizontal skill-tree tier/column from the source table.
+characters/<race>/<character>.csv,38,node_indent,number,false,Vertical indentation/row from the source table.
+characters/<race>/<character>.csv,39,points_on_creation,number,false,points on creation
+characters/<race>/<character>.csv,40,required_num_parents,number,false,Number of linked parent nodes required before this node can unlock.
+characters/<race>/<character>.csv,41,visible_in_ui,boolean,false,visible in ui
+characters/<race>/<character>.csv,42,skill_unlocked_at_rank,number,false,skill unlocked at rank
+characters/<race>/<character>.csv,43,skill_max_level,number,false,"Highest level found across level-detail, effect, lock, and grant records for this skill."
+characters/<race>/<character>.csv,44,skill_level,number,false,One-based skill rank for level-dependent rows.
+characters/<race>/<character>.csv,45,level_name,text,false,level name
+characters/<race>/<character>.csv,46,level_description,text,false,level description
+characters/<race>/<character>.csv,47,level_unlocked_at_rank,number,false,level unlocked at rank
+characters/<race>/<character>.csv,48,level_image_path,text,false,level image path
+characters/<race>/<character>.csv,49,level_campaign_key,text,false,level campaign key
+characters/<race>/<character>.csv,50,level_faction_key,text,false,level faction key
+characters/<race>/<character>.csv,51,level_subculture_key,text,false,level subculture key
+characters/<race>/<character>.csv,52,effect_key,text,false,effect key
+characters/<race>/<character>.csv,53,effect_description,text,false,effect description
+characters/<race>/<character>.csv,54,effect_additional_tooltip,text,false,effect additional tooltip
+characters/<race>/<character>.csv,55,effect_scope,text,false,Game effect scope such as character_to_character_own or faction_to_faction_own.
+characters/<race>/<character>.csv,56,effect_value,number,false,Signed source value applied at this skill level and scope.
+characters/<race>/<character>.csv,57,effect_category,text,false,effect category
+characters/<race>/<character>.csv,58,effect_priority,number,false,effect priority
+characters/<race>/<character>.csv,59,effect_is_positive_value_good,boolean,false,effect is positive value good
+characters/<race>/<character>.csv,60,effect_icon,text,false,effect icon
+characters/<race>/<character>.csv,61,effect_icon_negative,text,false,effect icon negative
+characters/<race>/<character>.csv,62,parent_node_key,text,false,Parent/prerequisite node for prerequisite rows.
+characters/<race>/<character>.csv,63,parent_skill_key,text,false,parent skill key
+characters/<race>/<character>.csv,64,parent_skill_name,text,false,parent skill name
+characters/<race>/<character>.csv,65,child_node_key,text,false,Child/unlocked node for prerequisite rows.
+characters/<race>/<character>.csv,66,child_skill_key,text,false,child skill key
+characters/<race>/<character>.csv,67,child_skill_name,text,false,child skill name
+characters/<race>/<character>.csv,68,link_type,text,false,link type
+characters/<race>/<character>.csv,69,initial_descent_tiers,number,false,initial descent tiers
+characters/<race>/<character>.csv,70,parent_link_position,text,false,parent link position
+characters/<race>/<character>.csv,71,child_link_position,text,false,child link position
+characters/<race>/<character>.csv,72,parent_link_position_offset,number,false,parent link position offset
+characters/<race>/<character>.csv,73,child_link_position_offset,number,false,child link position offset
+characters/<race>/<character>.csv,74,locked_skill_key,text,false,Skill disabled or mutually excluded by the current node.
+characters/<race>/<character>.csv,75,locked_skill_name,text,false,locked skill name
+characters/<race>/<character>.csv,76,locked_skill_level,number,false,locked skill level
+characters/<race>/<character>.csv,77,ancillary_key,text,false,Ancillary locked or granted by this node/skill depending on record_type.
+characters/<race>/<character>.csv,78,ancillary_name,text,false,ancillary name
+characters/<race>/<character>.csv,79,ancillary_type,text,false,ancillary type
+characters/<race>/<character>.csv,80,ancillary_category,text,false,ancillary category
+characters/<race>/<character>.csv,81,dilemma_key,text,false,Dilemma granted by this skill level.
+characters/<race>/<character>.csv,82,dilemma_title,text,false,dilemma title
+characters/<race>/<character>.csv,83,dilemma_random_selection,boolean,false,dilemma random selection
+characters/<race>/<character>.csv,84,source_table,text,true,Authoritative source table for this record.
+characters/<race>/<character>.csv,85,source_key,text,true,Stable source-row identifier or composite key.

@@ -1,0 +1,31 @@
+column_position,column_name,description
+1,game,Stable game identifier.
+2,patch,Game patch represented by this row.
+3,steam_build_id,Steam build ID represented by this row.
+4,race,Canonical playable race label used by this project.
+5,race_slug,Filesystem-safe canonical race identifier.
+6,culture_key,Source culture key resolved from the faction subculture.
+7,subculture_key,Source subculture key for the playable faction.
+8,faction_name,Localized English playable faction name.
+9,faction_key,Stable playable faction database key and owner of this CSV.
+10,campaign_key,Only populated when the building chain is restricted to a source campaign; blank means campaign-generic.
+11,building_name,Best matching English building-level name for this faction; stable keys remain canonical.
+12,building_key,Stable building_levels level_name key.
+13,building_chain_name,Localized English building-chain label when available.
+14,building_chain_key,Stable building_chains key.
+15,building_level,Zero-based level within the source building chain; this is not the settlement tier.
+16,settlement_tier_requirement,Minimum primary settlement tier recorded on the building level.
+17,construction_cost,Base treasury construction cost before campaign modifiers.
+18,construction_turns,Base construction duration in turns before campaign modifiers.
+19,building_upkeep,Base recurring building upkeep from building_levels.
+20,only_in_capital,Source only_in_capital flag.
+21,resource_requirement_key,"Simple source region-resource requirement, if any."
+22,required_building_key,"Simple direct building requirement, if any."
+23,income,Sum of unconditional fixed GDP effects on the intact building; excludes percentage and conditional effects.
+24,growth,"Sum of unconditional ordinary province, horde, ship, or Black Ark growth effects on the intact building."
+25,control,Sum of unconditional local public-order/control base effects on the intact building.
+26,trade_resource_key,Stable resource key when the building has exactly one unconditional standardized trade-resource output.
+27,trade_resource_quantity,Unconditional intact output for trade_resource_key; blank for multi-resource or nonstandard outputs.
+28,recruitment_cost_modifier,Unconditional all-unit campaign recruitment-cost modifier when exactly one standardized effect applies.
+29,upkeep_modifier,Unconditional all-unit campaign upkeep modifier when exactly one standardized effect applies.
+30,is_unique,True for source faction-unique levels or chain keys identified as special/landmark content.

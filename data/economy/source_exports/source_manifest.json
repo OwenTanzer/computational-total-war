@@ -1,0 +1,217 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "decoder": "RPFM 5.0.6",
+  "extracted_at_utc": "2026-08-26T11:55:59.323Z",
+  "table_folders_requested": [
+    "building_levels_tables",
+    "building_chains_tables",
+    "building_superchains_tables",
+    "building_chain_availabilities_tables",
+    "building_chain_availability_sets_tables",
+    "building_chain_availability_set_ids_tables",
+    "building_chain_sets_tables",
+    "building_chain_set_items_tables",
+    "building_upgrades_junction_tables",
+    "building_culture_variants_tables",
+    "building_effects_junction_tables",
+    "building_level_required_buildings_tables",
+    "building_conditions_tables",
+    "building_condition_building_sets_tables",
+    "building_pooled_resource_cost_bounds_tables",
+    "building_pooled_resource_effect_constraints_tables",
+    "factions_tables",
+    "cultures_subcultures_tables",
+    "frontend_faction_leaders_tables",
+    "effects_tables",
+    "resources_tables",
+    "commodities_tables",
+    "technologies_tables"
+  ],
+  "localisation_files_requested": [
+    "building_chains__.loc",
+    "building_culture_variants__.loc",
+    "building_description_texts__.loc",
+    "building_short_description_texts__.loc",
+    "building_flavour_texts__.loc",
+    "building_sets__.loc",
+    "effects__.loc",
+    "effects_additional_tooltip_details__.loc",
+    "resources__.loc",
+    "factions__.loc",
+    "frontend_factions__.loc"
+  ],
+  "files": [
+    {
+      "path": "db/building_chain_availabilities_tables/data__.tsv",
+      "bytes": 3348,
+      "sha256": "709fdffccde576b3f8cfb8bf6833d11830b7328a1301db7ddd39a871824cbc70"
+    },
+    {
+      "path": "db/building_chain_availability_set_ids_tables/data__.tsv",
+      "bytes": 881,
+      "sha256": "4cd442b615747966d8887256dfcc079801b7701a5eece2f85e4b716ab45e7212"
+    },
+    {
+      "path": "db/building_chain_availability_sets_tables/data__.tsv",
+      "bytes": 175627,
+      "sha256": "0346f2da9a25d98cc31ae2e7ed16385e6b8d549f1c9c4457af59ca40377575f5"
+    },
+    {
+      "path": "db/building_chain_set_items_tables/data__.tsv",
+      "bytes": 195168,
+      "sha256": "f7c55240869c1a8afa7c0e96e1485c6fc627aa70c6457b29e40ee114b8b417e0"
+    },
+    {
+      "path": "db/building_chain_sets_tables/data__.tsv",
+      "bytes": 16180,
+      "sha256": "40dfc46588fdcbf4cddf1dd4a7a06623641fe813427dcdcba1929ab40cd5e5ec"
+    },
+    {
+      "path": "db/building_chains_tables/data__.tsv",
+      "bytes": 193705,
+      "sha256": "b95a22af14afea24cd8f8e0f5cbd854fa5dbf351775cfea7ed5b218225864c6d"
+    },
+    {
+      "path": "db/building_condition_building_sets_tables/data__.tsv",
+      "bytes": 555,
+      "sha256": "169dc1e9010a5b803e19aadd82026d730070f0a1dac74dc521131a1dffa70b5b"
+    },
+    {
+      "path": "db/building_conditions_tables/data__.tsv",
+      "bytes": 354,
+      "sha256": "485fb26ebe31ec74ccdafe47593b37e4e83c285db86438237482b019aac03d08"
+    },
+    {
+      "path": "db/building_culture_variants_tables/data__.tsv",
+      "bytes": 752155,
+      "sha256": "8a4bd45b19d44d5e5bbf90940f262ac684018a35e87cdf51a4476e3d49804dad"
+    },
+    {
+      "path": "db/building_effects_junction_tables/data__.tsv",
+      "bytes": 2968979,
+      "sha256": "33f393d6cb1220fd4eec3905f160e24cb995c3928639ad497e2aa1e2191714ee"
+    },
+    {
+      "path": "db/building_level_required_buildings_tables/data__.tsv",
+      "bytes": 528,
+      "sha256": "d0cca8111a73044abbf792ff38b50179b06d80acbc4f092e834c79a17b3e5106"
+    },
+    {
+      "path": "db/building_levels_tables/data__.tsv",
+      "bytes": 976836,
+      "sha256": "f554a818f83b55ab4be2027b2ab172728b02ebc630495bd78a7399523a51b5db"
+    },
+    {
+      "path": "db/building_pooled_resource_cost_bounds_tables/data__.tsv",
+      "bytes": 228,
+      "sha256": "37185624b18e2ec638d8776951c859c54e38427eb5838265e00f77a3dbde72b7"
+    },
+    {
+      "path": "db/building_pooled_resource_effect_constraints_tables/data__.tsv",
+      "bytes": 4393,
+      "sha256": "06e2e3a85b280b13fb8065db578f127b6d8695f06b2f15df71ada2dcd5da2009"
+    },
+    {
+      "path": "db/building_superchains_tables/data__.tsv",
+      "bytes": 28370,
+      "sha256": "4da6f189c04c029016f95926d6036795891f4dcfb66e757de781b0b73001112e"
+    },
+    {
+      "path": "db/building_upgrades_junction_tables/data__.tsv",
+      "bytes": 231877,
+      "sha256": "29b7542fca2d63ffc8666c28494e693d49b04a0519275f1aa78ac7e0cf406113"
+    },
+    {
+      "path": "db/commodities_tables/data__.tsv",
+      "bytes": 434,
+      "sha256": "e320d9c9c8e757464f25047b5a72a1b69e0fbe35963df759502d7975adc82590"
+    },
+    {
+      "path": "db/cultures_subcultures_tables/data__.tsv",
+      "bytes": 2390,
+      "sha256": "9755046455f30f00c485edc1a0f84d9747f7db7de4953e1d8371c97a321e4425"
+    },
+    {
+      "path": "db/effects_tables/data__.tsv",
+      "bytes": 1571155,
+      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+    },
+    {
+      "path": "db/factions_tables/data__.tsv",
+      "bytes": 403358,
+      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+    },
+    {
+      "path": "db/frontend_faction_leaders_tables/data__.tsv",
+      "bytes": 53250,
+      "sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f"
+    },
+    {
+      "path": "db/resources_tables/data__.tsv",
+      "bytes": 6828,
+      "sha256": "879889b2f2318057d9e38ed4a3733e9d8fae2c08dd77d585dbf96bd295da3da4"
+    },
+    {
+      "path": "db/technologies_tables/data__.tsv",
+      "bytes": 253673,
+      "sha256": "48d7803ef6538f67a283b62e6bae83ac98dadeb15a7350680ebeff8f482692b9"
+    },
+    {
+      "path": "text/db/building_chains__.loc.tsv",
+      "bytes": 503971,
+      "sha256": "281409957fea8a0dccc3e2b416fbb0eebf88b9fd99fa396056dae1815f818a55"
+    },
+    {
+      "path": "text/db/building_culture_variants__.loc.tsv",
+      "bytes": 587849,
+      "sha256": "e6e8fc21adb101a80ed839671e7b8d71390168eb905b5e42f150374d92c69d85"
+    },
+    {
+      "path": "text/db/building_description_texts__.loc.tsv",
+      "bytes": 165,
+      "sha256": "e6f5d1c8bf24ffacccde895643400f5a8b72383720459bf81d95d84c87131c56"
+    },
+    {
+      "path": "text/db/building_flavour_texts__.loc.tsv",
+      "bytes": 247619,
+      "sha256": "207d0279ad39c4b2632aec0a90089e9ce724937124df8d5b58b8f24bca2ff908"
+    },
+    {
+      "path": "text/db/building_sets__.loc.tsv",
+      "bytes": 52489,
+      "sha256": "8cd82086d9cafaa7c2edfc9643b3c8a969be2c70f22d2d06b8220c05214c93f3"
+    },
+    {
+      "path": "text/db/building_short_description_texts__.loc.tsv",
+      "bytes": 667255,
+      "sha256": "fab312f8eca05f40e37f0cf3ed1965d32fe024cfc946a479f52a33c96570c62a"
+    },
+    {
+      "path": "text/db/effects__.loc.tsv",
+      "bytes": 2050603,
+      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+    },
+    {
+      "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
+      "bytes": 73434,
+      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+    },
+    {
+      "path": "text/db/factions__.loc.tsv",
+      "bytes": 297539,
+      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+    },
+    {
+      "path": "text/db/frontend_factions__.loc.tsv",
+      "bytes": 90478,
+      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+    },
+    {
+      "path": "text/db/resources__.loc.tsv",
+      "bytes": 18379,
+      "sha256": "e7db54794836651bbf3c2cd66971f1168a539100b34e1eb3ff81fe129cf2abe0"
+    }
+  ]
+}

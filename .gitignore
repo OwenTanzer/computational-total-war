@@ -1,0 +1,35 @@
+# Disposable build outputs, downloaded tooling, and local dependency caches.
+/work/
+
+# Local configuration and credentials.
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files.
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# Editor and operating-system metadata.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# LaTeX build artifacts.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+

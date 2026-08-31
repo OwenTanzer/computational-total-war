@@ -1,0 +1,365 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\title{Combat Relations and Working Observations}
+\author{Computational Total War}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Scope}
+
+This file records observed combat relationships for \emph{Total War:
+WARHAMMER III} and the abstractions we intend to use in computational
+analysis.  Unless stated otherwise, these notes concern land combat under the
+baseline described in \texttt{data/unit\_stats/README.md}: patch 8.1.1, ultra
+unit scale, rank zero, and no campaign, terrain, fatigue, or temporary-effect
+modifiers.
+
+The equations below distinguish three things that are easy to conflate:
+the probability that one attack lands, the number of entities able to attempt
+attacks, and the damage produced by a successful attack.
+
+\section{Melee hit probability}
+
+For a valid melee attack, the working hit-probability relation is
+\begin{equation}
+  p_{\mathrm{hit}}
+  = \operatorname{clamp}\!\left(
+      0.08,
+      0.90,
+      0.35 + \frac{MA_{\mathrm{eff}}-MD_{\mathrm{eff}}}{100}
+    \right),
+  \label{eq:hit-probability}
+\end{equation}
+where $MA_{\mathrm{eff}}$ and $MD_{\mathrm{eff}}$ are measured in the
+percentage-point units shown on the unit card.  Equivalently, the unclamped
+percentage is $35 + MA_{\mathrm{eff}}-MD_{\mathrm{eff}}$.
+
+Relevant attack bonuses are included before the roll.  In particular, bonus
+versus infantry applies against small entities and bonus versus large applies
+against large entities.  These bonuses increase both effective melee attack
+and weapon damage.  Charge bonus also increases both quantities while it
+decays.
+
+Entity count does not appear in Equation~\ref{eq:hit-probability}.  Two units
+with the same effective melee attack have the same probability per otherwise
+identical attack, regardless of whether they contain 60 or 120 entities.
+
+\section{Flanking}
+
+Flanking has both a directional statistical effect and a geometric effect.
+For the directional effect, the defending entity's effective melee defence is
+\begin{equation}
+  MD_{\mathrm{eff}} =
+  \begin{cases}
+    MD,     & \text{attack from the front},\\
+    0.6 MD, & \text{attack from a side},\\
+    0.3 MD, & \text{attack from the rear}.
+  \end{cases}
+  \label{eq:directional-md}
+\end{equation}
+Thus a side attack reduces melee defence by 40 percent and a rear attack by
+70 percent.  These are multiplicative changes to melee defence, not direct
+damage multipliers and not fixed percentage-point additions to hit chance.
+
+The test is made per attacking and defending entity, using the defending
+entity's current facing.  Surrounding a unit therefore does not impose one
+permanent melee-defence penalty on every entity in that unit.  An entity that
+turns to face a former rear attacker can defend against that attacker with its
+front-facing value, although it may thereby expose itself to an attacker on
+the opposite side.
+
+As an example, an entity with 30 melee attack fighting an entity with 50 melee
+defence has the following probabilities before other modifiers:
+\begin{center}
+  \begin{tabular}{lrr}
+    \toprule
+    Attack direction & Effective melee defence & Hit probability \\
+    \midrule
+    Front & 50 & 15\% \\
+    Side  & 30 & 35\% \\
+    Rear  & 15 & 50\% \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+Flank and rear attacks also produce unit-level leadership penalties.  These
+are distinct from the entity-level melee-defence adjustment and should be
+modeled in a morale layer rather than as additional damage.
+
+\section{Contact geometry and attack volume}
+
+Only entities that obtain a valid engagement and execute attacks contribute
+attack rolls.  A unit's total entity count is therefore an upper bound, not
+the usual number of simultaneous attackers.  Rear ranks commonly contribute
+no direct melee attacks while the front rank is engaged.
+
+Let $E_d$ denote the number of actively attacking entities whose attacks fall
+in direction class $d \in \{\mathrm{front},\mathrm{side},\mathrm{rear}\}$,
+and let $T$ be the attack interval.  A first-order approximation to landed
+hits per second is
+\begin{equation}
+  H \approx
+  \sum_d \frac{E_d}{T} p_d,
+  \label{eq:hit-throughput}
+\end{equation}
+subject to
+\begin{equation}
+  \sum_d E_d \leq N_{\mathrm{living}},
+\end{equation}
+where $p_d$ is obtained from Equations~\ref{eq:hit-probability}
+and~\ref{eq:directional-md}.
+
+Equation~\ref{eq:hit-throughput} is an approximation because attack interval
+is not a complete animation and targeting simulation.  Pathing, displacement,
+knockdown, weapon reach, collision boxes, and animation behavior can prevent
+nominally available entities from attacking on schedule.
+
+Flanking normally increases attack volume by opening another portion of the
+defender's perimeter.  Its practical benefit can therefore arise twice:
+\begin{enumerate}
+  \item more attackers can make rolls because more contact surface is
+        available; and
+  \item side and rear rolls face reduced effective melee defence.
+\end{enumerate}
+
+\section{Entity count and entity size}
+
+Entity count affects the ceiling on simultaneous attacks, the number of
+potential targets, casualty progression, and overkill.  As entities die, a
+multi-entity unit can lose attack throughput even when its remaining entities
+retain unchanged card statistics.
+
+Physical entity size affects contact geometry rather than directly changing
+the base hit formula.  A large target generally presents enough perimeter for
+more small attackers to contact it, while large attacking entities consume
+more frontage and fewer may fit along a given line.  Actual results remain
+dependent on collision radius, spacing, reach, animation, mass, and knockdown.
+
+The small/large classification has a separate statistical effect: it selects
+whether bonus versus infantry or bonus versus large applies.  Consequently,
+size can change hit probability indirectly through $MA_{\mathrm{eff}}$, even
+though physical radius is absent from Equation~\ref{eq:hit-probability}.
+
+\section{Splash and collision attacks}
+
+Some entities can select multiple targets with one splash attack.  Listed
+weapon damage is divided among the selected splash targets; the maximum splash
+target count is therefore not a direct multiplier on total weapon strength.
+Target-size eligibility, splash zones, and animation behavior further govern
+which entities can be selected.
+
+Collision attacks are a separate attack mechanism used by some chariots and
+large entities.  They can generate melee attack rolls when an entity collides
+with enemies during a charge or attack animation and have their own cooldown
+and target-list parameters.  They should not be inferred solely from ordinary
+attack interval or maximum splash targets.
+
+\section{Missile collision and shield blocking}
+
+Missile attacks do not use Equation~\ref{eq:hit-probability}.  A projectile is
+launched into the battle simulation and must physically intersect a target.
+The probability of doing so is governed by the projectile and firing-unit
+profiles---including calibration distance, calibration area, marksmanship,
+spread, velocity, firing arc, and homing behavior---together with target size,
+formation, motion, range, terrain, and intervening entities.  Melee attack and
+melee defence do not determine whether a missile connects.
+
+Let $p_{\mathrm{col}}$ denote the probability that a launched projectile
+collides with an eligible target.  This probability is scenario-dependent and
+should not be identified directly with the normalized \texttt{accuracy}
+column.  Calibration and physical geometry can dominate the displayed
+accuracy value.
+
+After a collision, an eligible shield may block the projectile completely.
+For an incoming direction in which the shield applies, let $s$ be the missile
+block chance expressed as a fraction.  Then
+\begin{equation}
+  p_{\mathrm{unblocked}} = 1-s.
+  \label{eq:missile-unblocked}
+\end{equation}
+Ordinary shields are directional, so firing into an unprotected flank or rear
+can set $s$ to zero even though the target has a nonzero card value.  Projectile
+types may also bypass ordinary shield blocking.  Special attributes, such as
+Directional Shield and Ballistic Plating, alter the protected directions or
+the classes of projectile that can be blocked.  Shield blocking is a separate
+all-or-nothing test; it is not missile resistance and does not merely reduce
+the damage of every projectile.
+
+\section{Missile damage resolution}
+
+For one unblocked direct hit, let $B$ and $P$ be the projectile's base and
+armour-piercing damage after applicable attacker-side modifiers.  Armour
+affects $B$ but not $P$.  For target armour $A$, draw
+\begin{equation}
+  R_A \sim \operatorname{Uniform}(0.5A,A)
+\end{equation}
+and cap the rolled reduction at 100 percent.  Damage before resistances is
+therefore
+\begin{equation}
+  D_{\mathrm{pre-resist}}
+  = B\left(1-\frac{\min(R_A,100)}{100}\right)+P.
+  \label{eq:missile-armour}
+\end{equation}
+There is no minimum surviving base damage when the armour roll reaches 100.
+For $A\leq100$, the expected value simplifies to
+\begin{equation}
+  \mathbb{E}[D_{\mathrm{pre-resist}}]
+  = B(1-0.0075A)+P.
+  \label{eq:missile-armour-expectation}
+\end{equation}
+The expectation for $A>100$ should be evaluated from
+Equation~\ref{eq:missile-armour}, because part of the armour-roll interval is
+capped.
+
+Missile bonus versus infantry or large is selected using the target's
+small/large classification when the projectile has the corresponding bonus.
+Multi-projectile weapons create separate collision and damage opportunities
+for each projectile.  Consequently,
+\texttt{projectiles\_\allowbreak per\_\allowbreak shot},
+\texttt{shots\_\allowbreak per\_\allowbreak volley}, and burst behavior must not be folded into the
+damage of a single projectile.
+
+After armour, applicable resistance percentages are summed into $Q$ and the
+result is capped at 90 percent:
+\begin{equation}
+  D_{\mathrm{final}}
+  = D_{\mathrm{pre-resist}}
+    \left(1-\min(0.90,Q)\right).
+  \label{eq:missile-resistance}
+\end{equation}
+For an ordinary physical missile, $Q$ can contain physical resistance,
+missile resistance, ward save, and fire resistance or weakness when the
+projectile is flaming.  Magical missiles ignore physical resistance.  Spell
+missiles use spell resistance and missile resistance, ignore physical
+resistance, and also use ward save and any applicable fire resistance or
+weakness.  Fire weakness is negative and can offset positive resistances.
+Flaming damage additionally applies the On Fire status, which halves incoming
+healing for ten seconds.  Damage components are rounded when applied to the
+target entity, and damage beyond the entity's remaining health is lost rather
+than transferred to another entity.
+
+As a simple example, the normalized High Elf Archer projectile has $B=16$ and
+$P=3$.  Against $A=80$, Equation~\ref{eq:missile-armour-expectation} gives
+\begin{equation}
+  16(1-0.60)+3=9.4
+\end{equation}
+expected damage for an unblocked direct hit before resistances.  If an
+applicable shield has $s=0.55$, the conditional contribution per colliding
+projectile is $0.45\times9.4=4.23$ before resistances.
+
+\section{Missile explosions and penetration}
+
+An explosive projectile can carry both direct projectile damage and a
+separate explosion profile with its own base damage, armour-piercing damage,
+and radius.  Direct-hit and explosion damage must be resolved as distinct
+damage events against each affected entity.  The number of entities reached
+by an explosion is geometric and must not be represented by multiplying its
+listed damage by the nominal entity count of the target unit.
+
+Penetrating projectiles may collide with multiple entities along their path,
+and articulated or multi-part targets can present more than one collision.
+These cases require projectile-level simulation or an explicitly calibrated
+expected-hit count.  They cannot be represented faithfully by the ordinary
+single-collision model alone.
+
+\section{Working melee damage abstraction}
+
+For ordinary non-splash attacks, a useful top-level decomposition is
+\begin{equation}
+  \mathrm{DPS}
+  \approx
+  \underbrace{E}_{\text{contact geometry}}
+  \times
+  \underbrace{\frac{1}{T}}_{\text{attack rate}}
+  \times
+  \underbrace{p_{\mathrm{hit}}}_{\text{accuracy}}
+  \times
+  \underbrace{\mathbb{E}[D\mid\mathrm{hit}]}_{\text{damage resolution}}.
+  \label{eq:dps-decomposition}
+\end{equation}
+This decomposition should be evaluated separately for front, side, and rear
+attackers when modeling flanking.  Splash and collision profiles require
+separate event-level treatment rather than multiplying
+Equation~\ref{eq:dps-decomposition} by the number of potential targets.
+
+\section{Working missile damage abstraction}
+
+Let $F$ be the number of entities currently able to fire, $n_p$ the number of
+projectiles per shot, $n_v$ the number of shots per volley, and $T_r$ the
+effective reload time.  A first-order direct-fire approximation is
+\begin{equation}
+  \mathrm{DPS}_{\mathrm{missile}}
+  \approx
+  \underbrace{F\frac{n_p n_v}{T_r}}_{\text{projectile launch rate}}
+  \times
+  \underbrace{p_{\mathrm{col}}}_{\text{physical collision}}
+  \times
+  \underbrace{p_{\mathrm{unblocked}}}_{\text{shield test}}
+  \times
+  \underbrace{\mathbb{E}[D_{\mathrm{final}}\mid
+                         \mathrm{unblocked\ hit}]}_{\text{damage resolution}}.
+  \label{eq:missile-dps}
+\end{equation}
+This is a scenario-level abstraction rather than a unit-card identity.
+Formation and line of sight can make $F$ smaller than the living entity count;
+animation, burst timing, and reload modifiers can change the effective firing
+interval; and $p_{\mathrm{col}}$ varies with the target and engagement.  The
+unit-card Missile Strength value is a rate-style summary and should not be
+treated as damage per individual arrow or bullet.  Explosion, penetration,
+contact effects, and multiple collision opportunities must be added as
+separate event-level terms.
+
+\section{Current data limitations}
+
+The normalized schema currently contains entity count, attack interval,
+small/large classification, mass, anti-infantry and anti-large bonuses,
+maximum splash targets, missile base and armour-piercing damage, projectile
+and volley counts, reload time, projectile velocity, spread, marksmanship,
+calibration fields, damage tags, ammunition, and range.  It does not yet
+contain collision radius, formation spacing, weapon reach, animation
+profiles, splash target-size filters, collision-attack profiles, complete
+projectile penetration rules, direct-projectile shield eligibility, explosion
+profiles, homing parameters, or contact-effect profiles.
+
+The present data can therefore support scenario-based analysis in which
+$E_{\mathrm{front}}$, $E_{\mathrm{side}}$, and $E_{\mathrm{rear}}$ are supplied
+as assumptions.  It cannot yet derive those engagement counts exactly from
+unit statistics alone.  For missiles it can calculate conditional damage and
+nominal launch rate, but it cannot derive $F$, $p_{\mathrm{col}}$, explosion
+coverage, or penetrating-hit counts exactly from the normalized row alone.
+
+\section{Sources}
+
+Creative Assembly, ``Feature Focus \#2: Damage (Part 1),'' especially the
+entity attack roll, hit-chance limits, target-class bonuses, and flank/rear
+melee-defence multipliers:
+\href{https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/6-feature-focus-2-damage-part-1}{Creative Assembly source page}.
+
+Creative Assembly, ``Feature Focus \#1: Elevation,'' for the distinction
+between units and their individual entities and for entity-level combat
+calculations:
+\href{https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/11-feature-focus-1-elevation}{Creative Assembly source page}.
+
+Creative Assembly, ``Total War: WARHAMMER III --- Patch 5.1.0,'' for splash
+damage division and collision attacks:
+\href{https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/23-total-war-warhammer-iii-patch-5-1-0}{Creative Assembly source page}.
+
+Creative Assembly, ``Total War: WARHAMMER III --- Update 5.0.0,'' for
+projectile, volley, explosion, calibration, Directional Shield, and Ballistic
+Plating examples:
+\href{https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/17-total-war-warhammer-iii-update-5-0-0}{Creative Assembly source page}.
+
+Creative Assembly, ``Total War: WARHAMMER III --- Siege Proving Grounds,''
+for physical projectile simulation and directional shield protection:
+\href{https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/76}{Creative Assembly source page}.
+
+\end{document}

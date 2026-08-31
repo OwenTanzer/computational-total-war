@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-08-26T11:36:31.906Z",
+  "character_files": 500,
+  "node_sets": 521,
+  "node_occurrences": 28254,
+  "effect_rows": 140413,
+  "passes": [
+    "The source scope resolves to exactly 500 character subtypes.",
+    "All 500 character CSV files are present.",
+    "Every character CSV is valid UTF-8, uses CRLF endings, has consistent row widths, and shares one canonical header.",
+    "Each source subtype maps to exactly one self-contained character file.",
+    "Record types, required fields, booleans, and numeric representations are valid across every CSV.",
+    "Every skill, effect, lock, ancillary, and dilemma foreign key resolves to its source table.",
+    "All 521 node sets, 28254 node occurrences, and 140413 effect rows reconcile exactly to the source junctions.",
+    "All prerequisite endpoints resolve inside their applicable node-set variant.",
+    "Race totals reconcile: 16 Beastmen, 14 Bretonnia, 16 Chaos Dwarfs, 1 Daemons of Chaos, 24 Dark Elves, 20 Dwarfs, 27 Empire, 21 Grand Cathay, 19 Greenskins, 40 High Elves, 13 Khorne, 17 Kislev, 41 Lizardmen, 20 Norsca, 21 Nurgle, 18 Ogre Kingdoms, 20 Skaven, 16 Slaanesh, 18 Tomb Kings, 17 Tzeentch, 20 Vampire Coast, 22 Vampire Counts, 33 Warriors of Chaos, 26 Wood Elves.",
+    "The character index reconciles every path, row count, byte count, and SHA-256 file hash.",
+    "All 500 complete tree-structure hashes are unique; no file is a renamed duplicate.",
+    "The machine-readable schema inventory matches every character CSV column and position.",
+    "All 31 authoritative source-export hashes match their manifest.",
+    "Golden checks cover representative lords or heroes from all 24 races, including unique nodes for Beastmen, Greenskins, High Elves, and Skaven."
+  ],
+  "warnings": [
+    "182 node occurrences have no English skill name in the authoritative localisation source.",
+    "1402 effect occurrences have no English description in the authoritative localisation source; keys, values, and scopes remain present."
+  ],
+  "errors": []
+}

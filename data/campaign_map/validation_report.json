@@ -1,0 +1,273 @@
+{
+  "status": "passed",
+  "atlas": "C:\\Users\\Owen\\OneDrive\\Funtime\\Computational Total War\\data\\campaign_map\\campaign_atlas__wh3__8.1.1.gpkg",
+  "bytes": 15458304,
+  "metadata": {
+    "title": "Total War: Warhammer III Immortal Empires Campaign Atlas",
+    "game": "warhammer_3",
+    "patch": "8.1.1",
+    "steam_build_id": "24237342",
+    "campaign_key": "wh3_main_combi",
+    "campaign_map_key": "wh3_main_combi_map_5",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-08-30T00:24:34.945Z",
+    "geometry_model": "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable"
+  },
+  "counts": {
+    "regions": 641,
+    "provinces": 214,
+    "factions": 534,
+    "region_points": 571,
+    "region_adjacency": 1317,
+    "region_groups": 4974,
+    "strategic_nodes": 372,
+    "strategic_links": 119,
+    "objectives": 749,
+    "objective_conditions": 2388,
+    "battle_maps": 1533,
+    "battle_selection_rules": 1348,
+    "map_assets": 4,
+    "source_files": 78,
+    "evidence": 5,
+    "coverage": 7
+  },
+  "checks": [
+    {
+      "name": "GeoPackage application ID",
+      "passed": true,
+      "actual": 1196444487,
+      "expected": 1196444487,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "GeoPackage user version",
+      "passed": true,
+      "actual": 10300,
+      "expected": 10300,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "SQLite integrity",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Foreign-key violations",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Campaign key",
+      "passed": true,
+      "actual": "wh3_main_combi",
+      "expected": "wh3_main_combi",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Campaign map revision",
+      "passed": true,
+      "actual": "wh3_main_combi_map_5",
+      "expected": "wh3_main_combi_map_5",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Patch",
+      "passed": true,
+      "actual": "8.1.1",
+      "expected": "8.1.1",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Steam build",
+      "passed": true,
+      "actual": "24237342",
+      "expected": "24237342",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Current IE regions",
+      "passed": true,
+      "actual": 641,
+      "expected": 641,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "IE provinces",
+      "passed": true,
+      "actual": 214,
+      "expected": 214,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Playable IE factions",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Region centroid features",
+      "passed": true,
+      "actual": 571,
+      "expected": 571,
+      "severity": "warning",
+      "note": "70 black sea/special regions share one lookup colour and are intentionally non-spatial individually"
+    },
+    {
+      "name": "Region ownership rows",
+      "passed": true,
+      "actual": 553,
+      "expected": "predicate",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Region/province orphan count",
+      "passed": true,
+      "actual": 72,
+      "expected": 72,
+      "severity": "warning",
+      "note": "maritime/special regions intentionally have no province"
+    },
+    {
+      "name": "Raster adjacency relations",
+      "passed": true,
+      "actual": 1317,
+      "expected": 1317,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "short objectives cover every playable faction",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "long objectives cover every playable faction",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "domination objectives cover every playable faction",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Objectives have types",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Region objective targets resolve",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Province objective targets resolve",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Battle selection rules",
+      "passed": true,
+      "actual": 1348,
+      "expected": "predicate",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Battle rules resolve groups",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Battle rules without an exposed group map",
+      "passed": false,
+      "actual": 3,
+      "expected": 0,
+      "severity": "warning",
+      "note": "Some engine-resolved catchment groups do not expose a direct group-map row"
+    },
+    {
+      "name": "Embedded map assets",
+      "passed": true,
+      "actual": 4,
+      "expected": 4,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Embedded asset hash coverage",
+      "passed": true,
+      "actual": 4,
+      "expected": 4,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Source provenance entries",
+      "passed": true,
+      "actual": 78,
+      "expected": "predicate",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Source provenance hashes",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "GeoPackage region feature registration",
+      "passed": true,
+      "actual": 1,
+      "expected": 1,
+      "severity": "error",
+      "note": ""
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Battle rules without an exposed group map: got 3; Some engine-resolved catchment groups do not expose a direct group-map row"
+  ],
+  "validated_at_utc": "2026-08-30T00:24:42.855Z"
+}

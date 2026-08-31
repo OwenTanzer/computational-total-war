@@ -1,0 +1,52 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "generated_at_utc": "2026-08-26T12:22:57.252Z",
+  "source_extracted_at_utc": "2026-08-26T11:55:59.323Z",
+  "source_decoder": "RPFM 5.0.6",
+  "schema_version": 1,
+  "playable_factions": 104,
+  "building_rows": 24108,
+  "standard_metric_rows": {
+    "income": 9326,
+    "growth": 7552,
+    "control": 3429,
+    "trade_resource": 3824
+  },
+  "deliberately_omitted_from_standard_columns": {
+    "multi_resource_building_rows": 342,
+    "conditional_effects": true,
+    "percentage_income_modifiers": true,
+    "faction_specific_resource_transactions": true
+  },
+  "races": {
+    "beastmen": 4,
+    "bretonnia": 4,
+    "chaos_dwarfs": 3,
+    "daemons_of_chaos": 1,
+    "dark_elves": 6,
+    "dwarfs": 6,
+    "empire": 5,
+    "grand_cathay": 4,
+    "greenskins": 6,
+    "high_elves": 7,
+    "khorne": 3,
+    "kislev": 4,
+    "lizardmen": 7,
+    "norsca": 3,
+    "nurgle": 3,
+    "ogre_kingdoms": 3,
+    "skaven": 6,
+    "slaanesh": 3,
+    "tomb_kings": 4,
+    "tzeentch": 2,
+    "vampire_coast": 4,
+    "vampire_counts": 4,
+    "warriors_of_chaos": 8,
+    "wood_elves": 4
+  },
+  "file_layout": "factions/<race>/<faction_key>.csv",
+  "faction_index": "faction_index__wh3__8.1.1.csv",
+  "schema_inventory": "schema_inventory__v1.csv"
+}

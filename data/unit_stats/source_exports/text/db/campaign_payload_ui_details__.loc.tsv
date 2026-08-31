@@ -1,0 +1,706 @@
+key	text	tooltip
+#Loc;1;text/db/campaign_payload_ui_details__.loc		
+campaign_payload_ui_details_description_add_mercenary_to_faction_pool	%1% (x%2%)	false
+campaign_payload_ui_details_description_add_mercenary_to_province_pool	{{tr:add_mercenary_to_faction_pool}} %1% (x%2%)	false
+campaign_payload_ui_details_description_add_province_development_point		false
+campaign_payload_ui_details_description_add_unit	Add unit: %1% (x%2%)	false
+campaign_payload_ui_details_description_ambition_change		false
+campaign_payload_ui_details_description_assign_character_to_post	Office appointed: %1%, %2%	false
+campaign_payload_ui_details_description_character_experience_change	Bonus experience: %1% for %2%	false
+campaign_payload_ui_details_description_damage_buildings	Buildings damaged	false
+campaign_payload_ui_details_description_damage_buildings_home_region	Buildings damaged	false
+campaign_payload_ui_details_description_damage_character	Character damaged	false
+campaign_payload_ui_details_description_demolish_building_chain	Building demolished	false
+campaign_payload_ui_details_description_diplomatic_attitude_change	Diplomatic relations: %+1% with %2%	false
+campaign_payload_ui_details_description_dummy_ToL_points_bonus	This settlement will generate additional Victory Points for a duration	false
+campaign_payload_ui_details_description_dummy_ToL_points_bonus_explainer	This bonus will be lost if the settlement's owner changes	false
+campaign_payload_ui_details_description_dummy_aislinn_gift_war	[[col:red]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}} declares war on {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_all_character_increase_rank	All [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes increase rank by 1	false
+campaign_payload_ui_details_description_dummy_alliance_great_orthodoxy	Military alliance formed with the Great Orthodoxy	false
+campaign_payload_ui_details_description_dummy_alliance_ice_court	Military alliance formed with the Ice Court	false
+campaign_payload_ui_details_description_dummy_ariel_spawns	Legendary Hero Recruited: Ariel	false
+campaign_payload_ui_details_description_dummy_asur_domination_dilemma_final_reward	[[col:white]]This option will no longer be available in future dilemmas once selected[[/col]]	false
+campaign_payload_ui_details_description_dummy_beorg_mission_stage_1	The Bearmen join our horde, yet our enemies will soon be given greater cause to fear us...	false
+campaign_payload_ui_details_description_dummy_blank		false
+campaign_payload_ui_details_description_dummy_cabal_plan_1	After all this time, the Cabal's plans have finally been completed...	false
+campaign_payload_ui_details_description_dummy_cabal_plan_2	...Tzeentchian factions have taken control of the entire world!	false
+campaign_payload_ui_details_description_dummy_cabal_power_grows_1	[[col:yellow]]The Cabal's Power has permanently increased...[[/col]]	false
+campaign_payload_ui_details_description_dummy_cabal_power_grows_2	The Cabal has departed from your lands	false
+campaign_payload_ui_details_description_dummy_chaos_portal_corruption_spread	Every province in the world receives +10 Chaos Undivided corruption	false
+campaign_payload_ui_details_description_dummy_confederate_aquitaine	Confederation formed with Aquitaine	false
+campaign_payload_ui_details_description_dummy_confederate_artois	Confederation formed with Artois	false
+campaign_payload_ui_details_description_dummy_confederate_averland	Confederation formed with Averland	false
+campaign_payload_ui_details_description_dummy_confederate_bastonne	Confederation formed with Bastonne	false
+campaign_payload_ui_details_description_dummy_confederate_bordeleaux	Confederation formed with Bordeleaux Errant	false
+campaign_payload_ui_details_description_dummy_confederate_bretonnia	Confederation formed with Bretonnia	false
+campaign_payload_ui_details_description_dummy_confederate_carcassonne	Confederation formed with Carcassonne	false
+campaign_payload_ui_details_description_dummy_confederate_faction_argwylon	You will be given the opportunity to confederate with the faction of Argwylon	false
+campaign_payload_ui_details_description_dummy_confederate_faction_bowmen	You will be given the opportunity to confederate with the Bowmen of Oreon	false
+campaign_payload_ui_details_description_dummy_confederate_faction_drycha	You will be given the opportunity to confederate with Drycha's faction	false
+campaign_payload_ui_details_description_dummy_confederate_faction_karak_hirn	You will be given the opportunity to confederate with Karak Hirn	false
+campaign_payload_ui_details_description_dummy_confederate_faction_karond_kar	You will be given the opportunity to confederate with Karond Kar	false
+campaign_payload_ui_details_description_dummy_confederate_faction_laurelorn	You will be given the opportunity to confederate with the faction of Laurelorn Forest	false
+campaign_payload_ui_details_description_dummy_confederate_faction_shanlin	You will be given the opportunity to confederate with the faction of Spirits of Shanlin	false
+campaign_payload_ui_details_description_dummy_confederate_faction_sisters	You will be given the opportunity to confederate with the Sisters of Twilight	false
+campaign_payload_ui_details_description_dummy_confederate_faction_talsyn	You will be given the opportunity to confederate with the faction of Talsyn	false
+campaign_payload_ui_details_description_dummy_confederate_faction_torgovann	You will be given the opportunity to confederate with the faction of Torgovann	false
+campaign_payload_ui_details_description_dummy_confederate_faction_wydrioth	You will be given the opportunity to confederate with the faction of Wydrioth	false
+campaign_payload_ui_details_description_dummy_confederate_great_orthodoxy	Confederation formed with the Great Orthodoxy	false
+campaign_payload_ui_details_description_dummy_confederate_greenskin_boss_defeated	Confederation formed with this Warboss' faction	false
+campaign_payload_ui_details_description_dummy_confederate_hochland	Confederation formed with Hochland	false
+campaign_payload_ui_details_description_dummy_confederate_ice_court	Confederation formed with the Ice Court	false
+campaign_payload_ui_details_description_dummy_confederate_knights_of_origo	Confederation formed with {{tr:factions_screen_name_wh2_main_brt_knights_of_origo}}	false
+campaign_payload_ui_details_description_dummy_confederate_knights_of_the_flame	Confederation formed with {{tr:factions_screen_name_wh2_main_brt_knights_of_the_flame}}	false
+campaign_payload_ui_details_description_dummy_confederate_lyonesse	Confederation formed with Lyonesse	false
+campaign_payload_ui_details_description_dummy_confederate_middenland	Confederation formed with Middenland	false
+campaign_payload_ui_details_description_dummy_confederate_nordland	Confederation formed with Nordland	false
+campaign_payload_ui_details_description_dummy_confederate_norsca_chieftan_defeated	Confederation formed with the chieftain's tribe	false
+campaign_payload_ui_details_description_dummy_confederate_ogr_boss_defeated	Form Confederation with this Tyrant's faction	false
+campaign_payload_ui_details_description_dummy_confederate_option_wh2_main_dwf_spine_of_sotek_dwarfs	You will gain the opportunity to confederate Spine of Sotek Dwarfs	false
+campaign_payload_ui_details_description_dummy_confederate_option_wh2_main_hef_caledor	You will gain the opportunity to confederate Caledor	false
+campaign_payload_ui_details_description_dummy_confederate_option_wh2_main_hef_saphery	You will gain the opportunity to confederate Saphery and teleport to Ulthuan	false
+campaign_payload_ui_details_description_dummy_confederate_option_wh_main_dwf_karak_azul	You will gain the opportunity to confederate Karak Azul	false
+campaign_payload_ui_details_description_dummy_confederate_ostermark	Confederation formed with Ostermark	false
+campaign_payload_ui_details_description_dummy_confederate_ostland	Confederation formed with Ostland	false
+campaign_payload_ui_details_description_dummy_confederate_parravon	Confederation formed with Parravon	false
+campaign_payload_ui_details_description_dummy_confederate_reikland	Confederation formed with Reikland	false
+campaign_payload_ui_details_description_dummy_confederate_stirland	Confederation formed with Stirland	false
+campaign_payload_ui_details_description_dummy_confederate_talabecland	Confederation formed with Talabecland	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_dlc12_grn_leaf_cutterz_tribe	Confederation formed with the Leaf Cutterz tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_dlc14_grn_red_cloud	Confederation formed with the Red Cloud tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_dlc15_grn_bonerattlaz	Confederation formed with the Bonerattlaz tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_dlc15_grn_broken_axe	Confederation formed with the Broken Axe tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_dlc15_grn_skull_crag	Confederation formed with the Skull Crag tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_dwf_spine_of_sotek_dwarfs	Confederation formed with Spine of Sotek Dwarfs	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_grn_arachnos	Confederation formed with the Arachnos tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_grn_blue_vipers	Confederation formed with the Blue Vipers tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_hef_caledor	Confederation formed with Caledor	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_hef_saphery	Confederation formed with Saphery	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_nor_aghol	Confederation formed with the Aghol tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_nor_mung	Confederation formed with the Mung tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh2_main_nor_skeggi	Confederation formed with the Skeggi tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_goromadny_tribe	Confederation formed with the Goromadny Tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_helspire_tribe	Confederation formed with the Helspire Tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_naglfarlings	Confederation formed with the Naglfarlings tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_norsca	Confederation formed with Norsca	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_vanaheimlings	Confederation formed with the Vanaheimlings tribe	false
+campaign_payload_ui_details_description_dummy_confederate_wh_dlc08_nor_wintertooth	Confederation formed with Wintertooth	false
+campaign_payload_ui_details_description_dummy_confederate_wh_main_dwf_karak_azul	Confederation formed with Karak Azul	false
+campaign_payload_ui_details_description_dummy_confederate_wissenland	Confederation formed with Wissenland	false
+campaign_payload_ui_details_description_dummy_convoy_ambush_first	[[col:yellow]]Fight the battle and keep moving forward[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_ambush_second	[[col:yellow]]Avoid the battle and increase journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_cathay_caravan_first	[[col:yellow]]Fight the battle and gain cargo upon victory[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_cathay_caravan_second	[[col:yellow]]Avoid the battle and keep moving[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_dwarfs_first	[[col:yellow]]Fight the battle and gain cargo upon victory[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_dwarfs_second	[[col:yellow]]Fight the battle and gain cargo upon victory[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_far_from_home_first	[[col:yellow]]Fight battle and gain treasury[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_far_from_home_second	[[col:yellow]]Avoid battle and keep moving[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_guide_first	[[col:yellow]]Keep moving on the journey[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_guide_second	[[col:yellow]]Spend treasury and reduce journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_hobgoblin_first	[[col:yellow]]Gain additional units for this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_hobgoblin_second	[[col:yellow]]Gain replenishment for all units in this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_hungry_daemons_first	[[col:yellow]]Fight this battle[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_hungry_daemons_second	[[col:yellow]]Sacrifice a unit to avoid battle[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_localised_elfs_first	[[col:yellow]]Fight the battle and gain Cargo[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_localised_elfs_second	[[col:yellow]]Avoid the battle and keep moving[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_offence_defence_first	[[col:yellow]]Gain Melee Attack and Weapon Strength bonuses for this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_offence_defence_second	[[col:yellow]]Gain Melee Defence and Armour bonuses for this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_ogres_first	[[col:yellow]]Spend treasury to gain additional units[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_ogres_second	[[col:yellow]]Just continue the journey[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_1_first	[[col:yellow]]Gain additional cargo and increase journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_1_second	[[col:yellow]]Keep moving at this current pace[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_2_first	[[col:yellow]]Fight the battle and keep the cargo[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_2_second	[[col:yellow]]Avoid the battle and lose cargo[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_3_first	[[col:yellow]]Gain additional units for this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_portal_3_second	[[col:yellow]]Gain additional units for this army[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_power_overwhelming_first	[[col:yellow]]Lose unit and gain army buffs[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_power_overwhelming_second	[[col:yellow]]Keep moving as normal[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_quick_way_down_first	[[col:yellow]]Lose cargo and reduce journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_quick_way_down_second	[[col:yellow]]Keep moving as normal[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_rats_first	[[col:yellow]]Fight the battle and reduce journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_rats_second	[[col:yellow]]Avoid the battle and keep moving[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_redeadify_first	[[col:yellow]]Fight the battle[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_redeadify_second	[[col:yellow]]Sacrifice a unit to avoid the battle[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_trading_dark_elfs_first	[[col:yellow]]Spend cargo and gain a unit[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_trading_dark_elfs_second	[[col:yellow]]Keep moving as normal[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_training_camp_first	[[col:yellow]]Gain unit experience at the cost of moving this turn[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_training_camp_second	[[col:yellow]]Keep moving as normal[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_way_of_lava_first	[[col:yellow]]Keep moving as normal[[/col]]	false
+campaign_payload_ui_details_description_dummy_convoy_way_of_lava_second	[[col:yellow]]Take attrition damage and reduce journey time[[/col]]	false
+campaign_payload_ui_details_description_dummy_crimson_plague_faction	The Covenant of the Crimson Plague has unleashed a plague upon your faction	false
+campaign_payload_ui_details_description_dummy_crimson_plague_region	The Covenant of the Crimson Plague has unleashed a plague upon your region	false
+campaign_payload_ui_details_description_dummy_crimson_plague_world	The Covenant of the Crimson Plague has unleashed a plague upon the world	false
+campaign_payload_ui_details_description_dummy_cst_dilemma_avoid_diplomatic_penalty	Avoid diplomatic penalties	false
+campaign_payload_ui_details_description_dummy_dechala_dilemma	Now what to do with it...	false
+campaign_payload_ui_details_description_dummy_diplomatic_attitude_change	Diplomatic relations: %+3% between %1% and %2%	false
+campaign_payload_ui_details_description_dummy_dlc10_blood_voyage_next_turn	Blood Voyage will spawn next turn	false
+campaign_payload_ui_details_description_dummy_dlc10_death_night_cost_increase	Death Night slave requirement: +100	false
+campaign_payload_ui_details_description_dummy_do_nothing	Do nothing	false
+campaign_payload_ui_details_description_dummy_dwarf_builders	The Dwarf Construction Company will leave your region permanently...	false
+campaign_payload_ui_details_description_dummy_elector_civil_war	[[col:yellow]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}} declares war on {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_confederation	[[col:green]]Confederation formed with {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_confederation_offer	[[col:yellow]]Confederation will be offered again in 20 turns[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_fealty_gain_all	[[col:green]]Fealty of all Elector Count factions: +1[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_fealty_loss_all	[[col:red]]Fealty of all Elector Count factions: -1[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_beastmen	[[col:yellow]]You join the defence of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}} against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_beastmen_ai	[[col:yellow]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionName}} defend alone against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_greenskins	[[col:yellow]]You join the defence of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}} against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_greenskins_ai	[[col:yellow]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionName}} defend alone against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_norsca	[[col:yellow]]You join the defence of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}} against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_norsca_ai	[[col:yellow]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionName}} defend alone against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_skaven	[[col:yellow]]You join the defence of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}} against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_invasion_skaven_ai	[[col:yellow]]{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionName}} defend alone against {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_decrease_1	[[col:red]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}: -1 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_decrease_2	[[col:red]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}: -1 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_increase_1	[[col:green]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}: +1 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_increase_2	[[col:green]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}: +1 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_large_decrease_1	[[col:red]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}: -2 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_large_decrease_2	[[col:red]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}: -2 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_large_increase_1	[[col:green]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}: +2 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_loyalty_large_increase_2	[[col:green]]Fealty of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}: +2 (Current: {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionPooledResource("emp_loyalty")}})[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_player_civil_war	[[col:red]]All Elector Counts declare war on you![[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_region_return	{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}} will be returned to {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}	false
+campaign_payload_ui_details_description_dummy_elector_region_taken	{{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}} will retain control of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}}	false
+campaign_payload_ui_details_description_dummy_elector_scout_region	[[col:yellow]]You gain visibility over the region of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_stop_civil_war	[[col:green]]Civil War between the two Electors has been prevented[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_stop_succession	[[col:green]]The Secession of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}} has been prevented[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_war_declared_1	[[col:red]]War Declared on {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_elector_war_declared_2	[[col:red]]War Declared on {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").SecondTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_end_campaign	[[col:red]]The campaign is immediately lost[[/col]]	false
+campaign_payload_ui_details_description_dummy_endgame_vermintide_ubersreik	An elite army containing a mix of Empire, Dwarf, and Wood Elf heroes will join you.	false
+campaign_payload_ui_details_description_dummy_enemy_leader_killed	Enemy faction leader is killed... [[col:red]]permanently[[/col]]	false
+campaign_payload_ui_details_description_dummy_enemy_leader_wounded_longer	The enemy faction leader will remain wounded for longer.	false
+campaign_payload_ui_details_description_dummy_exalted_hero_capacity	Hero capacity: +1 for Exalted Heroes	false
+campaign_payload_ui_details_description_dummy_fight_monster	You will enter the battlefield immediately, and meet the monster and its minions.	false
+campaign_payload_ui_details_description_dummy_flesh_lab_batch_available_1	Releasing Growth Vat batches more frequently maximises Mutagen production	false
+campaign_payload_ui_details_description_dummy_flesh_lab_batch_available_2	Waiting for better monsters results in less efficient Mutagen production	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_1	Temple of Elemental Winds instantly upgraded to Tier 2	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_2	[[col:green]]Defensive Alliance with {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_3	[[col:red]]All Cathayan regions gifted back to {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_4	Transport all forces and Heroes to the Empire at full health	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_5	[[col:red]]War declared on {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").FirstTargetFactionNameWithIcon}}[[/col]]	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_6	[[col:red]]Zhao Ming will remember this...[[/col]]	false
+campaign_payload_ui_details_description_dummy_gelt_intro_dilemmas_7	Balthasar Gelt remains in Cathay	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_alpha_amma	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_alpha_amma_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_arrer_catcha	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_arrer_catcha_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_block_an_smash	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_block_an_smash_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_broodmothers	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_broodmothers_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_cheerleadaz	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_cheerleadaz_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_cut_da_chains	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_cut_da_chains_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_da_black_bastion	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_da_black_bastion_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_da_greatest_warlord	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_da_greatest_warlord_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_drag_da_wagonz	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_drag_da_wagonz_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_drink_an_drive	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_drink_an_drive_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_earthquake	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_earthquake_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_eat_da_runts	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_eat_da_runts_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_eavy_metal_marchin	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_eavy_metal_marchin_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_erd_mentality	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_erd_mentality_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_fly_at_da_smoke	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_fly_at_da_smoke_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_fungus_farms	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_fungus_farms_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_get_dem_from_below	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_get_dem_from_below_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_goin_commando	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_goin_commando_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_keep_bossin	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_keep_bossin_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_keep_em_ungry	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_keep_em_ungry_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_lead_da_charge	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_lead_da_charge_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_little_wont_urt	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_little_wont_urt_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_load_yerself	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_load_yerself_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_master_planner	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_master_planner_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_netted_targets	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_netted_targets_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_power_of_da_waaagh	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_power_of_da_waaagh_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_raidin_parties	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_raidin_parties_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_regimental	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_regimental_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_shoot_da_runts	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_shoot_da_runts_1}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_shot_in_da_dark	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_shot_in_da_dark_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_splode_da_big_one	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_splode_da_big_one_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_stick_em_like_pigs	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_stick_em_like_pigs_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_stinkee_arrers	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_stinkee_arrers_3}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_stompin_ground	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_stompin_ground_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_suprise_savagery	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_suprise_savagery_2}}	false
+campaign_payload_ui_details_description_dummy_grn_da_plan_webweavin	Tactic unlocked: {{tr:initiatives_localised_name_wh3_dlc26_force_initiative_grn_da_plan_webweavin_1}}	false
+campaign_payload_ui_details_description_dummy_grudge_cycle_delay	[[col:yellow]]Delay your next Age of Reckoning for 15 turns[[/col]]	false
+campaign_payload_ui_details_description_dummy_grudge_cycle_higher_requirement	[[col:red]]You will need to acquire 20% more Settled Grudges during your next Age of Reckoning[[/col]]	false
+campaign_payload_ui_details_description_dummy_grudge_cycle_new_age	[[col:yellow]]A new Age of Reckoning begins immediately![[/col]]	false
+campaign_payload_ui_details_description_dummy_grudge_cycle_not_launched_1	[[col:yellow]]Not enough Grudges available to start a new Age of Reckoning.[[/col]]	false
+campaign_payload_ui_details_description_dummy_grudge_cycle_not_launched_2	[[col:yellow]]A new Age of Reckoning will begin in 15 turns if there are enough Grudges.[[/col]]	false
+campaign_payload_ui_details_description_dummy_instant_research_points	Instantly gain 1000 Research Point Surplus	false
+campaign_payload_ui_details_description_dummy_lzd_oxyotl_the_golden_blowpipe_of_ptoohee_fight_battle	Quest Battle is fought now but enemy force will have reinforcements	false
+campaign_payload_ui_details_description_dummy_lzd_oxyotl_the_golden_blowpipe_of_ptoohee_next_stage	Quest Battle is fought later and enemy will fight without reinforcements	false
+campaign_payload_ui_details_description_dummy_marker_will_persist	You will be able to return to this marker later	false
+campaign_payload_ui_details_description_dummy_mission_1_aekold_helbrass	The Knight progresses towards the truth...	false
+campaign_payload_ui_details_description_dummy_mission_1_blue_scribes	The trail of parchment becomes clear...	false
+campaign_payload_ui_details_description_dummy_mission_1_caradryan	With our faith strengthened, we march against our enemies under the gaze of Asuryan...	false
+campaign_payload_ui_details_description_dummy_mission_1_golden_knight	The Golden Knight takes notice...	false
+campaign_payload_ui_details_description_dummy_mission_1_karanak	The Hound of Vengeance answers the Master's call...	false
+campaign_payload_ui_details_description_dummy_mission_1_saytang	The eye of the Watcher is upon you...	false
+campaign_payload_ui_details_description_dummy_mission_1_ulrika	Your increased vigilance leads to an intriguing opportunity…	false
+campaign_payload_ui_details_description_dummy_mission_2_aekold_helbrass	The Knight progresses towards the truth...	false
+campaign_payload_ui_details_description_dummy_mission_2_blue_scribes	The Blue Scribes seek a place to collect their parchments.	false
+campaign_payload_ui_details_description_dummy_mission_2_caradryan	Beams of warm light pierce the sky. The Hand of Asuryan rouses from secluded meditation...	false
+campaign_payload_ui_details_description_dummy_mission_2_golden_knight	The Golden Knight will arrive at the rendezvous point…	false
+campaign_payload_ui_details_description_dummy_mission_2_saytang	The Watcher will appear...	false
+campaign_payload_ui_details_description_dummy_mission_2_ulrika	You will gain the opportunity to recruit Ulrika Magdova	false
+campaign_payload_ui_details_description_dummy_mission_3_aekold_helbrass	The monolith provides its revelations, yet there is a choice still to be made...	false
+campaign_payload_ui_details_description_dummy_mission_3_blue_scribes	A great library is built and a choice must be made...	false
+campaign_payload_ui_details_description_dummy_mission_3_caradryan	Unlock Hero: Caradryan	false
+campaign_payload_ui_details_description_dummy_monst_arcanum_monster_found	The monster's location will be revealed.	false
+campaign_payload_ui_details_description_dummy_monster_pen_modifiers	High enemy casualties and Rakarth's rank increases the chance of capturing Monsters	false
+campaign_payload_ui_details_description_dummy_monster_pens	Captured units can be instantly recruited from the Monster Pens	false
+campaign_payload_ui_details_description_dummy_monstrous_arcanum_conformation	Cease Hunt	false
+campaign_payload_ui_details_description_dummy_mortal_worlds_torment_decrease	Mortal World's Torment trait changed	false
+campaign_payload_ui_details_description_dummy_mortal_worlds_torment_increase	Mortal World's Torment trait changed	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_1	Mother Ostankya will learn the "Coven's Cursemark" Hex	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_2	Mother Ostankya will learn the "Jinxed Land" Hex	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_3	Mother Ostankya will learn the "Recreant Spirit" Hex	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_4	Mother Ostankya will learn the "Bewitching Lure" Hex	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_5	Mother Ostankya will learn the "Purification Chant" Hex	false
+campaign_payload_ui_details_description_dummy_mother_ostankya_hex_6	Mother Ostankya will learn the "Malediction of Ruin" Hex	false
+campaign_payload_ui_details_description_dummy_move_capital_eight_peaks	Your Capital becomes Karak Eight Peaks	false
+campaign_payload_ui_details_description_dummy_nemesis_crown_seal	[[col:yellow]]Seal the Nemesis Crown. However, it may appear again...[[/col]]	false
+campaign_payload_ui_details_description_dummy_nemesis_crown_take	[[col:yellow]]Keep the Nemesis Crown and use its power.[[/col]]	false
+campaign_payload_ui_details_description_dummy_new_grudge_cycle	[[col:green]]A new Age of Reckoning cycle begins[[/col]]	false
+campaign_payload_ui_details_description_dummy_no_more_chaos_portal_events	[[col:yellow]][Event popups related to the Chaos Portal will cease]\\n(The Portal will continue to raze regions)[[/col]]	false
+campaign_payload_ui_details_description_dummy_nor_accept_champion_generic	[[col:red]]Recruiting this champion will anger the other gods, preventing the other champions from becoming available and resulting in a reprisal from the other gods' followers.[[/col]]	false
+campaign_payload_ui_details_description_dummy_nor_accept_crow_champion	Burplesmirk Spewspit will become available to recruit.	false
+campaign_payload_ui_details_description_dummy_nor_accept_eagle_champion	Azrik the Maze Keeper will become available to recruit.	false
+campaign_payload_ui_details_description_dummy_nor_accept_hound_champion	Legendary Hero Recruited: Killgore Slaymaim	false
+campaign_payload_ui_details_description_dummy_nor_accept_serpent_champion	Legendary Hero Recruited: Kihar the Tormentor	false
+campaign_payload_ui_details_description_dummy_nor_reject_champion	You will be free to recruit another God's Champion in the future	false
+campaign_payload_ui_details_description_dummy_nor_reject_champion_1	Rejecting the Champions of all four gods will grant an incredibly powerful reward to your Hero, but there will be a challenge to pass...	false
+campaign_payload_ui_details_description_dummy_norsca_defeated_woc_leader_alliance	Military Alliance formed with this chieftain's faction	false
+campaign_payload_ui_details_description_dummy_ocean_of_opportunities_first	This option generates a mission with a Medium Reward	false
+campaign_payload_ui_details_description_dummy_ocean_of_opportunities_fourth	This option generates a mission with a Low Reward	false
+campaign_payload_ui_details_description_dummy_ocean_of_opportunities_second	This option generates a mission with a High Reward	false
+campaign_payload_ui_details_description_dummy_ocean_of_opportunities_third	This option generates a mission with a High Reward	false
+campaign_payload_ui_details_description_dummy_ogr_contract_continue_war	Continue war with the Client's enemies	false
+campaign_payload_ui_details_description_dummy_ogr_contract_peace	Make peace with the Client's enemies	false
+campaign_payload_ui_details_description_dummy_pan_camera_to_razed_region	[[col:yellow]][Pans the camera to the razed region][[/col]]	false
+campaign_payload_ui_details_description_dummy_pawnbroker_half_price	This item is 50% off!	false
+campaign_payload_ui_details_description_dummy_peg_leg_keep	You keep the Peg Leg item	false
+campaign_payload_ui_details_description_dummy_peg_leg_sell	You lose the Peg Leg item	false
+campaign_payload_ui_details_description_dummy_province_development_point	Vassal gains a province population surplus	false
+campaign_payload_ui_details_description_dummy_purple_hand_cult_spreads	[[col:white]]The Purple Hand establishes a new hideout[[/col]]	false
+campaign_payload_ui_details_description_dummy_purple_hand_cult_spreads_promise	The Cult assures you they will not settle in your lands again	false
+campaign_payload_ui_details_description_dummy_rakarth_battles_harpies	Earned by slaughtering captives after winning a land or sea battle	false
+campaign_payload_ui_details_description_dummy_rakarth_battles_sea	Earned by slaughtering captives after a battle at sea	false
+campaign_payload_ui_details_description_dummy_rakarth_battles_underway	Earned by slaughtering captives after winning a battle in the Underway	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_cold_ones	Earned by raiding in a Jungle or Savannah climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_desert	Earned by raiding in a Desert climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_frozen	Earned by raiding in a Frozen climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_jungle	Earned by raiding in a Jungle climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_magical_forest	Earned by raiding in a Magical Forest climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_manticore	Earned by raiding in a Chaotic Wasteland or Chaos-corrupted region	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_mountain	Earned by raiding in a Mountain climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_temperate	Earned by raiding in a Temperate climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_temperate_island	Earned by raiding in a Temperate Island climate	false
+campaign_payload_ui_details_description_dummy_rakarth_raid_wasteland	Earned by raiding in a Wasteland climate	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_chaos	Earned by capturing a Warriors of Chaos settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_dark_elves	Earned by capturing a Dark Elf settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_dragon	Earned by capturing a High Elf or Dark Elf settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_greenskins	Earned by capturing a Greenskin settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_kislev	Earned by capturing a Kislev settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_lizardmen	Earned by capturing a Lizardmen settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_norsca	Earned by capturing a Norscan settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_ogres	Earned by capturing an Ogres settlement	false
+campaign_payload_ui_details_description_dummy_rakarth_settlement_wood_elves	Earned by capturing a Wood Elf settlement	false
+campaign_payload_ui_details_description_dummy_region_returned_to_high_elves	Gaean Vale will be returned to a High Elf faction	false
+campaign_payload_ui_details_description_dummy_remove_dwarf_minor_cult	Remove the Dwarf Mining Company from {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}}	false
+campaign_payload_ui_details_description_dummy_repair_dwarf_minor_cult	Repair the damage at {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}}	false
+campaign_payload_ui_details_description_dummy_replenish_all_armies	Instantly replenish all units (factionwide)	false
+campaign_payload_ui_details_description_dummy_replenish_all_characters_ap	All [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes instantly replenish their action points	false
+campaign_payload_ui_details_description_dummy_reveal_fow_in_razed_region	All Fog of War is revealed in the razed region for this turn	false
+campaign_payload_ui_details_description_dummy_sayl_final_battle_trait_reward	Sayl the Faithless will gain a unique trait.	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1_nur_option_2_chance	[[col:red]]25% chance for an army of Norscans worshipping the [[img:icon_nor_crow]][[/img]]Crow will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_kho_option_3_chance	[[col:red]]{{tr:campaign_payload_ui_details_description_dummy_sayl_manipulation_khorne_army_t1}}\\n50% chance for that army to have additional Monstrous units.[[/col]]\\n50% chance for that army to be weakened.	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_nur_option_3_chance	50% chance for a positive Growth & Replenishment factionwide effect.\\n[[col:red]]50% chance for a negative Growth & Attrition factionwide effect.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_sla_option_2_chance	[[col:red]]25% chance for an army of Norscans worshipping the [[img:icon_nor_serpent]][[/img]]Serpent will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_sla_option_3_chance	25% chance to gain Treasury & Spoils\\n[[col:red]]75% chance a stronger army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_tze_option_2_chance	[[col:red]]50% chance a [[/col]][[col:yellow]]stronger[[/col]] [[col:red]]army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1a_tze_option_3_chance	[[col:red]]25% chance Faction leader is wounded.[[/col]]\\n[[col:yellow]]75% chance that faction leader's Winds of Magic are strengthened, along with Tzeentch's corruption.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1b_kho_option_3_chance	25% chance to gain a Marauder Chieftain in recruitment pool\\n[[col:red]]75% chance a stronger army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1b_nur_option_3_chance	[[col:red]]All faction armies receive 10% damage[[/col]]\\n[[col:yellow]]10% chance for units to turn into Chaos Spawn of Nurgle[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1b_sla_option_3_chance	50% chance no army spawns and supplies are recovered from enemy\\n[[col:red]]50% chance a stronger army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_1b_tze_option_3_chance	25% chance to gain Shaman-Sorcerer\\n[[col:red]75% chance a stronger army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2a_kho_option_2	[[col:red]]A weakened army of Khornate champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2a_kho_option_3	[[col:red]]All faction garrisons receive 30% damage[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2a_nur_option2	[[col:red]]Random agent in the faction is killed[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2a_nur_option3_chance	[[col:red]]50% chance for Plague to be unleashed upon your faction[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2a_tze_option3_chance	[[col:red]]25% chance that the faction leader is wounded.\\n75% chance that the faction leader's Winds of Magic are drained to 0[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2b_kho_option_2_chance	25% chance no army spawns\\n[[col:red]]75% chance a stronger army of Norscans will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2b_kho_option_3	[[col:yellow]]Attacking army and friendly army receive random amount of damage[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_2b_nur_option3_chance	[[col:red]]{{tr:campaign_payload_ui_details_description_dummy_sayl_manipulation_nurgle_army_t2}}\\n50% chance for that army to have units replaced with Chaos Spawn of Nurgle[[/col]]\\n50% chance for that army to be weakened	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_3_kho_option2	[[col:red]]Random amount of damage dealt to faction buildings in all regions[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_attention_3_tze_option2_chance	[[col:red]]All armies receive 40% damage[[/col]]\\n[[col:yellow]]20% chance for units to turn into Chaos Spawn of Tzeentch[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_khorne_army_t1	[[col:red]]An army of Norscans worshipping the [[img:icon_nor_hound]][[/img]]Hound will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_khorne_army_t2	[[col:red]]An army of Khornate champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_khorne_army_t3	[[col:red]]An army of Khornate daemons and champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_marauders_die	Marauder units in all armies disband	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_monsters_die	Monster units in all armies are killed	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_nurgle_army_t1	[[col:red]]An army of Norscans worshipping the [[img:icon_nor_crow]][[/img]]Crow will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_nurgle_army_t2	[[col:red]]An army of Nurglite champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_nurgle_army_t3	[[col:red]]An army of Nurglite daemons and champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_raze_region	Region is razed	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_ritual_locked_temp	Locked until the next cycle after gaining too much [[img:icon_nor_god_attention]][[/img]]Attention from Chaos God's followers.	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_ritual_unlock_t2	[[col:green]]Unlock Tier 2 Manipulations.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_ritual_unlock_t3	[[col:green]]Unlock Tier 3 Manipulations.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_ritual_unlock_t4	[[col:green]]Unlock Tier 4 Manipulations.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_slaanesh_army_t1	[[col:red]]An army of Norscans worshipping the [[img:icon_nor_serpent]][[/img]]Serpent will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_slaanesh_army_t2	[[col:red]]An army of Slaaneshi champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_slaanesh_army_t3	[[col:red]]An army of Slaaneshi daemons and champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_tzeentch_army_t1	[[col:red]]An army of Norscans worshipping the [[img:icon_nor_eagle]][[/img]]Eagle will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_tzeentch_army_t2	[[col:red]]An army of Tzeentchian champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_manipulation_tzeentch_army_t3	[[col:red]]An army of Tzeentchian daemons and champions will appear, seeking Sayl.[[/col]]	false
+campaign_payload_ui_details_description_dummy_sayl_narrative_intro_reward	[[col:yellow]]Begin building arcane power toward enacting the Dark Ritual[[/col]]	false
+campaign_payload_ui_details_description_dummy_sell_settlement_minor_cult	Sell the settlement of {{CcoCampaignPayloadInfoEntry:StoredContextFromParent("CcoCampaignEventDilemma").RegionTargetName}}	false
+campaign_payload_ui_details_description_dummy_sisters_forge_active_1	The Forge of Daith button is now active!	false
+campaign_payload_ui_details_description_dummy_sisters_forge_active_2	The Forge of Daith can only be accessed once every 2 turns	false
+campaign_payload_ui_details_description_dummy_sisters_forge_event_1	Lord Daith has gifted you four pieces of equipment	false
+campaign_payload_ui_details_description_dummy_sisters_forge_event_2	Lord Daith gifts new equipment every 10 turns	false
+campaign_payload_ui_details_description_dummy_sisters_forge_event_3	Lord Daith will offer to improve his gifts after the Sisters win battles	false
+campaign_payload_ui_details_description_dummy_sorcerer_capacity	Hero capacity: +1 for Chaos Sorcerers	false
+campaign_payload_ui_details_description_dummy_spawn_aekold_helbrass	Unlock Hero: Aekold Helbrass	false
+campaign_payload_ui_details_description_dummy_spawn_beorg	Unlock Hero: Beorg Bearstruck	false
+campaign_payload_ui_details_description_dummy_spawn_blue_scribes	Unlock Hero: The Blue Scribes	false
+campaign_payload_ui_details_description_dummy_spawn_bragg_the_gutsman_1	ph Bragg is interested	false
+campaign_payload_ui_details_description_dummy_spawn_bragg_the_gutsman_2	Unlock Hero: {{tr:land_units_onscreen_name_wh3_dlc26_ogr_cha_bragg_the_gutsman}}	false
+campaign_payload_ui_details_description_dummy_spawn_epidemius	Unlock Hero: Epidemius	false
+campaign_payload_ui_details_description_dummy_spawn_garagrim_ironfist	Unlock Hero: Garagrim Ironfist	false
+campaign_payload_ui_details_description_dummy_spawn_golden_knight	Unlock Hero: The Golden Knight	false
+campaign_payload_ui_details_description_dummy_spawn_gorduz_backstabber	Unlock Hero: Gorduz Backstabber	false
+campaign_payload_ui_details_description_dummy_spawn_gotrek_felix	Unlock Heroes: Gotrek & Felix	false
+campaign_payload_ui_details_description_dummy_spawn_harald_hammerstorm	Unlock Hero: Harald Hammerstorm	false
+campaign_payload_ui_details_description_dummy_spawn_karanak	Unlock Hero: Karanak, the Hound of Vengeance	false
+campaign_payload_ui_details_description_dummy_spawn_lord_kroak	Unlock Hero: Lord Kroak	false
+campaign_payload_ui_details_description_dummy_spawn_saytang	Unlock Hero: Saytang the Watcher	false
+campaign_payload_ui_details_description_dummy_spawn_scyla_anfingrimm_1	Raiding the land may reveal more...	false
+campaign_payload_ui_details_description_dummy_spawn_scyla_anfingrimm_2	This champion of Khorne is as fierce as ever, though may no longer be human...	false
+campaign_payload_ui_details_description_dummy_spawn_scyla_anfingrimm_3	Unlock Hero: {{tr:land_units_onscreen_name_wh3_dlc26_kho_cha_scyla_anfingrimm}}	false
+campaign_payload_ui_details_description_dummy_spawn_skarr_bloodwrath_1	Among Khorne's most fearsome mortal warriors, one champion stands out...	false
+campaign_payload_ui_details_description_dummy_spawn_skarr_bloodwrath_2	Charred winds howl over blood-drenched battlefields, carrying Skarr's name...	false
+campaign_payload_ui_details_description_dummy_spawn_skarr_bloodwrath_3	Unlock Hero: {{tr:land_units_onscreen_name_wh3_dlc26_kho_cha_skarr_bloodwrath}}	false
+campaign_payload_ui_details_description_dummy_spawn_snagla_grobspit	Unlock Hero: {{tr:land_units_onscreen_name_wh3_dlc26_grn_cha_snagla_grobspit}}	false
+campaign_payload_ui_details_description_dummy_spawn_styrkaar	Unlock Hero: Styrkaar the Sortsvinaer	false
+campaign_payload_ui_details_description_dummy_spawn_taoyan	Unlock Hero: Taoyan the Merciless	false
+campaign_payload_ui_details_description_dummy_spawn_theodore	Unlock Hero: Theodore Bruckner	false
+campaign_payload_ui_details_description_dummy_spawn_ulrika_magdova	Unlock Hero: Ulrika Magdova	false
+campaign_payload_ui_details_description_dummy_styrkaar_mission_stage_1	Complete this mission to continue Styrkaar's quest...	false
+campaign_payload_ui_details_description_dummy_sword_will_be_lost	Return the Sword of Khaine	false
+campaign_payload_ui_details_description_dummy_sword_will_be_picked	Keep the Sword of Khaine	false
+campaign_payload_ui_details_description_dummy_sword_will_be_strong	The Sword of Khaine will grow in power	false
+campaign_payload_ui_details_description_dummy_take_no_action	You will take no action	false
+campaign_payload_ui_details_description_dummy_tamurkhan_deference_final_reward	[[col:yellow]]Attain the [[i]]Devoted[[/i]] Fealty Level with this Chieftain[[/col]]	false
+campaign_payload_ui_details_description_dummy_taoyan_mission_stage_1	The Iron Dragon sends another...	false
+campaign_payload_ui_details_description_dummy_teclis_teleport_white_tower	Teclis will be teleported next to the White Tower of Hoeth	false
+campaign_payload_ui_details_description_dummy_theodore_mission_stage_1	An investment in cavalry will warrant Bruckner’s attention	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_bull_centaur_renders	Unlocks Hell-Forge unit effects for: Bull Centaur Renders	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_bull_centaurs_taurus	Unlocks Hell-Forge category effects: Bull Centaurs and Taur'ruk	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_chaos_dwarf_warriors	Unlocks Hell-Forge unit effects for: Chaos Dwarf Warriors and Chaos Dwarf Warriors (Great Weapons)	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_deathshrieker_dreadquake	Unlocks Hell-Forge unit effects for: Deathshriekers and Dreadquake Mortars	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_hellcannon_magma_cannon	Unlocks Hell-Forge unit effects for: Hellcannons and Magma Cannons	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_hobgoblins	Unlocks Hell-Forge category effects: Hobgoblins	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_infernal_guard	Unlocks Hell-Forge unit effects for: Infernal Guard	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_infernal_guard_greatweapons	Unlocks Hell-Forge unit effects for: Infernal Guard (Great Weapons)	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_infernal_ironsworn	Unlocks Hell-Forge unit effects for: Infernal Ironsworn	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_melee_infantry	Unlocks Hell-Forge category effects: Melee Infantry	false
+campaign_payload_ui_details_description_dummy_unlock_hellforge_effect_missile_infantry	Unlocks Hell-Forge category effects: Missile Infantry	false
+campaign_payload_ui_details_description_dummy_vortex_final_battle_experience	Bonus experience: 8000 for all characters	false
+campaign_payload_ui_details_description_dummy_vortex_final_battle_unit_rank	Unit rank: 9 for all units in the battle	false
+campaign_payload_ui_details_description_dummy_war_great_orthodoxy	War declared on the Great Orthodoxy	false
+campaign_payload_ui_details_description_dummy_war_ice_court	War declared on the Ice Court	false
+campaign_payload_ui_details_description_dummy_wef_encounter_confed_oreon	Confederation formed with the Bowmen of Oreon	false
+campaign_payload_ui_details_description_dummy_wef_encounter_easy_battle	You will face a [[col:green]]weaker[[/col]] foe in battle	false
+campaign_payload_ui_details_description_dummy_wef_encounter_greenskins	Dark Elf regions will suffer intermittent penalties	false
+campaign_payload_ui_details_description_dummy_wef_encounter_hard_battle	You will face a [[col:red]]stronger[[/col]] foe in battle	false
+campaign_payload_ui_details_description_dummy_wef_encounter_very_hard_battle	You will face a [[col:red]]very difficult[[/col]] foe in battle	false
+campaign_payload_ui_details_description_dummy_wef_encounter_war_with_oreon	You will go to war with the Bowmen of Oreon!	false
+campaign_payload_ui_details_description_dummy_wh2_dlc11_neo_counter_fight	You will face a foe in battle	false
+campaign_payload_ui_details_description_dummy_wh2_dlc11_neo_counter_fight_chance	You may have to defeat a foe in battle	false
+campaign_payload_ui_details_description_dummy_wh2_dlc11_neo_counter_treasure	A great hoard of treasure may be received	false
+campaign_payload_ui_details_description_dummy_wh2_dlc11_neo_counter_treasure_minor	Only a miserly hoard of treasure will be received	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_hunter_dilemma	[[col:white]]A dilemma offers rewards![[/col]]	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_hunter_join	[[col:white]]A unique Hero joins your cause![[/col]]	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_wulfhart_supply_delay	HIDDEN delay your next imperial supply	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_wulfhart_supply_enhance	HIDDEN receive extra units in next imperial supply	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_wulfhart_supply_instant	HIDDEN receive ur next imperial supply instantly	false
+campaign_payload_ui_details_description_dummy_wh2_dlc13_wulfhart_wanted_level_increase	HIDDEN wanted level will increase by 1	false
+campaign_payload_ui_details_description_dummy_wh2_dlc14_malus_start_dilemma_keep_hag_graef	Keep Hag Graef (retain a foothold in Naggaroth)	false
+campaign_payload_ui_details_description_dummy_wh2_dlc14_malus_start_dilemma_lose_hag_graef	Give up Hag Graef (focus on the expedition)	false
+campaign_payload_ui_details_description_dummy_wh2_dlc14_obsinite_gyrocopter_unlock	Imperial Troops (1) Obsinite Gyrocopter	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_dragon_encounter_bargain	The Dragon will show you the art of manipulation!	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_dragon_encounter_challenge	You will fight this Dragon in battle!	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_dragon_encounter_challenge_special	Fight this Dragon in its Lair! This option enables a \\n quest battle with greater rewards	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_dragon_encounter_consult	The Dragon's knowledge improves your armies	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_dragon_encounter_leave	You will leave this Dragon alone for now	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_grn_waaagh_success_unit	{{tr:effects_description_wh2_dlc15_grn_waaagh_success_unit_dummy}}	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_grom_experience	Bonus experience: 1500 for Grom	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_grom_random_food	A random ingredient will be unlocked	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_imrik_dragon_recruitment_black	Special Dragon (1) Shackolot the Calamity	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_imrik_dragon_recruitment_forest	Special Dragon (1) Bruwor, Protector of Life	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_imrik_dragon_recruitment_moon	Special Dragon (1) Lamoureux the Frozen Breath	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_imrik_dragon_recruitment_star	Special Dragon (1) Ymwrath the Eternal	false
+campaign_payload_ui_details_description_dummy_wh2_dlc15_imrik_dragon_recruitment_sun	Special Dragon (1) Gordinar, Champion of the Flame	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_drycha_potion_sacre_reward	Drycha and her followers will gain magical resistance	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_drycha_unlock_coeddil_reward	Coeddil will join your forces	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_craft_armour	You will receive a powerful set of armour	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_craft_enchanted_item	You will receive a powerful enchanted item	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_craft_no_more_available	Daith can no longer craft equipment of this type to gift you	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_craft_talisman	You will receive a powerful talisman	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_craft_weapon	You will receive a powerful weapon	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_leave_without_action	Naestra pays her respects and leaves	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_leave_without_action_2	Daith is pleased: -2 turns until next Forge of Daith gift	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_lose_reforge_warning	Equipment currently reforged – remaining power duration is lost	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_reforge_duration_warning	Equipment's increased power lasts 5 turns	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_reforge_duration_warning_skill_owned	Equipment's increased power lasts 7 turns	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_reforge_level_warning	Will revert back to its current power after reforge duration	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_sisters_forge_restart_reforge_timer	Equipment currently reforged – power duration reset to maximum	false
+campaign_payload_ui_details_description_dummy_wh2_dlc16_throt_unlock_ghoritch_reward	Ghoritch will join your forces	false
+campaign_payload_ui_details_description_dummy_wh2_main_campaign_encounter	Your army will perform better on campaign	false
+campaign_payload_ui_details_description_dummy_wh2_main_combat_encounter	Your army will perform better in battle	false
+campaign_payload_ui_details_description_dummy_wh2_main_grn_gorks_waaagh	You dedicate this Waaagh! to Gork	false
+campaign_payload_ui_details_description_dummy_wh2_main_grn_morks_waaagh	You dedicate this Waaagh! to Mork	false
+campaign_payload_ui_details_description_dummy_wh2_main_incident_intercontinental_diplomacy	All major port owners have become known to each other via diplomacy	false
+campaign_payload_ui_details_description_dummy_wh2_pro08_recruit	Recruit Gotrek and Felix	false
+campaign_payload_ui_details_description_dummy_wh2_twa03_rakarth_beast_mastery_reward	Some Lustrian beasts will be added to the Monster Pens	false
+campaign_payload_ui_details_description_dummy_wh2_twa03_rakarth_black_ark_reward	A Black Ark will become available for recruitment from any port settlement	false
+campaign_payload_ui_details_description_dummy_wh3_cp1_cth_aosy_missions_army_capacity	Army capacity: +1	false
+campaign_payload_ui_details_description_dummy_wh3_cp1_cth_iron_favour_all	While this Goal is active:\\nTarget armies and settlements provide [[col:yellow]]+60 [[img:icon_iron_favour]]Iron Favour[[/img]][[/col]] when defeated	false
+campaign_payload_ui_details_description_dummy_wh3_cp1_cth_iron_favour_armies	While this Goal is active:\\nTarget armies provide [[col:yellow]]+40 [[img:icon_iron_favour]]Iron Favour[[/img]][[/col]] when defeated	false
+campaign_payload_ui_details_description_dummy_wh3_cp1_cth_iron_favour_settlements	While this Goal is active:\\nTarget settlements provide [[col:yellow]]+40 [[img:icon_iron_favour]]Iron Favour[[/img]][[/col]] when defeated	false
+campaign_payload_ui_details_description_dummy_wh3_dlc20_dilemma_daemon_prince_ascension_ascend	Character replaced with a Daemon Prince	false
+campaign_payload_ui_details_description_dummy_wh3_dlc20_dilemma_daemon_prince_ascension_do_nothing	Continue as a Mortal permanently	false
+campaign_payload_ui_details_description_dummy_wh3_dlc20_incident_daemon_prince_ascension	Some experience has been transferred to the Daemon Prince	false
+campaign_payload_ui_details_description_dummy_wh3_dlc21_dilemma_nakai_pestilens_short_victory	A wandering army under your control will emerge from the jungles of Lustria to aid the Lizardmen.	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_dilemma_yuan_bo_start_keep_shang_wu	Keep Shang-Wu (retain a foothold in Cathay)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_dilemma_yuan_bo_start_lose_shang-wu	Give up Shang-Wu (focus on the expedition)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_long_campaign_victory	Long Campaign Victory!	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_aekold_form	Obtain the form of Aekold Helbrass, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_badlands_grand_scripted	A unique ritual will be performed at the site of the Black Pyramid	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_blue_scribes_form	Obtain the form of the Blue Scribes, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_bretonnia_athel_loren_beastmen_rebels	Wood Elf faction capitals will be attacked by hostile Beastmen rebels	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_bretonnia_grand_scripted	The Red Duke will besiege all of Bretonnia with his Undead legions	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_chaos_wastes_grand_scripted	Tzeentch will unleash waves of Daemonic rebels against his rivals in the Great Game	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_darklands_grand_scripted	Greenskin Labourers will rise up in rebellion against their overseers	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ghoritch_form	Obtain the form of Ghoritch, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_gorduz_form	Obtain the form of Gorduz Backstabber, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_cathay_grand_scripted	The Kurgan Warband will breach the Great Bastion, enabling Tzeentchian rebels to swarm the theatre	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_cathay_theatre_corruption_payload	Tzeentch corruption will spread throughout Grand Cathay	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_badlands_cathay	The Black Pyramid will appear at Nongchang accompanied by hostile Undead hosts	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_badlands_lustria	The Black Pyramid will appear at Xlanhuapec accompanied by hostile Undead hosts	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_badlands_norsca	The Black Pyramid will appear at Doomkeep accompanied by hostile Undead hosts	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_badlands_the_empire	The Black Pyramid will appear at Castle Templehof accompanied by hostile Undead hosts	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_cathay_ivory_road	Summons a Trickster Cultist in Pigbarter\\n(Dark Lands & Mountains of Mourn theatre)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_cathay_kurgan_warband	Summons two Trickster Cultists in the Fortress of Eyes\\n(Chaos Wastes theatre)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_cathay_sea_lanes	Summons two Trickster Cultists in Great Turtle Isle\\n(Lustrian theatre)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_chaos_wastes_both	Gain armies in both Novchozy and Terracotta Graveyard\\n(temporarily without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_chaos_wastes_cathay	Gain an army in Terracotta Graveyard\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_chaos_wastes_kislev	Gain an army in Novchozy\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_naggaroth_bretonnia	Gain an army of Bloated Corpses in Bitter Bay\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_naggaroth_cathay	Gain an army of Bloated Corpses in Sartosa\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_naggaroth_darklands	Gain an army of Bloated Corpses in Fu-Chow\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_naggaroth_ulthuan	Gain an army of Bloated Corpses in the Shrine of Khaine\\n(without upkeep)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_norsca_cathay	Norscan armies will attack Grand Cathay	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_norsca_ulthuan	Norscan armies will attack Ulthuan	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_the_empire_both	Summons a Trickster Cultist in both Kislev and the Dark Lands	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_the_empire_darklands	Summons three Trickster Cultists in the Dark Lands	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_grand_scheme_the_empire_norsca	Summons three Trickster Cultists in Kislev	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_green_knight_form	Obtain the form of the Green Knight, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_hidden_cultist_payload	Trickster Cultist contacted: +1\\n(summoned via technology panel)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_kislev_all_forms_payload	Obtain the forms of Tzarina Katarin, Kostaltyn and Mother Ostankya, if you do not already have them	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_lord_kroak_form	Obtain the form of Lord Kroak, if you do not already have it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_lustria_grand_scripted	Clan Pestilens will unleash a great plague upon the Lizardmen of Lustria	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_naggaroth_all_forms_payload	Obtain the forms of Malekith, Morathi and Crone Hellebron, if you do not already have them	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_naggaroth_scripted	A huge rebellion of Bloated Corpses will attack all the ports of Naggaroth	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_naggaroth_witchwood_greenskins_payload	Greenskin rebels will vandalise the Witchwood, and appear in all regions adjacent to it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_norsca_grand_scripted_ie	The Norscans will form a warband to invade either Ulthuan or Grand Cathay at your choice	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_norsca_grand_scripted_roc	The Norscans will form a warband to invade Grand Cathay	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_open_rift_payload	Open a Trickster Rift in Sylvania	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_quest_battle_complete	The Grand Scheme will be enacted	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_reveal_shroud_payload	The shroud will be lifted in the theatre, revealing all terrain and settlements	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_rift_gem_payload	Available Trickster Rifts: +1\\n(permanently activated via technology panel)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_the_empire_grand_scripted	The Empire's Elector Counts will descend into civil war	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ulthuan_inner_ring_chaos_rebels	Chaos rebels will attack all settlements within the inner ring of Ulthuan	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ulthuan_scripted	The Cult of Pleasure will be unleashed across all of Ulthuan	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ulthuan_sword_of_khaine	You will be offered the Sword of Khaine, if you are not wounded and do not already control it	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_bretonnia	Bretonnia will be unable to reinforce your enemies in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_cathay	Grand Cathay will be unable to reinforce your enemies in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_chaos	Tzeentchian allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_empire	The Empire will be unable to reinforce your enemies in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_greenskins	Greenskin allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_high_elves	The High Elves will be unable to reinforce your enemies in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_norsca	Norscan allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_skaven	Skaven allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_tomb_kings	Tomb King allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_ultimate_battle_vampire_coast	Vampire Coast allies will support you in the Ultimate Scheme	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_unlock_ror_feral_carnosaur	Unlocks Regiment of Renown: Feral Carnosaur	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_unlock_ror_frost_wyrm	Unlocks Regiment of Renown: The Cold-Voider (Chaos Frost Dragon)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_unlock_ror_steam_tank	Unlocks Regiment of Renown: Steam Tank	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mission_schemes_wulfrik_throgg_form	Obtain the forms of Wulfrik the Wanderer and Throgg, if you do not already have them	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh2_dlc11_cst_vampire_coast	All Vampire Coast factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh2_main_skv_skaven	All Skaven factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh3_dlc23_chd_chaos_dwarfs	All Chaos Dwarf factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh3_main_kho_khorne	All Khornate factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh3_main_nur_nurgle	All Nurglish factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh3_main_sla_slaanesh	All Slaaneshi factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh3_main_tze_tzeentch	All Tzeentchian factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh_dlc03_bst_beastmen	All Beastmen factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh_dlc08_nor_norsca	All Norscan factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh_main_chs_chaos	All Warriors of Chaos factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_mother_ostankya_wh_main_vmp_vampire_counts	All Vampire Counts factions will be severely impaired	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_ostankya_start_dilemma_leave	Return To Kislev (Abandon All Settlements)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_ostankya_start_dilemma_stay	Stay Here (Retain All Settlements)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_ostankya_start_dilemma_trinkets	Immediately unlock the Witch's Hut with two random Trinkets	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_ostankya_start_dilemma_unlock	All Kislev building chains will be unlocked	false
+campaign_payload_ui_details_description_dummy_wh3_dlc24_the_changeling_free_form	Tzeentch will grant a random form for the Changeling to assume	false
+campaign_payload_ui_details_description_dummy_wh3_dlc25_elspeth_narrative	Continues Elspeth's Narrative Chain...	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_capital_outpost_reward	Establish a Sea Patrol Outpost in this factions Capital	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_final_battle_marker	The invasions location has been located!	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_final_battle_reveal	Gain further information about the Dark Elf invasion	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_final_battle_trigger	News about the invasion will reach us in 3 turns...	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_final_reward	[[col:white]]Only time will tell what is to be gained from victory...[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_alarielle	Alarielle will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_alith_anar	Alith Anar will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_eltharion	Eltharion will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_imrik	Imrik will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_teclis	Teclis will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_lord_support_tyrion	Tyrion will support us in the final battle	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_enabled	Aislinn now has access to unique Sea Lanes located in the Eastern Isles	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_cathay	[[col:white]]Generate a mission focused on Cathay[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_cathay_fow	Remove all shroud in the Jade Sea	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_lustria	[[col:white]]Generate a mission focused on Lustria[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_lustria_fow	Remove all shroud in the Vampire Coast sea	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_southlands	[[col:white]]Generate a mission focused on the Southlands[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_southlands_fow	Remove all shroud in the Churning Gulf sea	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_ulthuan	[[col:white]]Generate a mission focused on Ulthuan[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_mission_ulthuan_fow	Remove all shroud in the Shifting Isles sea	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_aislinn_sea_lane_reward	Unlock Aislinn's unique Sea Lanes	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_blessed_dread_sea_lanes_unlocked	You will gain access to the High Elf Sea Patrol's unique Sea Lanes located in the Eastern Isles	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_dilemma_wulfrik_start_keep_troll_fjord	Keep Troll Fjord (retain a foothold in Norsca)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_dilemma_wulfrik_start_lose_troll_fjord	Give up Troll Fjord (focus on raiding new lands)	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_hef_keep_patronage	Keep your Patronage position	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_hef_lose_patronage	Lose your Patronage position	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_monstrous_arcanum_continue_hunt	Continue your search for 5 more turns	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_allegiance_ultimate_refusal_mission	You have defeated all champions sent against you and will no longer need to worry about such threats.	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_champion_crow	{{tr:campaign_payload_ui_details_description_dummy_nor_accept_crow_champion}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_champion_eagle	{{tr:campaign_payload_ui_details_description_dummy_nor_accept_eagle_champion}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_champion_hound	{{tr:campaign_payload_ui_details_description_dummy_nor_accept_hound_champion}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_champion_serpent	{{tr:campaign_payload_ui_details_description_dummy_nor_accept_serpent_champion}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_narrative_hef_dilemma	{{tr:effects_description_wh3_dlc27_effect_nor_sayl_narrative_dilemma_hef_dummy}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_sayl_narrative_lzd_dilemma	{{tr:effects_description_wh3_dlc27_effect_nor_sayl_narrative_dilemma_lzd_dummy}}	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_wulfrik_start_dilemma_bordeleaux	Confers vision over the region of Bordeleaux	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_wulfrik_start_dilemma_gulf_kislev	Confers vision over the regions Castle Alexandronov and Erengrad	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_wulfrik_start_dilemma_karond_kar	Confers vision over the regions of Karond Kar and Nagrar	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_nor_wulfrik_start_dilemma_marienburg	Confers vision over the region of Marienburg	false
+campaign_payload_ui_details_description_dummy_wh3_dlc27_wintertooth_trollkind_dilemma	A choice of Troll units will join your army - make sure you have room!	false
+campaign_payload_ui_details_description_dummy_wh3_main_ai_four_souls_forge_of_souls	All souls collected by the enemy are lost!	false
+campaign_payload_ui_details_description_dummy_wh3_main_bundle_belakor_banished	Be'lakor will join your faction	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_boris_unlock_first	Kislev settlement gifted to Ursun Revivalists	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_boris_unlock_fourth	Boris Ursus is available for recruitment	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_boris_unlock_second	Erengrad settlement gifted to Ursun Revivalists	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_boris_unlock_third	Praag settlement gifted to Ursun Revivalists	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_cth_caravan_1A_first	[[col:yellow]]The Caravan maintains its current route[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_cth_caravan_1A_second	[[col:yellow]]The Caravan moves an additional node[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_cth_caravan_battle_1B_second	[[col:yellow]]The Caravan will not progress this turn[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_ask_again	You will be asked again in 10 turns	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_do_nothing	Continue as a Herald permanently	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_khorne	Character replaced with an Exalted Bloodthirster	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_nurgle	Character replaced with an Exalted Great Unclean One	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_slaanesh	Character replaced with an Exalted Keeper of Secrets	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_exalted_greater_daemon_tzeentch	Character replaced with an Exalted Lord of Change	false
+campaign_payload_ui_details_description_dummy_wh3_main_dilemma_forge_of_souls_entered	Your faction leader will be immediately teleported to the Forge of Souls rift	false
+campaign_payload_ui_details_description_dummy_wh3_main_eltharion_start_dilemma_keep_yvresse	Keep Yvresse (Retain your control in Ulthuan)	false
+campaign_payload_ui_details_description_dummy_wh3_main_eltharion_start_dilemma_lose_yvresse	Give up Yvresse (Focus on the Badlands)	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_cth_bastion_threat_decreases_kill	Great Bastion threat: -20%	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_dae_feature_khorne	Unlocks the "Bloodletting" feature for all your armies	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_dae_feature_nurgle	Unlocks the "Switchable Plagues" feature for all your armies	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_dae_feature_slaanesh	Unlocks the "Seduce Units" feature for all your armies	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_dae_feature_tzeentch	Unlocks the Teleport stance for all your armies	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_exalted_greater_daemon	Some experience has been transferred to the Exalted Greater Daemon	false
+campaign_payload_ui_details_description_dummy_wh3_main_incident_ogr_contracts_available	New contracts are available for selection	false
+campaign_payload_ui_details_description_dummy_wh3_main_khorne_realm_requirement	A chance to fight at the Brass Citadel	false
+campaign_payload_ui_details_description_dummy_wh3_main_leave_slaanesh_realm	Your army will leave the Realm of Chaos, unable to return for the foreseeable future	false
+campaign_payload_ui_details_description_dummy_wh3_main_nurgle_realm_requirement	A chance to fight at the Mansion of the Plaguelord	false
+campaign_payload_ui_details_description_dummy_wh3_main_qb_ksl_katarin_boris_unlock	Boris Ursus will return	false
+campaign_payload_ui_details_description_dummy_wh3_main_realm_slaanesh_fifth_10	All [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes increase rank by 10	false
+campaign_payload_ui_details_description_dummy_wh3_main_realm_slaanesh_fifth_15	All [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes increase rank by 15	false
+campaign_payload_ui_details_description_dummy_wh3_main_realm_slaanesh_fifth_5	All [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes increase rank by 5	false
+campaign_payload_ui_details_description_dummy_wh3_main_realm_slaanesh_fourth_4	Unit rank: 4 for all units in this army	false
+campaign_payload_ui_details_description_dummy_wh3_main_realm_slaanesh_fourth_9	Unit rank: 9 for all units in this army	false
+campaign_payload_ui_details_description_dummy_wh3_main_story_panel_ascension	[[col:red]]You will lose the campaign if you do not defeat him at the Forge of Souls![[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_story_panel_ascension_close	[[col:red]]Be'lakor will become a God in 20 turns[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_story_panel_ascension_coming	[[col:red]]Be'lakor will become a God in 30 turns[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_story_panel_ascension_imminent	[[col:red]]Be'lakor will become a God in 10 turns[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_forge_of_souls	Campaign Victory!	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_khorne_1	A Daemon Prince's soul\\n(1 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_khorne_2	A Daemon Prince's soul\\n(2 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_khorne_3	A Daemon Prince's soul\\n(3 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_khorne_4	A Daemon Prince's soul\\n(4 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_nurgle_1	A Daemon Prince's soul\\n(1 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_nurgle_2	A Daemon Prince's soul\\n(2 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_nurgle_3	A Daemon Prince's soul\\n(3 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_nurgle_4	A Daemon Prince's soul\\n(4 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_slaanesh_1	A Daemon Prince's soul\\n(1 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_slaanesh_2	A Daemon Prince's soul\\n(2 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_slaanesh_3	A Daemon Prince's soul\\n(3 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_slaanesh_4	A Daemon Prince's soul\\n(4 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_tzeentch_1	A Daemon Prince's soul\\n(1 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_tzeentch_2	A Daemon Prince's soul\\n(2 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_tzeentch_3	A Daemon Prince's soul\\n(3 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_survival_tzeentch_4	A Daemon Prince's soul\\n(4 of 4 needed to discover the path to the Forge of Souls)	false
+campaign_payload_ui_details_description_dummy_wh3_main_tzeentch_realm_powerful_reward	A boon from the Chaos God of Magic is yours to take	false
+campaign_payload_ui_details_description_dummy_wh3_main_tzeentch_realm_replenishment_dilemma_payload	Fully replenishes army	false
+campaign_payload_ui_details_description_dummy_wh3_main_tzeentch_realm_reveal_icon_pair	Reveal sigils for teleport pairing	false
+campaign_payload_ui_details_description_dummy_wh3_main_units_replenished	All damaged units will be fully replenished	false
+campaign_payload_ui_details_description_dummy_wh3_mission_fail	[[col:red]]You will lose the campaign if you do not complete this mission in time.[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_changer_of_the_ways_1	Unlock Snow Leopard	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_changer_of_the_ways_2	Unlock Bear War Sleds	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_ice_maiden_actions	Unlock Ice Guard (Swords)	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission	[[img:icon_campaign_objectives]][[/img]]	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_building_level	Unlock Gryphon Legion	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_capture_regions_mansion_of_eyes	Unlock Ice Guard (Glaives)	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_make_alliance	Unlock Heavy Bear War Sleds	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_retribution	Complete the Prologue	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_reveal	Unlock Elemental Bear	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_mission_riddles	Unlock Patriarch	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_trait	Yuri will gain or reinforce a trait	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_trait_2	Yuri will gain or reinforce a different trait	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_tribute_1	Gain powerful item	false
+campaign_payload_ui_details_description_dummy_wh3_prologue_tribute_2	Gain average item and diplomatic bonus with tribes	false
+campaign_payload_ui_details_description_dummy_wh_dlc03_moon_chance	[[col:green]]Good chance of favourable outcome[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh_dlc03_moon_chance_none	[[col:red]]Less favourable outcome[[/col]]	false
+campaign_payload_ui_details_description_dummy_wh_dlc04_vmp_vlad_von_carstein_the_carstein_ring_stage_2_3	Host a masquerade. {{tr:treasury}}: -5000	false
+campaign_payload_ui_details_description_dummy_wh_main_dwf_thorgrim_grudgebearer_axe_of_grimnir_stage_1	Invest in the Guild's workshops. {{tr:treasury}}: -5000	false
+campaign_payload_ui_details_description_dummy_wh_main_dwf_thorgrim_grudgebearer_dragon_crown_of_karaz_stage_2.3	Supply the fugitives. {{tr:treasury}}: -2500	false
+campaign_payload_ui_details_description_dummy_wh_main_emp_karl_franz_ghal_maraz_stage_2	Fund the astrolabe adjustments. {{tr:treasury}}: -5000	false
+campaign_payload_ui_details_description_dummy_wh_main_vmp_mannfred_von_carstein_sword_of_unholy_power_stage_2	Pay the Necromancer for the book. {{tr:treasury}}: -5000	false
+campaign_payload_ui_details_description_dummy_witchwood_heal	Securing this location will help to heal the Witchwood	false
+campaign_payload_ui_details_description_faction_pooled_resource_transaction	%1%: %+2%	false
+campaign_payload_ui_details_description_faction_slaves_change	{{tr:slaves}}: %+1%	false
+campaign_payload_ui_details_description_favour_points_change	Allegiance: %+1% with %2%	false
+campaign_payload_ui_details_description_gain_ancillary		false
+campaign_payload_ui_details_description_gain_crafted_item		false
+campaign_payload_ui_details_description_gain_trait	%1% gains trait: %2%	false
+campaign_payload_ui_details_description_give_region		false
+campaign_payload_ui_details_description_gravitas_change		false
+campaign_payload_ui_details_description_honour_change_negative		false
+campaign_payload_ui_details_description_honour_change_positive		false
+campaign_payload_ui_details_description_influence_change	Influence: %+1%	false
+campaign_payload_ui_details_description_issue_mission		false
+campaign_payload_ui_details_description_kill_character		false
+campaign_payload_ui_details_description_lose_ancillary		false
+campaign_payload_ui_details_description_lose_trait	%1% loses trait: %2%	false
+campaign_payload_ui_details_description_loyalty_change	Loyalty: %+1%	false
+campaign_payload_ui_details_description_malakai_dilemmas_continue	[[col:yellow]]The Dilemma continues...[[/col]]	false
+campaign_payload_ui_details_description_malakai_dilemmas_end	[[col:yellow]]The Dilemma Ends[[/col]]	false
+campaign_payload_ui_details_description_marriage_random		false
+campaign_payload_ui_details_description_military_force_pooled_resource_transaction	%2%: %+3% for %1%	false
+campaign_payload_ui_details_description_party_power_change		false
+campaign_payload_ui_details_description_province_slaves_change	{{tr:slaves}} in %2%: %+1%	false
+campaign_payload_ui_details_description_rebellion	Rebellion	false
+campaign_payload_ui_details_description_remove_event_restricted_unit	%1%	false
+campaign_payload_ui_details_description_remove_unit	Destroy unit: %1%	false
+campaign_payload_ui_details_description_spawn_agent	Hero recruited: %1%	false
+campaign_payload_ui_details_description_spawn_agent_home_region	Hero recruited at %2%: %1%	false
+campaign_payload_ui_details_description_spawn_agent_home_region_unknown		false
+campaign_payload_ui_details_description_spawn_unit	%1%	false
+campaign_payload_ui_details_description_spawn_unit_home_region	%1%	false
+campaign_payload_ui_details_description_treasury_change	{{tr:treasury}}: %+1%	false
+campaign_payload_ui_details_description_wound_character	Character wounded: %1%	false

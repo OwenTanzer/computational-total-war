@@ -1,0 +1,92 @@
+{
+  "catalog_schema_version": 1,
+  "project": "Computational Total War",
+  "purpose": "Machine-readable context for AI agents answering questions and performing analysis about Total War: WARHAMMER III.",
+  "snapshot": {
+    "game": "warhammer_3",
+    "patch": "8.1.1",
+    "steam_build_id": 24237342,
+    "unit_scale": "ultra"
+  },
+  "authority_order": [
+    "normalized production datasets",
+    "production manifests and schema inventories",
+    "source exports",
+    "faction guides",
+    "external sources"
+  ],
+  "conventions": {
+    "canonical_identifiers": "Stable game database keys are authoritative; localized labels are descriptive.",
+    "blank_values": "Blank means not applicable or unavailable from the decoded source relation.",
+    "zero_values": "Zero means an observed numeric zero.",
+    "percentages": "Percentage-like values are stored as percentage points unless a schema inventory says otherwise.",
+    "lists": "One-to-many relationships are represented as typed rows or lookup tables, not delimited cells.",
+    "generated_files": "Do not edit production CSV files or the GeoPackage by hand."
+  },
+  "agent_loading_strategy": [
+    "Read this catalog and the selected dataset README first.",
+    "Read the dataset manifest and schema inventory before loading record files.",
+    "Use an index to select only relevant race, faction, character, or table files.",
+    "Filter CSV rows or query the GeoPackage instead of placing entire large datasets in model context.",
+    "Check the validation report and preserve documented caveats in the answer.",
+    "Use faction guides for mechanics that the normalized datasets deliberately omit."
+  ],
+  "datasets": {
+    "units": {
+      "description": "Analysis-ready unit statistics and relational combat lookups for 24 race rosters.",
+      "readme": "data/unit_stats/README.md",
+      "manifest": "data/unit_stats/dataset_manifest.json",
+      "schema": "data/unit_stats/schema_inventory__v2.csv",
+      "validation": "data/unit_stats/audit_report.json",
+      "primary_records": "data/unit_stats/normalized/*.csv",
+      "lookups": "data/unit_stats/lookups/*.csv",
+      "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
+      "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys."
+    },
+    "skill_trees": {
+      "description": "Long-form skill trees for 500 character subtypes, including conditional node sets, prerequisites, locks, and effects.",
+      "readme": "data/skill_trees/README.md",
+      "manifest": "data/skill_trees/dataset_manifest.json",
+      "schema": "data/skill_trees/schema_inventory__v1.csv",
+      "validation": "data/skill_trees/audit_report.json",
+      "index": "data/skill_trees/character_index__wh3__8.1.1.csv",
+      "primary_records": "data/skill_trees/characters/<race_slug>/<character>.csv",
+      "source_manifest": "data/skill_trees/source_exports/source_manifest.json",
+      "preferred_access": "Use the character index to locate one character file, then filter by record_type and node_set_key."
+    },
+    "economy": {
+      "description": "Standardized building and ordinary economy facts for 104 playable factions.",
+      "readme": "data/economy/README.md",
+      "manifest": "data/economy/dataset_manifest.json",
+      "schema": "data/economy/schema_inventory__v1.csv",
+      "validation": "data/economy/audit_report.json",
+      "index": "data/economy/faction_index__wh3__8.1.1.csv",
+      "primary_records": "data/economy/factions/<race_slug>/<faction_key>.csv",
+      "source_manifest": "data/economy/source_exports/source_manifest.json",
+      "preferred_access": "Use the faction index to locate one faction file; consult faction guides for deliberately omitted bespoke mechanics."
+    },
+    "campaign_map": {
+      "description": "Queryable Immortal Empires geography, starts, objectives, topology, and battle-map relationships.",
+      "readme": "data/campaign_map/README.md",
+      "validation": "data/campaign_map/validation_report.json",
+      "primary_records": "data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg",
+      "format": "GeoPackage 1.3 / SQLite",
+      "preferred_access": "Query narrow tables or views with SQLite; begin with the reference views named in the dataset README."
+    },
+    "faction_guides": {
+      "description": "Qualitative, source-backed campaign mechanics not represented safely in the normalized catalogs.",
+      "readme": "data/faction_guides/README.md",
+      "research_spec": "data/faction_guides/RESEARCH_SPEC.md",
+      "index": "data/faction_guides/queue.json",
+      "primary_records": "data/faction_guides/races/<race_slug>.md",
+      "preferred_access": "Select one race guide. Treat explicit caveats and snapshot boundaries as part of the answer."
+    }
+  },
+  "out_of_scope": [
+    "Live game state and save files",
+    "Changes after patch 8.1.1 / Steam build 24237342",
+    "Mods unless explicitly represented in a future dataset",
+    "Runtime effects that are not exposed by decoded source relations or documented guides"
+  ]
+}
+

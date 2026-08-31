@@ -1,0 +1,172 @@
+import { createHash } from "node:crypto";
+import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const ENDPOINT = "http://127.0.0.1:45127/mcp";
+const OUTPUT = path.resolve(ROOT, process.argv[2] ?? "work/source_exports__wh3__8.1.1");
+
+const TABLES = [
+  "main_units_tables",
+  "main_unit_faction_overrides_tables",
+  "land_units_tables",
+  "land_units_to_extra_engines_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "battle_entities_tables",
+  "battle_entity_stats_tables",
+  "battle_entities_size_enums_tables",
+  "battlefield_engines_tables",
+  "mountable_artillery_units_tables",
+  "mountable_artillery_units_custom_battles_tables",
+  "mounts_tables",
+  "units_custom_battle_mounts_tables",
+  "units_custom_battle_permissions_tables",
+  "units_to_groupings_military_permissions_tables",
+  "groupings_military_tables",
+  "factions_tables",
+  "cultures_subcultures_tables",
+  "custom_battle_factions_tables",
+  "unit_variants_tables",
+  "unit_variant_upgrades_tables",
+  "unit_armour_types_tables",
+  "unit_shield_types_tables",
+  "unit_attributes_tables",
+  "unit_attributes_groups_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_abilities_tables",
+  "unit_missile_weapon_junctions_tables",
+  "models_entity_weapons_tables",
+  "melee_weapons_tables",
+  "missile_weapons_tables",
+  "missile_weapons_to_projectiles_tables",
+  "projectiles_tables",
+  "projectiles_explosions_tables",
+  "projectile_penetration_junctions_tables",
+  "projectile_shrapnels_tables",
+  "projectiles_scaling_damages_tables",
+  "projectile_homing_params_tables",
+  "projectile_shot_type_enum_tables",
+  "projectile_shot_type_displays_tables",
+  "battle_entity_effects_tables",
+  "battle_entity_effects_junctions_tables",
+  "special_ability_phases_tables",
+  "special_ability_phase_stat_effects_tables",
+];
+
+function parseSse(text) {
+  return text
+    .split(/\r?\n/)
+    .filter((line) => line.startsWith("data: {") || line.startsWith("data:{"))
+    .map((line) => JSON.parse(line.slice(line.indexOf("{")).trim()));
+}
+
+async function post(body, sessionId) {
+  const headers = {
+    Accept: "application/json, text/event-stream",
+    "Content-Type": "application/json",
+  };
+  if (sessionId) headers["Mcp-Session-Id"] = sessionId;
+  const response = await fetch(ENDPOINT, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+  });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+  return { response, messages: parseSse(await response.text()) };
+}
+
+let requestId = 1;
+const initialized = await post({
+  jsonrpc: "2.0",
+  id: requestId++,
+  method: "initialize",
+  params: {
+    protocolVersion: "2025-03-26",
+    capabilities: {},
+    clientInfo: { name: "computational-total-war-extractor", version: "1.0.0" },
+  },
+});
+const sessionId = initialized.response.headers.get("mcp-session-id");
+if (!sessionId) throw new Error("RPFM did not return an MCP session ID.");
+await post({ jsonrpc: "2.0", method: "notifications/initialized" }, sessionId);
+
+async function call(name, args = {}) {
+  const id = requestId++;
+  const response = await post(
+    { jsonrpc: "2.0", id, method: "tools/call", params: { name, arguments: args } },
+    sessionId,
+  );
+  const message = response.messages.find((item) => item.id === id);
+  if (!message) throw new Error(`No response from RPFM for ${name}.`);
+  if (message.error) throw new Error(`${name}: ${message.error.message}`);
+  if (message.result?.isError) {
+    throw new Error(`${name}: ${message.result.content?.map((item) => item.text).join("\n")}`);
+  }
+  const text = message.result?.content?.find((item) => item.type === "text")?.text;
+  if (text === undefined) return null;
+  try {
+    return JSON.parse(text);
+  } catch {
+    return text;
+  }
+}
+
+async function walkFiles(directory) {
+  const results = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const fullPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) results.push(...(await walkFiles(fullPath)));
+    else if (entry.isFile()) results.push(fullPath);
+  }
+  return results;
+}
+
+await mkdir(OUTPUT, { recursive: true });
+await call("set_game_selected", { game_name: "warhammer_3", rebuild_dependencies: true });
+const loaded = await call("load_all_ca_pack_files");
+const packKey = loaded?.StringContainerInfo?.[0];
+if (!packKey) throw new Error("RPFM did not return a key for the merged CA packs.");
+
+for (let offset = 0; offset < TABLES.length; offset += 8) {
+  const batch = TABLES.slice(offset, offset + 8);
+  const sourcePaths = { PackFile: batch.map((table) => ({ Folder: `db/${table}` })) };
+  await call("extract_packed_files", {
+    pack_key: packKey,
+    source_paths: JSON.stringify(sourcePaths),
+    destination_path: OUTPUT,
+    export_as_tsv: true,
+  });
+  console.log(`Exported ${batch.join(", ")}`);
+}
+
+await call("extract_packed_files", {
+  pack_key: packKey,
+  source_paths: JSON.stringify({ PackFile: [{ Folder: "text/db" }] }),
+  destination_path: OUTPUT,
+  export_as_tsv: true,
+});
+console.log("Exported English localisation tables");
+
+const files = (await walkFiles(OUTPUT)).filter((file) => !file.endsWith("source_manifest.json"));
+const manifestFiles = [];
+for (const file of files.sort()) {
+  const contents = await readFile(file);
+  const info = await stat(file);
+  manifestFiles.push({
+    path: path.relative(OUTPUT, file).replaceAll(path.sep, "/"),
+    bytes: info.size,
+    sha256: createHash("sha256").update(contents).digest("hex"),
+  });
+}
+const manifest = {
+  game: "warhammer_3",
+  patch: "8.1.1",
+  steam_build_id: "24237342",
+  decoder: "RPFM 5.0.6",
+  extracted_at_utc: new Date().toISOString(),
+  table_folders_requested: TABLES,
+  files: manifestFiles,
+};
+await writeFile(path.join(OUTPUT, "source_manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+console.log(`Wrote ${manifestFiles.length} source exports to ${OUTPUT}`);

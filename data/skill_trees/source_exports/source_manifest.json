@@ -1,0 +1,199 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "decoder": "RPFM 5.0.6",
+  "extracted_at_utc": "2026-08-25T01:20:14.549Z",
+  "table_folders_requested": [
+    "factions_tables",
+    "agent_subtypes_tables",
+    "unique_agents_tables",
+    "frontend_faction_leaders_tables",
+    "campaign_to_agent_subtypes_tables",
+    "faction_agent_permitted_subtypes_tables",
+    "character_skill_node_sets_tables",
+    "character_skill_node_set_items_tables",
+    "character_skill_nodes_tables",
+    "character_skill_node_links_tables",
+    "character_skill_node_link_types_tables",
+    "character_skill_nodes_skill_locks_tables",
+    "character_skill_node_ancillary_locks_tables",
+    "character_skills_tables",
+    "character_skill_level_details_tables",
+    "character_skill_level_to_effects_junctions_tables",
+    "character_skill_level_to_ancillaries_junctions_tables",
+    "character_skill_level_to_dilemmas_junctions_tables",
+    "effects_tables",
+    "ancillaries_tables",
+    "dilemmas_tables"
+  ],
+  "localisation_files_requested": [
+    "agent_subtypes__.loc",
+    "character_skills__.loc",
+    "character_skill_level_details__.loc",
+    "character_skill_node_sets__.loc",
+    "effects__.loc",
+    "effects_additional_tooltip_details__.loc",
+    "ancillaries__.loc",
+    "dilemmas__.loc",
+    "factions__.loc",
+    "frontend_factions__.loc"
+  ],
+  "files": [
+    {
+      "path": "db/agent_subtypes_tables/data__.tsv",
+      "bytes": 159599,
+      "sha256": "fe7741ad3267f7cee5e4a5112c16349e20d949802d34e9519dd1ccd1b77aabe1"
+    },
+    {
+      "path": "db/ancillaries_tables/data__.tsv",
+      "bytes": 569122,
+      "sha256": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e"
+    },
+    {
+      "path": "db/campaign_to_agent_subtypes_tables/data__.tsv",
+      "bytes": 7496,
+      "sha256": "be3fe3644a35097901268d910dd2b504eea93f413b4756c16a0d90a54bdc1d69"
+    },
+    {
+      "path": "db/character_skill_level_details_tables/data__.tsv",
+      "bytes": 123746,
+      "sha256": "f1ecd3427aaac0dbb40095a2a215bcf03f56a230d53dbe89213c15f81307ae88"
+    },
+    {
+      "path": "db/character_skill_level_to_ancillaries_junctions_tables/data__.tsv",
+      "bytes": 82428,
+      "sha256": "ea322381ccd47551cc6422255cbc24d62e6d757eb4ad0a5951ad3ccf8ed71254"
+    },
+    {
+      "path": "db/character_skill_level_to_dilemmas_junctions_tables/data__.tsv",
+      "bytes": 1672,
+      "sha256": "ebe27d0d4eb4db5b29fbfa9f57f4cbbe408552f7557c8a333d32f5bac3bef528"
+    },
+    {
+      "path": "db/character_skill_level_to_effects_junctions_tables/data__.tsv",
+      "bytes": 2289394,
+      "sha256": "ab892729845f6eb306ead34a8b7553711871f17824cbecba26e5674ed746915a"
+    },
+    {
+      "path": "db/character_skill_node_ancillary_locks_tables/data__.tsv",
+      "bytes": 680,
+      "sha256": "f558b3b86638a22df2c445f83c937f938b57af2fb8c8003c46d2bf04aefd2548"
+    },
+    {
+      "path": "db/character_skill_node_link_types_tables/data__.tsv",
+      "bytes": 126,
+      "sha256": "3c50a8bb6092967333c192ce5364ed997b69219627fd9208386a2cd4d611ca80"
+    },
+    {
+      "path": "db/character_skill_node_links_tables/data__.tsv",
+      "bytes": 2669820,
+      "sha256": "5c2545755cdff611a4b72f45886c76a85c3423e6d0bd250027a68500595abbc7"
+    },
+    {
+      "path": "db/character_skill_node_set_items_tables/data__.tsv",
+      "bytes": 2939135,
+      "sha256": "01a3d27f3487923a2b19a9eb06b036189f1c672f9530211fc2c41a87a926d67c"
+    },
+    {
+      "path": "db/character_skill_node_sets_tables/data__.tsv",
+      "bytes": 53931,
+      "sha256": "145604ab7bfe433294f299c94d726a6409f2c8d4eb3dab55b106bb9c4a980e50"
+    },
+    {
+      "path": "db/character_skill_nodes_skill_locks_tables/data__.tsv",
+      "bytes": 244740,
+      "sha256": "f0ecca457ff794e323cc04cb05b93b5d99f43738150eb90b0a11b5d47971ca32"
+    },
+    {
+      "path": "db/character_skill_nodes_tables/data__.tsv",
+      "bytes": 2752096,
+      "sha256": "3d79b912f01837cf599e5818ac581c94a51c807c2d35ba33df65e93a1e9dbe6d"
+    },
+    {
+      "path": "db/character_skills_tables/data__.tsv",
+      "bytes": 1264740,
+      "sha256": "26a8d5a6c99fbf202a9e12888e8660f5183651dfac80391ecdf8d218680a84c6"
+    },
+    {
+      "path": "db/dilemmas_tables/data__.tsv",
+      "bytes": 523944,
+      "sha256": "ba6200d6d4194ae09ba617de88a9778d4137d4a397f438980cfcf24d36540581"
+    },
+    {
+      "path": "db/effects_tables/data__.tsv",
+      "bytes": 1571155,
+      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+    },
+    {
+      "path": "db/faction_agent_permitted_subtypes_tables/data__.tsv",
+      "bytes": 654685,
+      "sha256": "62287116f11c7a8dfb5ec8e79d01ff3008f6b2d389f6077ddff81b7e8ba2c29d"
+    },
+    {
+      "path": "db/factions_tables/data__.tsv",
+      "bytes": 403358,
+      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+    },
+    {
+      "path": "db/frontend_faction_leaders_tables/data__.tsv",
+      "bytes": 53250,
+      "sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f"
+    },
+    {
+      "path": "db/unique_agents_tables/data__.tsv",
+      "bytes": 5404,
+      "sha256": "f5012ecc081ab1ca5309fa70a0527bd2a011dbbb6e61c565cd35507e8692a407"
+    },
+    {
+      "path": "text/db/agent_subtypes__.loc.tsv",
+      "bytes": 129516,
+      "sha256": "cadb6b3e4009b528ec57406bed44190b54631a28cdb84a1f9bdebd2f307f4328"
+    },
+    {
+      "path": "text/db/ancillaries__.loc.tsv",
+      "bytes": 996769,
+      "sha256": "edf229248ca6ef97a9ad63205f42ddc5a7be0432a74d8758a02657be7067b43f"
+    },
+    {
+      "path": "text/db/character_skill_level_details__.loc.tsv",
+      "bytes": 444930,
+      "sha256": "4d022f7bc557dd4bc3e7ad6ff1b02426682fdc09e3efaa1090fd701ae3f4f831"
+    },
+    {
+      "path": "text/db/character_skill_node_sets__.loc.tsv",
+      "bytes": 55980,
+      "sha256": "f47242dac4212fb73a3a9836957072503f0598f840ad631c5e7771d243df3204"
+    },
+    {
+      "path": "text/db/character_skills__.loc.tsv",
+      "bytes": 1713691,
+      "sha256": "c92c2db4d5e7bb8d52a0ffc89f7b81c5d78b2fef42695ea3bbf9f0a8a4e9510a"
+    },
+    {
+      "path": "text/db/dilemmas__.loc.tsv",
+      "bytes": 591781,
+      "sha256": "983430e425e576ddb0e736f0740380553fedc08826bcc94787860b01616475f9"
+    },
+    {
+      "path": "text/db/effects__.loc.tsv",
+      "bytes": 2050603,
+      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+    },
+    {
+      "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
+      "bytes": 73434,
+      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+    },
+    {
+      "path": "text/db/factions__.loc.tsv",
+      "bytes": 297539,
+      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+    },
+    {
+      "path": "text/db/frontend_factions__.loc.tsv",
+      "bytes": 90478,
+      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+    }
+  ]
+}

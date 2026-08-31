@@ -1,0 +1,1435 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "decoder": "RPFM 5.0.6",
+  "extracted_at_utc": "2026-08-24T23:25:11.100Z",
+  "table_folders_requested": [
+    "main_units_tables",
+    "main_unit_faction_overrides_tables",
+    "land_units_tables",
+    "land_units_to_extra_engines_tables",
+    "land_units_to_unit_abilites_junctions_tables",
+    "battle_entities_tables",
+    "battle_entity_stats_tables",
+    "battle_entities_size_enums_tables",
+    "battlefield_engines_tables",
+    "mountable_artillery_units_tables",
+    "mountable_artillery_units_custom_battles_tables",
+    "mounts_tables",
+    "units_custom_battle_mounts_tables",
+    "units_custom_battle_permissions_tables",
+    "units_to_groupings_military_permissions_tables",
+    "groupings_military_tables",
+    "factions_tables",
+    "cultures_subcultures_tables",
+    "custom_battle_factions_tables",
+    "unit_variants_tables",
+    "unit_variant_upgrades_tables",
+    "unit_armour_types_tables",
+    "unit_shield_types_tables",
+    "unit_attributes_tables",
+    "unit_attributes_groups_tables",
+    "unit_attributes_to_groups_junctions_tables",
+    "unit_abilities_tables",
+    "unit_missile_weapon_junctions_tables",
+    "models_entity_weapons_tables",
+    "melee_weapons_tables",
+    "missile_weapons_tables",
+    "missile_weapons_to_projectiles_tables",
+    "projectiles_tables",
+    "projectiles_explosions_tables",
+    "projectile_penetration_junctions_tables",
+    "projectile_shrapnels_tables",
+    "projectiles_scaling_damages_tables",
+    "projectile_homing_params_tables",
+    "projectile_shot_type_enum_tables",
+    "projectile_shot_type_displays_tables",
+    "battle_entity_effects_tables",
+    "battle_entity_effects_junctions_tables",
+    "special_ability_phases_tables",
+    "special_ability_phase_stat_effects_tables"
+  ],
+  "files": [
+    {
+      "path": "db/battle_entities_size_enums_tables/data__.tsv",
+      "bytes": 126,
+      "sha256": "e95d4ad838fdb540f559b3906b8bf2ad09806b96156b980afd76def85199ea9a"
+    },
+    {
+      "path": "db/battle_entities_tables/data__.tsv",
+      "bytes": 553136,
+      "sha256": "788ab21d90d1c3da71b3e3f6e1aac9bc316291fc708b79bf550f2f0eb9da3107"
+    },
+    {
+      "path": "db/battle_entity_effects_junctions_tables/data__.tsv",
+      "bytes": 9004,
+      "sha256": "2dd933ab503bf4b62a0abeaf5f6aabc626e11022bb0deeeb3c13857abf13918a"
+    },
+    {
+      "path": "db/battle_entity_effects_tables/data__.tsv",
+      "bytes": 23452,
+      "sha256": "5793ecdaf39d847ab14db5fce88e0ad8095e7f23ea3f68eae7fb3779f0aab385"
+    },
+    {
+      "path": "db/battle_entity_stats_tables/data__.tsv",
+      "bytes": 7766,
+      "sha256": "b8660a9912f4f1cc59af983c3afc415be1ce3595f631c32c913fe942af3f08f1"
+    },
+    {
+      "path": "db/battlefield_engines_tables/data__.tsv",
+      "bytes": 62390,
+      "sha256": "a53b6298515a2ea6ad0baeaba71326a7caf4f2fdc687235a35e500caa1da62c0"
+    },
+    {
+      "path": "db/cultures_subcultures_tables/data__.tsv",
+      "bytes": 2390,
+      "sha256": "9755046455f30f00c485edc1a0f84d9747f7db7de4953e1d8371c97a321e4425"
+    },
+    {
+      "path": "db/custom_battle_factions_tables/data__.tsv",
+      "bytes": 11643,
+      "sha256": "a05c45ac8fde26c6632295a236b33ae8acaa380d0421b91532ecc22dd3dfc802"
+    },
+    {
+      "path": "db/factions_tables/data__.tsv",
+      "bytes": 403358,
+      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+    },
+    {
+      "path": "db/groupings_military_tables/data__.tsv",
+      "bytes": 3137,
+      "sha256": "fb1acedd2e3af55f08c2be3ca9e514960a083deb9be094c160631f711fb1eb30"
+    },
+    {
+      "path": "db/land_units_tables/data__.tsv",
+      "bytes": 1556408,
+      "sha256": "8dabd907058349e37b69eb0162e4f85729a30055bd91557294cbf4b67647e36c"
+    },
+    {
+      "path": "db/land_units_to_extra_engines_tables/data__.tsv",
+      "bytes": 688,
+      "sha256": "e05c370d30e145abeca70d2b21c87aabd49f38a25d64957ae13b5b56b965606c"
+    },
+    {
+      "path": "db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+      "bytes": 678116,
+      "sha256": "a027a2fe0379c1ff43d03d2854691b0226d7f9556ded4a741ef4bd23f9ee39c6"
+    },
+    {
+      "path": "db/main_unit_faction_overrides_tables/data__.tsv",
+      "bytes": 6935,
+      "sha256": "5cfad2eb746cc5073620c076c88df1673e52f09442598eef239ae1ba2f73e891"
+    },
+    {
+      "path": "db/main_units_tables/data__.tsv",
+      "bytes": 994224,
+      "sha256": "85e2b00194b5408c14967d14a7bf3bc4ed3a61ab15ab0205bc41d5dc41cc780f"
+    },
+    {
+      "path": "db/melee_weapons_tables/data__.tsv",
+      "bytes": 151728,
+      "sha256": "0dfcbf9cb228e20999a54fb4050834b06480feb009eb8fc5535e291da4eef4b1"
+    },
+    {
+      "path": "db/missile_weapons_tables/data__.tsv",
+      "bytes": 80879,
+      "sha256": "eaf7070f02b119d11e95dae85ab13fe238cfa712c82cecdbe0d33f26952ef63d"
+    },
+    {
+      "path": "db/missile_weapons_to_projectiles_tables/data__.tsv",
+      "bytes": 1224,
+      "sha256": "91041da9c1c4a1bed86748770d53bce99cfb7f22f0ef5b57a284764cd9aa523e"
+    },
+    {
+      "path": "db/models_entity_weapons_tables/data__.tsv",
+      "bytes": 952,
+      "sha256": "bf92f98666707197cb62ca0dffedd75a90de94c7f55b6fc427ea72c97de46ab6"
+    },
+    {
+      "path": "db/mounts_tables/data__.tsv",
+      "bytes": 58832,
+      "sha256": "cd92cb68a12a2ee99140dd66edf42bb228c63bf6b77b7a5c07844d0233cb9232"
+    },
+    {
+      "path": "db/projectile_homing_params_tables/data__.tsv",
+      "bytes": 1129,
+      "sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776"
+    },
+    {
+      "path": "db/projectile_penetration_junctions_tables/data__.tsv",
+      "bytes": 1893,
+      "sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6"
+    },
+    {
+      "path": "db/projectile_shot_type_displays_tables/data__.tsv",
+      "bytes": 1548,
+      "sha256": "099114635929fc8b51270d4b851cf1e5ca243f8a68130d62094badb1f21c3746"
+    },
+    {
+      "path": "db/projectile_shot_type_enum_tables/data__.tsv",
+      "bytes": 1150,
+      "sha256": "da2c6262d2a751cd2da5da7d898da4e6366586a767be8e1684dbbe01f2315033"
+    },
+    {
+      "path": "db/projectile_shrapnels_tables/data__.tsv",
+      "bytes": 2525,
+      "sha256": "37118fe30b0730ee6c225912865939814351c7f7583ad65531955c01172ad839"
+    },
+    {
+      "path": "db/projectiles_explosions_tables/data__.tsv",
+      "bytes": 98409,
+      "sha256": "8acd0366945a4a7927ab3521e0d2ad3bbf57c9f8ecd7286fad67bb5153eb5262"
+    },
+    {
+      "path": "db/projectiles_scaling_damages_tables/data__.tsv",
+      "bytes": 684,
+      "sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230"
+    },
+    {
+      "path": "db/projectiles_tables/data__.tsv",
+      "bytes": 453634,
+      "sha256": "2264a4656190c26b2d2abfca5c279880749139017239cec7a494e4e5f638f4f1"
+    },
+    {
+      "path": "db/special_ability_phase_stat_effects_tables/data__.tsv",
+      "bytes": 217339,
+      "sha256": "04b31a2115564fb30244619af84d45f239a233111055c7de1bb1b4ac01d1be39"
+    },
+    {
+      "path": "db/special_ability_phases_tables/data__.tsv",
+      "bytes": 542874,
+      "sha256": "bd1c0ad7b6b1de800f75daa23fdeb22d3064e26a0af311ee9c6359631381f0be"
+    },
+    {
+      "path": "db/unit_abilities_tables/data__.tsv",
+      "bytes": 501903,
+      "sha256": "3d5761ebcc4774f2b1ab26844f37ca50c78927c2b74dec900bf55bd954156f56"
+    },
+    {
+      "path": "db/unit_armour_types_tables/data__.tsv",
+      "bytes": 3310,
+      "sha256": "9dc691d654582b414f29690995966f39324739b41e568046a41f0ba50ad4e002"
+    },
+    {
+      "path": "db/unit_attributes_groups_tables/data__.tsv",
+      "bytes": 88280,
+      "sha256": "735478cd027b10b8209dffc8102114fce51bacd1327e371c7d019ef4a4acf85b"
+    },
+    {
+      "path": "db/unit_attributes_tables/data__.tsv",
+      "bytes": 1172,
+      "sha256": "d3f4af100ebd6dacbc1de706288ee86a05ed39b434093850b4dfe0bf14a23a2d"
+    },
+    {
+      "path": "db/unit_attributes_to_groups_junctions_tables/data__.tsv",
+      "bytes": 405732,
+      "sha256": "68015e2284d7de70c0c3b89de69d39fd5f7bc2f0ff322ac160b4f55a1fc2233a"
+    },
+    {
+      "path": "db/unit_missile_weapon_junctions_tables/data__.tsv",
+      "bytes": 30849,
+      "sha256": "1f137ae9dd3b5939dd2ae6d58f74b7de05e5114dcd4571a3999b8941d110df3e"
+    },
+    {
+      "path": "db/unit_shield_types_tables/data__.tsv",
+      "bytes": 1161,
+      "sha256": "05e79bfb2f078215fdf5b074d2d5c63411c664e431bcbabc95361384d2d6a9c0"
+    },
+    {
+      "path": "db/unit_variants_tables/data__.tsv",
+      "bytes": 325136,
+      "sha256": "ea669568933edcd7898bb626357ca835c0fd34eb7cddf041126db0a325a30811"
+    },
+    {
+      "path": "db/units_custom_battle_mounts_tables/data__.tsv",
+      "bytes": 82141,
+      "sha256": "bc41d66b3823e31676dafab4ecafe711ccb8880b55398750274957c0d6c93487"
+    },
+    {
+      "path": "db/units_custom_battle_permissions_tables/data__.tsv",
+      "bytes": 401804,
+      "sha256": "8c474b03c1930f274bb24a03cdb96806ba8ea830d503e12fbf9ab82bdfd43c55"
+    },
+    {
+      "path": "db/units_to_groupings_military_permissions_tables/data__.tsv",
+      "bytes": 260002,
+      "sha256": "170aa07db3c9f821ca2fd451d36612ed83338cf7956a0e7877bd863355d340e3"
+    },
+    {
+      "path": "text/db/abilities__.loc.tsv",
+      "bytes": 2056,
+      "sha256": "1e4d07c8b50b1ae8419b78937e29b04834663014eff860a62e1eafee6678c22e"
+    },
+    {
+      "path": "text/db/achievements__.loc.tsv",
+      "bytes": 29470,
+      "sha256": "46767937483fcffd670d348f2a971bed5d8db0bea67e2683788b8b046d40b2ed"
+    },
+    {
+      "path": "text/db/advice_info_texts__.loc.tsv",
+      "bytes": 527197,
+      "sha256": "02d25dc95678d1050a1eebe979bc6b7e74fc17aa3b57eaa4b7e4429c043fde57"
+    },
+    {
+      "path": "text/db/advice_levels__.loc.tsv",
+      "bytes": 670605,
+      "sha256": "c87094132b7eebe884f70d1294deb413c29e5e63d8fa960cbd9e385b9f1531d0"
+    },
+    {
+      "path": "text/db/advisors__.loc.tsv",
+      "bytes": 521,
+      "sha256": "0c29b71c998711d892b735ac0935a1b1e72d21016a556f58f6077cde8c4e7c70"
+    },
+    {
+      "path": "text/db/agent_ability_categories__.loc.tsv",
+      "bytes": 268,
+      "sha256": "12c8800ce1a43901e46def083db6afa0080147fcbac99ba80539a35dffe4087d"
+    },
+    {
+      "path": "text/db/agent_actions__.loc.tsv",
+      "bytes": 62413,
+      "sha256": "11f22a1fbda5e7de2ea5157d965b1dfbf3d243c60bcb9d6f969844cc7d2497fd"
+    },
+    {
+      "path": "text/db/agent_culture_details__.loc.tsv",
+      "bytes": 36026,
+      "sha256": "f0d2aca1ca979eeccb1d68157ee64d0803e28122b677db1e9b472dd3f676e91d"
+    },
+    {
+      "path": "text/db/agent_localisations__.loc.tsv",
+      "bytes": 10964,
+      "sha256": "f7f023ee66e522645208a0df3bf58a6d98d74ba66dc0770b2e0c65b648e34a18"
+    },
+    {
+      "path": "text/db/agent_recruitment_categories__.loc.tsv",
+      "bytes": 14749,
+      "sha256": "b788e6c66e029be17687014d30f5f75a44c1697a3e9fc6b2a6b826daabb0a8e3"
+    },
+    {
+      "path": "text/db/agent_subtypes__.loc.tsv",
+      "bytes": 129516,
+      "sha256": "cadb6b3e4009b528ec57406bed44190b54631a28cdb84a1f9bdebd2f307f4328"
+    },
+    {
+      "path": "text/db/aide_de_camp_speeches__.loc.tsv",
+      "bytes": 5979,
+      "sha256": "fc05d0a17db1f1ab1526ee9eda95d98e12b902a64a3a926fab79acb07f74aaab"
+    },
+    {
+      "path": "text/db/ancillaries__.loc.tsv",
+      "bytes": 996769,
+      "sha256": "edf229248ca6ef97a9ad63205f42ddc5a7be0432a74d8758a02657be7067b43f"
+    },
+    {
+      "path": "text/db/ancillaries_categories__.loc.tsv",
+      "bytes": 2154,
+      "sha256": "ff8a359689974b90b7427fef8a42533d1027c544e4db5427400a354e79d6febc"
+    },
+    {
+      "path": "text/db/ancillaries_subcategories__.loc.tsv",
+      "bytes": 808,
+      "sha256": "f4458d750ce94ac1f69002dac8033fad3f90b3cefe4d8c68a349d0a1ace40bae"
+    },
+    {
+      "path": "text/db/ancillary_sets__.loc.tsv",
+      "bytes": 20817,
+      "sha256": "dbd07eda5a2906c250701c40a79f28c196822b72428c9224b8ed52d3dd2ce940"
+    },
+    {
+      "path": "text/db/ancillary_uniqueness_groupings__.loc.tsv",
+      "bytes": 2076,
+      "sha256": "cf39e5e224a7316fedc706ae1705b24889f967e5b73a1c95c084b597a09b1944"
+    },
+    {
+      "path": "text/db/armory_item_set_ui_infos__.loc.tsv",
+      "bytes": 7839,
+      "sha256": "023be1c8390f2f4b83f6a58741eea9246ace3ddee70063249a884cdda005f5e8"
+    },
+    {
+      "path": "text/db/armory_item_ui_infos__.loc.tsv",
+      "bytes": 96456,
+      "sha256": "01dc3b81aabda22d553f68a9360a0a86c929eeab7a53bde742e3a83ce86ebb6d"
+    },
+    {
+      "path": "text/db/armory_item_variant_ui_infos__.loc.tsv",
+      "bytes": 139082,
+      "sha256": "f4059eb225856d0b6a477eb1985bf720023b624f03e8a41ec5148cb7d36e56a8"
+    },
+    {
+      "path": "text/db/armory_slot_type_ui_infos__.loc.tsv",
+      "bytes": 895,
+      "sha256": "696c9feb283a04c27e8e6d34cf4d110a687e926e34588576263a9d061b94ad9b"
+    },
+    {
+      "path": "text/db/battle_result_types__.loc.tsv",
+      "bytes": 6968,
+      "sha256": "981f6360343769249b6dfd216d9ad756b7dca4491398aac1369f6272f3f9c6c4"
+    },
+    {
+      "path": "text/db/battle_secondary_currency_source_types__.loc.tsv",
+      "bytes": 2770,
+      "sha256": "094d47652c09ad53cabe4717a66a8d00f975c431e192e83f605127a4a5c2f2b4"
+    },
+    {
+      "path": "text/db/battle_secondary_currency_types__.loc.tsv",
+      "bytes": 707,
+      "sha256": "89109adf839b5d0c48149962bc717c325e7ed3456dedd46c3eb0e714d1383e2a"
+    },
+    {
+      "path": "text/db/battle_set_piece_armies__.loc.tsv",
+      "bytes": 215173,
+      "sha256": "8ce805112abcb70ff5eaa11c0206d5b9ca2c57972aedbc0b3a37f871769a95bb"
+    },
+    {
+      "path": "text/db/battle_set_pieces__.loc.tsv",
+      "bytes": 254270,
+      "sha256": "9bced8659bc5f743dcc62eb6a6b752d14cd7fd2323eef6d8112b3fa362ba8c19"
+    },
+    {
+      "path": "text/db/battle_types__.loc.tsv",
+      "bytes": 3316,
+      "sha256": "12587b4f45093945bc1fa9f7a22884b4a22a8b0dd3958b928df8608f07dc9bbf"
+    },
+    {
+      "path": "text/db/battle_ui_cheatsheet_items__.loc.tsv",
+      "bytes": 12142,
+      "sha256": "f15695a6f9c423f019dd80460040a6040ad666e9018dd7d6ac0b2a6e37962122"
+    },
+    {
+      "path": "text/db/battle_weather_types__.loc.tsv",
+      "bytes": 241,
+      "sha256": "9f245fdad29cf4bf96982b741148c4ec7dc428d75d3802e19b84d79a73e3abf7"
+    },
+    {
+      "path": "text/db/battlefield_buildings_names__.loc.tsv",
+      "bytes": 14886,
+      "sha256": "c3ce91c1abf66bb0d4d1415a7cc1349c143e764a99134f1dc98a266d9850866a"
+    },
+    {
+      "path": "text/db/battlefield_siege_vehicles__.loc.tsv",
+      "bytes": 9833,
+      "sha256": "88a1ef155bae71b98fe300616e571469dfe56c55c2275a5301398265f9c5750e"
+    },
+    {
+      "path": "text/db/battles__.loc.tsv",
+      "bytes": 169116,
+      "sha256": "43076d83de39e0110cff31e712d7401fcf78344260304e9a56a254c885ef0be4"
+    },
+    {
+      "path": "text/db/bretonnia_vows__.loc.tsv",
+      "bytes": 4934,
+      "sha256": "d8e10887ba2058a4ecd6e9cfa13a780f3595449b43fa679ddbc757cce059d9d6"
+    },
+    {
+      "path": "text/db/building_chains__.loc.tsv",
+      "bytes": 503971,
+      "sha256": "281409957fea8a0dccc3e2b416fbb0eebf88b9fd99fa396056dae1815f818a55"
+    },
+    {
+      "path": "text/db/building_culture_variants__.loc.tsv",
+      "bytes": 587849,
+      "sha256": "e6e8fc21adb101a80ed839671e7b8d71390168eb905b5e42f150374d92c69d85"
+    },
+    {
+      "path": "text/db/building_description_texts__.loc.tsv",
+      "bytes": 165,
+      "sha256": "e6f5d1c8bf24ffacccde895643400f5a8b72383720459bf81d95d84c87131c56"
+    },
+    {
+      "path": "text/db/building_effect_context_expressions__.loc.tsv",
+      "bytes": 45949,
+      "sha256": "fc3164cf56665263ac357fbb2b65c27535701342d04066c9082c5fcc6c1835d6"
+    },
+    {
+      "path": "text/db/building_flavour_texts__.loc.tsv",
+      "bytes": 247619,
+      "sha256": "207d0279ad39c4b2632aec0a90089e9ce724937124df8d5b58b8f24bca2ff908"
+    },
+    {
+      "path": "text/db/building_sets__.loc.tsv",
+      "bytes": 52489,
+      "sha256": "8cd82086d9cafaa7c2edfc9643b3c8a969be2c70f22d2d06b8220c05214c93f3"
+    },
+    {
+      "path": "text/db/building_short_description_texts__.loc.tsv",
+      "bytes": 667255,
+      "sha256": "fab312f8eca05f40e37f0cf3ed1965d32fe024cfc946a479f52a33c96570c62a"
+    },
+    {
+      "path": "text/db/campaign_areas_of_interest__.loc.tsv",
+      "bytes": 19092,
+      "sha256": "f0713bee43cd7ef4d931c23afff2e9350c92c4bde5f171ae9bcbe839807c35b2"
+    },
+    {
+      "path": "text/db/campaign_border_display_modes__.loc.tsv",
+      "bytes": 799,
+      "sha256": "79d7d690802500e38f12dfc6c3246c7188ed8363444b5fa0fa3927953ae1ba37"
+    },
+    {
+      "path": "text/db/campaign_companion_army_details__.loc.tsv",
+      "bytes": 277,
+      "sha256": "0b5c844d2f5b119d33664da672bdc74cbaa526b27bfb0dd8671d1d65ba5269c8"
+    },
+    {
+      "path": "text/db/campaign_decision_choices__.loc.tsv",
+      "bytes": 8299,
+      "sha256": "1abf6af396de90c4609fd84b83930cd9639c29c8cae16cd792d5e60f23263a1d"
+    },
+    {
+      "path": "text/db/campaign_decisions__.loc.tsv",
+      "bytes": 5794,
+      "sha256": "1f31aa774c9f010ece57263d7d4d652bfe486ef5e977a6f5ea356c4653ebe917"
+    },
+    {
+      "path": "text/db/campaign_effect_scope_categories__.loc.tsv",
+      "bytes": 776,
+      "sha256": "68116a3c335282ba966732e740c6fce08ae9d1af14aca52ae0fa250ac7b7cc51"
+    },
+    {
+      "path": "text/db/campaign_effect_scopes__.loc.tsv",
+      "bytes": 45713,
+      "sha256": "092a0081a4bcabffae4dc3f01c96b7d9d15c44cd666d7d63fdf66de3e486e0f5"
+    },
+    {
+      "path": "text/db/campaign_factorial_ui_infos__.loc.tsv",
+      "bytes": 802,
+      "sha256": "9effd74dad5554642ffffb61125e7c56196f5434907b616001dbd466cc7600fc"
+    },
+    {
+      "path": "text/db/campaign_ground_types__.loc.tsv",
+      "bytes": 1335,
+      "sha256": "e4d47123f67280b97b383c82b4575ce36b37054a549110ecdba16970335340a2"
+    },
+    {
+      "path": "text/db/campaign_group_ritual_chains__.loc.tsv",
+      "bytes": 10975,
+      "sha256": "13bcbab31b70c96227232e5c461701d010d50c07903c93546be5a16e87f4cc6f"
+    },
+    {
+      "path": "text/db/campaign_group_rituals__.loc.tsv",
+      "bytes": 169816,
+      "sha256": "e443e2e6d3b38cd819f621d544263264ecd45c19cdfb435ff139783916ad1d29"
+    },
+    {
+      "path": "text/db/campaign_interactable_marker_infos__.loc.tsv",
+      "bytes": 20666,
+      "sha256": "a0e97085d71cc2d0f7b1aec1cea8518ada9d71cbdee4c6ba6480c8e3f1c61bba"
+    },
+    {
+      "path": "text/db/campaign_localised_strings__.loc.tsv",
+      "bytes": 340070,
+      "sha256": "dfa416f4ab0c87b28e856aba939c33e85a8836df4d042f68ad907117f4b9944a"
+    },
+    {
+      "path": "text/db/campaign_map_attritions__.loc.tsv",
+      "bytes": 23357,
+      "sha256": "6d6ea211913f383e9a44b69a79ca3ae3a3f99b63c97f44bb13e0816134d55eb6"
+    },
+    {
+      "path": "text/db/campaign_map_playable_areas__.loc.tsv",
+      "bytes": 2935,
+      "sha256": "899dd188e12ba86049d1a841505f243a542a272ff495b39e6e5eed5080b14047"
+    },
+    {
+      "path": "text/db/campaign_map_tooltip_texts__.loc.tsv",
+      "bytes": 11673,
+      "sha256": "e1cf737b9fe3e85c7bb898d773e468ba981199ece8035558f0576b2fec641c52"
+    },
+    {
+      "path": "text/db/campaign_map_winds_of_magic_areas__.loc.tsv",
+      "bytes": 28712,
+      "sha256": "83d927eee93f2ca57c7f97085700b53c4f4eec63b476b1f46663b1023d48c1ae"
+    },
+    {
+      "path": "text/db/campaign_map_winds_of_magic_strengths__.loc.tsv",
+      "bytes": 704,
+      "sha256": "d5ada14d9fb4a2338b091d1a8817b41c8996363f11c36879267b6b67539f9e5d"
+    },
+    {
+      "path": "text/db/campaign_payload_ui_details__.loc.tsv",
+      "bytes": 105432,
+      "sha256": "4fb49ceb03d4278b86633b34682d36af16f23e7dd16353e92022f92c1645f043"
+    },
+    {
+      "path": "text/db/campaign_post_battle_captive_options__.loc.tsv",
+      "bytes": 22593,
+      "sha256": "c4d1edbe617e5e4ead6c480a8ff42ef5c429076c3ec7fccf5f522882844b422d"
+    },
+    {
+      "path": "text/db/campaign_statistics_categories__.loc.tsv",
+      "bytes": 1774,
+      "sha256": "bbf0682bf38074c608873589745abc6288003b18b61c0f7d5ff5a26c8b044125"
+    },
+    {
+      "path": "text/db/campaign_statistics_strings__.loc.tsv",
+      "bytes": 8877,
+      "sha256": "c0e548b6be5ba272de12b177ba0757c604a153db4bd9a766c4c9cbad53c4cb0c"
+    },
+    {
+      "path": "text/db/campaign_storms__.loc.tsv",
+      "bytes": 767,
+      "sha256": "eecde342c98e198bbaa2948572c36e6dea0e29e8d2a7f726b156fff3030ae0d2"
+    },
+    {
+      "path": "text/db/campaign_streak_effects__.loc.tsv",
+      "bytes": 1279,
+      "sha256": "72b2e8e89b1b6d832c58a187f2e700589f28be41c2e8bb41e905e2a7ed19bd2f"
+    },
+    {
+      "path": "text/db/campaign_unit_stat_bonuses__.loc.tsv",
+      "bytes": 4603,
+      "sha256": "5eaee45b80d9c8dcc13d66132cc224c413d2868fc51dc746371cd404c399d1b0"
+    },
+    {
+      "path": "text/db/campaign_videos__.loc.tsv",
+      "bytes": 5525,
+      "sha256": "82fb88d16055060d916ae7825071264728ca9d7afc32cc120721ef1e4088e586"
+    },
+    {
+      "path": "text/db/campaigns__.loc.tsv",
+      "bytes": 507,
+      "sha256": "c1e364ef2b46adac0f85ad8abffe8862e983c62f40d126fb093445f471e27bc1"
+    },
+    {
+      "path": "text/db/capture_point_category_types__.loc.tsv",
+      "bytes": 552,
+      "sha256": "eed09adc0f61c57b3e74dd811f9b64ae4cf9612355a87b0ef89c91e0a91edcb2"
+    },
+    {
+      "path": "text/db/capture_point_types__.loc.tsv",
+      "bytes": 8042,
+      "sha256": "156175596df4b5f142d25eb8cf3461c21c52fa3dfa837a8aff0d5d5f0bc26abb"
+    },
+    {
+      "path": "text/db/cdir_events_categories__.loc.tsv",
+      "bytes": 5382,
+      "sha256": "5d2eb3c7cafecd6fd2e39e9ef30c5f2fe213857ea3c68d6f6d5ae325e9ddde1c"
+    },
+    {
+      "path": "text/db/cdir_events_dilemma_choice_details__.loc.tsv",
+      "bytes": 1004427,
+      "sha256": "b5234b3d9872a9c5d88450b1aaf7a5466ef21f5ea9239b37112df574c88f590a"
+    },
+    {
+      "path": "text/db/character_skill_level_details__.loc.tsv",
+      "bytes": 444930,
+      "sha256": "4d022f7bc557dd4bc3e7ad6ff1b02426682fdc09e3efaa1090fd701ae3f4f831"
+    },
+    {
+      "path": "text/db/character_skill_node_sets__.loc.tsv",
+      "bytes": 55980,
+      "sha256": "f47242dac4212fb73a3a9836957072503f0598f840ad631c5e7771d243df3204"
+    },
+    {
+      "path": "text/db/character_skills__.loc.tsv",
+      "bytes": 1713691,
+      "sha256": "c92c2db4d5e7bb8d52a0ffc89f7b81c5d78b2fef42695ea3bbf9f0a8a4e9510a"
+    },
+    {
+      "path": "text/db/character_training_dilemma_choice_agent_types__.loc.tsv",
+      "bytes": 874,
+      "sha256": "7b19d6682998169564aaa40980985e31039d832aa5d48711cd9c52cf366d0b38"
+    },
+    {
+      "path": "text/db/character_training_dilemma_choices__.loc.tsv",
+      "bytes": 4837,
+      "sha256": "114c7ebff042489d4e32abf840de7e6f3044b49f493f9ffc3e9159ae60dcd839"
+    },
+    {
+      "path": "text/db/character_training_dilemmas__.loc.tsv",
+      "bytes": 16523,
+      "sha256": "0afceb385ea190deec3500ac346030bf34985fde02eb0e970864e9b9c4473486"
+    },
+    {
+      "path": "text/db/character_training_groups__.loc.tsv",
+      "bytes": 287,
+      "sha256": "5d0fa2c65f087f73f9ff28d0f9664d8f824fdf8265eb6b358aaeefd8d1f37197"
+    },
+    {
+      "path": "text/db/character_trait_levels__.loc.tsv",
+      "bytes": 450418,
+      "sha256": "1508fda858bdb6e39b79e0e74b869decec7649112ffc514cca9679751f504f3b"
+    },
+    {
+      "path": "text/db/chat_shortcuts__.loc.tsv",
+      "bytes": 1007,
+      "sha256": "f95042eeba267420bc22f3a9aeea79c54676b12d7766b5b225f3e374eb791528"
+    },
+    {
+      "path": "text/db/commodity_unit_names__.loc.tsv",
+      "bytes": 1200,
+      "sha256": "97be12f7d04b82c58134844545bd30d06d9adbf577411615be7b13adf42c60af"
+    },
+    {
+      "path": "text/db/compass_directions__.loc.tsv",
+      "bytes": 1291,
+      "sha256": "9fca3ec9a3e31c9945fd405fdf2c0faf5825c6dc2f6b7db6675bd98024a2e71d"
+    },
+    {
+      "path": "text/db/cooking_ingredient_groups__.loc.tsv",
+      "bytes": 2016,
+      "sha256": "a3039881aaae64ff7b1bc53f449d9c7da064aca1e062de41a180822398900e59"
+    },
+    {
+      "path": "text/db/cooking_ingredients__.loc.tsv",
+      "bytes": 16246,
+      "sha256": "9b74a3dc0137c20d749eeaf8b74da48518344bf290ecf285bb747a2c90ad7036"
+    },
+    {
+      "path": "text/db/cooking_recipes__.loc.tsv",
+      "bytes": 21096,
+      "sha256": "70c2b96731e4c95c1ecb4cec372eae6ea48606a614d8d63e6be67c13cddc49c4"
+    },
+    {
+      "path": "text/db/culture_settlement_occupation_options__.loc.tsv",
+      "bytes": 69933,
+      "sha256": "19b3c822afcfe6a92b9923635f935acd51b2fad4cf6c9c7451aec2b8daea0df4"
+    },
+    {
+      "path": "text/db/cultures__.loc.tsv",
+      "bytes": 21424,
+      "sha256": "146b1ad207df35778e8e6cea173323640b02a6120f45443c1af0c5d407e1b382"
+    },
+    {
+      "path": "text/db/cultures_subcultures__.loc.tsv",
+      "bytes": 11563,
+      "sha256": "477491c473bef8a461cffdd89b294504df8bc4101f2a11d4b8a578adcff91f59"
+    },
+    {
+      "path": "text/db/custom_battle_settings__.loc.tsv",
+      "bytes": 2050,
+      "sha256": "65a4c2028e0b9b954b8f4e276737725a0f792884585611e244673ada65507ba6"
+    },
+    {
+      "path": "text/db/custom_loading_screen_components__.loc.tsv",
+      "bytes": 64285,
+      "sha256": "53f6bc66b647b1e3930cdc78f3e7e69fc91a1c8985ae4940a8be706d5ad582d6"
+    },
+    {
+      "path": "text/db/daemon_ability_bar_descriptions__.loc.tsv",
+      "bytes": 3184,
+      "sha256": "5135537b64696f7fc7d25df9e9f81107ccff68270fc2c3488c588778a01ecf3f"
+    },
+    {
+      "path": "text/db/death_types__.loc.tsv",
+      "bytes": 1618,
+      "sha256": "fb91233aeb5cf18beca7241074ca8e1071c8f18602fd039f38c0fe7ceffd7275"
+    },
+    {
+      "path": "text/db/deployables__.loc.tsv",
+      "bytes": 3642,
+      "sha256": "852fbf8cffee26a5a3d690d4cf832878d44e6c7ee0aa929c36d19f81877c61be"
+    },
+    {
+      "path": "text/db/dilemmas__.loc.tsv",
+      "bytes": 591781,
+      "sha256": "983430e425e576ddb0e736f0740380553fedc08826bcc94787860b01616475f9"
+    },
+    {
+      "path": "text/db/diplomacy_quick_deal_offers__.loc.tsv",
+      "bytes": 1310,
+      "sha256": "e18f1b60c1a70e9e462e7ccdb71fdc3c88d010fec2c64507541982fbfad5d18c"
+    },
+    {
+      "path": "text/db/diplomacy_strings__.loc.tsv",
+      "bytes": 2807586,
+      "sha256": "fba84f25972d9f4fa809aff227528ab68610b2a93bfc6d3798d4f9e185e5978c"
+    },
+    {
+      "path": "text/db/diplomatic_manipulation_categories__.loc.tsv",
+      "bytes": 1225,
+      "sha256": "9cad6bedb9df68fb57291243f1e1bef57e9ed0d399b3fbd54265cdef75ca22bb"
+    },
+    {
+      "path": "text/db/effect_bundles__.loc.tsv",
+      "bytes": 1529385,
+      "sha256": "9373f2226f750d913811e2481de5cfaf731e1e2f21c6862b5ad6ed94b65e088f"
+    },
+    {
+      "path": "text/db/effects__.loc.tsv",
+      "bytes": 2050603,
+      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+    },
+    {
+      "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
+      "bytes": 73434,
+      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+    },
+    {
+      "path": "text/db/encyclopedia_blocks__coc_.loc.tsv",
+      "bytes": 64,
+      "sha256": "e648d0b314480eaa658cd9eca004c37102456128ffed9de15e4767b02659994b"
+    },
+    {
+      "path": "text/db/encyclopedia_pages__coc_.loc.tsv",
+      "bytes": 63,
+      "sha256": "8fdb3b64bafd5193111aea0dbff49004003bc0645c9292e2e6da4487aba54572"
+    },
+    {
+      "path": "text/db/encyclopedia_template_strings__coc_.loc.tsv",
+      "bytes": 74,
+      "sha256": "09bff2fedf525a416c99896b995c3c075def03dcbe11bc88398a9e59c02f345b"
+    },
+    {
+      "path": "text/db/end_game_settings__.loc.tsv",
+      "bytes": 7614,
+      "sha256": "eec45d1a89558aa07294532408ca6f8b9e9c2d2ad59b684d6b6cb82bb605fd72"
+    },
+    {
+      "path": "text/db/end_turn_notifications__.loc.tsv",
+      "bytes": 8436,
+      "sha256": "c71a3aeaabe0c48120fe10a7674f626f1b1d60570f81c668aa919d0d3b0dd2c9"
+    },
+    {
+      "path": "text/db/event_feed_categories__.loc.tsv",
+      "bytes": 809,
+      "sha256": "30562b62e3503c3747a917537afd07164d85928b9a0ca9ec3d824219a595781a"
+    },
+    {
+      "path": "text/db/event_feed_strings__.loc.tsv",
+      "bytes": 248662,
+      "sha256": "d8e79d8c7fbfc4f7786370b1c3e0d317b35d3b35eb45e1a14b963e4cdd3b7329"
+    },
+    {
+      "path": "text/db/event_feed_subcategories__.loc.tsv",
+      "bytes": 3395,
+      "sha256": "460c047c5da32dcc052da2fd269a143683d467967656263958a7a433b6c6780e"
+    },
+    {
+      "path": "text/db/event_feed_summary_events__.loc.tsv",
+      "bytes": 6562,
+      "sha256": "45e7d72587159e67bc246616281fb564286ba95c00173648a6660e6d29605a5c"
+    },
+    {
+      "path": "text/db/event_feed_targeted_events__.loc.tsv",
+      "bytes": 29096,
+      "sha256": "073f31740589bf11240a4f553a92a74e065bc409e36d4b67a05963e5b62d001f"
+    },
+    {
+      "path": "text/db/faction_character_tags__.loc.tsv",
+      "bytes": 1563,
+      "sha256": "34a2eaf0131d4f06482dc1dab6cb0eff6b83626269d94f655c2d431ab0b9df87"
+    },
+    {
+      "path": "text/db/faction_groups__.loc.tsv",
+      "bytes": 5573,
+      "sha256": "32a2ff08c2cb97fabc4392a96d93986177ad355acd65efb47573571b778818a9"
+    },
+    {
+      "path": "text/db/factions__.loc.tsv",
+      "bytes": 297539,
+      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+    },
+    {
+      "path": "text/db/formations__.loc.tsv",
+      "bytes": 971,
+      "sha256": "fc57eac1528dbaaff2c7ac3e1e99cdfb0109f7c6c3754755557569d762c33ad9"
+    },
+    {
+      "path": "text/db/frontend_faction_groups__.loc.tsv",
+      "bytes": 599,
+      "sha256": "93613073273ed5f1804ad635fd6b0ab9fc626deea53c3d3622d4b63e17de5fe5"
+    },
+    {
+      "path": "text/db/frontend_faction_leaders__.loc.tsv",
+      "bytes": 200870,
+      "sha256": "f71bf0388e12390fa76328b8eba9e7f339fd5fd05131c30540ac2595c76e8608"
+    },
+    {
+      "path": "text/db/frontend_factions__.loc.tsv",
+      "bytes": 90478,
+      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+    },
+    {
+      "path": "text/db/graphics_settings__.loc.tsv",
+      "bytes": 3518,
+      "sha256": "cea46d7c3790fb6f386385dc9edb52ce7c6a44e90473af21a72e7f167b3f4128"
+    },
+    {
+      "path": "text/db/graphics_settings_options__.loc.tsv",
+      "bytes": 1600,
+      "sha256": "880acfb034f2904886b1c38659dea6d548fa31e6430c25c8a4e263693a1fe032"
+    },
+    {
+      "path": "text/db/ground_type_stat_effect_groups__.loc.tsv",
+      "bytes": 835,
+      "sha256": "f5b8137802f07f78a5ee0301d8a9ba0de4810e7c5912776ea47ef2ea64bec22c"
+    },
+    {
+      "path": "text/db/ground_types__.loc.tsv",
+      "bytes": 1662,
+      "sha256": "e5d2300bbe9fe9c458ab7d4bccfe80a2b7895e7e34adbf5e49b44f720b4e3c5e"
+    },
+    {
+      "path": "text/db/help_page_index_records__.loc.tsv",
+      "bytes": 42079,
+      "sha256": "257560ccc4442d677e05fd8bc5a62b57318d009d218a60795f7e891fd88445aa"
+    },
+    {
+      "path": "text/db/incidents__.loc.tsv",
+      "bytes": 928679,
+      "sha256": "4f41ae91a96ef5f48812f151d352b366e968cce8380fb589a82c4334ae286c69"
+    },
+    {
+      "path": "text/db/initiative_set_categories__.loc.tsv",
+      "bytes": 5224,
+      "sha256": "20efdad51510c35f1345a32921996add4463eb155d43f7679dca42dd11b4e1f5"
+    },
+    {
+      "path": "text/db/initiative_sets__.loc.tsv",
+      "bytes": 25808,
+      "sha256": "9343d457305f523a3cb13ccae99cb3c6729b1988d07e0dc0e0f6ca55724cdf8e"
+    },
+    {
+      "path": "text/db/initiative_unit_set_requirements__.loc.tsv",
+      "bytes": 12264,
+      "sha256": "100abc2b51ac7955a44bc8683dddf88bd6d0b19662db69cb512b02e377a1d988"
+    },
+    {
+      "path": "text/db/initiatives__.loc.tsv",
+      "bytes": 166991,
+      "sha256": "c6e067f260f25eb206b6ef09cf83e1d18230651f176d85165c0e49cd41705efa"
+    },
+    {
+      "path": "text/db/lab_settings__.loc.tsv",
+      "bytes": 2744,
+      "sha256": "7a8d902d5773ccf887b0b03d322a22f9059d2783978754c312a996f265e21f66"
+    },
+    {
+      "path": "text/db/land_units__.loc.tsv",
+      "bytes": 398378,
+      "sha256": "6e231f87d01bff457b6943c64c1fb0dd419532ecb1438d0448ad7cf90bafc8c3"
+    },
+    {
+      "path": "text/db/loading_screen_quotes__.loc.tsv",
+      "bytes": 683618,
+      "sha256": "ea389641fe2fc3711daa433eff2a4f31de3ce308c1641d12a0dcb9e8e523e3a8"
+    },
+    {
+      "path": "text/db/loyalty_factors__.loc.tsv",
+      "bytes": 1610,
+      "sha256": "53c2006846513f8bfffeacac2f25833683595dda74f7ca76ea76ed948523ae74"
+    },
+    {
+      "path": "text/db/mercenary_unit_groups__.loc.tsv",
+      "bytes": 78928,
+      "sha256": "2ef21de7841dc9922312c2583edaf3a989b10a83c7366432924bd5985641ef12"
+    },
+    {
+      "path": "text/db/message_event_strings__.loc.tsv",
+      "bytes": 658,
+      "sha256": "a9497b6d719275d08a636aa5e7e20eae5b1292adde42ec83793842c0c8aa0a0d"
+    },
+    {
+      "path": "text/db/message_event_text__.loc.tsv",
+      "bytes": 210,
+      "sha256": "7f1c7ec6cb41cf189900a252a4d806ac06be45293e7d5391f69a7371c7f392cd"
+    },
+    {
+      "path": "text/db/military_force_legacy_names__.loc.tsv",
+      "bytes": 6047,
+      "sha256": "9a01e78a9de86fc07c0768babcb94842b84d41e157894b6cf74d9f48cee11ff0"
+    },
+    {
+      "path": "text/db/ministerial_positions_strings__.loc.tsv",
+      "bytes": 11854,
+      "sha256": "e2d1d68fb369f5d3283d13964c4dd0f935e3bc1a1dcebbb9c1cb746586db3dfe"
+    },
+    {
+      "path": "text/db/ministerial_positition_to_subtype_restrictions__.loc.tsv",
+      "bytes": 31697,
+      "sha256": "d5de32a516cfaceb35bfb8cc39a21119f019d4503979ed8ea1c884b46a3471c5"
+    },
+    {
+      "path": "text/db/mission_issuers__.loc.tsv",
+      "bytes": 1229,
+      "sha256": "5a823a0faa2d1eb94f6b1905abcd7185fa755b125a10b4f68f43a7a05009eadd"
+    },
+    {
+      "path": "text/db/mission_text__.loc.tsv",
+      "bytes": 651969,
+      "sha256": "fd61947efc3876a4e39350e821ae4ed404fe6540500ba46b84c4ca9469b141ff"
+    },
+    {
+      "path": "text/db/missions__.loc.tsv",
+      "bytes": 1687362,
+      "sha256": "9fd59b557c89126a267b37f817f6134872eff6a9b8b99e50fc1be9da84a8050a"
+    },
+    {
+      "path": "text/db/mortuary_cult_categories__.loc.tsv",
+      "bytes": 7108,
+      "sha256": "1cc6bcb96b2dc99e4aa2b7cc8cb368f515a72140fd9727a5e112f70d9268b311"
+    },
+    {
+      "path": "text/db/multiplayer_campaign_settings__.loc.tsv",
+      "bytes": 3572,
+      "sha256": "1f0adab0e53cff131930c1010a5eafe54a147469da8e21bdd89e6de432c70645"
+    },
+    {
+      "path": "text/db/multiplayer_campaign_settings_options__.loc.tsv",
+      "bytes": 4150,
+      "sha256": "ee4cee87012700555c3b18ac714d7761eed85d18bfa88bbfb2d3b0469a846ec5"
+    },
+    {
+      "path": "text/db/nakai_temples__.loc.tsv",
+      "bytes": 764,
+      "sha256": "6160daa0794dcb480d7ab4ddcf07e330c6905b39f0c23852a8361a9978f29d53"
+    },
+    {
+      "path": "text/db/names__.loc.tsv",
+      "bytes": 256011,
+      "sha256": "97d51290989092ffd4e2dfcfee11347ab50a4706c06f10900c8cfc64142fcb0d"
+    },
+    {
+      "path": "text/db/naval_units__.loc.tsv",
+      "bytes": 116,
+      "sha256": "90ff0c50233f81be09a96c787d15b1a6b1e90cbd17c957956b621238ec10527c"
+    },
+    {
+      "path": "text/db/ownership_products__.loc.tsv",
+      "bytes": 5235,
+      "sha256": "0c5c4e8c71c3590dae9460f405e96c1b0f19cd872183da21e94ea229ba699da6"
+    },
+    {
+      "path": "text/db/pdlc__.loc.tsv",
+      "bytes": 1626,
+      "sha256": "cbce6156da0dbbebba47439fc6f5d05302ccaf97867e83034636075f2bd518af"
+    },
+    {
+      "path": "text/db/plague_components__.loc.tsv",
+      "bytes": 11118,
+      "sha256": "ea5227299effdd57e637cd1650037c33c2fc24d692077192429ab4701e96f008"
+    },
+    {
+      "path": "text/db/pooled_resource_factors__.loc.tsv",
+      "bytes": 88699,
+      "sha256": "fcef81a2a38c03724cc90b4bc39225aac99bb83e5ffcb52c47cfa66d9ab1cb8a"
+    },
+    {
+      "path": "text/db/pooled_resources__.loc.tsv",
+      "bytes": 146709,
+      "sha256": "7f4ad9a341f73e7a1576aa71fcf8f5e68ae91815cde806e497ac2f2f7d06eaea"
+    },
+    {
+      "path": "text/db/pre_battle_speeches__.loc.tsv",
+      "bytes": 433,
+      "sha256": "343b0aee7086d459933552346edf17044c1666b8d8c97161bfb72dbc404636ed"
+    },
+    {
+      "path": "text/db/projectile_shot_type_displays__.loc.tsv",
+      "bytes": 5081,
+      "sha256": "945df3e28daca5c0374abbfd7e89f6c71b11449ebc5ad894586d5ee653f208fe"
+    },
+    {
+      "path": "text/db/projectile_shot_type_enum__.loc.tsv",
+      "bytes": 1977,
+      "sha256": "f021f5ee6ffe3b1af140cc327b40c4568b8094115e1e51313cb5c8a02f8ed59a"
+    },
+    {
+      "path": "text/db/prologue_chapters__.loc.tsv",
+      "bytes": 394,
+      "sha256": "ac236189297c56e4838b0400fae6b60a51ad21d8472a0c6d58c761ae26fdcd13"
+    },
+    {
+      "path": "text/db/prophecy_of_sotek_stages__.loc.tsv",
+      "bytes": 4165,
+      "sha256": "eeb7e8619502a239e8b1d92f1221af05cb4980c9d6be69fe979b877e580b3b84"
+    },
+    {
+      "path": "text/db/province_automanagement_focuses__.loc.tsv",
+      "bytes": 1046,
+      "sha256": "a96f2f01cf4e25de6867e4396b4bfc84abc1e69911fb2fc4a30b2ba140b8208b"
+    },
+    {
+      "path": "text/db/province_growth_factors__.loc.tsv",
+      "bytes": 2685,
+      "sha256": "b64fb83ae0522575dd1cd834d2b8395f872236b9343439cac8302ea854fe683c"
+    },
+    {
+      "path": "text/db/provinces__.loc.tsv",
+      "bytes": 25492,
+      "sha256": "4eedfca2f6eb6c1881c4dc3c16020c9dfcf257d7a611529290775bee62c45df3"
+    },
+    {
+      "path": "text/db/provincial_initiative_records__.loc.tsv",
+      "bytes": 12659,
+      "sha256": "6c5a42fac0b9dea146bbd7ac81f7d530177915ad860f2208219cb242da512d02"
+    },
+    {
+      "path": "text/db/public_order_providers__.loc.tsv",
+      "bytes": 6559,
+      "sha256": "ac50cf8f342957e7cdb762c6588ec1949c1837091fcd7f54cbe70f67bc4f43c3"
+    },
+    {
+      "path": "text/db/quotes__.loc.tsv",
+      "bytes": 75368,
+      "sha256": "e8784b43a342b140b8ebadc721689fd9bbc9b8eaef545abcc9214afc34915180"
+    },
+    {
+      "path": "text/db/quotes_people__.loc.tsv",
+      "bytes": 26603,
+      "sha256": "42bbb9eac26e5bd03997806a561af7d1cbda38412559a28487962a41aabea9a8"
+    },
+    {
+      "path": "text/db/random_localisation_strings__.loc.tsv",
+      "bytes": 191705,
+      "sha256": "d8bb1f82e59021882a37f70e7eff684c52d493457f74a78f1dc602789d49435a"
+    },
+    {
+      "path": "text/db/region_groups__.loc.tsv",
+      "bytes": 49996,
+      "sha256": "1e062c207796c094b57151a99d9a4fc15a441d68133ad1df313050dbcaa64410"
+    },
+    {
+      "path": "text/db/regions__.loc.tsv",
+      "bytes": 141745,
+      "sha256": "2373cee62b4908f1291a2b378058e41c0d144861c001a9d2667b2e1e9e28474e"
+    },
+    {
+      "path": "text/db/reign_of_chaos__.loc.tsv",
+      "bytes": 1435,
+      "sha256": "c2a06296b2114a2667730410cb5e1034ec8162b44e88380085728cb79c2990cc"
+    },
+    {
+      "path": "text/db/resources__.loc.tsv",
+      "bytes": 18379,
+      "sha256": "e7db54794836651bbf3c2cd66971f1168a539100b34e1eb3ff81fe129cf2abe0"
+    },
+    {
+      "path": "text/db/ritual_additional_ui_explanation_texts__.loc.tsv",
+      "bytes": 7849,
+      "sha256": "1e5cb4d4b502ee1301a7a90736672242facf2a7dfaf34ee43d66616a13597d94"
+    },
+    {
+      "path": "text/db/ritual_categories__.loc.tsv",
+      "bytes": 14105,
+      "sha256": "f58b559538bdf3f824932237485f85c098f10250b92d317d765d92935cf9890a"
+    },
+    {
+      "path": "text/db/ritual_category_groups__.loc.tsv",
+      "bytes": 871,
+      "sha256": "83e5ed7903b8f607cb9745a52400d205a33d30cf62c8ff0c7bdee47eca1966d7"
+    },
+    {
+      "path": "text/db/ritual_chains__.loc.tsv",
+      "bytes": 19877,
+      "sha256": "d73809124aa88ae1b684b1aba1fc3b98dda76269a71a3b623a8fd07d12d966a5"
+    },
+    {
+      "path": "text/db/rituals__.loc.tsv",
+      "bytes": 326931,
+      "sha256": "15b7003afcf680e6f5e8452216ef413835b053fbc5de37dc40c487ceabc1de37"
+    },
+    {
+      "path": "text/db/scripted_objectives__.loc.tsv",
+      "bytes": 410824,
+      "sha256": "d5ca31914e12765a60c67a13793a6dcb56ceafaf9d03d317779845313e5fc98d"
+    },
+    {
+      "path": "text/db/scripted_subtitles__.loc.tsv",
+      "bytes": 215270,
+      "sha256": "3affe379245b53324056ec3390b5c52c04cbac529bc5893f14a8283f8345ab4f"
+    },
+    {
+      "path": "text/db/seasons__.loc.tsv",
+      "bytes": 257,
+      "sha256": "968e243d57c6609b283dde8909a7c113842d55b757a83c81119b6f390fc8665c"
+    },
+    {
+      "path": "text/db/settlement_climate_types__.loc.tsv",
+      "bytes": 3063,
+      "sha256": "23d121d8127824d1f70cb7da7307b0ca255af16797b4a9f74f1050bab35ce280"
+    },
+    {
+      "path": "text/db/settlement_types__.loc.tsv",
+      "bytes": 1919,
+      "sha256": "318adce0aa4c64f572f34a739cbc7607115cb51ce17880a13d67c05b7eeaad43"
+    },
+    {
+      "path": "text/db/shortcut_localisation__.loc.tsv",
+      "bytes": 28947,
+      "sha256": "8a3506aefd4195e54e1a83ae36ccb67fb6b48e28c91bc9df3fdd16c49acafcbe"
+    },
+    {
+      "path": "text/db/simultaneous_turns_multiplayer_options__.loc.tsv",
+      "bytes": 374,
+      "sha256": "39f9b28987e281300849d80d3598f46260977c570f3d53a81aa6e863b92179ba"
+    },
+    {
+      "path": "text/db/spawnable_forces__.loc.tsv",
+      "bytes": 518,
+      "sha256": "bd38fd60c3785b0b381aedb15b20c49f1a50ffcce3bb9d4e658dc59c84d17ffb"
+    },
+    {
+      "path": "text/db/special_ability_groups__.loc.tsv",
+      "bytes": 9217,
+      "sha256": "95c16ae91bd1aea399320a7f9f89cd784253a2837e67495dfe2925f983e2de59"
+    },
+    {
+      "path": "text/db/special_ability_invalid_usage_flags__.loc.tsv",
+      "bytes": 56265,
+      "sha256": "fae07c982d1c4e56a627225d9483919e1f7ce70b16070ac04f776bfd062d1779"
+    },
+    {
+      "path": "text/db/special_ability_phases__.loc.tsv",
+      "bytes": 222932,
+      "sha256": "10add19a7c2e644dc2bbced8702ef5badea2950b147c388e6447de533f9d5794"
+    },
+    {
+      "path": "text/db/stances__.loc.tsv",
+      "bytes": 299,
+      "sha256": "6b01aa9403cac92d40d246395b34148ef245eda2e7593db9182105677375b128"
+    },
+    {
+      "path": "text/db/start_pos_factions__.loc.tsv",
+      "bytes": 191140,
+      "sha256": "64dedaf2ffb94c783582c8e473e67d7689599a8bce91cfcd54009026ed9c33d9"
+    },
+    {
+      "path": "text/db/start_pos_regions__.loc.tsv",
+      "bytes": 153646,
+      "sha256": "a93b6297a676da971e76c95e58fa3f8f828fb1252ab45db4a82afa7cc16800c6"
+    },
+    {
+      "path": "text/db/start_pos_settlements__.loc.tsv",
+      "bytes": 92744,
+      "sha256": "1a88d4a121b665c8cb8b4f22b47778fd37b9b182f1348226936a48e3bde60c55"
+    },
+    {
+      "path": "text/db/technologies__.loc.tsv",
+      "bytes": 751607,
+      "sha256": "f4d23295935ab049e24f7ec4288bcb35c6760d42080eafa6e9ef004dfdc6c279"
+    },
+    {
+      "path": "text/db/technology_node_sets__.loc.tsv",
+      "bytes": 6545,
+      "sha256": "d423da05d8c6269aa0cdfdb98c1135b49d65a7b9e0229a80d9bfbd12482d74ea"
+    },
+    {
+      "path": "text/db/technology_nodes_to_ancillaries_junctions__.loc.tsv",
+      "bytes": 5822,
+      "sha256": "84835e27d5203777b6cb422c0a9cbddae1917f96eb397291a09b7af1ff181b18"
+    },
+    {
+      "path": "text/db/technology_script_lock_reasons__.loc.tsv",
+      "bytes": 14747,
+      "sha256": "c4a64ecbc59f3e07700ddee629578d426ebf215af2da62240712d39f44f0558d"
+    },
+    {
+      "path": "text/db/technology_ui_groups__.loc.tsv",
+      "bytes": 19370,
+      "sha256": "8179027cfa323d1f6167660ce302731bf9e30e7046314386b79bc4dc969d4baa"
+    },
+    {
+      "path": "text/db/technology_ui_tabs__.loc.tsv",
+      "bytes": 5838,
+      "sha256": "cbf0ade9b7ea349485afdbc61b97c85f565db57f5f9c826f395d8282635cfe89"
+    },
+    {
+      "path": "text/db/teleportation_node_templates__.loc.tsv",
+      "bytes": 15952,
+      "sha256": "4bc756f707bd5e6af53bc8811f8abc52fa932637b79332510411572b70917b5e"
+    },
+    {
+      "path": "text/db/time_of_legends_campaigns__.loc.tsv",
+      "bytes": 1472,
+      "sha256": "631dea765c64ac085b0508296583591c8024c641cfd7101dd81641cda5091a9a"
+    },
+    {
+      "path": "text/db/transported_military_forces__.loc.tsv",
+      "bytes": 1598,
+      "sha256": "0874ac8d4724dc4c9e54b4b3be2d5ec3cf0497d16623b99b4f40123c25ef598c"
+    },
+    {
+      "path": "text/db/ui_colour_profiles__.loc.tsv",
+      "bytes": 978,
+      "sha256": "025feced50700f4aed05c27873b689041da6bd69f25144f19cc6c1221e2c6578"
+    },
+    {
+      "path": "text/db/ui_colours__.loc.tsv",
+      "bytes": 10151,
+      "sha256": "27605c3842441b4db6f2c5b7eba6c9cae2b11010494728cba31661311cff06e0"
+    },
+    {
+      "path": "text/db/ui_faction_set_to_localised_names__.loc.tsv",
+      "bytes": 1186,
+      "sha256": "3ad1101a4396aaca42524f7304311c0ff1a31405f8650709d27fe50270fd1651"
+    },
+    {
+      "path": "text/db/ui_info_ritual_target_criterias__.loc.tsv",
+      "bytes": 6657,
+      "sha256": "a845e8926095fb8fdca98e796f5594f9b044bcd49d9cef80c8ae624df1c32915"
+    },
+    {
+      "path": "text/db/ui_main_theme_options__.loc.tsv",
+      "bytes": 1994,
+      "sha256": "1f3072ce54a8edda39142cc4e56fe653c47046ca5e3de3cc4c033c619cc2e360"
+    },
+    {
+      "path": "text/db/ui_mercenary_recruitment_infos__.loc.tsv",
+      "bytes": 21985,
+      "sha256": "feddd8b3badaf18a133033973aa4cec5ce35a1b18d33f32e34a4b2b903802454"
+    },
+    {
+      "path": "text/db/ui_text_replacements__.loc.tsv",
+      "bytes": 2082219,
+      "sha256": "8690503af0f8662162fb56918c6f019d10b2bfc5074b739967f2f3d2f94eb642"
+    },
+    {
+      "path": "text/db/ui_tooltip_components__.loc.tsv",
+      "bytes": 1724,
+      "sha256": "43143b6b7b687a09265fbccee20fff62ab78e7337442f6156143e850ef427834"
+    },
+    {
+      "path": "text/db/ui_unit_bullet_point_enums__.loc.tsv",
+      "bytes": 58580,
+      "sha256": "d12d621d0155d0bb781db170d8311855e201173c57e5b2e934a8c0a2760888fc"
+    },
+    {
+      "path": "text/db/ui_unit_group_parents__.loc.tsv",
+      "bytes": 970,
+      "sha256": "e823fa9d22463f4cb63d2a47f08815bf73f5c533aea22cc5d13f310dcee0401e"
+    },
+    {
+      "path": "text/db/ui_unit_groupings__.loc.tsv",
+      "bytes": 73949,
+      "sha256": "7113dc5c32e9efad10163cc4d263e2de9801244c2ef461c18363c896fe270c9d"
+    },
+    {
+      "path": "text/db/ui_unit_statuses__.loc.tsv",
+      "bytes": 907,
+      "sha256": "2cf951ceed17947f5e23b2db45135e3d5390b595e3d64feac33e4136e6fc1f81"
+    },
+    {
+      "path": "text/db/uied_component_texts__.loc.tsv",
+      "bytes": 1163109,
+      "sha256": "a8e9a95c87a19a47b638a0e21eff8a397d033bc1c4b7bff72a2399d09e31e0f0"
+    },
+    {
+      "path": "text/db/unit_abilities__.loc.tsv",
+      "bytes": 843913,
+      "sha256": "d92b02851773dfbb8d3b40d3801f5841a62dd400fc3fa10012f0efb57a03eb14"
+    },
+    {
+      "path": "text/db/unit_abilities_additional_ui_effects__.loc.tsv",
+      "bytes": 62207,
+      "sha256": "5bd24b2acd4387305f82fca06350512bc00c7b5ed6a95cf0f468cac63acc46ca"
+    },
+    {
+      "path": "text/db/unit_ability_source_types__.loc.tsv",
+      "bytes": 4553,
+      "sha256": "dd08f94db0f04cb8f1d591bd9781563df4cc5879618eb82ced86cbcbeaee0d31"
+    },
+    {
+      "path": "text/db/unit_ability_types__.loc.tsv",
+      "bytes": 8658,
+      "sha256": "6c8c18c553043daa3fbb9d6abb29af5e1996277059beac97bdf80bdc52381497"
+    },
+    {
+      "path": "text/db/unit_attributes__.loc.tsv",
+      "bytes": 28529,
+      "sha256": "537670490080b219734cb290294e4d87dd81d7793f1f8df51bd5c53d49c62f54"
+    },
+    {
+      "path": "text/db/unit_castes__.loc.tsv",
+      "bytes": 790,
+      "sha256": "cc504d0872d267939de8749436913603b2947b6fc4ef51eb8460e229c43bdb51"
+    },
+    {
+      "path": "text/db/unit_category__.loc.tsv",
+      "bytes": 573,
+      "sha256": "7662899519d42d4f3a40ae13686a13bae1c542d3251ceff1fbf20f4432661371"
+    },
+    {
+      "path": "text/db/unit_class__.loc.tsv",
+      "bytes": 3348,
+      "sha256": "c0344e37c59576e12a378d5337e905933f06ad374471480fa98c0e27dfaa4e7b"
+    },
+    {
+      "path": "text/db/unit_description_historical_texts__.loc.tsv",
+      "bytes": 909238,
+      "sha256": "ff86c39c52f8a423829fd5530982615e61edfec05f2396dce09be1db260009ba"
+    },
+    {
+      "path": "text/db/unit_description_short_texts__.loc.tsv",
+      "bytes": 293943,
+      "sha256": "040661ca2233acf7b8efb858d96a3c2ff175594968f65515d5a6fb0f0d05ddcc"
+    },
+    {
+      "path": "text/db/unit_description_strengths_weaknesses_texts__.loc.tsv",
+      "bytes": 163,
+      "sha256": "b6588d2659791ec1158c2df9367e9378bd86f13da9646ea869bf6f1ae2ebec10"
+    },
+    {
+      "path": "text/db/unit_purchasable_effect_lock_reasons__.loc.tsv",
+      "bytes": 6662,
+      "sha256": "0605ba6e0c1b27992bffc69b8503509344efcb61a1270413269f0c8e2408a3c9"
+    },
+    {
+      "path": "text/db/unit_purchasable_effects_categories__.loc.tsv",
+      "bytes": 2909,
+      "sha256": "157cd03b19001cd4dac6d5f13e811cb76648537ca60e0e97fa11da322c96a018"
+    },
+    {
+      "path": "text/db/unit_set_to_mp_unit_caps__.loc.tsv",
+      "bytes": 96224,
+      "sha256": "5b52c6b5a7fb0953594eeadcdaa01dc13b2732c73a3c0b2a04b4d350bf9ef3ae"
+    },
+    {
+      "path": "text/db/unit_stat_localisations__.loc.tsv",
+      "bytes": 13789,
+      "sha256": "79cddda990a17e0b92af16b11f89cd95b6481c5ae99d88c8863aa7e230174c74"
+    },
+    {
+      "path": "text/db/unit_weights__.loc.tsv",
+      "bytes": 357,
+      "sha256": "4e98e699ccb9b850b3644c46fb2530bf1abcd1146b6073f17d5f343dd39437a7"
+    },
+    {
+      "path": "text/db/units_custom_battle_mounts__.loc.tsv",
+      "bytes": 259372,
+      "sha256": "1c69efd8522468e0559947b57bf30ca19a8c1d1fe4ff15d03ab20cde1e06b651"
+    },
+    {
+      "path": "text/db/units_custom_battle_permissions__.loc.tsv",
+      "bytes": 290212,
+      "sha256": "4aef8d7b6fc5a742e0f9d5685095900b3feb08bb20936d8da76e3feeb43225e8"
+    },
+    {
+      "path": "text/db/units_custom_battle_type_categories__.loc.tsv",
+      "bytes": 1660,
+      "sha256": "80c21ad85ad1b0b3d4ca153e938226769a97b7b5b61466db7965b01ec2e7a323"
+    },
+    {
+      "path": "text/db/units_custom_battle_types__.loc.tsv",
+      "bytes": 90555,
+      "sha256": "3f790a680e69856ea1641a2e409308ea8bfb77055fbe7cc60832d7e111845b1b"
+    },
+    {
+      "path": "text/db/victory_types__.loc.tsv",
+      "bytes": 1666,
+      "sha256": "c8eaea2ddd9a706cbbfaf40601f8df71729f6d92dd9da1cfd908c19088918df1"
+    },
+    {
+      "path": "text/db/vo_fmv_texts__.loc.tsv",
+      "bytes": 55254,
+      "sha256": "509e28ceaec80bb82da13340c2085cd3fed2bfcab6a8e31159bdd11e49c63cc6"
+    },
+    {
+      "path": "text/db/war_coordination_invalidation_reasons__.loc.tsv",
+      "bytes": 542,
+      "sha256": "dc0f9e13b663185444851457271803e83c98663dcc93309bfa97897294ba2679"
+    },
+    {
+      "path": "text/db/wind_levels__.loc.tsv",
+      "bytes": 318,
+      "sha256": "d5e1da796a912790595c172218ac99a351e71e3396196170b6cc9f15381b4cdf"
+    },
+    {
+      "path": "text/db/winds_of_magic_compass_actions__.loc.tsv",
+      "bytes": 550,
+      "sha256": "71fe8270b8fe4f4a17cdebcdeb5fbf3296766175f32cb4b6cf184798fcd568f7"
+    }
+  ]
+}
