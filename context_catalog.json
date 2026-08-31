@@ -79,7 +79,13 @@
       "research_spec": "data/faction_guides/RESEARCH_SPEC.md",
       "index": "data/faction_guides/queue.json",
       "primary_records": "data/faction_guides/races/<race_slug>.md",
-      "preferred_access": "Select one race guide. Treat explicit caveats and snapshot boundaries as part of the answer."
+      "preferred_access": "Select one race guide. Treat explicit caveats and snapshot boundaries as part of the answer.",
+      "coverage": {
+        "race_guides": 24,
+        "playable_factions": 104,
+        "status": "complete"
+      },
+      "validator": "node scripts/faction-guide-queue.mjs validate-all"
     }
   },
   "out_of_scope": [
@@ -89,4 +95,3 @@
     "Runtime effects that are not exposed by decoded source relations or documented guides"
   ]
 }
-
