@@ -57,7 +57,7 @@ async function csv(relative) {
     fail(`${relative}: file is not valid UTF-8.`);
     text = buffer.toString("utf8");
   }
-  if (/(?<!\r)\n/.test(text)) fail(`${relative}: contains a non-CRLF line ending.`);
+  if (/\r\n|\r/.test(text)) fail(`${relative}: contains a non-LF line ending.`);
   const parsed = parseRecords(text, ",");
   if (parsed.inconsistent_row_widths) fail(`${relative}: ${parsed.inconsistent_row_widths} rows have the wrong field count.`);
   return parsed;
@@ -113,7 +113,7 @@ if (!errors.some((message) => message.startsWith("Duplicate normalized unit key 
   pass(`Unit keys are unique within each of the ${UNIT_ROSTERS.length} race rosters; intentional cross-race sharing is preserved.`);
 }
 
-const required = ["game", "patch", "steam_build_id", "unit_scale", "faction_name", "faction_key", "subculture_key", "military_group", "roster_scope", "is_faction_exclusive", "military_group_count", "permitted_faction_count", "unit_key", "unit_name", "category", "unit_class", "caste", "entity_count", "model_count", "source_total_component_count", "hp_per_entity", "total_hp", "primary_component_role", "primary_target_size", "is_large", "is_single_entity", "armour", "shield_block_chance", "melee_defence", "leadership", "melee_attack", "charge_bonus", "speed", "mass", "has_missile_weapon", "source_main_unit_key", "source_land_unit_key", "source_battle_entity_key", "extracted_at_utc", "data_quality_status"];
+const required = ["game", "patch", "steam_build_id", "unit_scale", "faction_name", "faction_key", "subculture_key", "military_group", "roster_scope", "is_faction_exclusive", "military_group_count", "permitted_faction_count", "unit_key", "unit_name", "tactical_category", "source_unit_class", "source_caste", "entity_count", "model_count", "source_total_component_count", "hp_per_entity", "total_hp", "primary_component_role", "primary_target_size", "is_large", "is_single_entity", "armour", "shield_block_chance", "melee_defence", "leadership", "melee_attack", "charge_bonus", "speed", "mass", "has_missile_weapon", "source_main_unit_key", "source_land_unit_key", "source_battle_entity_key", "extracted_at_utc", "data_quality_status"];
 for (const row of allRows) {
   for (const column of required) if (row[column] === "") fail(`${row.unit_key}: required field ${column} is blank.`);
 }
@@ -136,8 +136,8 @@ const contacts = await csv(path.join("lookups", "unit_contact_effects__wh3__8.1.
 const rosters = await csv(path.join("lookups", "unit_rosters__wh3__8.1.1__ultra.csv"));
 const mountVariants = await csv(path.join("lookups", "unit_mount_variants__wh3__8.1.1__ultra.csv"));
 const quality = await csv(path.join("lookups", "data_quality_flags__wh3__8.1.1__ultra.csv"));
-const schemaInventory = await csv("schema_inventory__v2.csv");
-if (!errors.some((message) => message.includes("valid UTF-8") || message.includes("line ending") || message.includes("wrong field count"))) pass("Every production CSV is valid UTF-8 with CRLF endings and consistent row widths.");
+const schemaInventory = await csv("schema_inventory__v3.csv");
+if (!errors.some((message) => message.includes("valid UTF-8") || message.includes("line ending") || message.includes("wrong field count"))) pass("Every production CSV is valid UTF-8 with LF endings and consistent row widths.");
 
 const actualSchemas = new Map([
   ["normalized/<faction>__wh3__8.1.1__ultra.csv", canonicalColumns],
@@ -172,17 +172,37 @@ for (const row of allRows) {
   else {
     if (primary[0].component_count !== row.entity_count) fail(`${row.unit_key}: component count disagrees with entity_count.`);
     if (Number(primary[0].known_hp_total) !== Number(row.hp_per_entity) * Number(row.entity_count)) fail(`${row.unit_key}: primary component HP disagrees with hp_per_entity × entity_count.`);
-    if (row.category === "artillery") {
+    if (row.tactical_category === "artillery") {
       const componentTotal = (componentsByUnit.get(row.unit_key) ?? []).reduce((sum, component) => sum + Number(component.known_hp_total || 0), 0);
       if (componentTotal !== Number(row.total_hp)) fail(`${row.unit_key}: artillery component HP does not sum to total_hp.`);
     } else if (primary[0].known_hp_total !== row.total_hp) fail(`${row.unit_key}: primary component HP disagrees with total_hp.`);
     if (primary[0].battle_entity_key !== row.source_battle_entity_key) fail(`${row.unit_key}: primary component source key disagrees with normalized source.`);
   }
-  if (row.category !== "artillery" && Number(row.total_hp) !== Number(row.hp_per_entity) * Number(row.entity_count)) fail(`${row.unit_key}: total_hp is not hp_per_entity × entity_count.`);
+  if (row.tactical_category !== "artillery" && Number(row.total_hp) !== Number(row.hp_per_entity) * Number(row.entity_count)) fail(`${row.unit_key}: total_hp is not hp_per_entity × entity_count.`);
   if ((row.entity_count === "1") !== (row.is_single_entity === "true")) fail(`${row.unit_key}: is_single_entity disagrees with entity_count.`);
   if (!["large", "very_large"].includes(row.primary_target_size) !== (row.is_large !== "true")) fail(`${row.unit_key}: is_large disagrees with the primary target size.`);
 }
 if (!errors.some((message) => message.includes("component") || message.includes("total_hp") || message.includes("is_single_entity") || message.includes("is_large"))) pass("Primary model counts, health pools, and target-size classifications are internally consistent.");
+
+const monsterOverrides = new Set([
+  "wh2_dlc12_lzd_mon_salamander_pack_0",
+  "wh2_dlc12_lzd_mon_salamander_pack_0_blessed",
+  "wh2_dlc13_lzd_mon_razordon_pack_0",
+  "wh2_dlc13_lzd_mon_razordon_pack_0_blessed",
+  "wh3_dlc25_nur_mon_soul_grinder_0_ror",
+  "wh3_main_nur_mon_soul_grinder_0",
+  "wh3_main_tze_mon_soul_grinder_0",
+  "wh_dlc03_bst_inf_cygor_0",
+]);
+for (const unitKey of monsterOverrides) {
+  const rows = allRows.filter((row) => row.unit_key === unitKey);
+  if (!rows.length) fail(`${unitKey}: tactical-category golden unit is absent from all normalized rosters.`);
+  for (const row of rows) {
+    if (row.tactical_category !== "monster") fail(`${unitKey}: expected tactical_category monster; found ${row.tactical_category}.`);
+    if (row.source_caste !== "missile_infantry") fail(`${unitKey}: expected preserved source_caste missile_infantry; found ${row.source_caste}.`);
+  }
+}
+if (!errors.some((message) => message.includes("tactical_category") || message.includes("source_caste"))) pass("Curated missile-monster identities override source caste without erasing provenance.");
 
 const missileLinksByUnit = new Map();
 for (const row of weaponLinks.rows.filter((link) => link.attack_type === "missile")) {
@@ -230,6 +250,8 @@ for (const file of normalized) {
     const sourceLand = sourceMain ? land.get(sourceMain.land_unit) : null;
     if (!sourceMain || !sourceLand) fail(`${row.unit_key}: missing from raw main/land source tables.`);
     if (sourceMain && row.source_land_unit_key !== sourceMain.land_unit) fail(`${row.unit_key}: source_land_unit_key disagrees with raw main_units.`);
+    if (sourceMain && row.source_caste !== sourceMain.caste) fail(`${row.unit_key}: source_caste disagrees with raw main_units.`);
+    if (sourceLand && row.source_unit_class !== sourceLand.class) fail(`${row.unit_key}: source_unit_class disagrees with raw land_units.`);
   }
 }
 if (!errors.some((message) => message.includes("military-group union") || message.includes("raw main/land"))) pass(`Roster membership exactly matches all configured source military-group unions for ${UNIT_ROSTERS.length} races.`);

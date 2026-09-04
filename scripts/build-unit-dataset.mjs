@@ -103,12 +103,25 @@ function csvCell(value) {
 }
 
 async function writeCsv(file, columns, rows) {
-  const text = [columns.join(","), ...rows.map((row) => columns.map((column) => csvCell(row[column])).join(","))].join("\r\n") + "\r\n";
+  const text = [columns.join(","), ...rows.map((row) => columns.map((column) => csvCell(row[column])).join(","))].join("\n") + "\n";
   await mkdir(path.dirname(file), { recursive: true });
   await writeFile(file, text, "utf8");
 }
 
-function broadCategory(main, land) {
+const TACTICAL_CATEGORY_OVERRIDES = new Map([
+  ["wh2_dlc12_lzd_mon_salamander_pack_0", "monster"],
+  ["wh2_dlc12_lzd_mon_salamander_pack_0_blessed", "monster"],
+  ["wh2_dlc13_lzd_mon_razordon_pack_0", "monster"],
+  ["wh2_dlc13_lzd_mon_razordon_pack_0_blessed", "monster"],
+  ["wh3_dlc25_nur_mon_soul_grinder_0_ror", "monster"],
+  ["wh3_main_nur_mon_soul_grinder_0", "monster"],
+  ["wh3_main_tze_mon_soul_grinder_0", "monster"],
+  ["wh_dlc03_bst_inf_cygor_0", "monster"],
+]);
+
+function tacticalCategory(unitKey, main, land) {
+  const override = TACTICAL_CATEGORY_OVERRIDES.get(unitKey);
+  if (override) return override;
   if (["lord", "hero"].includes(main.caste)) return "character";
   if (land.category === "artillery" || land.class === "art_fld") return "artillery";
   if (["monster", "warmachine"].includes(main.caste) || ["war_machine", "war_beast"].includes(land.category)) return "monster";
@@ -252,7 +265,7 @@ function missileLinksForUnit(unitKey, land) {
 const NORMALIZED_COLUMNS = [
   "game", "patch", "steam_build_id", "unit_scale", "faction_name", "faction_key", "subculture_key", "military_group",
   "roster_scope", "is_faction_exclusive", "military_group_count", "permitted_faction_count", "availability_notes",
-  "unit_key", "unit_name", "category", "unit_class", "caste", "tier", "weight", "in_encyclopedia", "is_renown",
+  "unit_key", "unit_name", "tactical_category", "source_unit_class", "source_caste", "tier", "weight", "in_encyclopedia", "is_renown",
   "entity_count", "model_count", "source_total_component_count", "hp_per_entity", "total_hp", "barrier_health", "primary_component_role", "primary_target_size", "is_large", "is_single_entity",
   "armour", "shield_block_chance", "melee_defence", "leadership", "physical_resistance", "missile_resistance", "spell_resistance", "ward_save", "fire_resistance",
   "melee_attack", "weapon_base_damage", "weapon_ap_damage", "charge_bonus", "bonus_vs_infantry", "bonus_vs_large", "attack_interval", "max_splash_targets", "melee_is_magical", "melee_is_flaming", "speed", "mass",
@@ -361,9 +374,9 @@ for (const roster of ROSTERS) {
       availability_notes: isFactionExclusive ? "Faction-variant roster unit; see unit_rosters for exact military-group and faction permissions." : "",
       unit_key: unitKey,
       unit_name: unitName(main.land_unit),
-      category: broadCategory(main, land),
-      unit_class: land.class,
-      caste: main.caste,
+      tactical_category: tacticalCategory(unitKey, main, land),
+      source_unit_class: land.class,
+      source_caste: main.caste,
       tier: number(main.tier),
       weight: main.weight,
       in_encyclopedia: bool(main.in_encyclopedia),
@@ -633,13 +646,13 @@ const schemaInventory = [
   ["lookups/unit_rosters__wh3__8.1.1__ultra.csv", ROSTER_COLUMNS],
   ["lookups/unit_mount_variants__wh3__8.1.1__ultra.csv", MOUNT_VARIANT_COLUMNS],
   ["lookups/data_quality_flags__wh3__8.1.1__ultra.csv", QUALITY_COLUMNS],
-].flatMap(([dataset, columns]) => columns.map((column_name, index) => ({ schema_version: 2, dataset, column_position: index + 1, column_name })));
-await writeCsv(path.join(OUTPUT, "schema_inventory__v2.csv"), SCHEMA_INVENTORY_COLUMNS, schemaInventory);
+].flatMap(([dataset, columns]) => columns.map((column_name, index) => ({ schema_version: 3, dataset, column_position: index + 1, column_name })));
+await writeCsv(path.join(OUTPUT, "schema_inventory__v3.csv"), SCHEMA_INVENTORY_COLUMNS, schemaInventory);
 
 const counts = Object.fromEntries([...normalizedByRoster].map(([roster, rows]) => [roster.slug, rows.length]));
 const manifest = {
   ...CONTEXT,
-  schema_version: 2,
+  schema_version: 3,
   built_at_utc: extractedAt,
   source_manifest: path.relative(ROOT, path.join(SOURCE, "source_manifest.json")).replaceAll(path.sep, "/"),
   roster_counts: counts,
