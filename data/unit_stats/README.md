@@ -18,7 +18,7 @@ This directory is the versioned, reproducible data layer for computational analy
 - `normalized/` — 24 analysis-ready race CSVs, each containing the deduplicated union of its core and configured faction-variant military groups.
 - `lookups/` — one-to-many components, weapons, projectiles, explosions, abilities, attributes, contact effects, roster permissions, mount variants, and data-quality flags.
 - `archive/` — previous extracts retained unchanged for comparison and recovery.
-- `schema_inventory__v2.csv` — the authoritative dataset-to-column mapping and column order for every generated CSV.
+- `schema_inventory__v3.csv` — the authoritative dataset-to-column mapping and column order for every generated CSV.
 - `dataset_manifest.json` — schema version, source path, row counts, and build timestamp.
 - `audit_report.md` and `audit_report.json` — the most recent validation results.
 
@@ -26,7 +26,7 @@ Do not edit `source_exports/` by hand. Regenerate normalized and lookup files fr
 
 ## CSV conventions
 
-- UTF-8, comma delimiter, CRLF line endings, one header row, and lowercase `snake_case` headers.
+- UTF-8, comma delimiter, LF line endings, one header row, and lowercase `snake_case` headers.
 - Stable game keys are identifiers; display names are labels.
 - The normalized unique key is `(game, patch, unit_scale, subculture_key, unit_key)`. A source unit may legitimately appear in multiple race rosters.
 - Numbers use an unformatted decimal point and no thousands separators.
@@ -36,13 +36,15 @@ Do not edit `source_exports/` by hand. Regenerate normalized and lookup files fr
 - Lists are never stored in cells. One-to-many relationships belong in `lookups/`.
 - Derived outputs such as hit chance, AP ratio, expected damage, or DPS are calculated downstream and are not stored here.
 
-The full header inventory is machine-readable in `schema_inventory__v2.csv`; that file is generated from the same column definitions as the CSV writers and is checked against every output header during validation.
+The full header inventory is machine-readable in `schema_inventory__v3.csv`; that file is generated from the same column definitions as the CSV writers and is checked against every output header during validation.
 
-## Normalized schema v2 semantics
+## Normalized schema v3 semantics
 
 The 24 files in `normalized/` retain convenient one-row-per-unit statistics, but the following fields have precise meanings:
 
-- `entity_count` and `model_count` are the number of primary targetable bodies represented on the unit card. They are identical compatibility fields in schema v2.
+- `tactical_category` is the canonical coarse body-plan category for comparison and retrieval: `character`, `artillery`, `monster`, `cavalry`, or `infantry` where those categories apply. It is a curated analytical semantic, not a verbatim Creative Assembly field. Units whose tactical body plan conflicts with an internal database label are deliberately normalized here; missile hunting packs, Cygors, and ranged Soul Grinders are monsters.
+- `source_unit_class` and `source_caste` preserve Creative Assembly's raw `land_units.class` and `main_units.caste` values for provenance. Do not use them as the primary tactical ontology.
+- `entity_count` and `model_count` are the number of primary targetable bodies represented on the unit card. They remain identical for compatibility with schema v2 consumers.
 - `source_total_component_count` preserves CA's `main_units.num_men`, which can include crew, riders, engines, or decorative sub-entities and must not be treated as the displayed model count.
 - `hp_per_entity` is the primary body's hit-point contribution and is never an average across heterogeneous components.
 - `total_hp` is the source-derived unit health pool. It equals `entity_count × hp_per_entity` for homogeneous and composite-body units; crewed artillery additionally includes its separately modeled crew health. `unit_components` exposes the exact summands.
@@ -84,4 +86,4 @@ Install generated files only after the validator exits successfully. The validat
 
 ## Historical repair
 
-The original six normalized files are preserved under `archive/8.1.1__initial_extract_2026-08-24/`. Schema v2 repairs the failed missile joins, component-count/health averaging, large-unit classification, undocumented headers, non-applicable accuracy values, missing one-to-many relations, and absent raw-source provenance.
+The original six normalized files are preserved under `archive/8.1.1__initial_extract_2026-08-24/`. Schema v2 repaired the failed missile joins, component-count/health averaging, large-unit classification, undocumented headers, non-applicable accuracy values, missing one-to-many relations, and absent raw-source provenance. Schema v3 separates the canonical `tactical_category` from the explicitly named `source_unit_class` and `source_caste` provenance fields.

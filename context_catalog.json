@@ -36,7 +36,7 @@
       "description": "Analysis-ready unit statistics and relational combat lookups for 24 race rosters.",
       "readme": "data/unit_stats/README.md",
       "manifest": "data/unit_stats/dataset_manifest.json",
-      "schema": "data/unit_stats/schema_inventory__v2.csv",
+      "schema": "data/unit_stats/schema_inventory__v3.csv",
       "validation": "data/unit_stats/audit_report.json",
       "primary_records": "data/unit_stats/normalized/*.csv",
       "lookups": "data/unit_stats/lookups/*.csv",
