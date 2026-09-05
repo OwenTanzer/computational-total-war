@@ -2,7 +2,7 @@
 
 Status: **PASSED**
 
-104 faction files; 112 variants; 6399 nodes; 1620 distinct technologies; 6755 dependency rows; 13250 ordinary effect rows; 230 script-lock reason rows; 1063 direct unlock rows.
+104 faction files; 104 variants; 6016 nodes; 1620 distinct technologies; 6272 dependency rows; 12425 ordinary effect rows; 230 script-lock reason rows; 703 direct unlock rows.
 
 ## Checks
 
@@ -10,14 +10,15 @@ Status: **PASSED**
 - All nodes, technologies, prerequisite links, research costs, effect junctions, scopes, priorities and localizations reconcile to source.
 - Prerequisite DAGs checked; zero required_parents means all source parents. Hidden and repeated technology nodes are retained and classified.
 - Nakai wh2_dlc13 branches, ordering, prerequisites, costs and effects verified against complete lzd_nakai source membership.
+- Independent gameplay override totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.
 - Shared fingerprints recomputed and faction-specific Wood Elf structure distinguished.
 - Two independent builds and the candidate are byte-identical across all builder artifacts.
 
 ## Warnings and evidence limits
 
-- 5685 missing localization occurrences (1490 distinct keys); structural records retained.
-- 39 campaign script mutation sites retain unresolved runtime conditions. Literal script references are not static effects.
-- Generic and faction-specific candidate node sets are both preserved; engine precedence is not proven by decoded records.
+- 5269 missing localization occurrences (1490 distinct keys); structural records retained.
+- 35 bounded lock sites are not normalized: Beastmen challenge predicates/counters, Ostankya hex progression, and Changeling saved-state-guarded rift release (Empire minor-2 mission or at least two Rift Gems). See script_audit.json for individual locations.
+- Seven explicit faction DB assignments replace generic fallbacks using reviewed gameplay exceptions; the binary engine selector is not decoded. See node_set_precedence.json.
 - Feature forests and transitions are retained in source, but runtime feature transitions and script-controlled effect/unlock behavior are not statically executed.
 
 ## Errors

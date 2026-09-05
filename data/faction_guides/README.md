@@ -11,7 +11,7 @@ the following production material has been reviewed:
 - `data/unit_stats/`
 - `data/skill_trees/`
 - `data/economy/`
-- `data/technology_trees/` — ordinary research structure and payloads; guides retain runtime conditions and unresolved precedence.
+- `data/technology_trees/` — active research structure, faction overrides, payloads and typed scripted requirements/rewards; guides retain campaign mechanics beyond normalized coverage.
 
 Each race document covers race-wide systems and any additional faction-specific
 systems, rules, exceptions, permissions, resources, or state transitions. The

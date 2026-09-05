@@ -1,19 +1,16 @@
+import { resolveSets } from "./technology-rules.mjs";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import {
   CONTEXT,
   CONFIG,
-  BASE,
   cmp,
   hash,
   stable,
-  parse,
-  csv,
   writeCsv,
   loadSource,
   provenance,
   project,
-  candidates,
   members,
   index,
   group,
@@ -63,96 +60,10 @@ for (const [table, key] of [
 const discovery = JSON.parse(
   await readFile(path.join(source, "discovery.json"), "utf8"),
 );
-const scriptAudit = [],
-  scriptRefs = [];
-const mutation =
-  /(?:cm|game_interface):((?:lock|unlock|remove|give|grant|restrict|set|override|research|force)[a-z_]*(?:technolog|tech_tree)[a-z_]*)\s*\(/g;
-for (const f of discovery.scripts.filter((f) => f.retained)) {
-  const text = await readFile(path.join(source, f.path), "utf8"),
-    lines = text.split(/\r?\n/);
-  const role = f.path.startsWith("script/_lib/")
-    ? "library_or_api"
-    : /prologue|_narrative|help_pages|advice|intervention|scripted_tour/.test(
-          f.path,
-        )
-      ? "tutorial_narrative_or_help"
-      : "campaign_logic";
-  const sites = [];
-  let refCount = 0;
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    if (line.trim().startsWith("--")) continue;
-    const keys = [...new Set(line.match(/[A-Za-z0-9_]+/g) ?? [])].filter((k) =>
-      tech.has(k),
-    );
-    if (role === "campaign_logic")
-      for (const k of keys) {
-        scriptRefs.push({
-          technology_key: k,
-          script_path: f.path,
-          script_line: String(i + 1),
-          script_evidence: line.trim(),
-          script_resolution: "literal_reference_only",
-          script_applicability:
-            "Technology key is referenced by this script; ownership is from DB membership. This is not proof that this line executes for every faction.",
-        });
-        refCount++;
-      }
-    for (const m of line.matchAll(mutation))
-      sites.push({
-        line: i + 1,
-        operation: m[1],
-        evidence: line.trim(),
-        classification:
-          role === "campaign_logic"
-            ? "runtime_condition_not_evaluated"
-            : "library_or_tutorial_excluded",
-      });
-  }
-  scriptAudit.push({
-    path: f.path,
-    role,
-    technology_literal_references: refCount,
-    mutation_sites: sites,
-  });
-}
-const scriptByTech = group(scriptRefs, "technology_key");
-const scriptScopes = new Map([
-  [
-    "script/campaign/wh2_dlc17_beastmen_tech.lua",
-    {
-      field: "culture",
-      key: "wh_dlc03_bst_beastmen",
-      evidence: 'local beastmen_culture = "wh_dlc03_bst_beastmen";',
-    },
-  ],
-  [
-    "script/campaign/wh3_dlc24_mother_ostankya.lua",
-    {
-      field: "faction",
-      key: "wh3_dlc24_ksl_daughters_of_the_forest",
-      evidence: 'ostankya_faction = "wh3_dlc24_ksl_daughters_of_the_forest",',
-    },
-  ],
-  [
-    "script/campaign/wh3_dlc24_the_changeling.lua",
-    {
-      field: "faction",
-      key: "wh3_dlc24_tze_the_deceivers",
-      evidence: 'faction_key = "wh3_dlc24_tze_the_deceivers",',
-    },
-  ],
-]);
-for (const [file, scope] of scriptScopes) {
-  const txt = await readFile(path.join(source, file), "utf8");
-  if (!txt.includes(scope.evidence))
-    throw new Error("Script scope evidence changed: " + file);
-}
+const scriptByTech = group(s.mechanics, "technology_key");
 const indexRows = [],
   allRows = [],
   classifications = [];
-const noTreeEvidence =
-  "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua";
 for (const p of s.playable) {
   const common = {
     ...CONTEXT,
@@ -164,7 +75,9 @@ for (const p of s.playable) {
     subculture_key: p.faction.subculture,
     feature_forest_key: p.faction.feature_forest,
   };
-  const sets = candidates(s, p).sort((a, b) => cmp(a.key, b.key));
+  const sets = resolveSets(t, p, s.precedence).sort((a, b) =>
+    cmp(a.key, b.key),
+  );
   const rows = [
     {
       ...common,
@@ -174,45 +87,37 @@ for (const p of s.playable) {
     },
   ];
   if (!sets.length) {
-    const text = await readFile(path.join(source, noTreeEvidence), "utf8");
-    const ls = text.split(/\r?\n/);
-    const line = ls.findIndex((l) =>
-      l.includes("daemon prince has no technology"),
+    if (p.faction.key !== "wh3_main_dae_daemon_prince")
+      throw new Error("Unclassified missing tree");
+    const evidence = s.scriptEvidence.excerpts.find(
+      (e) => e.evidence_id === s.scriptEvidence.no_research_tree_evidence_id,
     );
-    if (p.faction.key !== "wh3_main_dae_daemon_prince" || line < 0)
-      throw new Error(`Unclassified missing tree: ${p.faction.key}`);
     rows.push({
       ...common,
       record_type: "script_reference",
       classification: "no_research_tree",
-      script_path: noTreeEvidence,
-      script_line: String(line + 1),
-      script_evidence: ls[line].trim(),
-      script_resolution: "explicit_source_comment",
-      script_applicability:
-        "Daemon Prince; see surrounding faction condition in retained source.",
+      evidence_id: evidence.evidence_id,
+      source_file: evidence.source_file,
+      source_sha256: evidence.source_sha256,
+      source_start_line: String(evidence.source_start_line),
+      source_end_line: String(evidence.source_end_line),
+      interpretation_status: "explicit_source_comment",
     });
   }
   for (const set of sets) {
     const candidateMembers = members(s, p, set);
-    // Campaign-specific nodes form separate complete variants with shared nodes
-    // repeated. Blank campaign represents campaigns without a specific overlay.
-    const campaigns = [
-      ...new Set(candidateMembers.map((n) => n.campaign_key).filter(Boolean)),
-    ].sort(cmp);
-    const variants = set.campaign_key
-      ? [set.campaign_key]
-      : campaigns.length
-        ? ["", ...campaigns]
-        : [""];
+    const explicit = s.precedence.campaign_variants.filter(
+      (v) => v.faction_key === p.faction.key && v.node_set_key === set.key,
+    );
+    const variants = explicit.length
+      ? explicit.map((v) => v.campaign_key).sort(cmp)
+      : [set.campaign_key || ""];
+    if (!explicit.length && candidateMembers.some((n) => n.campaign_key))
+      throw new Error("Unmodeled campaign overlay " + set.key);
     for (const campaign of variants) {
-      const specific = sets.some(
-        (x) =>
-          x.faction_key && (!x.campaign_key || x.campaign_key === campaign),
-      );
       const ctx = {
         ...common,
-        variant_key: set.key + "@" + (campaign || "unspecified_campaign"),
+        variant_key: set.key + "@" + (campaign || "all_campaigns"),
         campaign_key: campaign,
         node_set_key: set.key,
         set_faction_key: set.faction_key,
@@ -220,12 +125,11 @@ for (const p of s.playable) {
         set_subculture_key: set.subculture,
         set_campaign_key: set.campaign_key,
         variant_status: set.faction_key
-          ? "faction_specific_candidate"
-          : specific
-            ? "generic_candidate_with_faction_override"
-            : "generic_candidate",
-        applicability_basis:
-          "Conjunction of nonblank source faction/culture/subculture selectors; campaign condition preserved. Engine precedence is not decoded.",
+          ? "active_faction_override"
+          : "active_generic_tree",
+        applicability_basis: set.faction_key
+          ? "Explicit faction selector replaces the reviewed generic fallback; see source_exports/node_set_precedence.json."
+          : "Matching source culture/subculture selector with no overriding faction assignment.",
         node_set_name: loc("technology_node_sets_localised_name_" + set.key),
         node_set_tooltip: loc("technology_node_sets_tooltip_string_" + set.key),
       };
@@ -434,40 +338,27 @@ for (const p of s.playable) {
         }
       }
       for (const k of [...technologyKeys].sort(cmp))
-        for (const ref of scriptByTech.get(k) ?? [])
+        for (const mechanic of scriptByTech.get(k) ?? []) {
+          if (
+            mechanic.scope_faction_key &&
+            mechanic.scope_faction_key !== p.faction.key
+          )
+            continue;
+          if (
+            mechanic.scope_culture_key &&
+            mechanic.scope_culture_key !== p.culture
+          )
+            continue;
           rows.push({
             ...ctx,
-            ...ref,
-            record_type: "script_reference",
-            classification: "script_evidence_not_static_effect",
+            ...mechanic,
+            record_type: mechanic.reward_type
+              ? "scripted_reward"
+              : "scripted_requirement",
+            classification: "structured_script_mechanic",
           });
+        }
     }
-  }
-  for (const f of scriptAudit.filter(
-    (f) => f.role === "campaign_logic" && f.mutation_sites.length,
-  )) {
-    const scope = scriptScopes.get(f.path);
-    const applies = scope
-      ? scope.field === "faction"
-        ? p.faction.key === scope.key
-        : p.culture === scope.key
-      : f.path === "script/campaign/wh3_campaign_tech_tree.lua" &&
-        ["wh_dlc08_nor_norsca", "wh3_main_kho_khorne"].includes(p.culture);
-    if (applies)
-      for (const site of f.mutation_sites)
-        rows.push({
-          ...common,
-          record_type: "script_reference",
-          classification: "scripted_lock_or_unlock_condition",
-          script_path: f.path,
-          script_line: String(site.line),
-          script_operation: site.operation,
-          script_evidence: site.evidence,
-          script_resolution: "runtime_condition_not_evaluated",
-          script_applicability: scope
-            ? scope.field + "=" + scope.key + "; source: " + scope.evidence
-            : "Norsca and Khorne culture mappings in the source table; region ownership and battle-win counters are runtime conditions.",
-        });
   }
   const relative = `factions/${p.race.slug}/${p.faction.key}.csv`;
   const contents = await writeCsv(path.join(output, relative), s.columns, rows);
@@ -516,11 +407,21 @@ await writeCsv(
   indexRows,
 );
 const descriptions = {
+  mechanic_type:
+    "Decoded scripted mechanic family; each target is a separate typed row.",
+  threshold:
+    "Source battle-win threshold or region ownership cardinality; blank is not zero.",
+  value: "Source reward count or per-battle counter increment.",
+  interpretation_status:
+    "Explicit decoded behavior classification; see source evidence IDs.",
+  campaign_scope:
+    "Script scope independent of the database node-set campaign selector.",
+
   record_type: "Typed record discriminator; junctions are individual rows.",
   variant_key:
-    "Node set plus campaign condition. Keep variants separate; unspecified_campaign excludes campaign-specific nodes.",
+    "Active node set plus a supported campaign condition. all_campaigns means a common tree; no blank Changeling variant exists.",
   variant_status:
-    "Source selector classification, not an assertion about engine tree selection precedence.",
+    "Active generic or faction-override tree; source_exports/node_set_precedence.json documents each replacement.",
   applicability_basis: "Explicit source selector rule and evidence limitation.",
   campaign_key:
     "Variant campaign condition; blank is unspecified, not all campaign-specific overlays combined.",
@@ -536,8 +437,6 @@ const descriptions = {
     "One-based logical record number in exported TSV (header and RPFM metadata precede records).",
   source_key:
     "Canonical source primary key, or composite joined with |. Not a one-to-many list.",
-  script_resolution:
-    "Literal references do not resolve runtime control flow. See script_audit.json and retained whole source files.",
   classification:
     "Structural/evidence classification; hidden nodes remain included.",
 };
@@ -560,12 +459,20 @@ const schemaRows = s.columns.map((c, i) => {
     dataset: "factions/<race_slug>/<faction_key>.csv",
     column_position: i + 1,
     column_name: c,
-    data_type:
-      def?.field_type === "Boolean"
+    data_type: [
+      "threshold",
+      "value",
+      "source_start_line",
+      "source_end_line",
+    ].includes(c)
+      ? "number"
+      : ["human_only", "allow_allies", "initially_locked"].includes(c)
         ? "boolean"
-        : /^(I\d|F\d)/.test(def?.field_type ?? "")
-          ? "number"
-          : "text",
+        : def?.field_type === "Boolean"
+          ? "boolean"
+          : /^(I\d|F\d)/.test(def?.field_type ?? "")
+            ? "number"
+            : "text",
     required: [
       "record_type",
       "game",
@@ -585,7 +492,7 @@ const schemaRows = s.columns.map((c, i) => {
   };
 });
 await writeCsv(
-  path.join(output, "schema_inventory__v1.csv"),
+  path.join(output, "schema_inventory__v2.csv"),
   Object.keys(schemaRows[0]),
   schemaRows,
 );
@@ -624,7 +531,7 @@ for (const r of t.technologies)
     });
 const manifest = {
   ...CONTEXT,
-  schema_version: 1,
+  schema_version: 2,
   source_manifest_sha256: hash(
     await readFile(path.join(source, "source_manifest.json")),
   ),
@@ -647,11 +554,21 @@ const manifest = {
   record_types: recordCounts,
   unique_structures: new Set(indexRows.map((r) => r.tree_structure_sha256))
     .size,
-  unresolved_scripted_cases: scriptAudit
-    .filter((x) => x.role === "campaign_logic")
-    .reduce((n, x) => n + x.mutation_sites.length, 0),
+  structured_script_source_records: s.mechanics.length,
+  structured_script_occurrences:
+    (recordCounts.scripted_requirement ?? 0) +
+    (recordCounts.scripted_reward ?? 0),
+  structured_script_mechanics_by_type: Object.fromEntries(
+    [
+      ...group(
+        allRows.filter((r) => r.mechanic_id),
+        "mechanic_type",
+      ),
+    ].map(([k, v]) => [k, v.length]),
+  ),
+  unresolved_scripted_cases: s.scriptEvidence.unmodeled_lock_sites.length,
   source_scope:
-    "All matching source node-set candidates; runtime precedence and script state explicitly unresolved. Daemon Prince has no ordinary research tree.",
+    "Active faction research trees after explicit, reviewed faction overrides and source-backed campaign selection; typed scripted requirements/rewards plus bounded evidence.",
   file_layout: "factions/<race_slug>/<faction_key>.csv",
 };
 await writeFile(
@@ -663,11 +580,15 @@ await writeFile(
   JSON.stringify(
     {
       scanned_files: discovery.scripts.length,
-      retained_files: scriptAudit.length,
+      whole_lua_files_retained: 0,
       scope: discovery.script_scope,
-      pattern: discovery.script_pattern,
+      structured_source_records: s.mechanics.length,
+      structured_records_by_type: Object.fromEntries(
+        [...group(s.mechanics, "mechanic_type")].map(([k, v]) => [k, v.length]),
+      ),
+      excerpt_count: s.scriptEvidence.excerpts.length,
       unresolved_cases: manifest.unresolved_scripted_cases,
-      files: scriptAudit,
+      unmodeled_lock_sites: s.scriptEvidence.unmodeled_lock_sites,
     },
     null,
     2,
@@ -677,6 +598,18 @@ await writeFile(
   path.join(output, "classification_inventory.json"),
   JSON.stringify(classifications, null, 2) + "\n",
 );
-const readme = `# Faction technology trees\n\nPinned to patch 8.1.1, Steam build 24237342. This is the authoritative technology source and normalized tree dataset. There are 104 self-contained faction files covering all 24 races. The Daemon Prince file explicitly records the absence of an ordinary research tree.\n\n## Retrieval\n\nRead the manifest, schema inventory and audit report, select a faction in faction_index__wh3__8.1.1.csv, then filter its file by record_type and variant_key. Keep node-set candidates and campaign variants separate. Keys are canonical; blank is unavailable or inapplicable, never zero. One-to-many relations use typed rows.\n\n## Applicability and reconstruction\n\nFaction ownership comes from frontend_faction_leaders joined to factions and cultures_subcultures. Each nonblank node-set faction, culture and subculture selector must match. Nodes additionally match the faction and campaign. Campaign-specific overlays are complete separate variants, including common nodes. An unspecified_campaign variant contains only nodes with blank campaign selectors.\n\nThe source has both generic and faction-specific node sets for some factions (including Nakai). Both are retained as distinguishable candidates. generic_candidate_with_faction_override is not a second simultaneously active research tree. Database columns identify the candidates, but decoded sources do not expose the engine precedence rule. Do not combine or automatically choose candidates. This is an intentional evidence boundary, not a claim of verified runtime selection.\n\nNode rows preserve tier, indent, pixel offsets, required_parents, research points, per-round and food costs, resource cost keys and UI groups. Zero required_parents means all linked parents, per decoded schema. Dependency links preserve arrow geometry and visibility; no link-type field exists in this snapshot, so node_parent identifies the relation rather than an invented game enum. technology_prerequisite rows are separate explicit technology requirements. Research points are not a fixed turn duration. Technologies preserve hidden flags and all registry fields; technology_building_level is not silently converted to a prerequisite.\n\nUI bounds are source corner-node references, not membership lists. Conditional corner nodes may be absent from a faction variant. Tab membership, tab offsets/order, category modules, resource transactions, ancillary/trait grants, mercenary and unit-upgrade requirements, and initiative-dependent effect payloads remain separate typed rows. Effects preserve signed source values, scopes, priorities and English text. No localized label is inferred from a key.\n\n## Scripts and limitations\n\nThe extractor enumerates actual database and localization paths and reverse-checks schema references across every decoded version. discovery.json records that inventory and the bounded campaign/shared-library Lua scan. Whole matching Lua files are retained. script_audit.json inventories every retained file, literal technology references, mutating API sites and exclusions. script_reference rows are evidence pointers, not unconditional effects or inferred ownership. Runtime conditions, execution order, progress counters and save-state are not evaluated; ${manifest.unresolved_scripted_cases} campaign mutation sites are explicitly unresolved.\n\nKnown conditional systems include Beastmen achievements, Norscan region/battle requirements, Khorne battle wins, Ostankya hex unlocks and Changeling rifts. Other script references can govern ancillary grants, confederation, units and initiative unlocks. Consult the retained code and faction guides before modeling these as static rules. Binary engine logic, save files, mods, UI animations/audio, AI research priorities and tutorial/narrative mission behavior are excluded from normalized mechanics. AI/audio tables remain in source exports for a transparent discovery boundary. Feature records are retained and faction feature-forest keys are repeated, but feature runtime transitions are not flattened into technology ownership.\n\nclassification_inventory.json classifies unused registry/nodes and links excluded by faction/campaign selectors. The validator reports topology, hidden nodes, duplicate technologies, missing localization and source scope limitations. Distinct source keys are retained even when text is missing or structures are shared. Fingerprints exclude faction ownership, text and provenance but include node conditions, layout, cost and effect payloads. They are structural comparisons, not proof of identical scripted campaign behavior.\n\n## Rebuild and install\n\n\`\`\`powershell\nnode scripts/extract-technology-source.mjs work/source_technology__wh3__8.1.1\nnode scripts/build-technology-trees.mjs work/source_technology__wh3__8.1.1 work/generated_technology__wh3__8.1.1\nnode scripts/validate-technology-trees.mjs work/source_technology__wh3__8.1.1 work/generated_technology__wh3__8.1.1\n\`\`\`\n\nInstall only after validation. Extraction refuses a game executable or Steam build mismatch and uses RPFM read operations only. CTW_GAME_PATH may select a verified Steam installation; RPFM must point at that same installation. Builders and validators do not need the game or RPFM. Output contains no wall-clock timestamps and must reproduce byte-for-byte.\n`;
-await writeFile(path.join(output, "README.md"), readme);
+const readme = await readFile(
+  new URL("./technology-readme.md", import.meta.url),
+  "utf8",
+);
+await writeFile(
+  path.join(output, "README.md"),
+  readme +
+    "\n## Generated totals\n\n" +
+    Object.entries(manifest)
+      .filter(([k, v]) => typeof v === "number" && k !== "schema_version")
+      .map(([k, v]) => "- " + k + ": " + v)
+      .join("\n") +
+    "\n",
+);
 console.log(JSON.stringify(manifest, null, 2));

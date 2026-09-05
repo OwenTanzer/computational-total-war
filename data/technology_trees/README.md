@@ -1,35 +1,121 @@
 # Faction technology trees
 
-Pinned to patch 8.1.1, Steam build 24237342. This is the authoritative technology source and normalized tree dataset. There are 104 self-contained faction files covering all 24 races. The Daemon Prince file explicitly records the absence of an ordinary research tree.
+Authoritative technology dataset for WARHAMMER III patch **8.1.1**, executable
+**8.1.1.0**, Steam build **24237342**. Start with `dataset_manifest.json`,
+`schema_inventory__v2.csv`, and `faction_index__wh3__8.1.1.csv`. Each of the 104
+playable factions has one self-contained long-form CSV. Filter `record_type`
+and `variant_key`; blank values are unknown/not applicable, never zero.
 
-## Retrieval
+## Active trees and precedence
 
-Read the manifest, schema inventory and audit report, select a faction in faction_index__wh3__8.1.1.csv, then filter its file by record_type and variant_key. Keep node-set candidates and campaign variants separate. Keys are canonical; blank is unavailable or inapplicable, never zero. One-to-many relations use typed rows.
+`source_exports/node_set_precedence.json` is the explicit selection model.
+Seven narrow overrides replace a matching generic set with its explicit faction
+assignment: Nakai, Azazel, Festus, Valkia, Vilitch, Be'lakor, and the Changeling.
+Each rule retains both DB selector rows, locations and hash, plus the blocking
+review's gameplay corroboration. The binary engine's selection implementation
+is not exposed in the decoded Lua: these are transparent reviewed exceptions,
+not a claim that a universal engine precedence algorithm was recovered.
+Unreviewed overlapping sets fail the build. Source fallback sets remain available
+for provenance but are not emitted as active variants of those factions.
 
-## Applicability and reconstruction
+The Changeling has exactly two variants: `wh3_main_chaos` (51 nodes) and
+`wh3_main_combi` (57 nodes). Campaign identity is joined through
+`campaigns.script_path` to the Changeling's literal `rift_regions` map and its
+`cm:get_campaign_name()` selection. Common nodes are repeated inside each
+legitimate variant. There is no blank campaign variant. Other unqualified trees
+use `all_campaigns` in their variant key, with a blank DB campaign selector.
+The Daemon Prince has a file with explicit no-research-tree evidence and no nodes.
 
-Faction ownership comes from frontend_faction_leaders joined to factions and cultures_subcultures. Each nonblank node-set faction, culture and subculture selector must match. Nodes additionally match the faction and campaign. Campaign-specific overlays are complete separate variants, including common nodes. An unspecified_campaign variant contains only nodes with blank campaign selectors.
+## Rows and scripted mechanics
 
-The source has both generic and faction-specific node sets for some factions (including Nakai). Both are retained as distinguishable candidates. generic_candidate_with_faction_override is not a second simultaneously active research tree. Database columns identify the candidates, but decoded sources do not expose the engine precedence rule. Do not combine or automatically choose candidates. This is an intentional evidence boundary, not a claim of verified runtime selection.
+Typed rows preserve nodes, layout, tabs/groups, technology definitions, points,
+resource costs, prerequisites/link types, effects/scopes/values, lock reasons,
+conditional effects and direct DB unlocks. Zero `required_parents` means all
+linked parents, per the decoded schema. Research points are not a fixed number
+of turns; research rate modifiers are outside this snapshot. UI group bounds
+are corner-node references rather than membership lists. `scripted_requirement` and
+`scripted_reward` rows retain typed mechanics from `script_mechanics.csv`:
+30 Khorne battle thresholds, 23 Norsca target-culture battle counters, 21 Norsca
+region gates, 18 ancillary rewards (nine Vampire Coast), and four Vampire Coast
+lord-pool rewards. Each source mechanic is repeated only in applicable faction
+variants containing its technology. Source scopes remain separate from the
+owning faction/campaign context. These 96 definitions are not 96 unique effects.
 
-Node rows preserve tier, indent, pixel offsets, required_parents, research points, per-round and food costs, resource cost keys and UI groups. Zero required_parents means all linked parents, per decoded schema. Dependency links preserve arrow geometry and visibility; no link-type field exists in this snapshot, so node_parent identifies the relation rather than an invented game enum. technology_prerequisite rows are separate explicit technology requirements. Research points are not a fixed turn duration. Technologies preserve hidden flags and all registry fields; technology_building_level is not silently converted to a prerequisite.
+Script rows expose operation, trigger, target type/key, threshold/value, scope,
+human restriction, counter/relock policy, reward kind, interpretation and bounded
+evidence IDs. Khorne counts a distinct winning faction once per completed battle.
+Norsca assigns the last eligible losing faction's culture encountered in the
+pending battle cache to each winner; mixed-enemy battles do not increment every
+opponent culture. Counters include supporting winning armies and exclude rebels.
+Vampire Coast lords enter the recruitable pool only for human factions of the
+explicit culture. Ancillary rewards have no human-only guard.
 
-UI bounds are source corner-node references, not membership lists. Conditional corner nodes may be absent from a faction variant. Tab membership, tab offsets/order, category modules, resource transactions, ancillary/trait grants, mercenary and unit-upgrade requirements, and initiative-dependent effect payloads remain separate typed rows. Effects preserve signed source values, scopes, priorities and English text. No localized label is inferred from a key.
+Norsca region and battle handlers write the same lock state; they are not a
+permanent conjunction of requirements. Initialization runs region toggles before
+battle locks. With the current `allow_allies=false` definitions, the region
+handler unlocks on ownership and relocks only when the region has no owner;
+losing a region to another faction does not satisfy its relock predicate.
+Region records apply only in a campaign containing the literal target region.
+Their region-to-campaign existence is not inferred from key prefixes.
 
-## Scripts and limitations
+## Evidence and remaining limits
 
-The extractor enumerates actual database and localization paths and reverse-checks schema references across every decoded version. discovery.json records that inventory and the bounded campaign/shared-library Lua scan. Whole matching Lua files are retained. script_audit.json inventories every retained file, literal technology references, mutating API sites and exclusions. script_reference rows are evidence pointers, not unconditional effects or inferred ownership. Runtime conditions, execution order, progress counters and save-state are not evaluated; 39 campaign mutation sites are explicitly unresolved.
+No whole Lua files are distributed. `source_exports/discovery.json` inventories
+the bounded scan of campaign/library Lua paths, including complete source hashes.
+`script_evidence.json` retains excerpts of at most 80 lines with exact source
+locations and excerpt/full-file hashes. The extractor parses literal tables and
+fails on unsupported expressions; it never executes Lua. `script_audit.json`
+lists every other retained lock site separately. Beastmen challenge counters,
+Ostankya hex progression, and Changeling saved-state-guarded rift release (the Empire minor-2 mission or at least two Rift Gems)
+are not normalized into executable predicates. Their exact sites, DB lock reasons
+and bounded evidence remain available. The reverse audit normalizes the four required mechanic families and inventories
+other lock/unlock calls. Other research-event consumers (such as Bretonnian
+confederation dilemmas, missions and narrative/UI handlers) remain outside typed
+script coverage; their complete-file hashes are in the discovery inventory and
+faction guides cover the bespoke systems. Campaign feature transitions are retained
+as DB evidence, not simulated. These limitations do not change active tree selection.
 
-Known conditional systems include Beastmen achievements, Norscan region/battle requirements, Khorne battle wins, Ostankya hex unlocks and Changeling rifts. Other script references can govern ancillary grants, confederation, units and initiative unlocks. Consult the retained code and faction guides before modeling these as static rules. Binary engine logic, save files, mods, UI animations/audio, AI research priorities and tutorial/narrative mission behavior are excluded from normalized mechanics. AI/audio tables remain in source exports for a transparent discovery boundary. Feature records are retained and faction feature-forest keys are repeated, but feature runtime transitions are not flattened into technology ownership.
+Read `audit_report.json`, `topology_audit.json`, `classification_inventory.json`
+and `missing_localizations.csv` before asserting availability. Missing English
+text is warned and never synthesized. Hidden, duplicated, external prerequisite,
+unused registry and scripted-only records remain explicitly classified. Structural
+fingerprints include mechanics and source keys but exclude labels and provenance;
+self-contained repeated shared trees do not imply different game mechanics.
 
-classification_inventory.json classifies unused registry/nodes and links excluded by faction/campaign selectors. The validator reports topology, hidden nodes, duplicate technologies, missing localization and source scope limitations. Distinct source keys are retained even when text is missing or structures are shared. Fingerprints exclude faction ownership, text and provenance but include node conditions, layout, cost and effect payloads. They are structural comparisons, not proof of identical scripted campaign behavior.
+## Reproduction
 
-## Rebuild and install
+On the verified MSI installation, with read-only RPFM listening locally:
 
-```powershell
-node scripts/extract-technology-source.mjs work/source_technology__wh3__8.1.1
-node scripts/build-technology-trees.mjs work/source_technology__wh3__8.1.1 work/generated_technology__wh3__8.1.1
-node scripts/validate-technology-trees.mjs work/source_technology__wh3__8.1.1 work/generated_technology__wh3__8.1.1
+```
+node scripts/extract-technology-source.mjs work/technology-source
+node scripts/build-technology-trees.mjs work/technology-source work/technology-candidate
+node scripts/validate-technology-trees.mjs work/technology-source work/technology-candidate
+node scripts/test-technology-trees.mjs work/technology-source work/technology-candidate
 ```
 
-Install only after validation. Extraction refuses a game executable or Steam build mismatch and uses RPFM read operations only. CTW_GAME_PATH may select a verified Steam installation; RPFM must point at that same installation. Builders and validators do not need the game or RPFM. Output contains no wall-clock timestamps and must reproduce byte-for-byte.
+Use fresh destinations. Extraction checks the executable/build before accessing
+the game and verifies RPFM's configured installation. Validation reconciles
+source fields and independently pins gameplay totals/variant identities and
+script contracts. It builds twice into fresh directories and compares all builder
+artifacts byte-for-byte with the candidate. Install source and output together
+only after validation passes. `npm run validate` also checks all other datasets.
+Economy and unit exports are not authoritative homes for technology data.
+
+## Generated totals
+
+- faction_files: 104
+- races: 24
+- node_set_variants: 104
+- unique_node_sets: 30
+- node_occurrences: 6016
+- technologies: 1620
+- technology_occurrences: 6016
+- dependency_links: 6272
+- effects: 12425
+- locks_exclusions: 230
+- direct_unlocks: 703
+- conditional_initiative_effect_relations: 916
+- unique_structures: 51
+- structured_script_source_records: 96
+- structured_script_occurrences: 306
+- unresolved_scripted_cases: 35

@@ -30,7 +30,7 @@ For the claimed `race_slug`, inspect:
    `data/skill_trees/character_index__wh3__8.1.1.csv` and the corresponding
    files under `data/skill_trees/characters/<race_slug>/`.
 6. The race’s technology faction files, index, and script audit under
-   `data/technology_trees/`; distinguish static rows from unresolved runtime rules.
+   `data/technology_trees/`; use the explicit override model and typed scripted requirements/rewards before identifying remaining campaign-rule gaps.
 7. Relevant manifests, schema inventories, and audit reports when needed to
    understand a field or an intentional omission.
 

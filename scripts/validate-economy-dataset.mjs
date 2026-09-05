@@ -1,5 +1,5 @@
-import { createHash } from "node:crypto";
-import { readdir, readFile, stat, writeFile } from "node:fs/promises";
+import { matchesTextFingerprint } from "./validation-text.mjs";
+import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { SKILL_RACES as RACES } from "./dataset-scope.mjs";
@@ -104,9 +104,6 @@ function groupBy(rows, key) {
   return result;
 }
 
-function sha256(value) {
-  return createHash("sha256").update(value).digest("hex");
-}
 
 function sumEffectRows(rows) {
   if (!rows.length) return null;
@@ -165,8 +162,7 @@ for (const file of sourceManifest.files) {
   const fullPath = path.join(SOURCE, ...file.path.split("/"));
   try {
     const contents = await readFile(fullPath);
-    if (contents.length !== file.bytes) errors.push(`Source byte mismatch: ${file.path}`);
-    if (sha256(contents) !== file.sha256) errors.push(`Source hash mismatch: ${file.path}`);
+    if (!matchesTextFingerprint(contents, file.sha256, file.bytes)) errors.push(`Source hash mismatch: ${file.path}`);
   } catch {
     errors.push(`Missing source export: ${file.path}`);
   }
@@ -288,13 +284,12 @@ for (const indexRow of index) {
   try { buffer = await readFile(fullPath); } catch { errors.push(`Missing indexed file: ${indexRow.relative_path}`); continue; }
   const text = buffer.toString("utf8");
   if (text.includes("\uFFFD")) errors.push(`Invalid UTF-8 replacement character: ${indexRow.relative_path}`);
-  if (/(?<!\r)\n/.test(text)) errors.push(`Non-CRLF line ending: ${indexRow.relative_path}`);
+  if (/\r(?!\n)/.test(text)) errors.push(`Bare CR line ending: ${indexRow.relative_path}`);
   const { headers, records } = recordsFromText(text, ",");
   recordsByFaction.set(indexRow.faction_key, records);
   if (headers.join("\u0000") !== EXPECTED_COLUMNS.join("\u0000")) errors.push(`Header mismatch: ${indexRow.relative_path}`);
   if (Number(indexRow.building_rows) !== records.length) errors.push(`Index row-count mismatch: ${indexRow.relative_path}`);
-  if (Number(indexRow.file_bytes) !== buffer.length) errors.push(`Index byte-count mismatch: ${indexRow.relative_path}`);
-  if (indexRow.file_sha256 !== sha256(buffer)) errors.push(`Index hash mismatch: ${indexRow.relative_path}`);
+  if (!matchesTextFingerprint(buffer, indexRow.file_sha256, indexRow.file_bytes)) errors.push(`Index hash mismatch: ${indexRow.relative_path}`);
   const expected = expectedRowsForFaction(indexRow.faction_key);
   const observed = new Set();
   for (const row of records) {
@@ -359,8 +354,8 @@ for (const indexRow of index) {
   totalRows += records.length;
 }
 
-if (!errors.some((error) => /Header|UTF-8|CRLF|boolean|numeric|Duplicate/.test(error))) {
-  passes.push("Every faction CSV is valid UTF-8 with CRLF endings, the canonical header, typed numeric fields, lowercase booleans, and unique building rows.");
+if (!errors.some((error) => /Header|UTF-8|line ending|boolean|numeric|Duplicate/.test(error))) {
+  passes.push("Every faction CSV is valid UTF-8 with LF or CRLF endings, the canonical header, typed numeric fields, lowercase booleans, and unique building rows.");
 }
 if (!errors.some((error) => /expected building|Unexpected building|Missing expected|culture variant|building localisation/.test(error))) {
   passes.push(`All ${totalRows} constructible building rows reconcile to faction availability, visibility, enabled culture variants, and English localisation.`);

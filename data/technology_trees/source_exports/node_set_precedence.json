@@ -1,0 +1,227 @@
+{
+  "schema_version": 2,
+  "policy": "Only the seven reviewed faction selectors replace their matching generic fallback; unreviewed overlaps fail the build.",
+  "provenance_limit": "The binary engine selector is not implemented in Lua. Replacement is encoded narrowly from the explicit faction DB assignments and review-confirmed gameplay, never inferred from key prefixes or output counts.",
+  "overrides": [
+    {
+      "faction_key": "wh2_dlc13_lzd_spirits_of_the_jungle",
+      "selected_node_set_key": "lzd_nakai",
+      "overridden_node_set_key": "lzd_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 24,
+      "overridden_source_row": 23,
+      "selected_selectors": {
+        "key": "lzd_nakai",
+        "campaign_key": "",
+        "faction_key": "wh2_dlc13_lzd_spirits_of_the_jungle",
+        "culture": "wh2_main_lzd_lizardmen",
+        "subculture": "",
+        "colour_hex": "FF8C00"
+      },
+      "overridden_selectors": {
+        "key": "lzd_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh2_main_lzd_lizardmen",
+        "subculture": "",
+        "colour_hex": "FF8C00"
+      }
+    },
+    {
+      "faction_key": "wh3_dlc20_chs_azazel",
+      "selected_node_set_key": "chs_mil_azazel",
+      "overridden_node_set_key": "chs_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 7,
+      "overridden_source_row": 6,
+      "selected_selectors": {
+        "key": "chs_mil_azazel",
+        "campaign_key": "",
+        "faction_key": "wh3_dlc20_chs_azazel",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "chs_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFB62F"
+      }
+    },
+    {
+      "faction_key": "wh3_dlc20_chs_festus",
+      "selected_node_set_key": "chs_mil_festus",
+      "overridden_node_set_key": "chs_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 9,
+      "overridden_source_row": 6,
+      "selected_selectors": {
+        "key": "chs_mil_festus",
+        "campaign_key": "",
+        "faction_key": "wh3_dlc20_chs_festus",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "chs_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFB62F"
+      }
+    },
+    {
+      "faction_key": "wh3_dlc20_chs_valkia",
+      "selected_node_set_key": "chs_mil_valkia",
+      "overridden_node_set_key": "chs_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 10,
+      "overridden_source_row": 6,
+      "selected_selectors": {
+        "key": "chs_mil_valkia",
+        "campaign_key": "",
+        "faction_key": "wh3_dlc20_chs_valkia",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "chs_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFB62F"
+      }
+    },
+    {
+      "faction_key": "wh3_dlc20_chs_vilitch",
+      "selected_node_set_key": "chs_mil_vilitch",
+      "overridden_node_set_key": "chs_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 11,
+      "overridden_source_row": 6,
+      "selected_selectors": {
+        "key": "chs_mil_vilitch",
+        "campaign_key": "",
+        "faction_key": "wh3_dlc20_chs_vilitch",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "chs_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFB62F"
+      }
+    },
+    {
+      "faction_key": "wh3_main_chs_shadow_legion",
+      "selected_node_set_key": "chs_mil_belakor",
+      "overridden_node_set_key": "chs_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 8,
+      "overridden_source_row": 6,
+      "selected_selectors": {
+        "key": "chs_mil_belakor",
+        "campaign_key": "",
+        "faction_key": "wh3_main_chs_shadow_legion",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "chs_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh_main_chs_chaos",
+        "subculture": "wh_main_sc_chs_chaos",
+        "colour_hex": "FFB62F"
+      }
+    },
+    {
+      "faction_key": "wh3_dlc24_tze_the_deceivers",
+      "selected_node_set_key": "tze_the_changeling",
+      "overridden_node_set_key": "tze_mil",
+      "rule": "faction_specific_replaces_generic",
+      "interpretation_status": "source_selector_with_review_confirmed_replacement",
+      "corroborating_review": "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
+      "source_file": "db/technology_node_sets_tables/data__.tsv",
+      "source_sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402",
+      "selected_source_row": 33,
+      "overridden_source_row": 32,
+      "selected_selectors": {
+        "key": "tze_the_changeling",
+        "campaign_key": "",
+        "faction_key": "wh3_dlc24_tze_the_deceivers",
+        "culture": "wh3_main_tze_tzeentch",
+        "subculture": "",
+        "colour_hex": "FFFFFF"
+      },
+      "overridden_selectors": {
+        "key": "tze_mil",
+        "campaign_key": "",
+        "faction_key": "",
+        "culture": "wh3_main_tze_tzeentch",
+        "subculture": "",
+        "colour_hex": "FFFFFF"
+      }
+    }
+  ],
+  "campaign_variants": [
+    {
+      "faction_key": "wh3_dlc24_tze_the_deceivers",
+      "node_set_key": "tze_the_changeling",
+      "campaign_key": "wh3_main_chaos",
+      "script_campaign_key": "wh3_main_chaos",
+      "evidence_id": "fbc90b2d75aeaffd27d79e95",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "db_source_file": "db/campaigns_tables/data__.tsv",
+      "db_source_sha256": "76f1165a0b53648ac537ec129a095e2e1d7666a5583c76e6769722869cc9ed8d"
+    },
+    {
+      "faction_key": "wh3_dlc24_tze_the_deceivers",
+      "node_set_key": "tze_the_changeling",
+      "campaign_key": "wh3_main_combi",
+      "script_campaign_key": "main_warhammer",
+      "evidence_id": "2f34ca3d821da9c04360cefe",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "db_source_file": "db/campaigns_tables/data__.tsv",
+      "db_source_sha256": "76f1165a0b53648ac537ec129a095e2e1d7666a5583c76e6769722869cc9ed8d"
+    }
+  ]
+}

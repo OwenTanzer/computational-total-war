@@ -14,7 +14,7 @@ This is an unofficial research project and is not affiliated with Creative Assem
 - Races: all 24 playable race rosters in the patch 8.1.1 source snapshot
 - Unit data: 24 race CSVs containing 2,000 race-roster rows
 - Skill trees: 500 unique character files containing 521 conditional node sets
-- Technology trees: 104 faction files with 112 source node-set/campaign variants, costs, prerequisites, effects, unlocks and script evidence
+- Technology trees: 104 faction files with 104 active node-set/campaign variants, 6,016 nodes, 1,620 technologies and 306 typed scripted-mechanic occurrences
 - Economy: 104 playable-faction CSVs containing the standardized building catalog
 - Campaign atlas: one Immortal Empires GeoPackage containing 641 regions, 214 provinces, 104 playable starts, effective victory objectives, topology, and battle-map relations
 - Faction mechanics: 24 source-grounded race guides covering all 104 playable factions and bespoke campaign systems omitted from the standardized catalogs
@@ -25,7 +25,7 @@ Faction-specific military groups remain inside their parent race dataset. Normal
 
 - `data/unit_stats/` — normalized unit statistics, weapon and projectile lookups, raw source exports, manifests, schema documentation, and audit reports.
 - `data/skill_trees/` — one self-contained CSV per character subtype, plus the character index, schema inventory, raw source exports, manifests, and audit reports.
-- `data/technology_trees/` — authoritative technology sources and self-contained faction trees, including explicit runtime evidence limits.
+- `data/technology_trees/` — authoritative technology sources and self-contained faction trees, including explicit faction overrides, structured scripted requirements/rewards and bounded evidence.
 - `data/economy/` — one narrow building-economy CSV per playable faction, plus the faction index, schema inventory, raw source exports, manifest, and audit reports.
 - `data/campaign_map/` — the compact Immortal Empires GeoPackage, documentation, and validation reports.
 - `scripts/` — repeatable extraction, build, and validation programs for all production datasets.
@@ -45,6 +45,13 @@ Each production dataset has its own `README.md`. Start with:
 ## Validation
 
 The scripts require Node.js 24 or newer. They use only Node.js built-in modules; no package installation is required for validation.
+
+Text fingerprints accept an exact LF or CRLF representation with the recorded
+SHA-256 and byte count, so Git's checkout conversion works on Windows and Linux.
+Content changes still fail validation. Technology artifacts retain exact source
+and builder bytes through `.gitattributes`. Run `npm run test:validation-text`
+for the newline/content mutation checks and `npm run verify:technology-extraction`
+on the verified game installation to compare a fresh authoritative extraction.
 
 Run the complete validation suite from the repository root:
 

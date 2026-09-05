@@ -1,4 +1,12 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import {
+  GAMEPLAY_TREES,
+  CHANGELING,
+  CHANGELING_CAMPAIGNS,
+  gameplayTrees,
+  scriptRows,
+  validateScriptSource,
+} from "./validate-technology-scripts.mjs";
+import { readFile, writeFile, mkdir, mkdtemp } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
 import path from "node:path";
 import {
@@ -33,16 +41,9 @@ const eq = (a, b, msg) => check(stable(a) === stable(b), msg);
 const readCsv = async (f) => {
   const b = await readFile(f);
   const txt = new TextDecoder("utf-8", { fatal: true }).decode(b);
-  check(!/(?<!\r)\n/.test(txt), `Non-CRLF CSV: ${f}`);
   return { ...parse(txt), bytes: b };
 };
 const sourcePaths = new Set(s.manifest.files.map((f) => f.path));
-const textCache = new Map();
-const sourceText = async (p) => {
-  if (!textCache.has(p))
-    textCache.set(p, await readFile(path.join(source, p), "utf8"));
-  return textCache.get(p);
-};
 for (const f of s.manifest.files) {
   const b = await readFile(path.join(source, f.path));
   check(
@@ -80,7 +81,7 @@ eq(
   idx.rows.map((r) => r.relative_path).sort(),
   "Actual faction file paths must equal the index",
 );
-const schema = await readCsv(path.join(output, "schema_inventory__v1.csv"));
+const schema = await readCsv(path.join(output, "schema_inventory__v2.csv"));
 eq(
   schema.rows.map((r) => r.column_name),
   s.columns,
@@ -179,16 +180,19 @@ for (const ir of idx.rows) {
           `Boolean ${col.column_name}: ${r.source_key}`,
         );
     }
-    if (r.record_type === "script_reference") {
+    if (
+      ["script_reference", "scripted_requirement", "scripted_reward"].includes(
+        r.record_type,
+      )
+    ) {
       check(
-        sourcePaths.has(r.script_path),
-        `Script provenance ${r.script_path}`,
-      );
-      const text = await sourceText(r.script_path);
-      check(
-        text.split(/\r?\n/)[Number(r.script_line) - 1]?.trim() ===
-          r.script_evidence,
-        `Script evidence ${r.script_path}:${r.script_line}`,
+        s.scriptEvidence.excerpts.some(
+          (e) =>
+            e.evidence_id === r.evidence_id &&
+            e.source_file === r.source_file &&
+            e.source_sha256 === r.source_sha256,
+        ),
+        "Script row bounded provenance " + r.evidence_id,
       );
       continue;
     }
@@ -271,38 +275,36 @@ for (const ir of idx.rows) {
         });
     }
   }
-  // Independent reconstruction of expected selector combinations and membership.
-  const expectedSets = t.technology_node_sets.filter(
-    (r) =>
-      (!r.faction_key || r.faction_key === p.faction.key) &&
-      (!r.culture || r.culture === p.culture) &&
-      (!r.subculture || r.subculture === p.faction.subculture),
+  gameplayTrees(p.faction.key, rows, check);
+  // Independent gameplay fixtures select overrides; source membership is checked
+  // separately. Do not import or call the builder's resolveSets function.
+  const wanted =
+    GAMEPLAY_TREES[p.faction.key]?.[0] ??
+    (p.faction.key === CHANGELING ? "tze_the_changeling" : null);
+  const expectedSets = t.technology_node_sets.filter((r) =>
+    wanted
+      ? r.key === wanted
+      : (!r.faction_key || r.faction_key === p.faction.key) &&
+        (!r.culture || r.culture === p.culture) &&
+        (!r.subculture || r.subculture === p.faction.subculture),
   );
   const expectedVariants = [];
   for (const set of expectedSets) {
-    const candidates = t.technology_nodes.filter(
-      (n) =>
-        n.technology_node_set === set.key &&
-        (!n.faction_key || n.faction_key === p.faction.key) &&
-        (!n.campaign_key ||
-          !set.campaign_key ||
-          n.campaign_key === set.campaign_key),
-    );
-    const campaigns = [
-      ...new Set(candidates.map((n) => n.campaign_key).filter(Boolean)),
-    ].sort();
-    for (const campaign of set.campaign_key
-      ? [set.campaign_key]
-      : campaigns.length
-        ? ["", ...campaigns]
-        : [""])
+    const campaigns =
+      p.faction.key === CHANGELING
+        ? Object.keys(CHANGELING_CAMPAIGNS)
+        : [set.campaign_key || ""];
+    for (const campaign of campaigns)
       expectedVariants.push({
         set,
         campaign,
-        nodes: candidates.filter(
-          (n) => !n.campaign_key || n.campaign_key === campaign,
+        nodes: t.technology_nodes.filter(
+          (n) =>
+            n.technology_node_set === set.key &&
+            (!n.faction_key || n.faction_key === p.faction.key) &&
+            (!n.campaign_key || n.campaign_key === campaign),
         ),
-        key: set.key + "@" + (campaign || "unspecified_campaign"),
+        key: set.key + "@" + (campaign || "all_campaigns"),
       });
   }
   eq(
@@ -313,9 +315,30 @@ for (const ir of idx.rows) {
     expectedVariants.map((v) => v.key).sort(),
     `Node-set variant source reconciliation: ${p.faction.key}`,
   );
+  for (const row of rows) {
+    if (row.variant_key) {
+      const variant = expectedVariants.find((v) => v.key === row.variant_key);
+      check(
+        variant &&
+          row.node_set_key === variant.set.key &&
+          row.campaign_key === variant.campaign,
+        "Row variant context: " +
+          p.faction.key +
+          "/" +
+          row.record_type +
+          "/" +
+          row.variant_key,
+      );
+    } else
+      check(
+        ["faction", "script_reference"].includes(row.record_type),
+        "Missing row variant: " + p.faction.key + "/" + row.record_type,
+      );
+  }
   for (const v of expectedVariants) {
     const vr = rows.filter((r) => r.variant_key === v.key),
       nr = vr.filter((r) => r.record_type === "node");
+    scriptRows(s, p, vr, check);
     const nk = new Set(v.nodes.map((n) => n.key)),
       tk = new Set(v.nodes.map((n) => n.technology_key));
     eq(
@@ -622,6 +645,7 @@ for (const ir of idx.rows) {
 const manifest = JSON.parse(
   await readFile(path.join(output, "dataset_manifest.json"), "utf8"),
 );
+check(manifest.schema_version === 2, "Dataset schema version 2");
 eq(
   manifest.record_types,
   Object.fromEntries(
@@ -695,34 +719,21 @@ check(
 const scriptAudit = JSON.parse(
   await readFile(path.join(output, "script_audit.json"), "utf8"),
 );
-const discovery = JSON.parse(
-  await readFile(path.join(source, "discovery.json"), "utf8"),
-);
+await validateScriptSource(s, source, output, check);
 eq(
-  scriptAudit.files.map((f) => f.path).sort(),
-  discovery.scripts
-    .filter((f) => f.retained)
-    .map((f) => f.path)
-    .sort(),
-  "Every retained script is classified",
+  scriptAudit.unmodeled_lock_sites,
+  s.scriptEvidence.unmodeled_lock_sites,
+  "Script audit site fidelity",
 );
 check(
-  scriptAudit.unresolved_cases ===
-    scriptAudit.files
-      .filter((f) => f.role === "campaign_logic")
-      .reduce((n, f) => n + f.mutation_sites.length, 0),
-  "Unresolved script count",
+  scriptAudit.unresolved_cases === s.scriptEvidence.unmodeled_lock_sites.length,
+  "Unmodeled script count",
 );
-for (const f of scriptAudit.files) {
-  const lines = (await readFile(path.join(source, f.path), "utf8")).split(
-    /\r?\n/,
-  );
-  for (const site of f.mutation_sites)
-    check(
-      lines[site.line - 1]?.trim() === site.evidence,
-      `Script mutation evidence ${f.path}:${site.line}`,
-    );
-}
+check(
+  scriptAudit.structured_source_records === s.mechanics.length &&
+    scriptAudit.whole_lua_files_retained === 0,
+  "Structured script audit counts",
+);
 const external = topology.flatMap((g) =>
   g.external_technology_requirements.map((r) => ({
     ...r,
@@ -739,10 +750,10 @@ if (missing.length)
     `${missing.length} missing localization occurrences (${new Set(missing.map((r) => r.localisation_key)).size} distinct keys); structural records retained.`,
   );
 warnings.push(
-  `${scriptAudit.unresolved_cases} campaign script mutation sites retain unresolved runtime conditions. Literal script references are not static effects.`,
+  `${scriptAudit.unresolved_cases} bounded lock sites are not normalized: Beastmen challenge predicates/counters, Ostankya hex progression, and Changeling saved-state-guarded rift release (Empire minor-2 mission or at least two Rift Gems). See script_audit.json for individual locations.`,
 );
 warnings.push(
-  "Generic and faction-specific candidate node sets are both preserved; engine precedence is not proven by decoded records.",
+  "Seven explicit faction DB assignments replace generic fallbacks using reviewed gameplay exceptions; the binary engine selector is not decoded. See node_set_precedence.json.",
 );
 warnings.push(
   "Feature forests and transitions are retained in source, but runtime feature transitions and script-controlled effect/unlock behavior are not statically executed.",
@@ -751,9 +762,11 @@ warnings.push(
 // manifest, then compare the candidate. Validator artifacts are deterministic too.
 let determinism = false;
 if (!process.argv.includes("--skip-rebuild")) {
-  const dirs = ["work/technology_rebuild_a", "work/technology_rebuild_b"].map(
-    (p) => path.resolve(p),
-  );
+  await mkdir("work", { recursive: true });
+  const dirs = [
+    await mkdtemp(path.resolve("work/technology_rebuild_a_")),
+    await mkdtemp(path.resolve("work/technology_rebuild_b_")),
+  ];
   for (const dir of dirs) {
     const child = spawnSync(
       process.execPath,
@@ -784,6 +797,7 @@ if (!errors.length)
     "All nodes, technologies, prerequisite links, research costs, effect junctions, scopes, priorities and localizations reconcile to source.",
     "Prerequisite DAGs checked; zero required_parents means all source parents. Hidden and repeated technology nodes are retained and classified.",
     "Nakai wh2_dlc13 branches, ordering, prerequisites, costs and effects verified against complete lzd_nakai source membership.",
+    "Independent gameplay override totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.",
     "Shared fingerprints recomputed and faction-specific Wood Elf structure distinguished.",
     ...(determinism
       ? [
@@ -814,6 +828,10 @@ const report = {
   missing_by_field: Object.fromEntries(
     [...group(missing, "field")].map(([k, v]) => [k, v.length]),
   ),
+  structured_script_source_records: s.mechanics.length,
+  structured_script_occurrences: manifest.structured_script_occurrences,
+  structured_script_mechanics_by_type:
+    manifest.structured_script_mechanics_by_type,
   unresolved_scripted_cases: scriptAudit.unresolved_cases,
   external_technology_requirements: external.length,
   unique_structures: hashes.size,

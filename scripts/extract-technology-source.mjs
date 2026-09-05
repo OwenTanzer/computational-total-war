@@ -1,11 +1,4 @@
-import {
-  readFile,
-  writeFile,
-  mkdir,
-  readdir,
-  stat,
-  copyFile,
-} from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { createHash } from "node:crypto";
@@ -97,6 +90,7 @@ const support = [
   "effects_tables",
   "campaign_effect_scopes_tables",
   "ancillaries_tables",
+  "agent_subtypes_tables",
   "character_trait_levels_tables",
   "resource_costs_tables",
   "resource_cost_pooled_resource_junctions_tables",
@@ -148,8 +142,8 @@ await extract(loc);
 console.log(
   `Exported ${tables.length} tables and ${loc.length} localization files.`,
 );
-// Bounded reverse audit: campaign and shared library Lua only. Retain whole matching
-// files for control-flow context; nonmatching files are inventoried with hashes.
+// Full scripts exist only in ignored scratch. Production receives hashes, typed
+// mechanics and bounded excerpts generated from these authoritative bytes.
 const scriptScratch = path.resolve(output, "../technology_script_scan");
 await mkdir(scriptScratch, { recursive: true });
 await extract(scriptPaths, scriptScratch);
@@ -162,13 +156,12 @@ for (const p of scriptPaths) {
     path: p,
     sha256: createHash("sha256").update(data).digest("hex"),
     bytes: data.length,
-    retained,
+    contains_technology: retained,
+    line_count: data.toString("utf8").split(/\r?\n/).length,
   });
-  if (retained) {
-    await mkdir(path.dirname(path.join(output, p)), { recursive: true });
-    await copyFile(path.join(scriptScratch, p), path.join(output, p));
-  }
 }
+const { compactScripts } = await import("./technology-script-source.mjs");
+const compact = await compactScripts(output, scriptScratch, scan);
 const selectedSchema = Object.fromEntries(
   tables.map((t) => [t, schema.definitions[t]]),
 );
@@ -236,5 +229,5 @@ await writeFile(
   ) + "\n",
 );
 console.log(
-  `Snapshot complete: ${files.length} files; ${scan.length} Lua files scanned, ${scan.filter((x) => x.retained).length} retained.`,
+  `Snapshot complete: ${files.length} files; ${scan.length} Lua files scanned, 0 whole Lua files retained; ${compact.mechanic_records} mechanics and ${compact.excerpt_count} bounded excerpts.`,
 );

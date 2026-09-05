@@ -37,8 +37,8 @@ mechanics.
   boundary rather than inventing a value.
 
 - Technology data is owned by `data/technology_trees/`; the economy snapshot does not own technology records.
-- In faction technology files, filter by `variant_key`. Generic and faction-specific source candidates must remain distinct; decoded records do not prove engine selection precedence.
-- Read `script_audit.json` and `audit_report.json` before asserting research availability. Script references are evidence pointers, not unconditional effects; the Daemon Prince explicitly has no ordinary research tree.
+- In faction technology files, filter by `variant_key`. Faction-specific overrides replace generic fallbacks according to `source_exports/node_set_precedence.json`; only legitimate campaign variants are emitted.
+- Read `script_audit.json` and `audit_report.json` before asserting research availability. Typed scripted requirements and rewards retain their scopes, triggers and targets; bounded script references are evidence pointers, not unconditional effects; the Daemon Prince explicitly has no ordinary research tree.
 
 ## Repository maintenance
 

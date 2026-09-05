@@ -1,782 +1,297 @@
 {
   "scanned_files": 418,
-  "retained_files": 87,
+  "whole_lua_files_retained": 0,
   "scope": "script/campaign/**/*.lua and script/_lib/**/*.lua",
-  "pattern": "technolog|research|tech_tree|tech_node",
-  "unresolved_cases": 39,
-  "files": [
-    {
-      "path": "script/_lib/lib_campaign_intervention.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_campaign_manager.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": [
-        {
-          "line": 14786,
-          "operation": "lock_technology",
-          "evidence": "game_interface:lock_technology(faction_name, current_rec);",
-          "classification": "library_or_tutorial_excluded"
-        },
-        {
-          "line": 14793,
-          "operation": "unlock_technology",
-          "evidence": "game_interface:unlock_technology(faction_name, current_rec);",
-          "classification": "library_or_tutorial_excluded"
-        }
-      ]
-    },
-    {
-      "path": "script/_lib/lib_campaign_mission_manager.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_campaign_tutorial.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_campaign_ui.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_campaign_ui_overrides.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_help_pages.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/_lib/lib_types.lua",
-      "role": "library_or_api",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_chaos_warriors.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_empire.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_kislev.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_ogres.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_slaanesh.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/races/wh3_narrative_tzeentch.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/wh3_narrative_event_templates.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/wh3_narrative_query_templates.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/wh3_narrative_shared_chains.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/_narrative/wh3_narrative_trigger_templates.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_grudge_too_far.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_pyramid_of_nagash.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_vampires_rise.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_vermintide.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_waaagh.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_wild_hunt.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_will_of_hashut.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/required.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh2_vampire_bloodlines.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh3_ie_narrative_events.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh_dlc07_diplomatic_tech.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 8,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh_dlc07_vows.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh_dlc08_monster_hunt.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 2,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh_first_turn.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/main_warhammer/wh_start.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/scripted_tours/campaign_tours.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_campaign_rites.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_campaign_tech_tree_lords.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 2,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_campaign_traits.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc09_dynasty_tree.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 13,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc09_tomb_kings.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 6,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc11_tech_tree.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 4,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc12_ikit_workshop.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc13_empire_politics.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc14_snikch_shadowy_dealings.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc15_salvage.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 17,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc15_waaagh.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc16_wef_worldroots.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh2_dlc17_beastmen_tech.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 78,
-      "mutation_sites": [
-        {
-          "line": 55,
-          "operation": "lock_technology",
-          "evidence": "cm:lock_technology(faction_key, lock_tech_keys[j]);",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 110,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 111,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 112,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 113,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 114,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 135,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 136,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 137,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 138,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 139,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 159,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 160,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 161,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 162,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 163,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 184,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 205,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 227,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 228,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 229,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 230,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 231,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 245,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_unfavoured_battle\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 310,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_chariot_only\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 391,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_fifteen_spells\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 418,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bloodgrounds_everywhere\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 455,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_wipe_out_faction\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 485,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_four_battles\");",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 526,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_single_entity_tech\");",
-          "classification": "runtime_condition_not_evaluated"
-        }
-      ]
-    },
-    {
-      "path": "script/campaign/wh3_campaign_achievements.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 17,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_ai.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_bonus_values.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_faction_initiative_unlocks.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_followers.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 11,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_kislev_ice_court.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 4,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_kislev_motherland.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_nurgle_plagues.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_campaign_tech_tree.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 91,
-      "mutation_sites": [
-        {
-          "line": 389,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(faction_key, technology_key)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 432,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(region_owner:name(), technology_key)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 440,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(current_ally:name(), technology_key)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 455,
-          "operation": "lock_technology",
-          "evidence": "cm:lock_technology(current_faction:name(), technology_key)",
-          "classification": "runtime_condition_not_evaluated"
-        }
-      ]
-    },
-    {
-      "path": "script/campaign/wh3_campaign_underdeep.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 11,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 7,
-      "mutation_sites": [
-        {
-          "line": 264,
-          "operation": "lock_technology",
-          "evidence": "cm:lock_technology(self.ostankya_faction, data.tech)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 319,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(faction_name, unlocked_hex_data.tech)",
-          "classification": "runtime_condition_not_evaluated"
-        }
-      ]
-    },
-    {
-      "path": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 30,
-      "mutation_sites": [
-        {
-          "line": 1712,
-          "operation": "lock_technology",
-          "evidence": "cm:lock_technology(self.faction_key, tech_key)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 2395,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(self.faction_key, tech_key)",
-          "classification": "runtime_condition_not_evaluated"
-        },
-        {
-          "line": 2582,
-          "operation": "unlock_technology",
-          "evidence": "cm:unlock_technology(self.faction_key, tech_key)",
-          "classification": "runtime_condition_not_evaluated"
-        }
-      ]
-    },
-    {
-      "path": "script/campaign/wh3_dlc25_campaign_nur_chieftains.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc25_emp_techs.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc25_emperors_decrees.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc25_empire_state_troops.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 6,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc25_malakai_battles.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc26_ogre_camps.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 2,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc27_asur_dilemmas.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc27_dechala_daemonic_units.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 1,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc27_dechala_settlement_exploitation.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_dlc27_eternal_dance.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 3,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_chaos/required.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_chaos/wh3_chaos_narrative_events.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_chaos/wh_start.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_advice.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_audio.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_followers.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_interventions.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_scripted_tours.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_start.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_traits.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/wh_disable_features.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh3_main_prologue/wh_start.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh_campaign_bretonnia_chivalry.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 20,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh_campaign_help_pages.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh_campaign_interventions.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh_campaign_scripted_tours.lua",
-      "role": "tutorial_narrative_or_help",
-      "technology_literal_references": 0,
-      "mutation_sites": []
-    },
-    {
-      "path": "script/campaign/wh_campaign_setup.lua",
-      "role": "campaign_logic",
-      "technology_literal_references": 2,
-      "mutation_sites": []
+  "structured_source_records": 96,
+  "structured_records_by_type": {
+    "khorne_battle_wins": 30,
+    "norsca_region_gate": 21,
+    "norsca_target_culture_wins": 23,
+    "technology_ancillary_reward": 18,
+    "vampire_coast_lord_reward": 4
+  },
+  "excerpt_count": 141,
+  "unresolved_cases": 35,
+  "unmodeled_lock_sites": [
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 55,
+      "operation": "lock_technology",
+      "evidence_id": "3e24e7cdcdd67f1377728755",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 110,
+      "operation": "unlock_technology",
+      "evidence_id": "105d50280092d424928d1d0d",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 111,
+      "operation": "unlock_technology",
+      "evidence_id": "d66c30899bcc633e58088a89",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 112,
+      "operation": "unlock_technology",
+      "evidence_id": "51c34091c58ac6d51c7be39e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 113,
+      "operation": "unlock_technology",
+      "evidence_id": "12514885edeb77004b2d10b8",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 114,
+      "operation": "unlock_technology",
+      "evidence_id": "5e864d66b9c01d6ff378d760",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 135,
+      "operation": "unlock_technology",
+      "evidence_id": "ea9102a6bb4a7edb0ab7d349",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 136,
+      "operation": "unlock_technology",
+      "evidence_id": "7edcca13f877f916c7b81984",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 137,
+      "operation": "unlock_technology",
+      "evidence_id": "f0e8b810eab87458b00d3255",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 138,
+      "operation": "unlock_technology",
+      "evidence_id": "2196ce92fde6824978d7e9a4",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 139,
+      "operation": "unlock_technology",
+      "evidence_id": "fa843dea5083cdfc460a1b15",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 159,
+      "operation": "unlock_technology",
+      "evidence_id": "0cfae5ba8f5dfdd0250673b5",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 160,
+      "operation": "unlock_technology",
+      "evidence_id": "d461dd3ff28183dade88e0ec",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 161,
+      "operation": "unlock_technology",
+      "evidence_id": "da09b728e07417b552518d1f",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 162,
+      "operation": "unlock_technology",
+      "evidence_id": "8f736554877f71341468fe04",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 163,
+      "operation": "unlock_technology",
+      "evidence_id": "a33bb60ba172636dcac67a30",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 184,
+      "operation": "unlock_technology",
+      "evidence_id": "2af62ec0ffd831af026abff0",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 205,
+      "operation": "unlock_technology",
+      "evidence_id": "4fb21be88ca5d71bbd42a040",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 227,
+      "operation": "unlock_technology",
+      "evidence_id": "229399e80a90eb1add2c8d95",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 228,
+      "operation": "unlock_technology",
+      "evidence_id": "af991e88d31ac7d6906221b6",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 229,
+      "operation": "unlock_technology",
+      "evidence_id": "1a653f8f46a84efdc561f63e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 230,
+      "operation": "unlock_technology",
+      "evidence_id": "776699dc4795a229acb62153",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 231,
+      "operation": "unlock_technology",
+      "evidence_id": "2b1822c7cf7e9bc1ddcb49a3",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 245,
+      "operation": "unlock_technology",
+      "evidence_id": "1b4b9b1b9826b9c401039de4",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 310,
+      "operation": "unlock_technology",
+      "evidence_id": "dbed8e44090aca257adc67b9",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 391,
+      "operation": "unlock_technology",
+      "evidence_id": "43deb83ce1afb440eab0514b",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 418,
+      "operation": "unlock_technology",
+      "evidence_id": "0fe7379b9a23a3e0fc2dc8fa",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 455,
+      "operation": "unlock_technology",
+      "evidence_id": "5ade11a694fe3b5f308c1750",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 485,
+      "operation": "unlock_technology",
+      "evidence_id": "1f2dd58a415ceb0222676390",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 526,
+      "operation": "unlock_technology",
+      "evidence_id": "d4730b01cd984a2ab546f988",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_line": 264,
+      "operation": "lock_technology",
+      "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
+      "limitation": "Hex unlock progression is not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_line": 319,
+      "operation": "unlock_technology",
+      "evidence_id": "1529480131babd55d66a7064",
+      "limitation": "Hex unlock progression is not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 1712,
+      "operation": "lock_technology",
+      "evidence_id": "f92f4df973cba02c3a79af68",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 2395,
+      "operation": "unlock_technology",
+      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 2582,
+      "operation": "unlock_technology",
+      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
     }
   ]
 }

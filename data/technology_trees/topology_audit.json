@@ -2,7 +2,7 @@
   "variants": [
     {
       "faction_key": "wh2_dlc09_skv_clan_rictus",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_skv_1_0",
@@ -70,7 +70,7 @@
     },
     {
       "faction_key": "wh2_dlc09_tmb_exiles_of_nehek",
-      "variant_key": "tmb_mil@unspecified_campaign",
+      "variant_key": "tmb_mil@all_campaigns",
       "nodes": 74,
       "root_nodes": [
         "wh2_dlc09_tech_tmb_dynasty_1",
@@ -170,7 +170,7 @@
     },
     {
       "faction_key": "wh2_dlc09_tmb_followers_of_nagash",
-      "variant_key": "tmb_mil@unspecified_campaign",
+      "variant_key": "tmb_mil@all_campaigns",
       "nodes": 74,
       "root_nodes": [
         "wh2_dlc09_tech_tmb_dynasty_1",
@@ -270,7 +270,7 @@
     },
     {
       "faction_key": "wh2_dlc09_tmb_khemri",
-      "variant_key": "tmb_mil@unspecified_campaign",
+      "variant_key": "tmb_mil@all_campaigns",
       "nodes": 74,
       "root_nodes": [
         "wh2_dlc09_tech_tmb_dynasty_1",
@@ -370,7 +370,7 @@
     },
     {
       "faction_key": "wh2_dlc09_tmb_lybaras",
-      "variant_key": "tmb_mil@unspecified_campaign",
+      "variant_key": "tmb_mil@all_campaigns",
       "nodes": 74,
       "root_nodes": [
         "wh2_dlc09_tech_tmb_dynasty_1",
@@ -470,7 +470,7 @@
     },
     {
       "faction_key": "wh2_dlc11_cst_noctilus",
-      "variant_key": "cst_mil@unspecified_campaign",
+      "variant_key": "cst_mil@all_campaigns",
       "nodes": 48,
       "root_nodes": [
         "wh2_dlc11_tech_cst_admirals_00",
@@ -535,7 +535,7 @@
     },
     {
       "faction_key": "wh2_dlc11_cst_pirates_of_sartosa",
-      "variant_key": "cst_mil@unspecified_campaign",
+      "variant_key": "cst_mil@all_campaigns",
       "nodes": 48,
       "root_nodes": [
         "wh2_dlc11_tech_cst_admirals_00",
@@ -600,7 +600,7 @@
     },
     {
       "faction_key": "wh2_dlc11_cst_the_drowned",
-      "variant_key": "cst_mil@unspecified_campaign",
+      "variant_key": "cst_mil@all_campaigns",
       "nodes": 48,
       "root_nodes": [
         "wh2_dlc11_tech_cst_admirals_00",
@@ -665,7 +665,7 @@
     },
     {
       "faction_key": "wh2_dlc11_cst_vampire_coast",
-      "variant_key": "cst_mil@unspecified_campaign",
+      "variant_key": "cst_mil@all_campaigns",
       "nodes": 48,
       "root_nodes": [
         "wh2_dlc11_tech_cst_admirals_00",
@@ -730,7 +730,7 @@
     },
     {
       "faction_key": "wh2_dlc11_def_the_blessed_dread",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -796,7 +796,7 @@
     },
     {
       "faction_key": "wh2_dlc11_vmp_the_barrow_legion",
-      "variant_key": "vmp_mil@unspecified_campaign",
+      "variant_key": "vmp_mil@all_campaigns",
       "nodes": 46,
       "root_nodes": [
         "wh_main_tech_vmp_beasts_01",
@@ -859,7 +859,7 @@
     },
     {
       "faction_key": "wh2_dlc12_lzd_cult_of_sotek",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -953,7 +953,7 @@
     },
     {
       "faction_key": "wh2_dlc13_emp_golden_order",
-      "variant_key": "emp_civ_reworkd@unspecified_campaign",
+      "variant_key": "emp_civ_reworkd@all_campaigns",
       "nodes": 55,
       "root_nodes": [
         "wh2_dlc13_tech_emp_academia_1_a",
@@ -1050,7 +1050,7 @@
     },
     {
       "faction_key": "wh2_dlc13_emp_the_huntmarshals_expedition",
-      "variant_key": "emp_civ_reworkd@unspecified_campaign",
+      "variant_key": "emp_civ_reworkd@all_campaigns",
       "nodes": 51,
       "root_nodes": [
         "wh2_dlc13_tech_emp_academia_1_a",
@@ -1138,101 +1138,7 @@
     },
     {
       "faction_key": "wh2_dlc13_lzd_spirits_of_the_jungle",
-      "variant_key": "lzd_mil@unspecified_campaign",
-      "nodes": 64,
-      "root_nodes": [
-        "wh2_main_tech_lzd_2_1",
-        "wh2_main_tech_lzd_2_2",
-        "wh2_main_tech_lzd_2_4",
-        "wh2_main_tech_lzd_2_6",
-        "wh2_main_tech_lzd_3_1",
-        "wh2_main_tech_lzd_3_2",
-        "wh2_main_tech_lzd_3_5",
-        "wh2_main_tech_lzd_4_1",
-        "wh2_main_tech_lzd_4_6",
-        "wh2_main_tech_lzd_5_6",
-        "wh2_main_tech_lzd_agent_3",
-        "wh2_main_tech_lzd_beasts_1",
-        "wh2_main_tech_lzd_cavalry_1",
-        "wh2_main_tech_lzd_guardians_1",
-        "wh2_main_tech_lzd_saurus_1",
-        "wh2_main_tech_lzd_skinks_1",
-        "wh2_main_tech_lzd_spawning_1"
-      ],
-      "topological_order": [
-        "wh2_main_tech_lzd_2_1",
-        "wh2_main_tech_lzd_2_2",
-        "wh2_main_tech_lzd_2_4",
-        "wh2_main_tech_lzd_2_6",
-        "wh2_main_tech_lzd_3_1",
-        "wh2_main_tech_lzd_3_2",
-        "wh2_main_tech_lzd_3_5",
-        "wh2_main_tech_lzd_4_1",
-        "wh2_main_tech_lzd_4_6",
-        "wh2_main_tech_lzd_5_6",
-        "wh2_main_tech_lzd_agent_3",
-        "wh2_main_tech_lzd_beasts_1",
-        "wh2_main_tech_lzd_cavalry_1",
-        "wh2_main_tech_lzd_guardians_1",
-        "wh2_main_tech_lzd_saurus_1",
-        "wh2_main_tech_lzd_skinks_1",
-        "wh2_main_tech_lzd_spawning_1",
-        "wh2_main_tech_lzd_2_3",
-        "wh2_main_tech_lzd_2_5",
-        "wh2_main_tech_lzd_3_4",
-        "wh2_main_tech_lzd_3_6",
-        "wh2_main_tech_lzd_4_3",
-        "wh2_main_tech_lzd_5_2",
-        "wh2_main_tech_lzd_beasts_2",
-        "wh2_main_tech_lzd_beasts_3",
-        "wh2_main_tech_lzd_cavalry_2",
-        "wh2_main_tech_lzd_cavalry_4",
-        "wh2_main_tech_lzd_guardians_2",
-        "wh2_main_tech_lzd_guardians_3",
-        "wh2_main_tech_lzd_order_6",
-        "wh2_main_tech_lzd_saurus_2",
-        "wh2_main_tech_lzd_saurus_3",
-        "wh2_main_tech_lzd_skinks_2",
-        "wh2_main_tech_lzd_skinks_4",
-        "wh2_main_tech_lzd_spawning_2",
-        "wh2_main_tech_lzd_spawning_3",
-        "wh2_main_tech_lzd_2_7",
-        "wh2_main_tech_lzd_3_3",
-        "wh2_main_tech_lzd_4_4",
-        "wh2_main_tech_lzd_5_3",
-        "wh2_main_tech_lzd_5_4",
-        "wh2_main_tech_lzd_5_5",
-        "wh2_main_tech_lzd_beasts_4",
-        "wh2_main_tech_lzd_beasts_5",
-        "wh2_main_tech_lzd_cavalry_3",
-        "wh2_main_tech_lzd_cavalry_5",
-        "wh2_main_tech_lzd_guardians_4",
-        "wh2_main_tech_lzd_guardians_5",
-        "wh2_main_tech_lzd_saurus_4",
-        "wh2_main_tech_lzd_saurus_5",
-        "wh2_main_tech_lzd_skinks_3",
-        "wh2_main_tech_lzd_skinks_5",
-        "wh2_main_tech_lzd_spawning_4",
-        "wh2_main_tech_lzd_4_5",
-        "wh2_main_tech_lzd_5_1",
-        "wh2_main_tech_lzd_beasts_6",
-        "wh2_main_tech_lzd_cavalry_6",
-        "wh2_main_tech_lzd_guardians_6",
-        "wh2_main_tech_lzd_saurus_6",
-        "wh2_main_tech_lzd_skinks_6",
-        "wh2_main_tech_lzd_4_2",
-        "wh2_main_tech_lzd_5_7",
-        "wh2_main_tech_lzd_0_1",
-        "wh2_main_tech_lzd_0_2"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh2_dlc13_lzd_spirits_of_the_jungle",
-      "variant_key": "lzd_nakai@unspecified_campaign",
+      "variant_key": "lzd_nakai@all_campaigns",
       "nodes": 44,
       "root_nodes": [
         "wh2_dlc13_tech_lzd_23",
@@ -1307,7 +1213,7 @@
     },
     {
       "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "nodes": 66,
       "root_nodes": [
         "wh2_dlc12_tech_brt_chivalry_start",
@@ -1390,7 +1296,7 @@
     },
     {
       "faction_key": "wh2_dlc15_grn_bonerattlaz",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -1464,7 +1370,7 @@
     },
     {
       "faction_key": "wh2_dlc15_grn_broken_axe",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -1538,7 +1444,7 @@
     },
     {
       "faction_key": "wh2_dlc15_hef_imrik",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 73,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -1635,7 +1541,7 @@
     },
     {
       "faction_key": "wh2_dlc16_wef_drycha",
-      "variant_key": "wef_civ@unspecified_campaign",
+      "variant_key": "wef_civ@all_campaigns",
       "nodes": 35,
       "root_nodes": [
         "dlc05_tech_wef_0_0_0",
@@ -1694,7 +1600,7 @@
     },
     {
       "faction_key": "wh2_dlc16_wef_sisters_of_twilight",
-      "variant_key": "wef_civ@unspecified_campaign",
+      "variant_key": "wef_civ@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc05_tech_wef_0_0_0",
@@ -1749,7 +1655,7 @@
     },
     {
       "faction_key": "wh2_dlc17_bst_malagor",
-      "variant_key": "bst_mil_rework@unspecified_campaign",
+      "variant_key": "bst_mil_rework@all_campaigns",
       "nodes": 28,
       "root_nodes": [
         "tech_dlc17_bst_bret_1",
@@ -1802,7 +1708,7 @@
     },
     {
       "faction_key": "wh2_dlc17_bst_taurox",
-      "variant_key": "bst_mil_rework@unspecified_campaign",
+      "variant_key": "bst_mil_rework@all_campaigns",
       "nodes": 28,
       "root_nodes": [
         "tech_dlc17_bst_bret_1",
@@ -1855,7 +1761,7 @@
     },
     {
       "faction_key": "wh2_dlc17_dwf_thorek_ironbrow",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -1938,7 +1844,7 @@
     },
     {
       "faction_key": "wh2_dlc17_lzd_oxyotl",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -2032,7 +1938,7 @@
     },
     {
       "faction_key": "wh2_main_def_cult_of_pleasure",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 54,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -2100,7 +2006,7 @@
     },
     {
       "faction_key": "wh2_main_def_hag_graef",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -2166,7 +2072,7 @@
     },
     {
       "faction_key": "wh2_main_def_har_ganeth",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -2232,7 +2138,7 @@
     },
     {
       "faction_key": "wh2_main_def_naggarond",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -2298,7 +2204,7 @@
     },
     {
       "faction_key": "wh2_main_hef_avelorn",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 73,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -2395,7 +2301,7 @@
     },
     {
       "faction_key": "wh2_main_hef_eataine",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 75,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -2494,7 +2400,7 @@
     },
     {
       "faction_key": "wh2_main_hef_nagarythe",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 73,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -2591,7 +2497,7 @@
     },
     {
       "faction_key": "wh2_main_hef_order_of_loremasters",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 73,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -2688,7 +2594,7 @@
     },
     {
       "faction_key": "wh2_main_hef_yvresse",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 73,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -2785,7 +2691,7 @@
     },
     {
       "faction_key": "wh2_main_lzd_hexoatl",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -2879,7 +2785,7 @@
     },
     {
       "faction_key": "wh2_main_lzd_itza",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -2973,7 +2879,7 @@
     },
     {
       "faction_key": "wh2_main_lzd_last_defenders",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -3067,7 +2973,7 @@
     },
     {
       "faction_key": "wh2_main_lzd_tlaqua",
-      "variant_key": "lzd_mil@unspecified_campaign",
+      "variant_key": "lzd_mil@all_campaigns",
       "nodes": 64,
       "root_nodes": [
         "wh2_main_tech_lzd_2_1",
@@ -3161,7 +3067,7 @@
     },
     {
       "faction_key": "wh2_main_skv_clan_eshin",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 55,
       "root_nodes": [
         "tech_dlc14_skv_3_0_eshin",
@@ -3233,7 +3139,7 @@
     },
     {
       "faction_key": "wh2_main_skv_clan_mors",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_skv_1_0",
@@ -3301,7 +3207,7 @@
     },
     {
       "faction_key": "wh2_main_skv_clan_moulder",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 53,
       "root_nodes": [
         "tech_skv_1_0_moulder",
@@ -3371,7 +3277,7 @@
     },
     {
       "faction_key": "wh2_main_skv_clan_pestilens",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_skv_1_0",
@@ -3439,7 +3345,7 @@
     },
     {
       "faction_key": "wh2_main_skv_clan_skryre",
-      "variant_key": "skv_mil@unspecified_campaign",
+      "variant_key": "skv_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_skv_1_0",
@@ -3507,7 +3413,7 @@
     },
     {
       "faction_key": "wh2_twa03_def_rakarth",
-      "variant_key": "def_mil@unspecified_campaign",
+      "variant_key": "def_mil@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "wh2_main_tech_def_0_0_0"
@@ -3573,7 +3479,7 @@
     },
     {
       "faction_key": "wh3_cp1_cth_tiger_warriors",
-      "variant_key": "cth_mil@unspecified_campaign",
+      "variant_key": "cth_mil@all_campaigns",
       "nodes": 74,
       "root_nodes": [
         "wh3_main_tech_cth_10",
@@ -3664,68 +3570,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_azazel",
-      "variant_key": "chs_mil@unspecified_campaign",
-      "nodes": 47,
-      "root_nodes": [
-        "dlc20_chs_und_centre"
-      ],
-      "topological_order": [
-        "dlc20_chs_und_centre",
-        "dlc20_chs_und_2",
-        "dlc20_chs_und_5",
-        "dlc20_chs_und_6",
-        "dlc20_chs_und_9",
-        "dlc20_chs_und_0",
-        "dlc20_chs_und_1",
-        "dlc20_chs_und_10",
-        "dlc20_chs_und_11",
-        "dlc20_chs_und_3",
-        "dlc20_chs_und_4",
-        "dlc20_chs_und_7",
-        "dlc20_chs_und_8",
-        "dlc20_chs_und_12",
-        "dlc20_chs_und_13",
-        "dlc20_chs_und_14",
-        "dlc20_chs_und_15",
-        "dlc20_chs_und_16",
-        "dlc20_chs_und_17",
-        "dlc20_chs_und_18",
-        "dlc20_chs_und_19",
-        "dlc20_chs_kho_start",
-        "dlc20_chs_nur_start",
-        "dlc20_chs_sla_start",
-        "dlc20_chs_tze_start",
-        "dlc20_chs_und_20",
-        "dlc20_chs_und_21",
-        "dlc20_chs_kho_0",
-        "dlc20_chs_kho_1",
-        "dlc20_chs_kho_2",
-        "dlc20_chs_kho_3",
-        "dlc20_chs_nur_0",
-        "dlc20_chs_nur_1",
-        "dlc20_chs_nur_2",
-        "dlc20_chs_nur_3",
-        "dlc20_chs_sla_0",
-        "dlc20_chs_sla_1",
-        "dlc20_chs_sla_2",
-        "dlc20_chs_sla_3",
-        "dlc20_chs_tze_0",
-        "dlc20_chs_tze_1",
-        "dlc20_chs_tze_2",
-        "dlc20_chs_tze_3",
-        "dlc20_chs_kho_final",
-        "dlc20_chs_nur_final",
-        "dlc20_chs_sla_final",
-        "dlc20_chs_tze_final"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc20_chs_azazel",
-      "variant_key": "chs_mil_azazel@unspecified_campaign",
+      "variant_key": "chs_mil_azazel@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc20_chs_sla_start_0",
@@ -3773,68 +3618,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_festus",
-      "variant_key": "chs_mil@unspecified_campaign",
-      "nodes": 47,
-      "root_nodes": [
-        "dlc20_chs_und_centre"
-      ],
-      "topological_order": [
-        "dlc20_chs_und_centre",
-        "dlc20_chs_und_2",
-        "dlc20_chs_und_5",
-        "dlc20_chs_und_6",
-        "dlc20_chs_und_9",
-        "dlc20_chs_und_0",
-        "dlc20_chs_und_1",
-        "dlc20_chs_und_10",
-        "dlc20_chs_und_11",
-        "dlc20_chs_und_3",
-        "dlc20_chs_und_4",
-        "dlc20_chs_und_7",
-        "dlc20_chs_und_8",
-        "dlc20_chs_und_12",
-        "dlc20_chs_und_13",
-        "dlc20_chs_und_14",
-        "dlc20_chs_und_15",
-        "dlc20_chs_und_16",
-        "dlc20_chs_und_17",
-        "dlc20_chs_und_18",
-        "dlc20_chs_und_19",
-        "dlc20_chs_kho_start",
-        "dlc20_chs_nur_start",
-        "dlc20_chs_sla_start",
-        "dlc20_chs_tze_start",
-        "dlc20_chs_und_20",
-        "dlc20_chs_und_21",
-        "dlc20_chs_kho_0",
-        "dlc20_chs_kho_1",
-        "dlc20_chs_kho_2",
-        "dlc20_chs_kho_3",
-        "dlc20_chs_nur_0",
-        "dlc20_chs_nur_1",
-        "dlc20_chs_nur_2",
-        "dlc20_chs_nur_3",
-        "dlc20_chs_sla_0",
-        "dlc20_chs_sla_1",
-        "dlc20_chs_sla_2",
-        "dlc20_chs_sla_3",
-        "dlc20_chs_tze_0",
-        "dlc20_chs_tze_1",
-        "dlc20_chs_tze_2",
-        "dlc20_chs_tze_3",
-        "dlc20_chs_kho_final",
-        "dlc20_chs_nur_final",
-        "dlc20_chs_sla_final",
-        "dlc20_chs_tze_final"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc20_chs_festus",
-      "variant_key": "chs_mil_festus@unspecified_campaign",
+      "variant_key": "chs_mil_festus@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc20_chs_nur_start_0",
@@ -3882,7 +3666,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_kholek",
-      "variant_key": "chs_mil@unspecified_campaign",
+      "variant_key": "chs_mil@all_campaigns",
       "nodes": 47,
       "root_nodes": [
         "dlc20_chs_und_centre"
@@ -3943,7 +3727,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_sigvald",
-      "variant_key": "chs_mil@unspecified_campaign",
+      "variant_key": "chs_mil@all_campaigns",
       "nodes": 48,
       "root_nodes": [
         "dlc20_chs_und_centre"
@@ -4005,68 +3789,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_valkia",
-      "variant_key": "chs_mil@unspecified_campaign",
-      "nodes": 47,
-      "root_nodes": [
-        "dlc20_chs_und_centre"
-      ],
-      "topological_order": [
-        "dlc20_chs_und_centre",
-        "dlc20_chs_und_2",
-        "dlc20_chs_und_5",
-        "dlc20_chs_und_6",
-        "dlc20_chs_und_9",
-        "dlc20_chs_und_0",
-        "dlc20_chs_und_1",
-        "dlc20_chs_und_10",
-        "dlc20_chs_und_11",
-        "dlc20_chs_und_3",
-        "dlc20_chs_und_4",
-        "dlc20_chs_und_7",
-        "dlc20_chs_und_8",
-        "dlc20_chs_und_12",
-        "dlc20_chs_und_13",
-        "dlc20_chs_und_14",
-        "dlc20_chs_und_15",
-        "dlc20_chs_und_16",
-        "dlc20_chs_und_17",
-        "dlc20_chs_und_18",
-        "dlc20_chs_und_19",
-        "dlc20_chs_kho_start",
-        "dlc20_chs_nur_start",
-        "dlc20_chs_sla_start",
-        "dlc20_chs_tze_start",
-        "dlc20_chs_und_20",
-        "dlc20_chs_und_21",
-        "dlc20_chs_kho_0",
-        "dlc20_chs_kho_1",
-        "dlc20_chs_kho_2",
-        "dlc20_chs_kho_3",
-        "dlc20_chs_nur_0",
-        "dlc20_chs_nur_1",
-        "dlc20_chs_nur_2",
-        "dlc20_chs_nur_3",
-        "dlc20_chs_sla_0",
-        "dlc20_chs_sla_1",
-        "dlc20_chs_sla_2",
-        "dlc20_chs_sla_3",
-        "dlc20_chs_tze_0",
-        "dlc20_chs_tze_1",
-        "dlc20_chs_tze_2",
-        "dlc20_chs_tze_3",
-        "dlc20_chs_kho_final",
-        "dlc20_chs_nur_final",
-        "dlc20_chs_sla_final",
-        "dlc20_chs_tze_final"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc20_chs_valkia",
-      "variant_key": "chs_mil_valkia@unspecified_campaign",
+      "variant_key": "chs_mil_valkia@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc20_chs_kho_start_0",
@@ -4114,68 +3837,7 @@
     },
     {
       "faction_key": "wh3_dlc20_chs_vilitch",
-      "variant_key": "chs_mil@unspecified_campaign",
-      "nodes": 47,
-      "root_nodes": [
-        "dlc20_chs_und_centre"
-      ],
-      "topological_order": [
-        "dlc20_chs_und_centre",
-        "dlc20_chs_und_2",
-        "dlc20_chs_und_5",
-        "dlc20_chs_und_6",
-        "dlc20_chs_und_9",
-        "dlc20_chs_und_0",
-        "dlc20_chs_und_1",
-        "dlc20_chs_und_10",
-        "dlc20_chs_und_11",
-        "dlc20_chs_und_3",
-        "dlc20_chs_und_4",
-        "dlc20_chs_und_7",
-        "dlc20_chs_und_8",
-        "dlc20_chs_und_12",
-        "dlc20_chs_und_13",
-        "dlc20_chs_und_14",
-        "dlc20_chs_und_15",
-        "dlc20_chs_und_16",
-        "dlc20_chs_und_17",
-        "dlc20_chs_und_18",
-        "dlc20_chs_und_19",
-        "dlc20_chs_kho_start",
-        "dlc20_chs_nur_start",
-        "dlc20_chs_sla_start",
-        "dlc20_chs_tze_start",
-        "dlc20_chs_und_20",
-        "dlc20_chs_und_21",
-        "dlc20_chs_kho_0",
-        "dlc20_chs_kho_1",
-        "dlc20_chs_kho_2",
-        "dlc20_chs_kho_3",
-        "dlc20_chs_nur_0",
-        "dlc20_chs_nur_1",
-        "dlc20_chs_nur_2",
-        "dlc20_chs_nur_3",
-        "dlc20_chs_sla_0",
-        "dlc20_chs_sla_1",
-        "dlc20_chs_sla_2",
-        "dlc20_chs_sla_3",
-        "dlc20_chs_tze_0",
-        "dlc20_chs_tze_1",
-        "dlc20_chs_tze_2",
-        "dlc20_chs_tze_3",
-        "dlc20_chs_kho_final",
-        "dlc20_chs_nur_final",
-        "dlc20_chs_sla_final",
-        "dlc20_chs_tze_final"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc20_chs_vilitch",
-      "variant_key": "chs_mil_vilitch@unspecified_campaign",
+      "variant_key": "chs_mil_vilitch@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc20_chs_tze_start_0",
@@ -4223,7 +3885,7 @@
     },
     {
       "faction_key": "wh3_dlc23_chd_astragoth",
-      "variant_key": "chd_mil@unspecified_campaign",
+      "variant_key": "chd_mil@all_campaigns",
       "nodes": 78,
       "root_nodes": [
         "wh3_dlc23_tech_chd_industry_3",
@@ -4325,7 +3987,7 @@
     },
     {
       "faction_key": "wh3_dlc23_chd_legion_of_azgorh",
-      "variant_key": "chd_mil@unspecified_campaign",
+      "variant_key": "chd_mil@all_campaigns",
       "nodes": 78,
       "root_nodes": [
         "wh3_dlc23_tech_chd_industry_3",
@@ -4427,7 +4089,7 @@
     },
     {
       "faction_key": "wh3_dlc23_chd_zhatan",
-      "variant_key": "chd_mil@unspecified_campaign",
+      "variant_key": "chd_mil@all_campaigns",
       "nodes": 78,
       "root_nodes": [
         "wh3_dlc23_tech_chd_industry_3",
@@ -4529,7 +4191,7 @@
     },
     {
       "faction_key": "wh3_dlc24_cth_the_celestial_court",
-      "variant_key": "cth_mil@unspecified_campaign",
+      "variant_key": "cth_mil@all_campaigns",
       "nodes": 72,
       "root_nodes": [
         "wh3_main_tech_cth_10",
@@ -4618,7 +4280,7 @@
     },
     {
       "faction_key": "wh3_dlc24_ksl_daughters_of_the_forest",
-      "variant_key": "ksl_mil@unspecified_campaign",
+      "variant_key": "ksl_mil@all_campaigns",
       "nodes": 78,
       "root_nodes": [
         "wh3_dlc24_tech_ksl_ostankya_hex_1",
@@ -4722,125 +4384,6 @@
         "wh3_main_ksl_g2_5_4",
         "wh3_main_ksl_g2_5_5",
         "wh3_main_ksl_g3_3_6"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc24_tze_the_deceivers",
-      "variant_key": "tze_mil@unspecified_campaign",
-      "nodes": 45,
-      "root_nodes": [
-        "wh3_main_tech_tze_0_1",
-        "wh3_main_tech_tze_0_2",
-        "wh3_main_tech_tze_0_3",
-        "wh3_main_tech_tze_0_4",
-        "wh3_main_tech_tze_0_6",
-        "wh3_main_tech_tze_0_7",
-        "wh3_main_tech_tze_0_8",
-        "wh3_main_tech_tze_0_9"
-      ],
-      "topological_order": [
-        "wh3_main_tech_tze_0_1",
-        "wh3_main_tech_tze_0_2",
-        "wh3_main_tech_tze_0_3",
-        "wh3_main_tech_tze_0_4",
-        "wh3_main_tech_tze_0_6",
-        "wh3_main_tech_tze_0_7",
-        "wh3_main_tech_tze_0_8",
-        "wh3_main_tech_tze_0_9",
-        "wh3_main_tech_tze_1_1",
-        "wh3_main_tech_tze_2_3",
-        "wh3_main_tech_tze_3_7",
-        "wh3_main_tech_tze_4_1",
-        "wh3_main_tech_tze_1_2",
-        "wh3_main_tech_tze_1_4",
-        "wh3_main_tech_tze_2_2",
-        "wh3_main_tech_tze_2_6",
-        "wh3_main_tech_tze_2_7",
-        "wh3_main_tech_tze_3_4",
-        "wh3_main_tech_tze_3_5",
-        "wh3_main_tech_tze_4_2",
-        "wh3_main_tech_tze_4_4",
-        "wh3_main_tech_tze_1_3",
-        "wh3_main_tech_tze_1_7",
-        "wh3_main_tech_tze_2_4",
-        "wh3_main_tech_tze_2_5",
-        "wh3_main_tech_tze_2_8",
-        "wh3_main_tech_tze_2_9",
-        "wh3_main_tech_tze_3_1",
-        "wh3_main_tech_tze_4_3",
-        "wh3_main_tech_tze_4_7",
-        "wh3_main_tech_tze_0_5",
-        "wh3_main_tech_tze_1_5",
-        "wh3_main_tech_tze_1_6",
-        "wh3_main_tech_tze_2_1",
-        "wh3_main_tech_tze_3_9",
-        "wh3_main_tech_tze_4_5",
-        "wh3_main_tech_tze_4_6",
-        "wh3_main_tech_tze_1_9",
-        "wh3_main_tech_tze_3_6",
-        "wh3_main_tech_tze_4_8",
-        "wh3_main_tech_tze_1_8",
-        "wh3_main_tech_tze_3_3",
-        "wh3_main_tech_tze_4_9",
-        "wh3_main_tech_tze_3_2",
-        "wh3_main_tech_tze_3_8"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_dlc24_tze_the_deceivers",
-      "variant_key": "tze_the_changeling@unspecified_campaign",
-      "nodes": 39,
-      "root_nodes": [
-        "wh3_dlc24_tech_the_changeling_root"
-      ],
-      "topological_order": [
-        "wh3_dlc24_tech_the_changeling_root",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_1",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_8",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_9",
-        "wh3_dlc24_tech_the_changeling_gate_army",
-        "wh3_dlc24_tech_the_changeling_gate_units",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_1",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_2",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_3",
-        "wh3_dlc24_tech_the_changeling_army_8",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_2",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_4",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_7",
-        "wh3_dlc24_tech_the_changeling_units_1",
-        "wh3_dlc24_tech_the_changeling_units_2",
-        "wh3_dlc24_tech_the_changeling_units_3",
-        "wh3_dlc24_tech_the_changeling_units_4",
-        "wh3_dlc24_tech_the_changeling_units_5",
-        "wh3_dlc24_tech_the_changeling_units_6",
-        "wh3_dlc24_tech_the_changeling_units_7",
-        "wh3_dlc24_tech_the_changeling_units_8",
-        "wh3_dlc24_tech_the_changeling_units_9",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_5",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_6",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_7",
-        "wh3_dlc24_tech_the_changeling_army_1",
-        "wh3_dlc24_tech_the_changeling_army_2",
-        "wh3_dlc24_tech_the_changeling_army_3",
-        "wh3_dlc24_tech_the_changeling_army_4",
-        "wh3_dlc24_tech_the_changeling_army_5",
-        "wh3_dlc24_tech_the_changeling_army_6",
-        "wh3_dlc24_tech_the_changeling_army_7",
-        "wh3_dlc24_tech_the_changeling_army_9",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_3",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_5",
-        "wh3_dlc24_tech_the_changeling_changing_of_the_ways_6",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_4",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_8",
-        "wh3_dlc24_tech_the_changeling_winds_of_magic_9"
       ],
       "cycle_nodes": [],
       "external_technology_requirements": [],
@@ -4985,7 +4528,7 @@
     },
     {
       "faction_key": "wh3_dlc25_dwf_malakai",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -5068,7 +4611,7 @@
     },
     {
       "faction_key": "wh3_dlc25_nur_epidemius",
-      "variant_key": "nur_mil@unspecified_campaign",
+      "variant_key": "nur_mil@all_campaigns",
       "nodes": 50,
       "root_nodes": [
         "wh3_main_tech_nur_decay_22",
@@ -5134,7 +4677,7 @@
     },
     {
       "faction_key": "wh3_dlc25_nur_tamurkhan",
-      "variant_key": "nur_mil@unspecified_campaign",
+      "variant_key": "nur_mil@all_campaigns",
       "nodes": 50,
       "root_nodes": [
         "wh3_main_tech_nur_decay_22",
@@ -5200,7 +4743,7 @@
     },
     {
       "faction_key": "wh3_dlc26_grn_gorbad_ironclaw",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -5274,7 +4817,7 @@
     },
     {
       "faction_key": "wh3_dlc26_kho_arbaal",
-      "variant_key": "kho_mil@unspecified_campaign",
+      "variant_key": "kho_mil@all_campaigns",
       "nodes": 62,
       "root_nodes": [
         "wh3_dlc26_tech_kho_campaign_4_1",
@@ -5356,7 +4899,7 @@
     },
     {
       "faction_key": "wh3_dlc26_kho_skulltaker",
-      "variant_key": "kho_mil@unspecified_campaign",
+      "variant_key": "kho_mil@all_campaigns",
       "nodes": 62,
       "root_nodes": [
         "wh3_dlc26_tech_kho_campaign_4_1",
@@ -5438,7 +4981,7 @@
     },
     {
       "faction_key": "wh3_dlc26_ogr_golgfag",
-      "variant_key": "ogr_mil@unspecified_campaign",
+      "variant_key": "ogr_mil@all_campaigns",
       "nodes": 56,
       "root_nodes": [
         "wh3_dlc26_ogr_horde_01",
@@ -5511,7 +5054,7 @@
     },
     {
       "faction_key": "wh3_dlc27_hef_aislinn",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "nodes": 157,
       "root_nodes": [
         "wh2_main_tech_hef_0_00",
@@ -5714,7 +5257,7 @@
     },
     {
       "faction_key": "wh3_dlc27_nor_sayl",
-      "variant_key": "nor_mil@unspecified_campaign",
+      "variant_key": "nor_mil@all_campaigns",
       "nodes": 83,
       "root_nodes": [
         "wh3_dlc27_tech_nor_cam_army_01",
@@ -5838,7 +5381,7 @@
     },
     {
       "faction_key": "wh3_dlc27_sla_masque_of_slaanesh",
-      "variant_key": "sla_mil@unspecified_campaign",
+      "variant_key": "sla_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_dlc27_tech_sla_bot_1",
@@ -5924,7 +5467,7 @@
     },
     {
       "faction_key": "wh3_dlc27_sla_the_tormentors",
-      "variant_key": "sla_mil@unspecified_campaign",
+      "variant_key": "sla_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_dlc27_tech_sla_bot_1",
@@ -6010,68 +5553,7 @@
     },
     {
       "faction_key": "wh3_main_chs_shadow_legion",
-      "variant_key": "chs_mil@unspecified_campaign",
-      "nodes": 47,
-      "root_nodes": [
-        "dlc20_chs_und_centre"
-      ],
-      "topological_order": [
-        "dlc20_chs_und_centre",
-        "dlc20_chs_und_2",
-        "dlc20_chs_und_5",
-        "dlc20_chs_und_6",
-        "dlc20_chs_und_9",
-        "dlc20_chs_und_0",
-        "dlc20_chs_und_1",
-        "dlc20_chs_und_10",
-        "dlc20_chs_und_11",
-        "dlc20_chs_und_3",
-        "dlc20_chs_und_4",
-        "dlc20_chs_und_7",
-        "dlc20_chs_und_8",
-        "dlc20_chs_und_12",
-        "dlc20_chs_und_13",
-        "dlc20_chs_und_14",
-        "dlc20_chs_und_15",
-        "dlc20_chs_und_16",
-        "dlc20_chs_und_17",
-        "dlc20_chs_und_18",
-        "dlc20_chs_und_19",
-        "dlc20_chs_kho_start",
-        "dlc20_chs_nur_start",
-        "dlc20_chs_sla_start",
-        "dlc20_chs_tze_start",
-        "dlc20_chs_und_20",
-        "dlc20_chs_und_21",
-        "dlc20_chs_kho_0",
-        "dlc20_chs_kho_1",
-        "dlc20_chs_kho_2",
-        "dlc20_chs_kho_3",
-        "dlc20_chs_nur_0",
-        "dlc20_chs_nur_1",
-        "dlc20_chs_nur_2",
-        "dlc20_chs_nur_3",
-        "dlc20_chs_sla_0",
-        "dlc20_chs_sla_1",
-        "dlc20_chs_sla_2",
-        "dlc20_chs_sla_3",
-        "dlc20_chs_tze_0",
-        "dlc20_chs_tze_1",
-        "dlc20_chs_tze_2",
-        "dlc20_chs_tze_3",
-        "dlc20_chs_kho_final",
-        "dlc20_chs_nur_final",
-        "dlc20_chs_sla_final",
-        "dlc20_chs_tze_final"
-      ],
-      "cycle_nodes": [],
-      "external_technology_requirements": [],
-      "unreachable_nodes": [],
-      "hidden_nodes": []
-    },
-    {
-      "faction_key": "wh3_main_chs_shadow_legion",
-      "variant_key": "chs_mil_belakor@unspecified_campaign",
+      "variant_key": "chs_mil_belakor@all_campaigns",
       "nodes": 47,
       "root_nodes": [
         "wh3_main_chs_belakor_und_centre"
@@ -6132,7 +5614,7 @@
     },
     {
       "faction_key": "wh3_main_cth_the_northern_provinces",
-      "variant_key": "cth_mil@unspecified_campaign",
+      "variant_key": "cth_mil@all_campaigns",
       "nodes": 72,
       "root_nodes": [
         "wh3_main_tech_cth_10",
@@ -6221,7 +5703,7 @@
     },
     {
       "faction_key": "wh3_main_cth_the_western_provinces",
-      "variant_key": "cth_mil@unspecified_campaign",
+      "variant_key": "cth_mil@all_campaigns",
       "nodes": 72,
       "root_nodes": [
         "wh3_main_tech_cth_10",
@@ -6310,7 +5792,7 @@
     },
     {
       "faction_key": "wh3_main_dwf_the_ancestral_throng",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -6393,7 +5875,7 @@
     },
     {
       "faction_key": "wh3_main_emp_cult_of_sigmar",
-      "variant_key": "emp_civ_reworkd@unspecified_campaign",
+      "variant_key": "emp_civ_reworkd@all_campaigns",
       "nodes": 49,
       "root_nodes": [
         "wh2_dlc13_tech_emp_academia_1_a",
@@ -6478,7 +5960,7 @@
     },
     {
       "faction_key": "wh3_main_kho_exiles_of_khorne",
-      "variant_key": "kho_mil@unspecified_campaign",
+      "variant_key": "kho_mil@all_campaigns",
       "nodes": 62,
       "root_nodes": [
         "wh3_dlc26_tech_kho_campaign_4_1",
@@ -6560,7 +6042,7 @@
     },
     {
       "faction_key": "wh3_main_ksl_the_great_orthodoxy",
-      "variant_key": "ksl_mil@unspecified_campaign",
+      "variant_key": "ksl_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_main_ksl_g1_0_0",
@@ -6651,7 +6133,7 @@
     },
     {
       "faction_key": "wh3_main_ksl_the_ice_court",
-      "variant_key": "ksl_mil@unspecified_campaign",
+      "variant_key": "ksl_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_main_ksl_g1_0_0",
@@ -6742,7 +6224,7 @@
     },
     {
       "faction_key": "wh3_main_ksl_ursun_revivalists",
-      "variant_key": "ksl_mil@unspecified_campaign",
+      "variant_key": "ksl_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_main_ksl_g1_0_0",
@@ -6833,7 +6315,7 @@
     },
     {
       "faction_key": "wh3_main_nur_poxmakers_of_nurgle",
-      "variant_key": "nur_mil@unspecified_campaign",
+      "variant_key": "nur_mil@all_campaigns",
       "nodes": 50,
       "root_nodes": [
         "wh3_main_tech_nur_decay_22",
@@ -6899,7 +6381,7 @@
     },
     {
       "faction_key": "wh3_main_ogr_disciples_of_the_maw",
-      "variant_key": "ogr_mil@unspecified_campaign",
+      "variant_key": "ogr_mil@all_campaigns",
       "nodes": 56,
       "root_nodes": [
         "wh3_dlc26_ogr_horde_01",
@@ -6972,7 +6454,7 @@
     },
     {
       "faction_key": "wh3_main_ogr_goldtooth",
-      "variant_key": "ogr_mil@unspecified_campaign",
+      "variant_key": "ogr_mil@all_campaigns",
       "nodes": 56,
       "root_nodes": [
         "wh3_dlc26_ogr_horde_01",
@@ -7045,7 +6527,7 @@
     },
     {
       "faction_key": "wh3_main_sla_seducers_of_slaanesh",
-      "variant_key": "sla_mil@unspecified_campaign",
+      "variant_key": "sla_mil@all_campaigns",
       "nodes": 65,
       "root_nodes": [
         "wh3_dlc27_tech_sla_bot_1",
@@ -7131,7 +6613,7 @@
     },
     {
       "faction_key": "wh3_main_tze_oracles_of_tzeentch",
-      "variant_key": "tze_mil@unspecified_campaign",
+      "variant_key": "tze_mil@all_campaigns",
       "nodes": 45,
       "root_nodes": [
         "wh3_main_tech_tze_0_1",
@@ -7197,7 +6679,7 @@
     },
     {
       "faction_key": "wh3_main_vmp_caravan_of_blue_roses",
-      "variant_key": "vmp_mil@unspecified_campaign",
+      "variant_key": "vmp_mil@all_campaigns",
       "nodes": 46,
       "root_nodes": [
         "wh_main_tech_vmp_beasts_01",
@@ -7260,7 +6742,7 @@
     },
     {
       "faction_key": "wh_dlc03_bst_beastmen",
-      "variant_key": "bst_mil_rework@unspecified_campaign",
+      "variant_key": "bst_mil_rework@all_campaigns",
       "nodes": 28,
       "root_nodes": [
         "tech_dlc17_bst_bret_1",
@@ -7313,7 +6795,7 @@
     },
     {
       "faction_key": "wh_dlc05_bst_morghur_herd",
-      "variant_key": "bst_mil_rework@unspecified_campaign",
+      "variant_key": "bst_mil_rework@all_campaigns",
       "nodes": 28,
       "root_nodes": [
         "tech_dlc17_bst_bret_1",
@@ -7366,7 +6848,7 @@
     },
     {
       "faction_key": "wh_dlc05_wef_argwylon",
-      "variant_key": "wef_civ@unspecified_campaign",
+      "variant_key": "wef_civ@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc05_tech_wef_0_0_0",
@@ -7421,7 +6903,7 @@
     },
     {
       "faction_key": "wh_dlc05_wef_wood_elves",
-      "variant_key": "wef_civ@unspecified_campaign",
+      "variant_key": "wef_civ@all_campaigns",
       "nodes": 33,
       "root_nodes": [
         "dlc05_tech_wef_0_0_0",
@@ -7476,7 +6958,7 @@
     },
     {
       "faction_key": "wh_dlc08_nor_norsca",
-      "variant_key": "nor_mil@unspecified_campaign",
+      "variant_key": "nor_mil@all_campaigns",
       "nodes": 83,
       "root_nodes": [
         "wh3_dlc27_tech_nor_cam_army_01",
@@ -7600,7 +7082,7 @@
     },
     {
       "faction_key": "wh_dlc08_nor_wintertooth",
-      "variant_key": "nor_mil@unspecified_campaign",
+      "variant_key": "nor_mil@all_campaigns",
       "nodes": 83,
       "root_nodes": [
         "wh3_dlc27_tech_nor_cam_army_01",
@@ -7724,7 +7206,7 @@
     },
     {
       "faction_key": "wh_main_brt_bordeleaux",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "nodes": 59,
       "root_nodes": [
         "wh2_dlc12_tech_brt_chivalry_start",
@@ -7799,7 +7281,7 @@
     },
     {
       "faction_key": "wh_main_brt_bretonnia",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "nodes": 59,
       "root_nodes": [
         "wh2_dlc12_tech_brt_chivalry_start",
@@ -7874,7 +7356,7 @@
     },
     {
       "faction_key": "wh_main_brt_carcassonne",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "nodes": 59,
       "root_nodes": [
         "wh2_dlc12_tech_brt_chivalry_start",
@@ -7949,7 +7431,7 @@
     },
     {
       "faction_key": "wh_main_chs_chaos",
-      "variant_key": "chs_mil@unspecified_campaign",
+      "variant_key": "chs_mil@all_campaigns",
       "nodes": 47,
       "root_nodes": [
         "dlc20_chs_und_centre"
@@ -8010,7 +7492,7 @@
     },
     {
       "faction_key": "wh_main_dwf_dwarfs",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -8093,7 +7575,7 @@
     },
     {
       "faction_key": "wh_main_dwf_karak_izor",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -8176,7 +7658,7 @@
     },
     {
       "faction_key": "wh_main_dwf_karak_kadrin",
-      "variant_key": "dwf_mil@unspecified_campaign",
+      "variant_key": "dwf_mil@all_campaigns",
       "nodes": 68,
       "root_nodes": [
         "wh_main_tech_dwf_civ_0_2",
@@ -8259,7 +7741,7 @@
     },
     {
       "faction_key": "wh_main_emp_empire",
-      "variant_key": "emp_civ_reworkd@unspecified_campaign",
+      "variant_key": "emp_civ_reworkd@all_campaigns",
       "nodes": 49,
       "root_nodes": [
         "wh2_dlc13_tech_emp_academia_1_a",
@@ -8344,7 +7826,7 @@
     },
     {
       "faction_key": "wh_main_emp_wissenland",
-      "variant_key": "emp_civ_reworkd@unspecified_campaign",
+      "variant_key": "emp_civ_reworkd@all_campaigns",
       "nodes": 57,
       "root_nodes": [
         "wh2_dlc13_tech_emp_academia_1_a",
@@ -8444,7 +7926,7 @@
     },
     {
       "faction_key": "wh_main_grn_crooked_moon",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -8518,7 +8000,7 @@
     },
     {
       "faction_key": "wh_main_grn_greenskins",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -8592,7 +8074,7 @@
     },
     {
       "faction_key": "wh_main_grn_orcs_of_the_bloody_hand",
-      "variant_key": "grn_new@unspecified_campaign",
+      "variant_key": "grn_new@all_campaigns",
       "nodes": 52,
       "root_nodes": [
         "grn_tech_node_1",
@@ -8666,7 +8148,7 @@
     },
     {
       "faction_key": "wh_main_vmp_schwartzhafen",
-      "variant_key": "vmp_mil@unspecified_campaign",
+      "variant_key": "vmp_mil@all_campaigns",
       "nodes": 46,
       "root_nodes": [
         "wh_main_tech_vmp_beasts_01",
@@ -8729,7 +8211,7 @@
     },
     {
       "faction_key": "wh_main_vmp_vampire_counts",
-      "variant_key": "vmp_mil@unspecified_campaign",
+      "variant_key": "vmp_mil@all_campaigns",
       "nodes": 46,
       "root_nodes": [
         "wh_main_tech_vmp_beasts_01",
@@ -8794,7 +8276,7 @@
   "duplicate_technology_nodes": [
     {
       "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "technology_key": "wh_dlc07_tech_brt_chivalry_tomb_kings",
       "node_keys": [
         "wh2_dlc14_tech_brt_chivalry_tomb_kings",
@@ -8804,7 +8286,7 @@
     },
     {
       "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-      "variant_key": "brt_mil@unspecified_campaign",
+      "variant_key": "brt_mil@all_campaigns",
       "technology_key": "wh_dlc07_tech_brt_chivalry_norsca_1",
       "node_keys": [
         "wh_dlc07_tech_brt_chivalry_norsca_1",
@@ -8814,7 +8296,7 @@
     },
     {
       "faction_key": "wh3_dlc27_hef_aislinn",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "technology_key": "wh3_dlc27_tech_hef_5_09",
       "node_keys": [
         "wh2_main_tech_hef_5_05",
@@ -8824,7 +8306,7 @@
     },
     {
       "faction_key": "wh3_dlc27_hef_aislinn",
-      "variant_key": "hef_mil@unspecified_campaign",
+      "variant_key": "hef_mil@all_campaigns",
       "technology_key": "wh3_dlc27_tech_hef_5_10",
       "node_keys": [
         "wh2_main_tech_hef_5_07",

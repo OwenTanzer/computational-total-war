@@ -1,7 +1,7 @@
 [
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -10,7 +10,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -19,7 +19,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -28,7 +28,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -37,7 +37,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -46,7 +46,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -55,7 +55,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -64,7 +64,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -73,7 +73,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -82,7 +82,7 @@
   },
   {
     "faction_key": "wh2_dlc09_skv_clan_rictus",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -91,7 +91,7 @@
   },
   {
     "faction_key": "wh2_dlc11_def_the_blessed_dread",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_1_3_3_slaanesh|wh2_main_tech_def_1_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -100,7 +100,7 @@
   },
   {
     "faction_key": "wh2_dlc11_def_the_blessed_dread",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_3_3_2_slaanesh|wh2_main_tech_def_3_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -109,7 +109,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bretonnia_carc|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -118,7 +118,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bord|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -127,7 +127,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bret|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -136,7 +136,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -145,7 +145,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -154,7 +154,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -163,7 +163,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -172,7 +172,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -181,7 +181,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -190,7 +190,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bord|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -199,7 +199,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bret|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -208,7 +208,7 @@
   },
   {
     "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_carc|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -217,7 +217,7 @@
   },
   {
     "faction_key": "wh2_dlc15_hef_imrik",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -226,7 +226,7 @@
   },
   {
     "faction_key": "wh2_dlc15_hef_imrik",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -235,7 +235,7 @@
   },
   {
     "faction_key": "wh2_dlc15_hef_imrik",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -244,7 +244,7 @@
   },
   {
     "faction_key": "wh2_main_def_hag_graef",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_1_3_3_slaanesh|wh2_main_tech_def_1_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -253,7 +253,7 @@
   },
   {
     "faction_key": "wh2_main_def_hag_graef",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_3_3_2_slaanesh|wh2_main_tech_def_3_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -262,7 +262,7 @@
   },
   {
     "faction_key": "wh2_main_def_har_ganeth",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_1_3_3_slaanesh|wh2_main_tech_def_1_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -271,7 +271,7 @@
   },
   {
     "faction_key": "wh2_main_def_har_ganeth",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_3_3_2_slaanesh|wh2_main_tech_def_3_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -280,7 +280,7 @@
   },
   {
     "faction_key": "wh2_main_def_naggarond",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_1_3_3_slaanesh|wh2_main_tech_def_1_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -289,7 +289,7 @@
   },
   {
     "faction_key": "wh2_main_def_naggarond",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_3_3_2_slaanesh|wh2_main_tech_def_3_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -298,7 +298,7 @@
   },
   {
     "faction_key": "wh2_main_hef_avelorn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -307,7 +307,7 @@
   },
   {
     "faction_key": "wh2_main_hef_avelorn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -316,7 +316,7 @@
   },
   {
     "faction_key": "wh2_main_hef_avelorn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -325,7 +325,7 @@
   },
   {
     "faction_key": "wh2_main_hef_nagarythe",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -334,7 +334,7 @@
   },
   {
     "faction_key": "wh2_main_hef_nagarythe",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -343,7 +343,7 @@
   },
   {
     "faction_key": "wh2_main_hef_nagarythe",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -352,7 +352,7 @@
   },
   {
     "faction_key": "wh2_main_hef_order_of_loremasters",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -361,7 +361,7 @@
   },
   {
     "faction_key": "wh2_main_hef_order_of_loremasters",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -370,7 +370,7 @@
   },
   {
     "faction_key": "wh2_main_hef_order_of_loremasters",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -379,7 +379,7 @@
   },
   {
     "faction_key": "wh2_main_hef_yvresse",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -388,7 +388,7 @@
   },
   {
     "faction_key": "wh2_main_hef_yvresse",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -397,7 +397,7 @@
   },
   {
     "faction_key": "wh2_main_hef_yvresse",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -406,7 +406,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_eshin",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -415,7 +415,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -424,7 +424,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -433,7 +433,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -442,7 +442,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -451,7 +451,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -460,7 +460,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -469,7 +469,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -478,7 +478,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -487,7 +487,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -496,7 +496,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_mors",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -505,7 +505,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -514,7 +514,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -523,7 +523,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -532,7 +532,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -541,7 +541,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -550,7 +550,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -559,7 +559,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -568,7 +568,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -577,7 +577,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_moulder",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -586,7 +586,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -595,7 +595,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -604,7 +604,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -613,7 +613,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -622,7 +622,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -631,7 +631,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -640,7 +640,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -649,7 +649,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -658,7 +658,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -667,7 +667,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_pestilens",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -676,7 +676,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -685,7 +685,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -694,7 +694,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -703,7 +703,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -712,7 +712,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -721,7 +721,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -730,7 +730,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -739,7 +739,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -748,7 +748,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -757,7 +757,7 @@
   },
   {
     "faction_key": "wh2_main_skv_clan_skryre",
-    "variant_key": "skv_mil@unspecified_campaign",
+    "variant_key": "skv_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -766,7 +766,7 @@
   },
   {
     "faction_key": "wh2_twa03_def_rakarth",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_1_3_3_slaanesh|wh2_main_tech_def_1_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -775,7 +775,7 @@
   },
   {
     "faction_key": "wh2_twa03_def_rakarth",
-    "variant_key": "def_mil@unspecified_campaign",
+    "variant_key": "def_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_main_tech_def_3_3_2_slaanesh|wh2_main_tech_def_3_3_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -783,80 +783,8 @@
     "child_node_key": "wh2_main_tech_def_3_3_2_slaanesh"
   },
   {
-    "faction_key": "wh3_dlc20_chs_azazel",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_azazel",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_azazel",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_azazel",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_festus",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_festus",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_festus",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_festus",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
     "faction_key": "wh3_dlc20_chs_kholek",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -865,7 +793,7 @@
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -874,7 +802,7 @@
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -883,79 +811,7 @@
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_valkia",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_valkia",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_valkia",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_valkia",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_vilitch",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_vilitch",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_vilitch",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_dlc20_chs_vilitch",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -964,7 +820,7 @@
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_34|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -973,7 +829,7 @@
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_56|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -982,7 +838,7 @@
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_19_bhashiva|wh3_main_tech_cth_20",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -991,7 +847,7 @@
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_43",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1000,282 +856,12 @@
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_60",
     "classification": "endpoint_excluded_by_faction_or_campaign",
     "parent_node_key": "wh3_main_tech_cth_60",
     "child_node_key": "wh3_cp1_tech_cth_59_bhashiva"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_1|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_1"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_10a_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_10a_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_10b_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_10b_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_1_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_1_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_2|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_2"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_2_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_2_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_3|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_3"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_4|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_4"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_4_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_4_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_5|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_5"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_6|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_6"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_7|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_7"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_8|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_8"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_8_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_8_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_cultist_9|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_cultist_9"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_1|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_1"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_10a_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_10a_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_10b_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_10b_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_1_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_1_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_2|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_2"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_2_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_2_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_3|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_3"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_4|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_4"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_4_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_4_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_5|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_5"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_6|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_6"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_7|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_7"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_8|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_8"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_8_roc|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_8_roc"
-  },
-  {
-    "faction_key": "wh3_dlc24_tze_the_deceivers",
-    "variant_key": "tze_the_changeling@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "wh3_dlc24_tech_the_changeling_rift_9|wh3_dlc24_tech_the_changeling_root",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "wh3_dlc24_tech_the_changeling_root",
-    "child_node_key": "wh3_dlc24_tech_the_changeling_rift_9"
   },
   {
     "faction_key": "wh3_dlc24_tze_the_deceivers",
@@ -1549,7 +1135,7 @@
   },
   {
     "faction_key": "wh3_dlc27_hef_aislinn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_00",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1558,7 +1144,7 @@
   },
   {
     "faction_key": "wh3_dlc27_hef_aislinn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_tyrion_1_02|wh2_main_tech_hef_2_10",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1567,7 +1153,7 @@
   },
   {
     "faction_key": "wh3_dlc27_hef_aislinn",
-    "variant_key": "hef_mil@unspecified_campaign",
+    "variant_key": "hef_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_hef_0_04|wh3_dlc27_tech_hef_tyrion_1_02",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1576,7 +1162,7 @@
   },
   {
     "faction_key": "wh3_dlc27_nor_sayl",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_throgg_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1585,7 +1171,7 @@
   },
   {
     "faction_key": "wh3_dlc27_nor_sayl",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1594,7 +1180,7 @@
   },
   {
     "faction_key": "wh3_dlc27_nor_sayl",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_throgg_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1603,7 +1189,7 @@
   },
   {
     "faction_key": "wh3_dlc27_nor_sayl",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1611,44 +1197,8 @@
     "child_node_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_01"
   },
   {
-    "faction_key": "wh3_main_chs_shadow_legion",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_main_chs_shadow_legion",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_main_chs_shadow_legion",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh3_main_chs_shadow_legion",
-    "variant_key": "chs_mil@unspecified_campaign",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
     "faction_key": "wh3_main_cth_the_northern_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_34|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1657,7 +1207,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_northern_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_56|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1666,7 +1216,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_northern_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_19_bhashiva|wh3_main_tech_cth_20",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1675,7 +1225,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_northern_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_43",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1684,7 +1234,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_northern_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_60",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1693,7 +1243,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_western_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_34|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1702,7 +1252,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_western_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_main_tech_cth_56|wh3_cp1_tech_cth_59_bhashiva",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1711,7 +1261,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_western_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_19_bhashiva|wh3_main_tech_cth_20",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1720,7 +1270,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_western_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_43",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1729,7 +1279,7 @@
   },
   {
     "faction_key": "wh3_main_cth_the_western_provinces",
-    "variant_key": "cth_mil@unspecified_campaign",
+    "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_cp1_tech_cth_59_bhashiva|wh3_main_tech_cth_60",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1738,7 +1288,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_norsca",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_sayl_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1747,7 +1297,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_norsca",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_throgg_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1756,7 +1306,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_norsca",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_sayl_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1765,7 +1315,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_norsca",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_throgg_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1774,7 +1324,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_wintertooth",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_sayl_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1783,7 +1333,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_wintertooth",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_02|wh3_dlc27_tech_nor_cam_army_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1792,7 +1342,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_wintertooth",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_sayl_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1801,7 +1351,7 @@
   },
   {
     "faction_key": "wh_dlc08_nor_wintertooth",
-    "variant_key": "nor_mil@unspecified_campaign",
+    "variant_key": "nor_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_01|wh3_dlc27_tech_nor_cam_region_08",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1810,7 +1360,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_dlc14_tech_brt_chivalry_tomb_kings|wh2_dlc12_tech_brt_chivalry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1819,7 +1369,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bretonnia_bord|wh_dlc07_tech_brt_heraldry_artois_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1828,7 +1378,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bretonnia_carc|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1837,7 +1387,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bret|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1846,7 +1396,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1855,7 +1405,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1864,7 +1414,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1873,7 +1423,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1882,7 +1432,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bret|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1891,7 +1441,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_carc|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1900,7 +1450,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_code_of_conduct|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1909,7 +1459,7 @@
   },
   {
     "faction_key": "wh_main_brt_bordeleaux",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_the_ladys_favour|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1918,7 +1468,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_dlc14_tech_brt_chivalry_tomb_kings|wh2_dlc12_tech_brt_chivalry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1927,7 +1477,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bordeleaux_carc|wh_dlc07_tech_brt_heraldry_artois_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1936,7 +1486,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bretonnia_bord|wh_dlc07_tech_brt_heraldry_artois_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1945,7 +1495,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bretonnia_carc|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1954,7 +1504,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bord|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1963,7 +1513,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1972,7 +1522,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1981,7 +1531,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_carc",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1990,7 +1540,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -1999,7 +1549,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bord|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2008,7 +1558,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_carc|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2017,7 +1567,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_code_of_conduct|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2026,7 +1576,7 @@
   },
   {
     "faction_key": "wh_main_brt_bretonnia",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_the_ladys_favour|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2035,7 +1585,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh2_dlc14_tech_brt_chivalry_tomb_kings|wh2_dlc12_tech_brt_chivalry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2044,7 +1594,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_bordeleaux_carc|wh_dlc07_tech_brt_heraldry_artois_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2053,7 +1603,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bord|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2062,7 +1612,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_carcassonne_bret|wh_dlc07_tech_brt_heraldry_bastonne",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2071,7 +1621,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bordeleaux_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2080,7 +1630,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_bretonnia_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2089,7 +1639,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bord",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2098,7 +1648,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_unification|wh_dlc07_tech_brt_heraldry_carcassonne_bret",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2107,7 +1657,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bord|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2116,7 +1666,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "wh_dlc07_tech_brt_heraldry_artois_bret|wh_dlc07_tech_brt_heraldry_parravon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2125,7 +1675,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_code_of_conduct|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2134,7 +1684,7 @@
   },
   {
     "faction_key": "wh_main_brt_carcassonne",
-    "variant_key": "brt_mil@unspecified_campaign",
+    "variant_key": "brt_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "tech_dlc14_brt_the_ladys_favour|wh_dlc07_tech_brt_heraldry_start",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2143,7 +1693,7 @@
   },
   {
     "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2152,7 +1702,7 @@
   },
   {
     "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2161,7 +1711,7 @@
   },
   {
     "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -2170,7 +1720,7 @@
   },
   {
     "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@unspecified_campaign",
+    "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
     "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
     "classification": "endpoint_excluded_by_faction_or_campaign",
@@ -3714,7 +3264,7 @@
   {
     "record_type": "technology",
     "source_key": "wh_main_tech_grn_main_4_1",
-    "classification": "script_referenced_outside_playable_trees"
+    "classification": "registry_without_node"
   },
   {
     "record_type": "technology",

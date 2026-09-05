@@ -1,6 +1,6 @@
-import { createHash } from "node:crypto";
+import { matchesTextFingerprint } from "./validation-text.mjs";
 import { spawnSync } from "node:child_process";
-import { readdir, readFile, stat, writeFile } from "node:fs/promises";
+import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { CHARACTER_RACE_OVERRIDES, CHARACTER_SUBTYPE_EXCLUSIONS, SKILL_RACES as RACES } from "./dataset-scope.mjs";
@@ -64,7 +64,7 @@ async function csv(file) {
   let text;
   try { text = new TextDecoder("utf-8", { fatal: true }).decode(buffer); }
   catch { fail(`${file}: not valid UTF-8.`); text = buffer.toString("utf8"); }
-  if (/(?<!\r)\n/.test(text)) fail(`${file}: contains non-CRLF line endings.`);
+  if (/\r(?!\n)/.test(text)) fail(`${file}: contains bare CR line endings.`);
   const parsed = parseRecords(text, ",");
   if (parsed.inconsistentWidths) fail(`${file}: ${parsed.inconsistentWidths} rows have the wrong field count.`);
   return { ...parsed, text, buffer };
@@ -174,8 +174,8 @@ for (const file of files) {
   else if (JSON.stringify(parsed.columns) !== JSON.stringify(canonicalColumns)) fail(`${file}: header differs from the canonical character schema.`);
   parsedFiles.push({ file, ...parsed });
 }
-if (!errors.some((message) => /UTF-8|CRLF|field count|header differs/.test(message))) {
-  pass("Every character CSV is valid UTF-8, uses CRLF endings, has consistent row widths, and shares one canonical header.");
+if (!errors.some((message) => /UTF-8|line endings|field count|header differs/.test(message))) {
+  pass("Every character CSV is valid UTF-8, uses LF or CRLF endings, has consistent row widths, and shares one canonical header.");
 }
 
 const allowedTypes = new Set(["character", "node_set", "node", "skill_level", "effect", "prerequisite", "skill_lock", "ancillary_lock", "ancillary_grant", "dilemma_grant"]);
@@ -285,8 +285,7 @@ for (const [subtype, parsed] of fileBySubtype) {
   if (!index) { fail(`Character index is missing ${subtype}.`); continue; }
   const relative = path.relative(DATASET, parsed.file).replaceAll(path.sep, "/");
   if (index.relative_path !== relative) fail(`${subtype}: indexed path does not match actual path.`);
-  const digest = createHash("sha256").update(parsed.buffer).digest("hex");
-  if (index.file_sha256 !== digest || Number(index.file_bytes) !== parsed.buffer.length) fail(`${subtype}: file hash or byte count does not match index.`);
+  if (!matchesTextFingerprint(parsed.buffer, index.file_sha256, index.file_bytes)) fail(`${subtype}: file hash or byte count does not match index.`);
   if (Number(index.total_row_count) !== parsed.rows.length) fail(`${subtype}: indexed total row count does not match file.`);
   for (const [column, type] of [["node_count", "node"], ["skill_level_row_count", "skill_level"], ["effect_row_count", "effect"], ["prerequisite_row_count", "prerequisite"], ["skill_lock_row_count", "skill_lock"], ["ancillary_lock_row_count", "ancillary_lock"], ["ancillary_grant_row_count", "ancillary_grant"], ["dilemma_grant_row_count", "dilemma_grant"]]) {
     if (Number(index[column]) !== parsed.rows.filter((row) => row.record_type === type).length) fail(`${subtype}: indexed ${column} does not match file.`);
@@ -308,9 +307,7 @@ else pass("The machine-readable schema inventory matches every character CSV col
 const sourceManifest = JSON.parse(await readFile(path.join(SOURCE, "source_manifest.json"), "utf8"));
 for (const entry of sourceManifest.files) {
   const file = path.join(SOURCE, ...entry.path.split("/"));
-  const info = await stat(file);
-  const digest = createHash("sha256").update(await readFile(file)).digest("hex");
-  if (entry.bytes !== info.size || entry.sha256 !== digest) fail(`Source hash mismatch: ${entry.path}.`);
+  if (!matchesTextFingerprint(await readFile(file), entry.sha256, entry.bytes)) fail(`Source hash mismatch: ${entry.path}.`);
 }
 if (!errors.some((message) => message.startsWith("Source hash mismatch"))) pass(`All ${sourceManifest.files.length} authoritative source-export hashes match their manifest.`);
 

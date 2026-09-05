@@ -1,3 +1,4 @@
+import { SCRIPT_COLUMNS } from "./technology-rules.mjs";
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
@@ -310,12 +311,6 @@ export const BASE = [
   "source_path",
   "source_row_number",
   "source_key",
-  "script_path",
-  "script_line",
-  "script_operation",
-  "script_evidence",
-  "script_applicability",
-  "script_resolution",
 ];
 
 export async function loadSource(source) {
@@ -378,13 +373,34 @@ export async function loadSource(source) {
     });
   if (playable.length !== 104)
     throw new Error(`Expected 104 playable factions, got ${playable.length}`);
-  const columns = [...BASE];
+  const columns = [...new Set([...BASE, ...SCRIPT_COLUMNS])];
   for (const [t] of Object.entries(CONFIG))
     for (const c of headers[t] ?? [])
       if (!columns.includes(mapped(t, c))) columns.push(mapped(t, c));
   for (const c of headers.effects)
     if (c !== "effect") columns.push(`effect_definition_${c}`);
-  return { source, manifest, tables, headers, defs, loc, playable, columns };
+  const precedence = JSON.parse(
+    await readFile(path.join(source, "node_set_precedence.json"), "utf8"),
+  );
+  const scriptEvidence = JSON.parse(
+    await readFile(path.join(source, "script_evidence.json"), "utf8"),
+  );
+  const mechanics = parse(
+    await readFile(path.join(source, "script_mechanics.csv"), "utf8"),
+  ).rows;
+  return {
+    source,
+    manifest,
+    tables,
+    headers,
+    defs,
+    loc,
+    playable,
+    columns,
+    precedence,
+    scriptEvidence,
+    mechanics,
+  };
 }
 export function provenance(s, t, r) {
   const fields = s.defs[t].fields
@@ -405,14 +421,6 @@ export function project(s, t, r) {
     ...provenance(s, t, r),
   };
 }
-export function candidates(s, p) {
-  return s.tables.technology_node_sets.filter(
-    (r) =>
-      (!r.faction_key || r.faction_key === p.faction.key) &&
-      (!r.culture || r.culture === p.culture) &&
-      (!r.subculture || r.subculture === p.faction.subculture),
-  );
-}
 export function members(s, p, set) {
   return s.tables.technology_nodes.filter(
     (n) =>
@@ -427,6 +435,13 @@ export function structuralHash(rows) {
   // Stable source keys, node conditions, costs, layout, dependencies and payloads
   // define structure; file ownership/localization/provenance do not.
   const excluded = new Set([
+    "mechanic_id",
+    "source_file",
+    "source_start_line",
+    "source_end_line",
+    "source_sha256",
+    "evidence_id",
+    "behavior_evidence_id",
     ...BASE.filter(
       (k) =>
         ![
