@@ -6,30 +6,149 @@
   "stale_claim_minutes": 90,
   "active_run": null,
   "races": [
-    { "race": "Beastmen", "race_slug": "beastmen", "status": "pending", "attempts": 0 },
-    { "race": "Bretonnia", "race_slug": "bretonnia", "status": "pending", "attempts": 0 },
-    { "race": "Chaos Dwarfs", "race_slug": "chaos_dwarfs", "status": "pending", "attempts": 0 },
-    { "race": "Daemons of Chaos", "race_slug": "daemons_of_chaos", "status": "pending", "attempts": 0 },
-    { "race": "Dark Elves", "race_slug": "dark_elves", "status": "pending", "attempts": 0 },
-    { "race": "Dwarfs", "race_slug": "dwarfs", "status": "pending", "attempts": 0 },
-    { "race": "Empire", "race_slug": "empire", "status": "pending", "attempts": 0 },
-    { "race": "Grand Cathay", "race_slug": "grand_cathay", "status": "pending", "attempts": 0 },
-    { "race": "Greenskins", "race_slug": "greenskins", "status": "pending", "attempts": 0 },
-    { "race": "High Elves", "race_slug": "high_elves", "status": "pending", "attempts": 0 },
-    { "race": "Khorne", "race_slug": "khorne", "status": "pending", "attempts": 0 },
-    { "race": "Kislev", "race_slug": "kislev", "status": "pending", "attempts": 0 },
-    { "race": "Lizardmen", "race_slug": "lizardmen", "status": "pending", "attempts": 0 },
-    { "race": "Norsca", "race_slug": "norsca", "status": "pending", "attempts": 0 },
-    { "race": "Nurgle", "race_slug": "nurgle", "status": "pending", "attempts": 0 },
-    { "race": "Ogre Kingdoms", "race_slug": "ogre_kingdoms", "status": "pending", "attempts": 0 },
-    { "race": "Skaven", "race_slug": "skaven", "status": "pending", "attempts": 0 },
-    { "race": "Slaanesh", "race_slug": "slaanesh", "status": "pending", "attempts": 0 },
-    { "race": "Tomb Kings", "race_slug": "tomb_kings", "status": "pending", "attempts": 0 },
-    { "race": "Tzeentch", "race_slug": "tzeentch", "status": "pending", "attempts": 0 },
-    { "race": "Vampire Coast", "race_slug": "vampire_coast", "status": "pending", "attempts": 0 },
-    { "race": "Vampire Counts", "race_slug": "vampire_counts", "status": "pending", "attempts": 0 },
-    { "race": "Warriors of Chaos", "race_slug": "warriors_of_chaos", "status": "pending", "attempts": 0 },
-    { "race": "Wood Elves", "race_slug": "wood_elves", "status": "pending", "attempts": 0 }
+    {
+      "race": "Beastmen",
+      "race_slug": "beastmen",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Bretonnia",
+      "race_slug": "bretonnia",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Chaos Dwarfs",
+      "race_slug": "chaos_dwarfs",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Daemons of Chaos",
+      "race_slug": "daemons_of_chaos",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Dark Elves",
+      "race_slug": "dark_elves",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Dwarfs",
+      "race_slug": "dwarfs",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Empire",
+      "race_slug": "empire",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Grand Cathay",
+      "race_slug": "grand_cathay",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Greenskins",
+      "race_slug": "greenskins",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "High Elves",
+      "race_slug": "high_elves",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Khorne",
+      "race_slug": "khorne",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Kislev",
+      "race_slug": "kislev",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Lizardmen",
+      "race_slug": "lizardmen",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Norsca",
+      "race_slug": "norsca",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Nurgle",
+      "race_slug": "nurgle",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Ogre Kingdoms",
+      "race_slug": "ogre_kingdoms",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Skaven",
+      "race_slug": "skaven",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Slaanesh",
+      "race_slug": "slaanesh",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Tomb Kings",
+      "race_slug": "tomb_kings",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Tzeentch",
+      "race_slug": "tzeentch",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Vampire Coast",
+      "race_slug": "vampire_coast",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Vampire Counts",
+      "race_slug": "vampire_counts",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Warriors of Chaos",
+      "race_slug": "warriors_of_chaos",
+      "status": "completed",
+      "attempts": 0
+    },
+    {
+      "race": "Wood Elves",
+      "race_slug": "wood_elves",
+      "status": "completed",
+      "attempts": 0
+    }
   ]
 }
-

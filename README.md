@@ -17,6 +17,7 @@ This is an unofficial research project and is not affiliated with Creative Assem
 - Technology trees: 104 faction files with 112 source node-set/campaign variants, costs, prerequisites, effects, unlocks and script evidence
 - Economy: 104 playable-faction CSVs containing the standardized building catalog
 - Campaign atlas: one Immortal Empires GeoPackage containing 641 regions, 214 provinces, 104 playable starts, effective victory objectives, topology, and battle-map relations
+- Faction mechanics: 24 source-grounded race guides covering all 104 playable factions and bespoke campaign systems omitted from the standardized catalogs
 
 Faction-specific military groups remain inside their parent race dataset. Normalized unit rows carry structured scope, exclusivity, and availability counts; the typed roster lookup preserves exact military-group memberships and faction permissions without storing lists in cells or creating separate faction CSVs.
 

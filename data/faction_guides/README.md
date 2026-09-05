@@ -17,10 +17,29 @@ Each race document covers race-wide systems and any additional faction-specific
 systems, rules, exceptions, permissions, resources, or state transitions. The
 amount and organization of prose may differ substantially between races.
 
+## Completion status
+
+All 24 playable-race documents are present for patch 8.1.1 / Steam build
+24237342 and collectively cover all 104 playable factions. Every document
+passes the repository's structural completion validator: required scope and
+evidence sections, faction names and stable keys, recognizable game-file paths,
+external source URLs, and absence of unresolved placeholder text.
+
+Run the complete guide validation from the repository root:
+
+```powershell
+node scripts/faction-guide-queue.mjs validate-all
+```
+
+Use `node scripts/faction-guide-queue.mjs validate <race_slug>` to validate one
+guide or `node scripts/faction-guide-queue.mjs status` to inspect completion
+state. Structural validation confirms documentation completeness; it does not
+independently reproduce every documented game mechanic.
+
 ## Layout
 
 - `RESEARCH_SPEC.md` — authoritative research and writing contract.
-- `queue.json` — the 24-race work queue and run state.
+- `queue.json` — the 24-race work queue and completion state.
 - `races/<race_slug>.md` — completed race documents.
 
 `scripts/faction-guide-queue.mjs` reports queue status and validates an individual

@@ -100,10 +100,16 @@ async function validate(raceSlug) {
   }, null, 2));
 }
 
+async function validateAll() {
+  const { queue } = await loadState();
+  for (const race of queue.races) await validate(race.race_slug);
+}
+
 const [command = "status", raceSlug] = process.argv.slice(2);
 if (command === "status") await status();
 else if (command === "validate") {
   if (!raceSlug) throw new Error("Usage: node scripts/faction-guide-queue.mjs validate <race_slug>");
   await validate(raceSlug);
-} else throw new Error(`Unknown command: ${command}`);
+} else if (command === "validate-all") await validateAll();
+else throw new Error(`Unknown command: ${command}`);
 
