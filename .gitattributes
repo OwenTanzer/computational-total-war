@@ -16,3 +16,6 @@
 /data/**/*.csv linguist-generated=true
 /data/**/*.tsv linguist-generated=true
 
+# Technology artifacts and their raw Lua/TSV sources are hashed byte-for-byte.
+# Preserve decoder/builder line endings on checkout so recorded hashes remain valid.
+/data/technology_trees/** -text -whitespace

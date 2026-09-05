@@ -1,0 +1,90 @@
+key	text	tooltip
+#Loc;1;text/db/technology_script_lock_reasons__.loc		
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_bloodgrounds_everywhere	[[col:red]]Create Herdstones in 3 different climates.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_bretonnia_locked	[[col:red]]Perform 2 Rituals of Ruin.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_chariot_only	[[col:red]]Kill or Wound 5 faction leaders.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_dwarf_locked	[[col:red]]Win 5 Siege Battles.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_empire_locked	[[col:red]]Create a Herdstone.[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_fifteen_spells	[[col:red]]Summon 10 units in Battles.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_four_battles	[[col:red]]Win 4 Battles in a single turn.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_high_elves_locked	[[col:red]]Win 5 Ambush battles.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_the_no_unit_loss	[[col:red]]Perform 5 successful hostile [[img:icon_hero]][[/img]]Hero actions.[[/col]]\\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_the_single_entity_tech	[[col:red]]Win a battle with at least 4 [[img:icon_hero]][[/img]]Heroes in your army.[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_unfavoured_battle	[[col:red]]Have 3 characters reach rank 15.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_tech_dlc17_bst_wipe_out_faction	[[col:red]]Win battles against enemies of 4 different races.[[/col]] \\n[[col:yellow]]Current Amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_1	[[col:red]]Learn the "Coven's Cursemark" Hex.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_2	[[col:red]]Learn the "Jinxed Land" Hex.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_3	[[col:red]]Learn the "Recreant Spirit" Hex.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_4	[[col:red]]Learn the "Bewitching Lure" Hex.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_5	[[col:red]]Learn the "Purification Chant" Hex.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_1	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_10a_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_10b_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_1_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_2	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_2_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_3	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_4	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_4_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_5	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_6	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_7	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_8	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_8_roc	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc24_tech_the_changeling_rift_9	{{tr:the_changeling_rift_tech_lock}}	false
+technology_script_lock_reasons_lock_reason_wh3_dlc26_tech_kho_blood_hosts_1	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc26_tech_kho_campaign_4_3	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_beastmen	[[col:red]]Win %d battles against Beastmen.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_chaos	[[col:red]]Win %d battles against Warriors of Chaos.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy The Writhing Fortress.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_khorne	[[col:red]]Win %d battles against Khorne.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Deff Gorge.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_norsca	[[col:red]]Win %d battles against Norsca.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_nurgle	[[col:red]]Win %d battles against Nurgle.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Dragon Fang Mount.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_slaanesh	[[col:red]]Win %d battles against Slaanesh.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Tor Achare.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_dlc27_tech_nor_cul_tzeentch	[[col:red]]Win %d battles against Tzeentch.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Fateweaver's Crevasse.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_ie_tech_nor_darklands_hate_cathay	[[col:red]]Win %d battles against  Grand Cathay.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Wei-Jin.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_ie_tech_nor_darklands_hate_chaos_dwarfs	[[col:red]]Win %d battles against Chaos Dwarfs.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Zharr-Naggrund.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_ie_tech_nor_darklands_hate_ogre_kingdoms	[[col:red]]Win %d battles against the Ogre Kingdoms.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Great Hall of Greasus.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_ie_tech_nor_oldworld_hate_kislev	[[col:red]]Win %d battles against Kislev.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Kislev.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_1_1	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_1_2	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_1_4	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_1_6	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_1_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_2_1	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_2_2	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_2_3	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_2_4	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_2_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_3_2	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_3_3	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_3_4	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_3_7	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_3_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_4_2	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_4_4	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_4_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_5_2	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_5_3	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_5_5	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_5_7	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_5_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_6_5	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_6_6	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_6_7	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_8_3	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_8_4	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_8_5	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_8_6	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh3_main_tech_kho_8_8	[[col:red]]Win %d battles.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_02	[[col:red]]Win %d battles against Dark Elves.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Naggarond.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_04	[[col:red]]Win %d battles against High Elves.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Lothern.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_06	[[col:red]]Win %d battles against Lizardmen.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Hexoatl.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_08	[[col:red]]Win %d battles against Skaven.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Skavenblight.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_10	[[col:red]]Win %d battles against Tomb Kings.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Khemri.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_nw_20	[[col:red]]Win %d battles against Vampire Coast.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy The Awakening.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_07	[[col:red]]Win %d battles against Bretonnia.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Couronne.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_11	[[col:red]]Win %d battles against Dwarfs.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Karaz-a-Karak.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_14	[[col:red]]Win %d battles against the Empire.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Altdorf.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_16	[[col:red]]Win %d battles against Vampire Counts.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Castle Drakenhof.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_18	[[col:red]]Win %d battles against Greenskins.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy Black Crag.[[/col]]	false
+technology_script_lock_reasons_lock_reason_wh_dlc08_tech_nor_other_20	[[col:red]]Win %d battles against Wood Elves.[[/col]]\\n[[col:yellow]]Current amount: %d[[/col]]\\n[[col:red]]Or occupy The Oak of Ages.[[/col]]	false

@@ -1,0 +1,782 @@
+{
+  "scanned_files": 418,
+  "retained_files": 87,
+  "scope": "script/campaign/**/*.lua and script/_lib/**/*.lua",
+  "pattern": "technolog|research|tech_tree|tech_node",
+  "unresolved_cases": 39,
+  "files": [
+    {
+      "path": "script/_lib/lib_campaign_intervention.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_campaign_manager.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": [
+        {
+          "line": 14786,
+          "operation": "lock_technology",
+          "evidence": "game_interface:lock_technology(faction_name, current_rec);",
+          "classification": "library_or_tutorial_excluded"
+        },
+        {
+          "line": 14793,
+          "operation": "unlock_technology",
+          "evidence": "game_interface:unlock_technology(faction_name, current_rec);",
+          "classification": "library_or_tutorial_excluded"
+        }
+      ]
+    },
+    {
+      "path": "script/_lib/lib_campaign_mission_manager.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_campaign_tutorial.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_campaign_ui.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_campaign_ui_overrides.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_help_pages.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/_lib/lib_types.lua",
+      "role": "library_or_api",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_chaos_warriors.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_empire.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_kislev.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_ogres.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_slaanesh.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_tzeentch.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_event_templates.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_query_templates.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_shared_chains.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_trigger_templates.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_grudge_too_far.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_pyramid_of_nagash.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_vampires_rise.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_vermintide.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_waaagh.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_wild_hunt.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_will_of_hashut.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/required.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh2_vampire_bloodlines.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh3_ie_narrative_events.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc07_diplomatic_tech.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 8,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc07_vows.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc08_monster_hunt.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 2,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_first_turn.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_start.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/scripted_tours/campaign_tours.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_campaign_rites.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_campaign_tech_tree_lords.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 2,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_campaign_traits.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc09_dynasty_tree.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 13,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc09_tomb_kings.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 6,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 4,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc12_ikit_workshop.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc13_empire_politics.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc14_snikch_shadowy_dealings.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc15_salvage.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 17,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc15_waaagh.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc16_wef_worldroots.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 78,
+      "mutation_sites": [
+        {
+          "line": 55,
+          "operation": "lock_technology",
+          "evidence": "cm:lock_technology(faction_key, lock_tech_keys[j]);",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 110,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 111,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 112,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 113,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 114,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 135,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 136,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 137,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 138,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 139,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 159,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 160,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 161,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 162,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 163,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 184,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 205,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 227,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 228,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 229,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 230,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 231,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 245,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_unfavoured_battle\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 310,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_chariot_only\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 391,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_fifteen_spells\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 418,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_bloodgrounds_everywhere\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 455,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_wipe_out_faction\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 485,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_four_battles\");",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 526,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(key, \"tech_dlc17_bst_the_single_entity_tech\");",
+          "classification": "runtime_condition_not_evaluated"
+        }
+      ]
+    },
+    {
+      "path": "script/campaign/wh3_campaign_achievements.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 17,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_ai.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_bonus_values.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_faction_initiative_unlocks.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_followers.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 11,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_kislev_ice_court.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 4,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_kislev_motherland.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_nurgle_plagues.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_campaign_tech_tree.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 91,
+      "mutation_sites": [
+        {
+          "line": 389,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(faction_key, technology_key)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 432,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(region_owner:name(), technology_key)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 440,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(current_ally:name(), technology_key)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 455,
+          "operation": "lock_technology",
+          "evidence": "cm:lock_technology(current_faction:name(), technology_key)",
+          "classification": "runtime_condition_not_evaluated"
+        }
+      ]
+    },
+    {
+      "path": "script/campaign/wh3_campaign_underdeep.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 11,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 7,
+      "mutation_sites": [
+        {
+          "line": 264,
+          "operation": "lock_technology",
+          "evidence": "cm:lock_technology(self.ostankya_faction, data.tech)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 319,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(faction_name, unlocked_hex_data.tech)",
+          "classification": "runtime_condition_not_evaluated"
+        }
+      ]
+    },
+    {
+      "path": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 30,
+      "mutation_sites": [
+        {
+          "line": 1712,
+          "operation": "lock_technology",
+          "evidence": "cm:lock_technology(self.faction_key, tech_key)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 2395,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(self.faction_key, tech_key)",
+          "classification": "runtime_condition_not_evaluated"
+        },
+        {
+          "line": 2582,
+          "operation": "unlock_technology",
+          "evidence": "cm:unlock_technology(self.faction_key, tech_key)",
+          "classification": "runtime_condition_not_evaluated"
+        }
+      ]
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_campaign_nur_chieftains.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_emp_techs.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_emperors_decrees.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_empire_state_troops.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 6,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_malakai_battles.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc26_ogre_camps.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 2,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_asur_dilemmas.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_dechala_daemonic_units.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 1,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_dechala_settlement_exploitation.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_eternal_dance.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 3,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/required.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/wh3_chaos_narrative_events.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/wh_start.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_advice.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_audio.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_followers.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_interventions.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_scripted_tours.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_start.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_traits.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/wh_disable_features.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/wh_start.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh_campaign_bretonnia_chivalry.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 20,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh_campaign_help_pages.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh_campaign_interventions.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh_campaign_scripted_tours.lua",
+      "role": "tutorial_narrative_or_help",
+      "technology_literal_references": 0,
+      "mutation_sites": []
+    },
+    {
+      "path": "script/campaign/wh_campaign_setup.lua",
+      "role": "campaign_logic",
+      "technology_literal_references": 2,
+      "mutation_sites": []
+    }
+  ]
+}

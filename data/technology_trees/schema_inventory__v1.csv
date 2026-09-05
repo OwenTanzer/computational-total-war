@@ -1,0 +1,130 @@
+dataset,column_position,column_name,data_type,required,description
+factions/<race_slug>/<faction_key>.csv,1,record_type,text,true,Typed record discriminator; junctions are individual rows.
+factions/<race_slug>/<faction_key>.csv,2,game,text,true,game
+factions/<race_slug>/<faction_key>.csv,3,patch,text,true,patch
+factions/<race_slug>/<faction_key>.csv,4,steam_build_id,text,true,steam build id
+factions/<race_slug>/<faction_key>.csv,5,race,text,true,race
+factions/<race_slug>/<faction_key>.csv,6,race_slug,text,true,race slug
+factions/<race_slug>/<faction_key>.csv,7,faction_key,text,true,faction key
+factions/<race_slug>/<faction_key>.csv,8,faction_name,text,false,faction name
+factions/<race_slug>/<faction_key>.csv,9,culture_key,text,true,culture key
+factions/<race_slug>/<faction_key>.csv,10,subculture_key,text,true,subculture key
+factions/<race_slug>/<faction_key>.csv,11,feature_forest_key,text,false,feature forest key
+factions/<race_slug>/<faction_key>.csv,12,variant_key,text,false,Node set plus campaign condition. Keep variants separate; unspecified_campaign excludes campaign-specific nodes.
+factions/<race_slug>/<faction_key>.csv,13,variant_status,text,false,"Source selector classification, not an assertion about engine tree selection precedence."
+factions/<race_slug>/<faction_key>.csv,14,applicability_basis,text,false,Explicit source selector rule and evidence limitation.
+factions/<race_slug>/<faction_key>.csv,15,campaign_key,text,false,"Variant campaign condition; blank is unspecified, not all campaign-specific overlays combined."
+factions/<race_slug>/<faction_key>.csv,16,node_set_key,text,false,Source technology_node_sets_tables.key. 
+factions/<race_slug>/<faction_key>.csv,17,set_faction_key,text,false,Source technology_node_sets_tables.faction_key. 
+factions/<race_slug>/<faction_key>.csv,18,set_culture_key,text,false,Source technology_node_sets_tables.culture. 
+factions/<race_slug>/<faction_key>.csv,19,set_subculture_key,text,false,Source technology_node_sets_tables.subculture. 
+factions/<race_slug>/<faction_key>.csv,20,set_campaign_key,text,false,Source technology_node_sets_tables.campaign_key. 
+factions/<race_slug>/<faction_key>.csv,21,node_key,text,false,Source technology_nodes_tables.key. 
+factions/<race_slug>/<faction_key>.csv,22,node_faction_key,text,false,Source technology_nodes_tables.faction_key. 
+factions/<race_slug>/<faction_key>.csv,23,node_campaign_key,text,false,Source technology_nodes_tables.campaign_key. 
+factions/<race_slug>/<faction_key>.csv,24,technology_key,text,false,Source technology_nodes_tables.technology_key. 
+factions/<race_slug>/<faction_key>.csv,25,technology_name,text,false,technology name
+factions/<race_slug>/<faction_key>.csv,26,technology_short_description,text,false,technology short description
+factions/<race_slug>/<faction_key>.csv,27,technology_long_description,text,false,technology long description
+factions/<race_slug>/<faction_key>.csv,28,effect_key,text,false,Source technology_effects_junction_tables.effect. 
+factions/<race_slug>/<faction_key>.csv,29,effect_scope,text,false,Source technology_effects_junction_tables.effect_scope. 
+factions/<race_slug>/<faction_key>.csv,30,effect_value,number,false,Source technology_effects_junction_tables.value. 
+factions/<race_slug>/<faction_key>.csv,31,effect_description,text,false,effect description
+factions/<race_slug>/<faction_key>.csv,32,effect_additional_tooltip,text,false,effect additional tooltip
+factions/<race_slug>/<faction_key>.csv,33,node_set_name,text,false,node set name
+factions/<race_slug>/<faction_key>.csv,34,node_set_tooltip,text,false,node set tooltip
+factions/<race_slug>/<faction_key>.csv,35,ui_group_name,text,false,ui group name
+factions/<race_slug>/<faction_key>.csv,36,ui_group_description,text,false,ui group description
+factions/<race_slug>/<faction_key>.csv,37,ui_tab_name,text,false,ui tab name
+factions/<race_slug>/<faction_key>.csv,38,ui_tab_tooltip,text,false,ui tab tooltip
+factions/<race_slug>/<faction_key>.csv,39,lock_reason,text,false,lock reason
+factions/<race_slug>/<faction_key>.csv,40,ancillary_granted_text,text,false,ancillary granted text
+factions/<race_slug>/<faction_key>.csv,41,required_technology_key,text,false,Source technology_required_technology_junctions_tables.required_technology. 
+factions/<race_slug>/<faction_key>.csv,42,parent_node_key,text,false,Source technology_node_links_tables.parent_key. 
+factions/<race_slug>/<faction_key>.csv,43,child_node_key,text,false,Source technology_node_links_tables.child_key. 
+factions/<race_slug>/<faction_key>.csv,44,link_type,text,false,node_parent for technology_node_links (source has no link-type field); required_technology for explicit technology prerequisite junction.
+factions/<race_slug>/<faction_key>.csv,45,classification,text,false,Structural/evidence classification; hidden nodes remain included.
+factions/<race_slug>/<faction_key>.csv,46,source_table,text,false,source table
+factions/<race_slug>/<faction_key>.csv,47,source_path,text,false,source path
+factions/<race_slug>/<faction_key>.csv,48,source_row_number,text,false,One-based logical record number in exported TSV (header and RPFM metadata precede records).
+factions/<race_slug>/<faction_key>.csv,49,source_key,text,false,"Canonical source primary key, or composite joined with |. Not a one-to-many list."
+factions/<race_slug>/<faction_key>.csv,50,script_path,text,false,script path
+factions/<race_slug>/<faction_key>.csv,51,script_line,text,false,script line
+factions/<race_slug>/<faction_key>.csv,52,script_operation,text,false,script operation
+factions/<race_slug>/<faction_key>.csv,53,script_evidence,text,false,script evidence
+factions/<race_slug>/<faction_key>.csv,54,script_applicability,text,false,script applicability
+factions/<race_slug>/<faction_key>.csv,55,script_resolution,text,false,Literal references do not resolve runtime control flow. See script_audit.json and retained whole source files.
+factions/<race_slug>/<faction_key>.csv,56,set_colour_hex,text,false,Source technology_node_sets_tables.colour_hex. 
+factions/<race_slug>/<faction_key>.csv,57,node_indent,number,false,Source technology_nodes_tables.indent. X - Rows Down (0>)
+factions/<race_slug>/<faction_key>.csv,58,node_tier,number,false,Source technology_nodes_tables.tier. Y - Columns In (0>) <br> <br> If using tabs be sure to increase tiers
+factions/<race_slug>/<faction_key>.csv,59,research_points_required,number,false,Base source research points; not a fixed number of turns. Research rate and modifiers are outside this snapshot.
+factions/<race_slug>/<faction_key>.csv,60,cost_per_round,number,false,Source technology_nodes_tables.cost_per_round. 
+factions/<race_slug>/<faction_key>.csv,61,food_cost,number,false,Source technology_nodes_tables.food_cost. 
+factions/<race_slug>/<faction_key>.csv,62,ui_group_key,text,false,Source technology_nodes_tables.optional_ui_group. 
+factions/<race_slug>/<faction_key>.csv,63,resource_cost_key,text,false,Source technology_nodes_tables.resource_cost. 
+factions/<race_slug>/<faction_key>.csv,64,required_parents,number,false,Observed node parent threshold. Source schema: 0 implies all parents. This is not zero prerequisites.
+factions/<race_slug>/<faction_key>.csv,65,node_pixel_offset_x,number,false,Source technology_nodes_tables.pixel_offset_x. Offset in pixels in x for this technology <br> <br>Positive value moves the node to the right <br>Negative value moves node to the left
+factions/<race_slug>/<faction_key>.csv,66,node_pixel_offset_y,number,false,Source technology_nodes_tables.pixel_offset_y. Offset in pixels in y for this technology <br>negative value to move node upwards <br>Positive value to move node Downwards
+factions/<race_slug>/<faction_key>.csv,67,technology_building_level,text,false,Legacy technology registry field preserved verbatim. Do not interpret it as a required building; use building_requirement rows.
+factions/<race_slug>/<faction_key>.csv,68,technology_position_index,number,false,Source technologies_tables.position_index. 
+factions/<race_slug>/<faction_key>.csv,69,technology_icon_name,text,false,Source technologies_tables.icon_name. 
+factions/<race_slug>/<faction_key>.csv,70,technology_mp_available_early,boolean,false,Source technologies_tables.mp_available_early. 
+factions/<race_slug>/<faction_key>.csv,71,technology_mp_available_late,boolean,false,Source technologies_tables.mp_available_late. 
+factions/<race_slug>/<faction_key>.csv,72,technology_info_pic,text,false,Source technologies_tables.info_pic. 
+factions/<race_slug>/<faction_key>.csv,73,technology_unique_index,number,false,Source technologies_tables.unique_index. 
+factions/<race_slug>/<faction_key>.csv,74,technology_is_civil,boolean,false,Source technologies_tables.is_civil. 
+factions/<race_slug>/<faction_key>.csv,75,technology_is_engineering,boolean,false,Source technologies_tables.is_engineering. 
+factions/<race_slug>/<faction_key>.csv,76,technology_is_military,boolean,false,Source technologies_tables.is_military. 
+factions/<race_slug>/<faction_key>.csv,77,technology_is_hidden,boolean,false,Source technologies_tables.is_hidden. 
+factions/<race_slug>/<faction_key>.csv,78,link_initial_descent_tiers,number,false,Source technology_node_links_tables.initial_descent_tiers. 
+factions/<race_slug>/<faction_key>.csv,79,link_parent_link_position,number,false,"Source technology_node_links_tables.parent_link_position. Arrow start position (NESW -> 1,2,3,4)"
+factions/<race_slug>/<faction_key>.csv,80,link_child_link_position,number,false,"Source technology_node_links_tables.child_link_position. Arrow end position (NESW -> 1,2,3,4)"
+factions/<race_slug>/<faction_key>.csv,81,link_parent_link_position_offset,number,false,Source technology_node_links_tables.parent_link_position_offset. Offset the position of the arrowhead - value between -1 and 1 (0 being the centre)
+factions/<race_slug>/<faction_key>.csv,82,link_child_link_position_offset,number,false,Source technology_node_links_tables.child_link_position_offset. Offset the position of the arrowhead - value between -1 and 1 (0 being the centre)
+factions/<race_slug>/<faction_key>.csv,83,link_visible_in_ui,boolean,false,Source technology_node_links_tables.visible_in_ui. 
+factions/<race_slug>/<faction_key>.csv,84,required_building_level_key,text,false,Source technology_required_building_levels_junctions_tables.required_building_level. 
+factions/<race_slug>/<faction_key>.csv,85,ancillary_key,text,false,Source technology_nodes_to_ancillaries_junctions_tables.ancillary. 
+factions/<race_slug>/<faction_key>.csv,86,character_trait_level_key,text,false,Source technology_character_traits_junctions_tables.character_trait. 
+factions/<race_slug>/<faction_key>.csv,87,effect_list_key,text,false,Source technology_initiative_effects_tables.additional_effect_list. 
+factions/<race_slug>/<faction_key>.csv,88,initiative_key,text,false,Source technology_initiative_effects_tables.initiative. 
+factions/<race_slug>/<faction_key>.csv,89,initiative_visible_in_ui,boolean,false,Source technology_initiative_effects_tables.visible_in_ui. 
+factions/<race_slug>/<faction_key>.csv,90,unit_upgrade_key,text,false,Source unit_upgrade_to_tech_requirements_tables.unit_upgrade. 
+factions/<race_slug>/<faction_key>.csv,91,mercenary_key,number,false,Source mercenary_pool_to_groups_junctions_tables.key. 
+factions/<race_slug>/<faction_key>.csv,92,mercenary_group,text,false,Source mercenary_pool_to_groups_junctions_tables.group. 
+factions/<race_slug>/<faction_key>.csv,93,mercenary_initial_unit_count,number,false,Source mercenary_pool_to_groups_junctions_tables.initial_unit_count. 
+factions/<race_slug>/<faction_key>.csv,94,mercenary_pool,text,false,Source mercenary_pool_to_groups_junctions_tables.pool. 
+factions/<race_slug>/<faction_key>.csv,95,unlock_faction_key,text,false,Source mercenary_pool_to_groups_junctions_tables.faction_requirement. 
+factions/<race_slug>/<faction_key>.csv,96,unlock_subculture_key,text,false,Source mercenary_pool_to_groups_junctions_tables.subculture_requirement. 
+factions/<race_slug>/<faction_key>.csv,97,resource_cost_treasury_cost,number,false,Source resource_costs_tables.treasury_cost. 
+factions/<race_slug>/<faction_key>.csv,98,resource_cost_expenditure_type,text,false,Source resource_costs_tables.expenditure_type. 
+factions/<race_slug>/<faction_key>.csv,99,resource_cost_income_type,text,false,Source resource_costs_tables.income_type. 
+factions/<race_slug>/<faction_key>.csv,100,resource_cost_expenditure_type_when_regular,text,false,Source resource_costs_tables.expenditure_type_when_regular. 
+factions/<race_slug>/<faction_key>.csv,101,resource_cost_income_type_when_regular,text,false,Source resource_costs_tables.income_type_when_regular. 
+factions/<race_slug>/<faction_key>.csv,102,pooled_cost_pooled_resource_factor,text,false,Source resource_cost_pooled_resource_junctions_tables.pooled_resource_factor. 
+factions/<race_slug>/<faction_key>.csv,103,pooled_cost_amount,number,false,Source resource_cost_pooled_resource_junctions_tables.amount. 
+factions/<race_slug>/<faction_key>.csv,104,pooled_cost_context,text,false,Source resource_cost_pooled_resource_junctions_tables.context. 
+factions/<race_slug>/<faction_key>.csv,105,pooled_cost_ui_resource_transaction_pooled_resource,text,false,Source resource_cost_pooled_resource_junctions_tables.ui_resource_transaction_pooled_resource. 
+factions/<race_slug>/<faction_key>.csv,106,pooled_resource_factor_key,text,false,Source pooled_resource_factor_junctions_tables.unique_id. 
+factions/<race_slug>/<faction_key>.csv,107,resource_factor_factor,text,false,Source pooled_resource_factor_junctions_tables.factor. 
+factions/<race_slug>/<faction_key>.csv,108,pooled_resource_key,text,false,Source pooled_resource_factor_junctions_tables.resource. 
+factions/<race_slug>/<faction_key>.csv,109,resource_factor_minimum,number,false,Source pooled_resource_factor_junctions_tables.minimum. This is the minimum capacity of the factor - so a value of 0 means the factor can never be negative!
+factions/<race_slug>/<faction_key>.csv,110,resource_factor_maximum,number,false,Source pooled_resource_factor_junctions_tables.maximum. 
+factions/<race_slug>/<faction_key>.csv,111,resource_factor_specific_faction_set,text,false,"Source pooled_resource_factor_junctions_tables.specific_faction_set. If blank, factor shown for all factions. If set, the factor will only show in the UI for factions in the linked faction set"
+factions/<race_slug>/<faction_key>.csv,112,group_optional_background_image,text,false,Source technology_ui_groups_tables.optional_background_image. 
+factions/<race_slug>/<faction_key>.csv,113,group_colour_hex,text,false,Source technology_ui_groups_tables.colour_hex. 
+factions/<race_slug>/<faction_key>.csv,114,group_bounds_bottom_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.bottom_right_node. 
+factions/<race_slug>/<faction_key>.csv,115,group_bounds_top_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.top_left_node. 
+factions/<race_slug>/<faction_key>.csv,116,group_bounds_optional_top_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_top_right_node. 
+factions/<race_slug>/<faction_key>.csv,117,group_bounds_optional_bottom_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_bottom_left_node. 
+factions/<race_slug>/<faction_key>.csv,118,ui_tab_key,text,false,Source technology_ui_tabs_tables.key. 
+factions/<race_slug>/<faction_key>.csv,119,tab_sort_order,number,false,Source technology_ui_tabs_tables.sort_order. 
+factions/<race_slug>/<faction_key>.csv,120,tab_tier_offset,number,false,Source technology_ui_tabs_tables.tier_offset. This is how much to substract from the tier of each tech in this tab (since overlapping technologies is not allowed)
+factions/<race_slug>/<faction_key>.csv,121,module_max_tier,number,false,Source technology_category_modules_tables.max_tier. 
+factions/<race_slug>/<faction_key>.csv,122,effect_bundle_key,text,false,Source technology_category_modules_tables.effect_bundle. 
+factions/<race_slug>/<faction_key>.csv,123,module_min_tier,number,false,Source technology_category_modules_tables.min_tier. 
+factions/<race_slug>/<faction_key>.csv,124,category_effect_advancement_stage,text,false,Source effect_bundles_to_effects_junctions_tables.advancement_stage. 
+factions/<race_slug>/<faction_key>.csv,125,effect_definition_icon,text,false,Source effects_tables.icon. 
+factions/<race_slug>/<faction_key>.csv,126,effect_definition_priority,number,false,Source effects_tables.priority. Higher number will be displayed lower down the list. Set to 0 to hide the effect entirely.
+factions/<race_slug>/<faction_key>.csv,127,effect_definition_icon_negative,text,false,Source effects_tables.icon_negative. 
+factions/<race_slug>/<faction_key>.csv,128,effect_definition_category,text,false,Source effects_tables.category. Category for display in ui
+factions/<race_slug>/<faction_key>.csv,129,effect_definition_is_positive_value_good,boolean,false,"Source effects_tables.is_positive_value_good. If true, then positive values shown green in ui. Otherwise shown red and vice versa for negatives. (As sometimes -10% is a good thing like cost)"

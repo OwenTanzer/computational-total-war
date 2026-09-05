@@ -4,6 +4,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy exports already record constructible building variants, tiers, costs, times, prerequisites, and the narrow standardized income, Growth, control, trade, recruitment-cost, and upkeep fields. They do not flatten every conditional building effect, corruption value, unit permission, or character capacity. The normalized unit catalog records the race roster, faction permissions, unit statistics, battle abilities, mounts, and attributes. The character exports record ordinary Lord and Hero skill nodes. This guide does not repeat those catalogs. It records the shared Bloodline resource and unlock lifecycle, local Raise Dead pools, post-battle Dead Rise Again recovery, settlement and corruption exceptions, faction scripts, fixed character forms, campaign branches, and other operating rules that those catalogs do not express.
 
 ## Mechanically relevant material not captured elsewhere

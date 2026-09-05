@@ -4,6 +4,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 This guide records campaign mechanics that are not represented adequately by the existing normalized catalogs. Constructible building variants, costs, tiers, prerequisites, and standardized outputs belong to the six Greenskin economy exports. Unit statistics, roster permissions, weapons, mounts, and battle abilities belong to the normalized unit catalog and typed lookups. Ordinary Lord and hero skill-node effects belong to the 19 indexed Greenskin character exports. Those facts are not repeated here. References to units, buildings, technologies, abilities, or Snagla's indexed subtype below identify inputs or outputs of campaign systems, not replacement catalog entries.
 
 ## Mechanically relevant material not captured elsewhere

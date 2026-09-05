@@ -269,5 +269,5 @@
   "warnings": [
     "Battle rules without an exposed group map: got 3; Some engine-resolved catchment groups do not expose a direct group-map row"
   ],
-  "validated_at_utc": "2026-08-30T00:24:42.855Z"
+  "validated_at_utc": "2026-09-05T12:11:01.649Z"
 }

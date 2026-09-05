@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already enumerate the enabled Outpost, Factory, and Tower building variants, their tiers, costs, prerequisites, and standardized outputs for all three factions. The normalized unit file and typed lookups already cover the roster, exact military-group permissions, unit statistics, abilities, weapons, and mounts. The character files already contain the complete skill trees of Astragoth, Drazhoath, Zhatan, Gorduz, the Convoy Overseer, and the generic Chaos Dwarf lords and heroes. Those rows are not repeated here. This document records only campaign systems whose operation is not expressible in those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

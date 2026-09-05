@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already enumerate constructible building levels, costs, times, prerequisites, and standardized outputs for all four playable factions. They do **not** encode building Yin/Yang alignment or the scripted provincial Harmony state, which are documented below. The normalized unit file and typed lookups already describe the Grand Cathay and Tiger Warrior rosters, faction permissions, unit statistics, Battle Harmony abilities, attributes, weapons, and mounts. The character files already contain the complete skill trees for Miao Ying, Zhao Ming, Yuan Bo, Bhashiva, Saytang, Taoyan, Sawai variants, and every generic Cathayan character. Those rows are not repeated here. This document records the provincial, scripted, pooled-resource, route, acquisition, and victory systems needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

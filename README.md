@@ -14,6 +14,7 @@ This is an unofficial research project and is not affiliated with Creative Assem
 - Races: all 24 playable race rosters in the patch 8.1.1 source snapshot
 - Unit data: 24 race CSVs containing 2,000 race-roster rows
 - Skill trees: 500 unique character files containing 521 conditional node sets
+- Technology trees: 104 faction files with 112 source node-set/campaign variants, costs, prerequisites, effects, unlocks and script evidence
 - Economy: 104 playable-faction CSVs containing the standardized building catalog
 - Campaign atlas: one Immortal Empires GeoPackage containing 641 regions, 214 provinces, 104 playable starts, effective victory objectives, topology, and battle-map relations
 
@@ -23,6 +24,7 @@ Faction-specific military groups remain inside their parent race dataset. Normal
 
 - `data/unit_stats/` — normalized unit statistics, weapon and projectile lookups, raw source exports, manifests, schema documentation, and audit reports.
 - `data/skill_trees/` — one self-contained CSV per character subtype, plus the character index, schema inventory, raw source exports, manifests, and audit reports.
+- `data/technology_trees/` — authoritative technology sources and self-contained faction trees, including explicit runtime evidence limits.
 - `data/economy/` — one narrow building-economy CSV per playable faction, plus the faction index, schema inventory, raw source exports, manifest, and audit reports.
 - `data/campaign_map/` — the compact Immortal Empires GeoPackage, documentation, and validation reports.
 - `scripts/` — repeatable extraction, build, and validation programs for all production datasets.
@@ -35,6 +37,7 @@ Each production dataset has its own `README.md`. Start with:
 
 - `data/unit_stats/README.md`
 - `data/skill_trees/README.md`
+- `data/technology_trees/README.md`
 - `data/economy/README.md`
 - `data/campaign_map/README.md`
 
@@ -53,6 +56,7 @@ Or run individual validators from the repository root:
 ```powershell
 node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats
 node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees
+node scripts/validate-technology-trees.mjs data/technology_trees/source_exports data/technology_trees
 node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy
 node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg data/campaign_map
 ```
@@ -73,6 +77,7 @@ Relevant scripts:
 
 - Unit data: `extract-source.mjs`, `build-unit-dataset.mjs`, `validate-unit-dataset.mjs`
 - Skill trees: `extract-skill-source.mjs`, `build-skill-trees.mjs`, `validate-skill-trees.mjs`
+- Technology trees: `extract-technology-source.mjs`, `build-technology-trees.mjs`, `validate-technology-trees.mjs` (plus `npm run test:technologies` for corruption tests)
 - Economy: `extract-economy-source.mjs`, `build-economy-dataset.mjs`, `validate-economy-dataset.mjs`
 - Campaign atlas: `extract-campaign-atlas-source.mjs`, `build-campaign-atlas.mjs`, `validate-campaign-atlas.mjs`
 

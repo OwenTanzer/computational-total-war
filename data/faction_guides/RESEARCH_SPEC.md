@@ -5,7 +5,7 @@
 Produce one source-grounded Markdown document for one playable race in the
 Warhammer III 8.1.1 snapshot. Answer only this question:
 
-> After the project's economy, army, and character catalogs are accounted for,
+> After the project's economy, army, character, and technology catalogs are accounted for,
 > what mechanically relevant information is still needed to understand how this
 > race and its individual playable factions operate in campaign?
 
@@ -20,7 +20,7 @@ boundary: do not reproduce facts that are already adequately represented there.
 
 For the claimed `race_slug`, inspect:
 
-1. `README.md` and the three dataset README files.
+1. `README.md` and the unit, skill-tree, economy, and technology-tree dataset README files.
 2. The race row(s) and faction keys in
    `data/economy/faction_index__wh3__8.1.1.csv`.
 3. Every economy CSV under `data/economy/factions/<race_slug>/`.
@@ -29,7 +29,9 @@ For the claimed `race_slug`, inspect:
 5. The race's rows in
    `data/skill_trees/character_index__wh3__8.1.1.csv` and the corresponding
    files under `data/skill_trees/characters/<race_slug>/`.
-6. Relevant manifests, schema inventories, and audit reports when needed to
+6. The race’s technology faction files, index, and script audit under
+   `data/technology_trees/`; distinguish static rows from unresolved runtime rules.
+7. Relevant manifests, schema inventories, and audit reports when needed to
    understand a field or an intentional omission.
 
 The validated pilot guides for Bretonnia, Chaos Dwarfs, and Tzeentch may be read

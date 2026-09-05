@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The six faction economy CSVs already enumerate constructible surface buildings, their tiers, costs, prerequisites, and standardized income, Growth, control, trade, recruitment, and upkeep outputs. The normalized unit file and typed lookups already cover the 52-unit roster, faction permissions, statistics, abilities, weapons, projectiles, mounts, and related battle data. The 20 character files already contain the skill trees of all six legendary lords, Garagrim, Mikael Leadstrong, the Clan Angrund ancestors, Thorek's artifact Thane, and the generic Dwarf lords and heroes. Those rows are not repeated here. This document records the campaign systems, acquisition rules, persistent state, and cross-system relationships that the catalogs do not express.
 
 ## Mechanically relevant material not captured elsewhere

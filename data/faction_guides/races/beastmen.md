@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The four faction economy exports already describe ordinary horde and Herdstone building levels, costs, prerequisites, and standardized outputs. The normalized unit file and typed lookups already describe roster permissions, unit statistics, abilities, weapons, and mounts. The character exports already contain the ordinary skill trees for Khazrak, Malagor, Morghur, Taurox, and generic Beastmen lords and heroes. Those rows are not repeated here. This document records the campaign feature exceptions, occupation loop, pooled resources, scripted progression, capacity system, challenge technologies, stances, and faction-specific rules needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

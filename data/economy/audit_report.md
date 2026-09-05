@@ -6,7 +6,7 @@ Checked 104 playable faction files and 24108 building rows.
 
 ## Passed checks
 
-- All 34 authoritative source-export hashes match their manifest.
+- All 33 authoritative source-export hashes match their manifest.
 - The source frontend roster resolves to exactly 104 non-prologue playable faction keys.
 - The faction index contains every playable faction exactly once.
 - All 104 faction economy CSV files are present.

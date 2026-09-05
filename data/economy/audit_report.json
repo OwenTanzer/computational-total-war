@@ -1,10 +1,10 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-08-26T12:25:57.145Z",
+  "checked_at_utc": "2026-09-05T12:11:01.049Z",
   "playable_faction_files": 104,
   "building_rows": 24108,
   "passes": [
-    "All 34 authoritative source-export hashes match their manifest.",
+    "All 33 authoritative source-export hashes match their manifest.",
     "The source frontend roster resolves to exactly 104 non-prologue playable faction keys.",
     "The faction index contains every playable faction exactly once.",
     "All 104 faction economy CSV files are present.",

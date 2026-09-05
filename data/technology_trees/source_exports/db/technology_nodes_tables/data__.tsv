@@ -1,0 +1,1845 @@
+key	campaign_key	faction_key	indent	technology_key	technology_node_set	tier	research_points_required	cost_per_round	food_cost	optional_ui_group	resource_cost	required_parents	pixel_offset_x	pixel_offset_y
+#technology_nodes_tables;0;db/technology_nodes_tables/data__														
+dlc05_tech_wef_0_0_0			4	wh_dlc05_tech_2_morai_heg	wef_civ	0	400	0	0			0	0	0
+dlc05_tech_wef_0_1_0			2	wh_dlc05_tech_1_vaul	wef_civ	1	600	0	0			0	0	0
+dlc05_tech_wef_0_1_1			1	wh_dlc05_tech_1_loec	wef_civ	1	400	0	0			0	0	0
+dlc05_tech_wef_0_2_0			1	wh_dlc05_tech_1_ladrielle	wef_civ	2	600	0	0			0	0	0
+dlc05_tech_wef_0_2_1			0	wh_dlc05_tech_1_isha	wef_civ	2	400	0	0			0	0	0
+dlc05_tech_wef_0_3_0			1	wh_dlc05_tech_1_hoeth	wef_civ	3	600	0	0			0	0	0
+dlc05_tech_wef_0_3_1			0	wh_dlc05_tech_2_mathlann	wef_civ	3	400	0	0			0	0	0
+dlc05_tech_wef_0_4_0			1	wh_dlc05_tech_1_kurnous	wef_civ	4	800	0	0			0	0	0
+dlc05_tech_wef_0_4_1			0	wh_dlc05_tech_2_estreath	wef_civ	4	400	0	0			0	0	0
+dlc05_tech_wef_0_5_0			2	wh_dlc05_tech_1_lileath	wef_civ	5	900	0	0			0	0	0
+dlc05_tech_wef_0_5_1			1	wh_dlc05_tech_1_asuryan	wef_civ	5	400	0	0			0	0	0
+dlc05_tech_wef_0_6_0			4	wh_dlc05_tech_2_khaine	wef_civ	5	1000	0	0			0	0	0
+dlc05_tech_wef_0_6_1			2	wh_dlc05_tech_1_cadai	wef_civ	6	1000	0	0			0	0	0
+dlc05_tech_wef_0_6_2			6	wh_dlc05_tech_2_cytharai	wef_civ	6	1000	0	0			0	0	0
+dlc05_tech_wef_1_1_0			6	wh_dlc05_tech_2_ellinill	wef_civ	1	600	0	0			0	0	0
+dlc05_tech_wef_1_1_1			7	wh_dlc05_tech_2_anath_raema	wef_civ	1	400	0	0			0	0	0
+dlc05_tech_wef_1_2_0			7	wh_dlc05_tech_2_drakira	wef_civ	2	600	0	0			0	0	0
+dlc05_tech_wef_1_2_1			8	wh_dlc05_tech_2_hukon	wef_civ	2	400	0	0			0	0	0
+dlc05_tech_wef_1_3_0			7	wh_dlc05_tech_2_eldrazor	wef_civ	3	600	0	0			0	0	0
+dlc05_tech_wef_1_3_1			8	wh_dlc05_tech_2_nethu	wef_civ	3	400	0	0			0	0	0
+dlc05_tech_wef_1_4_0			7	wh_dlc05_tech_2_addaioth	wef_civ	4	800	0	0			0	0	0
+dlc05_tech_wef_1_4_1			8	wh_dlc05_tech_2_atharti	wef_civ	4	400	0	0			0	0	0
+dlc05_tech_wef_1_5_0			6	wh_dlc05_tech_2_ereth_khial	wef_civ	5	900	0	0			0	0	0
+dlc05_tech_wef_1_5_1			7	wh_dlc05_tech_2_hekarti	wef_civ	5	400	0	0			0	0	0
+dlc16_tech_wef_3_0			4	tech_dlc16_wef_ancients_eagles	wef_civ	1	100	5000	0			0	0	0
+dlc16_tech_wef_3_1			3	tech_dlc16_wef_ancients_pine	wef_civ	2	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_3			5	tech_dlc16_wef_ancients_ash	wef_civ	2	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_4			3	tech_dlc16_wef_ancients_poplar	wef_civ	3	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_5			4	tech_dlc16_wef_ancients_willow	wef_civ	2	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_6			5	tech_dlc16_wef_ancients_yew	wef_civ	3	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_7			3	tech_dlc16_wef_ancients_oak	wef_civ	4	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_9			5	tech_dlc16_wef_ancients_cypress	wef_civ	4	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_drycha_1		wh2_dlc16_wef_drycha	2	tech_dlc16_wef_ancients_wildwood	wef_civ	3	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_drycha_2		wh2_dlc16_wef_drycha	6	tech_dlc16_wef_ancients_addaivoch	wef_civ	3	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc16_tech_wef_3_final			4	wh_dlc05_tech_1_the_ancients	wef_civ	4	100	0	0		wh2_dlc16_tech_cost_amber_1	0	0	0
+dlc20_chs_kho_0			0	wh3_dlc20_chs_kho_shared_gift_upgrade_authority	chs_mil	2	400	0	0	chs_kho		0	0	0
+dlc20_chs_kho_1			0	wh3_dlc20_chs_kho_shared_gift_upgrade_corruption	chs_mil	3	400	0	0	chs_kho		0	0	0
+dlc20_chs_kho_2			1	wh3_dlc20_chs_kho_shared_gift_upgrade_diplomacy	chs_mil	2	400	0	0	chs_kho		0	0	0
+dlc20_chs_kho_3			1	wh3_dlc20_chs_kho_shared_gift_upgrade_summons	chs_mil	3	400	0	0	chs_kho		0	0	0
+dlc20_chs_kho_bot_0		wh3_dlc20_chs_valkia	7	wh3_dlc20_chs_kho_shared_gift_upgrade_corruption	chs_mil_valkia	2	400	0	0			0	0	0
+dlc20_chs_kho_bot_1		wh3_dlc20_chs_valkia	8	wh3_dlc20_chs_kho_valkia_buildings	chs_mil_valkia	4	400	0	0			0	0	0
+dlc20_chs_kho_bot_2		wh3_dlc20_chs_valkia	8	wh3_dlc20_chs_kho_valkia_gift_slot_1	chs_mil_valkia	5	800	0	0			0	0	0
+dlc20_chs_kho_bot_3		wh3_dlc20_chs_valkia	8	wh3_dlc20_chs_kho_shared_gift_upgrade_diplomacy	chs_mil_valkia	6	400	0	0			0	0	0
+dlc20_chs_kho_bot_4		wh3_dlc20_chs_valkia	7	wh3_dlc20_chs_kho_valkia_xp	chs_mil_valkia	8	400	0	0			0	0	0
+dlc20_chs_kho_bot_bonus		wh3_dlc20_chs_valkia	9	wh3_dlc20_chs_kho_valkia_heroes_lords	chs_mil_valkia	5	800	0	0			0	0	0
+dlc20_chs_kho_final			0	wh3_dlc20_chs_kho_warriors_gift_slot_2	chs_mil	1	800	0	0			3	0	0
+dlc20_chs_kho_final_0		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_kho_valkia_gift_slot_3	chs_mil_valkia	9	800	0	0			0	0	0
+dlc20_chs_kho_final_1		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_kho_valkia_ultimate	chs_mil_valkia	10	800	0	0			0	0	0
+dlc20_chs_kho_start			0	wh3_dlc20_chs_kho_warriors_gift_slot_1	chs_mil	4	800	0	0			0	0	0
+dlc20_chs_kho_start_0		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_marks_khorne	chs_mil_valkia	0	400	0	0			0	0	0
+dlc20_chs_kho_start_1		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_kho_shared_gift_upgrade_authority	chs_mil_valkia	1	300	0	0			0	0	0
+dlc20_chs_kho_top_0		wh3_dlc20_chs_valkia	1	wh3_dlc20_chs_kho_valkia_military_1	chs_mil_valkia	2	400	0	0			0	0	0
+dlc20_chs_kho_top_1		wh3_dlc20_chs_valkia	0	wh3_dlc20_chs_kho_valkia_movement	chs_mil_valkia	4	400	0	0			0	0	0
+dlc20_chs_kho_top_2		wh3_dlc20_chs_valkia	0	wh3_dlc20_chs_kho_valkia_gift_slot_2	chs_mil_valkia	5	800	0	0			0	0	0
+dlc20_chs_kho_top_3		wh3_dlc20_chs_valkia	0	wh3_dlc20_chs_kho_shared_gift_upgrade_summons	chs_mil_valkia	6	400	0	0			0	0	0
+dlc20_chs_kho_top_4		wh3_dlc20_chs_valkia	1	wh3_dlc20_chs_kho_valkia_military_2	chs_mil_valkia	8	400	0	0			0	0	0
+dlc20_chs_kho_top_bonus		wh3_dlc20_chs_valkia	-1	wh3_dlc20_chs_kho_valkia_weapons	chs_mil_valkia	5	800	0	0			0	0	0
+dlc20_chs_nur_0			5	wh3_dlc20_chs_nur_shared_gift_upgrade_authority	chs_mil	2	400	0	0	chs_nur		0	0	0
+dlc20_chs_nur_1			5	wh3_dlc20_chs_nur_shared_gift_upgrade_corruption	chs_mil	3	400	0	0	chs_nur		0	0	0
+dlc20_chs_nur_2			6	wh3_dlc20_chs_nur_shared_gift_upgrade_diplomacy	chs_mil	2	400	0	0	chs_nur		0	0	0
+dlc20_chs_nur_3			6	wh3_dlc20_chs_nur_shared_gift_upgrade_summons	chs_mil	3	400	0	0	chs_nur		0	0	0
+dlc20_chs_nur_bot_0		wh3_dlc20_chs_festus	7	wh3_dlc20_chs_nur_shared_gift_upgrade_corruption	chs_mil_festus	2	400	0	0			0	0	0
+dlc20_chs_nur_bot_1		wh3_dlc20_chs_festus	8	wh3_dlc20_chs_nur_festus_buildings	chs_mil_festus	4	400	0	0			0	0	0
+dlc20_chs_nur_bot_2		wh3_dlc20_chs_festus	8	wh3_dlc20_chs_nur_festus_gift_slot_1	chs_mil_festus	5	800	0	0			0	0	0
+dlc20_chs_nur_bot_3		wh3_dlc20_chs_festus	8	wh3_dlc20_chs_nur_shared_gift_upgrade_diplomacy	chs_mil_festus	6	400	0	0			0	0	0
+dlc20_chs_nur_bot_4		wh3_dlc20_chs_festus	7	wh3_dlc20_chs_nur_festus_plagues	chs_mil_festus	8	400	0	0			0	0	0
+dlc20_chs_nur_bot_bonus		wh3_dlc20_chs_festus	9	wh3_dlc20_chs_nur_festus_heroes_lords	chs_mil_festus	5	800	0	0			0	0	0
+dlc20_chs_nur_final			6	wh3_dlc20_chs_nur_warriors_gift_slot_2	chs_mil	1	800	0	0			3	0	0
+dlc20_chs_nur_final_0		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_nur_festus_gift_slot_3	chs_mil_festus	9	800	0	0			0	0	0
+dlc20_chs_nur_final_1		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_nur_festus_ultimate	chs_mil_festus	10	800	0	0			0	0	0
+dlc20_chs_nur_start			6	wh3_dlc20_chs_nur_warriors_gift_slot_1	chs_mil	4	800	0	0			0	0	0
+dlc20_chs_nur_start_0		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_marks_nurgle	chs_mil_festus	0	400	0	0			0	0	0
+dlc20_chs_nur_start_1		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_nur_shared_gift_upgrade_authority	chs_mil_festus	1	300	0	0			0	0	0
+dlc20_chs_nur_top_0		wh3_dlc20_chs_festus	1	wh3_dlc20_chs_nur_festus_military_1	chs_mil_festus	2	400	0	0			0	0	0
+dlc20_chs_nur_top_1		wh3_dlc20_chs_festus	0	wh3_dlc20_chs_nur_festus_magic	chs_mil_festus	4	400	0	0			0	0	0
+dlc20_chs_nur_top_2		wh3_dlc20_chs_festus	0	wh3_dlc20_chs_nur_festus_gift_slot_2	chs_mil_festus	5	800	0	0			0	0	0
+dlc20_chs_nur_top_3		wh3_dlc20_chs_festus	0	wh3_dlc20_chs_nur_shared_gift_upgrade_summons	chs_mil_festus	6	400	0	0			0	0	0
+dlc20_chs_nur_top_4		wh3_dlc20_chs_festus	1	wh3_dlc20_chs_nur_festus_military_2	chs_mil_festus	8	400	0	0			0	0	0
+dlc20_chs_nur_top_bonus		wh3_dlc20_chs_festus	-1	wh3_dlc20_chs_nur_festus_weapons	chs_mil_festus	5	800	0	0			0	0	0
+dlc20_chs_sla_0			5	wh3_dlc20_chs_sla_shared_gift_upgrade_authority	chs_mil	11	400	0	0	chs_sla		0	0	0
+dlc20_chs_sla_1			5	wh3_dlc20_chs_sla_shared_gift_upgrade_corruption	chs_mil	12	400	0	0	chs_sla		0	0	0
+dlc20_chs_sla_2			6	wh3_dlc20_chs_sla_shared_gift_upgrade_diplomacy	chs_mil	11	400	0	0	chs_sla		0	0	0
+dlc20_chs_sla_3			6	wh3_dlc20_chs_sla_shared_gift_upgrade_summons	chs_mil	12	400	0	0	chs_sla		0	0	0
+dlc20_chs_sla_bot_0		wh3_dlc20_chs_azazel	7	wh3_dlc20_chs_sla_shared_gift_upgrade_corruption	chs_mil_azazel	2	400	0	0			0	0	0
+dlc20_chs_sla_bot_1		wh3_dlc20_chs_azazel	8	wh3_dlc20_chs_sla_azazel_buildings	chs_mil_azazel	4	400	0	0			0	0	0
+dlc20_chs_sla_bot_2		wh3_dlc20_chs_azazel	8	wh3_dlc20_chs_sla_azazel_gift_slot_2	chs_mil_azazel	5	800	0	0			0	0	0
+dlc20_chs_sla_bot_3		wh3_dlc20_chs_azazel	8	wh3_dlc20_chs_sla_shared_gift_upgrade_diplomacy	chs_mil_azazel	6	400	0	0			0	0	0
+dlc20_chs_sla_bot_4		wh3_dlc20_chs_azazel	7	wh3_dlc20_chs_sla_azazel_mark	chs_mil_azazel	8	400	0	0			0	0	0
+dlc20_chs_sla_bot_bonus		wh3_dlc20_chs_azazel	9	wh3_dlc20_chs_sla_azazel_heroes_lords	chs_mil_azazel	5	800	0	0			0	0	0
+dlc20_chs_sla_final			6	wh3_dlc20_chs_sla_warriors_gift_slot_2	chs_mil	13	800	0	0			3	0	0
+dlc20_chs_sla_final_0		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_sla_azazel_gift_slot_3	chs_mil_azazel	9	800	0	0			0	0	0
+dlc20_chs_sla_final_1		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_sla_azazel_ultimate	chs_mil_azazel	10	800	0	0			0	0	0
+dlc20_chs_sla_sigvald_bonus_1		wh3_dlc20_chs_sigvald	5	wh3_dlc20_chs_sla_azazel_weapons	chs_mil	13	800	0	0			3	0	0
+dlc20_chs_sla_start			6	wh3_dlc20_chs_sla_warriors_gift_slot_1	chs_mil	10	800	0	0			0	0	0
+dlc20_chs_sla_start_0		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_marks_slaanesh	chs_mil_azazel	0	400	0	0			0	0	0
+dlc20_chs_sla_start_1		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_sla_shared_gift_upgrade_authority	chs_mil_azazel	1	300	0	0			0	0	0
+dlc20_chs_sla_top_0		wh3_dlc20_chs_azazel	1	wh3_dlc20_chs_sla_azazel_military_1	chs_mil_azazel	2	400	0	0			0	0	0
+dlc20_chs_sla_top_1		wh3_dlc20_chs_azazel	0	wh3_dlc20_chs_sla_azazel_spells	chs_mil_azazel	4	400	0	0			0	0	0
+dlc20_chs_sla_top_2		wh3_dlc20_chs_azazel	0	wh3_dlc20_chs_sla_azazel_gift_slot_1	chs_mil_azazel	5	800	0	0			0	0	0
+dlc20_chs_sla_top_3		wh3_dlc20_chs_azazel	0	wh3_dlc20_chs_sla_shared_gift_upgrade_summons	chs_mil_azazel	6	400	0	0			0	0	0
+dlc20_chs_sla_top_4		wh3_dlc20_chs_azazel	1	wh3_dlc20_chs_sla_azazel_military_2	chs_mil_azazel	8	400	0	0			0	0	0
+dlc20_chs_sla_top_bonus		wh3_dlc20_chs_azazel	-1	wh3_dlc20_chs_sla_azazel_weapons	chs_mil_azazel	5	800	0	0			0	0	0
+dlc20_chs_tze_0			0	wh3_dlc20_chs_tze_shared_gift_upgrade_authority	chs_mil	11	400	0	0	chs_tze		0	0	0
+dlc20_chs_tze_1			0	wh3_dlc20_chs_tze_shared_gift_upgrade_corruption	chs_mil	12	400	0	0	chs_tze		0	0	0
+dlc20_chs_tze_2			1	wh3_dlc20_chs_tze_shared_gift_upgrade_diplomacy	chs_mil	11	400	0	0	chs_tze		0	0	0
+dlc20_chs_tze_3			1	wh3_dlc20_chs_tze_shared_gift_upgrade_summons	chs_mil	12	400	0	0	chs_tze		0	0	0
+dlc20_chs_tze_bot_0		wh3_dlc20_chs_vilitch	7	wh3_dlc20_chs_tze_shared_gift_upgrade_corruption	chs_mil_vilitch	2	400	0	0			0	0	0
+dlc20_chs_tze_bot_1		wh3_dlc20_chs_vilitch	8	wh3_dlc20_chs_tze_vilitch_buildings	chs_mil_vilitch	4	400	0	0			0	0	0
+dlc20_chs_tze_bot_2		wh3_dlc20_chs_vilitch	8	wh3_dlc20_chs_tze_vilitch_gift_slot_1	chs_mil_vilitch	5	800	0	0			0	0	0
+dlc20_chs_tze_bot_3		wh3_dlc20_chs_vilitch	8	wh3_dlc20_chs_tze_shared_gift_upgrade_diplomacy	chs_mil_vilitch	6	400	0	0			0	0	0
+dlc20_chs_tze_bot_4		wh3_dlc20_chs_vilitch	7	wh3_dlc20_chs_tze_vilitch_teleport	chs_mil_vilitch	8	400	0	0			0	0	0
+dlc20_chs_tze_bot_bonus		wh3_dlc20_chs_vilitch	9	wh3_dlc20_chs_tze_vilitch_heroes_lords	chs_mil_vilitch	5	800	0	0			0	0	0
+dlc20_chs_tze_final			0	wh3_dlc20_chs_tze_warriors_gift_slot_2	chs_mil	13	800	0	0			3	0	0
+dlc20_chs_tze_final_0		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_tze_vilitch_gift_slot_3	chs_mil_vilitch	9	800	0	0			0	0	0
+dlc20_chs_tze_final_1		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_tze_vilitch_ultimate	chs_mil_vilitch	10	800	0	0			0	0	0
+dlc20_chs_tze_start			0	wh3_dlc20_chs_tze_warriors_gift_slot_1	chs_mil	10	800	0	0			0	0	0
+dlc20_chs_tze_start_0		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_marks_tzeentch	chs_mil_vilitch	0	400	0	0			0	0	0
+dlc20_chs_tze_start_1		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_tze_shared_gift_upgrade_authority	chs_mil_vilitch	1	300	0	0			0	0	0
+dlc20_chs_tze_top_0		wh3_dlc20_chs_vilitch	1	wh3_dlc20_chs_tze_vilitch_military_1	chs_mil_vilitch	2	400	0	0			0	0	0
+dlc20_chs_tze_top_1		wh3_dlc20_chs_vilitch	0	wh3_dlc20_chs_tze_vilitch_spells	chs_mil_vilitch	4	400	0	0			0	0	0
+dlc20_chs_tze_top_2		wh3_dlc20_chs_vilitch	0	wh3_dlc20_chs_tze_vilitch_gift_slot_2	chs_mil_vilitch	5	800	0	0			0	0	0
+dlc20_chs_tze_top_3		wh3_dlc20_chs_vilitch	0	wh3_dlc20_chs_tze_shared_gift_upgrade_summons	chs_mil_vilitch	6	400	0	0			0	0	0
+dlc20_chs_tze_top_4		wh3_dlc20_chs_vilitch	1	wh3_dlc20_chs_tze_vilitch_military_2	chs_mil_vilitch	8	400	0	0			0	0	0
+dlc20_chs_tze_top_bonus		wh3_dlc20_chs_vilitch	-1	wh3_dlc20_chs_tze_vilitch_weapons	chs_mil_vilitch	5	800	0	0			0	0	0
+dlc20_chs_und_0			1	wh3_dlc20_chs_und_shared_building	chs_mil	7	400	0	0			0	0	0
+dlc20_chs_und_0_azazel		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_marauders	chs_mil_azazel	2	300	0	0			0	0	0
+dlc20_chs_und_0_festus		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_marauders	chs_mil_festus	2	300	0	0			0	0	0
+dlc20_chs_und_0_valkia		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_marauders	chs_mil_valkia	2	300	0	0			0	0	0
+dlc20_chs_und_0_vilitch		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_marauders	chs_mil_vilitch	2	300	0	0			0	0	0
+dlc20_chs_und_1			2	wh3_dlc20_chs_und_shared_vassals	chs_mil	6	400	0	0			1	0	0
+dlc20_chs_und_10			4	wh3_dlc20_chs_und_shared_movement	chs_mil	8	400	0	0			1	0	0
+dlc20_chs_und_10_azazel		wh3_dlc20_chs_azazel	3	wh3_dlc20_chs_und_shared_beasts	chs_mil_azazel	6	400	0	0			1	0	0
+dlc20_chs_und_10_festus		wh3_dlc20_chs_festus	3	wh3_dlc20_chs_und_shared_beasts	chs_mil_festus	6	400	0	0			1	0	0
+dlc20_chs_und_10_valkia		wh3_dlc20_chs_valkia	3	wh3_dlc20_chs_und_shared_beasts	chs_mil_valkia	6	400	0	0			1	0	0
+dlc20_chs_und_10_vilitch		wh3_dlc20_chs_vilitch	3	wh3_dlc20_chs_und_shared_beasts	chs_mil_vilitch	6	400	0	0			1	0	0
+dlc20_chs_und_11			5	wh3_dlc20_chs_und_shared_knights	chs_mil	7	400	0	0			0	0	0
+dlc20_chs_und_11_azazel		wh3_dlc20_chs_azazel	5	wh3_dlc20_chs_und_shared_building	chs_mil_azazel	6	400	0	0			1	0	0
+dlc20_chs_und_11_festus		wh3_dlc20_chs_festus	5	wh3_dlc20_chs_und_shared_building	chs_mil_festus	6	400	0	0			1	0	0
+dlc20_chs_und_11_valkia		wh3_dlc20_chs_valkia	5	wh3_dlc20_chs_und_shared_building	chs_mil_valkia	6	400	0	0			1	0	0
+dlc20_chs_und_11_vilitch		wh3_dlc20_chs_vilitch	5	wh3_dlc20_chs_und_shared_building	chs_mil_vilitch	6	400	0	0			1	0	0
+dlc20_chs_und_12			-1	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil	7	800	0	0			0	0	0
+dlc20_chs_und_12_azazel		wh3_dlc20_chs_azazel	2	wh3_dlc20_chs_und_shared_upgrades	chs_mil_azazel	7	400	0	0			0	0	0
+dlc20_chs_und_12_festus		wh3_dlc20_chs_festus	2	wh3_dlc20_chs_und_shared_upgrades	chs_mil_festus	7	400	0	0			0	0	0
+dlc20_chs_und_12_valkia		wh3_dlc20_chs_valkia	2	wh3_dlc20_chs_und_shared_upgrades	chs_mil_valkia	7	400	0	0			0	0	0
+dlc20_chs_und_12_vilitch		wh3_dlc20_chs_vilitch	2	wh3_dlc20_chs_und_shared_upgrades	chs_mil_vilitch	7	400	0	0			0	0	0
+dlc20_chs_und_13			7	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil	7	800	0	0			0	0	0
+dlc20_chs_und_13_azazel		wh3_dlc20_chs_azazel	6	wh3_dlc20_chs_und_shared_souls	chs_mil_azazel	7	400	0	0			0	0	0
+dlc20_chs_und_13_festus		wh3_dlc20_chs_festus	6	wh3_dlc20_chs_und_shared_souls	chs_mil_festus	7	400	0	0			0	0	0
+dlc20_chs_und_13_valkia		wh3_dlc20_chs_valkia	6	wh3_dlc20_chs_und_shared_souls	chs_mil_valkia	7	400	0	0			0	0	0
+dlc20_chs_und_13_vilitch		wh3_dlc20_chs_vilitch	6	wh3_dlc20_chs_und_shared_souls	chs_mil_vilitch	7	400	0	0			0	0	0
+dlc20_chs_und_14			1	wh3_dlc20_chs_und_shared_marks_khorne	chs_mil	5	400	0	0			1	0	0
+dlc20_chs_und_14_azazel		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil_azazel	8	800	0	0			1	0	0
+dlc20_chs_und_14_festus		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil_festus	8	800	0	0			1	0	0
+dlc20_chs_und_14_valkia		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil_valkia	8	800	0	0			1	0	0
+dlc20_chs_und_14_vilitch		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil_vilitch	8	800	0	0			1	0	0
+dlc20_chs_und_15			1	wh3_dlc20_chs_und_shared_marks_tzeentch	chs_mil	9	400	0	0			1	0	0
+dlc20_chs_und_15_azazel		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_chariots	chs_mil_azazel	3	400	0	0			1	0	0
+dlc20_chs_und_15_festus		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_chariots	chs_mil_festus	3	400	0	0			1	0	0
+dlc20_chs_und_15_valkia		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_chariots	chs_mil_valkia	3	400	0	0			1	0	0
+dlc20_chs_und_15_vilitch		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_chariots	chs_mil_vilitch	3	400	0	0			1	0	0
+dlc20_chs_und_16			5	wh3_dlc20_chs_und_shared_marks_nurgle	chs_mil	5	400	0	0			1	0	0
+dlc20_chs_und_16_azazel		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_monsters	chs_mil_azazel	7	400	0	0			1	0	0
+dlc20_chs_und_16_festus		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_monsters	chs_mil_festus	7	400	0	0			1	0	0
+dlc20_chs_und_16_valkia		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_monsters	chs_mil_valkia	7	400	0	0			1	0	0
+dlc20_chs_und_16_vilitch		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_monsters	chs_mil_vilitch	7	400	0	0			1	0	0
+dlc20_chs_und_17			5	wh3_dlc20_chs_und_shared_marks_slaanesh	chs_mil	9	400	0	0			1	0	0
+dlc20_chs_und_18			3	wh3_dlc20_chs_und_warriors_hellcannons	chs_mil	4	400	0	0			0	0	0
+dlc20_chs_und_19			3	wh3_dlc20_chs_und_shared_monsters	chs_mil	10	400	0	0			0	0	0
+dlc20_chs_und_1_azazel		wh3_dlc20_chs_azazel	2	wh3_dlc20_chs_und_shared_chosen	chs_mil_azazel	3	500	0	0			0	0	0
+dlc20_chs_und_1_festus		wh3_dlc20_chs_festus	2	wh3_dlc20_chs_und_shared_chosen	chs_mil_festus	3	500	0	0			0	0	0
+dlc20_chs_und_1_valkia		wh3_dlc20_chs_valkia	2	wh3_dlc20_chs_und_shared_chosen	chs_mil_valkia	3	500	0	0			0	0	0
+dlc20_chs_und_1_vilitch		wh3_dlc20_chs_vilitch	2	wh3_dlc20_chs_und_shared_chosen	chs_mil_vilitch	3	500	0	0			0	0	0
+dlc20_chs_und_2			2	wh3_dlc20_chs_und_shared_diplomacy	chs_mil	7	400	0	0			0	0	0
+dlc20_chs_und_20			3	wh3_dlc20_chs_und_warriors_warmachines	chs_mil	3	400	0	0			0	0	0
+dlc20_chs_und_21			3	wh3_dlc20_chs_und_warriors_shaggoths	chs_mil	11	400	0	0			0	0	0
+dlc20_chs_und_2_azazel		wh3_dlc20_chs_azazel	6	wh3_dlc20_chs_und_shared_mutants	chs_mil_azazel	3	500	0	0			0	0	0
+dlc20_chs_und_2_festus		wh3_dlc20_chs_festus	6	wh3_dlc20_chs_und_shared_mutants	chs_mil_festus	3	500	0	0			0	0	0
+dlc20_chs_und_2_valkia		wh3_dlc20_chs_valkia	6	wh3_dlc20_chs_und_shared_mutants	chs_mil_valkia	3	500	0	0			0	0	0
+dlc20_chs_und_2_vilitch		wh3_dlc20_chs_vilitch	6	wh3_dlc20_chs_und_shared_mutants	chs_mil_vilitch	3	500	0	0			0	0	0
+dlc20_chs_und_3			2	wh3_dlc20_chs_und_shared_souls	chs_mil	8	400	0	0			1	0	0
+dlc20_chs_und_3_azazel		wh3_dlc20_chs_azazel	3	wh3_dlc20_chs_und_shared_diplomacy	chs_mil_azazel	4	400	0	0			0	0	0
+dlc20_chs_und_3_festus		wh3_dlc20_chs_festus	3	wh3_dlc20_chs_und_shared_diplomacy	chs_mil_festus	4	400	0	0			0	0	0
+dlc20_chs_und_3_valkia		wh3_dlc20_chs_valkia	3	wh3_dlc20_chs_und_shared_diplomacy	chs_mil_valkia	4	400	0	0			0	0	0
+dlc20_chs_und_3_vilitch		wh3_dlc20_chs_vilitch	3	wh3_dlc20_chs_und_shared_diplomacy	chs_mil_vilitch	4	400	0	0			0	0	0
+dlc20_chs_und_4			3	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil	5	400	0	0			0	0	0
+dlc20_chs_und_4_azazel		wh3_dlc20_chs_azazel	5	wh3_dlc20_chs_und_shared_movement	chs_mil_azazel	4	400	0	0			0	0	0
+dlc20_chs_und_4_festus		wh3_dlc20_chs_festus	5	wh3_dlc20_chs_und_shared_movement	chs_mil_festus	4	400	0	0			0	0	0
+dlc20_chs_und_4_valkia		wh3_dlc20_chs_valkia	5	wh3_dlc20_chs_und_shared_movement	chs_mil_valkia	4	400	0	0			0	0	0
+dlc20_chs_und_4_vilitch		wh3_dlc20_chs_vilitch	5	wh3_dlc20_chs_und_shared_movement	chs_mil_vilitch	4	400	0	0			0	0	0
+dlc20_chs_und_5			3	wh3_dlc20_chs_und_shared_chariots	chs_mil	6	400	0	0			0	0	0
+dlc20_chs_und_5_azazel		wh3_dlc20_chs_azazel	1	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil_azazel	5	600	0	0			0	0	0
+dlc20_chs_und_5_festus		wh3_dlc20_chs_festus	1	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil_festus	5	600	0	0			0	0	0
+dlc20_chs_und_5_valkia		wh3_dlc20_chs_valkia	1	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil_valkia	5	600	0	0			0	0	0
+dlc20_chs_und_5_vilitch		wh3_dlc20_chs_vilitch	1	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil_vilitch	5	600	0	0			0	0	0
+dlc20_chs_und_6			3	wh3_dlc20_chs_und_shared_mutants	chs_mil	8	400	0	0			0	0	0
+dlc20_chs_und_6_azazel		wh3_dlc20_chs_azazel	2	wh3_dlc20_chs_und_shared_knights	chs_mil_azazel	5	600	0	0			0	0	0
+dlc20_chs_und_6_festus		wh3_dlc20_chs_festus	2	wh3_dlc20_chs_und_shared_knights	chs_mil_festus	5	600	0	0			0	0	0
+dlc20_chs_und_6_valkia		wh3_dlc20_chs_valkia	2	wh3_dlc20_chs_und_shared_knights	chs_mil_valkia	5	600	0	0			0	0	0
+dlc20_chs_und_6_vilitch		wh3_dlc20_chs_vilitch	2	wh3_dlc20_chs_und_shared_knights	chs_mil_vilitch	5	600	0	0			0	0	0
+dlc20_chs_und_7			3	wh3_dlc20_chs_und_shared_beasts	chs_mil	9	400	0	0			0	0	0
+dlc20_chs_und_7_azazel		wh3_dlc20_chs_azazel	4	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil_azazel	5	800	0	0			1	0	0
+dlc20_chs_und_7_festus		wh3_dlc20_chs_festus	4	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil_festus	5	800	0	0			1	0	0
+dlc20_chs_und_7_valkia		wh3_dlc20_chs_valkia	4	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil_valkia	5	800	0	0			1	0	0
+dlc20_chs_und_7_vilitch		wh3_dlc20_chs_vilitch	4	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil_vilitch	5	800	0	0			1	0	0
+dlc20_chs_und_8			4	wh3_dlc20_chs_und_shared_upgrades	chs_mil	6	400	0	0			1	0	0
+dlc20_chs_und_8_azazel		wh3_dlc20_chs_azazel	6	wh3_dlc20_chs_und_shared_corruption	chs_mil_azazel	5	600	0	0			0	0	0
+dlc20_chs_und_8_festus		wh3_dlc20_chs_festus	6	wh3_dlc20_chs_und_shared_corruption	chs_mil_festus	5	600	0	0			0	0	0
+dlc20_chs_und_8_valkia		wh3_dlc20_chs_valkia	6	wh3_dlc20_chs_und_shared_corruption	chs_mil_valkia	5	600	0	0			0	0	0
+dlc20_chs_und_8_vilitch		wh3_dlc20_chs_vilitch	6	wh3_dlc20_chs_und_shared_corruption	chs_mil_vilitch	5	600	0	0			0	0	0
+dlc20_chs_und_9			4	wh3_dlc20_chs_und_shared_chosen	chs_mil	7	400	0	0			0	0	0
+dlc20_chs_und_9_azazel		wh3_dlc20_chs_azazel	7	wh3_dlc20_chs_und_shared_vassals	chs_mil_azazel	5	600	0	0			0	0	0
+dlc20_chs_und_9_festus		wh3_dlc20_chs_festus	7	wh3_dlc20_chs_und_shared_vassals	chs_mil_festus	5	600	0	0			0	0	0
+dlc20_chs_und_9_valkia		wh3_dlc20_chs_valkia	7	wh3_dlc20_chs_und_shared_vassals	chs_mil_valkia	5	600	0	0			0	0	0
+dlc20_chs_und_9_vilitch		wh3_dlc20_chs_vilitch	7	wh3_dlc20_chs_und_shared_vassals	chs_mil_vilitch	5	600	0	0			0	0	0
+dlc20_chs_und_centre			3	wh3_dlc20_chs_und_shared_marauders	chs_mil	7	300	0	0			0	0	0
+grn_tech_node_1			3	tech_grn_start_0_1	grn_new	0	0	0	0			0	0	0
+grn_tech_node_10			0	tech_grn_extra_1_3	grn_new	3	400	0	0			0	0	-25
+grn_tech_node_11			0	tech_grn_extra_1	grn_new	4	400	0	0			0	0	-25
+grn_tech_node_12			5	tech_grn_start_2_4	grn_new	1	200	0	0			0	0	25
+grn_tech_node_13			5	tech_grn_extra_2_1	grn_new	2	300	0	0			0	0	25
+grn_tech_node_14			5	tech_grn_extra_3_2	grn_new	3	300	0	0			0	0	25
+grn_tech_node_15			5	tech_grn_end_2_2	grn_new	4	300	0	0			0	0	25
+grn_tech_node_16			5	tech_grn_mid_2_1	grn_new	5	100	5000	0			0	0	25
+grn_tech_node_17			6	tech_grn_extra_3_1	grn_new	1	400	0	0			0	0	25
+grn_tech_node_18			6	tech_grn_extra_3_4	grn_new	2	400	0	0			0	0	25
+grn_tech_node_19			6	tech_grn_extra_3_3	grn_new	3	400	0	0			0	0	25
+grn_tech_node_2			3	tech_grn_start_2_3	grn_new	1	200	0	0			0	0	0
+grn_tech_node_20			6	tech_grn_extra_2	grn_new	4	400	0	0			0	0	25
+grn_tech_node_21			2	tech_grn_start_3_1	grn_new	1	400	0	0			0	0	0
+grn_tech_node_22			4	tech_grn_start_1_1	grn_new	1	400	0	0			0	0	0
+grn_tech_node_23			3	tech_grn_end_2_3	grn_new	2	300	0	0			0	0	0
+grn_tech_node_24			3	tech_grn_extra_2_4	grn_new	3	300	0	0			0	0	0
+grn_tech_node_25			2	tech_grn_extra_2_3	grn_new	3	400	0	0			0	0	0
+grn_tech_node_26			4	tech_grn_start_1_2	grn_new	3	400	0	0			0	0	0
+grn_tech_node_27			3	tech_grn_end_5_2	grn_new	4	500	0	0			0	0	0
+grn_tech_node_28			3	tech_grn_start_3_3	grn_new	6	700	0	0			0	0	0
+grn_tech_node_29			3	tech_grn_end_3_1	grn_new	7	700	0	0			0	0	0
+grn_tech_node_3			1	tech_grn_start_2_2	grn_new	1	200	0	0			0	0	-25
+grn_tech_node_30			2	tech_grn_end_3_2	grn_new	7	600	0	0			0	0	-25
+grn_tech_node_31			1	tech_grn_end_1_3	grn_new	7	700	0	0			0	0	-25
+grn_tech_node_32			0	tech_grn_end_1_1	grn_new	7	800	0	0			0	0	-25
+grn_tech_node_33			2	tech_grn_start_1_3	grn_new	6	500	0	0			0	0	-25
+grn_tech_node_34			2	tech_grn_end_2_1	grn_new	8	500	0	0			0	0	-25
+grn_tech_node_35			4	tech_grn_start_3_2	grn_new	7	600	0	0			0	0	25
+grn_tech_node_36			5	tech_grn_end_3_3	grn_new	7	700	0	0			0	0	25
+grn_tech_node_37			6	tech_grn_end_4_2	grn_new	7	800	0	0			0	0	25
+grn_tech_node_38			4	tech_grn_end_4_1	grn_new	6	500	0	0			0	0	25
+grn_tech_node_39			4	tech_grn_end_1_2	grn_new	8	500	0	0			0	0	25
+grn_tech_node_4			1	tech_grn_extra_1_2	grn_new	3	300	0	0			0	0	-25
+grn_tech_node_40			3	tech_grn_final_1_1	grn_new	8	700	0	0			0	0	0
+grn_tech_node_41			3	tech_grn_end_5_3	grn_new	9	900	0	0			0	75	0
+grn_tech_node_42			2	tech_grn_end_4_3	grn_new	9	1000	0	0			0	75	0
+grn_tech_node_43			4	tech_grn_end_5_1	grn_new	9	1000	0	0			0	75	0
+grn_tech_node_44			3	tech_grn_final_1_2	grn_new	10	1000	0	0			0	75	0
+grn_tech_node_5			1	tech_grn_extra_2_2	grn_new	2	300	0	0			0	0	-25
+grn_tech_node_6			1	tech_grn_extra_1_4	grn_new	4	300	0	0			0	0	-25
+grn_tech_node_7			1	tech_grn_mid_1_1	grn_new	5	100	5000	0			0	0	-25
+grn_tech_node_8			0	tech_grn_start_2_1	grn_new	1	400	0	0			0	0	-25
+grn_tech_node_9			0	tech_grn_extra_1_1	grn_new	2	400	0	0			0	0	-25
+tech_dlc14_brt_bretonnian_diplomacy		wh2_dlc14_brt_chevaliers_de_lyonesse	2	tech_dlc14_brt_bretonnian_diplomacy	brt_mil	3	400	0	0	brt_heraldry		0	0	0
+tech_dlc14_brt_code_of_conduct		wh2_dlc14_brt_chevaliers_de_lyonesse	1	tech_dlc14_brt_code_of_conduct	brt_mil	1	500	0	0			0	0	0
+tech_dlc14_brt_heroic_duties		wh2_dlc14_brt_chevaliers_de_lyonesse	3	tech_dlc14_brt_heroic_duties	brt_mil	2	800	0	0			0	0	0
+tech_dlc14_brt_prayer_of_fortitude		wh2_dlc14_brt_chevaliers_de_lyonesse	2	tech_dlc14_brt_prayer_of_fortitude	brt_mil	2	600	0	0			0	0	0
+tech_dlc14_brt_rally_the_peasants		wh2_dlc14_brt_chevaliers_de_lyonesse	4	tech_dlc14_brt_rally_the_peasants	brt_mil	2	1200	0	0			0	0	0
+tech_dlc14_brt_righteous_strength		wh2_dlc14_brt_chevaliers_de_lyonesse	2	tech_dlc14_brt_righteous_strength	brt_mil	1	600	0	0			0	0	0
+tech_dlc14_brt_the_ladys_favour		wh2_dlc14_brt_chevaliers_de_lyonesse	1	tech_dlc14_brt_the_ladys_favour	brt_mil	2	500	0	0			0	0	0
+tech_dlc14_skv_2_4_eshin		wh2_main_skv_clan_eshin	5	tech_dlc14_skv_2_4_eshin	skv_mil	3	400	0	0			0	0	0
+tech_dlc14_skv_3_0_eshin		wh2_main_skv_clan_eshin	7	tech_dlc14_skv_3_0_eshin	skv_mil	0	200	0	0			0	0	0
+tech_dlc14_skv_8_0_eshin		wh2_main_skv_clan_eshin	7	tech_dlc14_skv_8_0_eshin	skv_mil	6	100	0	0			0	0	0
+tech_dlc17_bst_bret_1			0	tech_dlc17_bst_bretonnia_locked	bst_mil_rework	6	200	0	0			0	0	0
+tech_dlc17_bst_bret_2			0	tech_dlc17_bst_bretonnia_unlock_1	bst_mil_rework	7	400	0	0			0	0	0
+tech_dlc17_bst_bret_3			1	tech_dlc17_bst_bretonnia_unlock_2	bst_mil_rework	7	500	0	0			0	0	0
+tech_dlc17_bst_bret_4			2	tech_dlc17_bst_bretonnia_unlock_3	bst_mil_rework	7	600	0	0			0	0	0
+tech_dlc17_bst_bret_5			3	tech_dlc17_bst_bretonnia_unlock_4	bst_mil_rework	7	700	0	0			0	0	0
+tech_dlc17_bst_dwarfs_1			0	tech_dlc17_bst_dwarf_locked	bst_mil_rework	4	200	0	0			0	0	0
+tech_dlc17_bst_dwarfs_2			3	tech_dlc17_bst_dwarf_unlock_1	bst_mil_rework	5	700	0	0			0	0	0
+tech_dlc17_bst_dwarfs_3			1	tech_dlc17_bst_dwarf_unlock_2	bst_mil_rework	5	500	0	0			0	0	0
+tech_dlc17_bst_dwarfs_4			2	tech_dlc17_bst_dwarf_unlock_3	bst_mil_rework	5	600	0	0			0	0	0
+tech_dlc17_bst_dwarfs_5			0	tech_dlc17_bst_dwarf_unlock_4	bst_mil_rework	5	400	0	0			0	0	0
+tech_dlc17_bst_elves_1			0	tech_dlc17_bst_high_elves_locked	bst_mil_rework	2	200	0	0			0	0	0
+tech_dlc17_bst_elves_2			0	tech_dlc17_bst_high_elves_1	bst_mil_rework	3	400	0	0			0	0	0
+tech_dlc17_bst_elves_3			3	tech_dlc17_bst_high_elves_2	bst_mil_rework	3	700	0	0			0	0	0
+tech_dlc17_bst_elves_4			2	tech_dlc17_bst_high_elves_3	bst_mil_rework	3	600	0	0			0	0	0
+tech_dlc17_bst_elves_5			1	tech_dlc17_bst_high_elves_4	bst_mil_rework	3	500	0	0			0	0	0
+tech_dlc17_bst_men_1			0	tech_dlc17_bst_empire_locked	bst_mil_rework	0	200	0	0			0	0	0
+tech_dlc17_bst_men_2			0	tech_dlc17_bst_empire_unlock_1	bst_mil_rework	1	400	0	0			0	0	0
+tech_dlc17_bst_men_3			1	tech_dlc17_bst_empire_unlock_2	bst_mil_rework	1	500	0	0			0	0	0
+tech_dlc17_bst_men_4			2	tech_dlc17_bst_empire_unlock_3	bst_mil_rework	1	600	0	0			0	0	0
+tech_dlc17_bst_men_5			3	tech_dlc17_bst_empire_unlock_4	bst_mil_rework	1	700	0	0			0	0	0
+tech_dlc17_bst_unique_1			6	tech_dlc17_bst_the_single_entity_tech	bst_mil_rework	0	200	0	0			0	0	0
+tech_dlc17_bst_unique_2			6	tech_dlc17_bst_unfavoured_battle	bst_mil_rework	1	200	0	0			0	0	0
+tech_dlc17_bst_unique_3			6	tech_dlc17_bst_the_no_unit_loss	bst_mil_rework	2	200	0	0			0	0	0
+tech_dlc17_bst_unique_4			6	tech_dlc17_bst_chariot_only	bst_mil_rework	3	200	0	0			0	0	0
+tech_dlc17_bst_unique_5			6	tech_dlc17_bst_four_battles	bst_mil_rework	4	200	0	0			0	0	0
+tech_dlc17_bst_unique_6			6	tech_dlc17_bst_fifteen_spells	bst_mil_rework	5	200	0	0			0	0	0
+tech_dlc17_bst_unique_7			6	tech_dlc17_bst_bloodgrounds_everywhere	bst_mil_rework	6	200	0	0			0	0	0
+tech_dlc17_bst_unique_8			6	tech_dlc17_bst_wipe_out_faction	bst_mil_rework	7	200	0	0			0	0	0
+tech_grn_scrap_1			8	tech_grn_scrap_1	grn_new	2	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_100	0	25	0
+tech_grn_scrap_2			8	tech_grn_scrap_2	grn_new	3	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_100	0	25	0
+tech_grn_scrap_3			8	tech_grn_scrap_3	grn_new	4	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_100	0	25	0
+tech_grn_scrap_4			8	tech_grn_scrap_4	grn_new	5	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_150	0	25	0
+tech_grn_scrap_5			8	tech_grn_scrap_5	grn_new	6	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_150	0	25	0
+tech_grn_scrap_6			8	tech_grn_scrap_6	grn_new	7	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_150	0	25	0
+tech_grn_scrap_7			8	tech_grn_scrap_7	grn_new	8	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_250	0	25	0
+tech_grn_scrap_8			8	tech_grn_scrap_8	grn_new	9	100	0	0	grn_scrap	wh3_dlc26_scrap_cost_250	0	25	0
+tech_skv_1_0_moulder		wh2_main_skv_clan_moulder	1	tech_dlc16_skv_1_0_moulder	skv_mil	0	100	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_1_1			4	wh2_dlc09_tech_tmb_campaign_bonus_1_1	tmb_mil	1	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_1_2			5	wh2_dlc09_tech_tmb_campaign_bonus_1_2	tmb_mil	1	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_1_3			6	wh2_dlc09_tech_tmb_campaign_bonus_1_3	tmb_mil	1	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_2_1			4	wh2_dlc09_tech_tmb_campaign_bonus_2_1	tmb_mil	3	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_2_2			5	wh2_dlc09_tech_tmb_campaign_bonus_2_2	tmb_mil	3	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_2_3			6	wh2_dlc09_tech_tmb_campaign_bonus_2_3	tmb_mil	3	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_3_1			4	wh2_dlc09_tech_tmb_campaign_bonus_3_1	tmb_mil	5	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_3_2			5	wh2_dlc09_tech_tmb_campaign_bonus_3_2	tmb_mil	5	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_3_3			6	wh2_dlc09_tech_tmb_campaign_bonus_3_3	tmb_mil	5	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_4_1			4	wh2_dlc09_tech_tmb_campaign_bonus_4_1	tmb_mil	7	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_4_2			5	wh2_dlc09_tech_tmb_campaign_bonus_4_2	tmb_mil	7	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_4_3			6	wh2_dlc09_tech_tmb_campaign_bonus_4_3	tmb_mil	7	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_5_1			4	wh2_dlc09_tech_tmb_campaign_bonus_5_1	tmb_mil	9	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_5_2			5	wh2_dlc09_tech_tmb_campaign_bonus_5_2	tmb_mil	9	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_5_3			6	wh2_dlc09_tech_tmb_campaign_bonus_5_3	tmb_mil	9	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_6_1			4	wh2_dlc09_tech_tmb_campaign_bonus_6_1	tmb_mil	11	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_6_2			5	wh2_dlc09_tech_tmb_campaign_bonus_6_2	tmb_mil	11	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_campaign_bonus_6_3			6	wh2_dlc09_tech_tmb_campaign_bonus_6_3	tmb_mil	11	400	0	0			0	0	0
+wh2_dlc09_tech_tmb_dynasty_1			3	wh2_dlc09_tech_tmb_dynasty_1	tmb_mil	0	1000	0	0	tmb_1	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_dynasty_2			3	wh2_dlc09_tech_tmb_dynasty_2	tmb_mil	2	1000	0	0	tmb_2	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_dynasty_3			3	wh2_dlc09_tech_tmb_dynasty_3	tmb_mil	4	1000	0	0	tmb_3	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_dynasty_4			3	wh2_dlc09_tech_tmb_dynasty_4	tmb_mil	6	1000	0	0	tmb_4	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_dynasty_5			3	wh2_dlc09_tech_tmb_dynasty_5	tmb_mil	8	1000	0	0	tmb_5	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_dynasty_6			3	wh2_dlc09_tech_tmb_dynasty_6	tmb_mil	10	1000	0	0	tmb_6	wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_extra_army_1			0	wh2_dlc09_tech_tmb_extra_army_1	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_2			1	wh2_dlc09_tech_tmb_extra_army_2	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_3			2	wh2_dlc09_tech_tmb_extra_army_3	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_4			3	wh2_dlc09_tech_tmb_extra_army_4	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_5			4	wh2_dlc09_tech_tmb_extra_army_5	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_6			5	wh2_dlc09_tech_tmb_extra_army_6	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_extra_army_7			6	wh2_dlc09_tech_tmb_extra_army_7	tmb_mil	13	200	0	0	tmb_7	wh3_main_tmb_heralds	0	0	0
+wh2_dlc09_tech_tmb_faction_target_1			9	wh2_dlc09_tech_tmb_faction_target_1	tmb_mil	0	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_faction_target_2			9	wh2_dlc09_tech_tmb_faction_target_2	tmb_mil	2	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_faction_target_3			9	wh2_dlc09_tech_tmb_faction_target_3	tmb_mil	4	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_faction_target_4			9	wh2_dlc09_tech_tmb_faction_target_4	tmb_mil	6	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_faction_target_5			9	wh2_dlc09_tech_tmb_faction_target_5	tmb_mil	8	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_faction_target_6			9	wh2_dlc09_tech_tmb_faction_target_6	tmb_mil	10	200	0	0		wh3_main_tmb_dynasty	0	0	0
+wh2_dlc09_tech_tmb_legions_of_legend			3	wh2_dlc09_tech_tmb_legions_of_legend	tmb_mil	12	800	0	0			0	0	0
+wh2_dlc09_tech_tmb_liche_priest_1			0	wh2_dlc09_tech_tmb_liche_priest_1	tmb_mil	1	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_liche_priest_2			0	wh2_dlc09_tech_tmb_liche_priest_2	tmb_mil	3	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_liche_priest_3			0	wh2_dlc09_tech_tmb_liche_priest_3	tmb_mil	5	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_liche_priest_4			0	wh2_dlc09_tech_tmb_liche_priest_4	tmb_mil	7	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_liche_priest_5			0	wh2_dlc09_tech_tmb_liche_priest_5	tmb_mil	9	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_liche_priest_6			0	wh2_dlc09_tech_tmb_liche_priest_6	tmb_mil	11	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_1			1	wh2_dlc09_tech_tmb_necrotect_1	tmb_mil	1	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_2			1	wh2_dlc09_tech_tmb_necrotect_2	tmb_mil	3	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_3			1	wh2_dlc09_tech_tmb_necrotect_3	tmb_mil	5	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_4			1	wh2_dlc09_tech_tmb_necrotect_4	tmb_mil	7	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_5			1	wh2_dlc09_tech_tmb_necrotect_5	tmb_mil	9	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_necrotect_6			1	wh2_dlc09_tech_tmb_necrotect_6	tmb_mil	11	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_1			-1	wh2_dlc09_tech_tmb_tomb_king_1	tmb_mil	0	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_2			-1	wh2_dlc09_tech_tmb_tomb_king_2	tmb_mil	2	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_3			-1	wh2_dlc09_tech_tmb_tomb_king_3	tmb_mil	4	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_4			-1	wh2_dlc09_tech_tmb_tomb_king_4	tmb_mil	6	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_5			-1	wh2_dlc09_tech_tmb_tomb_king_5	tmb_mil	8	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_king_6			-1	wh2_dlc09_tech_tmb_tomb_king_6	tmb_mil	10	100	0	0		wh2_dlc09_tmb_tech_tomb_king_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_1			2	wh2_dlc09_tech_tmb_tomb_prince_1	tmb_mil	1	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_2			2	wh2_dlc09_tech_tmb_tomb_prince_2	tmb_mil	3	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_3			2	wh2_dlc09_tech_tmb_tomb_prince_3	tmb_mil	5	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_4			2	wh2_dlc09_tech_tmb_tomb_prince_4	tmb_mil	7	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_5			2	wh2_dlc09_tech_tmb_tomb_prince_5	tmb_mil	9	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc09_tech_tmb_tomb_prince_6			2	wh2_dlc09_tech_tmb_tomb_prince_6	tmb_mil	11	200	0	0		wh2_dlc09_tmb_tech_agent_unlock	0	0	0
+wh2_dlc11_tech_brt_chivalry_vampire_coast_1			8	wh2_dlc11_tech_brt_chivalry_vampire_coast_1	brt_mil	5	300	0	0	brt_chivalry		0	0	0
+wh2_dlc11_tech_cst_admirals_00			1	wh2_dlc11_tech_cst_admirals_00	cst_mil	5	600	0	0			0	0	34
+wh2_dlc11_tech_cst_admirals_01			0	wh2_dlc11_tech_cst_admirals_01	cst_mil	6	100	0	0	cst_5	wh2_dlc11_admiral_tech_cost	0	0	0
+wh2_dlc11_tech_cst_admirals_02			1	wh2_dlc11_tech_cst_admirals_02	cst_mil	6	100	0	0	cst_5	wh2_dlc11_admiral_tech_cost	0	0	0
+wh2_dlc11_tech_cst_admirals_03			2	wh2_dlc11_tech_cst_admirals_03	cst_mil	6	100	0	0	cst_5	wh2_dlc11_admiral_tech_cost	0	0	0
+wh2_dlc11_tech_cst_admirals_04			3	wh2_dlc11_tech_cst_admirals_04	cst_mil	6	100	0	0	cst_5	wh2_dlc11_admiral_tech_cost	0	0	0
+wh2_dlc11_tech_cst_command_00			1	wh2_dlc11_tech_cst_command_00	cst_mil	0	300	0	0			0	0	34
+wh2_dlc11_tech_cst_command_01			2	wh2_dlc11_tech_cst_command_01	cst_mil	2	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_02			0	wh2_dlc11_tech_cst_command_02	cst_mil	4	1000	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_03			2	wh2_dlc11_tech_cst_command_03	cst_mil	4	1000	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_04			1	wh2_dlc11_tech_cst_command_04	cst_mil	1	600	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_05			0	wh2_dlc11_tech_cst_command_05	cst_mil	1	600	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_06			3	wh2_dlc11_tech_cst_command_06	cst_mil	4	1000	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_07			1	wh2_dlc11_tech_cst_command_07	cst_mil	3	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_08			2	wh2_dlc11_tech_cst_command_08	cst_mil	1	600	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_09			2	wh2_dlc11_tech_cst_command_09	cst_mil	3	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_10			3	wh2_dlc11_tech_cst_command_10	cst_mil	1	600	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_11			3	wh2_dlc11_tech_cst_command_11	cst_mil	2	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_command_12			3	wh2_dlc11_tech_cst_command_12	cst_mil	3	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_firearms_00			6	wh2_dlc11_tech_cst_firearms_00	cst_mil	0	300	0	0			0	0	34
+wh2_dlc11_tech_cst_firearms_01			5	wh2_dlc11_tech_cst_firearms_01	cst_mil	1	600	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_02			5	wh2_dlc11_tech_cst_firearms_02	cst_mil	2	800	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_03			5	wh2_dlc11_tech_cst_firearms_03	cst_mil	3	1000	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_04			6	wh2_dlc11_tech_cst_firearms_04	cst_mil	1	600	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_05			6	wh2_dlc11_tech_cst_firearms_05	cst_mil	3	1000	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_06			6	wh2_dlc11_tech_cst_firearms_06	cst_mil	2	800	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_07			8	wh2_dlc11_tech_cst_firearms_07	cst_mil	2	800	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_08			8	wh2_dlc11_tech_cst_firearms_08	cst_mil	3	1000	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_firearms_09			8	wh2_dlc11_tech_cst_firearms_09	cst_mil	1	600	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_piracy_00			0	wh2_dlc11_tech_cst_piracy_00	cst_mil	2	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_piracy_01			0	wh2_dlc11_tech_cst_piracy_01	cst_mil	3	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_piracy_02			7	wh2_dlc11_tech_cst_piracy_02	cst_mil	2	800	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_piracy_03			7	wh2_dlc11_tech_cst_piracy_03	cst_mil	5	600	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_piracy_05			7	wh2_dlc11_tech_cst_piracy_05	cst_mil	3	1000	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_piracy_13			7	wh2_dlc11_tech_cst_piracy_13	cst_mil	1	600	0	0	cst_2		0	0	0
+wh2_dlc11_tech_cst_piracy_14			1	wh2_dlc11_tech_cst_piracy_14	cst_mil	2	800	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_vampiric_00			6	wh2_dlc11_tech_cst_vampiric_00	cst_mil	4	300	0	0			0	0	34
+wh2_dlc11_tech_cst_vampiric_01			5	wh2_dlc11_tech_cst_vampiric_01	cst_mil	5	600	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_02			5	wh2_dlc11_tech_cst_vampiric_02	cst_mil	6	800	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_03			5	wh2_dlc11_tech_cst_vampiric_03	cst_mil	7	1000	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_04			6	wh2_dlc11_tech_cst_vampiric_04	cst_mil	5	600	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_05			1	wh2_dlc11_tech_cst_vampiric_05	cst_mil	4	1000	0	0	cst_1		0	0	0
+wh2_dlc11_tech_cst_vampiric_06			7	wh2_dlc11_tech_cst_vampiric_06	cst_mil	6	800	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_07			6	wh2_dlc11_tech_cst_vampiric_07	cst_mil	6	800	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_08			6	wh2_dlc11_tech_cst_vampiric_08	cst_mil	7	1000	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_09			7	wh2_dlc11_tech_cst_vampiric_09	cst_mil	7	1000	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_10			8	wh2_dlc11_tech_cst_vampiric_10	cst_mil	6	800	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_11			8	wh2_dlc11_tech_cst_vampiric_11	cst_mil	5	600	0	0	cst_3		0	0	0
+wh2_dlc11_tech_cst_vampiric_12			8	wh2_dlc11_tech_cst_vampiric_12	cst_mil	7	1000	0	0	cst_3		0	0	0
+wh2_dlc12_tech_brt_chivalry_norsca_1		wh2_dlc14_brt_chevaliers_de_lyonesse	8	wh_dlc07_tech_brt_chivalry_norsca_1	brt_mil	3	300	0	0	brt_chivalry		0	0	0
+wh2_dlc12_tech_brt_chivalry_start			5	wh2_dlc12_tech_brt_chivalry_start	brt_mil	0	300	0	0	brt_chivalry		0	0	0
+wh2_dlc12_tech_brt_heraldry_oversea_dwf			1	wh2_dlc12_tech_brt_heraldry_oversea_dwf	brt_mil	4	400	0	0	brt_heraldry		0	0	0
+wh2_dlc12_tech_brt_heraldry_oversea_men			2	wh2_dlc12_tech_brt_heraldry_oversea_men	brt_mil	4	400	0	0	brt_heraldry		0	0	0
+wh2_dlc12_tech_brt_heraldry_oversea_tmb			3	wh2_dlc12_tech_brt_heraldry_oversea_tmb	brt_mil	4	400	0	0	brt_heraldry		0	0	0
+wh2_dlc12_tech_brt_heraldry_oversea_wef			3	wh2_dlc12_tech_brt_heraldry_oversea_wef	brt_mil	3	400	0	0	brt_heraldry		0	0	0
+wh2_dlc13_tech_emp_academia_1			4	wh2_dlc13_tech_emp_academia_1	emp_civ_reworkd	2	700	0	0	emp_eco		0	0	21
+wh2_dlc13_tech_emp_academia_1_a			4	wh2_dlc13_tech_emp_academia_1_a	emp_civ_reworkd	6	700	0	0	emp_aca		0	21	21
+wh2_dlc13_tech_emp_academia_1_b			3	wh2_dlc13_tech_emp_academia_1_b	emp_civ_reworkd	4	700	0	0	emp_aca		0	21	0
+wh2_dlc13_tech_emp_academia_2			4	wh2_dlc13_tech_emp_academia_2	emp_civ_reworkd	1	500	0	0	emp_eco		0	0	21
+wh2_dlc13_tech_emp_academia_2_a			3	wh2_dlc13_tech_emp_academia_2_a	emp_civ_reworkd	2	700	0	0	emp_eco		0	0	0
+wh2_dlc13_tech_emp_academia_2_b			1	wh2_dlc13_tech_emp_academia_2_b	emp_civ_reworkd	7	900	0	0	emp_art		0	63	5
+wh2_dlc13_tech_emp_academia_3			4	wh2_dlc13_tech_emp_academia_3	emp_civ_reworkd	3	900	0	0	emp_eco		0	0	21
+wh2_dlc13_tech_emp_academia_3_a			3	wh2_dlc13_tech_emp_academia_3_a	emp_civ_reworkd	6	700	0	0	emp_aca		0	21	0
+wh2_dlc13_tech_emp_academia_3_b			0	wh2_dlc13_tech_emp_academia_3_b	emp_civ_reworkd	8	300	0	0	emp_machines		0	84	0
+wh2_dlc13_tech_emp_cav_1			0	wh2_dlc13_tech_emp_cav_1	emp_civ_reworkd	4	300	0	0	emp_cav		0	42	0
+wh2_dlc13_tech_emp_cav_1_a			1	wh2_dlc13_tech_emp_cav_1_a	emp_civ_reworkd	4	600	0	0	emp_cav		0	42	5
+wh2_dlc13_tech_emp_cav_1_b			0	wh2_dlc13_tech_emp_cav_1_b	emp_civ_reworkd	5	600	0	0	emp_cav		0	42	0
+wh2_dlc13_tech_emp_cav_1_c			1	wh2_dlc13_tech_emp_cav_1_c	emp_civ_reworkd	5	900	0	0	emp_cav		0	42	5
+wh2_dlc13_tech_emp_diplomacy_1_a			6	wh3_dlc25_tech_emp_diplomacy_1_a	emp_civ_reworkd	0	100	7000	0	emp_dip		0	0	21
+wh2_dlc13_tech_emp_diplomacy_1_b			6	wh2_dlc13_tech_emp_diplomacy_1_b	emp_civ_reworkd	1	100	7000	0	emp_dip		0	0	21
+wh2_dlc13_tech_emp_diplomacy_1_c			6	wh2_dlc13_tech_emp_diplomacy_1_c	emp_civ_reworkd	2	100	7000	0	emp_dip		0	0	21
+wh2_dlc13_tech_emp_diplomacy_1_d			7	wh2_dlc13_tech_emp_diplomacy_1_d	emp_civ_reworkd	0	100	7000	0	emp_dip		0	0	42
+wh2_dlc13_tech_emp_economy_1_a			3	wh2_dlc13_tech_emp_economy_1_a	emp_civ_reworkd	3	900	0	0	emp_eco		0	0	0
+wh2_dlc13_tech_emp_economy_1_b			4	wh2_dlc13_tech_emp_economy_1_b	emp_civ_reworkd	4	700	0	0	emp_aca		0	21	21
+wh2_dlc13_tech_emp_economy_2			4	wh2_dlc13_tech_emp_economy_2	emp_civ_reworkd	0	300	0	0	emp_eco		0	0	21
+wh2_dlc13_tech_emp_economy_2_a			3	wh2_dlc13_tech_emp_economy_2_a	emp_civ_reworkd	1	500	0	0	emp_eco		0	0	0
+wh2_dlc13_tech_emp_economy_3			3	wh2_dlc13_tech_emp_economy_3	emp_civ_reworkd	0	300	0	0	emp_eco		0	0	0
+wh2_dlc13_tech_emp_economy_3_a			3	wh2_dlc13_tech_emp_economy_3_a	emp_civ_reworkd	5	1000	0	0	emp_aca		0	21	40
+wh2_dlc13_tech_emp_elector_counts_1		wh_main_emp_empire	7	wh2_dlc13_tech_emp_elector_counts_1	emp_civ_reworkd	5	100	0	0	emp_unique	wh2_dlc13_tech_emp_elector_counts_2	0	42	42
+wh2_dlc13_tech_emp_elector_counts_2		wh_main_emp_empire	6	wh2_dlc13_tech_emp_elector_counts_2	emp_civ_reworkd	5	100	0	0	emp_unique	wh2_dlc13_tech_emp_elector_counts_1	0	42	21
+wh2_dlc13_tech_emp_infantry_1			0	wh2_dlc13_tech_emp_infantry_1	emp_civ_reworkd	0	300	0	0	emp_mil		0	0	0
+wh2_dlc13_tech_emp_infantry_1_a			0	wh2_dlc13_tech_emp_infantry_1_a	emp_civ_reworkd	1	600	0	0	emp_mil		0	0	0
+wh2_dlc13_tech_emp_infantry_1_b			1	wh2_dlc13_tech_emp_infantry_1_b	emp_civ_reworkd	0	600	0	0	emp_mil		0	0	5
+wh2_dlc13_tech_emp_infantry_1_c			1	wh2_dlc13_tech_emp_infantry_1_c	emp_civ_reworkd	1	900	0	0	emp_mil		0	0	5
+wh2_dlc13_tech_emp_machine_1			1	wh2_dlc13_tech_emp_machine_1	emp_civ_reworkd	6	600	0	0	emp_art		0	63	5
+wh2_dlc13_tech_emp_machine_1_a			1	wh2_dlc13_tech_emp_machine_1_a	emp_civ_reworkd	8	600	0	0	emp_machines		0	84	5
+wh2_dlc13_tech_emp_machine_1_b			0	wh2_dlc13_tech_emp_machine_1_b	emp_civ_reworkd	6	300	0	0	emp_art		0	63	0
+wh2_dlc13_tech_emp_missile_1			0	wh2_dlc13_tech_emp_missile_1	emp_civ_reworkd	2	300	0	0	emp_missiles		0	21	0
+wh2_dlc13_tech_emp_missile_1_a			0	wh2_dlc13_tech_emp_missile_1_a	emp_civ_reworkd	3	600	0	0	emp_missiles		0	21	0
+wh2_dlc13_tech_emp_missile_1_b			1	wh2_dlc13_tech_emp_missile_1_b	emp_civ_reworkd	3	900	0	0	emp_missiles		0	21	5
+wh2_dlc13_tech_emp_purge_1			6	wh2_dlc13_tech_emp_purge_1	emp_civ_reworkd	3	100	7000	0	emp_enemies		0	21	21
+wh2_dlc13_tech_emp_purge_2			6	wh2_dlc13_tech_emp_purge_2	emp_civ_reworkd	4	100	7000	0	emp_enemies		0	21	21
+wh2_dlc13_tech_emp_purge_3			7	wh2_dlc13_tech_emp_purge_3	emp_civ_reworkd	3	100	7000	0	emp_enemies		0	21	42
+wh2_dlc13_tech_emp_purge_4			7	wh2_dlc13_tech_emp_purge_4	emp_civ_reworkd	4	100	7000	0	emp_enemies		0	21	42
+wh2_dlc13_tech_emp_wulfhart_1		wh2_dlc13_emp_the_huntmarshals_expedition	6	wh2_dlc13_tech_emp_wulfhart_1	emp_civ_reworkd	5	700	0	0	emp_unique_wulfhart		0	42	21
+wh2_dlc13_tech_emp_wulfhart_2		wh2_dlc13_emp_the_huntmarshals_expedition	7	wh2_dlc13_tech_emp_wulfhart_2	emp_civ_reworkd	5	1000	0	0	emp_unique_wulfhart		0	42	42
+wh2_dlc13_tech_emp_wulfhart_3		wh2_dlc13_emp_the_huntmarshals_expedition	6	wh2_dlc13_tech_emp_wulfhart_3	emp_civ_reworkd	6	700	0	0	emp_unique_wulfhart		0	42	21
+wh2_dlc13_tech_emp_wulfhart_4		wh2_dlc13_emp_the_huntmarshals_expedition	7	wh2_dlc13_tech_emp_wulfhart_4	emp_civ_reworkd	6	1000	0	0	emp_unique_wulfhart		0	42	42
+wh2_dlc13_tech_emp_wulfhart_academia_1			4	wh2_dlc13_tech_emp_academia_1	emp_wulfhart	4	500	0	0	emp_aca_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_academia_1_a			3	wh2_dlc13_tech_emp_academia_1_a	emp_wulfhart	4	700	0	0	emp_aca_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_academia_1_b			5	wh2_dlc13_tech_emp_academia_1_b	emp_wulfhart	4	700	0	0	emp_aca_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_academia_2			3	wh2_dlc13_tech_emp_academia_2	emp_wulfhart	5	500	0	0	emp_aca_wulfhart		0	49	0
+wh2_dlc13_tech_emp_wulfhart_academia_2_a			3	wh2_dlc13_tech_emp_academia_2_a	emp_wulfhart	6	700	0	0	emp_aca_wulfhart		0	56	0
+wh2_dlc13_tech_emp_wulfhart_academia_2_b			5	wh2_dlc13_tech_emp_academia_2_b	emp_wulfhart	5	700	0	0	emp_aca_wulfhart		0	49	0
+wh2_dlc13_tech_emp_wulfhart_academia_3			3	wh2_dlc13_tech_emp_academia_3	emp_wulfhart	7	500	0	0	emp_aca_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_academia_3_a			5	wh2_dlc13_tech_emp_academia_3_a	emp_wulfhart	7	700	0	0	emp_aca_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_academia_3_b			5	wh2_dlc13_tech_emp_academia_3_b	emp_wulfhart	6	700	0	0	emp_aca_wulfhart		0	56	0
+wh2_dlc13_tech_emp_wulfhart_cav_1			0	wh2_dlc13_tech_emp_cav_1	emp_wulfhart	2	500	0	0	emp_cav_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_cav_1_a			1	wh2_dlc13_tech_emp_cav_1_a	emp_wulfhart	2	700	0	0	emp_cav_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_cav_1_b			0	wh2_dlc13_tech_emp_cav_1_b	emp_wulfhart	3	700	0	0	emp_cav_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_cav_1_c			1	wh2_dlc13_tech_emp_cav_1_c	emp_wulfhart	3	700	0	0	emp_cav_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_diplomacy_1_a			7	wh2_dlc13_tech_emp_diplomacy_1_a	emp_wulfhart	0	100	7000	0	emp_dip_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_diplomacy_1_b			7	wh2_dlc13_tech_emp_diplomacy_1_b	emp_wulfhart	1	100	7000	0	emp_dip_wulfhart		0	7	0
+wh2_dlc13_tech_emp_wulfhart_diplomacy_1_c			7	wh2_dlc13_tech_emp_diplomacy_1_c	emp_wulfhart	2	100	7000	0	emp_dip_wulfhart		0	14	0
+wh2_dlc13_tech_emp_wulfhart_diplomacy_1_d			7	wh2_dlc13_tech_emp_diplomacy_1_d	emp_wulfhart	3	100	7000	0	emp_dip_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_economy_1			4	wh2_dlc13_tech_emp_economy_1	emp_wulfhart	0	500	0	0	emp_eco_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_economy_1_a			3	wh2_dlc13_tech_emp_economy_1_a	emp_wulfhart	0	700	0	0	emp_eco_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_economy_1_b			5	wh2_dlc13_tech_emp_economy_1_b	emp_wulfhart	2	700	0	0	emp_eco_wulfhart		0	14	0
+wh2_dlc13_tech_emp_wulfhart_economy_2			4	wh2_dlc13_tech_emp_economy_2	emp_wulfhart	1	500	0	0	emp_eco_wulfhart		0	7	0
+wh2_dlc13_tech_emp_wulfhart_economy_2_a			4	wh2_dlc13_tech_emp_economy_2_a	emp_wulfhart	2	700	0	0	emp_eco_wulfhart		0	14	0
+wh2_dlc13_tech_emp_wulfhart_economy_2_b			5	wh2_dlc13_tech_emp_economy_2_b	emp_wulfhart	0	700	0	0	emp_eco_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_economy_3			3	wh2_dlc13_tech_emp_economy_3	emp_wulfhart	3	500	0	0	emp_eco_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_economy_3_a			5	wh2_dlc13_tech_emp_economy_3_a	emp_wulfhart	3	700	0	0	emp_eco_wulfhart		0	21	0
+wh2_dlc13_tech_emp_wulfhart_economy_3_b			3	wh2_dlc13_tech_emp_economy_3_b	emp_wulfhart	2	700	0	0	emp_eco_wulfhart		0	14	0
+wh2_dlc13_tech_emp_wulfhart_infantry_1			0	wh2_dlc13_tech_emp_infantry_1	emp_wulfhart	0	500	0	0	emp_mil_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_infantry_1_a			0	wh2_dlc13_tech_emp_infantry_1_a	emp_wulfhart	1	700	0	0	emp_mil_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_infantry_1_b			1	wh2_dlc13_tech_emp_infantry_1_b	emp_wulfhart	1	700	0	0	emp_mil_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_infantry_1_c			1	wh2_dlc13_tech_emp_infantry_1_c	emp_wulfhart	0	700	0	0	emp_mil_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_machine_1			0	wh2_dlc13_tech_emp_machine_1	emp_wulfhart	4	500	0	0	emp_machines_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_machine_1_a			1	wh2_dlc13_tech_emp_machine_1_a	emp_wulfhart	5	700	0	0	emp_machines_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_machine_1_b			1	wh2_dlc13_tech_emp_machine_1_b	emp_wulfhart	4	700	0	0	emp_machines_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_machine_1_c			0	wh2_dlc13_tech_emp_machine_1_c	emp_wulfhart	5	700	0	0	emp_machines_wulfhart		0	42	0
+wh2_dlc13_tech_emp_wulfhart_missile_1			0	wh2_dlc13_tech_emp_missile_1	emp_wulfhart	6	500	0	0	emp_missile_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_missile_1_a			0	wh2_dlc13_tech_emp_missile_1_a	emp_wulfhart	7	700	0	0	emp_missile_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_missile_1_b			1	wh2_dlc13_tech_emp_missile_1_b	emp_wulfhart	7	700	0	0	emp_missile_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_missile_1_c			1	wh2_dlc13_tech_emp_missile_1_c	emp_wulfhart	6	700	0	0	emp_missile_wulfhart		0	63	0
+wh2_dlc13_tech_emp_wulfhart_purge_1			8	wh2_dlc13_tech_emp_purge_1	emp_wulfhart	0	100	7000	0	emp_dip_wulfhart		0	0	0
+wh2_dlc13_tech_emp_wulfhart_purge_2			8	wh2_dlc13_tech_emp_purge_2	emp_wulfhart	1	100	7000	0	emp_dip_wulfhart		0	7	0
+wh2_dlc13_tech_emp_wulfhart_purge_3			8	wh2_dlc13_tech_emp_purge_3	emp_wulfhart	2	100	7000	0	emp_dip_wulfhart		0	14	0
+wh2_dlc13_tech_emp_wulfhart_purge_4			8	wh2_dlc13_tech_emp_purge_4	emp_wulfhart	3	100	7000	0	emp_dip_wulfhart		0	21	0
+wh2_dlc13_tech_lzd_23			4	wh2_dlc13_tech_lzd_23	lzd_nakai	6	400	0	0	lzd_nakai_cavalry		0	-15	0
+wh2_dlc13_tech_lzd_guardian_1			4	wh2_dlc13_tech_lzd_guardian_1	lzd_nakai	0	200	0	0	lzd_nakai_guardians		0	0	0
+wh2_dlc13_tech_lzd_guardian_2			4	wh2_dlc13_tech_lzd_guardian_2	lzd_nakai	1	200	0	0	lzd_nakai_guardians		0	0	0
+wh2_dlc13_tech_lzd_guardian_3			5	wh2_dlc13_tech_lzd_guardian_3	lzd_nakai	1	400	0	0	lzd_nakai_guardians	wh2_dlc13_tech_lzd_units_guardians_200	0	0	0
+wh2_dlc13_tech_lzd_guardian_4			5	wh2_dlc13_tech_lzd_guardian_4	lzd_nakai	0	400	0	0	lzd_nakai_guardians	wh2_dlc13_tech_lzd_units_guardians_200	0	0	0
+wh2_dlc13_tech_lzd_nakai_beasts_3			7	wh2_dlc13_tech_lzd_nakai_beasts_3	lzd_nakai	6	400	0	0	lzd_nakai_beasts		0	-15	0
+wh2_dlc13_tech_lzd_nakai_beasts_4			8	wh2_dlc13_tech_lzd_nakai_beasts_4	lzd_nakai	6	400	0	0	lzd_nakai_beasts		0	-15	0
+wh2_dlc13_tech_lzd_nakai_cavalry_4			5	wh2_dlc13_tech_lzd_nakai_cavalry_4	lzd_nakai	6	400	0	0	lzd_nakai_cavalry		0	-15	0
+wh2_dlc13_tech_lzd_nakai_expansion_1			4	wh2_dlc13_tech_lzd_nakai_expansion_1	lzd_nakai	3	400	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_1	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_2			5	wh2_dlc13_tech_lzd_nakai_expansion_2	lzd_nakai	3	400	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_2	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_3			6	wh2_dlc13_tech_lzd_nakai_expansion_3	lzd_nakai	3	500	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_3	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_4			7	wh2_dlc13_tech_lzd_nakai_expansion_4	lzd_nakai	3	500	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_4	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_5			8	wh2_dlc13_tech_lzd_nakai_expansion_5	lzd_nakai	3	600	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_5	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_6			9	wh2_dlc13_tech_lzd_nakai_expansion_6	lzd_nakai	3	600	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_6	0	0	0
+wh2_dlc13_tech_lzd_nakai_expansion_7			10	wh2_dlc13_tech_lzd_nakai_expansion_7	lzd_nakai	3	800	0	0	lzd_nakai_expansion	wh2_dlc13_tech_lzd_replenishment_7	0	0	0
+wh2_dlc13_tech_lzd_nakai_war_1			0	wh2_dlc13_tech_lzd_nakai_war_1	lzd_nakai	0	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_10			0	wh2_dlc13_tech_lzd_army_4	lzd_nakai	3	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_11			1	wh2_dlc13_tech_lzd_vassal_1	lzd_nakai	3	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_12			2	wh2_dlc13_tech_lzd_vassal_2	lzd_nakai	3	0	0	0	lzd_nakai_war	wh2_dlc13_tech_lzd_vassal_2	0	0	0
+wh2_dlc13_tech_lzd_nakai_war_13			0	wh2_dlc13_tech_lzd_army_5	lzd_nakai	4	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_14			1	wh2_dlc13_tech_lzd_campaign_9	lzd_nakai	4	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_15			2	wh2_dlc13_tech_lzd_22	lzd_nakai	4	0	0	0	lzd_nakai_war	wh2_dlc13_tech_lzd_vassal_2	0	0	0
+wh2_dlc13_tech_lzd_nakai_war_16			0	wh2_dlc13_tech_lzd_army_6	lzd_nakai	5	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_17			1	wh2_dlc13_tech_lzd_campaign_7	lzd_nakai	5	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_18			2	wh2_dlc13_tech_lzd_campaign_10	lzd_nakai	5	0	0	0	lzd_nakai_war	wh2_dlc13_tech_lzd_campaign_10	0	0	0
+wh2_dlc13_tech_lzd_nakai_war_19			0	wh2_dlc13_tech_lzd_army_7	lzd_nakai	6	500	0	0	lzd_nakai_war		0	-15	0
+wh2_dlc13_tech_lzd_nakai_war_2			1	wh2_dlc13_tech_lzd_nakai_war_2	lzd_nakai	0	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_20			1	wh2_dlc13_tech_lzd_campaign_6	lzd_nakai	6	500	0	0	lzd_nakai_war		0	-15	0
+wh2_dlc13_tech_lzd_nakai_war_21			2	wh2_dlc13_tech_lzd_campaign_8	lzd_nakai	6	0	0	0	lzd_nakai_war		0	-15	0
+wh2_dlc13_tech_lzd_nakai_war_3			2	wh2_dlc13_tech_lzd_nakai_war_3	lzd_nakai	0	0	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_4			0	wh2_dlc13_tech_lzd_nakai_war_4	lzd_nakai	1	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_5			1	wh2_dlc13_tech_lzd_nakai_war_5	lzd_nakai	1	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_6			2	wh2_dlc13_tech_lzd_nakai_war_6	lzd_nakai	1	0	0	0	lzd_nakai_war	wh2_dlc13_tech_lzd_campaign_5	0	0	0
+wh2_dlc13_tech_lzd_nakai_war_7			0	wh2_dlc13_tech_lzd_army_3	lzd_nakai	2	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_8			1	wh2_dlc13_tech_lzd_campaign_3	lzd_nakai	2	500	0	0	lzd_nakai_war		0	0	0
+wh2_dlc13_tech_lzd_nakai_war_9			2	wh2_dlc13_tech_lzd_21	lzd_nakai	2	0	0	0	lzd_nakai_war	wh2_dlc13_tech_lzd_vassal_2	0	0	0
+wh2_dlc13_tech_lzd_units_1			8	wh2_dlc13_tech_lzd_units_1	lzd_nakai	1	400	0	0	lzd_nakai_skinks_saurus		0	0	0
+wh2_dlc13_tech_lzd_units_2			7	wh2_dlc13_tech_lzd_units_2	lzd_nakai	1	400	0	0	lzd_nakai_skinks_saurus		0	0	0
+wh2_dlc13_tech_lzd_units_3			4	wh2_dlc13_tech_lzd_units_3	lzd_nakai	5	400	0	0	lzd_nakai_cavalry		0	0	0
+wh2_dlc13_tech_lzd_units_4			8	wh2_dlc13_tech_lzd_units_4	lzd_nakai	5	400	0	0	lzd_nakai_beasts		0	0	0
+wh2_dlc13_tech_lzd_units_6			8	wh2_dlc13_tech_lzd_units_6	lzd_nakai	0	400	0	0	lzd_nakai_skinks_saurus		0	0	0
+wh2_dlc13_tech_lzd_units_7			7	wh2_dlc13_tech_lzd_units_7	lzd_nakai	0	400	0	0	lzd_nakai_skinks_saurus		0	0	0
+wh2_dlc13_tech_lzd_units_8			5	wh2_dlc13_tech_lzd_units_8	lzd_nakai	5	400	0	0	lzd_nakai_cavalry		0	0	0
+wh2_dlc13_tech_lzd_units_9			7	wh2_dlc13_tech_lzd_units_9	lzd_nakai	5	400	0	0	lzd_nakai_beasts		0	0	0
+wh2_dlc14_tech_brt_chivalry_tomb_kings		wh2_dlc14_brt_chevaliers_de_lyonesse	6	wh_dlc07_tech_brt_chivalry_tomb_kings	brt_mil	2	300	0	0			0	0	0
+wh2_dlc14_tech_brt_chivalry_tomb_kings_2		wh2_dlc14_brt_chevaliers_de_lyonesse	7	tech_dlc14_brt_chivalry_tomb_kings_2	brt_mil	2	300	0	0			0	0	0
+wh2_dlc25_tech_emp_missile_1_c			1	wh2_dlc25_tech_emp_missile_1_c	emp_civ_reworkd	2	600	0	0	emp_missiles		0	21	5
+wh2_main_tech_def_0_0_0			4	wh2_main_tech_def_0_0_0	def_mil	0	400	0	0			0	0	0
+wh2_main_tech_def_0_1_0			1	wh2_main_tech_def_0_1_0	def_mil	1	400	0	0			0	0	0
+wh2_main_tech_def_0_1_1			0	wh2_main_tech_def_0_1_1	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_1_2			1	wh2_main_tech_def_0_1_2	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_1_3			2	wh2_main_tech_def_0_1_3	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_2_0			4	wh2_main_tech_def_0_2_0	def_mil	1	400	0	0			0	0	0
+wh2_main_tech_def_0_2_1			3	wh2_main_tech_def_0_2_1	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_2_2			4	wh2_main_tech_def_0_2_2	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_2_3			5	wh2_main_tech_def_0_2_3	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_3_0			7	wh2_main_tech_def_0_3_0	def_mil	1	400	0	0			0	0	0
+wh2_main_tech_def_0_3_1			6	wh2_main_tech_def_0_3_1	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_3_2			7	wh2_main_tech_def_0_3_2	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_0_3_3			8	wh2_main_tech_def_0_3_3	def_mil	2	600	0	0			0	0	0
+wh2_main_tech_def_1_0_0			4	wh2_main_tech_def_1_0_0	def_mil	3	100	2000	0			0	0	0
+wh2_main_tech_def_1_1_0			1	wh2_main_tech_def_1_1_0	def_mil	4	600	0	0			0	0	0
+wh2_main_tech_def_1_1_1			0	wh2_main_tech_def_1_1_1	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_1_2			1	wh2_main_tech_def_1_1_2	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_1_3			2	wh2_main_tech_def_1_1_3	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_2_0			4	wh2_main_tech_def_1_2_0	def_mil	4	600	0	0			0	0	0
+wh2_main_tech_def_1_2_1			3	wh2_main_tech_def_1_2_1	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_2_2			4	wh2_main_tech_def_1_2_2	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_2_3			5	wh2_main_tech_def_1_2_3	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_3_0			7	wh2_main_tech_def_1_3_0	def_mil	4	600	0	0			0	0	0
+wh2_main_tech_def_1_3_1			6	wh2_main_tech_def_1_3_1	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_3_2			7	wh2_main_tech_def_1_3_2	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_3_3			8	wh2_main_tech_def_1_3_3	def_mil	5	800	0	0			0	0	0
+wh2_main_tech_def_1_3_3_slaanesh		wh2_main_def_cult_of_pleasure	8	wh2_main_tech_def_1_3_3_slaanesh	def_mil	5	600	0	0			0	0	0
+wh2_main_tech_def_2_0_0			4	wh2_main_tech_def_2_0_0	def_mil	6	100	5000	0			0	0	0
+wh2_main_tech_def_2_1_0			1	wh2_main_tech_def_2_1_0	def_mil	7	800	0	0			0	0	0
+wh2_main_tech_def_2_1_1			0	wh2_main_tech_def_2_1_1	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_1_2			1	wh2_main_tech_def_2_1_2	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_1_3			2	wh2_main_tech_def_2_1_3	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_2_0			4	wh2_main_tech_def_2_2_0	def_mil	7	800	0	0			0	0	0
+wh2_main_tech_def_2_2_1			3	wh2_main_tech_def_2_2_1	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_2_2			4	wh2_main_tech_def_2_2_2	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_2_3			5	wh2_main_tech_def_2_2_3	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_3_0			7	wh2_main_tech_def_2_3_0	def_mil	7	800	0	0			0	0	0
+wh2_main_tech_def_2_3_1			6	wh2_main_tech_def_2_3_1	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_3_2			7	wh2_main_tech_def_2_3_2	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_2_3_3			8	wh2_main_tech_def_2_3_3	def_mil	8	1000	0	0			0	0	0
+wh2_main_tech_def_3_0_0			4	wh2_main_tech_def_3_0_0	def_mil	9	100	12500	0			0	0	0
+wh2_main_tech_def_3_1_0			1	wh2_main_tech_def_3_1_0	def_mil	10	1000	0	0			0	0	0
+wh2_main_tech_def_3_1_1			0	wh2_main_tech_def_3_1_1	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_1_2			1	wh2_main_tech_def_3_1_2	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_1_3			2	wh2_main_tech_def_3_1_3	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_2_0			4	wh2_main_tech_def_3_2_0	def_mil	10	1000	0	0			0	0	0
+wh2_main_tech_def_3_2_1			3	wh2_main_tech_def_3_2_1	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_2_2			4	wh2_main_tech_def_3_2_2	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_2_3			5	wh2_main_tech_def_3_2_3	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_3_0			7	wh2_main_tech_def_3_3_0	def_mil	10	1000	0	0			0	0	0
+wh2_main_tech_def_3_3_1			6	wh2_main_tech_def_3_3_1	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_3_2			7	wh2_main_tech_def_3_3_2	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_3_2_slaanesh		wh2_main_def_cult_of_pleasure	7	wh2_main_tech_def_3_3_2_slaanesh	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_def_3_3_3			8	wh2_main_tech_def_3_3_3	def_mil	11	1200	0	0			0	0	0
+wh2_main_tech_hef_0_00			1	wh2_main_tech_hef_0_00	hef_mil	1	200	0	0	hef_0		0	-100	-32
+wh2_main_tech_hef_0_01			1	wh2_main_tech_hef_0_01	hef_mil	3	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_0_02			1	wh2_main_tech_hef_0_02	hef_mil	4	400	0	0	hef_0		1	-100	-32
+wh2_main_tech_hef_0_03			4	wh2_main_tech_hef_0_03	hef_mil	6	500	0	0	hef_6		1	-80	-32
+wh2_main_tech_hef_0_04			4	wh2_main_tech_hef_0_04	hef_mil	1	400	0	0	hef_10		0	-100	-32
+wh2_main_tech_hef_0_05			6	wh2_main_tech_hef_0_05	hef_mil	2	400	0	0	hef_1		0	-100	0
+wh2_main_tech_hef_0_06			7	wh2_main_tech_hef_0_06	hef_mil	3	500	0	0	hef_1		1	-100	-32
+wh2_main_tech_hef_0_07			1	wh2_main_tech_hef_0_07	hef_mil	2	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_0_08			4	wh2_main_tech_hef_0_08	hef_mil	4	400	0	0	hef_6		0	-80	-32
+wh2_main_tech_hef_0_09			0	wh2_main_tech_hef_0_09	hef_mil	3	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_0_10			7	wh2_main_tech_hef_0_10	hef_mil	4	400	0	0	hef_2		0	-80	-32
+wh2_main_tech_hef_1_00			0	wh2_main_tech_hef_1_00	hef_mil	5	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_1_01			1	wh2_main_tech_hef_1_01	hef_mil	5	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_1_02			1	wh2_main_tech_hef_1_02	hef_mil	7	600	0	0	hef_0		1	-100	-32
+wh2_main_tech_hef_1_03			0	wh2_main_tech_hef_1_03	hef_mil	2	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_1_04			3	wh2_main_tech_hef_1_04	hef_mil	2	400	0	0	hef_10		0	-100	0
+wh2_main_tech_hef_1_05			7	wh2_main_tech_hef_1_05	hef_mil	1	400	0	0	hef_1		0	-100	-32
+wh2_main_tech_hef_1_06			7	wh2_main_tech_hef_1_06	hef_mil	9	400	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_1_07			6	wh2_main_tech_hef_1_07	hef_mil	8	400	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_1_08			7	wh2_main_tech_hef_1_08	hef_mil	2	400	0	0	hef_1		0	-100	0
+wh2_main_tech_hef_1_09			6	wh2_main_tech_hef_1_09	hef_mil	5	400	0	0	hef_2		0	-80	0
+wh2_main_tech_hef_1_10			7	wh2_main_tech_hef_1_10	hef_mil	5	400	0	0	hef_2		0	-80	0
+wh2_main_tech_hef_2_00			1	wh2_main_tech_hef_2_00	hef_mil	6	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_2_01			0	wh2_main_tech_hef_2_01	hef_mil	10	400	0	0	hef_3		0	-60	0
+wh2_main_tech_hef_2_02			7	wh2_main_tech_hef_2_02	hef_mil	10	500	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_2_03			1	wh2_main_tech_hef_2_03	hef_mil	10	400	0	0	hef_3		0	-60	0
+wh2_main_tech_hef_2_04			3	wh2_main_tech_hef_2_04	hef_mil	5	400	0	0	hef_6		0	-80	0
+wh2_main_tech_hef_2_05			7	wh2_main_tech_hef_2_05	hef_mil	8	400	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_2_06			6	wh2_main_tech_hef_2_06	hef_mil	10	500	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_2_07			7	wh2_main_tech_hef_2_07	hef_mil	7	400	0	0	hef_7		0	-60	-32
+wh2_main_tech_hef_2_08			4	wh2_main_tech_hef_2_08	hef_mil	9	600	0	0	hef_8		1	-60	-32
+wh2_main_tech_hef_2_09			4	wh2_main_tech_hef_2_09	hef_mil	5	400	0	0	hef_6		0	-80	0
+wh2_main_tech_hef_2_10			0	wh2_main_tech_hef_2_10	hef_mil	6	400	0	0	hef_0		0	-100	0
+wh2_main_tech_hef_3_00			7	wh2_main_tech_hef_3_00	hef_mil	11	600	0	0	hef_7		1	-60	-32
+wh2_main_tech_hef_3_01			4	wh2_main_tech_hef_3_01	hef_mil	8	400	0	0	hef_8		0	-60	0
+wh2_main_tech_hef_3_02			4	wh2_main_tech_hef_3_02	hef_mil	10	400	0	0	hef_9		0	-40	-32
+wh2_main_tech_hef_3_03			1	wh2_main_tech_hef_3_03	hef_mil	9	400	0	0	hef_3		0	-60	-32
+wh2_main_tech_hef_3_04			3	wh2_main_tech_hef_3_04	hef_mil	11	500	0	0	hef_9		0	-40	0
+wh2_main_tech_hef_3_05			4	wh2_main_tech_hef_3_05	hef_mil	12	600	0	0	hef_9		1	-40	-32
+wh2_main_tech_hef_3_06			3	wh2_main_tech_hef_3_06	hef_mil	8	400	0	0	hef_8		0	-60	0
+wh2_main_tech_hef_3_07			1	wh2_main_tech_hef_3_07	hef_mil	11	500	0	0	hef_3		1	-60	-32
+wh2_main_tech_hef_3_08			4	wh2_main_tech_hef_3_08	hef_mil	11	500	0	0	hef_9		0	-40	0
+wh2_main_tech_hef_3_09			7	wh2_main_tech_hef_3_09	hef_mil	6	500	0	0	hef_2		1	-80	-32
+wh2_main_tech_hef_3_10			6	wh2_main_tech_hef_3_10	hef_mil	9	400	0	0	hef_7		0	-60	0
+wh2_main_tech_hef_4_00			0	wh2_main_tech_hef_4_00	hef_mil	13	100	0	0			0	-650	-25
+wh2_main_tech_hef_4_01			-1	wh2_main_tech_hef_4_01	hef_mil	14	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_02			-1	wh2_main_tech_hef_4_02	hef_mil	15	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_03			-1	wh2_main_tech_hef_4_03	hef_mil	16	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_04			-1	wh2_main_tech_hef_4_04	hef_mil	17	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_05			-1	wh2_main_tech_hef_4_05	hef_mil	18	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_06			-1	wh2_main_tech_hef_4_06	hef_mil	19	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_07			1	wh2_main_tech_hef_4_07	hef_mil	14	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_08			1	wh2_main_tech_hef_4_08	hef_mil	15	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_09			1	wh2_main_tech_hef_4_09	hef_mil	16	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_10			1	wh2_main_tech_hef_4_10	hef_mil	17	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_11			1	wh2_main_tech_hef_4_11	hef_mil	18	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_4_12			1	wh2_main_tech_hef_4_12	hef_mil	19	100	0	0	hef_4		0	-650	-25
+wh2_main_tech_hef_5_00			4	wh2_main_tech_hef_5_00	hef_mil	13	100	1000	0			0	-650	0
+wh2_main_tech_hef_5_01			3	wh2_main_tech_hef_5_01	hef_mil	14	100	3000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_02			5	wh2_main_tech_hef_5_06	hef_mil	14	100	3000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_03			3	wh2_main_tech_hef_5_02	hef_mil	15	100	4000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_04			5	wh2_main_tech_hef_5_05	hef_mil	15	100	4000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_05			4	wh3_dlc27_tech_hef_5_09	hef_mil	16	100	4000	0	hef_5		1	-650	0
+wh2_main_tech_hef_5_06			3	wh2_main_tech_hef_5_03	hef_mil	17	100	5000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_07			5	wh3_dlc27_tech_hef_5_10	hef_mil	17	100	5000	0	hef_5		0	-650	0
+wh2_main_tech_hef_5_08			3	wh2_main_tech_hef_5_07	hef_mil	18	100	6000	0	hef_5		0	-650	0
+wh2_main_tech_lzd_0_1			4	wh2_main_tech_lzd_0_1	lzd_mil	6	1000	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_0_2			5	wh2_main_tech_lzd_0_2	lzd_mil	6	1000	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_2_1			1	wh2_main_tech_lzd_2_1	lzd_mil	1	400	0	0	lzd_war		0	-100	0
+wh2_main_tech_lzd_2_2			7	wh2_main_tech_lzd_2_2	lzd_mil	5	400	2000	0	lzd_agents		0	-100	0
+wh2_main_tech_lzd_2_3			1	wh2_main_tech_lzd_2_3	lzd_mil	2	400	0	0	lzd_war		0	-100	0
+wh2_main_tech_lzd_2_4			-2	wh2_main_tech_lzd_2_4	lzd_mil	6	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_2_5			2	wh2_main_tech_lzd_2_5	lzd_mil	1	400	0	0	lzd_war		0	-100	0
+wh2_main_tech_lzd_2_6			-2	wh2_main_tech_lzd_2_6	lzd_mil	5	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_2_7			2	wh2_main_tech_lzd_2_7	lzd_mil	2	400	0	0	lzd_war		0	-100	0
+wh2_main_tech_lzd_3_1			-2	wh2_main_tech_lzd_3_1	lzd_mil	4	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_3_2			7	wh2_main_tech_lzd_3_2	lzd_mil	3	400	2000	0	lzd_agents		0	-100	0
+wh2_main_tech_lzd_3_3			0	wh2_main_tech_lzd_3_3	lzd_mil	5	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_3_4			-1	wh2_main_tech_lzd_3_4	lzd_mil	5	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_3_5			7	wh2_main_tech_lzd_3_5	lzd_mil	2	400	2000	0	lzd_agents		0	-100	0
+wh2_main_tech_lzd_3_6			-1	wh2_main_tech_lzd_3_6	lzd_mil	4	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_4_1			4	wh2_main_tech_lzd_4_1	lzd_mil	1	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_4_2			4	wh2_main_tech_lzd_4_2	lzd_mil	5	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_4_3			5	wh2_main_tech_lzd_4_3	lzd_mil	2	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_4_4			4	wh2_main_tech_lzd_4_4	lzd_mil	3	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_4_5			5	wh2_main_tech_lzd_4_5	lzd_mil	4	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_4_6			5	wh2_main_tech_lzd_4_6	lzd_mil	1	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_5_1			4	wh2_main_tech_lzd_5_1	lzd_mil	4	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_5_2			4	wh2_main_tech_lzd_5_2	lzd_mil	2	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_5_3			5	wh2_main_tech_lzd_5_3	lzd_mil	3	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_5_4			0	wh2_main_tech_lzd_5_4	lzd_mil	4	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_5_5			0	wh2_main_tech_lzd_5_5	lzd_mil	6	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_5_6			4	wh2_main_tech_lzd_5_6	lzd_mil	4	400	0	0			0	0	0
+wh2_main_tech_lzd_5_7			5	wh2_main_tech_lzd_5_7	lzd_mil	5	400	0	0	lzd_creation		0	-100	0
+wh2_main_tech_lzd_agent_3			7	wh2_main_tech_lzd_agent_3	lzd_mil	4	400	2000	0	lzd_agents		0	-100	0
+wh2_main_tech_lzd_beasts_1			2	wh2_main_tech_lzd_8_1	lzd_mil	21	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_beasts_2			3	wh2_main_tech_lzd_8_6	lzd_mil	21	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_beasts_3			2	wh2_main_tech_lzd_8_5	lzd_mil	22	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_beasts_4			3	wh2_main_tech_lzd_8_7	lzd_mil	22	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_beasts_5			2	wh2_main_tech_lzd_1_5	lzd_mil	23	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_beasts_6			3	wh2_main_tech_lzd_beasts_6	lzd_mil	23	600	0	0	lzd_beasts		0	0	0
+wh2_main_tech_lzd_cavalry_1			4	wh2_main_tech_lzd_8_4	lzd_mil	25	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_cavalry_2			5	wh2_main_tech_lzd_cavalry_5	lzd_mil	25	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_cavalry_3			6	wh2_main_tech_lzd_8_3	lzd_mil	25	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_cavalry_4			4	wh2_main_tech_lzd_8_2	lzd_mil	26	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_cavalry_5			5	wh2_main_tech_lzd_cavalry_6	lzd_mil	26	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_cavalry_6			6	wh2_main_tech_lzd_1_4	lzd_mil	26	400	0	0	lzd_cavalry		0	-150	0
+wh2_main_tech_lzd_guardians_1			5	wh2_main_tech_lzd_1_6	lzd_mil	21	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_guardians_2			6	wh2_main_tech_lzd_guardians_4	lzd_mil	21	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_guardians_3			5	wh2_main_tech_lzd_7_6	lzd_mil	22	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_guardians_4			6	wh2_main_tech_lzd_6_6	lzd_mil	22	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_guardians_5			5	wh2_main_tech_lzd_6_7	lzd_mil	23	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_guardians_6			6	wh2_main_tech_lzd_7_7	lzd_mil	23	400	0	0	lzd_guardians		0	0	0
+wh2_main_tech_lzd_order_6			-1	wh2_main_tech_lzd_order_6	lzd_mil	6	400	0	0	lzd_order		0	-250	70
+wh2_main_tech_lzd_saurus_1			-1	wh2_main_tech_lzd_7_1	lzd_mil	21	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_saurus_2			0	wh2_main_tech_lzd_1_3	lzd_mil	21	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_saurus_3			-1	wh2_main_tech_lzd_7_2	lzd_mil	22	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_saurus_4			0	wh2_main_tech_lzd_7_5	lzd_mil	22	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_saurus_5			-1	wh2_main_tech_lzd_7_3	lzd_mil	23	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_saurus_6			0	wh2_main_tech_lzd_7_4	lzd_mil	23	400	0	0	lzd_saurus		0	0	0
+wh2_main_tech_lzd_skinks_1			-1	wh2_main_tech_lzd_6_1	lzd_mil	25	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_skinks_2			0	wh2_main_tech_lzd_6_5	lzd_mil	25	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_skinks_3			1	wh2_main_tech_lzd_6_2	lzd_mil	25	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_skinks_4			-1	wh2_main_tech_lzd_1_2	lzd_mil	26	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_skinks_5			0	wh2_main_tech_lzd_6_3	lzd_mil	26	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_skinks_6			1	wh2_main_tech_lzd_6_4	lzd_mil	26	400	0	0	lzd_skinks		0	-150	0
+wh2_main_tech_lzd_spawning_1			-2	wh2_main_tech_lzd_1_1	lzd_mil	1	400	0	0	lzd_spawning		0	-100	0
+wh2_main_tech_lzd_spawning_2			-1	wh2_main_tech_lzd_1_7	lzd_mil	1	400	0	0	lzd_spawning		0	-100	0
+wh2_main_tech_lzd_spawning_3			-2	wh2_main_tech_lzd_3_7	lzd_mil	2	400	0	0	lzd_spawning		0	-100	0
+wh2_main_tech_lzd_spawning_4			-1	wh2_main_tech_lzd_4_7	lzd_mil	2	400	0	0	lzd_spawning		0	-100	0
+wh2_main_tech_skv_1_0			1	wh2_main_tech_skv_1_0	skv_mil	0	100	0	0			0	0	0
+wh2_main_tech_skv_1_1			1	wh2_main_tech_skv_1_1	skv_mil	1	400	0	0			0	0	0
+wh2_main_tech_skv_1_2			2	wh2_main_tech_skv_1_2	skv_mil	1	400	0	0			0	0	0
+wh2_main_tech_skv_1_3			2	wh2_main_tech_skv_1_3	skv_mil	2	400	0	0			0	0	0
+wh2_main_tech_skv_1_4			1	wh2_main_tech_skv_1_4	skv_mil	2	400	0	0			0	0	0
+wh2_main_tech_skv_1_5			0	wh2_main_tech_skv_1_5	skv_mil	2	400	0	0			0	0	0
+wh2_main_tech_skv_1_6			1	wh2_main_tech_skv_1_6	skv_mil	3	400	0	0			0	0	0
+wh2_main_tech_skv_1_7			1	wh2_main_tech_skv_1_7	skv_mil	4	400	0	0			0	0	0
+wh2_main_tech_skv_1_8			0	wh2_main_tech_skv_1_8	skv_mil	3	400	0	0			0	0	0
+wh2_main_tech_skv_2_0			4	wh2_main_tech_skv_2_0	skv_mil	1	100	0	0			0	0	0
+wh2_main_tech_skv_2_1			4	wh2_main_tech_skv_2_1	skv_mil	2	400	0	0			0	0	0
+wh2_main_tech_skv_2_2			4	wh2_main_tech_skv_2_2	skv_mil	3	400	0	0			0	0	0
+wh2_main_tech_skv_2_3			3	wh2_main_tech_skv_2_3	skv_mil	3	400	0	0			0	0	0
+wh2_main_tech_skv_2_4			5	wh2_main_tech_skv_2_4	skv_mil	3	400	0	0			0	0	0
+wh2_main_tech_skv_2_5			4	wh2_main_tech_skv_2_5	skv_mil	4	400	0	0			0	0	0
+wh2_main_tech_skv_3_0			7	wh2_main_tech_skv_3_0	skv_mil	0	100	0	0			0	0	0
+wh2_main_tech_skv_3_1			7	wh2_main_tech_skv_3_1	skv_mil	1	800	0	0			0	0	0
+wh2_main_tech_skv_3_2			6	wh2_main_tech_skv_3_2	skv_mil	1	800	0	0			0	0	0
+wh2_main_tech_skv_3_3			8	wh2_main_tech_skv_3_3	skv_mil	1	800	0	0			0	0	0
+wh2_main_tech_skv_3_4			7	wh2_main_tech_skv_3_4	skv_mil	2	800	0	0			0	0	0
+wh2_main_tech_skv_3_5			6	wh2_main_tech_skv_3_5	skv_mil	2	800	0	0			0	0	0
+wh2_main_tech_skv_3_6			8	wh2_main_tech_skv_3_6	skv_mil	2	800	0	0			0	0	0
+wh2_main_tech_skv_3_7			8	wh2_main_tech_skv_3_7	skv_mil	3	800	0	0			0	0	0
+wh2_main_tech_skv_4_0			0	wh2_main_tech_skv_4_0	skv_mil	4	100	0	0			0	0	0
+wh2_main_tech_skv_4_1			0	wh2_main_tech_skv_4_1	skv_mil	5	800	0	0			0	0	0
+wh2_main_tech_skv_4_2			0	wh2_main_tech_skv_4_2	skv_mil	6	800	0	0			0	0	0
+wh2_main_tech_skv_4_3			0	wh2_main_tech_skv_4_3	skv_mil	7	800	0	0			0	0	0
+wh2_main_tech_skv_4_4			1	wh2_main_tech_skv_4_4	skv_mil	5	400	0	0			0	0	0
+wh2_main_tech_skv_4_5			1	wh2_main_tech_skv_4_5	skv_mil	6	400	0	0			0	0	0
+wh2_main_tech_skv_4_6			1	wh2_main_tech_skv_4_6	skv_mil	7	400	0	0			0	0	0
+wh2_main_tech_skv_5_0			6	wh2_main_tech_skv_5_0	skv_mil	3	100	0	0			0	0	0
+wh2_main_tech_skv_5_1			6	wh2_main_tech_skv_5_1	skv_mil	4	1200	0	0			0	0	0
+wh2_main_tech_skv_5_2			6	wh2_main_tech_skv_5_2	skv_mil	5	1200	0	0			0	0	0
+wh2_main_tech_skv_5_3			5	wh2_main_tech_skv_5_3	skv_mil	5	1200	0	0			0	0	0
+wh2_main_tech_skv_5_4			4	wh2_main_tech_skv_5_4	skv_mil	5	1200	0	0			0	0	0
+wh2_main_tech_skv_6_0			2	wh2_main_tech_skv_6_0	skv_mil	6	100	0	0			0	0	0
+wh2_main_tech_skv_6_1			3	wh2_main_tech_skv_6_1	skv_mil	6	1200	0	0			0	0	0
+wh2_main_tech_skv_6_2			2	wh2_main_tech_skv_6_2	skv_mil	7	1200	0	0			0	0	0
+wh2_main_tech_skv_6_3			3	wh2_main_tech_skv_6_3	skv_mil	7	1200	0	0			0	0	0
+wh2_main_tech_skv_7_0			2	wh2_main_tech_skv_7_0	skv_mil	8	100	0	0			0	0	0
+wh2_main_tech_skv_7_1			1	wh2_main_tech_skv_7_1	skv_mil	8	1200	0	0			0	0	0
+wh2_main_tech_skv_7_2			2	wh2_main_tech_skv_7_2	skv_mil	9	1200	0	0			0	0	0
+wh2_main_tech_skv_7_3			1	wh2_main_tech_skv_7_3	skv_mil	9	1200	0	0			0	0	0
+wh2_main_tech_skv_8_0			7	wh2_main_tech_skv_8_0	skv_mil	6	100	0	0			0	0	0
+wh2_main_tech_skv_8_1			8	wh2_main_tech_skv_8_1	skv_mil	6	1600	0	0			0	0	0
+wh2_main_tech_skv_8_2			5	wh2_main_tech_skv_8_2	skv_mil	7	1600	0	0			0	0	0
+wh2_main_tech_skv_8_3			6	wh2_main_tech_skv_8_3	skv_mil	7	1600	0	0			0	0	0
+wh2_main_tech_skv_8_4			7	wh2_main_tech_skv_8_4	skv_mil	7	1600	0	0			0	0	0
+wh2_main_tech_skv_8_5			8	wh2_main_tech_skv_8_5	skv_mil	7	1600	0	0			0	0	0
+wh2_main_tech_skv_9_0			4	wh2_main_tech_skv_9_0	skv_mil	8	100	0	0			0	0	0
+wh2_main_tech_skv_9_1			5	wh2_main_tech_skv_9_1	skv_mil	8	1600	0	0			0	0	0
+wh2_main_tech_skv_9_2			4	wh2_main_tech_skv_9_2	skv_mil	9	1600	0	0			0	0	0
+wh3_cp1_tech_cth_19_bhashiva		wh3_cp1_cth_tiger_warriors	7	wh3_cp1_tech_cth_19_bhashiva	cth_mil	12	400	0	0			0	110	34
+wh3_cp1_tech_cth_59_bhashiva		wh3_cp1_cth_tiger_warriors	4	wh3_cp1_tech_cth_59_bhashiva	cth_mil	13	500	0	0			1	243	0
+wh3_dlc23_tech_chd_industry_1			9	wh3_dlc23_tech_chd_industry_1	chd_mil	21	300	0	0			0	-60	0
+wh3_dlc23_tech_chd_industry_10			7	wh3_dlc23_tech_chd_industry_10	chd_mil	26	300	0	0			0	-75	0
+wh3_dlc23_tech_chd_industry_11			5	wh3_dlc23_tech_chd_industry_11	chd_mil	23	300	0	0			0	0	80
+wh3_dlc23_tech_chd_industry_12			5	wh3_dlc23_tech_chd_industry_12	chd_mil	24	300	0	0			0	0	80
+wh3_dlc23_tech_chd_industry_13			5	wh3_dlc23_tech_chd_industry_13	chd_mil	22	400	0	0			0	-25	0
+wh3_dlc23_tech_chd_industry_14			5	wh3_dlc23_tech_chd_industry_14	chd_mil	25	400	0	0			0	25	0
+wh3_dlc23_tech_chd_industry_15			3	wh3_dlc23_tech_chd_industry_15	chd_mil	23	100	0	0		wh3_dlc23_tech_chd_industry_medium	0	0	120
+wh3_dlc23_tech_chd_industry_16			3	wh3_dlc23_tech_chd_industry_16	chd_mil	24	100	0	0		wh3_dlc23_tech_chd_industry_medium	0	0	120
+wh3_dlc23_tech_chd_industry_17			2	wh3_dlc23_tech_chd_industry_17	chd_mil	23	400	0	0			0	0	80
+wh3_dlc23_tech_chd_industry_18			2	wh3_dlc23_tech_chd_industry_18	chd_mil	24	400	0	0			0	0	80
+wh3_dlc23_tech_chd_industry_19			1	wh3_dlc23_tech_chd_industry_19	chd_mil	22	500	0	0			0	0	40
+wh3_dlc23_tech_chd_industry_2			9	wh3_dlc23_tech_chd_industry_2	chd_mil	22	100	0	0		wh3_dlc23_tech_chd_industry_low	0	-25	0
+wh3_dlc23_tech_chd_industry_20			1	wh3_dlc23_tech_chd_industry_20	chd_mil	23	100	0	0		wh3_dlc23_tech_chd_industry_high	0	0	40
+wh3_dlc23_tech_chd_industry_21			1	wh3_dlc23_tech_chd_industry_21	chd_mil	24	100	0	0		wh3_dlc23_tech_chd_industry_high	0	0	40
+wh3_dlc23_tech_chd_industry_22			1	wh3_dlc23_tech_chd_industry_22	chd_mil	25	500	0	0			0	0	40
+wh3_dlc23_tech_chd_industry_23			0	wh3_dlc23_tech_chd_industry_23	chd_mil	23	500	0	0			0	0	0
+wh3_dlc23_tech_chd_industry_24			0	wh3_dlc23_tech_chd_industry_24	chd_mil	24	500	0	0			0	0	0
+wh3_dlc23_tech_chd_industry_3			9	wh3_dlc23_tech_chd_industry_3	chd_mil	23	200	0	0			0	0	0
+wh3_dlc23_tech_chd_industry_4			9	wh3_dlc23_tech_chd_industry_4	chd_mil	24	200	0	0			0	0	0
+wh3_dlc23_tech_chd_industry_5			9	wh3_dlc23_tech_chd_industry_5	chd_mil	25	100	0	0		wh3_dlc23_tech_chd_industry_low	0	25	0
+wh3_dlc23_tech_chd_industry_6			9	wh3_dlc23_tech_chd_industry_6	chd_mil	26	300	0	0			0	60	0
+wh3_dlc23_tech_chd_industry_7			7	wh3_dlc23_tech_chd_industry_7	chd_mil	23	300	0	0			0	0	40
+wh3_dlc23_tech_chd_industry_8			7	wh3_dlc23_tech_chd_industry_8	chd_mil	24	300	0	0			0	0	40
+wh3_dlc23_tech_chd_industry_9			7	wh3_dlc23_tech_chd_industry_9	chd_mil	21	300	0	0			0	75	0
+wh3_dlc23_tech_chd_military_1			9	wh3_dlc23_tech_chd_military_1	chd_mil	1	300	0	0			0	0	0
+wh3_dlc23_tech_chd_military_10			7	wh3_dlc23_tech_chd_military_10	chd_mil	7	400	0	0			0	-155	0
+wh3_dlc23_tech_chd_military_11			6	wh3_dlc23_tech_chd_military_11	chd_mil	2	400	0	0			0	150	-10
+wh3_dlc23_tech_chd_military_12			6	wh3_dlc23_tech_chd_military_12	chd_mil	6	400	0	0			0	-150	-10
+wh3_dlc23_tech_chd_military_13			5	wh3_dlc23_tech_chd_military_13	chd_mil	1	300	0	0			0	0	65
+wh3_dlc23_tech_chd_military_14			5	wh3_dlc23_tech_chd_military_14	chd_mil	7	300	0	0			0	0	65
+wh3_dlc23_tech_chd_military_15			4	wh3_dlc23_tech_chd_military_15	chd_mil	1	100	0	0		wh3_dlc23_tech_chd_military_high	0	130	10
+wh3_dlc23_tech_chd_military_16			4	wh3_dlc23_tech_chd_military_16	chd_mil	7	100	0	0		wh3_dlc23_tech_chd_military_high	0	-130	10
+wh3_dlc23_tech_chd_military_17			3	wh3_dlc23_tech_chd_military_17	chd_mil	2	400	0	0			0	40	-20
+wh3_dlc23_tech_chd_military_18			4	wh3_dlc23_tech_chd_military_18	chd_mil	4	100	0	0		wh3_dlc23_tech_chd_military_high	0	0	0
+wh3_dlc23_tech_chd_military_19			3	wh3_dlc23_tech_chd_military_19	chd_mil	6	400	0	0			0	-40	-20
+wh3_dlc23_tech_chd_military_2			9	wh3_dlc23_tech_chd_military_2	chd_mil	2	200	0	0			0	150	0
+wh3_dlc23_tech_chd_military_20			3	wh3_dlc23_tech_chd_military_20	chd_mil	4	400	0	0			0	0	0
+wh3_dlc23_tech_chd_military_21			2	wh3_dlc23_tech_chd_military_21	chd_mil	4	400	0	0			0	0	0
+wh3_dlc23_tech_chd_military_22			1	wh3_dlc23_tech_chd_military_22	chd_mil	1	400	0	0			0	130	20
+wh3_dlc23_tech_chd_military_23			1	wh3_dlc23_tech_chd_military_23	chd_mil	3	500	0	0			0	0	0
+wh3_dlc23_tech_chd_military_24			1	wh3_dlc23_tech_chd_military_24	chd_mil	4	100	0	0		wh3_dlc23_tech_chd_military_high	0	0	0
+wh3_dlc23_tech_chd_military_25			1	wh3_dlc23_tech_chd_military_25	chd_mil	5	500	0	0			0	0	0
+wh3_dlc23_tech_chd_military_26			1	wh3_dlc23_tech_chd_military_26	chd_mil	7	400	0	0			0	-130	20
+wh3_dlc23_tech_chd_military_27			0	wh3_dlc23_tech_chd_military_27	chd_mil	1	500	0	0			0	0	0
+wh3_dlc23_tech_chd_military_28			0	wh3_dlc23_tech_chd_military_28	chd_mil	4	500	0	0			0	0	0
+wh3_dlc23_tech_chd_military_29			0	wh3_dlc23_tech_chd_military_29	chd_mil	7	500	0	0			0	0	0
+wh3_dlc23_tech_chd_military_3			9	wh3_dlc23_tech_chd_military_3	chd_mil	6	200	0	0			0	-150	0
+wh3_dlc23_tech_chd_military_4			9	wh3_dlc23_tech_chd_military_4	chd_mil	7	300	0	0			0	0	0
+wh3_dlc23_tech_chd_military_5			7	wh3_dlc23_tech_chd_military_5	chd_mil	1	400	0	0			0	155	0
+wh3_dlc23_tech_chd_military_6			7	wh3_dlc23_tech_chd_military_6	chd_mil	2	100	0	0		wh3_dlc23_tech_chd_military_medium	0	150	0
+wh3_dlc23_tech_chd_military_7			7	wh3_dlc23_tech_chd_military_7	chd_mil	3	400	0	0			0	145	0
+wh3_dlc23_tech_chd_military_8			7	wh3_dlc23_tech_chd_military_8	chd_mil	5	400	0	0			0	-145	0
+wh3_dlc23_tech_chd_military_9			7	wh3_dlc23_tech_chd_military_9	chd_mil	6	100	0	0		wh3_dlc23_tech_chd_military_medium	0	-150	0
+wh3_dlc23_tech_chd_second_carriage_hidden			999	wh3_dlc23_tech_chd_second_carriage_hidden	chd_mil	999	100	0	0			0	0	0
+wh3_dlc23_tech_chd_sorcery_1			9	wh3_dlc23_tech_chd_sorcery_1	chd_mil	14	200	0	0			0	0	60
+wh3_dlc23_tech_chd_sorcery_10			4	wh3_dlc23_tech_chd_sorcery_10	chd_mil	16	400	0	0			0	-150	40
+wh3_dlc23_tech_chd_sorcery_11			3	wh3_dlc23_tech_chd_sorcery_11	chd_mil	12	400	0	0			0	150	40
+wh3_dlc23_tech_chd_sorcery_12			3	wh3_dlc23_tech_chd_sorcery_12	chd_mil	16	400	0	0			0	-150	40
+wh3_dlc23_tech_chd_sorcery_13			2	wh3_dlc23_tech_chd_sorcery_13	chd_mil	11	400	0	0			0	150	40
+wh3_dlc23_tech_chd_sorcery_14			2	wh3_dlc23_tech_chd_sorcery_14	chd_mil	12	100	0	0		wh3_dlc23_tech_chd_sorcery_medium	0	150	40
+wh3_dlc23_tech_chd_sorcery_15			2	wh3_dlc23_tech_chd_sorcery_15	chd_mil	14	100	0	0		wh3_dlc23_tech_chd_sorcery_high	1	0	40
+wh3_dlc23_tech_chd_sorcery_16			2	wh3_dlc23_tech_chd_sorcery_16	chd_mil	16	100	0	0		wh3_dlc23_tech_chd_sorcery_medium	0	-150	40
+wh3_dlc23_tech_chd_sorcery_17			2	wh3_dlc23_tech_chd_sorcery_17	chd_mil	17	400	0	0			0	-150	40
+wh3_dlc23_tech_chd_sorcery_18			1	wh3_dlc23_tech_chd_sorcery_18	chd_mil	10	500	0	0			0	360	40
+wh3_dlc23_tech_chd_sorcery_19			1	wh3_dlc23_tech_chd_sorcery_19	chd_mil	13	500	0	0			0	60	40
+wh3_dlc23_tech_chd_sorcery_2			8	wh3_dlc23_tech_chd_sorcery_2	chd_mil	14	200	0	0			0	0	50
+wh3_dlc23_tech_chd_sorcery_20			1	wh3_dlc23_tech_chd_sorcery_20	chd_mil	15	500	0	0			0	-60	40
+wh3_dlc23_tech_chd_sorcery_21			1	wh3_dlc23_tech_chd_sorcery_21	chd_mil	18	500	0	0			0	-360	40
+wh3_dlc23_tech_chd_sorcery_22			0	wh3_dlc23_tech_chd_sorcery_22	chd_mil	10	500	0	0			0	300	20
+wh3_dlc23_tech_chd_sorcery_23			0	wh3_dlc23_tech_chd_sorcery_23	chd_mil	18	500	0	0			0	-300	20
+wh3_dlc23_tech_chd_sorcery_3			7	wh3_dlc23_tech_chd_sorcery_3	chd_mil	13	300	0	0			0	60	50
+wh3_dlc23_tech_chd_sorcery_4			7	wh3_dlc23_tech_chd_sorcery_4	chd_mil	15	300	0	0			0	-60	50
+wh3_dlc23_tech_chd_sorcery_5			6	wh3_dlc23_tech_chd_sorcery_5	chd_mil	13	300	0	0			0	60	50
+wh3_dlc23_tech_chd_sorcery_6			6	wh3_dlc23_tech_chd_sorcery_6	chd_mil	15	300	0	0			0	-60	50
+wh3_dlc23_tech_chd_sorcery_7			5	wh3_dlc23_tech_chd_sorcery_7	chd_mil	13	100	0	0		wh3_dlc23_tech_chd_sorcery_low	0	60	50
+wh3_dlc23_tech_chd_sorcery_8			5	wh3_dlc23_tech_chd_sorcery_8	chd_mil	15	100	0	0		wh3_dlc23_tech_chd_sorcery_low	0	-60	50
+wh3_dlc23_tech_chd_sorcery_9			4	wh3_dlc23_tech_chd_sorcery_9	chd_mil	12	400	0	0			0	150	40
+wh3_dlc23_tech_chd_third_carriage_hidden			998	wh3_dlc23_tech_chd_third_carriage_hidden	chd_mil	998	100	0	0			0	0	0
+wh3_dlc24_tech_ksl_ostankya_hex_1		wh3_dlc24_ksl_daughters_of_the_forest	7	wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_1	ksl_mil	4	100	0	0	ksl_9_ostankya	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	0	-50	65
+wh3_dlc24_tech_ksl_ostankya_hex_2		wh3_dlc24_ksl_daughters_of_the_forest	6	wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_2	ksl_mil	4	100	0	0	ksl_9_ostankya	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	0	25	60
+wh3_dlc24_tech_ksl_ostankya_hex_3		wh3_dlc24_ksl_daughters_of_the_forest	5	wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_3	ksl_mil	5	100	0	0	ksl_9_ostankya	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	0	-50	55
+wh3_dlc24_tech_ksl_ostankya_hex_4		wh3_dlc24_ksl_daughters_of_the_forest	6	wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_4	ksl_mil	6	100	0	0	ksl_9_ostankya	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	0	-125	60
+wh3_dlc24_tech_ksl_ostankya_hex_5		wh3_dlc24_ksl_daughters_of_the_forest	7	wh3_dlc24_tech_ksl_ostankya_witches_hut_hex_upgrade_5	ksl_mil	6	100	0	0	ksl_9_ostankya	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	0	-50	65
+wh3_dlc24_tech_ksl_ostankya_unique_1_1		wh3_dlc24_ksl_daughters_of_the_forest	1	wh3_dlc24_tech_ksl_ostankya_unique_1	ksl_mil	4	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_25	0	-50	0
+wh3_dlc24_tech_ksl_ostankya_unique_1_2		wh3_dlc24_ksl_daughters_of_the_forest	1	wh3_dlc24_tech_ksl_ostankya_unique_2	ksl_mil	5	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_25	0	-50	0
+wh3_dlc24_tech_ksl_ostankya_unique_1_3		wh3_dlc24_ksl_daughters_of_the_forest	1	wh3_dlc24_tech_ksl_ostankya_unique_3	ksl_mil	6	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_25	0	-50	0
+wh3_dlc24_tech_ksl_ostankya_unique_2_1		wh3_dlc24_ksl_daughters_of_the_forest	3	wh3_dlc24_tech_ksl_ostankya_unique_4	ksl_mil	4	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_50	0	-50	30
+wh3_dlc24_tech_ksl_ostankya_unique_2_2		wh3_dlc24_ksl_daughters_of_the_forest	3	wh3_dlc24_tech_ksl_ostankya_unique_5	ksl_mil	5	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_50	0	-50	30
+wh3_dlc24_tech_ksl_ostankya_unique_2_3		wh3_dlc24_ksl_daughters_of_the_forest	3	wh3_dlc24_tech_ksl_ostankya_unique_6	ksl_mil	6	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_50	0	-50	30
+wh3_dlc24_tech_ksl_ostankya_unique_cauldron_1		wh3_dlc24_ksl_daughters_of_the_forest	2	wh3_dlc24_tech_ksl_ostankya_witches_hut_unlock	ksl_mil	5	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_150	3	-50	15
+wh3_dlc24_tech_ksl_ostankya_unique_cauldron_2		wh3_dlc24_ksl_daughters_of_the_forest	4	wh3_dlc24_tech_ksl_ostankya_witches_hut_unlock_2	ksl_mil	5	100	0	0	ksl_ostankya_unique	wh3_dlc24_resource_cost_ksl_spirit_essence_tech_250	3	-50	45
+wh3_dlc24_tech_the_changeling_army_1			3	wh3_dlc24_tech_the_changeling_teleport	tze_the_changeling	0	600	0	0	the_changeling_army_buffs		0	50	-40
+wh3_dlc24_tech_the_changeling_army_2			3	wh3_dlc24_tech_the_changeling_champions_of_change	tze_the_changeling	1	600	0	0	the_changeling_army_buffs		0	50	-40
+wh3_dlc24_tech_the_changeling_army_3			4	wh3_dlc24_tech_the_changeling_scatter_loci	tze_the_changeling	0	600	0	0	the_changeling_army_buffs		0	50	-30
+wh3_dlc24_tech_the_changeling_army_4			7	wh3_dlc24_tech_the_changeling_stannic_deviance	tze_the_changeling	0	600	0	0	the_changeling_army_buffs		0	50	0
+wh3_dlc24_tech_the_changeling_army_5			6	wh3_dlc24_tech_the_changeling_inscrutable_demagoguery	tze_the_changeling	0	600	0	0	the_changeling_army_buffs		0	50	-10
+wh3_dlc24_tech_the_changeling_army_6			4	wh3_dlc24_tech_the_changeling_endless_mutation	tze_the_changeling	1	600	0	0	the_changeling_army_buffs		0	50	-30
+wh3_dlc24_tech_the_changeling_army_7			6	wh3_dlc24_tech_the_changeling_blinding_iridescent	tze_the_changeling	1	600	0	0	the_changeling_army_buffs		0	50	-10
+wh3_dlc24_tech_the_changeling_army_8			5	wh3_dlc24_tech_the_changeling_architects_chosen	tze_the_changeling	1	600	0	0	the_changeling_army_buffs		0	50	-20
+wh3_dlc24_tech_the_changeling_army_9			7	wh3_dlc24_tech_the_changeling_awaken_the_sleeper	tze_the_changeling	1	600	0	0	the_changeling_army_buffs		0	50	0
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_1			3	wh3_main_tech_tze_3_5	tze_the_changeling	4	200	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_25	1	100	-15
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_2			3	wh3_main_tech_tze_4_9	tze_the_changeling	3	200	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_50	1	100	-15
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_3			1	wh3_main_tech_tze_4_1	tze_the_changeling	2	800	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_100	1	100	-35
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_4			1	wh3_main_tech_tze_2_9	tze_the_changeling	3	400	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_50	1	100	-35
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_5			3	wh3_main_tech_tze_2_3	tze_the_changeling	2	800	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_100	1	100	-15
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_6			2	wh3_main_tech_tze_3_7	tze_the_changeling	2	800	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_100	1	100	-25
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_7			2	wh3_main_tech_tze_0_8	tze_the_changeling	3	400	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_50	1	100	-25
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_8			2	wh3_dlc24_tech_tze_1_1_changeling	tze_the_changeling	4	200	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_25	1	100	-25
+wh3_dlc24_tech_the_changeling_changing_of_the_ways_9			1	wh3_main_tech_tze_1_9	tze_the_changeling	4	200	0	0	the_changeling_changing_of_the_ways	wh3_dlc24_tze_tech_grimoires_25	1	100	-35
+wh3_dlc24_tech_the_changeling_cultist_1	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_cultist_1	tze_the_changeling	2	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_10a_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_cultist_10a_roc	tze_the_changeling	2	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_10b_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_cultist_10b_roc	tze_the_changeling	4	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_1_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_cultist_1_roc	tze_the_changeling	2	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_2	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_cultist_2	tze_the_changeling	3	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_2_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_cultist_2_roc	tze_the_changeling	3	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_3	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_cultist_3	tze_the_changeling	4	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_4	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_cultist_4	tze_the_changeling	2	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_4_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_cultist_4_roc	tze_the_changeling	4	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_cultist_5	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_cultist_5	tze_the_changeling	3	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_6	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_cultist_6	tze_the_changeling	4	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_7	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_cultist_7	tze_the_changeling	2	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_cultist_8	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_cultist_8	tze_the_changeling	3	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_cultist_8_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_cultist_8_roc	tze_the_changeling	3	100	0	0	the_changeling_cultists_roc	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_cultist_9	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_cultist_9	tze_the_changeling	4	100	0	0	the_changeling_cultists_ie	wh3_dlc24_tze_the_changeling_cultists_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_gate_army			5	wh3_dlc24_tech_the_changeling_gate_army	tze_the_changeling	3	400	0	0			0	100	-20
+wh3_dlc24_tech_the_changeling_gate_units			5	wh3_dlc24_tech_the_changeling_gate_units	tze_the_changeling	7	400	0	0			0	100	-20
+wh3_dlc24_tech_the_changeling_rift_1	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_rift_1	tze_the_changeling	6	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_10a_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_rift_10a_roc	tze_the_changeling	6	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_10b_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_rift_10b_roc	tze_the_changeling	8	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_1_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_rift_1_roc	tze_the_changeling	6	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_2	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_rift_2	tze_the_changeling	7	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_2_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_rift_2_roc	tze_the_changeling	7	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_3	wh3_main_combi		7	wh3_dlc24_tech_the_changeling_rift_3	tze_the_changeling	8	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_4	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_rift_4	tze_the_changeling	6	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_4_roc	wh3_main_chaos		7	wh3_dlc24_tech_the_changeling_rift_4_roc	tze_the_changeling	8	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-20
+wh3_dlc24_tech_the_changeling_rift_5	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_rift_5	tze_the_changeling	7	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_6	wh3_main_combi		8	wh3_dlc24_tech_the_changeling_rift_6	tze_the_changeling	8	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_7	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_rift_7	tze_the_changeling	6	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_rift_8	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_rift_8	tze_the_changeling	7	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_rift_8_roc	wh3_main_chaos		8	wh3_dlc24_tech_the_changeling_rift_8_roc	tze_the_changeling	7	100	0	0	the_changeling_rifts_roc	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	-10
+wh3_dlc24_tech_the_changeling_rift_9	wh3_main_combi		9	wh3_dlc24_tech_the_changeling_rift_9	tze_the_changeling	8	100	0	0	the_changeling_rifts_ie	wh3_dlc24_tze_the_changeling_rift_tech_cost	0	100	0
+wh3_dlc24_tech_the_changeling_root			5	wh3_dlc24_tech_the_changeling_root	tze_the_changeling	5	100	0	0			0	100	-20
+wh3_dlc24_tech_the_changeling_units_1			3	wh3_dlc24_tech_the_changeling_gift_of_mutation	tze_the_changeling	9	600	0	0	the_changeling_unit_buffs		0	150	-40
+wh3_dlc24_tech_the_changeling_units_2			4	wh3_main_tech_tze_0_9	tze_the_changeling	9	600	0	0	the_changeling_unit_buffs		0	150	-30
+wh3_dlc24_tech_the_changeling_units_3			5	wh3_main_tech_tze_1_8	tze_the_changeling	9	600	0	0	the_changeling_unit_buffs		0	150	-20
+wh3_dlc24_tech_the_changeling_units_4			6	wh3_dlc24_tech_the_changeling_warpflame_formulae	tze_the_changeling	9	600	0	0	the_changeling_unit_buffs		0	150	-10
+wh3_dlc24_tech_the_changeling_units_5			7	wh3_dlc24_tech_the_changeling_greater_locus_of_change	tze_the_changeling	9	600	0	0	the_changeling_unit_buffs		0	150	0
+wh3_dlc24_tech_the_changeling_units_6			3	wh3_main_tech_tze_2_8	tze_the_changeling	10	600	0	0	the_changeling_unit_buffs		0	150	-40
+wh3_dlc24_tech_the_changeling_units_7			4	wh3_main_tech_tze_3_4	tze_the_changeling	10	600	0	0	the_changeling_unit_buffs		0	150	-30
+wh3_dlc24_tech_the_changeling_units_8			6	wh3_dlc24_tech_the_changeling_locus_of_contrivance	tze_the_changeling	10	600	0	0	the_changeling_unit_buffs		0	150	-10
+wh3_dlc24_tech_the_changeling_units_9			7	wh3_dlc24_tech_the_changeling_disc_taming	tze_the_changeling	10	600	0	0	the_changeling_unit_buffs		0	150	0
+wh3_dlc24_tech_the_changeling_winds_of_magic_1			1	wh3_main_tech_tze_0_1	tze_the_changeling	6	400	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_50	1	100	-35
+wh3_dlc24_tech_the_changeling_winds_of_magic_2			2	wh3_dlc24_tech_the_changeling_fires_of_change	tze_the_changeling	6	400	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_50	1	100	-25
+wh3_dlc24_tech_the_changeling_winds_of_magic_3			3	wh3_main_tech_tze_0_4	tze_the_changeling	6	400	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_50	1	100	-15
+wh3_dlc24_tech_the_changeling_winds_of_magic_4			1	wh3_dlc24_tech_the_changeling_infernal_gateway	tze_the_changeling	8	600	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_100	1	100	-35
+wh3_dlc24_tech_the_changeling_winds_of_magic_5			2	wh3_dlc24_tech_the_changeling_glean_magic	tze_the_changeling	7	400	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_100	1	100	-25
+wh3_dlc24_tech_the_changeling_winds_of_magic_6			3	wh3_main_tech_tze_2_4	tze_the_changeling	7	1000	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_400	1	100	-15
+wh3_dlc24_tech_the_changeling_winds_of_magic_7			1	wh3_main_tech_tze_3_2	tze_the_changeling	7	1000	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_400	1	100	-35
+wh3_dlc24_tech_the_changeling_winds_of_magic_8			2	wh3_dlc24_tech_the_changeling_treason_of_tzeentch	tze_the_changeling	8	600	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_100	1	100	-25
+wh3_dlc24_tech_the_changeling_winds_of_magic_9			3	wh3_dlc24_tech_the_changeling_tzeentch_firestorm	tze_the_changeling	8	600	0	0	the_changeling_winds_of_magic	wh3_dlc24_tze_tech_grimoires_100	1	100	-15
+wh3_dlc25_tech_emp_art_c			0	wh3_dlc25_tech_emp_art_c	emp_civ_reworkd	7	600	0	0	emp_art		0	63	0
+wh3_dlc25_tech_emp_diplomacy_1_e			7	wh3_dlc25_tech_emp_diplomacy_1_e	emp_civ_reworkd	1	100	7000	0	emp_dip		0	0	42
+wh3_dlc25_tech_emp_diplomacy_1_f			7	wh3_dlc25_tech_emp_diplomacy_1_f	emp_civ_reworkd	2	100	7000	0	emp_dip		0	0	42
+wh3_dlc25_tech_emp_elspeth_1		wh_main_emp_wissenland	6	wh3_dlc25_tech_emp_elspeth_1	emp_civ_reworkd	5	700	0	0	emp_unique_elspeth		0	42	21
+wh3_dlc25_tech_emp_elspeth_2		wh_main_emp_wissenland	7	wh3_dlc25_tech_emp_elspeth_2	emp_civ_reworkd	5	1000	0	0	emp_unique_elspeth		0	42	42
+wh3_dlc25_tech_emp_elspeth_3		wh_main_emp_wissenland	6	wh3_dlc25_tech_emp_elspeth_3	emp_civ_reworkd	6	700	0	0	emp_unique_elspeth		0	42	21
+wh3_dlc25_tech_emp_elspeth_4		wh_main_emp_wissenland	7	wh3_dlc25_tech_emp_elspeth_4	emp_civ_reworkd	6	1000	0	0	emp_unique_elspeth		0	42	42
+wh3_dlc25_tech_emp_gelt_1		wh2_dlc13_emp_golden_order	6	wh3_dlc25_tech_emp_gelt_1	emp_civ_reworkd	5	700	0	0	emp_unique_gelt		0	42	21
+wh3_dlc25_tech_emp_gelt_2		wh2_dlc13_emp_golden_order	7	wh3_dlc25_tech_emp_gelt_2	emp_civ_reworkd	5	1000	0	0	emp_unique_gelt		0	42	42
+wh3_dlc25_tech_emp_machine_1_c			0	wh3_dlc25_tech_emp_machine_1_c	emp_civ_reworkd	9	600	0	0	emp_machines		0	84	0
+wh3_dlc25_tech_emp_machine_1_d			1	wh3_dlc25_tech_emp_machine_1_d	emp_civ_reworkd	9	900	0	0	emp_machines		0	84	5
+wh3_dlc25_tech_emp_magic_1			3	wh3_dlc25_tech_emp_magic_1	emp_civ_reworkd	7	300	0	0	emp_com		0	42	40
+wh3_dlc25_tech_emp_magic_2			4	wh3_dlc25_tech_emp_magic_2	emp_civ_reworkd	8	600	0	0	emp_com		0	42	21
+wh3_dlc25_tech_emp_magic_3			3	wh3_dlc25_tech_emp_magic_3	emp_civ_reworkd	8	600	0	0	emp_com		0	42	0
+wh3_dlc25_tech_emp_magic_4			3	wh3_dlc25_tech_emp_magic_4	emp_civ_reworkd	9	900	0	0	emp_com		0	42	40
+wh3_dlc25_tech_emp_state_troops_1_elspeth		wh_main_emp_wissenland	6	wh3_dlc25_tech_emp_state_troops_1	emp_civ_reworkd	7	100	7500	0	emp_state_troops_elspeth		0	63	21
+wh3_dlc25_tech_emp_state_troops_1_gelt		wh2_dlc13_emp_golden_order	6	wh3_dlc25_tech_emp_state_troops_1	emp_civ_reworkd	6	100	7500	0	emp_state_troops_gelt		0	63	21
+wh3_dlc25_tech_emp_state_troops_2_elspeth		wh_main_emp_wissenland	6	wh3_dlc25_tech_emp_state_troops_2	emp_civ_reworkd	8	100	7500	0	emp_state_troops_elspeth		0	63	21
+wh3_dlc25_tech_emp_state_troops_2_gelt		wh2_dlc13_emp_golden_order	6	wh3_dlc25_tech_emp_state_troops_2	emp_civ_reworkd	7	100	7500	0	emp_state_troops_gelt		0	63	21
+wh3_dlc25_tech_emp_state_troops_3_elspeth		wh_main_emp_wissenland	6	wh3_dlc25_tech_emp_state_troops_3	emp_civ_reworkd	9	100	7500	0	emp_state_troops_elspeth		0	63	21
+wh3_dlc25_tech_emp_state_troops_3_gelt		wh2_dlc13_emp_golden_order	6	wh3_dlc25_tech_emp_state_troops_3	emp_civ_reworkd	8	100	7500	0	emp_state_troops_gelt		0	63	21
+wh3_dlc25_tech_emp_state_troops_4_elspeth		wh_main_emp_wissenland	7	wh3_dlc25_tech_emp_state_troops_4	emp_civ_reworkd	7	100	7500	0	emp_state_troops_elspeth		0	63	42
+wh3_dlc25_tech_emp_state_troops_4_gelt		wh2_dlc13_emp_golden_order	7	wh3_dlc25_tech_emp_state_troops_4	emp_civ_reworkd	6	100	7500	0	emp_state_troops_gelt		0	63	42
+wh3_dlc25_tech_emp_state_troops_5_elspeth		wh_main_emp_wissenland	7	wh3_dlc25_tech_emp_state_troops_5	emp_civ_reworkd	8	100	7500	0	emp_state_troops_elspeth		0	63	42
+wh3_dlc25_tech_emp_state_troops_5_gelt		wh2_dlc13_emp_golden_order	7	wh3_dlc25_tech_emp_state_troops_5	emp_civ_reworkd	7	100	7500	0	emp_state_troops_gelt		0	63	42
+wh3_dlc25_tech_emp_state_troops_6_elspeth		wh_main_emp_wissenland	7	wh3_dlc25_tech_emp_state_troops_6	emp_civ_reworkd	9	100	7500	0	emp_state_troops_elspeth		0	63	42
+wh3_dlc25_tech_emp_state_troops_6_gelt		wh2_dlc13_emp_golden_order	7	wh3_dlc25_tech_emp_state_troops_6	emp_civ_reworkd	8	100	7500	0	emp_state_troops_gelt		0	63	42
+wh3_dlc26_ogr_horde_01			4	wh3_main_tech_ogr_1_4_1	ogr_mil	24	200	0	0			0	100	0
+wh3_dlc26_ogr_horde_02			3	wh3_main_tech_ogr_1_6_1	ogr_mil	24	300	0	0			0	100	-20
+wh3_dlc26_ogr_horde_03			3	wh3_main_tech_ogr_2_0_0	ogr_mil	23	400	0	0			0	110	-20
+wh3_dlc26_ogr_horde_04			2	wh3_dlc26_ogr_horde_04	ogr_mil	24	300	0	0			0	100	-40
+wh3_dlc26_ogr_horde_05			2	wh3_dlc26_ogr_horde_05	ogr_mil	23	400	0	0			0	110	-40
+wh3_dlc26_ogr_horde_06			1	wh3_main_tech_ogr_2_7_0	ogr_mil	24	300	0	0			0	100	-60
+wh3_dlc26_ogr_horde_07			1	wh3_dlc26_ogr_horde_07	ogr_mil	23	400	0	0			0	110	-60
+wh3_dlc26_ogr_horde_08			0	wh3_main_tech_ogr_2_10_1	ogr_mil	24	500	0	0			0	100	-80
+wh3_dlc26_ogr_horde_09			2	wh3_main_tech_ogr_1_8_1	ogr_mil	22	500	0	0			0	120	-40
+wh3_dlc26_ogr_horde_10			3	wh3_main_tech_ogr_1_0_1	ogr_mil	22	600	0	0			0	-20	-20
+wh3_dlc26_ogr_horde_11			3	wh3_main_tech_ogr_1_10_0	ogr_mil	21	600	0	0			0	-10	-20
+wh3_dlc26_ogr_horde_12			2	wh3_main_tech_ogr_1_7_1	ogr_mil	20	700	0	0			0	100	-40
+wh3_dlc26_ogr_horde_13			1	wh3_main_tech_ogr_2_6_0	ogr_mil	20	700	0	0			0	100	-60
+wh3_dlc26_ogr_horde_14			0	wh3_main_tech_ogr_2_3_0	ogr_mil	21	800	0	0			0	-10	-80
+wh3_dlc26_ogr_horde_15			4	wh3_dlc26_ogr_horde_15	ogr_mil	25	200	0	0			0	70	0
+wh3_dlc26_ogr_horde_16			3	wh3_dlc26_ogr_horde_16	ogr_mil	25	300	0	0			0	70	-20
+wh3_dlc26_ogr_horde_17			3	wh3_main_tech_ogr_1_3_1	ogr_mil	26	400	0	0			0	60	-20
+wh3_dlc26_ogr_horde_18			2	wh3_dlc26_ogr_horde_18	ogr_mil	25	300	0	0			0	70	-40
+wh3_dlc26_ogr_horde_19			2	wh3_dlc26_ogr_horde_19	ogr_mil	26	400	0	0			0	60	-40
+wh3_dlc26_ogr_horde_20			1	wh3_dlc26_ogr_horde_20	ogr_mil	25	300	0	0			0	70	-60
+wh3_dlc26_ogr_horde_21			1	wh3_main_tech_ogr_1_4_0	ogr_mil	26	400	0	0			0	60	-60
+wh3_dlc26_ogr_horde_22			0	wh3_main_tech_ogr_2_8_1	ogr_mil	25	500	0	0			0	70	-80
+wh3_dlc26_ogr_horde_23			2	wh3_dlc26_ogr_horde_23	ogr_mil	27	500	0	0			0	60	-40
+wh3_dlc26_ogr_horde_24			3	wh3_dlc26_ogr_horde_25	ogr_mil	28	600	0	0			0	-50	-20
+wh3_dlc26_ogr_horde_25			3	wh3_dlc26_ogr_horde_28	ogr_mil	29	600	0	0			0	-60	-20
+wh3_dlc26_ogr_horde_26			2	wh3_dlc26_ogr_horde_24	ogr_mil	29	700	0	0			0	80	-40
+wh3_dlc26_ogr_horde_27			1	wh3_dlc26_ogr_horde_26	ogr_mil	29	700	0	0			0	80	-60
+wh3_dlc26_ogr_horde_28			0	wh3_main_tech_ogr_0_5_0	ogr_mil	29	800	0	0			0	-60	-80
+wh3_dlc26_ogr_kingdom_01			5	wh3_main_tech_ogr_0_0_0	ogr_mil	2	200	0	0			0	80	40
+wh3_dlc26_ogr_kingdom_02			4	wh3_main_tech_ogr_1_0_0	ogr_mil	2	300	0	0			0	80	20
+wh3_dlc26_ogr_kingdom_03			3	wh3_main_tech_ogr_2_4_1	ogr_mil	2	400	0	0			0	80	0
+wh3_dlc26_ogr_kingdom_04			2	wh3_main_tech_ogr_0_4_0	ogr_mil	2	500	0	0			0	80	-20
+wh3_dlc26_ogr_kingdom_05			4	wh3_main_tech_ogr_2_0_1	ogr_mil	1	400	0	0			0	90	20
+wh3_dlc26_ogr_kingdom_06			4	wh3_main_tech_ogr_1_11_0	ogr_mil	0	500	0	0			0	100	20
+wh3_dlc26_ogr_kingdom_07			5	wh3_main_tech_ogr_2_2_0	ogr_mil	1	400	0	0			0	90	40
+wh3_dlc26_ogr_kingdom_08			5	wh3_main_tech_ogr_2_10_0	ogr_mil	0	500	0	0			0	100	40
+wh3_dlc26_ogr_kingdom_09			3	wh3_main_tech_ogr_1_1_0	ogr_mil	1	400	0	0			0	90	0
+wh3_dlc26_ogr_kingdom_10			3	wh3_main_tech_ogr_0_7_0	ogr_mil	0	500	0	0			0	100	0
+wh3_dlc26_ogr_kingdom_11			2	wh3_main_tech_ogr_1_5_1	ogr_mil	1	700	0	0			0	90	-20
+wh3_dlc26_ogr_kingdom_12			5	wh3_main_tech_ogr_1_2_0	ogr_mil	4	200	0	0			0	60	40
+wh3_dlc26_ogr_kingdom_13			4	wh3_main_tech_ogr_1_10_1	ogr_mil	4	300	0	0			0	60	20
+wh3_dlc26_ogr_kingdom_14			3	wh3_main_tech_ogr_0_3_0	ogr_mil	4	400	0	0			0	60	0
+wh3_dlc26_ogr_kingdom_15			2	wh3_main_tech_ogr_2_1_0	ogr_mil	4	500	0	0			0	60	-20
+wh3_dlc26_ogr_kingdom_16			4	wh3_main_tech_ogr_2_5_1	ogr_mil	5	400	0	0			0	50	20
+wh3_dlc26_ogr_kingdom_17			4	wh3_main_tech_ogr_2_8_0	ogr_mil	6	500	0	0			0	40	20
+wh3_dlc26_ogr_kingdom_18			5	wh3_main_tech_ogr_2_3_1	ogr_mil	5	400	0	0			0	50	40
+wh3_dlc26_ogr_kingdom_19			5	wh3_main_tech_ogr_2_4_0	ogr_mil	6	500	0	0			0	40	40
+wh3_dlc26_ogr_kingdom_20			3	wh3_dlc26_ogr_kingdom_16	ogr_mil	5	400	0	0			0	50	0
+wh3_dlc26_ogr_kingdom_21			3	wh3_main_tech_ogr_2_7_1	ogr_mil	6	500	0	0			0	40	0
+wh3_dlc26_ogr_kingdom_22			2	wh3_dlc26_ogr_kingdom_22	ogr_mil	5	700	0	0			0	50	-20
+wh3_dlc26_ogr_kingdom_23			2	wh3_main_tech_ogr_0_8_0	ogr_mil	3	600	0	0			0	70	-20
+wh3_dlc26_ogr_kingdom_24			3	wh3_main_tech_ogr_1_3_0	ogr_mil	3	500	0	0			0	70	0
+wh3_dlc26_ogr_kingdom_25			1	wh3_main_tech_ogr_1_2_1	ogr_mil	3	700	0	0			0	70	-40
+wh3_dlc26_ogr_kingdom_26			1	wh3_main_tech_ogr_0_2_0	ogr_mil	2	800	0	0			0	80	-40
+wh3_dlc26_ogr_kingdom_27			0	wh3_main_tech_ogr_2_9_0	ogr_mil	3	800	0	0			0	70	-60
+wh3_dlc26_ogr_kingdom_28			1	wh3_main_tech_ogr_2_11_0	ogr_mil	4	800	0	0			0	60	-40
+wh3_dlc26_tech_kho_battle_1_1			1	wh3_dlc26_tech_kho_battle_1_1	kho_mil	12	300	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_1_2			2	wh3_dlc26_tech_kho_battle_1_2	kho_mil	13	400	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_2_1			1	wh3_dlc26_tech_kho_battle_2_1	kho_mil	16	300	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_2_2			2	wh3_dlc26_tech_kho_battle_2_2	kho_mil	15	400	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_3_1			6	wh3_dlc26_tech_kho_battle_3_1	kho_mil	12	300	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_3_2			5	wh3_dlc26_tech_kho_battle_3_2	kho_mil	13	400	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_3_3			7	wh3_dlc26_tech_kho_battle_3_3	kho_mil	13	400	0	0			0	0	0
+wh3_dlc26_tech_kho_battle_4_1			6	wh3_dlc26_tech_kho_battle_4_1	kho_mil	16	300	0	0			0	0	0
+wh3_dlc26_tech_kho_blood_hosts_1			2	wh3_dlc26_tech_kho_blood_hosts_1	kho_mil	6	600	0	0	kho_4		0	250	0
+wh3_dlc26_tech_kho_campaign_4_1			5	wh3_dlc26_tech_kho_campaign_4_1	kho_mil	4	200	0	0	kho_8		0	150	0
+wh3_dlc26_tech_kho_campaign_4_3			3	wh3_dlc26_tech_kho_campaign_4_3	kho_mil	4	100	0	0	kho_8	wh3_dlc26_tech_kho_low	0	150	0
+wh3_dlc27_tech_hef_0_01			4	wh3_dlc27_tech_hef_0_01	hef_mil	2	400	0	0	hef_10		0	-100	0
+wh3_dlc27_tech_hef_0_02			4	wh3_dlc27_tech_hef_0_02	hef_mil	3	600	0	0	hef_10		1	-100	-32
+wh3_dlc27_tech_hef_0_03			4	wh3_dlc27_tech_hef_0_03	hef_mil	7	400	0	0	hef_8		0	-60	-32
+wh3_dlc27_tech_hef_0_04			0	wh3_dlc27_tech_hef_0_04	hef_mil	8	600	0	0	hef_0		0	-100	0
+wh3_dlc27_tech_hef_0_05			1	wh3_dlc27_tech_hef_0_05	hef_mil	8	600	0	0	hef_0		0	-100	0
+wh3_dlc27_tech_hef_5_09			5	wh2_main_tech_hef_5_08	hef_mil	18	100	6000	0	hef_5		0	-650	0
+wh3_dlc27_tech_hef_5_10			4	wh2_main_tech_hef_5_04	hef_mil	19	100	7000	0	hef_5		1	-650	0
+wh3_dlc27_tech_hef_aislinn_0_00		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_0_00	hef_mil	1	200	0	0	hef_aislinn_0		0	-100	-32
+wh3_dlc27_tech_hef_aislinn_0_01		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_0_01	hef_mil	3	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_0_02		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_0_02	hef_mil	4	400	0	0	hef_aislinn_0		1	-100	-32
+wh3_dlc27_tech_hef_aislinn_0_03		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_0_03	hef_mil	6	500	0	0	hef_aislinn_6		1	-80	-32
+wh3_dlc27_tech_hef_aislinn_0_04		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_0_04	hef_mil	1	400	0	0	hef_aislinn_10		0	-100	-32
+wh3_dlc27_tech_hef_aislinn_0_05		wh3_dlc27_hef_aislinn	6	wh3_dlc27_tech_hef_aislinn_0_05	hef_mil	2	400	0	0	hef_aislinn_1		0	-100	0
+wh3_dlc27_tech_hef_aislinn_0_06		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_0_06	hef_mil	3	500	0	0	hef_aislinn_1		1	-100	-32
+wh3_dlc27_tech_hef_aislinn_0_07		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_0_07	hef_mil	2	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_0_08		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_0_08	hef_mil	4	400	0	0	hef_aislinn_6		0	-80	-32
+wh3_dlc27_tech_hef_aislinn_0_09		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_0_09	hef_mil	3	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_0_10		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_0_10	hef_mil	4	400	0	0	hef_aislinn_2		0	-80	-32
+wh3_dlc27_tech_hef_aislinn_1_00		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_1_00	hef_mil	5	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_1_01		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_1_01	hef_mil	5	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_1_02		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_1_02	hef_mil	7	600	0	0	hef_aislinn_0		1	-100	-32
+wh3_dlc27_tech_hef_aislinn_1_03		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_1_03	hef_mil	2	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_1_04		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_1_04	hef_mil	2	400	0	0	hef_aislinn_10		0	-100	0
+wh3_dlc27_tech_hef_aislinn_1_05		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_1_05	hef_mil	1	400	0	0	hef_aislinn_1		0	-100	-32
+wh3_dlc27_tech_hef_aislinn_1_06		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_1_06	hef_mil	9	400	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_1_07		wh3_dlc27_hef_aislinn	6	wh3_dlc27_tech_hef_aislinn_1_07	hef_mil	8	400	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_1_08		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_1_08	hef_mil	2	400	0	0	hef_aislinn_1		0	-100	0
+wh3_dlc27_tech_hef_aislinn_1_09		wh3_dlc27_hef_aislinn	6	wh3_dlc27_tech_hef_aislinn_1_09	hef_mil	5	400	0	0	hef_aislinn_2		0	-80	0
+wh3_dlc27_tech_hef_aislinn_1_10		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_1_10	hef_mil	5	400	0	0	hef_aislinn_2		0	-80	0
+wh3_dlc27_tech_hef_aislinn_2_00		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_2_00	hef_mil	6	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_2_01		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_2_01	hef_mil	10	400	0	0	hef_aislinn_3		0	-60	0
+wh3_dlc27_tech_hef_aislinn_2_02		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_2_02	hef_mil	10	500	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_2_03		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_2_03	hef_mil	10	400	0	0	hef_aislinn_3		0	-60	0
+wh3_dlc27_tech_hef_aislinn_2_04		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_2_04	hef_mil	5	400	0	0	hef_aislinn_6		0	-80	0
+wh3_dlc27_tech_hef_aislinn_2_05		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_2_05	hef_mil	8	400	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_2_06		wh3_dlc27_hef_aislinn	6	wh3_dlc27_tech_hef_aislinn_2_06	hef_mil	10	500	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_2_07		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_2_07	hef_mil	7	400	0	0	hef_aislinn_7		0	-60	-32
+wh3_dlc27_tech_hef_aislinn_2_08		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_2_08	hef_mil	9	600	0	0	hef_aislinn_8		1	-60	-32
+wh3_dlc27_tech_hef_aislinn_2_09		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_2_09	hef_mil	5	400	0	0	hef_aislinn_6		0	-80	0
+wh3_dlc27_tech_hef_aislinn_2_10		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_2_10	hef_mil	6	400	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_3_00		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_3_00	hef_mil	11	600	0	0	hef_aislinn_7		1	-60	-32
+wh3_dlc27_tech_hef_aislinn_3_01		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_3_01	hef_mil	8	400	0	0	hef_aislinn_8		0	-60	0
+wh3_dlc27_tech_hef_aislinn_3_02		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_3_02	hef_mil	10	400	0	0	hef_aislinn_9		0	-40	-32
+wh3_dlc27_tech_hef_aislinn_3_03		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_3_03	hef_mil	9	400	0	0	hef_aislinn_3		0	-60	-32
+wh3_dlc27_tech_hef_aislinn_3_04		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_3_04	hef_mil	11	500	0	0	hef_aislinn_9		0	-40	0
+wh3_dlc27_tech_hef_aislinn_3_05		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_3_05	hef_mil	12	600	0	0	hef_aislinn_9		1	-40	-32
+wh3_dlc27_tech_hef_aislinn_3_06		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_3_06	hef_mil	8	400	0	0	hef_aislinn_8		0	-60	0
+wh3_dlc27_tech_hef_aislinn_3_07		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_3_07	hef_mil	11	500	0	0	hef_aislinn_3		1	-60	-32
+wh3_dlc27_tech_hef_aislinn_3_08		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_3_08	hef_mil	11	500	0	0	hef_aislinn_9		0	-40	0
+wh3_dlc27_tech_hef_aislinn_3_09		wh3_dlc27_hef_aislinn	7	wh3_dlc27_tech_hef_aislinn_3_09	hef_mil	6	500	0	0	hef_aislinn_2		1	-80	-32
+wh3_dlc27_tech_hef_aislinn_3_10		wh3_dlc27_hef_aislinn	6	wh3_dlc27_tech_hef_aislinn_3_10	hef_mil	9	400	0	0	hef_aislinn_7		0	-60	0
+wh3_dlc27_tech_hef_aislinn_4_00		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_4_00	hef_mil	13	100	0	0		wh3_dlc27_hef_elven_trade_500	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_01		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_01	hef_mil	14	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_02		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_02	hef_mil	15	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_03		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_03	hef_mil	16	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_04		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_04	hef_mil	17	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_05		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_05	hef_mil	18	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_06		wh3_dlc27_hef_aislinn	-1	wh3_dlc27_tech_hef_aislinn_4_06	hef_mil	19	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_07		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_07	hef_mil	14	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_08		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_08	hef_mil	15	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_09		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_09	hef_mil	16	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_10		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_10	hef_mil	17	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_11		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_11	hef_mil	18	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_4_12		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_4_12	hef_mil	19	100	0	0	hef_aislinn_4	wh3_dlc27_hef_elven_trade_1000	0	-650	-25
+wh3_dlc27_tech_hef_aislinn_5_00		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_5_00	hef_mil	13	100	1000	0			0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_01		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_5_01	hef_mil	14	100	3000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_02		wh3_dlc27_hef_aislinn	5	wh3_dlc27_tech_hef_aislinn_5_05	hef_mil	14	100	3000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_03		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_5_02	hef_mil	15	100	4000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_04		wh3_dlc27_hef_aislinn	5	wh3_dlc27_tech_hef_aislinn_5_06	hef_mil	15	100	4000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_05		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_5_09	hef_mil	16	100	4000	0	hef_aislinn_5		1	-650	0
+wh3_dlc27_tech_hef_aislinn_5_06		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_5_03	hef_mil	17	100	5000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_07		wh3_dlc27_hef_aislinn	5	wh3_dlc27_tech_hef_5_10	hef_mil	17	100	5000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_08		wh3_dlc27_hef_aislinn	3	wh3_dlc27_tech_hef_aislinn_5_07	hef_mil	18	100	6000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_09		wh3_dlc27_hef_aislinn	5	wh3_dlc27_tech_hef_aislinn_5_08	hef_mil	18	100	6000	0	hef_aislinn_5		0	-650	0
+wh3_dlc27_tech_hef_aislinn_5_10		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_5_04	hef_mil	19	100	7000	0	hef_aislinn_5		1	-650	0
+wh3_dlc27_tech_hef_aislinn_6_01		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_01	hef_mil	2	400	0	0	hef_aislinn_10		0	-100	0
+wh3_dlc27_tech_hef_aislinn_6_02		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_02	hef_mil	3	600	0	0	hef_aislinn_10		1	-100	-32
+wh3_dlc27_tech_hef_aislinn_6_03		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_03	hef_mil	7	400	0	0	hef_aislinn_8		0	-60	-32
+wh3_dlc27_tech_hef_aislinn_6_04		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_6_04	hef_mil	8	600	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_6_05		wh3_dlc27_hef_aislinn	1	wh3_dlc27_tech_hef_aislinn_6_05	hef_mil	8	600	0	0	hef_aislinn_0		0	-100	0
+wh3_dlc27_tech_hef_aislinn_6_06		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_06	hef_mil	20	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_07		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_6_07	hef_mil	22	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_500	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_08		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_6_08	hef_mil	21	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_1000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_09		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_6_09	hef_mil	20	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_1000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_10		wh3_dlc27_hef_aislinn	2	wh3_dlc27_tech_hef_aislinn_6_10	hef_mil	20	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	500	0
+wh3_dlc27_tech_hef_aislinn_6_11		wh3_dlc27_hef_aislinn	0	wh3_dlc27_tech_hef_aislinn_6_11	hef_mil	23	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_500	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_12		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_12	hef_mil	21	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_13		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_13	hef_mil	22	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_14		wh3_dlc27_hef_aislinn	2	wh3_dlc27_tech_hef_aislinn_6_14	hef_mil	21	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_1000	0	500	0
+wh3_dlc27_tech_hef_aislinn_6_15		wh3_dlc27_hef_aislinn	4	wh3_dlc27_tech_hef_aislinn_6_15	hef_mil	23	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	375	0
+wh3_dlc27_tech_hef_aislinn_6_16		wh3_dlc27_hef_aislinn	2	wh3_dlc27_tech_hef_aislinn_6_16	hef_mil	22	100	0	0	hef_aislinn_11	wh3_dlc27_hef_elven_trade_2000	0	500	0
+wh3_dlc27_tech_hef_tyrion_1_02		wh2_main_hef_eataine	1	wh3_dlc27_tech_hef_tyrion_1_02	hef_mil	7	600	0	0	hef_0_tyrion		1	-100	-32
+wh3_dlc27_tech_hef_tyrion_6_05		wh2_main_hef_eataine	1	wh3_dlc27_tech_hef_tyrion_6_05	hef_mil	8	600	0	0	hef_0_tyrion		0	-100	0
+wh3_dlc27_tech_nor_cam_army_01			6	wh3_dlc27_tech_nor_other_22	nor_mil	13	200	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_02			5	wh3_dlc27_tech_nor_cam_pillagers	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_03			5	wh3_dlc27_tech_nor_cam_whispers	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_04			6	wh3_dlc27_tech_nor_cam_walkers	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_05			6	wh_dlc08_tech_nor_other_01	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_06			7	wh3_dlc27_tech_nor_cam_large_traps	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_07			7	wh3_dlc27_tech_nor_cam_northlands	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_08			6	wh_dlc08_tech_nor_other_04	nor_mil	16	500	0	0			1	0	0
+wh3_dlc27_tech_nor_cam_army_09			5	wh_dlc08_tech_nor_other_10	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_10			5	wh_dlc08_tech_nor_other_03	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_11			6	wh_dlc08_tech_nor_marauders_07	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_12			6	wh3_dlc27_tech_nor_cam_waters	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_13			7	wh3_dlc27_tech_nor_cam_wind	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_14			7	wh3_dlc27_tech_nor_cam_familiar	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_army_15			6	wh3_dlc27_tech_nor_cam_persistence	nor_mil	19	700	0	0			2	0	0
+wh3_dlc27_tech_nor_cam_faction_sayl_01		wh3_dlc27_nor_sayl	0	wh3_dlc27_tech_nor_ship_faction_sayl_betrayal	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_faction_sayl_02		wh3_dlc27_nor_sayl	8	wh3_dlc27_tech_nor_ship_faction_sayl_faithlessness	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_faction_throgg_01		wh_dlc08_nor_wintertooth	0	wh3_dlc27_tech_nor_ship_faction_throgg_raiding	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_faction_throgg_02		wh_dlc08_nor_wintertooth	8	wh3_dlc27_tech_nor_ship_faction_throgg_troll_loyalty	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_faction_wulfrik_01		wh_dlc08_nor_norsca	0	wh3_dlc27_tech_nor_ship_faction_wulfrik_deep_seafang	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_faction_wulfrik_02		wh_dlc08_nor_norsca	8	wh3_dlc27_tech_nor_ship_faction_wulfrik_seafang	nor_mil	16	100	0	0		wh3_dlc27_nor_spoils_technology_200	0	0	0
+wh3_dlc27_tech_nor_cam_region_01			2	wh3_dlc27_tech_nor_cam_watchtower	nor_mil	13	200	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_02			1	wh3_dlc27_tech_nor_cam_palisade	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_03			1	wh3_dlc27_tech_nor_cam_weapons	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_04			2	wh3_dlc27_tech_nor_cam_purpose	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_05			2	wh3_dlc27_tech_nor_cam_cartographers	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_06			3	wh3_dlc27_tech_nor_cam_crow	nor_mil	14	400	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_07			3	wh3_dlc27_tech_nor_cam_envoy	nor_mil	15	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_08			2	wh3_dlc27_tech_nor_cam_campfire	nor_mil	16	500	0	0			1	0	0
+wh3_dlc27_tech_nor_cam_region_09			1	wh3_dlc27_tech_nor_ship_cam_advantage	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_10			1	wh_dlc08_tech_nor_other_02	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_11			2	wh3_dlc27_tech_nor_cam_worship	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_12			2	wh3_dlc27_tech_nor_cam_scavenge	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_13			3	wh_dlc08_tech_nor_marauders_01	nor_mil	17	500	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_14			3	wh3_dlc27_tech_nor_cam_quartermasters	nor_mil	18	600	0	0			0	0	0
+wh3_dlc27_tech_nor_cam_region_15			2	wh3_dlc27_tech_nor_cam_leaders	nor_mil	19	700	0	0			2	0	0
+wh3_dlc27_tech_nor_culture_01			1	wh3_dlc27_tech_nor_cul_beastmen	nor_mil	28	100	0	0	nor_chaos		0	0	0
+wh3_dlc27_tech_nor_culture_02			1	wh3_dlc27_tech_nor_cul_norsca	nor_mil	27	100	0	0	nor_chaos		0	0	0
+wh3_dlc27_tech_nor_culture_03			1	wh3_dlc27_tech_nor_cul_chaos	nor_mil	29	100	0	0	nor_chaos		0	0	0
+wh3_dlc27_tech_nor_culture_04			0	wh3_dlc27_tech_nor_cul_khorne	nor_mil	28	100	0	0	nor_chaos		0	-132	0
+wh3_dlc27_tech_nor_culture_05			0	wh3_dlc27_tech_nor_cul_nurgle	nor_mil	30	100	0	0	nor_chaos		0	-132	0
+wh3_dlc27_tech_nor_culture_06			0	wh3_dlc27_tech_nor_cul_tzeentch	nor_mil	29	100	0	0	nor_chaos		0	-132	0
+wh3_dlc27_tech_nor_culture_07			0	wh3_dlc27_tech_nor_cul_slaanesh	nor_mil	27	100	0	0	nor_chaos		0	-132	0
+wh3_dlc27_tech_nor_culture_08			3	wh3_main_ie_tech_nor_darklands_hate_chaos_dwarfs	nor_mil	30	100	0	0	nor_east		0	100	0
+wh3_dlc27_tech_nor_culture_09			5	wh3_main_ie_tech_nor_darklands_hate_cathay	nor_mil	30	100	0	0	nor_east		0	100	0
+wh3_dlc27_tech_nor_culture_10			7	wh3_main_ie_tech_nor_darklands_hate_ogre_kingdoms	nor_mil	30	100	0	0	nor_east		0	100	0
+wh3_dlc27_tech_nor_culture_11			3	wh_dlc08_tech_nor_nw_02	nor_mil	26	100	0	0	nor_west		0	-100	0
+wh3_dlc27_tech_nor_culture_12			6	wh_dlc08_tech_nor_nw_20	nor_mil	26	100	0	0	nor_west		0	-100	-25
+wh3_dlc27_tech_nor_culture_13			4	wh_dlc08_tech_nor_other_16	nor_mil	28	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_culture_14			7	wh_dlc08_tech_nor_nw_10	nor_mil	27	100	0	0	nor_south		0	0	0
+wh3_dlc27_tech_nor_culture_15			4	wh_dlc08_tech_nor_nw_04	nor_mil	26	100	0	0	nor_west		0	-100	25
+wh3_dlc27_tech_nor_culture_16			3	wh_dlc08_tech_nor_other_14	nor_mil	28	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_culture_17			7	wh_dlc08_tech_nor_nw_06	nor_mil	26	100	0	0	nor_west		0	-100	0
+wh3_dlc27_tech_nor_culture_18			7	wh_dlc08_tech_nor_nw_08	nor_mil	28	100	0	0	nor_south		0	0	0
+wh3_dlc27_tech_nor_culture_19			7	wh_dlc08_tech_nor_other_18	nor_mil	29	100	0	0	nor_south		0	0	0
+wh3_dlc27_tech_nor_culture_20			4	wh_dlc08_tech_nor_other_20	nor_mil	27	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_culture_21			3	wh3_main_ie_tech_nor_oldworld_hate_kislev	nor_mil	29	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_culture_22			4	wh_dlc08_tech_nor_other_11	nor_mil	29	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_culture_23			3	wh_dlc08_tech_nor_other_07	nor_mil	27	100	0	0	nor_middle		0	0	25
+wh3_dlc27_tech_nor_general_01			5	wh3_dlc27_tech_nor_mil_rally_tribes	nor_mil	6	600	0	0			1	0	-23
+wh3_dlc27_tech_nor_general_02			5	wh3_main_ie_tech_nor_oldworld_kislev_capital	nor_mil	8	700	0	0			1	0	-23
+wh3_dlc27_tech_nor_heroes_01			4	wh3_dlc27_tech_nor_ship_feasting	nor_mil	7	600	0	0			0	0	-23
+wh3_dlc27_tech_nor_heroes_02			3	wh_dlc08_tech_nor_nw_03	nor_mil	7	600	0	0			0	0	-23
+wh3_dlc27_tech_nor_heroes_03			2	wh_dlc08_tech_nor_creatures_03	nor_mil	7	700	0	0			0	0	-23
+wh3_dlc27_tech_nor_heroes_04			6	wh3_dlc27_tech_nor_ship_potions	nor_mil	7	600	0	0			0	0	-23
+wh3_dlc27_tech_nor_heroes_05			7	wh3_dlc27_tech_nor_ship_shamans	nor_mil	7	600	0	0			0	0	-23
+wh3_dlc27_tech_nor_heroes_06			8	wh3_dlc27_tech_nor_mil_regenerating	nor_mil	7	700	0	0			0	0	-23
+wh3_dlc27_tech_nor_monsters_01			9	wh3_dlc27_tech_nor_ship_taming	nor_mil	1	200	0	0			0	0	-63
+wh3_dlc27_tech_nor_monsters_02			8	wh_dlc08_tech_nor_creatures_05	nor_mil	2	400	0	0			0	0	-40
+wh3_dlc27_tech_nor_monsters_03			8	wh_dlc08_tech_nor_creatures_01	nor_mil	3	500	0	0			0	0	-40
+wh3_dlc27_tech_nor_monsters_04			9	wh3_dlc27_tech_nor_mil_great_deal	nor_mil	2	400	0	0			0	0	-20
+wh3_dlc27_tech_nor_monsters_05			9	wh3_dlc27_tech_nor_ship_lumbering	nor_mil	3	500	0	0			0	0	-20
+wh3_dlc27_tech_nor_monsters_06			9	wh3_dlc27_tech_nor_mil_hardened_tusks	nor_mil	4	600	0	0			1	0	-63
+wh3_dlc27_tech_nor_monsters_07			9	wh_dlc08_tech_nor_creatures_07	nor_mil	5	600	0	0			0	0	-63
+wh3_dlc27_tech_sla_bot_1			2	wh3_dlc27_tech_sla_staunch_fighters	sla_mil	20	200	0	0			0	100	20
+wh3_dlc27_tech_sla_bot_1_1			2	wh3_main_tech_sla_4_4	sla_mil	21	400	0	0			0	100	20
+wh3_dlc27_tech_sla_bot_1_2			2	wh3_dlc27_tech_sla_marvelous_executioners	sla_mil	22	500	0	0			0	100	20
+wh3_dlc27_tech_sla_bot_1_3			3	wh3_main_tech_sla_4_5	sla_mil	21	400	0	0			0	100	80
+wh3_dlc27_tech_sla_bot_1_4			3	wh3_dlc27_tech_sla_riders_of_hell	sla_mil	22	500	0	0			0	100	80
+wh3_dlc27_tech_sla_bot_2			3	wh3_dlc27_tech_sla_madness_and_mutation	sla_mil	23	400	0	0			0	100	20
+wh3_dlc27_tech_sla_bot_2_1			2	wh3_dlc27_tech_sla_blasphemous_blessings	sla_mil	25	500	0	0			0	50	80
+wh3_dlc27_tech_sla_bot_2_2			3	wh3_dlc27_tech_sla_champions_of_anguish	sla_mil	25	500	0	0			0	50	100
+wh3_dlc27_tech_sla_bot_2_3			4	wh3_dlc27_tech_sla_immense_force	sla_mil	25	500	0	0			0	50	120
+wh3_dlc27_tech_sla_bot_3			3	wh3_dlc27_tech_sla_mortal_acolytes	sla_mil	26	600	0	0			0	100	100
+wh3_dlc27_tech_sla_dechala_6_1		wh3_dlc27_sla_the_tormentors	4	wh3_dlc27_tech_sla_grasp_of_servitude	sla_mil	3	600	0	0	sla_6_dechala		0	-350	0
+wh3_dlc27_tech_sla_dechala_6_2		wh3_dlc27_sla_the_tormentors	4	wh3_dlc27_tech_sla_caress_of_slaanesh	sla_mil	1	600	0	0	sla_6_dechala		0	-100	0
+wh3_dlc27_tech_sla_dechala_6_3		wh3_dlc27_sla_the_tormentors	3	wh3_dlc27_tech_sla_dark_domination	sla_mil	2	600	0	0	sla_6_dechala		0	-200	-40
+wh3_dlc27_tech_sla_dechala_6_4		wh3_dlc27_sla_the_tormentors	2	wh3_dlc27_tech_sla_dominate_units	sla_mil	2	600	0	0	sla_6_dechala		0	-200	-50
+wh3_dlc27_tech_sla_dechala_6_5		wh3_dlc27_sla_the_tormentors	1	wh3_dlc27_tech_sla_in_praise_of_slaanesh	sla_mil	2	600	0	0	sla_6_dechala		0	-200	-60
+wh3_dlc27_tech_sla_dechala_6_6		wh3_dlc27_sla_the_tormentors	0	wh3_dlc27_tech_sla_daemonic_attraction	sla_mil	1	600	0	0	sla_6_dechala		4	-100	-100
+wh3_dlc27_tech_sla_end_1			0	wh3_main_tech_sla_6_5	sla_mil	28	600	0	0	sla_7		1	-80	0
+wh3_dlc27_tech_sla_end_2			0	wh3_main_tech_sla_6_2	sla_mil	29	600	0	0	sla_7		1	-80	0
+wh3_dlc27_tech_sla_end_3			1	wh3_main_tech_sla_6_6	sla_mil	28	600	0	0	sla_7		1	-80	30
+wh3_dlc27_tech_sla_end_4			1	wh3_main_tech_sla_6_1	sla_mil	29	600	0	0	sla_7		1	-80	30
+wh3_dlc27_tech_sla_end_5			2	wh3_main_tech_sla_6_4	sla_mil	28	600	0	0	sla_7		1	-80	60
+wh3_dlc27_tech_sla_end_6			2	wh3_main_tech_sla_6_3	sla_mil	29	600	0	0	sla_7		1	-80	60
+wh3_dlc27_tech_sla_masque_6_1		wh3_dlc27_sla_masque_of_slaanesh	4	wh3_main_tech_sla_1_2	sla_mil	3	600	0	0	sla_6_masque		0	-350	0
+wh3_dlc27_tech_sla_masque_6_2		wh3_dlc27_sla_masque_of_slaanesh	4	wh3_dlc27_tech_sla_enticing_visage	sla_mil	1	600	0	0	sla_6_masque		0	-100	0
+wh3_dlc27_tech_sla_masque_6_3		wh3_dlc27_sla_masque_of_slaanesh	3	wh3_dlc27_tech_sla_changing_the_feet	sla_mil	2	600	0	0	sla_6_masque		0	-200	-40
+wh3_dlc27_tech_sla_masque_6_4		wh3_dlc27_sla_masque_of_slaanesh	2	wh3_dlc27_tech_sla_eternal_commitement	sla_mil	2	600	0	0	sla_6_masque		0	-200	-50
+wh3_dlc27_tech_sla_masque_6_5		wh3_dlc27_sla_masque_of_slaanesh	1	wh3_dlc27_tech_sla_incessant_dance	sla_mil	2	600	0	0	sla_6_masque		0	-200	-60
+wh3_dlc27_tech_sla_masque_6_6		wh3_dlc27_sla_masque_of_slaanesh	0	wh3_dlc27_tech_sla_enthusiastic_devotees	sla_mil	1	600	0	0	sla_6_masque		0	-100	-100
+wh3_dlc27_tech_sla_mid_1			1	wh3_dlc27_tech_sla_eternal_agony	sla_mil	24	500	0	0			0	50	30
+wh3_dlc27_tech_sla_mid_2			1	wh3_main_tech_sla_2_2	sla_mil	25	500	0	0			0	50	30
+wh3_dlc27_tech_sla_mid_3			1	wh3_dlc27_tech_sla_dazzling_sturdiness	sla_mil	26	500	0	0			0	100	30
+wh3_dlc27_tech_sla_top_1			1	wh3_dlc27_tech_sla_the_princes_protection	sla_mil	20	200	0	0			0	100	-20
+wh3_dlc27_tech_sla_top_1_1			0	wh3_main_tech_sla_5_5	sla_mil	21	400	0	0			0	100	-80
+wh3_dlc27_tech_sla_top_1_2			0	wh3_main_tech_sla_5_4	sla_mil	22	500	0	0			0	100	-80
+wh3_dlc27_tech_sla_top_1_3			1	wh3_dlc27_tech_sla_instinctive_reactions	sla_mil	21	400	0	0			0	100	-20
+wh3_dlc27_tech_sla_top_1_4			1	wh3_main_tech_sla_5_3	sla_mil	22	500	0	0			0	100	-20
+wh3_dlc27_tech_sla_top_2			0	wh3_dlc27_tech_sla_fiends_of_torment	sla_mil	23	400	0	0			0	100	-20
+wh3_dlc27_tech_sla_top_2_1			-2	wh3_dlc27_tech_sla_warp_metal_hulks	sla_mil	25	500	0	0			0	50	-60
+wh3_dlc27_tech_sla_top_2_2			-1	wh3_dlc27_tech_sla_seekers_of_pain_and_pleasure	sla_mil	25	500	0	0			0	50	-40
+wh3_dlc27_tech_sla_top_2_3			0	wh3_dlc27_tech_sla_unending_depravity	sla_mil	25	500	0	0			0	50	-20
+wh3_dlc27_tech_sla_top_3			-1	wh3_dlc27_tech_sla_daemonic_wave	sla_mil	26	600	0	0			0	100	-40
+wh3_main_chs_belakor_kho_0			0	wh3_dlc20_chs_kho_shared_gift_upgrade_authority	chs_mil_belakor	1	400	0	0	chs_kho		0	0	0
+wh3_main_chs_belakor_kho_1			0	wh3_dlc20_chs_kho_shared_gift_upgrade_corruption	chs_mil_belakor	2	400	0	0	chs_kho		0	0	0
+wh3_main_chs_belakor_kho_2			1	wh3_dlc20_chs_kho_shared_gift_upgrade_diplomacy	chs_mil_belakor	1	400	0	0	chs_kho		0	0	0
+wh3_main_chs_belakor_kho_3			1	wh3_dlc20_chs_kho_shared_gift_upgrade_summons	chs_mil_belakor	2	400	0	0	chs_kho		0	0	0
+wh3_main_chs_belakor_kho_final			0	wh3_dlc20_chs_kho_warriors_gift_slot_2	chs_mil_belakor	0	800	0	0			3	0	0
+wh3_main_chs_belakor_kho_start		wh3_main_chs_shadow_legion	0	wh3_main_chs_belakor_1	chs_mil_belakor	3	800	0	0			0	0	0
+wh3_main_chs_belakor_nur_0			5	wh3_dlc20_chs_nur_shared_gift_upgrade_authority	chs_mil_belakor	1	400	0	0	chs_nur		0	0	0
+wh3_main_chs_belakor_nur_1			5	wh3_dlc20_chs_nur_shared_gift_upgrade_corruption	chs_mil_belakor	2	400	0	0	chs_nur		0	0	0
+wh3_main_chs_belakor_nur_2			6	wh3_dlc20_chs_nur_shared_gift_upgrade_diplomacy	chs_mil_belakor	1	400	0	0	chs_nur		0	0	0
+wh3_main_chs_belakor_nur_3			6	wh3_dlc20_chs_nur_shared_gift_upgrade_summons	chs_mil_belakor	2	400	0	0	chs_nur		0	0	0
+wh3_main_chs_belakor_nur_final			6	wh3_dlc20_chs_nur_warriors_gift_slot_2	chs_mil_belakor	0	800	0	0			3	0	0
+wh3_main_chs_belakor_nur_start		wh3_main_chs_shadow_legion	6	wh3_main_chs_belakor_2	chs_mil_belakor	3	800	0	0			0	0	0
+wh3_main_chs_belakor_sla_0			5	wh3_dlc20_chs_sla_shared_gift_upgrade_authority	chs_mil_belakor	10	400	0	0	chs_sla		0	0	0
+wh3_main_chs_belakor_sla_1			5	wh3_dlc20_chs_sla_shared_gift_upgrade_corruption	chs_mil_belakor	11	400	0	0	chs_sla		0	0	0
+wh3_main_chs_belakor_sla_2			6	wh3_dlc20_chs_sla_shared_gift_upgrade_diplomacy	chs_mil_belakor	10	400	0	0	chs_sla		0	0	0
+wh3_main_chs_belakor_sla_3			6	wh3_dlc20_chs_sla_shared_gift_upgrade_summons	chs_mil_belakor	11	400	0	0	chs_sla		0	0	0
+wh3_main_chs_belakor_sla_final			6	wh3_dlc20_chs_sla_warriors_gift_slot_2	chs_mil_belakor	12	800	0	0			3	0	0
+wh3_main_chs_belakor_sla_start		wh3_main_chs_shadow_legion	6	wh3_main_chs_belakor_4	chs_mil_belakor	9	800	0	0			0	0	0
+wh3_main_chs_belakor_tze_0			0	wh3_dlc20_chs_tze_shared_gift_upgrade_authority	chs_mil_belakor	10	400	0	0	chs_tze		0	0	0
+wh3_main_chs_belakor_tze_1			0	wh3_dlc20_chs_tze_shared_gift_upgrade_corruption	chs_mil_belakor	11	400	0	0	chs_tze		0	0	0
+wh3_main_chs_belakor_tze_2			1	wh3_dlc20_chs_tze_shared_gift_upgrade_diplomacy	chs_mil_belakor	10	400	0	0	chs_tze		0	0	0
+wh3_main_chs_belakor_tze_3			1	wh3_dlc20_chs_tze_shared_gift_upgrade_summons	chs_mil_belakor	11	400	0	0	chs_tze		0	0	0
+wh3_main_chs_belakor_tze_final			0	wh3_dlc20_chs_tze_warriors_gift_slot_2	chs_mil_belakor	12	800	0	0			3	0	0
+wh3_main_chs_belakor_tze_start		wh3_main_chs_shadow_legion	0	wh3_main_chs_belakor_3	chs_mil_belakor	9	800	0	0			0	0	0
+wh3_main_chs_belakor_und_0			1	wh3_dlc20_chs_und_shared_building	chs_mil_belakor	6	400	0	0			0	0	0
+wh3_main_chs_belakor_und_1			2	wh3_dlc20_chs_und_shared_vassals	chs_mil_belakor	5	400	0	0			1	0	0
+wh3_main_chs_belakor_und_10			4	wh3_dlc20_chs_und_shared_movement	chs_mil_belakor	7	400	0	0			1	0	0
+wh3_main_chs_belakor_und_11			5	wh3_dlc20_chs_und_shared_knights	chs_mil_belakor	6	400	0	0			0	0	0
+wh3_main_chs_belakor_und_12			-1	wh3_dlc20_chs_und_shared_gift_slot_1	chs_mil_belakor	6	800	0	0			0	0	0
+wh3_main_chs_belakor_und_13			7	wh3_dlc20_chs_und_shared_gift_slot_2	chs_mil_belakor	6	800	0	0			0	0	0
+wh3_main_chs_belakor_und_14			1	wh3_dlc20_chs_und_shared_marks_khorne_belakor	chs_mil_belakor	4	400	0	0			1	0	0
+wh3_main_chs_belakor_und_15			1	wh3_dlc20_chs_und_shared_marks_tzeentch_belakor	chs_mil_belakor	8	400	0	0			1	0	0
+wh3_main_chs_belakor_und_16			5	wh3_dlc20_chs_und_shared_marks_nurgle_belakor	chs_mil_belakor	4	400	0	0			1	0	0
+wh3_main_chs_belakor_und_17			5	wh3_dlc20_chs_und_shared_marks_slaanesh_belakor	chs_mil_belakor	8	400	0	0			1	0	0
+wh3_main_chs_belakor_und_18			3	wh3_dlc20_chs_und_warriors_hellcannons	chs_mil_belakor	3	400	0	0			0	0	0
+wh3_main_chs_belakor_und_19			3	wh3_dlc20_chs_und_shared_monsters	chs_mil_belakor	9	400	0	0			0	0	0
+wh3_main_chs_belakor_und_2			2	wh3_dlc20_chs_und_shared_diplomacy	chs_mil_belakor	6	400	0	0			0	0	0
+wh3_main_chs_belakor_und_20			3	wh3_dlc20_chs_und_warriors_warmachines	chs_mil_belakor	2	400	0	0			0	0	0
+wh3_main_chs_belakor_und_21			3	wh3_dlc20_chs_und_warriors_shaggoths	chs_mil_belakor	10	400	0	0			0	0	0
+wh3_main_chs_belakor_und_3			2	wh3_dlc20_chs_und_shared_souls	chs_mil_belakor	7	400	0	0			1	0	0
+wh3_main_chs_belakor_und_4			3	wh3_dlc20_chs_und_shared_daemonic_mounts	chs_mil_belakor	4	400	0	0			0	0	0
+wh3_main_chs_belakor_und_5			3	wh3_dlc20_chs_und_shared_chariots	chs_mil_belakor	5	400	0	0			0	0	0
+wh3_main_chs_belakor_und_6			3	wh3_dlc20_chs_und_shared_mutants	chs_mil_belakor	7	400	0	0			0	0	0
+wh3_main_chs_belakor_und_7			3	wh3_dlc20_chs_und_shared_beasts	chs_mil_belakor	8	400	0	0			0	0	0
+wh3_main_chs_belakor_und_8			4	wh3_dlc20_chs_und_shared_upgrades	chs_mil_belakor	5	400	0	0			1	0	0
+wh3_main_chs_belakor_und_9			4	wh3_dlc20_chs_und_shared_chosen	chs_mil_belakor	6	400	0	0			0	0	0
+wh3_main_chs_belakor_und_centre			3	wh3_dlc20_chs_und_shared_marauders	chs_mil_belakor	6	300	0	0			0	0	0
+wh3_main_ksl_g1_0_0			0	wh3_main_tech_ksl_2_06	ksl_mil	0	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_0_1			0	wh3_main_tech_ksl_2_09	ksl_mil	1	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_0_2			0	wh3_main_tech_ksl_4_10	ksl_mil	2	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_1_0			1	wh3_main_tech_ksl_4_04	ksl_mil	0	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_1_1			1	wh3_main_tech_ksl_1_01	ksl_mil	1	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_1_2			1	wh3_main_tech_ksl_1_08	ksl_mil	2	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_2_0			2	wh3_main_tech_ksl_2_10	ksl_mil	0	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_2_1			2	wh3_main_tech_ksl_2_13	ksl_mil	1	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_2_2			2	wh3_main_tech_ksl_g1_n2	ksl_mil	2	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_3_0			3	wh3_main_tech_ksl_3_11	ksl_mil	0	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g1_3_1			3	wh3_main_tech_ksl_g1_n3	ksl_mil	1	300	0	0	ksl_land		2	150	0
+wh3_main_ksl_g1_3_2			3	wh3_main_tech_ksl_4_12	ksl_mil	2	300	0	0	ksl_land		0	150	0
+wh3_main_ksl_g2_0_1			0	wh3_main_tech_ksl_3_09	ksl_mil	10	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_0_2			0	wh3_main_tech_ksl_1_11	ksl_mil	11	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_0_3			0	wh3_main_tech_ksl_1_02	ksl_mil	12	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_0_4			0	wh3_main_tech_ksl_4_15	ksl_mil	13	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_0_5			0	wh3_main_tech_ksl_1_03	ksl_mil	14	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_1_1			1	wh3_main_tech_ksl_2_07	ksl_mil	10	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_1_2			1	wh3_main_tech_ksl_3_08	ksl_mil	11	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_1_3			1	wh3_main_tech_ksl_3_06	ksl_mil	12	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_1_4			1	wh3_main_tech_ksl_4_07	ksl_mil	13	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_1_5			1	wh3_main_tech_ksl_1_07	ksl_mil	14	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_2_1			2	wh3_main_tech_ksl_1_05	ksl_mil	10	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_2_2			2	wh3_main_tech_ksl_2_01	ksl_mil	11	300	0	0	ksl_cultural		0	200	0
+wh3_main_ksl_g2_2_3			2	wh3_main_tech_ksl_4_08	ksl_mil	12	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_2_4			2	wh3_main_tech_ksl_1_10	ksl_mil	13	300	0	0	ksl_military		2	300	0
+wh3_main_ksl_g2_2_5			2	wh3_main_tech_ksl_2_15	ksl_mil	14	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_3_2			3	wh3_main_tech_ksl_g2_n2	ksl_mil	11	300	0	0	ksl_cultural		2	200	50
+wh3_main_ksl_g2_4_3			4	wh3_main_tech_ksl_3_05	ksl_mil	12	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_4_4			4	wh3_main_tech_ksl_3_15	ksl_mil	13	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_4_5			4	wh3_main_tech_ksl_4_13	ksl_mil	14	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_5_3			5	wh3_main_tech_ksl_3_12	ksl_mil	12	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_5_4			5	wh3_main_tech_ksl_1_09	ksl_mil	13	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g2_5_5			5	wh3_main_tech_ksl_2_08	ksl_mil	14	300	0	0	ksl_military		0	300	0
+wh3_main_ksl_g3_0_0			0	wh3_main_tech_ksl_1_06	ksl_mil	20	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_0_1			0	wh3_main_tech_ksl_4_06	ksl_mil	21	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_0_2			0	wh3_main_tech_ksl_g3_n1	ksl_mil	22	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_0_3			0	wh3_main_tech_ksl_4_05	ksl_mil	23	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_0_4			0	wh3_main_tech_ksl_3_04	ksl_mil	24	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_0_5			0	wh3_main_tech_ksl_4_09	ksl_mil	25	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_0_6			0	wh3_main_tech_ksl_2_05	ksl_mil	26	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_1_0			1	wh3_main_tech_ksl_g3_n8	ksl_mil	20	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_1_1			1	wh3_main_tech_ksl_g3_n4	ksl_mil	21	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_1_2			1	wh3_main_tech_ksl_g3_n5	ksl_mil	22	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_1_3			1	wh3_main_tech_ksl_4_02	ksl_mil	23	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_1_4			1	wh3_main_tech_ksl_3_07	ksl_mil	24	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_1_5			1	wh3_main_tech_ksl_2_02	ksl_mil	25	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_1_6			1	wh3_main_tech_ksl_3_02	ksl_mil	26	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_2_0			2	wh3_main_tech_ksl_3_03	ksl_mil	20	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_2_1			2	wh3_main_tech_ksl_g3_n6	ksl_mil	21	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_2_2			2	wh3_main_tech_ksl_g3_n7	ksl_mil	22	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_2_3			2	wh3_main_tech_ksl_2_11	ksl_mil	23	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_2_4			2	wh3_main_tech_ksl_3_10	ksl_mil	24	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_2_5			2	wh3_main_tech_ksl_3_13	ksl_mil	25	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_2_6			2	wh3_main_tech_ksl_2_12	ksl_mil	26	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_3_0			3	wh3_main_tech_ksl_4_03	ksl_mil	20	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_3_1			3	wh3_main_tech_ksl_1_12	ksl_mil	21	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_3_2			3	wh3_main_tech_ksl_4_14	ksl_mil	22	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_3_3			3	wh3_main_tech_ksl_g3_n9	ksl_mil	23	300	0	0	ksl_orthodoxy		0	300	0
+wh3_main_ksl_g3_3_4			3	wh3_main_tech_ksl_3_14	ksl_mil	24	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_3_5			3	wh3_main_tech_ksl_2_04	ksl_mil	25	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_3_6			3	wh3_main_tech_ksl_2_14	ksl_mil	26	300	0	0	ksl_governance		0	400	0
+wh3_main_ksl_g3_4_0			4	wh3_main_tech_ksl_2_03	ksl_mil	20	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_4_1			4	wh3_main_tech_ksl_g3_n10	ksl_mil	21	300	0	0	ksl_ice_court		0	200	0
+wh3_main_ksl_g3_4_3			5	wh3_main_tech_ksl_g3_n11	ksl_mil	23	300	0	0	ksl_orthodoxy		6	300	0
+wh3_main_tech_brt_heraldry_aquitaine			1	wh3_main_tech_brt_heraldry_aquitaine	brt_mil	1	400	0	0			0	0	0
+wh3_main_tech_cth_1			7	wh3_main_tech_cth_1	cth_mil	1	400	0	0			0	110	-34
+wh3_main_tech_cth_10			4	wh3_main_tech_cth_10	cth_mil	11	200	0	0			0	110	0
+wh3_main_tech_cth_11			5	wh3_main_tech_cth_11	cth_mil	4	300	0	0			1	-23	0
+wh3_main_tech_cth_12			2	wh3_main_tech_cth_12	cth_mil	3	700	0	0			0	110	15
+wh3_main_tech_cth_13			1	wh3_main_tech_cth_13	cth_mil	16	300	0	0			0	110	0
+wh3_main_tech_cth_14			2	wh3_main_tech_cth_14	cth_mil	15	400	0	0			0	110	34
+wh3_main_tech_cth_15			8	wh3_main_tech_cth_15	cth_mil	6	300	0	0			0	110	0
+wh3_main_tech_cth_16			1	wh3_main_tech_cth_16	cth_mil	15	400	0	0			0	110	-34
+wh3_main_tech_cth_17			8	wh3_main_tech_cth_17	cth_mil	2	300	0	0			0	110	0
+wh3_main_tech_cth_18			1	wh3_main_tech_cth_18	cth_mil	4	700	0	0			0	110	0
+wh3_main_tech_cth_19			7	wh3_main_tech_cth_19	cth_mil	12	400	0	0			0	110	34
+wh3_main_tech_cth_2			2	wh3_main_tech_cth_2	cth_mil	0	600	0	0			0	110	0
+wh3_main_tech_cth_20			6	wh3_main_tech_cth_20	cth_mil	12	400	0	0			0	110	-34
+wh3_main_tech_cth_21			2	wh3_main_tech_cth_21	cth_mil	5	600	0	0			0	110	15
+wh3_main_tech_cth_22			2	wh3_main_tech_cth_22	cth_mil	7	600	0	0			0	110	0
+wh3_main_tech_cth_23			7	wh3_main_tech_cth_23	cth_mil	4	300	0	0			0	110	-34
+wh3_main_tech_cth_24			2	wh3_main_tech_cth_24	cth_mil	2	600	0	0			0	110	15
+wh3_main_tech_cth_25			2	wh3_main_tech_cth_25	cth_mil	4	700	0	0			0	110	15
+wh3_main_tech_cth_26			4	wh3_main_tech_cth_26	cth_mil	2	600	0	0			0	110	-34
+wh3_main_tech_cth_27			7	wh3_main_tech_cth_27	cth_mil	11	300	0	0			0	110	0
+wh3_main_tech_cth_28			8	wh3_main_tech_cth_28	cth_mil	3	200	0	0			0	110	0
+wh3_main_tech_cth_29			5	wh3_main_tech_cth_29	cth_mil	1	500	0	0			0	110	0
+wh3_main_tech_cth_3			8	wh3_main_tech_cth_3	cth_mil	0	400	0	0			0	110	0
+wh3_main_tech_cth_30			1	wh3_main_tech_cth_30	cth_mil	11	300	0	0			0	110	0
+wh3_main_tech_cth_31			6	wh3_main_tech_cth_31	cth_mil	10	400	0	0			0	110	-34
+wh3_main_tech_cth_32			2	wh3_main_tech_cth_32	cth_mil	12	400	0	0			0	110	34
+wh3_main_tech_cth_33			1	wh3_main_tech_cth_33	cth_mil	12	400	0	0			0	110	-34
+wh3_main_tech_cth_34			6	wh3_main_tech_cth_34	cth_mil	13	600	0	0			0	243	-34
+wh3_main_tech_cth_35			7	wh3_main_tech_cth_35	cth_mil	5	400	0	0			0	110	-34
+wh3_main_tech_cth_36			6	wh3_main_tech_cth_36	cth_mil	15	400	0	0			0	110	-34
+wh3_main_tech_cth_37			7	wh3_main_tech_cth_37	cth_mil	16	300	0	0			0	110	0
+wh3_main_tech_cth_38			0	wh3_main_tech_cth_38	cth_mil	13	800	0	0			0	110	-34
+wh3_main_tech_cth_39			1	wh3_main_tech_cth_39	cth_mil	13	700	0	0			0	110	0
+wh3_main_tech_cth_4			6	wh3_main_tech_cth_4	cth_mil	16	300	0	0			0	110	-34
+wh3_main_tech_cth_40			8	wh3_main_tech_cth_40	cth_mil	13	800	0	0			0	110	34
+wh3_main_tech_cth_41			4	wh3_main_tech_cth_41	cth_mil	7	500	0	0			0	110	0
+wh3_main_tech_cth_42			7	wh3_main_tech_cth_42	cth_mil	14	700	0	0			0	110	0
+wh3_main_tech_cth_43			4	wh3_main_tech_cth_43	cth_mil	15	500	0	0			1	110	0
+wh3_main_tech_cth_44			5	wh3_main_tech_cth_44	cth_mil	6	500	0	0			0	110	0
+wh3_main_tech_cth_45			8	wh3_main_tech_cth_45	cth_mil	7	400	0	0			0	110	0
+wh3_main_tech_cth_46			8	wh3_main_tech_cth_46	cth_mil	5	300	0	0			0	110	0
+wh3_main_tech_cth_47			1	wh3_main_tech_cth_47	cth_mil	14	700	0	0			0	110	0
+wh3_main_tech_cth_48			5	wh3_main_tech_cth_48	cth_mil	2	500	0	0			0	110	0
+wh3_main_tech_cth_49			2	wh3_main_tech_cth_49	cth_mil	11	300	0	0			0	110	34
+wh3_main_tech_cth_5			4	wh3_main_tech_cth_5	cth_mil	5	600	0	0			0	110	-34
+wh3_main_tech_cth_50			0	wh3_main_tech_cth_50	cth_mil	4	800	0	0			1	-23	-34
+wh3_main_tech_cth_51			1	wh3_main_tech_cth_51	cth_mil	3	700	0	0			0	110	0
+wh3_main_tech_cth_52			7	wh3_main_tech_cth_52	cth_mil	13	700	0	0			0	110	0
+wh3_main_tech_cth_53			6	wh3_main_tech_cth_53	cth_mil	0	400	0	0			0	110	0
+wh3_main_tech_cth_54			6	wh3_main_tech_cth_54	cth_mil	11	300	0	0			0	110	-34
+wh3_main_tech_cth_55			7	wh3_main_tech_cth_55	cth_mil	3	300	0	0			0	110	-34
+wh3_main_tech_cth_56			2	wh3_main_tech_cth_56	cth_mil	13	600	0	0			0	243	34
+wh3_main_tech_cth_57			2	wh3_main_tech_cth_57	cth_mil	17	400	0	0			0	110	34
+wh3_main_tech_cth_58			3	wh3_main_tech_cth_58	cth_mil	4	400	0	0			0	-23	34
+wh3_main_tech_cth_59			4	wh3_main_tech_cth_59	cth_mil	13	500	0	0			1	243	0
+wh3_main_tech_cth_6			7	wh3_main_tech_cth_6	cth_mil	2	400	0	0			0	110	-34
+wh3_main_tech_cth_60			4	wh3_main_tech_cth_60	cth_mil	12	500	0	0			1	110	0
+wh3_main_tech_cth_61			7	wh3_main_tech_cth_61	cth_mil	15	400	0	0			0	110	34
+wh3_main_tech_cth_62			0	wh3_main_tech_cth_62	cth_mil	14	800	0	0			0	110	-34
+wh3_main_tech_cth_63			4	wh3_main_tech_cth_63	cth_mil	16	200	0	0			0	110	0
+wh3_main_tech_cth_64			8	wh3_main_tech_cth_64	cth_mil	4	200	0	0			0	110	0
+wh3_main_tech_cth_65			6	wh3_main_tech_cth_65	cth_mil	17	400	0	0			0	110	-34
+wh3_main_tech_cth_66			7	wh3_main_tech_cth_66	cth_mil	6	400	0	0			0	110	-34
+wh3_main_tech_cth_67			2	wh3_main_tech_cth_67	cth_mil	16	300	0	0			0	110	34
+wh3_main_tech_cth_68			6	wh3_main_tech_cth_68	cth_mil	7	400	0	0			0	110	0
+wh3_main_tech_cth_69			5	wh3_main_tech_cth_69	cth_mil	5	500	0	0			0	110	0
+wh3_main_tech_cth_7			4	wh3_main_tech_cth_7	cth_mil	0	500	0	0			0	110	0
+wh3_main_tech_cth_70			8	wh3_main_tech_cth_70	cth_mil	14	800	0	0			0	110	34
+wh3_main_tech_cth_71			4	wh3_main_tech_cth_71	cth_mil	1	400	0	0			0	110	-34
+wh3_main_tech_cth_72			4	wh3_main_tech_cth_72	cth_mil	6	400	0	0			0	110	-34
+wh3_main_tech_cth_8			8	wh3_main_tech_cth_8	cth_mil	1	300	0	0			0	110	0
+wh3_main_tech_cth_9			2	wh3_main_tech_cth_9	cth_mil	10	400	0	0			0	110	34
+wh3_main_tech_emp_divine_mandate_volkmar		wh3_main_emp_cult_of_sigmar	7	wh3_main_tech_emp_divine_mandate_volkmar	emp_civ_reworkd	5	700	0	0	emp_unique_volkmar		0	42	42
+wh3_main_tech_emp_fanatics_decree_volkmar		wh3_main_emp_cult_of_sigmar	6	wh3_main_tech_emp_fanatics_decree_volkmar	emp_civ_reworkd	5	1000	0	0	emp_unique_volkmar		0	42	21
+wh3_main_tech_kho_1_1			5	wh3_main_tech_kho_1_1	kho_mil	5	200	0	0	kho_2		0	200	0
+wh3_main_tech_kho_1_2			2	wh3_main_tech_kho_1_2	kho_mil	2	600	0	0	kho_5		0	50	0
+wh3_main_tech_kho_1_3			5	wh3_main_tech_kho_1_3	kho_mil	2	200	0	0	kho_5		0	50	0
+wh3_main_tech_kho_1_4			4	wh3_main_tech_kho_1_4	kho_mil	1	400	0	0	kho_3		0	0	0
+wh3_main_tech_kho_1_5			7	wh3_main_tech_kho_1_5	kho_mil	16	100	0	0		wh3_dlc26_tech_kho_low	0	0	0
+wh3_main_tech_kho_1_6			2	wh3_main_tech_kho_1_6	kho_mil	5	600	0	0	kho_2		0	200	0
+wh3_main_tech_kho_1_7			7	wh3_main_tech_kho_1_7	kho_mil	11	400	0	0			0	0	0
+wh3_main_tech_kho_1_8			4	wh3_main_tech_kho_1_8	kho_mil	4	400	0	0	kho_8		0	150	0
+wh3_main_tech_kho_2_2			2	wh3_main_tech_kho_2_2	kho_mil	1	600	0	0	kho_3		0	0	0
+wh3_main_tech_kho_2_3			4	wh3_main_tech_kho_2_3	kho_mil	3	400	0	0	kho_1		0	100	0
+wh3_main_tech_kho_2_4			3	wh3_main_tech_kho_2_4	kho_mil	1	100	0	0	kho_3	wh3_dlc26_tech_kho_low	0	0	0
+wh3_main_tech_kho_2_7			5	wh3_main_tech_kho_2_7	kho_mil	17	400	0	0			0	0	0
+wh3_main_tech_kho_2_8			4	wh3_main_tech_kho_2_8	kho_mil	5	400	0	0	kho_2		0	200	0
+wh3_main_tech_kho_3_1			3	wh3_main_tech_kho_3_1	kho_mil	14	200	0	0			0	0	33
+wh3_main_tech_kho_3_2			3	wh3_main_tech_kho_3_2	kho_mil	5	100	0	0	kho_2	wh3_dlc26_tech_kho_low	0	200	0
+wh3_main_tech_kho_3_3			4	wh3_main_tech_kho_3_3	kho_mil	2	400	0	0	kho_5		0	50	0
+wh3_main_tech_kho_3_4			4	wh3_main_tech_kho_3_4	kho_mil	6	400	0	0	kho_4		0	250	0
+wh3_main_tech_kho_3_5			7	wh3_main_tech_kho_3_5	kho_mil	12	100	0	0		wh3_dlc26_tech_kho_low	0	0	0
+wh3_main_tech_kho_3_6			2	wh3_main_tech_kho_3_6	kho_mil	17	400	0	0			0	0	0
+wh3_main_tech_kho_3_7			3	wh3_main_tech_kho_3_7	kho_mil	6	100	0	0	kho_4	wh3_dlc26_tech_kho_low	0	250	0
+wh3_main_tech_kho_3_8			1	wh3_main_tech_kho_3_8	kho_mil	2	800	0	0	kho_5		0	50	0
+wh3_main_tech_kho_4_1			5	wh3_main_tech_kho_4_1	kho_mil	15	400	0	0			0	0	0
+wh3_main_tech_kho_4_2			5	wh3_main_tech_kho_4_2	kho_mil	6	200	0	0	kho_4		0	250	0
+wh3_main_tech_kho_4_3			2	wh3_main_tech_kho_4_3	kho_mil	16	100	0	0		wh3_dlc26_tech_kho_low	0	0	0
+wh3_main_tech_kho_4_4			0	wh3_main_tech_kho_4_4	kho_mil	3	100	0	0	kho_1	wh3_dlc26_tech_kho_high	0	100	0
+wh3_main_tech_kho_4_5			0	wh3_main_tech_kho_4_5	kho_mil	11	400	0	0			0	0	0
+wh3_main_tech_kho_4_6			7	wh3_main_tech_kho_4_6	kho_mil	15	400	0	0			0	0	0
+wh3_main_tech_kho_4_7			0	wh3_main_tech_kho_4_7	kho_mil	17	400	0	0			0	0	0
+wh3_main_tech_kho_4_8			3	wh3_main_tech_kho_4_8	kho_mil	2	100	0	0	kho_5	wh3_dlc26_tech_kho_low	0	50	0
+wh3_main_tech_kho_5_1			0	wh3_main_tech_kho_5_1	kho_mil	14	100	0	0		wh3_dlc26_tech_kho_high	0	0	-20
+wh3_main_tech_kho_5_2			0	wh3_main_tech_kho_5_2	kho_mil	4	100	0	0	kho_8	wh3_dlc26_tech_kho_high	0	150	0
+wh3_main_tech_kho_5_4			5	wh3_main_tech_kho_5_4	kho_mil	3	200	0	0	kho_1		0	100	0
+wh3_main_tech_kho_5_5			0	wh3_main_tech_kho_5_5	kho_mil	5	100	0	0	kho_2	wh3_dlc26_tech_kho_high	0	200	0
+wh3_main_tech_kho_5_6			0	wh3_main_tech_kho_5_6	kho_mil	13	400	0	0			0	0	0
+wh3_main_tech_kho_5_7			1	wh3_main_tech_kho_5_7	kho_mil	5	800	0	0	kho_2		0	200	0
+wh3_main_tech_kho_5_8			0	wh3_main_tech_kho_5_8	kho_mil	2	100	0	0	kho_5	wh3_dlc26_tech_kho_high	0	50	0
+wh3_main_tech_kho_6_1			5	wh3_main_tech_kho_6_1	kho_mil	1	200	0	0	kho_3		0	0	0
+wh3_main_tech_kho_6_2			2	wh3_main_tech_kho_6_2	kho_mil	12	100	0	0		wh3_dlc26_tech_kho_low	0	0	0
+wh3_main_tech_kho_6_3			1	wh3_main_tech_kho_6_3	kho_mil	1	800	0	0	kho_3		0	0	0
+wh3_main_tech_kho_6_4			7	wh3_main_tech_kho_6_4	kho_mil	17	400	0	0			0	0	0
+wh3_main_tech_kho_6_5			0	wh3_main_tech_kho_6_5	kho_mil	6	100	0	0	kho_4	wh3_dlc26_tech_kho_high	0	250	0
+wh3_main_tech_kho_6_6			1	wh3_main_tech_kho_6_6	kho_mil	4	800	0	0	kho_8		0	150	0
+wh3_main_tech_kho_6_7			0	wh3_main_tech_kho_6_7	kho_mil	1	100	0	0	kho_3	wh3_dlc26_tech_kho_high	0	0	0
+wh3_main_tech_kho_8_1			5	wh3_main_tech_kho_8_1	kho_mil	11	400	0	0			0	0	0
+wh3_main_tech_kho_8_2			0	wh3_main_tech_kho_8_2	kho_mil	15	400	0	0			0	0	0
+wh3_main_tech_kho_8_3			2	wh3_main_tech_kho_8_3	kho_mil	4	600	0	0	kho_8		0	150	0
+wh3_main_tech_kho_8_4			3	wh3_main_tech_kho_8_4	kho_mil	3	100	0	0	kho_1	wh3_dlc26_tech_kho_low	0	100	0
+wh3_main_tech_kho_8_5			1	wh3_main_tech_kho_8_5	kho_mil	3	800	0	0	kho_1		0	100	0
+wh3_main_tech_kho_8_6			1	wh3_main_tech_kho_8_6	kho_mil	6	800	0	0	kho_4		0	250	0
+wh3_main_tech_kho_8_7			2	wh3_main_tech_kho_8_7	kho_mil	11	400	0	0			0	0	0
+wh3_main_tech_kho_8_8			2	wh3_main_tech_kho_8_8	kho_mil	3	600	0	0	kho_1		0	100	0
+wh3_main_tech_ksl_1_1_prologue			1	wh3_main_tech_ksl_1_1_prologue	ksl_mil_pro	0	400	0	0	ksl_1_prologue		0	0	0
+wh3_main_tech_ksl_1_2_prologue			1	wh3_main_tech_ksl_1_5_prologue	ksl_mil_pro	1	400	0	0	ksl_1_prologue		0	0	0
+wh3_main_tech_ksl_1_3_prologue			2	wh3_main_tech_ksl_1_3_prologue	ksl_mil_pro	0	400	0	0	ksl_1_prologue		0	0	0
+wh3_main_tech_ksl_1_4_prologue			2	wh3_main_tech_ksl_1_6_prologue	ksl_mil_pro	1	400	0	0	ksl_1_prologue		0	0	0
+wh3_main_tech_ksl_2_1_prologue			2	wh3_main_tech_ksl_2_1_prologue	ksl_mil_pro	3	400	0	0	ksl_2_prologue		0	0	0
+wh3_main_tech_ksl_2_2_prologue			1	wh3_main_tech_ksl_2_2_prologue	ksl_mil_pro	4	400	0	0	ksl_2_prologue		1	0	0
+wh3_main_tech_ksl_2_3_prologue			1	wh3_main_tech_ksl_2_3_prologue	ksl_mil_pro	5	400	0	0	ksl_2_prologue		2	0	0
+wh3_main_tech_ksl_2_4_prologue			2	wh3_main_tech_ksl_2_4_prologue	ksl_mil_pro	4	400	0	0	ksl_2_prologue		1	0	0
+wh3_main_tech_ksl_2_5_prologue			2	wh3_main_tech_ksl_2_5_prologue	ksl_mil_pro	5	400	0	0	ksl_2_prologue		2	0	0
+wh3_main_tech_ksl_2_6_prologue			3	wh3_main_tech_ksl_2_6_prologue	ksl_mil_pro	4	400	0	0	ksl_2_prologue		1	0	0
+wh3_main_tech_ksl_2_7_prologue			3	wh3_main_tech_ksl_2_7_prologue	ksl_mil_pro	5	400	0	0	ksl_2_prologue		2	0	0
+wh3_main_tech_ksl_3_10_prologue			8	wh3_main_tech_ksl_3_10_prologue	ksl_mil_pro	2	400	0	0	ksl_3_prologue		1	0	0
+wh3_main_tech_ksl_3_11_prologue			8	wh3_main_tech_ksl_3_11_prologue	ksl_mil_pro	3	400	0	0	ksl_3_prologue		2	0	0
+wh3_main_tech_ksl_3_1_prologue			6	wh3_main_tech_ksl_3_1_prologue	ksl_mil_pro	1	400	0	0	ksl_3_prologue		0	0	0
+wh3_main_tech_ksl_3_2_prologue			5	wh3_main_tech_ksl_3_2_prologue	ksl_mil_pro	2	400	0	0	ksl_3_prologue		1	0	0
+wh3_main_tech_ksl_3_3_prologue			5	wh3_main_tech_ksl_3_3_prologue	ksl_mil_pro	3	400	0	0	ksl_3_prologue		2	0	0
+wh3_main_tech_ksl_3_4_prologue			5	wh3_main_tech_ksl_3_4_prologue	ksl_mil_pro	4	400	0	0	ksl_3_prologue		3	0	0
+wh3_main_tech_ksl_3_5_prologue			6	wh3_main_tech_ksl_3_5_prologue	ksl_mil_pro	2	400	0	0	ksl_3_prologue		1	0	0
+wh3_main_tech_ksl_3_6_prologue			6	wh3_main_tech_ksl_3_6_prologue	ksl_mil_pro	3	400	0	0	ksl_3_prologue		2	0	0
+wh3_main_tech_ksl_3_7_prologue			7	wh3_main_tech_ksl_3_7_prologue	ksl_mil_pro	2	400	0	0	ksl_3_prologue		1	0	0
+wh3_main_tech_ksl_3_8_prologue			7	wh3_main_tech_ksl_3_8_prologue	ksl_mil_pro	3	400	0	0	ksl_3_prologue		2	0	0
+wh3_main_tech_ksl_3_9_prologue			7	wh3_main_tech_ksl_3_9_prologue	ksl_mil_pro	4	400	0	0	ksl_3_prologue		3	0	0
+wh3_main_tech_nur_decay_1			0	wh3_main_tech_nur_decay_1	nur_mil	14	700	0	0			0	0	0
+wh3_main_tech_nur_decay_10			7	wh3_main_tech_nur_decay_10	nur_mil	12	100	0	0		wh3_dlc25_nur_infections_tech_600	0	0	30
+wh3_main_tech_nur_decay_11			7	wh3_main_tech_nur_decay_11	nur_mil	13	400	0	0			0	0	0
+wh3_main_tech_nur_decay_12			8	wh3_main_tech_nur_decay_12	nur_mil	11	500	0	0			0	0	0
+wh3_main_tech_nur_decay_13			8	wh3_main_tech_nur_decay_13	nur_mil	13	500	0	0			0	0	0
+wh3_main_tech_nur_decay_14			9	wh3_main_tech_nur_decay_14	nur_mil	12	700	0	0			0	0	0
+wh3_main_tech_nur_decay_15			6	wh3_main_tech_nur_decay_15	nur_mil	16	300	0	0			0	0	0
+wh3_main_tech_nur_decay_16			7	wh3_main_tech_nur_decay_16	nur_mil	15	400	0	0			0	0	0
+wh3_main_tech_nur_decay_17			7	wh3_main_tech_nur_decay_17	nur_mil	16	100	0	0		wh3_dlc25_nur_infections_tech_600	0	0	30
+wh3_main_tech_nur_decay_18			7	wh3_main_tech_nur_decay_18	nur_mil	17	400	0	0			0	0	0
+wh3_main_tech_nur_decay_19			8	wh3_main_tech_nur_decay_19	nur_mil	15	500	0	0			0	0	0
+wh3_main_tech_nur_decay_2			1	wh3_main_tech_nur_decay_2	nur_mil	13	500	0	0			0	0	0
+wh3_main_tech_nur_decay_20			8	wh3_main_tech_nur_decay_20	nur_mil	17	500	0	0			0	0	0
+wh3_main_tech_nur_decay_21			9	wh3_main_tech_nur_decay_21	nur_mil	16	700	0	0			0	0	0
+wh3_main_tech_nur_decay_22			5	wh3_main_tech_nur_decay_22	nur_mil	14	200	0	0			0	0	0
+wh3_main_tech_nur_decay_3			1	wh3_main_tech_nur_decay_3	nur_mil	14	100	0	0		wh3_dlc25_nur_infections_tech_600	0	0	30
+wh3_main_tech_nur_decay_4			1	wh3_main_tech_nur_decay_4	nur_mil	15	500	0	0			0	0	0
+wh3_main_tech_nur_decay_5			2	wh3_main_tech_nur_decay_5	nur_mil	13	400	0	0			0	0	0
+wh3_main_tech_nur_decay_6			2	wh3_main_tech_nur_decay_6	nur_mil	15	400	0	0			0	0	0
+wh3_main_tech_nur_decay_7			3	wh3_main_tech_nur_decay_7	nur_mil	14	300	0	0			0	0	0
+wh3_main_tech_nur_decay_8			6	wh3_main_tech_nur_decay_8	nur_mil	12	300	0	0			0	0	0
+wh3_main_tech_nur_decay_9			7	wh3_main_tech_nur_decay_9	nur_mil	11	400	0	0			0	0	0
+wh3_main_tech_nur_growth_1			9	wh3_main_tech_nur_growth_1	nur_mil	2	200	0	0			0	135	0
+wh3_main_tech_nur_growth_10			5	wh3_main_tech_nur_growth_10	nur_mil	5	400	0	0			0	0	-35
+wh3_main_tech_nur_growth_11			4	wh3_main_tech_nur_growth_11	nur_mil	4	400	0	0			0	0	-35
+wh3_main_tech_nur_growth_12			4	wh3_main_tech_nur_growth_12	nur_mil	5	400	0	0			0	0	-35
+wh3_main_tech_nur_growth_13			3	wh3_main_tech_nur_growth_13	nur_mil	4	500	0	0			0	0	-35
+wh3_main_tech_nur_growth_14			3	wh3_main_tech_nur_growth_14	nur_mil	5	500	0	0			0	0	-35
+wh3_main_tech_nur_growth_15			4	wh3_main_tech_nur_growth_15	nur_mil	1	700	0	0			0	75	0
+wh3_main_tech_nur_growth_16			4	wh3_main_tech_nur_growth_16	nur_mil	2	700	0	0			0	150	0
+wh3_main_tech_nur_growth_17			2	wh3_main_tech_nur_growth_17	nur_mil	1	600	0	0			0	75	35
+wh3_main_tech_nur_growth_18			2	wh3_main_tech_nur_growth_18	nur_mil	2	600	0	0			0	150	35
+wh3_main_tech_nur_growth_19			1	wh3_main_tech_nur_growth_19	nur_mil	2	600	0	0			0	0	0
+wh3_main_tech_nur_growth_2			9	wh3_main_tech_nur_growth_2	nur_mil	3	300	0	0			0	135	-35
+wh3_main_tech_nur_growth_20			1	wh3_main_tech_nur_growth_20	nur_mil	4	100	0	0		wh3_dlc25_nur_infections_tech_400	0	-90	0
+wh3_main_tech_nur_growth_21			0	wh3_main_tech_nur_growth_21	nur_mil	3	500	0	0			0	-45	-15
+wh3_main_tech_nur_growth_22			4	wh3_main_tech_nur_growth_22	nur_mil	7	700	0	0			0	-150	0
+wh3_main_tech_nur_growth_23			4	wh3_main_tech_nur_growth_23	nur_mil	8	700	0	0			0	-75	0
+wh3_main_tech_nur_growth_24			2	wh3_main_tech_nur_growth_24	nur_mil	7	600	0	0			0	-150	35
+wh3_main_tech_nur_growth_25			2	wh3_main_tech_nur_growth_25	nur_mil	8	600	0	0			0	-75	35
+wh3_main_tech_nur_growth_26			1	wh3_main_tech_nur_growth_26	nur_mil	5	100	0	0		wh3_dlc25_nur_infections_tech_400	0	90	0
+wh3_main_tech_nur_growth_27			1	wh3_main_tech_nur_growth_27	nur_mil	7	600	0	0			0	0	0
+wh3_main_tech_nur_growth_28			0	wh3_main_tech_nur_growth_28	nur_mil	6	500	0	0			0	45	-15
+wh3_main_tech_nur_growth_3			8	wh3_main_tech_nur_growth_3	nur_mil	4	300	0	0			1	135	-15
+wh3_main_tech_nur_growth_4			9	wh3_main_tech_nur_growth_4	nur_mil	6	300	0	0			0	-135	-35
+wh3_main_tech_nur_growth_5			9	wh3_main_tech_nur_growth_5	nur_mil	7	200	0	0			0	-135	0
+wh3_main_tech_nur_growth_6			7	wh3_main_tech_nur_growth_6	nur_mil	4	400	0	0			0	0	-15
+wh3_main_tech_nur_growth_7			7	wh3_main_tech_nur_growth_7	nur_mil	5	400	0	0			0	0	-15
+wh3_main_tech_nur_growth_8			6	wh3_main_tech_nur_growth_8	nur_mil	4	100	0	0		wh3_dlc25_nur_infections_tech_200	1	135	-35
+wh3_main_tech_nur_growth_9			5	wh3_main_tech_nur_growth_9	nur_mil	4	400	0	0			0	0	-35
+wh3_main_tech_sla_1_1			4	wh3_main_tech_sla_1_1	sla_mil	18	600	0	0	sla_1		0	-1350	0
+wh3_main_tech_sla_1_2			4	wh3_dlc27_tech_sla_deviant_authority	sla_mil	16	600	0	0	sla_1		0	-1100	0
+wh3_main_tech_sla_1_3			3	wh3_main_tech_sla_1_5	sla_mil	17	600	0	0	sla_1		0	-1200	-40
+wh3_main_tech_sla_1_4			2	wh3_main_tech_sla_1_4	sla_mil	17	600	0	0	sla_1		0	-1200	-50
+wh3_main_tech_sla_1_5			1	wh3_main_tech_sla_1_3	sla_mil	17	600	0	0	sla_1		0	-1200	-60
+wh3_main_tech_sla_1_6			0	wh3_main_tech_sla_1_6	sla_mil	16	600	0	0	sla_1		0	-1100	-100
+wh3_main_tech_sla_2_1			4	wh3_dlc27_tech_sla_feats_of_cruelty	sla_mil	6	600	0	0	sla_2		0	-550	0
+wh3_main_tech_sla_2_2			4	wh3_dlc27_tech_sla_scent_of_agony	sla_mil	4	600	0	0	sla_2		0	-300	0
+wh3_main_tech_sla_2_3			3	wh3_main_tech_sla_2_5	sla_mil	5	600	0	0	sla_2		0	-400	-40
+wh3_main_tech_sla_2_4			2	wh3_main_tech_sla_2_4	sla_mil	5	600	0	0	sla_2		0	-400	-50
+wh3_main_tech_sla_2_5			1	wh3_main_tech_sla_2_3	sla_mil	5	600	0	0	sla_2		0	-400	-60
+wh3_main_tech_sla_2_6			0	wh3_dlc27_tech_sla_passionate_torment	sla_mil	4	600	0	0	sla_2		0	-300	-100
+wh3_main_tech_sla_3_1			4	wh3_dlc27_tech_sla_sinful_bravery	sla_mil	9	600	0	0	sla_3		0	-750	0
+wh3_main_tech_sla_3_2			4	wh3_main_tech_sla_3_1	sla_mil	7	600	0	0	sla_3		0	-500	0
+wh3_main_tech_sla_3_3			3	wh3_main_tech_sla_3_5	sla_mil	8	600	0	0	sla_3		0	-600	-40
+wh3_main_tech_sla_3_4			2	wh3_main_tech_sla_3_4	sla_mil	8	600	0	0	sla_3		0	-600	-50
+wh3_main_tech_sla_3_5			1	wh3_main_tech_sla_3_3	sla_mil	8	600	0	0	sla_3		0	-600	-60
+wh3_main_tech_sla_3_6			0	wh3_main_tech_sla_3_6	sla_mil	7	600	0	0	sla_3		0	-500	-100
+wh3_main_tech_sla_4_1			4	wh3_main_tech_sla_4_2	sla_mil	12	600	0	0	sla_4		0	-950	0
+wh3_main_tech_sla_4_2			4	wh3_main_tech_sla_3_2	sla_mil	10	600	0	0	sla_4		0	-700	0
+wh3_main_tech_sla_4_3			3	wh3_dlc27_tech_sla_lessons_of_immorality	sla_mil	11	600	0	0	sla_4		0	-800	-40
+wh3_main_tech_sla_4_4			2	wh3_dlc27_tech_sla_depraved_audacity	sla_mil	11	600	0	0	sla_4		0	-800	-50
+wh3_main_tech_sla_4_5			1	wh3_main_tech_sla_4_3	sla_mil	11	600	0	0	sla_4		0	-800	-60
+wh3_main_tech_sla_4_6			0	wh3_main_tech_sla_4_6	sla_mil	10	600	0	0	sla_4		0	-700	-100
+wh3_main_tech_sla_5_1			4	wh3_main_tech_sla_5_2	sla_mil	15	600	0	0	sla_5		0	-1150	0
+wh3_main_tech_sla_5_2			4	wh3_dlc27_tech_sla_lethal_seduction	sla_mil	13	600	0	0	sla_5		0	-900	0
+wh3_main_tech_sla_5_3			3	wh3_dlc27_tech_sla_masterful_beguilement	sla_mil	14	600	0	0	sla_5		0	-1000	-40
+wh3_main_tech_sla_5_4			2	wh3_dlc27_tech_sla_yearning_to_obey	sla_mil	14	600	0	0	sla_5		0	-1000	-50
+wh3_main_tech_sla_5_5			1	wh3_main_tech_sla_5_1	sla_mil	14	600	0	0	sla_5		0	-1000	-60
+wh3_main_tech_sla_5_6			0	wh3_dlc27_tech_sla_inquisitive_servants	sla_mil	13	600	0	0	sla_5		0	-900	-100
+wh3_main_tech_sla_6_1		wh3_main_sla_seducers_of_slaanesh	4	wh3_main_tech_sla_2_6	sla_mil	3	600	0	0	sla_6		0	-350	0
+wh3_main_tech_sla_6_2		wh3_main_sla_seducers_of_slaanesh	4	wh3_main_tech_sla_2_1	sla_mil	1	600	0	0	sla_6		0	-100	0
+wh3_main_tech_sla_6_3		wh3_main_sla_seducers_of_slaanesh	3	wh3_main_tech_sla_1_2	sla_mil	2	600	0	0	sla_6		0	-200	-40
+wh3_main_tech_sla_6_4		wh3_main_sla_seducers_of_slaanesh	2	wh3_main_tech_sla_4_1	sla_mil	2	600	0	0	sla_6		0	-200	-50
+wh3_main_tech_sla_6_5		wh3_main_sla_seducers_of_slaanesh	1	wh3_main_tech_sla_5_6	sla_mil	2	600	0	0	sla_6		0	-200	-60
+wh3_main_tech_sla_6_6		wh3_main_sla_seducers_of_slaanesh	0	wh3_dlc27_tech_sla_delicious_agony	sla_mil	1	600	0	0	sla_6		0	-100	-100
+wh3_main_tech_tmb_faction_child_1			7	wh3_main_tech_tmb_faction_child_1	tmb_mil	0	200	0	0			0	0	0
+wh3_main_tech_tmb_faction_child_2			7	wh3_main_tech_tmb_faction_child_2	tmb_mil	2	200	0	0			0	0	0
+wh3_main_tech_tmb_faction_child_3			7	wh3_main_tech_tmb_faction_child_3	tmb_mil	4	200	0	0			0	0	0
+wh3_main_tech_tmb_faction_child_4			7	wh3_main_tech_tmb_faction_child_4	tmb_mil	6	200	0	0			0	0	0
+wh3_main_tech_tmb_faction_child_5			7	wh3_main_tech_tmb_faction_child_5	tmb_mil	8	200	0	0			0	0	0
+wh3_main_tech_tmb_faction_child_6			7	wh3_main_tech_tmb_faction_child_6	tmb_mil	10	200	0	0			0	0	0
+wh3_main_tech_tmb_patronage_1			9	wh3_main_tech_tmb_patronage_1	tmb_mil	1	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tmb_patronage_2			9	wh3_main_tech_tmb_patronage_2	tmb_mil	3	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tmb_patronage_3			9	wh3_main_tech_tmb_patronage_3	tmb_mil	5	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tmb_patronage_4			9	wh3_main_tech_tmb_patronage_4	tmb_mil	7	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tmb_patronage_5			9	wh3_main_tech_tmb_patronage_5	tmb_mil	9	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tmb_patronage_6			9	wh3_main_tech_tmb_patronage_6	tmb_mil	11	400	0	0		wh3_main_tmb_dynasty_patronage	0	0	0
+wh3_main_tech_tze_0_1			2	wh3_main_tech_tze_0_1	tze_mil	4	600	0	0			0	200	0
+wh3_main_tech_tze_0_2			2	wh3_main_tech_tze_0_2	tze_mil	5	1200	0	0		wh3_dlc24_tze_tech_grimoires_10	0	200	0
+wh3_main_tech_tze_0_3			2	wh3_main_tech_tze_0_3	tze_mil	6	600	0	0			0	200	0
+wh3_main_tech_tze_0_4			3	wh3_main_tech_tze_0_4	tze_mil	4	600	0	0			0	200	0
+wh3_main_tech_tze_0_5			3	wh3_main_tech_tze_0_5	tze_mil	5	600	0	0		wh3_dlc24_tze_tech_grimoires_100	0	200	0
+wh3_main_tech_tze_0_6			3	wh3_main_tech_tze_0_6	tze_mil	6	400	0	0			0	200	0
+wh3_main_tech_tze_0_7			4	wh3_main_tech_tze_0_7	tze_mil	4	400	0	0			0	200	0
+wh3_main_tech_tze_0_8			4	wh3_main_tech_tze_0_8	tze_mil	5	400	0	0		wh3_dlc24_tze_tech_grimoires_25	0	200	0
+wh3_main_tech_tze_0_9			4	wh3_main_tech_tze_0_9	tze_mil	6	400	0	0			0	200	0
+wh3_main_tech_tze_1_1			0	wh3_main_tech_tze_1_1	tze_mil	1	400	0	0		wh3_dlc24_tze_tech_grimoires_50	0	0	0
+wh3_main_tech_tze_1_2			1	wh3_main_tech_tze_1_8	tze_mil	1	400	0	0			0	0	0
+wh3_main_tech_tze_1_3			2	wh3_main_tech_tze_1_9	tze_mil	1	400	0	0		wh3_dlc24_tze_tech_grimoires_100	0	0	0
+wh3_main_tech_tze_1_4			1	wh3_main_tech_tze_1_6	tze_mil	0	400	0	0			0	0	0
+wh3_main_tech_tze_1_5			3	wh3_main_tech_tze_1_2	tze_mil	0	400	0	0			0	0	0
+wh3_main_tech_tze_1_6			3	wh3_main_tech_tze_1_7	tze_mil	1	400	0	0			0	0	0
+wh3_main_tech_tze_1_7			2	wh3_main_tech_tze_1_3	tze_mil	0	400	0	0			0	0	0
+wh3_main_tech_tze_1_8			4	wh3_main_tech_tze_1_5	tze_mil	0	400	0	0		wh3_dlc24_tze_tech_grimoires_30	1	0	0
+wh3_main_tech_tze_1_9			4	wh3_main_tech_tze_1_4	tze_mil	1	400	0	0			0	0	0
+wh3_main_tech_tze_2_1			6	wh3_main_tech_tze_2_1	tze_mil	2	400	0	0			0	100	0
+wh3_main_tech_tze_2_2			3	wh3_main_tech_tze_2_2	tze_mil	3	400	0	0		wh3_dlc24_tze_tech_grimoires_20	0	100	0
+wh3_main_tech_tze_2_3			4	wh3_main_tech_tze_2_9	tze_mil	3	400	0	0		wh3_dlc24_tze_tech_grimoires_50	0	100	0
+wh3_main_tech_tze_2_4			3	wh3_main_tech_tze_2_4	tze_mil	2	400	0	0			0	100	0
+wh3_main_tech_tze_2_5			5	wh3_main_tech_tze_2_5	tze_mil	2	400	0	0			0	100	0
+wh3_main_tech_tze_2_6			5	wh3_main_tech_tze_2_6	tze_mil	3	400	0	0			0	100	0
+wh3_main_tech_tze_2_7			4	wh3_main_tech_tze_2_7	tze_mil	2	400	0	0			0	100	0
+wh3_main_tech_tze_2_8			2	wh3_main_tech_tze_2_8	tze_mil	3	400	0	0			0	100	0
+wh3_main_tech_tze_2_9			6	wh3_main_tech_tze_2_3	tze_mil	3	400	0	0		wh3_dlc24_tze_tech_grimoires_100	0	100	0
+wh3_main_tech_tze_3_1			6	wh3_main_tech_tze_3_7	tze_mil	7	400	0	0		wh3_dlc24_tze_tech_grimoires_100	0	300	0
+wh3_main_tech_tze_3_2			3	wh3_main_tech_tze_3_2	tze_mil	8	400	0	0			1	300	0
+wh3_main_tech_tze_3_3			4	wh3_main_tech_tze_3_3	tze_mil	8	400	0	0		wh3_dlc24_tze_tech_grimoires_20	0	300	0
+wh3_main_tech_tze_3_4			3	wh3_main_tech_tze_3_4	tze_mil	7	400	0	0			0	300	0
+wh3_main_tech_tze_3_5			5	wh3_main_tech_tze_3_1	tze_mil	7	400	0	0			0	300	0
+wh3_main_tech_tze_3_6			5	wh3_main_tech_tze_3_6	tze_mil	8	400	0	0			0	300	0
+wh3_main_tech_tze_3_7			4	wh3_main_tech_tze_3_5	tze_mil	7	400	0	0		wh3_dlc24_tze_tech_grimoires_50	0	300	0
+wh3_main_tech_tze_3_8			2	wh3_main_tech_tze_3_8	tze_mil	8	400	0	0			0	300	0
+wh3_main_tech_tze_3_9			6	wh3_main_tech_tze_3_9	tze_mil	8	400	0	0			0	300	0
+wh3_main_tech_tze_4_1			0	wh3_main_tech_tze_4_9	tze_mil	10	400	0	0		wh3_dlc24_tze_tech_grimoires_50	0	400	0
+wh3_main_tech_tze_4_2			1	wh3_main_tech_tze_4_2	tze_mil	10	400	0	0			0	400	0
+wh3_main_tech_tze_4_3			2	wh3_main_tech_tze_4_3	tze_mil	10	400	0	0			0	400	0
+wh3_main_tech_tze_4_4			1	wh3_main_tech_tze_4_7	tze_mil	9	400	0	0			0	400	0
+wh3_main_tech_tze_4_5			3	wh3_main_tech_tze_4_5	tze_mil	9	400	0	0			0	400	0
+wh3_main_tech_tze_4_6			3	wh3_main_tech_tze_4_6	tze_mil	10	400	0	0			0	400	0
+wh3_main_tech_tze_4_7			2	wh3_main_tech_tze_4_1	tze_mil	9	400	0	0		wh3_dlc24_tze_tech_grimoires_100	0	400	0
+wh3_main_tech_tze_4_8			4	wh3_main_tech_tze_4_8	tze_mil	9	400	0	0			0	400	0
+wh3_main_tech_tze_4_9			4	wh3_main_tech_tze_4_4	tze_mil	10	400	0	0		wh3_dlc24_tze_tech_grimoires_30	1	400	0
+wh_dlc07_tech_brt_chivalry_beastmen_1			6	wh_dlc07_tech_brt_chivalry_beastmen_1	brt_mil	5	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_chaos_1			6	wh_dlc07_tech_brt_chivalry_chaos_1	brt_mil	4	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_dark_elves			7	wh_dlc07_tech_brt_chivalry_dark_elves	brt_mil	4	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_greenskins_1			6	wh_dlc07_tech_brt_chivalry_greenskins_1	brt_mil	1	300	0	0			0	0	0
+wh_dlc07_tech_brt_chivalry_greenskins_2			7	wh_dlc07_tech_brt_chivalry_greenskins_2	brt_mil	1	300	0	0			0	0	0
+wh_dlc07_tech_brt_chivalry_norsca_1			6	wh_dlc07_tech_brt_chivalry_norsca_1	brt_mil	2	300	0	0			0	0	0
+wh_dlc07_tech_brt_chivalry_norsca_2			7	wh_dlc07_tech_brt_chivalry_norsca_2	brt_mil	2	300	0	0			0	0	0
+wh_dlc07_tech_brt_chivalry_skaven			7	wh_dlc07_tech_brt_chivalry_skaven	brt_mil	5	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_tomb_kings			8	wh_dlc07_tech_brt_chivalry_tomb_kings	brt_mil	3	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_vampires_1			6	wh_dlc07_tech_brt_chivalry_vampires_1	brt_mil	3	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_chivalry_wood_elves_1			7	wh_dlc07_tech_brt_chivalry_wood_elves_1	brt_mil	3	300	0	0	brt_chivalry		0	0	0
+wh_dlc07_tech_brt_economy_farm_1			4	wh_dlc07_tech_brt_economy_farm_1	brt_mil	7	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_2			4	wh_dlc07_tech_brt_economy_farm_2	brt_mil	8	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_3			5	wh_dlc07_tech_brt_economy_farm_3	brt_mil	7	1000	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_4			5	wh_dlc07_tech_brt_economy_farm_4	brt_mil	8	1500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_farriers			5	wh_dlc07_tech_brt_economy_farm_farriers	brt_mil	9	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_hay			4	wh_dlc07_tech_brt_economy_farm_hay	brt_mil	9	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_farm_hoods			5	wh_dlc07_tech_brt_economy_farm_hoods	brt_mil	10	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_1			7	wh_dlc07_tech_brt_economy_industry_1	brt_mil	7	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_2			7	wh_dlc07_tech_brt_economy_industry_2	brt_mil	8	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_3			8	wh_dlc07_tech_brt_economy_industry_3	brt_mil	7	1000	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_4			8	wh_dlc07_tech_brt_economy_industry_4	brt_mil	8	1000	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_mines			6	wh_dlc07_tech_brt_economy_industry_mines	brt_mil	9	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_pottery			7	wh_dlc07_tech_brt_economy_industry_pottery	brt_mil	9	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_start			5	wh_dlc07_tech_brt_economy_industry_start	brt_mil	6	100	3000	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_steel			6	wh_dlc07_tech_brt_economy_industry_steel	brt_mil	10	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_swords			7	wh_dlc07_tech_brt_economy_industry_swords	brt_mil	10	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_industry_tournaments			8	wh_dlc07_tech_brt_economy_industry_tournaments	brt_mil	10	1500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_1			1	wh_dlc07_tech_brt_economy_other_1	brt_mil	7	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_2			1	wh_dlc07_tech_brt_economy_other_2	brt_mil	8	600	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_3			0	wh_dlc07_tech_brt_economy_other_3	brt_mil	7	100	2000	0			0	0	0
+wh_dlc07_tech_brt_economy_other_4			0	wh_dlc07_tech_brt_economy_other_4	brt_mil	8	100	2000	0			0	0	0
+wh_dlc07_tech_brt_economy_other_carpenters			1	wh_dlc07_tech_brt_economy_other_carpenters	brt_mil	9	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_draft			2	wh_dlc07_tech_brt_economy_other_draft	brt_mil	9	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_fanaticism			0	wh_dlc07_tech_brt_economy_other_fanaticism	brt_mil	9	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_fletchers			2	wh_dlc07_tech_brt_economy_other_fletchers	brt_mil	10	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_siege			3	wh_dlc07_tech_brt_economy_other_siege	brt_mil	10	1000	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_spears			1	wh_dlc07_tech_brt_economy_other_spears	brt_mil	10	1200	0	0			0	0	0
+wh_dlc07_tech_brt_economy_other_tithes			0	wh_dlc07_tech_brt_economy_other_tithes	brt_mil	10	100	10000	0			0	0	0
+wh_dlc07_tech_brt_economy_start			0	wh_dlc07_tech_brt_economy_start	brt_mil	6	500	0	0			0	0	0
+wh_dlc07_tech_brt_economy_trade_1			2	wh_dlc07_tech_brt_economy_trade_1	brt_mil	7	100	4000	0			0	0	0
+wh_dlc07_tech_brt_economy_trade_2			2	wh_dlc07_tech_brt_economy_trade_2	brt_mil	8	100	8000	0		wh3_main_chivalry_tech_50	0	0	0
+wh_dlc07_tech_brt_heraldry_artois_bord		wh_main_brt_bordeleaux	3	wh_dlc07_tech_brt_heraldry_artois	brt_mil	1	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_artois_bret		wh_main_brt_bretonnia	3	wh_dlc07_tech_brt_heraldry_artois	brt_mil	1	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_artois_carc		wh_main_brt_carcassonne	3	wh_dlc07_tech_brt_heraldry_artois	brt_mil	1	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_bastonne			2	wh_dlc07_tech_brt_heraldry_bastonne	brt_mil	2	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_bordeleaux_bret		wh_main_brt_bretonnia	4	wh_dlc07_tech_brt_heraldry_bordeleaux	brt_mil	1	1000	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_bordeleaux_carc		wh_main_brt_carcassonne	4	wh_dlc07_tech_brt_heraldry_bordeleaux	brt_mil	1	1000	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_bretonnia_bord		wh_main_brt_bordeleaux	4	wh_dlc07_tech_brt_heraldry_bretonnia	brt_mil	1	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_bretonnia_carc		wh_main_brt_carcassonne	3	wh_dlc07_tech_brt_heraldry_bretonnia	brt_mil	2	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_carcassonne_bord		wh_main_brt_bordeleaux	3	wh_dlc07_tech_brt_heraldry_carcassonne	brt_mil	2	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_carcassonne_bret		wh_main_brt_bretonnia	3	wh_dlc07_tech_brt_heraldry_carcassonne	brt_mil	2	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_errantry			2	wh_dlc07_tech_brt_heraldry_errantry	brt_mil	3	400	0	0	brt_heraldry		0	0	0
+wh_dlc07_tech_brt_heraldry_lyonesse			1	wh_dlc07_tech_brt_heraldry_lyonesse	brt_mil	2	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_oversea			1	tech_dlc14_brt_heraldry_oversea_repanse	brt_mil	3	400	0	0	brt_heraldry		0	0	0
+wh_dlc07_tech_brt_heraldry_parravon			2	wh_dlc07_tech_brt_heraldry_parravon	brt_mil	1	400	0	0			0	0	0
+wh_dlc07_tech_brt_heraldry_start			0	wh_dlc07_tech_brt_heraldry_start	brt_mil	0	400	0	0	brt_heraldry		0	0	0
+wh_dlc07_tech_brt_heraldry_unification			4	wh_dlc07_tech_brt_heraldry_unification	brt_mil	2	300	0	0	brt_heraldry		0	0	0
+wh_dlc08_tech_nor_creatures_01			5	wh3_dlc27_tech_nor_mil_nocturnality	nor_mil	1	200	0	0			0	0	-23
+wh_dlc08_tech_nor_creatures_02			4	wh_dlc08_tech_nor_creatures_06	nor_mil	2	400	0	0			0	0	0
+wh_dlc08_tech_nor_creatures_03			4	wh_dlc08_tech_nor_creatures_04	nor_mil	3	500	0	0			0	0	0
+wh_dlc08_tech_nor_creatures_04			5	wh3_dlc27_tech_nor_mil_elder_trolls	nor_mil	2	400	0	0			0	0	20
+wh_dlc08_tech_nor_creatures_05			5	wh3_dlc27_tech_nor_ship_leading	nor_mil	3	500	0	0			0	0	20
+wh_dlc08_tech_nor_creatures_06			5	wh3_dlc27_tech_nor_mil_tough_skin	nor_mil	4	600	0	0			1	0	-23
+wh_dlc08_tech_nor_marauders_01			1	wh_dlc08_tech_nor_creatures_02	nor_mil	1	200	0	0			0	0	17
+wh_dlc08_tech_nor_marauders_02			1	wh_dlc08_tech_nor_marauders_02	nor_mil	4	600	0	0			1	0	17
+wh_dlc08_tech_nor_marauders_03			0	wh_dlc08_tech_nor_marauders_03	nor_mil	2	400	0	0			0	0	40
+wh_dlc08_tech_nor_marauders_04			1	wh_dlc08_tech_nor_marauders_04	nor_mil	2	400	0	0			0	0	60
+wh_dlc08_tech_nor_marauders_05			0	wh_dlc08_tech_nor_marauders_05	nor_mil	3	500	0	0			0	0	40
+wh_dlc08_tech_nor_marauders_06			1	wh_dlc08_tech_nor_marauders_06	nor_mil	3	500	0	0			0	0	60
+wh_dlc08_tech_nor_marauders_07			1	wh_dlc08_tech_nor_other_05	nor_mil	5	600	0	0			0	0	17
+wh_main_tech_dwf_civ_0_2			3	wh_main_tech_dwf_civ_0_2	dwf_mil	1	100	0	0			0	0	0
+wh_main_tech_dwf_civ_1_0			3	wh_main_tech_dwf_civ_3_1	dwf_mil	3	300	0	0			0	-20	0
+wh_main_tech_dwf_civ_1_1			1	wh_main_tech_dwf_civ_7_4	dwf_mil	2	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	0	0
+wh_main_tech_dwf_civ_1_3			0	wh_main_tech_dwf_civ_3_0	dwf_mil	2	500	0	0			0	0	-20
+wh_main_tech_dwf_civ_2_0			1	wh_main_tech_dwf_civ_1_1	dwf_mil	3	400	0	0			0	-20	0
+wh_main_tech_dwf_civ_2_1			0	wh_main_tech_dwf_civ_1_0	dwf_mil	3	400	0	0			0	-20	-20
+wh_main_tech_dwf_civ_2_2			-1	wh_main_tech_dwf_civ_4_4	dwf_mil	3	500	0	0			0	-20	-40
+wh_main_tech_dwf_civ_2_3			1	wh_main_tech_dwf_civ_6_0	dwf_mil	4	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	-40	0
+wh_main_tech_dwf_civ_2_4			0	wh_main_tech_dwf_civ_7_0	dwf_mil	4	500	0	0			0	-40	-20
+wh_main_tech_dwf_civ_3_0			5	wh_main_tech_dwf_civ_7_1	dwf_mil	2	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	0	0
+wh_main_tech_dwf_civ_3_1			6	wh_main_tech_dwf_civ_4_1	dwf_mil	2	500	0	0			0	0	20
+wh_main_tech_dwf_civ_3_3			5	wh_main_tech_dwf_civ_4_2	dwf_mil	3	400	0	0			0	-20	0
+wh_main_tech_dwf_civ_3_4			6	wh_main_tech_dwf_civ_2_0	dwf_mil	3	400	0	0			0	-20	20
+wh_main_tech_dwf_civ_4_0			7	wh_main_tech_dwf_civ_5_2	dwf_mil	3	500	0	0			0	-20	40
+wh_main_tech_dwf_civ_4_1			5	wh_main_tech_dwf_civ_2_1	dwf_mil	4	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	-40	0
+wh_main_tech_dwf_civ_4_2			6	wh_main_tech_dwf_civ_6_1	dwf_mil	4	500	0	0			0	-40	20
+wh_main_tech_dwf_civ_4_4			3	wh_main_tech_dwf_civ_3_2	dwf_mil	6	500	0	0			7	-20	0
+wh_main_tech_dwf_civ_5_0			1	wh_main_tech_dwf_civ_2_2	dwf_mil	5	600	0	0			0	0	0
+wh_main_tech_dwf_civ_5_2			1	wh_main_tech_dwf_civ_2_3	dwf_mil	6	500	0	0			0	-20	0
+wh_main_tech_dwf_civ_5_3			0	wh_main_tech_dwf_civ_3_4	dwf_mil	6	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	-20	-20
+wh_main_tech_dwf_civ_5_4			5	wh_main_tech_dwf_mil_7_4	dwf_mil	5	600	0	0			0	0	0
+wh_main_tech_dwf_civ_6_1			5	wh_main_tech_dwf_civ_3_3	dwf_mil	6	500	0	0			0	-20	0
+wh_main_tech_dwf_civ_6_2			6	wh_main_tech_dwf_civ_1_3	dwf_mil	6	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	-20	20
+wh_main_tech_dwf_civ_6_3			1	wh_main_tech_dwf_civ_6_4	dwf_mil	7	600	0	0			0	-40	0
+wh_main_tech_dwf_civ_6_4			5	wh_main_tech_dwf_civ_5_4	dwf_mil	7	600	0	0			0	-40	0
+wh_main_tech_dwf_civ_6_5			3	wh_main_tech_dwf_civ_7_2	dwf_mil	8	700	0	0			5	0	0
+wh_main_tech_dwf_civ_7_0			2	wh_main_tech_dwf_civ_6_2	dwf_mil	8	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	0	-20
+wh_main_tech_dwf_civ_7_1			3	wh_main_tech_dwf_civ_6_3	dwf_mil	9	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	-20	0
+wh_main_tech_dwf_civ_7_2			4	wh_main_tech_dwf_civ_2_4	dwf_mil	8	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	0	20
+wh_main_tech_dwf_mil_0_2			3	wh_main_tech_dwf_mil_5_1	dwf_mil	11	100	0	0			0	0	0
+wh_main_tech_dwf_mil_1_0			3	wh_main_tech_dwf_mil_1_1	dwf_mil	13	300	0	0			0	-20	0
+wh_main_tech_dwf_mil_1_1			1	wh_main_tech_dwf_mil_2_0	dwf_mil	12	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	0	0
+wh_main_tech_dwf_mil_1_3			0	wh_main_tech_dwf_mil_6_0	dwf_mil	12	400	0	0			0	0	-20
+wh_main_tech_dwf_mil_1_4			-1	wh_main_tech_dwf_mil_3_1	dwf_mil	12	500	0	0			0	0	-40
+wh_main_tech_dwf_mil_2_0			1	wh_main_tech_dwf_mil_1_0	dwf_mil	13	400	0	0			0	-20	0
+wh_main_tech_dwf_mil_2_1			0	wh_main_tech_dwf_civ_4_0	dwf_mil	13	500	0	0			0	-20	-20
+wh_main_tech_dwf_mil_2_3			1	wh_main_tech_dwf_mil_7_1	dwf_mil	14	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	-40	0
+wh_main_tech_dwf_mil_2_4			0	wh_main_tech_dwf_mil_4_0	dwf_mil	14	400	0	0			0	-40	-20
+wh_main_tech_dwf_mil_3_1			-1	wh_main_tech_dwf_mil_7_0	dwf_mil	14	500	0	0			0	-40	-40
+wh_main_tech_dwf_mil_3_2			5	wh_main_tech_dwf_mil_3_4	dwf_mil	12	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	0	0
+wh_main_tech_dwf_mil_3_3			6	wh_main_tech_dwf_mil_2_4	dwf_mil	12	400	0	0			0	0	20
+wh_main_tech_dwf_mil_3_4			7	wh_main_tech_dwf_mil_6_1	dwf_mil	12	500	0	0			0	0	40
+wh_main_tech_dwf_mil_4_0			5	wh_main_tech_dwf_mil_4_5	dwf_mil	13	400	0	0			0	-20	0
+wh_main_tech_dwf_mil_4_1			6	wh_main_tech_dwf_mil_1_4	dwf_mil	13	500	0	0			0	-20	20
+wh_main_tech_dwf_mil_4_4			5	wh_main_tech_dwf_mil_9_3	dwf_mil	14	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t1	0	-40	0
+wh_main_tech_dwf_mil_4_5			6	wh_main_tech_dwf_mil_6_4	dwf_mil	14	400	0	0			0	-40	20
+wh_main_tech_dwf_mil_5_0			7	wh_main_tech_dwf_mil_4_4	dwf_mil	14	500	0	0			0	-40	40
+wh_main_tech_dwf_mil_5_1			3	wh_main_tech_dwf_mil_1_3	dwf_mil	16	500	0	0			7	-20	0
+wh_main_tech_dwf_mil_5_2			1	wh_main_tech_dwf_mil_8_0	dwf_mil	15	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	0	0
+wh_main_tech_dwf_mil_5_3			0	wh_main_tech_dwf_mil_6_2	dwf_mil	15	500	0	0			0	0	-20
+wh_main_tech_dwf_mil_5_4			-1	wh_main_tech_dwf_mil_5_0	dwf_mil	15	600	0	0			0	0	-40
+wh_main_tech_dwf_mil_6_0			1	wh_main_tech_dwf_mil_5_2	dwf_mil	16	500	0	0			0	-20	0
+wh_main_tech_dwf_mil_6_1			0	wh_main_tech_dwf_mil_8_1	dwf_mil	16	600	0	0			0	-20	-20
+wh_main_tech_dwf_mil_6_2			1	wh_main_tech_dwf_mil_9_1	dwf_mil	17	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	-40	0
+wh_main_tech_dwf_mil_6_3			0	wh_main_tech_dwf_mil_9_2	dwf_mil	17	500	0	0			0	-40	-20
+wh_main_tech_dwf_mil_6_4			-1	wh_main_tech_dwf_mil_9_0	dwf_mil	17	600	0	0			0	-40	-40
+wh_main_tech_dwf_mil_7_1			5	wh_main_tech_dwf_mil_5_4	dwf_mil	15	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	0	0
+wh_main_tech_dwf_mil_7_2			6	wh_main_tech_dwf_mil_6_3	dwf_mil	15	500	0	0			0	0	20
+wh_main_tech_dwf_mil_7_3			7	wh_main_tech_dwf_mil_7_3	dwf_mil	15	600	0	0			0	0	40
+wh_main_tech_dwf_mil_7_4			5	wh_main_tech_dwf_mil_3_2	dwf_mil	16	500	0	0			0	-20	0
+wh_main_tech_dwf_mil_8_0			6	wh_main_tech_dwf_mil_4_2	dwf_mil	16	600	0	0			0	-20	20
+wh_main_tech_dwf_mil_8_1			5	wh_main_tech_dwf_mil_8_3	dwf_mil	17	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t2	0	-40	0
+wh_main_tech_dwf_mil_8_3			6	wh_main_tech_dwf_mil_5_3	dwf_mil	17	500	0	0			0	-40	20
+wh_main_tech_dwf_mil_8_4			7	wh_main_tech_dwf_mil_8_4	dwf_mil	17	600	0	0			0	-40	40
+wh_main_tech_dwf_mil_8_5			3	wh_main_tech_dwf_civ_5_3	dwf_mil	18	700	0	0			5	0	0
+wh_main_tech_dwf_mil_9_0			2	wh_main_tech_dwf_mil_0_2	dwf_mil	18	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	0	-20
+wh_main_tech_dwf_mil_9_1			3	wh_main_tech_dwf_mil_2_2	dwf_mil	19	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	-20	0
+wh_main_tech_dwf_mil_9_2			4	wh_main_tech_dwf_mil_4_1	dwf_mil	18	100	0	0		wh3_dlc25_dwf_tech_unlock_oathgold_cost_t3	0	0	20
+wh_main_tech_vmp_beasts_01			0	wh_main_tech_vmp_beasts_01	vmp_mil	5	200	0	0			0	0	0
+wh_main_tech_vmp_beasts_02			0	wh_main_tech_vmp_beasts_02	vmp_mil	6	300	0	0			0	0	0
+wh_main_tech_vmp_beasts_03			1	wh_main_tech_vmp_beasts_03	vmp_mil	6	300	0	0			0	0	0
+wh_main_tech_vmp_beasts_04			0	wh_main_tech_vmp_beasts_04	vmp_mil	7	400	0	0			0	0	0
+wh_main_tech_vmp_beasts_05			-1	wh_main_tech_vmp_beasts_05	vmp_mil	7	400	0	0			0	0	0
+wh_main_tech_vmp_beasts_06			0	wh_main_tech_vmp_beasts_06	vmp_mil	8	700	0	0			0	0	0
+wh_main_tech_vmp_beasts_07			1	wh_main_tech_vmp_beasts_07	vmp_mil	8	800	0	0			0	0	0
+wh_main_tech_vmp_beasts_08			0	wh_main_tech_vmp_beasts_08	vmp_mil	9	1200	0	0			0	0	0
+wh_main_tech_vmp_beasts_09			0	wh_main_tech_vmp_beasts_09	vmp_mil	10	1500	0	0			0	0	0
+wh_main_tech_vmp_binding_01			6	wh_main_tech_vmp_binding_01	vmp_mil	0	200	0	0			0	0	0
+wh_main_tech_vmp_binding_02			6	wh_main_tech_vmp_binding_02	vmp_mil	1	400	0	0			0	0	0
+wh_main_tech_vmp_binding_03			5	wh_main_tech_vmp_binding_06	vmp_mil	1	400	0	0			0	0	0
+wh_main_tech_vmp_binding_04			7	wh_main_tech_vmp_binding_04	vmp_mil	1	400	0	0			0	0	0
+wh_main_tech_vmp_binding_05			6	wh_main_tech_vmp_binding_05	vmp_mil	2	800	0	0			0	0	0
+wh_main_tech_vmp_binding_06			5	wh_main_tech_vmp_binding_03	vmp_mil	2	600	0	0			0	0	0
+wh_main_tech_vmp_binding_07			7	wh_main_tech_vmp_binding_07	vmp_mil	2	800	0	0			0	0	0
+wh_main_tech_vmp_binding_08			6	wh_main_tech_vmp_binding_08	vmp_mil	3	1000	0	0			0	0	0
+wh_main_tech_vmp_binding_09			5	wh_main_tech_vmp_binding_09	vmp_mil	3	1000	0	0			0	0	0
+wh_main_tech_vmp_binding_10			7	wh_main_tech_vmp_binding_10	vmp_mil	3	1000	0	0			0	0	0
+wh_main_tech_vmp_blood_01			6	wh_main_tech_vmp_blood_01	vmp_mil	5	300	0	0			0	0	0
+wh_main_tech_vmp_blood_02			6	wh_main_tech_vmp_blood_02	vmp_mil	6	400	0	0			0	0	0
+wh_main_tech_vmp_blood_03			6	wh_main_tech_vmp_blood_03	vmp_mil	7	400	0	0			0	0	0
+wh_main_tech_vmp_blood_04			5	wh_main_tech_vmp_blood_04	vmp_mil	7	800	0	0			0	0	0
+wh_main_tech_vmp_blood_05			7	wh_main_tech_vmp_blood_05	vmp_mil	7	800	0	0			0	0	0
+wh_main_tech_vmp_blood_06			6	wh_main_tech_vmp_blood_06	vmp_mil	8	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_06A			5	wh_main_tech_vmp_blood_06A	vmp_mil	8	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_07			7	wh_main_tech_vmp_blood_07	vmp_mil	8	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_08			6	wh_main_tech_vmp_blood_08	vmp_mil	9	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_09			5	wh_main_tech_vmp_blood_09	vmp_mil	9	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_09A			5	wh_main_tech_vmp_blood_09A	vmp_mil	10	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_10			7	wh_main_tech_vmp_blood_10	vmp_mil	9	1200	0	0			0	0	0
+wh_main_tech_vmp_blood_11			6	wh_main_tech_vmp_blood_11	vmp_mil	10	1500	0	0			0	0	0
+wh_main_tech_vmp_blood_12			7	wh_main_tech_vmp_blood_12	vmp_mil	10	1500	0	0			0	0	0
+wh_main_tech_vmp_bones_01			0	wh_main_tech_vmp_bones_01	vmp_mil	0	200	0	0			0	0	0
+wh_main_tech_vmp_bones_02			0	wh_main_tech_vmp_bones_02	vmp_mil	1	200	0	0			0	0	0
+wh_main_tech_vmp_bones_03			1	wh_main_tech_vmp_bones_03	vmp_mil	1	300	0	0			0	0	0
+wh_main_tech_vmp_bones_04			2	wh_main_tech_vmp_bones_04	vmp_mil	1	300	0	0			0	0	0
+wh_main_tech_vmp_bones_05			0	wh_main_tech_vmp_bones_05	vmp_mil	2	400	0	0			0	0	0
+wh_main_tech_vmp_bones_06			1	wh_main_tech_vmp_bones_06	vmp_mil	2	400	0	0			0	0	0
+wh_main_tech_vmp_bones_07			2	wh_main_tech_vmp_bones_07	vmp_mil	2	500	0	0			0	0	0
+wh_main_tech_vmp_bones_08			0	wh_main_tech_vmp_bones_08	vmp_mil	3	600	0	0			0	0	0
+wh_main_tech_vmp_bones_09			1	wh_main_tech_vmp_bones_09	vmp_mil	3	700	0	0			0	0	0
+wh_main_tech_vmp_bones_10			2	wh_main_tech_vmp_bones_10	vmp_mil	3	800	0	0			0	0	0
+wh_main_tech_vmp_bones_2a			-1	wh_main_tech_vmp_bones_02a	vmp_mil	1	300	0	0			0	0	0
+wh_main_tech_vmp_bones_4a			3	wh_main_tech_vmp_bones_04a	vmp_mil	1	400	0	0			0	0	0
+wh_main_tech_vmp_bones_5a			-1	wh_main_tech_vmp_bones_05a	vmp_mil	2	500	0	0			0	0	0

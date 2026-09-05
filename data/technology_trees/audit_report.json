@@ -1,0 +1,193 @@
+{
+  "status": "passed",
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "faction_files": 104,
+  "node_set_variants": 112,
+  "node_occurrences": 6399,
+  "technologies": 1620,
+  "technology_occurrences": 6399,
+  "dependency_links": 6755,
+  "effects": 13250,
+  "locks_exclusions": 230,
+  "direct_unlocks": 1063,
+  "missing_localizations": 5685,
+  "distinct_missing_localization_keys": 1490,
+  "missing_by_field": {
+    "technology_long_description": 5176,
+    "ui_group_description": 454,
+    "ui_group_name": 13,
+    "effect_description": 34,
+    "node_set_name": 4,
+    "node_set_tooltip": 4
+  },
+  "unresolved_scripted_cases": 39,
+  "external_technology_requirements": 0,
+  "unique_structures": 51,
+  "shared_structure_groups": 18,
+  "hidden_node_occurrences": 6,
+  "duplicate_technology_occurrences": 4,
+  "deterministic_rebuild_verified": true,
+  "representative_races": [
+    {
+      "race": "skaven",
+      "faction_key": "wh2_dlc09_skv_clan_rictus",
+      "nodes": 52,
+      "source_reconciled": true
+    },
+    {
+      "race": "tomb_kings",
+      "faction_key": "wh2_dlc09_tmb_exiles_of_nehek",
+      "nodes": 74,
+      "source_reconciled": true
+    },
+    {
+      "race": "vampire_coast",
+      "faction_key": "wh2_dlc11_cst_noctilus",
+      "nodes": 48,
+      "source_reconciled": true
+    },
+    {
+      "race": "dark_elves",
+      "faction_key": "wh2_dlc11_def_the_blessed_dread",
+      "nodes": 52,
+      "source_reconciled": true
+    },
+    {
+      "race": "vampire_counts",
+      "faction_key": "wh2_dlc11_vmp_the_barrow_legion",
+      "nodes": 46,
+      "source_reconciled": true
+    },
+    {
+      "race": "lizardmen",
+      "faction_key": "wh2_dlc12_lzd_cult_of_sotek",
+      "nodes": 64,
+      "source_reconciled": true
+    },
+    {
+      "race": "empire",
+      "faction_key": "wh2_dlc13_emp_golden_order",
+      "nodes": 55,
+      "source_reconciled": true
+    },
+    {
+      "race": "bretonnia",
+      "faction_key": "wh2_dlc14_brt_chevaliers_de_lyonesse",
+      "nodes": 66,
+      "source_reconciled": true
+    },
+    {
+      "race": "greenskins",
+      "faction_key": "wh2_dlc15_grn_bonerattlaz",
+      "nodes": 52,
+      "source_reconciled": true
+    },
+    {
+      "race": "high_elves",
+      "faction_key": "wh2_dlc15_hef_imrik",
+      "nodes": 73,
+      "source_reconciled": true
+    },
+    {
+      "race": "wood_elves",
+      "faction_key": "wh2_dlc16_wef_drycha",
+      "nodes": 35,
+      "source_reconciled": true
+    },
+    {
+      "race": "beastmen",
+      "faction_key": "wh2_dlc17_bst_malagor",
+      "nodes": 28,
+      "source_reconciled": true
+    },
+    {
+      "race": "dwarfs",
+      "faction_key": "wh2_dlc17_dwf_thorek_ironbrow",
+      "nodes": 68,
+      "source_reconciled": true
+    },
+    {
+      "race": "grand_cathay",
+      "faction_key": "wh3_cp1_cth_tiger_warriors",
+      "nodes": 74,
+      "source_reconciled": true
+    },
+    {
+      "race": "warriors_of_chaos",
+      "faction_key": "wh3_dlc20_chs_azazel",
+      "nodes": 80,
+      "source_reconciled": true
+    },
+    {
+      "race": "chaos_dwarfs",
+      "faction_key": "wh3_dlc23_chd_astragoth",
+      "nodes": 78,
+      "source_reconciled": true
+    },
+    {
+      "race": "kislev",
+      "faction_key": "wh3_dlc24_ksl_daughters_of_the_forest",
+      "nodes": 78,
+      "source_reconciled": true
+    },
+    {
+      "race": "tzeentch",
+      "faction_key": "wh3_dlc24_tze_the_deceivers",
+      "nodes": 192,
+      "source_reconciled": true
+    },
+    {
+      "race": "nurgle",
+      "faction_key": "wh3_dlc25_nur_epidemius",
+      "nodes": 50,
+      "source_reconciled": true
+    },
+    {
+      "race": "khorne",
+      "faction_key": "wh3_dlc26_kho_arbaal",
+      "nodes": 62,
+      "source_reconciled": true
+    },
+    {
+      "race": "ogre_kingdoms",
+      "faction_key": "wh3_dlc26_ogr_golgfag",
+      "nodes": 56,
+      "source_reconciled": true
+    },
+    {
+      "race": "norsca",
+      "faction_key": "wh3_dlc27_nor_sayl",
+      "nodes": 83,
+      "source_reconciled": true
+    },
+    {
+      "race": "slaanesh",
+      "faction_key": "wh3_dlc27_sla_masque_of_slaanesh",
+      "nodes": 65,
+      "source_reconciled": true
+    },
+    {
+      "race": "daemons_of_chaos",
+      "faction_key": "wh3_main_dae_daemon_prince",
+      "nodes": 0,
+      "source_reconciled": true
+    }
+  ],
+  "passes": [
+    "104 unique indexed faction files; 24 race representatives; hashes, sizes, context, canonical schema, selector variants and source fields verified.",
+    "All nodes, technologies, prerequisite links, research costs, effect junctions, scopes, priorities and localizations reconcile to source.",
+    "Prerequisite DAGs checked; zero required_parents means all source parents. Hidden and repeated technology nodes are retained and classified.",
+    "Nakai wh2_dlc13 branches, ordering, prerequisites, costs and effects verified against complete lzd_nakai source membership.",
+    "Shared fingerprints recomputed and faction-specific Wood Elf structure distinguished.",
+    "Two independent builds and the candidate are byte-identical across all builder artifacts."
+  ],
+  "warnings": [
+    "5685 missing localization occurrences (1490 distinct keys); structural records retained.",
+    "39 campaign script mutation sites retain unresolved runtime conditions. Literal script references are not static effects.",
+    "Generic and faction-specific candidate node sets are both preserved; engine precedence is not proven by decoded records.",
+    "Feature forests and transitions are retained in source, but runtime feature transitions and script-controlled effect/unlock behavior are not statically executed."
+  ],
+  "errors": []
+}
