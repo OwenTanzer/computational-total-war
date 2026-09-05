@@ -1,0 +1,921 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "executable_version": "8.1.1.0",
+  "appmanifest_sha256": "79a5f4233d06fc7e3309a6d2d05b32f8143b7ceefc2194b430916db84583c302",
+  "decoder": "RPFM 5.0.6",
+  "table_folders_requested": [
+    "ancillaries_tables",
+    "audio_technologies_tables",
+    "building_levels_tables",
+    "cai_personalities_technology_research_path_junctions_tables",
+    "cai_personalities_technology_research_policies_tables",
+    "cai_personalities_technology_research_policy_strategic_context_junctions_tables",
+    "cai_personalities_technology_researches_tables",
+    "campaign_ai_technology_managers_tables",
+    "campaign_ai_technology_path_junctions_tables",
+    "campaign_effect_list_effect_junctions_tables",
+    "campaign_effect_lists_tables",
+    "campaign_effect_scopes_tables",
+    "campaign_faction_feature_forest_overrides_tables",
+    "campaign_features_tables",
+    "campaigns_tables",
+    "character_trait_levels_tables",
+    "cultures_subcultures_tables",
+    "cultures_tables",
+    "effect_bundles_tables",
+    "effect_bundles_to_effects_junctions_tables",
+    "effects_tables",
+    "faction_feature_forests_tables",
+    "faction_feature_set_military_force_types_tables",
+    "faction_feature_tree_to_transitions_tables",
+    "faction_feature_trees_tables",
+    "factions_tables",
+    "feature_set_to_faction_features_tables",
+    "feature_set_transition_handlers_tables",
+    "feature_set_transitions_tables",
+    "feature_sets_tables",
+    "feature_tree_to_feature_forests_tables",
+    "frontend_faction_leaders_tables",
+    "initiatives_tables",
+    "mercenary_pool_to_groups_junctions_tables",
+    "mercenary_unit_groups_tables",
+    "pooled_resource_factor_junctions_tables",
+    "pooled_resource_factors_tables",
+    "pooled_resources_tables",
+    "resource_cost_pooled_resource_junctions_tables",
+    "resource_costs_tables",
+    "technologies_tables",
+    "technology_category_modules_tables",
+    "technology_character_traits_junctions_tables",
+    "technology_effects_junction_tables",
+    "technology_initiative_effects_tables",
+    "technology_node_links_tables",
+    "technology_node_sets_tables",
+    "technology_nodes_tables",
+    "technology_nodes_to_ancillaries_junctions_tables",
+    "technology_required_building_levels_junctions_tables",
+    "technology_required_technology_junctions_tables",
+    "technology_script_lock_reasons_tables",
+    "technology_ui_groups_tables",
+    "technology_ui_groups_to_technology_nodes_junctions_tables",
+    "technology_ui_tabs_tables",
+    "technology_ui_tabs_to_technology_nodes_junctions_tables",
+    "ui_feature_to_subcultures_tables",
+    "ui_features_tables",
+    "ui_features_to_cultures_tables",
+    "ui_features_to_factions_tables",
+    "ui_resource_transaction_pooled_resource_junctions_tables",
+    "unit_upgrade_to_tech_requirements_tables",
+    "unit_upgrade_to_unit_groups_tables"
+  ],
+  "localisation_files_requested": [
+    "text/db/ancillaries__.loc",
+    "text/db/character_trait_levels__.loc",
+    "text/db/effects__.loc",
+    "text/db/effects_additional_tooltip_details__.loc",
+    "text/db/factions__.loc",
+    "text/db/frontend_factions__.loc",
+    "text/db/initiatives__.loc",
+    "text/db/pooled_resources__.loc",
+    "text/db/technologies__.loc",
+    "text/db/technology_node_sets__.loc",
+    "text/db/technology_nodes_to_ancillaries_junctions__.loc",
+    "text/db/technology_script_lock_reasons__.loc",
+    "text/db/technology_ui_groups__.loc",
+    "text/db/technology_ui_tabs__.loc"
+  ],
+  "files": [
+    {
+      "path": "db/ancillaries_tables/data__.tsv",
+      "bytes": 569122,
+      "sha256": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e"
+    },
+    {
+      "path": "db/audio_technologies_tables/data__.tsv",
+      "bytes": 573,
+      "sha256": "942f593f23599e76eb89217e8e127f42c4d1128f3b39810453040511229637ff"
+    },
+    {
+      "path": "db/building_levels_tables/data__.tsv",
+      "bytes": 976836,
+      "sha256": "f554a818f83b55ab4be2027b2ab172728b02ebc630495bd78a7399523a51b5db"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_path_junctions_tables/data__.tsv",
+      "bytes": 2160,
+      "sha256": "cd32e5942d4987262d135ced76f573c7000f65e1002b0c81fc647b8d227d0509"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_policies_tables/data__.tsv",
+      "bytes": 465,
+      "sha256": "e1042e36b9d2d756ab0557b126687ff68f6fd7d0f3809c8f682db92364946eb4"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_policy_strategic_context_junctions_tables/data__.tsv",
+      "bytes": 1243,
+      "sha256": "9bd4ec198afc07fee4b849abbb27e86d8db8d126ab0a4fff1b384c64989707b0"
+    },
+    {
+      "path": "db/cai_personalities_technology_researches_tables/data__.tsv",
+      "bytes": 298,
+      "sha256": "aff7665c444ec494526f41e24359df4b58129589eb9fe311e54865b71144caa9"
+    },
+    {
+      "path": "db/campaign_ai_technology_managers_tables/data__.tsv",
+      "bytes": 267,
+      "sha256": "5d2656d256a912941eb0e717c3133f852a56748a003b4b6dcc83230ec57a3c8a"
+    },
+    {
+      "path": "db/campaign_ai_technology_path_junctions_tables/data__.tsv",
+      "bytes": 4483,
+      "sha256": "83ad3a879f937ad9ebf94307c03064c6f1b067fb2345fa56e978df7ef02aec46"
+    },
+    {
+      "path": "db/campaign_effect_list_effect_junctions_tables/data__.tsv",
+      "bytes": 221000,
+      "sha256": "ffbc121dbe64743b28f5fd74217a49b13d9ed4f27234affa6816c3346e4efca5"
+    },
+    {
+      "path": "db/campaign_effect_lists_tables/data__.tsv",
+      "bytes": 50045,
+      "sha256": "a2df1d7c48808c33c9ffe891239d2dba5d8d701d1c44c4b4409e20b5c7077b1a"
+    },
+    {
+      "path": "db/campaign_effect_scopes_tables/data__.tsv",
+      "bytes": 35373,
+      "sha256": "4cc555cf80c8daf9ed52a6021d716fa7d812733e9663319cc465217d80b3f8a0"
+    },
+    {
+      "path": "db/campaign_faction_feature_forest_overrides_tables/data__.tsv",
+      "bytes": 387,
+      "sha256": "01da8d41fb9c510119cfa9907704705325ea1d28f48f2243a24f5a01076e0766"
+    },
+    {
+      "path": "db/campaign_features_tables/data__.tsv",
+      "bytes": 9110,
+      "sha256": "70cb777e5b4539f48c7975b4c0bc8d95a7e0bc5a96e8bc56a4c496cb216dfdca"
+    },
+    {
+      "path": "db/campaigns_tables/data__.tsv",
+      "bytes": 621,
+      "sha256": "76f1165a0b53648ac537ec129a095e2e1d7666a5583c76e6769722869cc9ed8d"
+    },
+    {
+      "path": "db/character_trait_levels_tables/data__.tsv",
+      "bytes": 84588,
+      "sha256": "46d4bf7cf146994bf2db4fb341443efb86ad56c5951bfd27245c359961a90d47"
+    },
+    {
+      "path": "db/cultures_subcultures_tables/data__.tsv",
+      "bytes": 2390,
+      "sha256": "9755046455f30f00c485edc1a0f84d9747f7db7de4953e1d8371c97a321e4425"
+    },
+    {
+      "path": "db/cultures_tables/data__.tsv",
+      "bytes": 2357,
+      "sha256": "2d467aeaf8bdfb010f0f51046359954bb96e7bf0832b9bc0026d1c449778229e"
+    },
+    {
+      "path": "db/effect_bundles_tables/data__.tsv",
+      "bytes": 1051685,
+      "sha256": "40f7144583e1fadd72ddb4d2346e8c129221f02c39e9e91dd97b1192b765cce2"
+    },
+    {
+      "path": "db/effect_bundles_to_effects_junctions_tables/data__.tsv",
+      "bytes": 2469504,
+      "sha256": "6c6661e5a71d64d8995aa3f27de0af6101f95a2d1276fd24277e9f729661c5f5"
+    },
+    {
+      "path": "db/effects_tables/data__.tsv",
+      "bytes": 1571155,
+      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+    },
+    {
+      "path": "db/faction_feature_forests_tables/data__.tsv",
+      "bytes": 203,
+      "sha256": "6f2d5e4bcea5722da95f7bf94cf79c0ee9e572788068366581803588939db962"
+    },
+    {
+      "path": "db/faction_feature_set_military_force_types_tables/data__.tsv",
+      "bytes": 300,
+      "sha256": "4d52a46f61c191e329217d2790c12a0c1a6b97641b27a1587ae1ecb2e7092fd0"
+    },
+    {
+      "path": "db/faction_feature_tree_to_transitions_tables/data__.tsv",
+      "bytes": 266,
+      "sha256": "ae016b346704d4f33104d5ddcb54efae0968d8ecec712b50645b54f7091d31db"
+    },
+    {
+      "path": "db/faction_feature_trees_tables/data__.tsv",
+      "bytes": 211,
+      "sha256": "343169d943f8d453f200276c6c4bed71b3e163f7d2de3412f2b515a7b9cbe699"
+    },
+    {
+      "path": "db/factions_tables/data__.tsv",
+      "bytes": 403358,
+      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+    },
+    {
+      "path": "db/feature_set_to_faction_features_tables/data__.tsv",
+      "bytes": 621,
+      "sha256": "390aa25d8e03130baec37094c662a8e5277aafbba1e0f027b052104d6abf4ca6"
+    },
+    {
+      "path": "db/feature_set_transition_handlers_tables/data__.tsv",
+      "bytes": 212,
+      "sha256": "d43e0c001bc9a79e20762996a08f7a613fd2389f25f71674baf681abc759056d"
+    },
+    {
+      "path": "db/feature_set_transitions_tables/data__.tsv",
+      "bytes": 374,
+      "sha256": "56be999013a5ff4477b432ba5eeb30c1cbca4228bf3819be540314e016d17c9f"
+    },
+    {
+      "path": "db/feature_sets_tables/data__.tsv",
+      "bytes": 340,
+      "sha256": "9d3d4f193afeafe016f21bca9cf9ff9b63b2d2e2b8452de49e07989e53155944"
+    },
+    {
+      "path": "db/feature_tree_to_feature_forests_tables/data__.tsv",
+      "bytes": 698,
+      "sha256": "242e176bed8dbd036e016f9f69796f3bff1a116a2f7a527bdeee185431cac733"
+    },
+    {
+      "path": "db/frontend_faction_leaders_tables/data__.tsv",
+      "bytes": 53250,
+      "sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f"
+    },
+    {
+      "path": "db/initiatives_tables/data__.tsv",
+      "bytes": 136463,
+      "sha256": "55f3c39be81e92864d933268064230fa7879e7b805fed775e02b18e0f239bfc5"
+    },
+    {
+      "path": "db/mercenary_pool_to_groups_junctions_tables/data__.tsv",
+      "bytes": 95757,
+      "sha256": "d69e1a34df349706c41d150a5a13decacc577130ab661f38e964c16360b22633"
+    },
+    {
+      "path": "db/mercenary_unit_groups_tables/data__.tsv",
+      "bytes": 64591,
+      "sha256": "a398d7d227825455c034249cb48e19dd8cce9c904864ee984db933601927eb7a"
+    },
+    {
+      "path": "db/pooled_resource_factor_junctions_tables/data__.tsv",
+      "bytes": 119085,
+      "sha256": "786c58ad044fe6f18102758b55eb00ac8ace692b94a466ed6ea323f0fee05815"
+    },
+    {
+      "path": "db/pooled_resource_factors_tables/data__.tsv",
+      "bytes": 14098,
+      "sha256": "3739b34ca8da577d84bfb3f5441a6f7544080abbdf3f7e09e10450e50eea128e"
+    },
+    {
+      "path": "db/pooled_resources_tables/data__.tsv",
+      "bytes": 32678,
+      "sha256": "b1afe5cd94ed46955c2981cbdc301f7d60ef7e89dbe98c9d460395d2638083f0"
+    },
+    {
+      "path": "db/resource_cost_pooled_resource_junctions_tables/data__.tsv",
+      "bytes": 191150,
+      "sha256": "dd53de44ed0949bbb21a802590718e141f75ceb8326af60fa47529b8079acb9f"
+    },
+    {
+      "path": "db/resource_costs_tables/data__.tsv",
+      "bytes": 177368,
+      "sha256": "289a9219a03b444de7c767ccacfc76055f4456ad88cc989c9de07d932c9c8da1"
+    },
+    {
+      "path": "db/technologies_tables/data__.tsv",
+      "bytes": 253673,
+      "sha256": "48d7803ef6538f67a283b62e6bae83ac98dadeb15a7350680ebeff8f482692b9"
+    },
+    {
+      "path": "db/technology_category_modules_tables/data__.tsv",
+      "bytes": 371,
+      "sha256": "6cf4e8f46b1ccaec9809731a7986e97ea17a4920b990f6576b4482b80faec44e"
+    },
+    {
+      "path": "db/technology_character_traits_junctions_tables/data__.tsv",
+      "bytes": 848,
+      "sha256": "49a01f45524dd0b2bdc1663fec528f9605c7357093516a28891a74cfc44869f5"
+    },
+    {
+      "path": "db/technology_effects_junction_tables/data__.tsv",
+      "bytes": 438903,
+      "sha256": "c424729a4999fd1af0245da1ff43237e83a10c01eeaf28b6c81dc3a94af2dbd7"
+    },
+    {
+      "path": "db/technology_initiative_effects_tables/data__.tsv",
+      "bytes": 34718,
+      "sha256": "ea3b2f70657b08d5eb0bcf32974b3a90d5dacf4215ceab3d476f64a035b5bc87"
+    },
+    {
+      "path": "db/technology_node_links_tables/data__.tsv",
+      "bytes": 140931,
+      "sha256": "2215ef630d4e45c33d151838a9d76b710787049360660eae5c6d7066bf1d451b"
+    },
+    {
+      "path": "db/technology_node_sets_tables/data__.tsv",
+      "bytes": 1823,
+      "sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402"
+    },
+    {
+      "path": "db/technology_nodes_tables/data__.tsv",
+      "bytes": 191506,
+      "sha256": "6ef2f6968d83573904a2b8eb8bc3afc89714bbf0d76c214dc04fac12468612ab"
+    },
+    {
+      "path": "db/technology_nodes_to_ancillaries_junctions_tables/data__.tsv",
+      "bytes": 1979,
+      "sha256": "3380b8618b1014efb2005c5f7755ecf0dfad5156b34ab987ffaf9f856e6d00f9"
+    },
+    {
+      "path": "db/technology_required_building_levels_junctions_tables/data__.tsv",
+      "bytes": 5078,
+      "sha256": "abbccfd90ad49631ac8257b84fc2d5ebef4c2c5577daee0c3ef9c7cde581dba3"
+    },
+    {
+      "path": "db/technology_required_technology_junctions_tables/data__.tsv",
+      "bytes": 6999,
+      "sha256": "86a5dc025c4393d698d4bc2a04321446090599a27268c66170298ff177bbee3e"
+    },
+    {
+      "path": "db/technology_script_lock_reasons_tables/data__.tsv",
+      "bytes": 2787,
+      "sha256": "45c69499c41ba8a2f7dc389c65b38bab3e41e1c730fa78aaeed21651b0e033fe"
+    },
+    {
+      "path": "db/technology_ui_groups_tables/data__.tsv",
+      "bytes": 3026,
+      "sha256": "c60e7974b1d5543545ce41cb9d89f65e78fddbe14f797a910c5da2c40518d460"
+    },
+    {
+      "path": "db/technology_ui_groups_to_technology_nodes_junctions_tables/data__.tsv",
+      "bytes": 11006,
+      "sha256": "201ee3e271c07ed3a92face46b457137bdce0a634bd66c7098a5dfdaf7170abc"
+    },
+    {
+      "path": "db/technology_ui_tabs_tables/data__.tsv",
+      "bytes": 517,
+      "sha256": "4d98aa5ad70784b229e1800eb2a24fa9f9ef9bc91622dbe4d925b6c93eb2a6ce"
+    },
+    {
+      "path": "db/technology_ui_tabs_to_technology_nodes_junctions_tables/data__.tsv",
+      "bytes": 32330,
+      "sha256": "13ed262ee71ef0cc8e5deaae8b77c1e4692be74f20691f0e29563155a6a8ce69"
+    },
+    {
+      "path": "db/ui_feature_to_subcultures_tables/data__.tsv",
+      "bytes": 193,
+      "sha256": "6fe3cfd4426a09389574191738741952e1f7f4f89b8de8e69e85cc67a574f3bb"
+    },
+    {
+      "path": "db/ui_features_tables/data__.tsv",
+      "bytes": 1173,
+      "sha256": "cf6230b404e716c09d53db792ad9c0256193837085b683a7d391c5f2ac09d6a1"
+    },
+    {
+      "path": "db/ui_features_to_cultures_tables/data__.tsv",
+      "bytes": 1427,
+      "sha256": "92b3f80e40d8457f4b83291869fad395a26bccd6bdcb0af78fa46622a237101e"
+    },
+    {
+      "path": "db/ui_features_to_factions_tables/data__.tsv",
+      "bytes": 5317,
+      "sha256": "6ff4ba306f9aedab1a5996b0e2ddee2ca369cc657d01e7ffd887e06a292e3e48"
+    },
+    {
+      "path": "db/ui_resource_transaction_pooled_resource_junctions_tables/data__.tsv",
+      "bytes": 278,
+      "sha256": "701e47f6592d1659589cbe260853d629c4b34e9110be5ca24c2eb57dbcae375a"
+    },
+    {
+      "path": "db/unit_upgrade_to_tech_requirements_tables/data__.tsv",
+      "bytes": 11659,
+      "sha256": "3360b4822d26ceb0de40c4a6012dec0472931f4d522f4848e7157a8c35507682"
+    },
+    {
+      "path": "db/unit_upgrade_to_unit_groups_tables/data__.tsv",
+      "bytes": 23126,
+      "sha256": "78bfa66ef5d11425d3e8b62767f9cd21fa1b8c7f66046d28941ae175e0411f85"
+    },
+    {
+      "path": "decoded_schema.json",
+      "bytes": 606518,
+      "sha256": "16a3beb4c74e854f80332b30a8b03d4da2de737c7d6145abf2313ff91dc523b2"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 190102,
+      "sha256": "2beed504549a605d4212539f45c9b17672f4e9ed9c9e93bef42660b38b69d14a"
+    },
+    {
+      "path": "script/_lib/lib_campaign_intervention.lua",
+      "bytes": 154893,
+      "sha256": "6ecc30e748be1facbffaabab8db93cb5c672548fa8a268d639062dbd847f8ae5"
+    },
+    {
+      "path": "script/_lib/lib_campaign_manager.lua",
+      "bytes": 803605,
+      "sha256": "974349db05bff1dacefc4e74e8e24993d434732fdb5b55803b2acfbf8799ea7c"
+    },
+    {
+      "path": "script/_lib/lib_campaign_mission_manager.lua",
+      "bytes": 122559,
+      "sha256": "41cc7e9d890af5011b5239bcaf0b998e485c933d10fab53e1a8847cb498aaa57"
+    },
+    {
+      "path": "script/_lib/lib_campaign_tutorial.lua",
+      "bytes": 130503,
+      "sha256": "26d3aea9e386ddc6038a220a8e2be7896deeec37689287be19b3aee63dd0f6ff"
+    },
+    {
+      "path": "script/_lib/lib_campaign_ui.lua",
+      "bytes": 543559,
+      "sha256": "2a1b0ae12d2c5585c17c06cc0ce132500ff32f032d5035d1b891469d94d81112"
+    },
+    {
+      "path": "script/_lib/lib_campaign_ui_overrides.lua",
+      "bytes": 115541,
+      "sha256": "bb27d6dde826ba791476790fa9d8fe564fbc9a7ba616677e5b75d244b4f6a713"
+    },
+    {
+      "path": "script/_lib/lib_help_pages.lua",
+      "bytes": 79619,
+      "sha256": "ae019388f68395c2824a574f988ee65cfee699f22136600f0532f0478f144b9e"
+    },
+    {
+      "path": "script/_lib/lib_types.lua",
+      "bytes": 115026,
+      "sha256": "ec11b66cc533f81d671773e6a57fdbd7665167086f184619358307799ca32a03"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_chaos_warriors.lua",
+      "bytes": 38894,
+      "sha256": "e04e1a2a809e5c6071a95414fe386924b1f7d7b8b9e8397fe5182aeeb779bd2c"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_empire.lua",
+      "bytes": 17594,
+      "sha256": "7e81eb5346195dd4dddf7b3d45d70795371816a6d60a529abac875254c5f95bd"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_kislev.lua",
+      "bytes": 24785,
+      "sha256": "5b2cdbc65529ebd6961ae078326541a30c7e07a15ae21f0f2687cf904131b675"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_ogres.lua",
+      "bytes": 59425,
+      "sha256": "e6ee7eeeb78606e9a276243eb34f51b30af751725a67827bf9986c6519419618"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_slaanesh.lua",
+      "bytes": 79176,
+      "sha256": "af3c07c1c97a381a43b4b9b3059b9210a2d12108a13db39b2c2ea73b601dfc9a"
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_tzeentch.lua",
+      "bytes": 5404,
+      "sha256": "a2db2b723d4f57cae25dea5e39ae0b0fb7c87cf3bf1980bbfef2becef47a103b"
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_event_templates.lua",
+      "bytes": 256556,
+      "sha256": "7cb6a964cc35de1a9e10eaece3d426231b9788beaa745e338fbf40ad7c92bbda"
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_query_templates.lua",
+      "bytes": 109159,
+      "sha256": "be1d50ea4c6ca492b1bfbe0f7306b2bbca3004c7d42e777456e7a3e7087ba147"
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_shared_chains.lua",
+      "bytes": 258959,
+      "sha256": "984085dc82d817eb937c7c4e795898f19c4012f38b234b9d72349a5bf5773304"
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
+      "bytes": 64286,
+      "sha256": "27d9aa387af7c522efbeb3ced9414de889e7285d08c88a6ffcde576294f169f9"
+    },
+    {
+      "path": "script/campaign/_narrative/wh3_narrative_trigger_templates.lua",
+      "bytes": 109859,
+      "sha256": "22d129578f8aecfe917d40ec86d6e982f7940c1c4ed342dea7330c1c59c72073"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_grudge_too_far.lua",
+      "bytes": 5124,
+      "sha256": "86304128a597c37bf8c77074b8d08e23724222d4c967180ff71a91ed2538803a"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_pyramid_of_nagash.lua",
+      "bytes": 6584,
+      "sha256": "7662b733f1a709857de0e108d6664e2941abdbe78c33a506a2ebeac062e1b51d"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_vampires_rise.lua",
+      "bytes": 3333,
+      "sha256": "bd345a3dae80e094e13206c4525e8a07f2b11d46248fb12b4b8337c48a08b6c8"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_vermintide.lua",
+      "bytes": 25185,
+      "sha256": "f0adf002261ec08c4339f4cc30d8df3e12cd7af6731ca3afbb219d6d5626de22"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_waaagh.lua",
+      "bytes": 5439,
+      "sha256": "712a4b2910217acf75c456641218035a963a44af21bf58d7783f31ab491cb0c3"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_wild_hunt.lua",
+      "bytes": 4475,
+      "sha256": "7dfcbf409d4c826d59c793b3518f47520450b26917907abffe85801e126218c3"
+    },
+    {
+      "path": "script/campaign/main_warhammer/endgame/endgame_will_of_hashut.lua",
+      "bytes": 7970,
+      "sha256": "279a0b890e91777c6d3f4e0919f544cd9c0a33d4f68e10274652ce56696d1c48"
+    },
+    {
+      "path": "script/campaign/main_warhammer/required.lua",
+      "bytes": 9778,
+      "sha256": "a84e90a67eb8d2fd071277de9b46f3fb382ff05a99ac00ff4d4eeeb7fc5851eb"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh2_vampire_bloodlines.lua",
+      "bytes": 21545,
+      "sha256": "0bb27643dc441b542928f5531e502b0eb0981db0576cf54a939896fd16495286"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh3_ie_narrative_events.lua",
+      "bytes": 9502,
+      "sha256": "dc4a0d9a2c09cb59e64954cda8691106f30e86db37f05eb4b7e64a7fef2bd22d"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc07_diplomatic_tech.lua",
+      "bytes": 4132,
+      "sha256": "3cf7b7d56993967827499c2d04f4a4a1b099c8f072b69b162a414e259620c2c2"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc07_vows.lua",
+      "bytes": 23136,
+      "sha256": "63e76670295d5e09e3e26b500a35871073d858af6e794af76e510e62aa785341"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_dlc08_monster_hunt.lua",
+      "bytes": 168959,
+      "sha256": "ce9a427f72869c455582dc86a93d60bb506535967d17099331b8bdb290fa7ee3"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_first_turn.lua",
+      "bytes": 94497,
+      "sha256": "8bc1f0d84d95d2ee74d41073cc849456ada487349eab5c3df17d3d77d11cd0a8"
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh_start.lua",
+      "bytes": 22276,
+      "sha256": "0161c1fb60028b7e2f4b07298e6fffeb257ee9ff0a9e6913e693a786363daf18"
+    },
+    {
+      "path": "script/campaign/scripted_tours/campaign_tours.lua",
+      "bytes": 149646,
+      "sha256": "da7ffdb5225f06d70be3eec2907d55e117cf96b18650cd316fd888922c6409a9"
+    },
+    {
+      "path": "script/campaign/wh2_campaign_rites.lua",
+      "bytes": 55198,
+      "sha256": "0f76e8b77f37ab2f3820590b09e51a13b174617fb80eb2073a135e540eb981bc"
+    },
+    {
+      "path": "script/campaign/wh2_campaign_tech_tree_lords.lua",
+      "bytes": 943,
+      "sha256": "36a2a2cb7bba52e2b98527cb702db6d579065e8d9bd7e94fd77d10a06c21cbf5"
+    },
+    {
+      "path": "script/campaign/wh2_campaign_traits.lua",
+      "bytes": 56722,
+      "sha256": "0b4e6dc740352772c3708cbdb2aa1adb031d30033a31a6f64a7f5172868d587d"
+    },
+    {
+      "path": "script/campaign/wh2_dlc09_dynasty_tree.lua",
+      "bytes": 2771,
+      "sha256": "8f9fd4c72777adc79f6295c0ae7199cdac83ae278208226803e5a0c771a9c591"
+    },
+    {
+      "path": "script/campaign/wh2_dlc09_tomb_kings.lua",
+      "bytes": 7177,
+      "sha256": "2bc2e0fa13542060af356a311e47ea0ce41ae93a79a74eaa2c5d78ebe3468123"
+    },
+    {
+      "path": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "bytes": 1409,
+      "sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b"
+    },
+    {
+      "path": "script/campaign/wh2_dlc12_ikit_workshop.lua",
+      "bytes": 33185,
+      "sha256": "86a24218f60291ed8fd307083ea0af779a5f50d590b6d2f5b22f62c11995e726"
+    },
+    {
+      "path": "script/campaign/wh2_dlc13_empire_politics.lua",
+      "bytes": 109042,
+      "sha256": "a83a60ed42f23f49053c5299ee37c0fb67a2e36110e1cfdbdfd1cdac8e2392a2"
+    },
+    {
+      "path": "script/campaign/wh2_dlc14_snikch_shadowy_dealings.lua",
+      "bytes": 29111,
+      "sha256": "701fec03e76f54454a9f0ef9e38dc706dff4c36f248651bf72b40c6748c251cb"
+    },
+    {
+      "path": "script/campaign/wh2_dlc15_salvage.lua",
+      "bytes": 6810,
+      "sha256": "e8fe32517c47cbedc0646fd0b288ba2d109e5599d5617626091e8490cb3a339a"
+    },
+    {
+      "path": "script/campaign/wh2_dlc15_waaagh.lua",
+      "bytes": 50349,
+      "sha256": "11f785f07b39aae817b0c2cf10ac1490721d47b39716907c0b69e9771721435f"
+    },
+    {
+      "path": "script/campaign/wh2_dlc16_wef_worldroots.lua",
+      "bytes": 84099,
+      "sha256": "19df2428a945cccd3904e4f82752b9d9e8c7a5705d2079933684051056f0a369"
+    },
+    {
+      "path": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "bytes": 23426,
+      "sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_achievements.lua",
+      "bytes": 15894,
+      "sha256": "77209d1007c6638fec147319289a0bf5ee859d53b93a3c231b41b534cf0ad4a4"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_ai.lua",
+      "bytes": 32987,
+      "sha256": "1fd8f93328bf6dceee45da505f0da8d7eeae968044b1e61b89001d7d2692e009"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_bonus_values.lua",
+      "bytes": 103123,
+      "sha256": "ddee551082f6e6a8775123cf71dcdf0e3edbf025ef3836d2bb89da584d9e13e1"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_faction_initiative_unlocks.lua",
+      "bytes": 10190,
+      "sha256": "0413db1b0553335af9c67dd7089b630767a6672c805f3d362e5353c7bcc908f6"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_followers.lua",
+      "bytes": 126309,
+      "sha256": "3b9c14e65d80dffef8894415e9f5b4efe7c7348eb64e236254869c33a4ed8b55"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_kislev_ice_court.lua",
+      "bytes": 6198,
+      "sha256": "614a9cfb14b718a19fe53c417ab7aad1b1337b7518ab4b3d8068e5927f3bde1e"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_kislev_motherland.lua",
+      "bytes": 20580,
+      "sha256": "a38c2d1e385ca23fd1f2d23fa7cb0066b6fc1a7c8dc223f79a793f42ec837b13"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_nurgle_plagues.lua",
+      "bytes": 23659,
+      "sha256": "e48ea49b92bcb05f4fafa0c98bef9eee703971397c3618ece25df6d05796ff8f"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_tech_tree.lua",
+      "bytes": 23108,
+      "sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323"
+    },
+    {
+      "path": "script/campaign/wh3_campaign_underdeep.lua",
+      "bytes": 24655,
+      "sha256": "d39cee94579f6751a269fd4bc991872e3f79e00b4993010a0d0efae18af75694"
+    },
+    {
+      "path": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "bytes": 38009,
+      "sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756"
+    },
+    {
+      "path": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "bytes": 166464,
+      "sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da"
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_campaign_nur_chieftains.lua",
+      "bytes": 48043,
+      "sha256": "0075a581d052e4312d49b2424d5a231c939b3a04153f3e9b3cad39607b442f12"
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_emp_techs.lua",
+      "bytes": 1402,
+      "sha256": "37e2996fba3cf158787dd51fc9312134525d53fb0323b7a6de3ac93731421778"
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_emperors_decrees.lua",
+      "bytes": 6144,
+      "sha256": "058d646f05a23651d34288ed2d62d583eff832afe970ba0e598c863eea25d2b0"
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_empire_state_troops.lua",
+      "bytes": 10146,
+      "sha256": "3a8a899ecc135a1e9a6df89bafd293b1b68ec794186fe11142fd429bcf6d237a"
+    },
+    {
+      "path": "script/campaign/wh3_dlc25_malakai_battles.lua",
+      "bytes": 87170,
+      "sha256": "5bffd205bf49fcad49f4b217e9b7b1c1f2db5502420aa5c1ed7a1ffdaabdde99"
+    },
+    {
+      "path": "script/campaign/wh3_dlc26_ogre_camps.lua",
+      "bytes": 15478,
+      "sha256": "34e888f2d199adbe88d60532d07b41dd18f1004254df3e8484ae3c2eb6c1b129"
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_asur_dilemmas.lua",
+      "bytes": 6693,
+      "sha256": "286354246bc39c565deb31ff0105adf458ed7a71c0d2105d732f375fe412d979"
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_dechala_daemonic_units.lua",
+      "bytes": 1903,
+      "sha256": "4207a626e21e887198cb9034cf21bacde2cb896d6bcb53ed6d03d36e4bc6a976"
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_dechala_settlement_exploitation.lua",
+      "bytes": 13255,
+      "sha256": "0c34d3f920c22fa91c15de70795580422fe63375b14da73965c2440edd2eaf6b"
+    },
+    {
+      "path": "script/campaign/wh3_dlc27_eternal_dance.lua",
+      "bytes": 52998,
+      "sha256": "883d9474e181734ca5276f3b8c561c0a9939129ec9ab7410f8fe4575c3572336"
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/required.lua",
+      "bytes": 4829,
+      "sha256": "6dbea05701fb26a05ed466e2688ec0422fc73a276a7bca63f2bdbd2c5051f327"
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/wh3_chaos_narrative_events.lua",
+      "bytes": 165563,
+      "sha256": "3e2c6a6177445896f785dc2dbe5732ad1379f99d17b8eb4bbde4fce1028b038e"
+    },
+    {
+      "path": "script/campaign/wh3_main_chaos/wh_start.lua",
+      "bytes": 8167,
+      "sha256": "69fcbc3f3d8955ef64d27c6ab69b7891d16912415d9141695f75c61ae012722d"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_advice.lua",
+      "bytes": 151180,
+      "sha256": "f8eb59b3133b46a48990d8e78e243e5fae59f8783e5016123c2fbf574bbb6dc1"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_audio.lua",
+      "bytes": 22392,
+      "sha256": "cff0a81536a0bab1d8447deeef37be6c73610e008701d8bb0acf4eabc8dcaf32"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_followers.lua",
+      "bytes": 13956,
+      "sha256": "461e668d20b56643e3ce47fac8cee8b7129fad77d63a634d02c1b073212628be"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_interventions.lua",
+      "bytes": 233300,
+      "sha256": "3a51fcfff025126666dd4c70784d7a9c2694738e5e437508074c4fc0b7d69346"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_scripted_tours.lua",
+      "bytes": 73510,
+      "sha256": "2882db786e628fd2e6ae81523e1643931f6e4eaf30d39ad1d5144d4e8d7a8241"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_start.lua",
+      "bytes": 124001,
+      "sha256": "66c0ce79b64232f1dbba9489250b7433d6785369babb8e266b965e67e81ef414"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_traits.lua",
+      "bytes": 27102,
+      "sha256": "2b3702e60a385abd4a2a4da11c0a407c4e68eb1780429533b88b8de6012a0945"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/wh_disable_features.lua",
+      "bytes": 6010,
+      "sha256": "9886212c2d481b1bc153764a9802d1a3dc33496f97fa8a5563d2ef6662656b51"
+    },
+    {
+      "path": "script/campaign/wh3_main_prologue/wh_start.lua",
+      "bytes": 24521,
+      "sha256": "099933a764d0d6359f18d1cc7c8bbbf1a06be8a4f95739340ace8c817e004124"
+    },
+    {
+      "path": "script/campaign/wh_campaign_bretonnia_chivalry.lua",
+      "bytes": 12309,
+      "sha256": "b22d0ff0a3aa8debe88e6ca4dc97402097c52c904e7e1730ea50ea62f3699448"
+    },
+    {
+      "path": "script/campaign/wh_campaign_help_pages.lua",
+      "bytes": 535107,
+      "sha256": "f314dedd9e51d0acdf5f698529a603622c9e8fb33e04286cc593ca7c26557403"
+    },
+    {
+      "path": "script/campaign/wh_campaign_interventions.lua",
+      "bytes": 720228,
+      "sha256": "6220e49bd124c078965601d60aea13b03fae431b9be327971ebf4482f55656e8"
+    },
+    {
+      "path": "script/campaign/wh_campaign_scripted_tours.lua",
+      "bytes": 381742,
+      "sha256": "e7b4a9bca416b3a4f1c0a0798ce9a643bf370fd81f60eadf3348286b8a6d5c33"
+    },
+    {
+      "path": "script/campaign/wh_campaign_setup.lua",
+      "bytes": 113721,
+      "sha256": "fd2a11e89b3badd7ddc4ab0e178859da282d60a28700f82fd6e73b617403f6a8"
+    },
+    {
+      "path": "text/db/ancillaries__.loc.tsv",
+      "bytes": 996769,
+      "sha256": "edf229248ca6ef97a9ad63205f42ddc5a7be0432a74d8758a02657be7067b43f"
+    },
+    {
+      "path": "text/db/character_trait_levels__.loc.tsv",
+      "bytes": 450418,
+      "sha256": "1508fda858bdb6e39b79e0e74b869decec7649112ffc514cca9679751f504f3b"
+    },
+    {
+      "path": "text/db/effects__.loc.tsv",
+      "bytes": 2050603,
+      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+    },
+    {
+      "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
+      "bytes": 73434,
+      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+    },
+    {
+      "path": "text/db/factions__.loc.tsv",
+      "bytes": 297539,
+      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+    },
+    {
+      "path": "text/db/frontend_factions__.loc.tsv",
+      "bytes": 90478,
+      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+    },
+    {
+      "path": "text/db/initiatives__.loc.tsv",
+      "bytes": 166991,
+      "sha256": "c6e067f260f25eb206b6ef09cf83e1d18230651f176d85165c0e49cd41705efa"
+    },
+    {
+      "path": "text/db/pooled_resources__.loc.tsv",
+      "bytes": 146709,
+      "sha256": "7f4ad9a341f73e7a1576aa71fcf8f5e68ae91815cde806e497ac2f2f7d06eaea"
+    },
+    {
+      "path": "text/db/technologies__.loc.tsv",
+      "bytes": 751607,
+      "sha256": "f4d23295935ab049e24f7ec4288bcb35c6760d42080eafa6e9ef004dfdc6c279"
+    },
+    {
+      "path": "text/db/technology_node_sets__.loc.tsv",
+      "bytes": 6545,
+      "sha256": "d423da05d8c6269aa0cdfdb98c1135b49d65a7b9e0229a80d9bfbd12482d74ea"
+    },
+    {
+      "path": "text/db/technology_nodes_to_ancillaries_junctions__.loc.tsv",
+      "bytes": 5822,
+      "sha256": "84835e27d5203777b6cb422c0a9cbddae1917f96eb397291a09b7af1ff181b18"
+    },
+    {
+      "path": "text/db/technology_script_lock_reasons__.loc.tsv",
+      "bytes": 14747,
+      "sha256": "c4a64ecbc59f3e07700ddee629578d426ebf215af2da62240712d39f44f0558d"
+    },
+    {
+      "path": "text/db/technology_ui_groups__.loc.tsv",
+      "bytes": 19370,
+      "sha256": "8179027cfa323d1f6167660ce302731bf9e30e7046314386b79bc4dc969d4baa"
+    },
+    {
+      "path": "text/db/technology_ui_tabs__.loc.tsv",
+      "bytes": 5838,
+      "sha256": "cbf0ade9b7ea349485afdbc61b97c85f565db57f5f9c826f395d8282635cfe89"
+    }
+  ]
+}

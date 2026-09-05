@@ -3,7 +3,7 @@
   "patch": "8.1.1",
   "steam_build_id": "24237342",
   "decoder": "RPFM 5.0.6",
-  "extracted_at_utc": "2026-08-26T11:55:59.323Z",
+  "extracted_at_utc": "2026-09-05T12:09:48.690Z",
   "table_folders_requested": [
     "building_levels_tables",
     "building_chains_tables",
@@ -26,8 +26,7 @@
     "frontend_faction_leaders_tables",
     "effects_tables",
     "resources_tables",
-    "commodities_tables",
-    "technologies_tables"
+    "commodities_tables"
   ],
   "localisation_files_requested": [
     "building_chains__.loc",
@@ -152,11 +151,6 @@
       "path": "db/resources_tables/data__.tsv",
       "bytes": 6828,
       "sha256": "879889b2f2318057d9e38ed4a3733e9d8fae2c08dd77d585dbf96bd295da3da4"
-    },
-    {
-      "path": "db/technologies_tables/data__.tsv",
-      "bytes": 253673,
-      "sha256": "48d7803ef6538f67a283b62e6bae83ac98dadeb15a7350680ebeff8f482692b9"
     },
     {
       "path": "text/db/building_chains__.loc.tsv",

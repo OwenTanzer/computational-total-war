@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe constructible building levels, base costs and times, prerequisites, and standardized outputs for both playable factions. The normalized unit file and typed lookups already describe the Tzeentch roster, faction permissions, unit statistics, barriers, abilities, and attributes. The character files already contain the complete skill trees for Kairos, the Changeling, generic characters, and unique heroes. Those rows are not repeated here. This document records the pooled-resource loops, scripted foreign-slot rules, campaign actions, progression state, and faction-specific systems needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

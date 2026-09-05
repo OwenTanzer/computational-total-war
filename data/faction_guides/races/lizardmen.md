@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe constructible settlement and horde building levels, base costs and times, prerequisites, and standardized income, Growth, control, resource, recruitment, and upkeep effects. The normalized unit file and typed lookups already describe the Lizardmen roster, faction permissions, statistics, abilities, and typed unit relations. The character files already contain the complete skill trees for the seven legendary lords, generic characters, Slann variants, and Lord Kroak. Those rows are not repeated here. This document records campaign systems, pooled-resource and recruitment lifecycles, scripted acquisition, settlement and vassal rules, mission state, and faction-specific interactions that those catalogs do not express.
 
 ## Mechanically relevant material not captured elsewhere

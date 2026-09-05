@@ -4,6 +4,8 @@ Snapshot: Total War: WARHAMMER III 8.1.1, Steam build 24237342. The installed pl
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy catalog already records the constructible building levels for Khemri, Exiles of Nehek, Court of Lybaras, and Followers of Nagash, including ordinary construction inputs, income, Growth, control, trade output, and broad recruitment modifiers. The unit catalog records the 44-unit Tomb Kings roster, unit statistics, abilities, and exact faction permissions, including Arkhan's four faction-exclusive Vampire Counts-derived units. The character catalog records Settra, Khatep, Khalida, Arkhan, generic Tomb Kings, six Dynasty Kings, four Liche Priest lores, Tomb Princes, Necrotects, and Ptra's Necrotect with their ordinary skill-tree effects.
 
 This guide therefore does not repeat building rows, unit statistics, combat abilities, ordinary skills, magic-item statistics, or banner effects. It covers the campaign systems and lifecycle rules those standardized rows do not express: the zero-cost/cap economy, army and character capacity, Canopic Jar transactions, Mortuary Cult operations, Dynasty acquisition, rites, Books of Nagash, Dune Restoration, confederation restrictions, scripted human/AI branches, and current campaign-specific exceptions.

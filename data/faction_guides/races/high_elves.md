@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already enumerate constructible High Elf buildings, their costs, times, prerequisites, and standardized effects. The normalized unit file and typed lookups cover unit statistics, roster permissions, military groups, abilities, attributes, contact effects, weapons, and mounts. The character index and per-character files cover skill nodes, effects, prerequisites, locks, and ancillary grants. This document therefore does not restate ordinary building output, roster differences, battle statistics, or skill effects. A cataloged building, unit, character, or skill is mentioned only when it is an input to a separate campaign system.
 
 ## Mechanically relevant material not captured elsewhere

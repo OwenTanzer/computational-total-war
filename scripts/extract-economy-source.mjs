@@ -33,7 +33,6 @@ const TABLES = [
   "effects_tables",
   "resources_tables",
   "commodities_tables",
-  "technologies_tables",
 ];
 
 const LOC_FILES = [

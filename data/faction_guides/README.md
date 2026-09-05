@@ -1,6 +1,6 @@
 # Race campaign guides
 
-This directory is the qualitative companion to the normalized unit, character,
+This directory is the qualitative companion to the normalized unit, character, technology-tree,
 and economy datasets. It contains one Markdown document per playable race for
 *Total War: WARHAMMER III* patch 8.1.1.
 
@@ -11,6 +11,7 @@ the following production material has been reviewed:
 - `data/unit_stats/`
 - `data/skill_trees/`
 - `data/economy/`
+- `data/technology_trees/` — ordinary research structure and payloads; guides retain runtime conditions and unresolved precedence.
 
 Each race document covers race-wide systems and any additional faction-specific
 systems, rules, exceptions, permissions, resources, or state transitions. The

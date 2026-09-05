@@ -36,6 +36,10 @@ mechanics.
 - When datasets disagree or a requested mechanic is out of scope, report the
   boundary rather than inventing a value.
 
+- Technology data is owned by `data/technology_trees/`; the economy snapshot does not own technology records.
+- In faction technology files, filter by `variant_key`. Generic and faction-specific source candidates must remain distinct; decoded records do not prove engine selection precedence.
+- Read `script_audit.json` and `audit_report.json` before asserting research availability. Script references are evidence pointers, not unconditional effects; the Daemon Prince explicitly has no ordinary research tree.
+
 ## Repository maintenance
 
 Production data under `data/` is generated and must not be edited manually.

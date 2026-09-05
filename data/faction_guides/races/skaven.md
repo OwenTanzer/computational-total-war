@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The six faction economy CSVs already enumerate enabled constructible settlement and Under-City building levels and the standardized fields they can represent: base costs and times, tiers, simple prerequisites, unconditional outputs, recruitment access, and broad recruitment/upkeep modifiers. Conditional discoverability, spread, pooled-resource transactions, and scripted campaign behavior are not ordinary economy columns. The normalized unit file and typed lookups already describe Skaven roster permissions, unit statistics, abilities, attributes, weapons, projectiles, and mounts. The character files already contain the skill trees for all six legendary lords, Ghoritch, the ritual agents, and every generic Skaven lord and hero. Those records are not repeated here.
 
 This guide covers the campaign state machines and exceptions needed to interpret those catalogs: Food, Menace Below, hidden settlements, Under-Cities, campaign movement, loyalty, plague transmission, ritual-agent availability, the four DLC faction systems, Ghoritch and Iyann Rocksburrow, Clan Mors at Karak Eight Peaks, and Clan Rictus's scripted triggers.

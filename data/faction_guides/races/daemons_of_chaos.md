@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSV already describes the Legion of Chaos's constructible building levels, costs, times, prerequisites, and standardized outputs, including the god-specific settlement and recruitment chains. The normalized unit file and typed lookups already describe the race roster, faction permissions, unit statistics, abilities, attributes, weapons, and mounts. The character file already contains the Daemon Prince's skill tree. Those rows are not repeated here. This document records the Glory economy that controls their availability, settlement-template choices, ascension state, Daemonic Gifts, borrowed god mechanics, post-battle Daemon recovery, climate rule, campaign-specific victory coupling, and scripted character-acquisition chains.
 
 ## Mechanically relevant material not captured elsewhere

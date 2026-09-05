@@ -4,6 +4,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 This guide records campaign mechanics that are not represented adequately by the existing normalized catalogs. Building chains, costs, income, and ordinary building effects belong to the Bretonnian economy exports. Unit statistics, permissions, and battle abilities belong to the unit catalog. Lord and hero skill-node effects belong to the skill-tree exports. Those facts are not repeated here. References to a building, unit class, ability, or hidden skill node below identify an input to a script or campaign system, not a replacement catalog entry.
 
 ## Mechanically relevant material not captured elsewhere
