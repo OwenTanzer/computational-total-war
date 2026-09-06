@@ -1,0 +1,986 @@
+key	text	tooltip
+#Loc;1;text/db/pooled_resources__.loc		
+pooled_resources_description_brt_chivalry	{{tr:food_breakdown_details}}	false
+pooled_resources_description_bst_dread	Dread is the currency used to invoke the Dark Gods to strengthen your tribe via the Rewards of Dread panel. It is acquired by completing missions, razing settlements and winning battles, with more Dread received the more enemy casualties inflicted. Dread can be spent on expanding unit and [[img:icon_hero]][[/img]]Hero capacities, recruiting [[img:icon_general]][[/img]]Legendary Lords, and other upgrades.	false
+pooled_resources_description_bst_herdstone_shard	Herdstone Shards are the raw materials required to raise Herdstones. Additional Shards are attained when reaching certain [[img:icon_marks_of_ruination]][[/img]]Ruination Levels as you progress through the campaign and can never be lost, only reused. Shards are regained after casting a Ritual of Ruin or if a Herdstone gets destroyed before the ritual is performed.	false
+pooled_resources_description_bst_momentum	Momentum dictates how long a Rampage is sustained. As long as Momentum stays above zero, battle victories will continue to accumulate [[img:icon_rampage]][[/img]]Rampage Marks, but if all Momentum is lost a Rampage must restart. Momentum decreases every turn but also when Taurox loses battles, retreats, or when using his [[img:icon_effect_campaign_movement]][[/img]]movement range replenishment ability. Once reaching zero, Momentum can be regained simply by winning a battle.	false
+pooled_resources_description_bst_rampage	Rampage Marks are collected as Taurox wins successive battles, repeatedly filling the Rampage bar to periodically offer various rewards. The rate at which the Rampage bar fills depends on the strength of opponents and the number of battles fought in a single turn. To sustain a Rampage, [[img:icon_momentum]][[/img]]Momentum must be kept above zero – once all Momentum is lost due to inactivity or other factors, all Rampage Marks are lost.	false
+pooled_resources_description_bst_ruination	Ruination Level is a measure of the warherd’s progress, increasing as Marks of Ruination are collected. Once a Herdstone has been erected, razing settlements in the surrounding Blood-grounds will earn Devastation which in turn can be converted to Marks of Ruination by way of a Ritual of Ruin. The higher the level of razed settlements, the more Marks of Ruination earned for performing the ritual.	false
+pooled_resources_description_cst_infamy		false
+pooled_resources_description_def_malus_sanity	[[img:icon_malus_possession]][[/img]]Possession indicates the strength of Tz’arkan’s constantly increasing influence over Malus. It intensifies if Malus transforms into Tz’arkan in battle or if he follows [[img:def_malus_tzarkan_whispers]][[/img]]Tz’arkan’s Whispers, but decreases while he is in a settlement or if he uses the [[img:def_malus_possession_potion]][[/img]]Elixir.	false
+pooled_resources_description_def_slaves	Those unfortunate enough to be taken captive by the Dark Elves know their fate is to be worked to death fulfilling many exhausting and degrading tasks across the Druchii empire!\\n\\n[[img:icon_slaves]][[/img]] [[col:yellow]]Slaves are gained through fighting battles, capturing and upgrading ports, and by recruiting Black Arks or Assassin heroes.[[/col]]\\n\\n[[img:icon_slaves]] [[/img]][[col:yellow]]They are used to boost the income, control and growth effects of Infrastructure buildings. They can also be spent on instant building construction or to gain bonuses from provincial Diktats and rites.[[/col]]	false
+pooled_resources_description_dwf_oathgold	A rare form of gold ore mined from the deepest caverns yields a material of strange properties coveted by the Runesmiths; a scarce and valuable means to fuel their forgecraft.\\n\\n[[col:yellow]][[img:icon_oathgold]][[/img]]Oathgold enables the use of the Forge, where it is spent with other resources to create magic items.[[/col]]\\n\\n[[col:yellow]][[img:icon_oathgold]][[/img]]Oathgold is primarily obtained from certain buildings, recycling magic items in the Forge, and missions. Its rate of gain can be increased via skills.[[/col]]	false
+pooled_resources_description_dwf_thorek_artifact_part_1a		false
+pooled_resources_description_dwf_thorek_artifact_part_1b		false
+pooled_resources_description_dwf_thorek_artifact_part_2a		false
+pooled_resources_description_dwf_thorek_artifact_part_2b		false
+pooled_resources_description_dwf_thorek_artifact_part_3a		false
+pooled_resources_description_dwf_thorek_artifact_part_3b		false
+pooled_resources_description_dwf_thorek_artifact_part_4a		false
+pooled_resources_description_dwf_thorek_artifact_part_4b		false
+pooled_resources_description_dwf_thorek_artifact_part_5a		false
+pooled_resources_description_dwf_thorek_artifact_part_5b		false
+pooled_resources_description_dwf_thorek_artifact_part_6a		false
+pooled_resources_description_dwf_thorek_artifact_part_6b		false
+pooled_resources_description_dwf_thorek_artifact_part_7a		false
+pooled_resources_description_dwf_thorek_artifact_part_7b		false
+pooled_resources_description_dwf_thorek_artifact_part_8a		false
+pooled_resources_description_dwf_thorek_artifact_part_8b		false
+pooled_resources_description_dwf_underdeeps	Reconquest of the Deeps beneath the ancient Dwarf Karaks is always a long and costly endeavour and, as such, the High King must approve any efforts to reclaim the deepest areas of these Holds.\\n\\n[[col:yellow]][[img:icon_underdeep]][[/img]]High King Decrees enables access to the Deeps via construction of the Great Gate building within settlements.[[/col]]\\n\\n[[col:yellow]][[img:icon_underdeep]][[/img]]High King Decrees are primarily obtained from upgrading existing Deeps locations, but can in some cases be gained via technology or Thorgrim's skills.[[/col]]	false
+pooled_resources_description_emp_imperial_authority	[[img:emp_imperial_authority]][[/img]]Imperial Authority is a measure of how the other [[img:emp_elector_counts]][[/img]]Elector Counts within the Empire view your faction. Low [[img:emp_imperial_authority]][[/img]]Imperial Authority will not only cause you to lose the confidence of your subjects, but may eventually lead to the other [[img:emp_elector_counts]][[/img]]Elector Counts deciding to oust you.	false
+pooled_resources_description_emp_imperial_authority_new	The greater the number of Imperial lands in Imperial hands, the greater your authority over your faction.\\n\\n[[col:yellow]][[img:emp_imperial_authority]][[/img]] Imperial Authority is the measure of how many regions within the Empire are owned by your culture.[[/col]]\\n\\n[[col:yellow]][[img:emp_imperial_authority]][[/img]] To benefit from Imperial Authority, secure the borders of the Empire’s home provinces and repel foreign invaders where possible.	false
+pooled_resources_description_emp_loyalty	An Elector Count’s loyalty to their kith and kin is never as important as their belief in your plans for the greater good of the Empire.\\n\\n[[col:yellow]][[img:emp_fealty]][[/img]] Fealty is a measure of how strongly an Elector Count believes in your cause, rising and falling based on your political interactions with them and your actions towards their faction.[[/col]]\\n\\n[[col:yellow]][[img:emp_fealty]][[/img]] An Elector Count whose Fealty reaches 10 may be confederated via an Emperor’s Decree, while those whose Fealty reaches 0 will attempt secession.[[/col]]	false
+pooled_resources_description_emp_prestige	Political will is of little consequence without the gravitas to exert it.\\n\\n[[col:yellow]][[img:emp_prestige]][[/img]] Prestige is the measure of how influential your faction leader is within the political landscape of the Empire. It is used to respond to political events to dictate their outcomes.[[/col]]\\n\\n[[col:yellow]][[img:emp_prestige]][[/img]] Prestige can be gained from battles, special events, and from the Elector Counts, whose per-turn Prestige contributions increase with higher Fealty Levels.[[/col]]	false
+pooled_resources_description_emp_progress	[[img:bullet_emp_mandate]][[/img]]Acclaim is a measure of how much progress the expedition makes towards fulfilling the Emperor’s Mandate. Expansion, building or upgrading ports, or unlocking special [[img:bullet_emp_hunters]][[/img]]characters will increase [[img:bullet_emp_mandate]][[/img]]Acclaim and lead to better-quality reinforcements dispatched from home via the [[img:emp_imperial_supply]][[/img]]Imperial Supplies system.	false
+pooled_resources_description_emp_wanted	[[img:emp_hostility]][[/img]]Hostility reflects the current level of enemy aggression due to the expedition’s military activities. [[img:emp_imperial_supply]][[/img]]Imperial Supplies are the care packages sent from the Empire to provide various reinforcement types. The higher the [[img:emp_hostility]][[/img]]Hostility level, the more frequently [[img:emp_imperial_supply]][[/img]]Imperial Supplies are dispatched from home.	false
+pooled_resources_description_grn_salvage	Greenskins are not above pilfering used weapons and other junk from the battlefield and do so indiscriminately!\\n\\n[[col:yellow]] [[img:icon_scrap]][[/img]] Scrap is collected from the aftermath of your warmongering actions such as looting, raiding, razing and other sources.\\n\\n[[col:yellow]] [[img:icon_scrap]][[/img]] Scrap can be put towards improving the tribe’s war capabilities such as unit equipment upgrades via the Army panel and technologies.	false
+pooled_resources_description_grn_waaagh	All Greenskins want to fight for the most successful tribe! Once you have earned enough [[img:icon_waaagh]][[/img]]Reputation, you can issue a Call to WAAAGH! and target any visible faction. Your armies will then be joined by extra mobs that will help your Waaagh! raze or occupy the target’s capital in return for a trophy and rewards.	false
+pooled_resources_description_lzd_old_ones_favour	Installing temples devoted to specific [[img:icon_lzd_nakai_temple_green]][[/img]][[img:icon_lzd_nakai_temple_blue]][[/img]][[img:icon_lzd_nakai_temple_red]][[/img]]Old Ones within settlements granted to the [[img:bullet_lzd_spawnings_of_the_ancients]][[/img]]Defenders of the Great Plan will provide a raft of rewards and earn [[img:icon_lzd_nakai_favour]][[/img]]Favour, which can then be used to unlock powerful units and technologies.	false
+pooled_resources_description_lzd_sacrificial_offerings	All Sacrifices to Sotek require the slaughter of enemy captives marked for sacrifice following battle victories or rewarded from successful missions. [[img:icon_sotek_captives]][[/img]]Sacrificial Offerings are consumed during each sacrifice in return for benefits such as Regiments of Renown, Army Abilities, Banners and Followers.	false
+pooled_resources_description_lzd_sanctum_gems	Silent Sanctums provide additional building slots with building chains that can benefit you in the local and surrounding regions. To create a new Silent Sanctum, in a region of your choosing, you use a Sanctum Gem Set, gained by collecting 8 Sanctum Gems. You can earn Sanctum Gems by completing Vision missions with Oxyotl.	false
+pooled_resources_description_lzd_sanctum_points	Silent Sanctums provide additional building slots with building chains that can benefit you in the local and surrounding regions. To create a new Silent Sanctum, in a region of your choosing, you use a Sanctum Gem Set, gained by collecting 8 Sanctum Gems. You can earn Sanctum Gems by completing Vision missions with Oxyotl.	false
+pooled_resources_description_merc_active_contract_points	Job’s simple, the Maneaters know the score – make the lives of the client’s enemies a livin’ hell!\\n\\n[[col:yellow]]Gain progress towards completing this contract via the following actions against targets:\\n\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_battles}}\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_faction_leaders_killed_in_battle}}\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_merc_occupation}}\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_merc_gift}}\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_raiding}}\\n[[img:icon_contract_points]][[/img]] {{tr:pooled_resource_factors_display_name_positive_hero_actions}}\\n\\n{{tr:ui_text_replacements_localised_text_wh3_speed_ogre_war_contracts_extra_satisfaction_description}}	false
+pooled_resources_description_nor_progress_crow	Pledge your devotion to a Dark God to gain their favour and be granted Ruinous gifts	false
+pooled_resources_description_nor_progress_eagle	Pledge your devotion to a Dark God to gain their favour and be granted Ruinous gifts	false
+pooled_resources_description_nor_progress_hound	Pledge your devotion to a Dark God to gain their favour and be granted Ruinous gifts	false
+pooled_resources_description_nor_progress_serpent	Pledge your devotion to a Dark God to gain their favour and be granted Ruinous gifts	false
+pooled_resources_description_nur_epidemius_tally_of_pestilence	{{tr:ui_text_replacements_localised_text_hp_campaign_description_tally}}\\n\\n[[img:icon_plague]][[/img]] [[col:yellow]]The Tally of Pestilence counts the number of non-Nurgle armies and settlements currently infected by Epidemius’ Plagues. The greater the number of infected targets, the greater Epidemius’ power level.[[/col]]\\n\\n[[img:icon_plague]][[/img]] [[col:yellow]]The Tally of Pestilence counter can both increase and decrease between power levels. Any instance of a Plague expiring on its host is deducted from the total.[[/col]]	false
+pooled_resources_description_ogr_path_of_the_butcher	In worship of their vile, pulsating god, the Disciples feed their maw-cauldrons with offerings of bloody meat for the tremendous power it brings in return.\\n\\n[[img:icon_ogr_meat]][[/img]] [[col:yellow]]The Path of the Butcher grants increasing benefits for Skrag's faction and army based on the number of active offerings to the Great Maw across all armies.\\n\\n[[img:icon_ogr_meat]][[/img]] [[col:yellow]]You can enable new offerings via each army’s Offer to the Great Maw panel.[[/col]]	false
+pooled_resources_description_skaven_food	Armies and settlements consume [[img:icon_skaven_food]][[/img]]food each turn. It can also be used to occupy settlements at higher levels and purchase uses of the Menace Below army ability. [[img:icon_skaven_food]][[/img]]Food is gained from fighting battles and can be grown by special buildings in settlements with the [[img:icon_resource_pastures]][[/img]]Pastures resource.	false
+pooled_resources_description_skv_clan_mors	Completing contracts grants you the temporary boon of having Clan Mors' full support.	false
+pooled_resources_description_skv_clan_moulder	Completing contracts grants you the temporary boon of having Clan Moulder's full support.	false
+pooled_resources_description_skv_clan_pestilens	Completing contracts grants you the temporary boon of having Clan Pestilens' full support.	false
+pooled_resources_description_skv_clan_skryre	Completing contracts grants you the temporary boon of having Clan Skryre's full support.	false
+pooled_resources_description_skv_dust	Clan Eshin have learned the secretive, dark art of using their Schemes to fuel their shady machinations.	false
+pooled_resources_description_skv_growth_vat	The Growth Vat is where Clan Moulder grows abominable creatures to join their unclean ranks. Growing specimens requires [[img:icon_growth_juice]][[/img]]Growth Juice, which naturally accumulates but is consumed whenever the vat is emptied to claim units. It can also be collected by fighting battles or recycling Augmented units afflicted by [[img:icon_instability]][[/img]]Instability.	false
+pooled_resources_description_skv_mutagen	[[img:icon_mutagen]][[/img]]Mutagen is used in the Flesh Lab and enables Clan Moulder to apply Augmentations to units to make them more effective in battle. It is produced mainly in the Growth Vat, collected as a by-product whenever the vat is emptied to claim batches of units. A maximum of [[img:icon_mutagen]][[/img]]100 can be stored at once – any excess Mutagen degenerates and is lost over time. Mutagen capacity can be increased by upgrading the Flesh Lab.	false
+pooled_resources_description_skv_nuke	A powerful device that could wreak havoc on the battlefield, this devastating missile can only be produced in the workshop.	false
+pooled_resources_description_skv_reactor_core	Warp-fuel canisters power the Forbidden Workshop, so are consumed whenever parts and components are upgraded there. Ingeniously concocted from various liquified materials, Warp-fuel can be collected following battle victories, while searching ruins, and [[img:icon_hero]][[/img]]Hero actions.	false
+pooled_resources_description_tmb_canopic_jars	Crafting items, awakening Dynastic Legends through the Mortuary Cult, issuing Nehekharan Decrees and unlocking dynasties all consume [[img:icon_jars]][[/img]]Canopic Jars. [[img:icon_jars]][[/img]]Canopic Jars are obtained by kills in battle, constructing certain buildings, and completing missions.	false
+pooled_resources_description_vmp_blood_kiss	Awaken ancient and powerful Vampire Bloodlines and consume [[img:icon_blood_kiss]][[/img]]Blood Kisses, which are acquired by killing faction leaders in battle, by assassination, or by [[img:icon_vassal]][[/img]]vassalising factions.	false
+pooled_resources_description_wardens_supply	The Warden’s Supplies are used to upgrade your facilities in the secret citadel of Athel Tamarha which in turn will improve your capability to defend Yvresse. [[img:icon_warden_supplies]][[/img]]Supplies are gained from carrying out certain actions against prisoners in Athel Tamarha or by inducting [[img:icon_lord]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes into your special group of Mistwalkers.	false
+pooled_resources_description_wef_amber	Amber is earned each time a Ritual of Rebirth is completed to heal a forest. It can then be gifted to the Ancients via the technology panel in return for their wisdom and power.	false
+pooled_resources_description_wef_forge_daiths_favour	After each battle won by the Sisters, Daith grants them a Favour which can be spent in his Forge. Favours can be spent on receiving, permanently refining, or temporarily reforging set items and gaining Daith’s Blessings. A maximum of three Favours can be accumulated at any one time.	false
+pooled_resources_description_wef_worldroots_athel_loren	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health. Additionally, healing other Magical Forests will contribute to the health of Athel Loren.	false
+pooled_resources_description_wef_worldroots_emerald_pools	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_gaean_vale	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_gryphon_wood	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_heart_of_the_jungle	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_jungles_of_chian	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_laurelorn	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_naggarond_glade	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_the_haunted_forest	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wef_worldroots_vale_of_webs	Increase the [[img:forest_health]][[/img]]health of this Magical Forest to perform a Ritual of Rebirth and permanently restore it. Do this by razing its bordering [[img:heathland_pacified]][[/img]][[img:heathland_hostile]][[/img]][[img:heathland_neutral]][[/img]]Heathland settlements or ensuring they are occupied by yourself or your allies. Battles fought within this region or its Heathlands will also provide a small amount of health.	false
+pooled_resources_description_wh2_main_ritual_currency		false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource	Number of experiments, currently Shang-Yang's Warholds	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cross_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cross_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cross_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_infantry_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_infantry_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_infantry_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_artillery_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_artillery_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_artillery_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_gun_infantry_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_gun_infantry_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g2_gun_infantry_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_beasts_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_beasts_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_beasts_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_machines_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_machines_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_celestial_machines_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_flying_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_flying_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_flying_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_special_cav_1_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_special_cav_2_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_aosy_g3_special_cav_3_resource	{{tr:pooled_resources_description_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_description_wh3_cp1_cth_court_bhashiva		false
+pooled_resources_description_wh3_cp1_cth_court_military		false
+pooled_resources_description_wh3_cp1_cth_court_spiritual		false
+pooled_resources_description_wh3_cp1_cth_iron_favour	By garnering the favour of the Iron Dragon, the worthy may benefit from the military might of Shang-Yang.{{tr:ui_text_replacements_localised_text_wh3_cp1_pooled_resource_iron_favour_description}}	false
+pooled_resources_description_wh3_cp1_cth_iron_favour_enemy_armies	This force has been marked as a notable threat by the Iron Dragon! Defeat them, and he will grant you his [[img:icon_iron_favour]][[//img]]Iron Favour.{{tr:ui_text_replacements_localised_text_wh3_cp1_pooled_resource_iron_favour_description}}	false
+pooled_resources_description_wh3_cp1_cth_iron_favour_enemy_settlements	This is a settlement of strategic importance to the Iron Dragon! Conquer it, and he will grant you his [[img:icon_iron_favour]][[//img]]Iron Favour.{{tr:ui_text_replacements_localised_text_wh3_cp1_pooled_resource_iron_favour_description}}	false
+pooled_resources_description_wh3_cp1_cth_relics	Time, hardship and wayfaring have scattered the Tiger Warriors’ treasured Relics throughout the world, but to reclaim them is to reinforce the pillars of their great and enduring warrior-culture.\\n\\n[[col:yellow]][[img:icon_relics]][[/img]]Relics are gained by capturing marked settlements, as well as from the Ivory Road and other events.\\n\\n[[col:yellow]][[img:icon_relics]][[/img]]Relics are used to devote in the Tiger Court, in turn strengthening the Tiger Warriors and advancing their campaign.[[/col]]	false
+pooled_resources_description_wh3_cp1_cth_relics_settlements	This is a known location of a [[img:icon_relics]][[/img]]Relic! Occupying the settlement will be necessary to reclaim it.	false
+pooled_resources_description_wh3_dlc20_chs_authority_khorne	This army’s [[img:icon_general]][[/img]]Lord and [[img:icon_hero]][[/img]]Heroes each contribute to a combined Authority score. A positive score makes Khorne-dedicated units cheaper and improves replenishment, while a negative score has the opposite effect.	false
+pooled_resources_description_wh3_dlc20_chs_authority_nurgle	This army’s [[img:icon_general]][[/img]]Lord and [[img:icon_hero]][[/img]]Heroes each contribute to a combined Authority score. A positive score makes Nurgle-dedicated units cheaper and improves replenishment, while a negative score has the opposite effect.	false
+pooled_resources_description_wh3_dlc20_chs_authority_slaanesh	This army’s [[img:icon_general]][[/img]]Lord and [[img:icon_hero]][[/img]]Heroes each contribute to a combined Authority score. A positive score makes Slaanesh-dedicated units cheaper and improves replenishment, while a negative score has the opposite effect.	false
+pooled_resources_description_wh3_dlc20_chs_authority_tzeentch	This army’s [[img:icon_general]][[/img]]Lord and [[img:icon_hero]][[/img]]Heroes each contribute to a combined Authority score. A positive score makes Tzeentch-dedicated units cheaper and improves replenishment, while a negative score has the opposite effect.	false
+pooled_resources_description_wh3_dlc20_chs_authority_undivided	This army’s [[img:icon_general]][[/img]]Lord and [[img:icon_hero]][[/img]]Heroes each contribute to a combined Authority score. A positive score makes Undivided units cheaper and improves replenishment, while a negative score has the opposite effect.	false
+pooled_resources_description_wh3_dlc20_chs_champions_campaign_progress	Any action that grants Souls – such as fighting battles and razing settlements – will also allow you to get closer to revealing the hidden city of Zanbaijin. 	false
+pooled_resources_description_wh3_dlc20_chs_eye_of_the_gods	The higher the number of active Gifts of Chaos you have, the more the Eye of the Gods is drawn to your faction. Once the meter is full, a dilemma will offer you powerful rewards.	false
+pooled_resources_description_wh3_dlc20_chs_souls	Souls are harvested by winning battles and razing settlements against all factions except Khorne, Slaanesh, Tzeentch, Nurgle and Daemons of Chaos. In turn, they can be sacrificed for powerful [[img:icon_chaos_gifts]][[/img]]Gifts of Chaos or by ascending [[img:icon_general]][[/img]]Lords and [[img:icon_hero]][[/img]]Heroes through Paths to Glory.	false
+pooled_resources_description_wh3_dlc20_chs_souls_spent_kho	Sacrificing [[img:icon_souls_resource]][[/img]]Souls to the Blood God unlocks additional Gifts of Chaos.	false
+pooled_resources_description_wh3_dlc20_chs_souls_spent_nur	Sacrificing [[img:icon_souls_resource]][[/img]]Souls to the Plague Lord unlocks additional Gifts of Chaos.	false
+pooled_resources_description_wh3_dlc20_chs_souls_spent_sla	Sacrificing [[img:icon_souls_resource]][[/img]]Souls to the Dark Prince unlocks additional Gifts of Chaos.	false
+pooled_resources_description_wh3_dlc20_chs_souls_spent_tze	Sacrificing [[img:icon_souls_resource]][[/img]]Souls to the Lord of Change unlocks additional Gifts of Chaos.	false
+pooled_resources_description_wh3_dlc20_chs_souls_spent_und	Sacrificing [[img:icon_souls_resource]][[/img]]Souls to Chaos Undivided unlocks additional Gifts of Chaos.	false
+pooled_resources_description_wh3_dlc20_chs_teleport_network_rift_resource	To claim portals and gates through the Chaos Realms, forbidden lore is required. By claiming enough [[img:icon_souls_resource]][[/img]]Souls, the power-hungry can learn twisted runes and sigils enabling them to take possession of the rifts.	false
+pooled_resources_description_wh3_dlc20_chs_teleport_network_traversal_azazel	Secret resource that locks out non-Azazel factions from using his nodes	false
+pooled_resources_description_wh3_dlc20_chs_teleport_network_traversal_festus	Secret resource that locks out non-Festus factions from using his nodes	false
+pooled_resources_description_wh3_dlc20_chs_teleport_network_traversal_valkia	Secret resource that locks out non-Valkia factions from using her nodes	false
+pooled_resources_description_wh3_dlc20_chs_teleport_network_traversal_vilitch	Secret resource that locks out non-Vilitch factions from using his nodes	false
+pooled_resources_description_wh3_dlc23_chd_armaments	The infernal creations and principle trade goods of the Chaos Dwarfs, crafted in their boiling, smoke-filled factories: Daemon-infused weapons, armour and munitions.\\n\\n[[col:yellow]][[img:icon_armaments]][[/img]]Armaments are generated from Factory settlements' Assembly Lines.[[/col]]\\n\\n[[col:yellow]][[img:icon_armaments]][[/img]]They are used to construct Advanced Military Buildings and to empower your units in the Hell-Forge.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_conclave_influence	The currency of power within Chaos Dwarfs' ruling council, granted to those who please Hashut by successfully achieving the ambitions of of the Dawi-Zharr.\\n\\n[[col:yellow]][[img:icon_conclave_influence]][[/img]]Conclave Influence is gained through expanding your territory, raising [[img:icon_chd_tower]][[/img]]Towers and constructing Temple of Hashut buildings.[[/col]]\\n\\n[[col:yellow]][[img:icon_conclave_influence]][[/img]]Conclave Influence can be spent to claim powerful rewards in the Tower of Zharr and occupy settlements at higher building levels.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_efficiency	The crushing sound of pickaxes against stone echoes around our Outposts, along with the screams of brutalised Labourers.\\n\\n[[col:yellow]][[img:icon_efficiency]][[/img]]Efficiency measures how much [[img:icon_labour]][[/img]]Labour you have compared to your [[img:icon_workload]][[/img]]Workload requirements.[[/col]]\\n\\n[[col:yellow]][[img:icon_efficiency]][[/img]]Efficiency can reduce the [[img:icon_raw_materials]][[/img]]Raw Material output of the province if [[img:icon_workload]][[/img]]Workload requirements aren't met. This scales based on how low your [[img:icon_efficiency]][[/img]]Efficiency is.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_bull_centaur_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional standard-issue weapons and armour for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_flying_beast_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional standard-issue weapons and armour for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_kdaai_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional standard-issue weapons and armour for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_melee_inf_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional standard-issue weapons and armour for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_missile_inf_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional standard-issue weapons and armour for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_hellforge_warmachine_unlocker	[[img:icon_armaments]][[/img]] Spend Armaments to forge additional parts and components for units in this category, increasing their unit capacities.\\n\\n[[img:unit_capacity]][[/img]] Increasing total unit capacity in a category gradually unlocks more powerful forgecraft options in the Manufactory.	false
+pooled_resources_description_wh3_dlc23_chd_labour	The rattling of chains and the screams of the hungry ring out from the Labourer’s cages – put them to work!\\n\\n[[col:yellow]][[img:icon_labour]][[/img]]Labour is gained through fighting battles and is split evenly between all provinces marked for new intake on the Labour Management panel[[/col]].\\n\\n[[col:yellow]][[img:icon_labour]][[/img]]It is required in order to produce the maximum amount of [[img:icon_raw_materials]][[/img]]Raw Materials.[[/col]]\\n\\n[[col:red]]A percentage of your [[img:icon_labour]][[/img]]Labour is lost each turn based on [[img:icon_public_order]][[/img]]Control levels.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_labour_global_temp	The Chaos Dwarfs use unpaid Labourers – often Greenskins – to do the actual work required to achieve their industrial aims. The rattling of chains and the screams of the hungry ring out from their cages – put them to work!\\n\\n[[col:yellow]][[img:icon_labour]][[/img]]Labour is gained through fighting battles and is split evenly between all provinces marked for new intake on the Labour Management panel[[/col]].\\n\\n[[col:yellow]][[img:icon_labour]][[/img]]It is required in order to produce the maximum amount of [[img:icon_raw_materials]][[/img]]Raw Materials.[[/col]]\\n\\n[[col:red]]A percentage of your [[img:icon_labour]][[/img]]Labour is lost each turn based on [[img:icon_public_order]][[/img]]Control levels.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_raw_materials	The fruits of the earth such as metal, stone and coal are all needed to fuel the Armaments factories and industrial projects of the Chaos Dwarf war machine!\\n\\n[[col:yellow]][[img:icon_raw_materials]][[/img]]Raw Materials are generated from Outpost settlements' Mines.[[/col]]\\n\\n[[col:yellow]][[img:icon_raw_materials]][[/img]]They are used to construct various buildings, and can be converted into [[img:icon_armaments]][[/img]]Armaments or [[img:icon_treasury]][[/img]]Treasury income within a Factory settlement's buildings.[[/col]]	false
+pooled_resources_description_wh3_dlc23_chd_workload	Every mineshaft dug into the earth needs the blood, sweat and corpses of a toiling Labour force to reap its rewards! Ensure Workload is met to maximise industrial efficiency.\\n\\n[[col:yellow]][[img:icon_workload]][[/img]]Workload is increased when building Mines in Outpost settlements.[[/col]]\\n\\n[[col:yellow]]A higher [[img:icon_workload]][[/img]]Workload means you'll need to maintain more [[img:icon_labour]][[/img]]Labour in the province in order to maximise the output of [[img:icon_raw_materials]][[/img]]Raw Materials.[[/col]]	false
+pooled_resources_description_wh3_dlc24_cth_mos_steel	Steel is the active principle. The fire that fuels the heart of men and the hand that wields the blade.\\n\\n[[col:yellow]][[img:icon_mos_steel]][[/img]] Steel tokens are used to perform the associated Matters of State actions, upon which they transfer into Stone.	false
+pooled_resources_description_wh3_dlc24_cth_mos_stone	Stone is the passive principle. The careful cultivation of the self, the pen that that signs away a life.\\n\\n[[col:yellow]][[img:icon_mos_stone]][[/img]] Stone tokens are used to perform the associated Matters of State actions, upon which they transfer into Steel.	false
+pooled_resources_description_wh3_dlc24_cth_province_harmony	{{tr:hp_campaign_point_2_harmony}}	false
+pooled_resources_description_wh3_dlc24_ksl_spirit_essence	As Kislev’s guardian, Mother Ostankya can harness the raw magic of the beyond to cajole souls into enabling her Curses, Blessings and Hexes.\\n\\n[[img:icon_spirit_essence]][[/img]] [[col:yellow]]Spirit Essence is primarily gained from fighting battles and maintaining low levels of corruption.\\n\\n[[img:icon_spirit_essence]][[/img]]Spirit Essence is used to perform Hexes and create Incantations in the Witch’s Hut.[[/col]]	false
+pooled_resources_description_wh3_dlc24_tze_cult_supplies	The Changeling harvests worldly materials and influence to proliferate his cults within settlements he infiltrates.\\n\\n[[col:yellow]][[img:icon_trickster_cult_supplies]][[/img]] Cult Supplies are primarily generated from Intrastructure buildings in [[img:icon_trickster_cult]][[/img]]Trickster Cult settlements and by completing Schemes.[[/col]]\\n\\n[[col:yellow]][[img:icon_trickster_cult_supplies]][[/img]] Cult Supplies are used to construct Trickster Cult buildings.[[/col]] 	false
+pooled_resources_description_wh3_dlc24_tze_hidden_cultists	Hidden Trickster Cultists lie in wait, ready to do your bidding. First, they must be contacted…\\n\\n[[col:yellow]][[img:icon_hidden_cultists]][[/img]] Trickster Cultists are gained following the completion of certain schemes.[[/col]]\\n\\n[[col:yellow]][[img:icon_hidden_cultists]][[/img]] Trickster Cultists are used via the technologies that summon them within chosen Theatres of War.[[/col]] 	false
+pooled_resources_description_wh3_dlc24_tze_rift_gems	As the Changeling’s schemes destabilise the very fabric of reality there come opportunities to open permanent rifts across the world…\\n\\n[[col:yellow]][[img:icon_rift_gems]][[/img]] Trickster Rifts are gained following the completion of certain schemes.[[/col]]\\n\\n[[col:yellow]][[img:icon_rift_gems]][[/img]] Trickster Rifts are opened via the technologies specific to chosen Theatres of War.[[/col]]	false
+pooled_resources_description_wh3_dlc25_chieftain_deference_bray_shaman		false
+pooled_resources_description_wh3_dlc25_chieftain_deference_castellan		false
+pooled_resources_description_wh3_dlc25_chieftain_deference_exalted_hero		false
+pooled_resources_description_wh3_dlc25_chieftain_deference_fimir_balefiend		false
+pooled_resources_description_wh3_dlc25_chieftain_deference_kazyk		false
+pooled_resources_description_wh3_dlc25_chieftain_deference_werekin		false
+pooled_resources_description_wh3_dlc25_chieftain_dominance	The Dominance of Nurgle’s Chosen One grows with his every conquest, allowing Tamurkhan to amass great influence in his quest to be Chaos’ most powerful warlord!\\n\\n[[img:icon_dominance]][[/img]] [[col:yellow]]Dominance is used to purchase Chieftains, Chieftain Abilities and units in the Tamurkhan’s Chieftains panel.[[/col]]\\n\\n[[img:icon_dominance]][[/img]] [[col:yellow]]Dominance is gained primarily from winning battles.[[/col]]	false
+pooled_resources_description_wh3_dlc25_dwf_grudge_cycle_tracker	% of grudge target met each cyccle	false
+pooled_resources_description_wh3_dlc25_dwf_grudge_points	The ever-growing tally of terrible wrongs avenged and treacherous deeds retributed empowers the throng.\\n\\n{{tr:ui_text_replacements_localised_text_grudges_resource}}	false
+pooled_resources_description_wh3_dlc25_dwf_grudge_points_enemy_armies	This army and their faction has incurred Grudges against them.\\n\\n{{tr:ui_text_replacements_localised_text_grudges_resource}}	false
+pooled_resources_description_wh3_dlc25_dwf_grudge_points_enemy_settlements	This settlement and it's owner has incurred Grudges against them.\\n\\n{{tr:ui_text_replacements_localised_text_grudges_resource}}	false
+pooled_resources_description_wh3_dlc25_dwf_malakai_research_cannons	Earned by killing with Cannons in battle	false
+pooled_resources_description_wh3_dlc25_dwf_malakai_research_gyrocopters	Earned by killing using Gyrocopters or Gyrocopter (Brimstone Gun) units in battle	false
+pooled_resources_description_wh3_dlc25_emp_arcane_essays	The mysteries of the Winds of Magic are great and innumerable and, as such, each member of the Colleges of Magic continues to learn and share their discoveries.\\n\\n[[col:yellow]][[img:icon_arcane_essays]][[/img]]Arcane Essays are generated when Imperial Wizards take part in battles.\\n\\nThe more Wizards you are able to field, the more [[img:icon_arcane_essays]][[/img]]Arcane Essays will be generated.\\n\\n[[img:icon_arcane_essays]][[/img]]Arcane Essays can be spent on the Colleges of Magic panel to gain powerful bonuses, magic items, or even to recruit new Wizards.[[/col]]	false
+pooled_resources_description_wh3_dlc25_emp_bjuna_bombard_charges		false
+pooled_resources_description_wh3_dlc25_emp_black_towers		false
+pooled_resources_description_wh3_dlc25_emp_gunnery_progress		false
+pooled_resources_description_wh3_dlc25_emp_purple_eclipse_charges		false
+pooled_resources_description_wh3_dlc25_emp_research	War drives innovation! With every live-fire exercise and field test, the Imperial Gunnery School’s blueprints are updated to keep the Empire’s workshops at the forefront of technological advancements.\\n\\n[[col:yellow]][[img:icon_schematics]][[/img]]Schematics are gained from battles in return for the damage inflicted by your gunnery and artillery units.[[/col]]\\n\\n[[col:yellow]][[img:icon_schematics]][[/img]]Schematics are spent on improving gunnery and artillery units and unlocking powerful Amethyst units and abilities at the Imperial Gunnery School.[[/col]]\\n\\n[[col:yellow]][[img:icon_schematics]][[/img]]{{tr:ui_text_replacements_localised_text_hp_campaign_point_5_imperial_gunnery_school}}	false
+pooled_resources_description_wh3_dlc25_emp_spirit_barrage_charges		false
+pooled_resources_description_wh3_dlc26_grn_yooreeka	The more Gorbad Ironclaw’s legend grows, the greater the wily Warboss’ capacity to use his un-Orcish battle tactics and dispense them to his generals.\\n\\n[[col:yellow]][[img:grn_gorbad_planz]][[/img]] Planz are earned with every battle won by Gorbad Ironclaw.\\n\\n[[col:yellow]][[img:grn_gorbad_planz]][[/img]] Planz are used to equip Tactics from Da Plan to armies for limited periods of time via their Army Details panels.	false
+pooled_resources_description_wh3_dlc26_kho_arbaal_wrath_of_khorne_progress	Of all the warrior heroes of Khorne, there are few so devoted to gaining His Favour as Arbaal, who has dedicated his life to battle as his sole purpose.\\n\\n[[col:yellow]][[img:icon_khornes_favour]][[/img]]Khorne’s Favour is gained from winning battles, with the Challenges of Khorne yielding greater amounts.\\n\\n[[col:yellow]][[img:icon_khornes_favour]][[/img]]Khorne’s Favour can be spent on instantly travelling to Challenges and activating Boons in the Challenges panel.	false
+pooled_resources_description_wh3_dlc26_kho_champions_essence	The more eminent Skulltaker’s opponent, the more Essence there is to reap, and with every new genus of skull come ever greater rewards.\\n\\n[[col:yellow]][[img:icon_champions_essence]][[/img]]Champion's Essence is a measure of this character's strength and can be claimed by Skulltaker to empower the Cloak of Skulls.[[col:yellow]]	false
+pooled_resources_description_wh3_dlc26_kho_champions_essence_faction	Not a single skull is left untaken, a portion of every enemy’s strength imbibed; yet it is those of mighty champions that are cherished for the true power they bring.\\n\\n[[col:yellow]][[img:icon_champions_essence]][[/img]] Champion's Essence is gained when killing or wounding [[img:icon_general]][[/img]]Lords in battle. It can be used to empower the Cloak of Skulls.[[col:yellow]]	false
+pooled_resources_description_wh3_dlc26_kho_skull_throne_progress		false
+pooled_resources_description_wh3_dlc26_ogr_meat_CAI		false
+pooled_resources_description_wh3_dlc26_ogr_meat_hidden		false
+pooled_resources_description_wh3_dlc27_hef_aislinn_focus	With every overseas foothold gained by the Sea Lord, the more his Dedication to the cause of Asur Domination grows. In turn, he earns powerful leverage to strengthen the hand of the unrelenting Sea Patrol.\\n\\n[[img:icon_dedication]][[/img]] [[col:yellow]]Dedication is earned by establishing Outposts.[[/col]]\\n\\n[[img:icon_dedication]][[/img]] [[col:yellow]]Dedication can be spent on Asur Domination – unique powers that enable greater building options in colonies, Outposts and Dragonships along with other factionwide bonuses.[[/col]]	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_focus_colonies_progress	Aislinn's Dedication towards his Colonies	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_focus_dragonships_progress	Aislinn's Dedication towards his Dragonships	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_focus_outposts_progress	Aislinn's Dedication towards his Outposts	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_avelorn	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_avelorn}}	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_eataine	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_eataine}}	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_imrik	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_imrik}}	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_nagarythe	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_nagarythe}}	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_order_of_loremasters	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_nagarythe}}	false
+pooled_resources_description_wh3_dlc27_hef_aislinn_gift_yvresse	{{tr:pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_yvresse}}	false
+pooled_resources_description_wh3_dlc27_hef_elven_colonies	Elven Colonies under the Sea Patrol’s ownership benefit not only from increased protection, but also the economic boons of Elven Trade flowing through their Outposts.\\n\\n[[col:yellow]]{{tr:ui_text_replacements_localised_text_wh3_dlc27_text_pointer_hef_establish_colony_text_pointer_2}}[[/col]]\\n\\n[[col:yellow]][[img:icon_hef_colonies]][[/img]] Elven Colonies are required to generate [[img:icon_hef_dragonship_supplies]][[/img]]Dragonship Supplies.[[/col]]	false
+pooled_resources_description_wh3_dlc27_hef_elven_trade	A well-protected economy of Elven Trade is overseen across the Sea Patrol’s Outposts, capitalising on the enterprise of Elven Colonies and critical to the bolstering of Dragonships.\\n\\n[[col:yellow]][[img:icon_elven_trade]][[/img]] Elven Trade is collected from various buildings within Sea Patrol Outposts.[[/col]]\\n\\n[[col:yellow]][[img:icon_elven_trade]][[/img]] Elven Trade can be converted into Dragonship Supplies and generate economic benefits within Elven Colonies.[[/col]]	false
+pooled_resources_description_wh3_dlc27_hef_favour	The Phoenix King’s sacred authority acts as a binding force between Ulthuan’s Realms. His courtly Favour bestows the gravitas needed to foster the most enduring accords in matters of inter-Asur relations.\\n\\n[[img:icon_hef_favour]][[/img]] [[col:yellow]]Favour of the Phoenix King must be raised to a sufficient level before Court Unity confederations are enabled in the Patrons of the Realms panel.[[/col]]\\n\\n[[img:icon_hef_favour]][[/img]] [[col:yellow]]Favour of the Phoenix King is increased by holding patronage positions, winning battles against foreign races, and maintaining positive diplomatic relationships with other High Elves. [[/col]]	false
+pooled_resources_description_wh3_dlc27_hef_naval_supplies	There are extremely few vessels in the world as huge and specialised as the High Elves’ towering Dragonships, which simply cannot operate without the vast amounts of dedicated Supplies required to upgrade and maintain them.\\n\\n[[col:yellow]][[img:icon_hef_dragonship_supplies]][[/img]] Dragonship Supplies are required to construct Dragonship buildings and uphold some of their effects.\\n\\n{{tr:pooled_resource_naval_supplies_tooltip}}	false
+pooled_resources_description_wh3_dlc27_hef_scrolls_of_power	Written by mages both named and nameless, ancient texts uncovered on Teclis’ travels provide fragments of knowledge decipherable only by the High Loremaster, allowing him to access the myriad powerful Secrets of the White Tower.\\n\\n[[img:sotw_scrolls_of_power]][[/img]] [[col:yellow]]Scrolls of Knowledge are generated when casters of the Order of Loremasters take part in battles. The more casters fielded, the more Scrolls generated.\\n\\n[[img:sotw_scrolls_of_power]][[/img]] Scrolls of Knowledge can be spent on Secrets of the White Tower to empower your casters and perform rituals to aid or debilitate armies.[[/col]]	false
+pooled_resources_description_wh3_dlc27_nor_betrayal	Lorem Ipsum	false
+pooled_resources_description_wh3_dlc27_nor_confidence	Though [[img:icon_confidence]][[/img]]Sayl's schemes may stretch across vast lands, they rarely escape notice for long.\\n\\n{{tr:effects_additional_tooltip_details_localised_description_wh3_dlc27_sayl_manipulations_region_treachery_2_dummy}}	false
+pooled_resources_description_wh3_dlc27_nor_favour	Lorem Ipsum	false
+pooled_resources_description_wh3_dlc27_nor_kinfolk	A world ruled by Trolls needs not just fighting muscle, but also those of their kind compliant enough to build, enforce and serve to bring to fruition the Troll King’s sinister plans.\\n\\n[[img:icon_kinfolk]][[/img]][[col:yellow]]Trollkind are gained every turn from Troll units across your armies and Troll Kingdom buildings in major settlements, and by completing hunts in the Monstrous Arcanum.[[/col]]\\n\\n[[img:icon_kinfolk]][[/img]][[col:yellow]]Trollkind are required to construct Troll Kingdom buildings that increase the [[img:icon_troll_expansion]][[/img]]Troll King’s Dominion.[[/col]]	false
+pooled_resources_description_wh3_dlc27_nor_sayl_chaos_god_attention	Sayl's Manipulations draw the ire of his enemies, to his immense satisfaction. There are, however, repercussions to even the subtlest sorcerous sleights of hand.\\n\\n[[img:dlc27_sayl_attention]][[/img]] [[col:yellow]]Performing Manipulations draws the Attention of the Gods in varying amounts.[[/col]]\\n\\n[[img:dlc27_sayl_attention]][[/img]] [[col:yellow]]As a higher level of Attention is reached, the servants of the Crow, Eagle, Hound or Serpent will issue a challenge via a dilemma.[[/col]]\\n\\n[[img:dlc27_sayl_attention]][[/img]] [[col:yellow]]After a number of turns without excessively increasing your Attention level, it will decrease to the previous level.[[/col]]	false
+pooled_resources_description_wh3_dlc27_nor_sayl_dark_ritual	{{tr:hp_campaign_description_dark_ritual}}\\n\\n[[img:icon_nor_undivided]][[/img]] [[col:yellow]]Constructing Chaos Altars will gather the arcane power required to carry out your ultimate goal – the Dark Ritual.[[/col]]\\n\\n[[img:icon_lord]][[/img]] [[col:yellow]]The raising of Chaos Altars will gain the attention of the Forces of Order, who will send forces to oppose you.[[/col]]	false
+pooled_resources_description_wh3_dlc27_nor_spoils	{{tr:hp_campaign_description_spoils_pillaging}}\\n\\n[[img:icon_nor_spoils]][[/img]] [[col:yellow]]Spoils are required to occupy non-Norscan regions, in addition to other uses.[[/col]]\\n\\n[[img:icon_nor_spoils]][[/img]] [[col:yellow]]Spoils are primarily gained by using the Pillage post-battle option to raze defeated settlements.[[/col]]\\n\\n[[img:icon_nor_spoils_temp]][[/img]] [[col:yellow]]Pillaged Spoils must be transported to your nearest owned settlement or Altar by a Pillaging Force, which is automatically mustered upon pillaging.[[/col]]	false
+pooled_resources_description_wh3_dlc27_nor_spoils_temp	A Pillaging Force holds these [[img:icon_nor_spoils_temp]][[/img]]Spoils for transport to the nearest owned region, where they are added to your factionwide total.\\n\\n{{tr:hp_campaign_point_3_spoils_pillaging}}	false
+pooled_resources_description_wh3_dlc27_nor_troll_expansion	[[img:icon_troll_expansion]][[/img]]Troll Expansion points are generated from Troll Buildings. Accumulating them will increase your Troll Expansion tiers, providing you with benefits and allowing you to temporarily reinforce your armies with additional units on it’s higher tiers.	false
+pooled_resources_description_wh3_dlc27_nor_trophies	Trophies - gained from Monster Hunts	false
+pooled_resources_description_wh3_dlc27_sla_decadence	Every act of extravagance fuels the Tormentors’ power, blurring the lines between pleasure and pain, and drawing followers deeper into a world of unending temptation and desire.\\n\\n[[img:icon_decadence]][[/img]] [[col:yellow]]Decadence is generated by Pleasure Palaces based on their level of development.[[/col]]\\n\\n[[img:icon_decadence]][[/img]] [[col:yellow]]Decadence is spent on Tormentor’s Tributes for a variety of benefits:\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Empower units with Marks of Vindictiveness\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Grant Opulent Gifts as powerful ancillaries for worthy characters\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Upgrade Pleasure Palace buildings[[/col]]	false
+pooled_resources_description_wh3_dlc27_sla_pleaure_palace_available	{{tr:building_short_description_texts_short_description_wh3_dlc27_sla_dec_palace_settlement_1}}\\n\\n[[col:yellow]]{{tr:ui_text_replacements_localised_text_wh3_dlc27_text_pointer_sla_pleasure_palace_info}}[[/col]]	false
+pooled_resources_description_wh3_dlc27_sla_tempo	On the Masque’s breathless word, the Accursed Troupe’s minions are entranced by an intensifying silent rhythm that turns their choreographed revelry into rapturous slaughter.\\n\\n[[img:icon_tempo]][[/img]] [[col:yellow]]Tempo is primarily increased for dancing Lords by winning battles, allowing progression to Step choices with increasingly powerful effects and abilities.[[/col]]\\n\\n[[img:icon_tempo]][[/img]] [[col:yellow]]Tempo is lost from Dissonance, which is caused by switching between active Steps or Dances.	false
+pooled_resources_description_wh3_dlc27_sla_thralls	While Dechala is the embodiment of free will driven to excess, her Thralls are the bodily manifestation of its denial.\\n\\n[[img:icon_thralls]][[/img]] [[col:yellow]]Thralls are generated by Thrall Camp settlements.[[/col]]\\n\\n[[img:icon_thralls]][[/img]] [[col:yellow]]Thralls are used to gain benefits in a variety of ways:\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Construct Pleasure Palace buildings\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Empower armies with Boons of Slaanesh\\n[[opacity:0]]_[[/opacity]][[img:bullet_point_white]]Perform Pleasurable Acts in settlements[[/col]]	false
+pooled_resources_description_wh3_dlc27_sla_thralls_region	{{tr:building_short_description_texts_short_description_wh3_dlc27_sla_dec_thrall_camp_settlement_1}}\\n\\n[[img:icon_dechala_thrall_camp]][[/img]][[col:yellow]]{{tr:ui_text_replacements_localised_text_wh3_dlc27_text_pointer_sla_thrall_camp_region_info}}[[/col]]\\n\\n[[col:yellow]]{{tr:ui_text_replacements_localised_text_wh3_dlc27_text_pointer_sla_thrall_camp_2}}[[/col]]	false
+pooled_resources_description_wh3_main_corruption_chaos		false
+pooled_resources_description_wh3_main_corruption_khorne		false
+pooled_resources_description_wh3_main_corruption_nurgle		false
+pooled_resources_description_wh3_main_corruption_skaven		false
+pooled_resources_description_wh3_main_corruption_slaanesh		false
+pooled_resources_description_wh3_main_corruption_tzeentch		false
+pooled_resources_description_wh3_main_corruption_vampiric		false
+pooled_resources_description_wh3_main_cth_harmony	Harmony is the balance of [[img:icon_yin]][[/img]]Yin and [[img:icon_yang]][[/img]]Yang across your faction. Characters, buildings and technologies will all affect the balance.	false
+pooled_resources_description_wh3_main_dae_khorne_points	Khorne, the Blood God, rages upon his brass throne, resting atop a mountain of skulls.	false
+pooled_resources_description_wh3_main_dae_nurgle_points	Nurgle, also known as the Plague Lord, is the Chaos God of disease, decay, death and degradation.	false
+pooled_resources_description_wh3_main_dae_slaanesh_points	Slaanesh is dedicated to the pursuit of excess, gratification, hedonism, pain and amoral pleasure at the expense of any other soul.	false
+pooled_resources_description_wh3_main_dae_tzeentch_points	Tzeentch – the Changer of the Ways – is the Chaos God of magic, evolution, manipulation and trickery.	false
+pooled_resources_description_wh3_main_dae_undivided_points	When the Dark Gods join as one, then all must suffer for the manifest glory of Chaos Undivided.	false
+pooled_resources_description_wh3_main_emp_volkmar_books_destroyed	Books destroyed warhammer	false
+pooled_resources_description_wh3_main_enter_realm_cost		false
+pooled_resources_description_wh3_main_kho_skulls	Khorne cares not from where the Skulls are reaped – as long as it is done in His name!\\n\\n[[col:yellow]][[img:icon_skulls]][[/img]] Skulls can be collected by killing enemy units in battle or from Skull Piles dropped by other factions in corrupted provinces, amongst other sources.[[col:yellow]]\\n\\n[[col:yellow]][[img:icon_skulls]][[/img]] Skulls are consumed by actions such as occupying settlements, technology research, offerings to the Skull Throne and summoning Blood Hosts.	false
+pooled_resources_description_wh3_main_khorne_realm_points		false
+pooled_resources_description_wh3_main_ksl_devotion	Defending Kislev against the forces of Chaos will produce [[img:icon_devotion]][[/img]]devotion, along with pious buildings. Consume your [[img:icon_devotion]][[/img]]devotion by invoking the Motherland, which will bolster your territory and allow the gain of [[img:icon_supporters]][[/img]]supporters.	false
+pooled_resources_description_wh3_main_ksl_followers	Using Invocations of the Motherland allows Kislev to sway its population into becoming supporters of its cause.	false
+pooled_resources_description_wh3_main_ksl_support_boon_ice_court	{{tr:wh3_main_ksl_court_pooled_resource_description}}\\n\\n[[img:ksl_boons_ice_court]][[/img]] [[col:yellow]]Boons are the means to acquire powerful rewards from the Ice Court.\\n\\n[[img:ksl_boons_ice_court]][[/img]] [[col:yellow]]Acquire Ice Court Boons by raising your Support with the Ice Court.	false
+pooled_resources_description_wh3_main_ksl_support_boon_orthodoxy	{{tr:wh3_main_ksl_orthodoxy_pooled_resource_description}}\\n\\n[[img:ksl_boons_orthodoxy]][[/img]] [[col:yellow]]Boons are the means to acquire powerful rewards from the Great Orthodoxy.\\n\\n[[img:ksl_boons_orthodoxy]][[/img]] [[col:yellow]]Acquire Orthodoxy Boons by raising your Support with the Great Orthodoxy.	false
+pooled_resources_description_wh3_main_ksl_support_level_ice_court	[[img:ksl_support_ice_court]][[/img]] [[col:yellow]]Garner Support from the Ice Court to fill the bar and increase your Tier with them, granting their Boons and potential rewards.\\n\\n[[col:yellow]]Should the Ice Court’s Tier exceed the Orthodoxy’s by more than the permitted amount, penalties will be suffered.	false
+pooled_resources_description_wh3_main_ksl_support_level_orthodoxy	[[img:ksl_support_orthodoxy]][[/img]] [[col:yellow]]Garner Support from the Great Orthodoxy to fill the bar and increase your Tier with them, granting their Boons and potential rewards.\\n\\n[[col:yellow]]Should the Great Orthodoxy’s Tier exceed the Ice Court’s by more than the permitted amount, penalties will be suffered.	false
+pooled_resources_description_wh3_main_ksl_support_tracker_ice_court	{{tr:wh3_main_ksl_court_pooled_resource_description}}\\n\\n[[img:ksl_support_ice_court]][[/img]] [[col:yellow]]Ice Court Support represents your growing political capital, favours and resources tied to the Ice Court.\\n\\n[[img:ksl_support_ice_court]][[/img]] [[col:yellow]]Ice Court Support is raised by constructing their aligned buildings, fielding their associated characters and dedicating your Atamans, which will increase your Tier with them.\\n\\n[[img:ksl_boons_ice_court]][[/img]] [[col:yellow]]Ice Court Boons are gained every time you increase Tier with the Ice Court and are used to claim their powerful rewards.	false
+pooled_resources_description_wh3_main_ksl_support_tracker_orthodoxy	{{tr:wh3_main_ksl_orthodoxy_pooled_resource_description}}\\n\\n[[img:ksl_support_orthodoxy]][[/img]] [[col:yellow]]Orthodoxy Support represents your growing political capital, favours and resources tied to the Great Orthodoxy.\\n\\n[[img:ksl_support_orthodoxy]][[/img]] [[col:yellow]]Orthodoxy Support is raised by constructing their aligned buildings, fielding their associated characters and dedicating your Atamans, which will increase your Tier with them.\\n\\n[[img:ksl_boons_orthodoxy]][[/img]] [[col:yellow]]Orthodoxy Boons are gained every time you increase Tier with the Great Orthodoxy and are used to claim their powerful rewards.	false
+pooled_resources_description_wh3_main_lzd_sacred_spawning	Interpretation of the Sacred Plaques allows the Lizardmen to prophesise the coming of their Sacred Spawnings, ensuring they are plenty prepared to receive their new charges with ceremony before they go off to fulfil their intended purpose. \\n\\n[[col:yellow]]Spawning Sequences are gained primarily through the completion of missions and can be used to recruit special ’blessed’ variants of existing units that are empowered with unique benefits[[/col]]. 	false
+pooled_resources_description_wh3_main_nur_infections	Through the efforts of Nurgle’s malaise-spreading acolytes, the sickly fruit of His labours are incubated, harvested and proliferated to the world’s despair.\\n\\n[[img:icon_infections]][[/img]] [[col:yellow]]Infections are primarily used to create Plagues but also to instantly complete cyclical building construction.[[/col]]\\n\\n[[img:icon_infections]][[/img]] [[col:yellow]]Infections are harvested from buildings and captives and with the spreading of Plagues.[[/col]]	false
+pooled_resources_description_wh3_main_ogr_meat	Hoarding and consuming Meat is not just a religious matter for Ogres – for to eat a thing is to show your superiority over it – but also a means to expand tribal power.\\n\\n[[col:yellow]][[img:icon_ogr_meat]][[/img]] Meat is gathered from winning battles, sacking, razing and raiding, as well as other sources.\\n\\n[[col:yellow]][[img:icon_ogr_meat]][[/img]] Each army’s Meat supply is consumed every turn as upkeep and can be used as Offers to the Maw, as well as being crucial to Camp construction.	false
+pooled_resources_description_wh3_main_realm_complete_khorne		false
+pooled_resources_description_wh3_main_realm_complete_nurgle		false
+pooled_resources_description_wh3_main_realm_complete_slaanesh		false
+pooled_resources_description_wh3_main_realm_complete_tzeentch		false
+pooled_resources_description_wh3_main_ritual_belakor_gg_1_uses		false
+pooled_resources_description_wh3_main_ritual_belakor_gg_2_uses		false
+pooled_resources_description_wh3_main_ritual_belakor_gg_3_uses		false
+pooled_resources_description_wh3_main_ritual_belakor_gg_4_uses		false
+pooled_resources_description_wh3_main_siege_supplies		false
+pooled_resources_description_wh3_main_siege_supplies_initial		false
+pooled_resources_description_wh3_main_sla_devotees	Amass your [[img:icon_devotees]][[/img]]devotees by raiding, looting and sacking settlements. The higher the [[img:icon_public_order]][[/img]]control and {{tr:icon_income}}income, the more [[img:icon_devotees]][[/img]]devotees will join your cause. Consume them by establishing [[img:icon_cult]][[/img]]cults, forcefully [[img:icon_vassal]][[/img]]vassalising other factions, and summoning [[img:icon_disciple_army]][[/img]]disciple armies.	false
+pooled_resources_description_wh3_main_sla_seductive_influence	A faction's [[img:icon_seductive_influence]][[/img]]seductive influence increases when contact is made with a Slaaneshi faction via diplomacy or battle, or via [[img:icon_cult]][[/img]]cults, the [[img:icon_gift_of_slaanesh]][[/img]]Gift of Slaanesh and high [[img:icon_corruption_sla]][[/img]]Slaanesh corruption. Factions with high [[img:icon_seductive_influence]][[/img]]seductive influence are more manipulatable, and can eventually be forced into [[img:icon_vassal]][[/img]]vassalage.\\n\\nOnly Human, Elven and Beastmen factions are vulnerable to [[img:icon_seductive_influence]][[/img]]seductive influence.	false
+pooled_resources_description_wh3_main_tze_grimoires	With every sliver of Tzeentch’s power revealed, the entire world becomes yours to manipulate.\\n\\n[[col:yellow]][[img:icon_grimoires]][[/img]] Grimoires are primarily generated from buildings and fighting battles.[[/col]]\\n\\n[[col:yellow]][[img:icon_grimoires]][[/img]] Grimoires are used for Changing of the Ways actions and technologies.[[/col]]	false
+pooled_resources_description_wh3_main_tze_winds_of_magic_manipulation		false
+pooled_resources_description_wh3_main_winds_of_magic	Use the Winds of Magic to cast spells in battle. Increase the power reserve by moving through provinces with high winds, or via certain stances.\\n\\nThe Winds of Magic Reserve can never go below a certain amount.\\n\\nDaemon factions suffer penalties when at low Winds of Magic, and receive bonuses when it is high.	false
+pooled_resources_description_yvresse_defence	Yvresse’s Defence Level dictates the reach of the [[img:mist_of_yvresse]][[/img]]Mists of Yvresse which cause [[img:icon_attrition]][[/img]]attrition to invaders and bolsters your forces. Each level can be reached by accumulating [[img:yvresse_defence_level_increase]][[/img]]Ladrielle’s Blessings from Athel Tamarha upgrades and expanding Tor Yvresse, in turn spreading the Mists further across Ulthuan.	false
+pooled_resources_display_name_brt_chivalry	Chivalry	false
+pooled_resources_display_name_bst_dread	Dread	false
+pooled_resources_display_name_bst_herdstone_shard	Herdstone Shards	false
+pooled_resources_display_name_bst_momentum	Momentum	false
+pooled_resources_display_name_bst_rampage	Rampage Marks	false
+pooled_resources_display_name_bst_ruination	Marks of Ruination	false
+pooled_resources_display_name_cst_infamy	Infamy	false
+pooled_resources_display_name_def_malus_sanity	Possession	false
+pooled_resources_display_name_def_slaves	Slaves	false
+pooled_resources_display_name_dwf_oathgold	Oathgold	false
+pooled_resources_display_name_dwf_thorek_artifact_part_1a	Dwarfen Neck Yoke	false
+pooled_resources_display_name_dwf_thorek_artifact_part_1b	Spark Gem	false
+pooled_resources_display_name_dwf_thorek_artifact_part_2a	Hero's Pendant	false
+pooled_resources_display_name_dwf_thorek_artifact_part_2b	Chain of Binding	false
+pooled_resources_display_name_dwf_thorek_artifact_part_3a	Left Half of Tongs	false
+pooled_resources_display_name_dwf_thorek_artifact_part_3b	Right Half of Tongs	false
+pooled_resources_display_name_dwf_thorek_artifact_part_4a	Spur Gear	false
+pooled_resources_display_name_dwf_thorek_artifact_part_4b	Pentagonal Gear	false
+pooled_resources_display_name_dwf_thorek_artifact_part_5a	Puzzle Box	false
+pooled_resources_display_name_dwf_thorek_artifact_part_5b	Runic Keystone	false
+pooled_resources_display_name_dwf_thorek_artifact_part_6a	Grungni's Pick Head	false
+pooled_resources_display_name_dwf_thorek_artifact_part_6b	Pick Handle	false
+pooled_resources_display_name_dwf_thorek_artifact_part_7a	Valaya's Tankard	false
+pooled_resources_display_name_dwf_thorek_artifact_part_7b	Enchanted Alchemy Vial	false
+pooled_resources_display_name_dwf_thorek_artifact_part_8a	Grimnir's Ornate Beard Ring	false
+pooled_resources_display_name_dwf_thorek_artifact_part_8b	Exotic Beard Ring	false
+pooled_resources_display_name_dwf_underdeeps	High King Decrees	false
+pooled_resources_display_name_emp_imperial_authority	Imperial Authority	false
+pooled_resources_display_name_emp_imperial_authority_new	Imperial Authority	false
+pooled_resources_display_name_emp_loyalty	Fealty	false
+pooled_resources_display_name_emp_prestige	Prestige	false
+pooled_resources_display_name_emp_progress	Acclaim	false
+pooled_resources_display_name_emp_wanted	Hostility	false
+pooled_resources_display_name_grn_salvage	Scrap	false
+pooled_resources_display_name_grn_waaagh	Call to Waaagh!	false
+pooled_resources_display_name_lzd_old_ones_favour	Old Ones' Favour	false
+pooled_resources_display_name_lzd_sacrificial_offerings	Sacrificial Offerings	false
+pooled_resources_display_name_lzd_sanctum_gems	Sanctum Gems	false
+pooled_resources_display_name_lzd_sanctum_points	Silent Sanctums	false
+pooled_resources_display_name_merc_active_contract_points	Client Satisfaction	false
+pooled_resources_display_name_nor_progress_crow	Allegiance to the Crow	false
+pooled_resources_display_name_nor_progress_eagle	Allegiance to the Eagle	false
+pooled_resources_display_name_nor_progress_hound	Allegiance to the Hound	false
+pooled_resources_display_name_nor_progress_serpent	Allegiance to the Serpent	false
+pooled_resources_display_name_nur_epidemius_tally_of_pestilence	Tally of Pestilence	false
+pooled_resources_display_name_ogr_path_of_the_butcher	Path of the Butcher	false
+pooled_resources_display_name_skaven_food	Food	false
+pooled_resources_display_name_skv_clan_mors	Clan Mors Reputation	false
+pooled_resources_display_name_skv_clan_moulder	Clan Moulder Reputation	false
+pooled_resources_display_name_skv_clan_pestilens	Clan Pestilens Reputation	false
+pooled_resources_display_name_skv_clan_skryre	Clan Skryre Reputation	false
+pooled_resources_display_name_skv_dust	Schemes	false
+pooled_resources_display_name_skv_growth_vat	Growth Vat	false
+pooled_resources_display_name_skv_mutagen	Mutagen	false
+pooled_resources_display_name_skv_nuke	Warpstorm Doomrocket	false
+pooled_resources_display_name_skv_reactor_core	Warp-Fuel	false
+pooled_resources_display_name_tmb_canopic_jars	Canopic Jars	false
+pooled_resources_display_name_vmp_blood_kiss	Blood Kiss	false
+pooled_resources_display_name_wardens_supply	Warden's Supplies	false
+pooled_resources_display_name_wef_amber	Amber	false
+pooled_resources_display_name_wef_forge_daiths_favour	Daith's Favour	false
+pooled_resources_display_name_wef_worldroots_athel_loren	Forest Health (Athel Loren)	false
+pooled_resources_display_name_wef_worldroots_emerald_pools	Forest Health (Sacred Pools)	false
+pooled_resources_display_name_wef_worldroots_gaean_vale	Forest Health (Gaean Vale)	false
+pooled_resources_display_name_wef_worldroots_gryphon_wood	Forest Health (Gryphon Wood)	false
+pooled_resources_display_name_wef_worldroots_heart_of_the_jungle	Forest Health (Heart of the Jungle)	false
+pooled_resources_display_name_wef_worldroots_jungles_of_chian	Forest Health (Jungles of Chi'an)	false
+pooled_resources_display_name_wef_worldroots_laurelorn	Forest Health (Laurelorn Forest)	false
+pooled_resources_display_name_wef_worldroots_naggarond_glade	Forest Health (The Witchwood)	false
+pooled_resources_display_name_wef_worldroots_the_haunted_forest	Forest Health (The Haunted Forest)	false
+pooled_resources_display_name_wef_worldroots_vale_of_webs	Forest Health (Forest of Gloom)	false
+pooled_resources_display_name_wh2_main_ritual_currency		false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource	Unstable Experiments	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cross_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cross_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cross_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_artillery_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_artillery_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_artillery_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_flying_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_flying_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_flying_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_special_cav_1_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_special_cav_2_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_aosy_g3_special_cav_3_resource	{{tr:pooled_resources_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_display_name_wh3_cp1_cth_court_bhashiva	Prophecy of the White Tiger	false
+pooled_resources_display_name_wh3_cp1_cth_court_military	Teachings of Kamau	false
+pooled_resources_display_name_wh3_cp1_cth_court_spiritual	Way of the Thousand Gods	false
+pooled_resources_display_name_wh3_cp1_cth_iron_favour	Iron Favour	false
+pooled_resources_display_name_wh3_cp1_cth_iron_favour_enemy_armies	{{tr:pooled_resources_display_name_wh3_cp1_cth_iron_favour}}	false
+pooled_resources_display_name_wh3_cp1_cth_iron_favour_enemy_settlements	{{tr:pooled_resources_display_name_wh3_cp1_cth_iron_favour}}	false
+pooled_resources_display_name_wh3_cp1_cth_relics	Relics	false
+pooled_resources_display_name_wh3_cp1_cth_relics_settlements	Relic	false
+pooled_resources_display_name_wh3_dlc20_chs_authority_khorne	Khorne Authority	false
+pooled_resources_display_name_wh3_dlc20_chs_authority_nurgle	Nurgle Authority	false
+pooled_resources_display_name_wh3_dlc20_chs_authority_slaanesh	Slaanesh Authority	false
+pooled_resources_display_name_wh3_dlc20_chs_authority_tzeentch	Tzeentch Authority	false
+pooled_resources_display_name_wh3_dlc20_chs_authority_undivided	Undivided Authority	false
+pooled_resources_display_name_wh3_dlc20_chs_champions_campaign_progress	Path to Zanbaijin	false
+pooled_resources_display_name_wh3_dlc20_chs_eye_of_the_gods	Eye of the Gods	false
+pooled_resources_display_name_wh3_dlc20_chs_souls	Souls	false
+pooled_resources_display_name_wh3_dlc20_chs_souls_spent_kho	Souls Sent to Khorne	false
+pooled_resources_display_name_wh3_dlc20_chs_souls_spent_nur	Souls Sent to Nurgle	false
+pooled_resources_display_name_wh3_dlc20_chs_souls_spent_sla	Souls Sent to Slaanesh	false
+pooled_resources_display_name_wh3_dlc20_chs_souls_spent_tze	Souls Sent to Tzeentch	false
+pooled_resources_display_name_wh3_dlc20_chs_souls_spent_und	Souls Sent to Chaos Undivided	false
+pooled_resources_display_name_wh3_dlc20_chs_teleport_network_rift_resource	Rift Sigils	false
+pooled_resources_display_name_wh3_dlc20_chs_teleport_network_traversal_azazel		false
+pooled_resources_display_name_wh3_dlc20_chs_teleport_network_traversal_festus		false
+pooled_resources_display_name_wh3_dlc20_chs_teleport_network_traversal_valkia		false
+pooled_resources_display_name_wh3_dlc20_chs_teleport_network_traversal_vilitch		false
+pooled_resources_display_name_wh3_dlc23_chd_armaments	Armaments	false
+pooled_resources_display_name_wh3_dlc23_chd_conclave_influence	Conclave Influence	false
+pooled_resources_display_name_wh3_dlc23_chd_efficiency	Efficiency	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_bull_centaur_unlocker	Total Bull Centaur Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_flying_beast_unlocker	Total Flying Monsters Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_kdaai_unlocker	Total K'daai Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_melee_inf_unlocker	Total Melee Infantry Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_missile_inf_unlocker	Total Missile Infantry Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_hellforge_warmachine_unlocker	Total War Machines Capacity	false
+pooled_resources_display_name_wh3_dlc23_chd_labour	Labour	false
+pooled_resources_display_name_wh3_dlc23_chd_labour_global_temp	Labour	false
+pooled_resources_display_name_wh3_dlc23_chd_raw_materials	Raw Materials	false
+pooled_resources_display_name_wh3_dlc23_chd_workload	Workload	false
+pooled_resources_display_name_wh3_dlc24_cth_mos_steel	Steel	false
+pooled_resources_display_name_wh3_dlc24_cth_mos_stone	Stone	false
+pooled_resources_display_name_wh3_dlc24_cth_province_harmony	Harmony	false
+pooled_resources_display_name_wh3_dlc24_ksl_spirit_essence	Spirit Essence	false
+pooled_resources_display_name_wh3_dlc24_tze_cult_supplies	Cult Supplies	false
+pooled_resources_display_name_wh3_dlc24_tze_hidden_cultists	Trickster Cultists	false
+pooled_resources_display_name_wh3_dlc24_tze_rift_gems	Trickster Rifts	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_bray_shaman	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_bray_shaman}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_castellan	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_castellan}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_exalted_hero	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_exalted_hero}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_fimir_balefiend	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_fimir_balefiend}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_kazyk	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_kazyk}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_deference_werekin	Fealty with {{tr:wh3_dlc25_nur_chieftains_name_werekin}}	false
+pooled_resources_display_name_wh3_dlc25_chieftain_dominance	Dominance	false
+pooled_resources_display_name_wh3_dlc25_dwf_grudge_cycle_tracker		false
+pooled_resources_display_name_wh3_dlc25_dwf_grudge_points	Settled Grudges	false
+pooled_resources_display_name_wh3_dlc25_dwf_grudge_points_enemy_armies	Grudges Incurred!	false
+pooled_resources_display_name_wh3_dlc25_dwf_grudge_points_enemy_settlements	Grudges Incurred!	false
+pooled_resources_display_name_wh3_dlc25_dwf_malakai_research_cannons	Research (Cannons)	false
+pooled_resources_display_name_wh3_dlc25_dwf_malakai_research_gyrocopters	Research (Gyrocopters)	false
+pooled_resources_display_name_wh3_dlc25_emp_arcane_essays	Arcane Essays	false
+pooled_resources_display_name_wh3_dlc25_emp_bjuna_bombard_charges		false
+pooled_resources_display_name_wh3_dlc25_emp_black_towers		false
+pooled_resources_display_name_wh3_dlc25_emp_gunnery_progress		false
+pooled_resources_display_name_wh3_dlc25_emp_purple_eclipse_charges		false
+pooled_resources_display_name_wh3_dlc25_emp_research	Schematics	false
+pooled_resources_display_name_wh3_dlc25_emp_spirit_barrage_charges		false
+pooled_resources_display_name_wh3_dlc26_grn_yooreeka	Planz	false
+pooled_resources_display_name_wh3_dlc26_kho_arbaal_wrath_of_khorne_progress	Khorne's Favour	false
+pooled_resources_display_name_wh3_dlc26_kho_champions_essence	Champion's Essence	false
+pooled_resources_display_name_wh3_dlc26_kho_champions_essence_faction	{{tr:pooled_resources_display_name_wh3_dlc26_kho_champions_essence}}	false
+pooled_resources_display_name_wh3_dlc26_kho_skull_throne_progress	Skulls sent to the Skull Throne	false
+pooled_resources_display_name_wh3_dlc26_ogr_meat_CAI	{{tr:pooled_resources_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_display_name_wh3_dlc26_ogr_meat_hidden	{{tr:pooled_resources_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_focus	Dedication	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_focus_colonies_progress	Colony Dedication	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_focus_dragonships_progress	Dragonship Dedication	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_focus_outposts_progress	Outpost Dedication	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_avelorn	Settlements Gifted  (Avelorn)	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_eataine	Settlements Gifted  (Eataine)	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_imrik	Settlements Gifted  (Imrik)	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_nagarythe	Settlements Gifted  (Nagarythe)	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_order_of_loremasters	Settlements Gifted  (Loremasters)	false
+pooled_resources_display_name_wh3_dlc27_hef_aislinn_gift_yvresse	Settlements Gifted  (Yvresse)	false
+pooled_resources_display_name_wh3_dlc27_hef_elven_colonies	Elven Colony Availability	false
+pooled_resources_display_name_wh3_dlc27_hef_elven_trade	Elven Trade	false
+pooled_resources_display_name_wh3_dlc27_hef_favour	Favour of the Phoenix King	false
+pooled_resources_display_name_wh3_dlc27_hef_naval_supplies	Dragonship Supplies	false
+pooled_resources_display_name_wh3_dlc27_hef_scrolls_of_power	Scrolls of Knowledge	false
+pooled_resources_display_name_wh3_dlc27_nor_betrayal	Betrayal	false
+pooled_resources_display_name_wh3_dlc27_nor_confidence	{{tr:ui_text_replacements_localised_text_foreign_slot_button_tooltip_wh3_dlc27_nor_sayl}}	false
+pooled_resources_display_name_wh3_dlc27_nor_favour	Favour	false
+pooled_resources_display_name_wh3_dlc27_nor_kinfolk	Trollkind	false
+pooled_resources_display_name_wh3_dlc27_nor_sayl_chaos_god_attention	Attention of the Gods	false
+pooled_resources_display_name_wh3_dlc27_nor_sayl_dark_ritual	{{tr:hp_campaign_title_dark_ritual}}	false
+pooled_resources_display_name_wh3_dlc27_nor_spoils	Spoils	false
+pooled_resources_display_name_wh3_dlc27_nor_spoils_temp	Pillaged Spoils	false
+pooled_resources_display_name_wh3_dlc27_nor_troll_expansion	Troll Expansion	false
+pooled_resources_display_name_wh3_dlc27_nor_trophies	Trophies	false
+pooled_resources_display_name_wh3_dlc27_sla_decadence	Decadence	false
+pooled_resources_display_name_wh3_dlc27_sla_pleaure_palace_available	Pleasure Palace Availability	false
+pooled_resources_display_name_wh3_dlc27_sla_tempo	{{tr:pooled_resource_factors_display_name_negative_wh3_dlc27_slaanesh_tempo}}	false
+pooled_resources_display_name_wh3_dlc27_sla_thralls	Thralls	false
+pooled_resources_display_name_wh3_dlc27_sla_thralls_region	Regional Thrall Population	false
+pooled_resources_display_name_wh3_main_corruption_chaos	Chaos Undivided Corruption	false
+pooled_resources_display_name_wh3_main_corruption_khorne	Khorne Corruption	false
+pooled_resources_display_name_wh3_main_corruption_nurgle	Nurgle Corruption	false
+pooled_resources_display_name_wh3_main_corruption_skaven	Skaven Corruption	false
+pooled_resources_display_name_wh3_main_corruption_slaanesh	Slaanesh Corruption	false
+pooled_resources_display_name_wh3_main_corruption_tzeentch	Tzeentch Corruption	false
+pooled_resources_display_name_wh3_main_corruption_vampiric	Vampiric Corruption	false
+pooled_resources_display_name_wh3_main_cth_harmony	Harmony	false
+pooled_resources_display_name_wh3_main_dae_khorne_points	Khorne Glory	false
+pooled_resources_display_name_wh3_main_dae_nurgle_points	Nurgle Glory	false
+pooled_resources_display_name_wh3_main_dae_slaanesh_points	Slaanesh Glory	false
+pooled_resources_display_name_wh3_main_dae_tzeentch_points	Tzeentch Glory	false
+pooled_resources_display_name_wh3_main_dae_undivided_points	Undivided Glory	false
+pooled_resources_display_name_wh3_main_emp_volkmar_books_destroyed	Books Destroyed	false
+pooled_resources_display_name_wh3_main_enter_realm_cost		false
+pooled_resources_display_name_wh3_main_kho_skulls	Skulls	false
+pooled_resources_display_name_wh3_main_khorne_realm_points	Bloodshed	false
+pooled_resources_display_name_wh3_main_ksl_devotion	Devotion	false
+pooled_resources_display_name_wh3_main_ksl_followers	Supporters	false
+pooled_resources_display_name_wh3_main_ksl_support_boon_ice_court	Ice Court Boons	false
+pooled_resources_display_name_wh3_main_ksl_support_boon_orthodoxy	Orthodoxy Boons	false
+pooled_resources_display_name_wh3_main_ksl_support_level_ice_court	Ice Court Tier	false
+pooled_resources_display_name_wh3_main_ksl_support_level_orthodoxy	Orthodoxy Tier	false
+pooled_resources_display_name_wh3_main_ksl_support_tracker_ice_court	{{tr:ui_text_replacements_localised_text_wh3_dlc26_kislev_court_orthodoxy_tooltip_title_court}}	false
+pooled_resources_display_name_wh3_main_ksl_support_tracker_orthodoxy	{{tr:ui_text_replacements_localised_text_wh3_dlc26_kislev_court_orthodoxy_tooltip_title_orthodoxy}}	false
+pooled_resources_display_name_wh3_main_lzd_sacred_spawning	Spawning Sequence	false
+pooled_resources_display_name_wh3_main_nur_infections	Infections	false
+pooled_resources_display_name_wh3_main_ogr_meat	Meat	false
+pooled_resources_display_name_wh3_main_realm_complete_khorne	Khorne Realm	false
+pooled_resources_display_name_wh3_main_realm_complete_nurgle	Nurgle Realm	false
+pooled_resources_display_name_wh3_main_realm_complete_slaanesh	Slaanesh Realm	false
+pooled_resources_display_name_wh3_main_realm_complete_tzeentch	Tzeentch Realm	false
+pooled_resources_display_name_wh3_main_ritual_belakor_gg_1_uses		false
+pooled_resources_display_name_wh3_main_ritual_belakor_gg_2_uses		false
+pooled_resources_display_name_wh3_main_ritual_belakor_gg_3_uses		false
+pooled_resources_display_name_wh3_main_ritual_belakor_gg_4_uses		false
+pooled_resources_display_name_wh3_main_siege_supplies	Supplies	false
+pooled_resources_display_name_wh3_main_siege_supplies_initial	Initial Supplies	false
+pooled_resources_display_name_wh3_main_sla_devotees	Devotees	false
+pooled_resources_display_name_wh3_main_sla_seductive_influence	Seductive Influence	false
+pooled_resources_display_name_wh3_main_tze_grimoires	Grimoires	false
+pooled_resources_display_name_wh3_main_tze_winds_of_magic_manipulation	Winds of Magic manipulation	false
+pooled_resources_display_name_wh3_main_winds_of_magic	Winds of Magic Power Reserve	false
+pooled_resources_display_name_yvresse_defence	Yvresse Defence Level	false
+pooled_resources_negative_factors_display_name_brt_chivalry	{{tr:food_breakdown_consumption}}	false
+pooled_resources_negative_factors_display_name_bst_dread	Spent	false
+pooled_resources_negative_factors_display_name_bst_herdstone_shard	Used	false
+pooled_resources_negative_factors_display_name_bst_momentum	Lost	false
+pooled_resources_negative_factors_display_name_bst_rampage	Lost	false
+pooled_resources_negative_factors_display_name_bst_ruination	Lost	false
+pooled_resources_negative_factors_display_name_cst_infamy	Lost	false
+pooled_resources_negative_factors_display_name_def_malus_sanity	Decreases	false
+pooled_resources_negative_factors_display_name_def_slaves	Used	false
+pooled_resources_negative_factors_display_name_dwf_oathgold	Consumption	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_1a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_1b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_2a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_2b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_3a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_3b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_4a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_4b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_5a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_5b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_6a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_6b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_7a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_7b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_8a	Spent	false
+pooled_resources_negative_factors_display_name_dwf_thorek_artifact_part_8b	Spent	false
+pooled_resources_negative_factors_display_name_dwf_underdeeps	Used	false
+pooled_resources_negative_factors_display_name_emp_imperial_authority	Lost	false
+pooled_resources_negative_factors_display_name_emp_imperial_authority_new	{{tr:pooled_resources_negative_factors_display_name_emp_imperial_authority}}	false
+pooled_resources_negative_factors_display_name_emp_loyalty	Lost	false
+pooled_resources_negative_factors_display_name_emp_prestige	Lost this turn	false
+pooled_resources_negative_factors_display_name_emp_progress	Losses	false
+pooled_resources_negative_factors_display_name_emp_wanted	Decreases	false
+pooled_resources_negative_factors_display_name_grn_salvage	Used	false
+pooled_resources_negative_factors_display_name_grn_waaagh	Reputation Lost	false
+pooled_resources_negative_factors_display_name_lzd_old_ones_favour	Used	false
+pooled_resources_negative_factors_display_name_lzd_sacrificial_offerings	Used	false
+pooled_resources_negative_factors_display_name_lzd_sanctum_gems	Used	false
+pooled_resources_negative_factors_display_name_lzd_sanctum_points	Used	false
+pooled_resources_negative_factors_display_name_merc_active_contract_points	{{tr:pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_tzeentch}}	false
+pooled_resources_negative_factors_display_name_nor_progress_crow	Lost	false
+pooled_resources_negative_factors_display_name_nor_progress_eagle	Lost	false
+pooled_resources_negative_factors_display_name_nor_progress_hound	Lost	false
+pooled_resources_negative_factors_display_name_nor_progress_serpent	Lost	false
+pooled_resources_negative_factors_display_name_nur_epidemius_tally_of_pestilence	Survived	false
+pooled_resources_negative_factors_display_name_ogr_path_of_the_butcher		false
+pooled_resources_negative_factors_display_name_skaven_food	Consumption	false
+pooled_resources_negative_factors_display_name_skv_clan_mors	Lost	false
+pooled_resources_negative_factors_display_name_skv_clan_moulder	Lost	false
+pooled_resources_negative_factors_display_name_skv_clan_pestilens	Lost	false
+pooled_resources_negative_factors_display_name_skv_clan_skryre	Lost	false
+pooled_resources_negative_factors_display_name_skv_dust	Used	false
+pooled_resources_negative_factors_display_name_skv_growth_vat	Growth Juice Used	false
+pooled_resources_negative_factors_display_name_skv_mutagen	Used	false
+pooled_resources_negative_factors_display_name_skv_nuke	Used	false
+pooled_resources_negative_factors_display_name_skv_reactor_core	Used	false
+pooled_resources_negative_factors_display_name_tmb_canopic_jars	Consumption	false
+pooled_resources_negative_factors_display_name_vmp_blood_kiss	Used	false
+pooled_resources_negative_factors_display_name_wardens_supply	Lost	false
+pooled_resources_negative_factors_display_name_wef_amber	Gifted	false
+pooled_resources_negative_factors_display_name_wef_forge_daiths_favour	Used	false
+pooled_resources_negative_factors_display_name_wef_worldroots_athel_loren	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_emerald_pools	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_gaean_vale	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_gryphon_wood	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_heart_of_the_jungle	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_jungles_of_chian	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_laurelorn	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_naggarond_glade	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_the_haunted_forest	Local Decline	false
+pooled_resources_negative_factors_display_name_wef_worldroots_vale_of_webs	Local Decline	false
+pooled_resources_negative_factors_display_name_wh2_main_ritual_currency		false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource	Restored	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_flying_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_flying_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_flying_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_1_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_2_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_3_resource	{{tr:pooled_resources_negative_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_court_bhashiva	Lost	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_court_military	Lost	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_court_spiritual	Lost	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_iron_favour	Exchanged	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_iron_favour_enemy_armies	Lost	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_iron_favour_enemy_settlements	Lost	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_relics	Gifted	false
+pooled_resources_negative_factors_display_name_wh3_cp1_cth_relics_settlements	Concealed	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_khorne	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_nurgle	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_slaanesh	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_tzeentch	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_authority_undivided	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_champions_campaign_progress		false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_eye_of_the_gods	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls	Sacrificed	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls_spent_kho	Stolen	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls_spent_nur	Stolen	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls_spent_sla	Stolen	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls_spent_tze	Stolen	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_souls_spent_und	Stolen	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_teleport_network_rift_resource	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_azazel		false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_festus		false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_valkia		false
+pooled_resources_negative_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_vilitch		false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_armaments	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_conclave_influence	Spent	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_efficiency	Decreased	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_bull_centaur_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_flying_beast_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_kdaai_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_melee_inf_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_missile_inf_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_hellforge_warmachine_unlocker	Unlocked	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_labour	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_labour_global_temp	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_raw_materials	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc23_chd_workload	Decreased	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_cth_mos_steel	Spent	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_cth_mos_stone	Spent	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_cth_province_harmony	Yin	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_ksl_spirit_essence	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_tze_cult_supplies	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_tze_hidden_cultists	Summoned	false
+pooled_resources_negative_factors_display_name_wh3_dlc24_tze_rift_gems	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_bray_shaman		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_castellan		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_exalted_hero		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_fimir_balefiend		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_kazyk		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_deference_werekin		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_chieftain_dominance	Spent	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_grudge_cycle_tracker		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_grudge_points		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_grudge_points_enemy_armies	{{tr:pooled_resource_factors_display_name_negative_settled}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_grudge_points_enemy_settlements	{{tr:pooled_resource_factors_display_name_negative_settled}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_malakai_research_cannons		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_dwf_malakai_research_gyrocopters		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_arcane_essays	Spent	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_bjuna_bombard_charges		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_black_towers		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_gunnery_progress		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_purple_eclipse_charges		false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_research	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc25_emp_spirit_barrage_charges		false
+pooled_resources_negative_factors_display_name_wh3_dlc26_grn_yooreeka	Tactics	false
+pooled_resources_negative_factors_display_name_wh3_dlc26_kho_arbaal_wrath_of_khorne_progress	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_dlc26_kho_champions_essence		false
+pooled_resources_negative_factors_display_name_wh3_dlc26_kho_champions_essence_faction	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc26_kho_skull_throne_progress		false
+pooled_resources_negative_factors_display_name_wh3_dlc26_ogr_meat_CAI	{{tr:pooled_resources_negative_factors_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc26_ogr_meat_hidden	{{tr:pooled_resources_negative_factors_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_focus	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_focus_colonies_progress	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_focus_dragonships_progress	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_focus_outposts_progress	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_avelorn	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_eataine	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_imrik	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_nagarythe	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_order_of_loremasters	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_aislinn_gift_yvresse	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_elven_colonies	{{tr:pooled_resources_negative_factors_display_name_bst_herdstone_shard}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_elven_trade	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_favour	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_naval_supplies	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_hef_scrolls_of_power	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_betrayal	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_confidence	Exposed	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_favour	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_kinfolk	Used	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_sayl_chaos_god_attention		false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_sayl_dark_ritual	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_nor_sayl_dark_ritual}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_spoils	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_spoils_temp	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_troll_expansion	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_nor_trophies	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_sla_decadence	Lost	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_sla_pleaure_palace_available		false
+pooled_resources_negative_factors_display_name_wh3_dlc27_sla_tempo	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_sla_thralls	{{tr:pooled_resources_negative_factors_display_name_bst_dread}}	false
+pooled_resources_negative_factors_display_name_wh3_dlc27_sla_thralls_region	{{tr:pooled_resources_negative_factors_display_name_bst_momentum}}	false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_chaos		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_khorne		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_nurgle		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_skaven		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_slaanesh		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_tzeentch		false
+pooled_resources_negative_factors_display_name_wh3_main_corruption_vampiric		false
+pooled_resources_negative_factors_display_name_wh3_main_cth_harmony	Yin	false
+pooled_resources_negative_factors_display_name_wh3_main_dae_khorne_points	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_dae_nurgle_points	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_dae_slaanesh_points	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_dae_tzeentch_points	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_dae_undivided_points	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_emp_volkmar_books_destroyed		false
+pooled_resources_negative_factors_display_name_wh3_main_enter_realm_cost		false
+pooled_resources_negative_factors_display_name_wh3_main_kho_skulls	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_khorne_realm_points		false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_devotion	Used	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_followers	Lost	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_boon_ice_court	Spent	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_boon_orthodoxy	Spent	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_level_ice_court	N/A	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_level_orthodoxy	N/A	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_tracker_ice_court	Lost	false
+pooled_resources_negative_factors_display_name_wh3_main_ksl_support_tracker_orthodoxy	Lost	false
+pooled_resources_negative_factors_display_name_wh3_main_lzd_sacred_spawning	Spent	false
+pooled_resources_negative_factors_display_name_wh3_main_nur_infections	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_ogr_meat	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_realm_complete_khorne		false
+pooled_resources_negative_factors_display_name_wh3_main_realm_complete_nurgle		false
+pooled_resources_negative_factors_display_name_wh3_main_realm_complete_slaanesh		false
+pooled_resources_negative_factors_display_name_wh3_main_realm_complete_tzeentch		false
+pooled_resources_negative_factors_display_name_wh3_main_ritual_belakor_gg_1_uses		false
+pooled_resources_negative_factors_display_name_wh3_main_ritual_belakor_gg_2_uses		false
+pooled_resources_negative_factors_display_name_wh3_main_ritual_belakor_gg_3_uses		false
+pooled_resources_negative_factors_display_name_wh3_main_ritual_belakor_gg_4_uses		false
+pooled_resources_negative_factors_display_name_wh3_main_siege_supplies	Lost	false
+pooled_resources_negative_factors_display_name_wh3_main_siege_supplies_initial	Lost	false
+pooled_resources_negative_factors_display_name_wh3_main_sla_devotees	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_sla_seductive_influence	Resistance	false
+pooled_resources_negative_factors_display_name_wh3_main_tze_grimoires	Consumed	false
+pooled_resources_negative_factors_display_name_wh3_main_tze_winds_of_magic_manipulation	Used	false
+pooled_resources_negative_factors_display_name_wh3_main_winds_of_magic	Lost	false
+pooled_resources_negative_factors_display_name_yvresse_defence	Lost	false
+pooled_resources_positive_factors_display_name_brt_chivalry	{{tr:food_breakdown_production}}	false
+pooled_resources_positive_factors_display_name_bst_dread	Gained	false
+pooled_resources_positive_factors_display_name_bst_herdstone_shard	Reclaimed	false
+pooled_resources_positive_factors_display_name_bst_momentum	Gained	false
+pooled_resources_positive_factors_display_name_bst_rampage	Gained	false
+pooled_resources_positive_factors_display_name_bst_ruination	Marks of Ruination Gained	false
+pooled_resources_positive_factors_display_name_cst_infamy	Gained	false
+pooled_resources_positive_factors_display_name_def_malus_sanity	Increases	false
+pooled_resources_positive_factors_display_name_def_slaves	Gained	false
+pooled_resources_positive_factors_display_name_dwf_oathgold	Production	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_1a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_1b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_2a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_2b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_3a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_3b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_4a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_4b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_5a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_5b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_6a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_6b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_7a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_7b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_8a	Gained	false
+pooled_resources_positive_factors_display_name_dwf_thorek_artifact_part_8b	Gained	false
+pooled_resources_positive_factors_display_name_dwf_underdeeps	Available	false
+pooled_resources_positive_factors_display_name_emp_imperial_authority	Gained	false
+pooled_resources_positive_factors_display_name_emp_imperial_authority_new	{{tr:pooled_resources_positive_factors_display_name_emp_imperial_authority}}	false
+pooled_resources_positive_factors_display_name_emp_loyalty	Gained	false
+pooled_resources_positive_factors_display_name_emp_prestige	Gained this turn	false
+pooled_resources_positive_factors_display_name_emp_progress	Gains	false
+pooled_resources_positive_factors_display_name_emp_wanted	Increases	false
+pooled_resources_positive_factors_display_name_grn_salvage	Gained	false
+pooled_resources_positive_factors_display_name_grn_waaagh	Reputation Gained	false
+pooled_resources_positive_factors_display_name_lzd_old_ones_favour	Gained	false
+pooled_resources_positive_factors_display_name_lzd_sacrificial_offerings	Gained	false
+pooled_resources_positive_factors_display_name_lzd_sanctum_gems	Gained	false
+pooled_resources_positive_factors_display_name_lzd_sanctum_points	Gained	false
+pooled_resources_positive_factors_display_name_merc_active_contract_points	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_undivided}}	false
+pooled_resources_positive_factors_display_name_nor_progress_crow	Gained	false
+pooled_resources_positive_factors_display_name_nor_progress_eagle	Gained	false
+pooled_resources_positive_factors_display_name_nor_progress_hound	Gained	false
+pooled_resources_positive_factors_display_name_nor_progress_serpent	Gained	false
+pooled_resources_positive_factors_display_name_nur_epidemius_tally_of_pestilence	Plague Tally	false
+pooled_resources_positive_factors_display_name_ogr_path_of_the_butcher		false
+pooled_resources_positive_factors_display_name_skaven_food	Production	false
+pooled_resources_positive_factors_display_name_skv_clan_mors	Gained	false
+pooled_resources_positive_factors_display_name_skv_clan_moulder	Gained	false
+pooled_resources_positive_factors_display_name_skv_clan_pestilens	Gained	false
+pooled_resources_positive_factors_display_name_skv_clan_skryre	Gained	false
+pooled_resources_positive_factors_display_name_skv_dust	Gained	false
+pooled_resources_positive_factors_display_name_skv_growth_vat	Growth Juice Gained	false
+pooled_resources_positive_factors_display_name_skv_mutagen	Gained	false
+pooled_resources_positive_factors_display_name_skv_nuke	Production	false
+pooled_resources_positive_factors_display_name_skv_reactor_core	Gained	false
+pooled_resources_positive_factors_display_name_tmb_canopic_jars	Production	false
+pooled_resources_positive_factors_display_name_vmp_blood_kiss	Gained	false
+pooled_resources_positive_factors_display_name_wardens_supply	Gained	false
+pooled_resources_positive_factors_display_name_wef_amber	Gained	false
+pooled_resources_positive_factors_display_name_wef_forge_daiths_favour	Gained	false
+pooled_resources_positive_factors_display_name_wef_worldroots_athel_loren	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_emerald_pools	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_gaean_vale	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_gryphon_wood	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_heart_of_the_jungle	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_jungles_of_chian	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_laurelorn	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_naggarond_glade	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_the_haunted_forest	Local Growth	false
+pooled_resources_positive_factors_display_name_wef_worldroots_vale_of_webs	Local Growth	false
+pooled_resources_positive_factors_display_name_wh2_main_ritual_currency		false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource	Used	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cross_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_infantry_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_artillery_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g2_gun_infantry_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_beasts_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_celestial_machines_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_flying_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_flying_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_flying_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_1_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_2_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g3_special_cav_3_resource	{{tr:pooled_resources_positive_factors_display_name_wh3_cp1_cth_aosy_g1_jade_cav_1_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_court_bhashiva	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_court_military	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_court_spiritual	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_iron_favour	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_iron_favour_enemy_armies	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_iron_favour_enemy_settlements	Gained	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_relics	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_hef_elven_colonies}}	false
+pooled_resources_positive_factors_display_name_wh3_cp1_cth_relics_settlements	Discovered	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_khorne	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_nurgle	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_slaanesh	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_tzeentch	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_authority_undivided	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_champions_campaign_progress	Progress	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_eye_of_the_gods	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls	Harvested	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls_spent_kho	Sacrificed	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls_spent_nur	Sacrificed	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls_spent_sla	Sacrificed	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls_spent_tze	Sacrificed	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_souls_spent_und	Sacrificed	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_rift_resource	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_azazel		false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_festus		false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_valkia		false
+pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_traversal_vilitch		false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_armaments	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_conclave_influence	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_efficiency	Increased	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_bull_centaur_unlocker	Bull Centaur Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_flying_beast_unlocker	Flying Monster Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_kdaai_unlocker	K'daai Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_melee_inf_unlocker	Melee Infantry Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_missile_inf_unlocker	Missile Infantry Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_hellforge_warmachine_unlocker	War Machine Units Supplied	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_labour	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_labour_global_temp	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_raw_materials	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc23_chd_workload	Increased	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_cth_mos_steel	Recovered	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_cth_mos_stone	Recovered	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_cth_province_harmony	Yang	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_ksl_spirit_essence	Gathered	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_tze_cult_supplies	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_tze_hidden_cultists	Contacted	false
+pooled_resources_positive_factors_display_name_wh3_dlc24_tze_rift_gems	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_bray_shaman	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_castellan	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_exalted_hero	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_fimir_balefiend	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_kazyk	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_deference_werekin	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_chieftain_dominance	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_cycle_tracker	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points_enemy_armies	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points_enemy_settlements	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_grudge_points}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_malakai_research_cannons	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_dwf_malakai_research_gyrocopters	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_arcane_essays	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_bjuna_bombard_charges		false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_black_towers		false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_gunnery_progress		false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_purple_eclipse_charges		false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_research	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc25_emp_spirit_barrage_charges		false
+pooled_resources_positive_factors_display_name_wh3_dlc26_grn_yooreeka	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc26_kho_arbaal_wrath_of_khorne_progress	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc26_kho_champions_essence	Breakdown	false
+pooled_resources_positive_factors_display_name_wh3_dlc26_kho_champions_essence_faction	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc26_kho_skull_throne_progress		false
+pooled_resources_positive_factors_display_name_wh3_dlc26_ogr_meat_CAI	{{tr:pooled_resources_positive_factors_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc26_ogr_meat_hidden	{{tr:pooled_resources_positive_factors_display_name_wh3_main_ogr_meat}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_focus	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_focus_colonies_progress	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_focus_dragonships_progress	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_focus_outposts_progress	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_avelorn	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_eataine	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_imrik	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_nagarythe	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_order_of_loremasters	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_aislinn_gift_yvresse	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_elven_colonies	Reclaimed	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_elven_trade	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_favour	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_naval_supplies	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_hef_scrolls_of_power	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_betrayal	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_confidence	Obscured	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_favour	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_kinfolk	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_sayl_chaos_god_attention	{{tr:pooled_resources_positive_factors_display_name_bst_dread}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_sayl_dark_ritual	Altars	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_spoils	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_rift_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_spoils_temp	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc20_chs_teleport_network_rift_resource}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_troll_expansion	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_nor_trophies	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc24_ksl_spirit_essence}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_sla_decadence	Gained	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_sla_pleaure_palace_available		false
+pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo	{{tr:pooled_resource_factors_display_name_positive_wh3_dlc27_nor_troll_expansion}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_sla_thralls	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_dlc27_sla_thralls_region	{{tr:pooled_resources_positive_factors_display_name_wh3_dlc27_sla_tempo}}	false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_chaos		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_khorne		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_nurgle		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_skaven		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_slaanesh		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_tzeentch		false
+pooled_resources_positive_factors_display_name_wh3_main_corruption_vampiric		false
+pooled_resources_positive_factors_display_name_wh3_main_cth_harmony	Yang	false
+pooled_resources_positive_factors_display_name_wh3_main_dae_khorne_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_dae_nurgle_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_dae_slaanesh_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_dae_tzeentch_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_dae_undivided_points	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_emp_volkmar_books_destroyed	Destroy	false
+pooled_resources_positive_factors_display_name_wh3_main_enter_realm_cost		false
+pooled_resources_positive_factors_display_name_wh3_main_kho_skulls	Collected	false
+pooled_resources_positive_factors_display_name_wh3_main_khorne_realm_points		false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_devotion	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_followers	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_boon_ice_court	Awarded	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_boon_orthodoxy	Awarded	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_level_ice_court	Achieved	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_level_orthodoxy	Achieved	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_tracker_ice_court	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_ksl_support_tracker_orthodoxy	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_lzd_sacred_spawning	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_nur_infections	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_ogr_meat	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_realm_complete_khorne		false
+pooled_resources_positive_factors_display_name_wh3_main_realm_complete_nurgle		false
+pooled_resources_positive_factors_display_name_wh3_main_realm_complete_slaanesh		false
+pooled_resources_positive_factors_display_name_wh3_main_realm_complete_tzeentch		false
+pooled_resources_positive_factors_display_name_wh3_main_ritual_belakor_gg_1_uses		false
+pooled_resources_positive_factors_display_name_wh3_main_ritual_belakor_gg_2_uses		false
+pooled_resources_positive_factors_display_name_wh3_main_ritual_belakor_gg_3_uses		false
+pooled_resources_positive_factors_display_name_wh3_main_ritual_belakor_gg_4_uses		false
+pooled_resources_positive_factors_display_name_wh3_main_siege_supplies	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_siege_supplies_initial	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_sla_devotees	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_sla_seductive_influence	Seduction	false
+pooled_resources_positive_factors_display_name_wh3_main_tze_grimoires	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_tze_winds_of_magic_manipulation	Gained	false
+pooled_resources_positive_factors_display_name_wh3_main_winds_of_magic	Gained	false
+pooled_resources_positive_factors_display_name_yvresse_defence	Blessings Gained	false

@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy catalog already records the enabled building variants, construction costs and times, prerequisites, ordinary building effects, and recruitment outputs for Dolgan, the World Walkers, and Wintertooth. The normalized unit file and typed lookups already record the roster, faction permissions, unit statistics, abilities, weapons, mounts, and attributes. The character catalog already contains the skill trees for Sayl, Wulfrik, Throgg, Beorg, the four god-linked champions, and generic Norscan characters. This guide therefore concentrates on the scripted resource lifecycles, occupation choices, courier armies, campaign actions, hunt state, confederation rule, progression gates, and faction-specific systems required to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

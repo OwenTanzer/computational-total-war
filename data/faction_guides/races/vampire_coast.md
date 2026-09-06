@@ -4,6 +4,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 This guide records campaign mechanics that are not represented adequately by the existing normalized catalogs. Ordinary settlement and ship-building levels, costs, construction times, prerequisites and effects belong to the four faction economy exports. Unit permissions, Regiment-of-Renown battle statistics, abilities and attributes belong to the unit catalog. Lord and hero skill-node effects belong to the character and skill-tree exports. Those facts are not repeated here. A building, unit, character subtype, trait or effect named below is an input to a campaign lifecycle or an applicability boundary, not a replacement catalog entry.
 
 ## Mechanically relevant material not captured elsewhere

@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The three economy CSVs already enumerate constructible settlement and Camp building levels, ordinary construction costs and times, prerequisites, standardized outputs, and recruitment modifiers. The normalized unit file and typed lookups already cover the Ogre roster, faction permissions, statistics, weapons, mounts, attributes, and ability payloads. The 18 character files already contain the skill trees and ordinary skill/ancillary grants of the playable lords, Bragg, the Paymaster, the Camp Tyrant, and the generic Ogre characters. Those facts are not repeated here. This document records the campaign systems, acquisition rules, resource state, scripted limits, and faction branches that those catalogs cannot express.
 
 ## Mechanically relevant material not captured elsewhere

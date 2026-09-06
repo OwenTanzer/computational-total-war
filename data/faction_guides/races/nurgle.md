@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe the 207 applicable building rows and 78 unique constructible building levels for each playable faction, including ordinary costs, build times, prerequisites, and standardized outputs. The normalized unit file and typed lookups already describe Nurgle's 77 roster rows, faction permissions, statistics, weapons, abilities, and mounts. The 21 indexed character files already contain the skill trees for Ku'gath, Epidemius, Tamurkhan, generic characters, Kayzk, the other five Chieftains, the Cult Magus, and the Plague Cultist. Those facts are not repeated here. This document records the resource transactions, plague state, cyclical-building and recruitment rules, foreign-slot network, manifestation eligibility, character conversion, and faction-specific progression needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

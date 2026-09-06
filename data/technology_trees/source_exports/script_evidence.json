@@ -1,0 +1,1699 @@
+{
+  "schema_version": 2,
+  "whole_lua_files_retained": 0,
+  "excerpts": [
+    {
+      "evidence_id": "b7b40de5db0e08a55866f364",
+      "source_file": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
+      "source_sha256": "27d9aa387af7c522efbeb3ced9414de889e7285d08c88a6ffcde576294f169f9",
+      "source_start_line": 534,
+      "source_end_line": 535,
+      "role": "no_research_tree",
+      "excerpt_sha256": "0c25025caab20f8dd6558622d787c0d2d5b082a1dc5ff38801367184f399daec",
+      "text": "\tif faction_key == \"wh3_main_dae_daemon_prince\" then\n\t\tnarrative.add_data_for_faction(faction_key, \"shared_technology_chain_block\", true); -- daemon prince has no technology"
+    },
+    {
+      "evidence_id": "1c0e3494587238f23858aed5",
+      "source_file": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "source_sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b",
+      "source_start_line": 3,
+      "source_end_line": 3,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "ff223a630f8437c47204e8fcdf02d7a37a49ddf4433f9b96489b12cc203fd781",
+      "text": "\t[\"wh2_dlc11_tech_cst_admirals_01\"] = {forename = \"names_name_471943374\", surname = \"\", subtype = \"wh2_dlc11_cst_admiral_tech_01\"},"
+    },
+    {
+      "evidence_id": "b123e456d4b3ce109f0e471b",
+      "source_file": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "source_sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b",
+      "source_start_line": 4,
+      "source_end_line": 4,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "1a041a82d79776ae14d615b26f8089b2ca6494b98c97d55fe94a6c298e0a6d89",
+      "text": "\t[\"wh2_dlc11_tech_cst_admirals_02\"] = {forename = \"names_name_119593724\", surname = \"\", subtype = \"wh2_dlc11_cst_admiral_tech_02\"},"
+    },
+    {
+      "evidence_id": "e5de64b9e0892bab58c93a70",
+      "source_file": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "source_sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b",
+      "source_start_line": 5,
+      "source_end_line": 5,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "9ae733762e8d6c2d67d9886ab7de2bd96f9e9672b30afdb0042e9c2a06f3f6df",
+      "text": "\t[\"wh2_dlc11_tech_cst_admirals_03\"] = {forename = \"names_name_1954332184\", surname = \"\", subtype = \"wh2_dlc11_cst_admiral_tech_03\"},"
+    },
+    {
+      "evidence_id": "0191e34b86be0e8a6b5353a4",
+      "source_file": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "source_sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b",
+      "source_start_line": 6,
+      "source_end_line": 6,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "519b800da3323e1ab708295638de5d46c6cde0e0d3013b12341cd6891f379082",
+      "text": "\t[\"wh2_dlc11_tech_cst_admirals_04\"] = {forename = \"names_name_1995028532\", surname = \"\", subtype = \"wh2_dlc11_cst_admiral_tech_04\"}"
+    },
+    {
+      "evidence_id": "9de0dccd27e95290709b654a",
+      "source_file": "script/campaign/wh2_dlc11_tech_tree.lua",
+      "source_sha256": "de8d514b9de31de1d5339453b3f444ec9b97c83ca3fa20be4c8fa5b46572641b",
+      "source_start_line": 19,
+      "source_end_line": 25,
+      "role": "human_culture_filtered_lord_reward",
+      "excerpt_sha256": "33c7f5c610e37cf16eef1f9f77e9f7093184c74a7d8fcbdeefffbba86fee41c7",
+      "text": "\t\t\tif faction:is_human() == true and faction:culture() == \"wh2_dlc11_cst_vampire_coast\" then\n\t\t\t\t-- SPAWN LORDS\n\t\t\t\tif tech_key:starts_with(vampire_coast_lord_tech_prefix) then\n\t\t\t\t\tlocal lord = vampire_coast_lord_techs[tech_key];\n\t\t\t\t\t\n\t\t\t\t\tif lord ~= nil then\n\t\t\t\t\t\tcm:spawn_character_to_pool(faction:name(), lord.forename, lord.surname, \"\", \"\", 50, true, \"general\", lord.subtype, false, \"\");"
+    },
+    {
+      "evidence_id": "3e24e7cdcdd67f1377728755",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 52,
+      "source_end_line": 58,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "0389e2e8d31c97fcfa744f291b3e87d345d1765884b63c3ad796041f23c0077e",
+      "text": "\t\t\tif current_faction:culture() == beastmen_culture then\n\t\t\t\tlocal faction_key = current_faction:name();\n\t\t\t\tfor j = 1, #lock_tech_keys do\n\t\t\t\t\tcm:lock_technology(faction_key, lock_tech_keys[j]);\n\t\t\t\tend\n\t\t\t\t\n\t\t\t\tout(\"\\t\\t\"..faction_key..\":\");"
+    },
+    {
+      "evidence_id": "105d50280092d424928d1d0d",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 107,
+      "source_end_line": 113,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "c8c92c85443033bfb3a93db78d58cf061268a3f098f070f5dee4b6387a612dcf",
+      "text": "\t\t\treturn key == context:faction():name();\n\t\tend,\n\t\tfunction (context)\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");"
+    },
+    {
+      "evidence_id": "d66c30899bcc633e58088a89",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 108,
+      "source_end_line": 114,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "822f5c7603066a2052e6e4f2fbd619321d2ffa8ddd1205a1912a75c546a08411",
+      "text": "\t\tend,\n\t\tfunction (context)\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");"
+    },
+    {
+      "evidence_id": "51c34091c58ac6d51c7be39e",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 109,
+      "source_end_line": 115,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "e3a5cb7c4e3faadf2dec0f74dddb02514bcf18e20de0edb6ee3e892b37b8d01e",
+      "text": "\t\tfunction (context)\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");\n\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_empire_locked\");"
+    },
+    {
+      "evidence_id": "12514885edeb77004b2d10b8",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 110,
+      "source_end_line": 116,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "b6a816592627635bd27ea5102d6cb138fbb542b5b039459afa4da6253cf0f72a",
+      "text": "\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_locked\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");\n\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_empire_locked\");\n\t\tend,"
+    },
+    {
+      "evidence_id": "5e864d66b9c01d6ff378d760",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 111,
+      "source_end_line": 117,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "296dc2d6eb7b4ec4959bf8f5c5e93863419ab39443bddb9c72740b7165219f6d",
+      "text": "\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_1\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_2\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_3\");\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_empire_unlock_4\");\n\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_empire_locked\");\n\t\tend,\n\t\ttrue"
+    },
+    {
+      "evidence_id": "ea9102a6bb4a7edb0ab7d349",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 132,
+      "source_end_line": 138,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "9e5c659aa52a8ccfa18880be3279f8dab60736fd928f4b9d5dbacb8ab8e76da9",
+      "text": "\t\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_dwarf_locked\", {(beastmen_player.battle_win)});\n\t\t\t\t\t\n\t\t\t\t\tif beastmen_player.battle_win == siege_battle_variable then\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");"
+    },
+    {
+      "evidence_id": "7edcca13f877f916c7b81984",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 133,
+      "source_end_line": 139,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "4a1653e4925f89d4871f9307afbab0284a50f93196ab8afac1cf8a85f8ac7655",
+      "text": "\t\t\t\t\t\n\t\t\t\t\tif beastmen_player.battle_win == siege_battle_variable then\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");"
+    },
+    {
+      "evidence_id": "f0e8b810eab87458b00d3255",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 134,
+      "source_end_line": 140,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "a3eb4a706feb1be55fe8823ef14a5d41081829f277131ef6ba7036a8763ce7c9",
+      "text": "\t\t\t\t\tif beastmen_player.battle_win == siege_battle_variable then\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");\n\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_dwarf_locked\");"
+    },
+    {
+      "evidence_id": "2196ce92fde6824978d7e9a4",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 135,
+      "source_end_line": 141,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "ea86f66a742d5d12fb71c05a89ae97a86ed064798812c120821cffa8a8aaad58",
+      "text": "\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");\n\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\tend"
+    },
+    {
+      "evidence_id": "fa843dea5083cdfc460a1b15",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 136,
+      "source_end_line": 142,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "3f2c00418c3c2a3cb7fa2e0a0dc29fcce313e504aacb608d580199b698e1ff05",
+      "text": "\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_1\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_2\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_3\");\n\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_dwarf_unlock_4\");\n\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_dwarf_locked\");\n\t\t\t\t\tend\n\t\t\t\tend"
+    },
+    {
+      "evidence_id": "0cfae5ba8f5dfdd0250673b5",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 156,
+      "source_end_line": 162,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "8ecdf1031bdba37e1eab129908b21369df16777fab24bbbc9aa0e727a9b248d3",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_bretonnia_locked\", {(beastmen_player.rituals_cast)});\n\t\t\t\t\n\t\t\t\tif beastmen_player.rituals_cast == ritual_ruin_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");"
+    },
+    {
+      "evidence_id": "d461dd3ff28183dade88e0ec",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 157,
+      "source_end_line": 163,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "b83cfd0d511b5f9fd285eb9b15727fb44cf1c851fd3ced8b95dd8f9d22942265",
+      "text": "\t\t\t\t\n\t\t\t\tif beastmen_player.rituals_cast == ritual_ruin_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");"
+    },
+    {
+      "evidence_id": "da09b728e07417b552518d1f",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 158,
+      "source_end_line": 164,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "9aa23d6f161fd9a556a076d48d3c2eb0fc8bf4495ed8db2bedb1d51fa884d7d9",
+      "text": "\t\t\t\tif beastmen_player.rituals_cast == ritual_ruin_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_bretonnia_locked\");"
+    },
+    {
+      "evidence_id": "8f736554877f71341468fe04",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 159,
+      "source_end_line": 165,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "2c50c26d96557917e7af737e89a6983444ce002b0021592c19a97c987364fa1f",
+      "text": "\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\tend\t"
+    },
+    {
+      "evidence_id": "a33bb60ba172636dcac67a30",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 160,
+      "source_end_line": 166,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "6bb636d144aa1e422329b4d065239ab8c0027e42d5bffa9d955afe014fcf6bc8",
+      "text": "\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bretonnia_unlock_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_bretonnia_locked\");\n\t\t\t\tend\t\n\t\t\tend\t"
+    },
+    {
+      "evidence_id": "2af62ec0ffd831af026abff0",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 181,
+      "source_end_line": 187,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "c9c2315599462b484497b066489f7b0791afeabd76de6e0f03a947a18cb78f97",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_the_no_unit_loss\", {(beastmen_player.agent_actions)});\n\t\t\t\t\n\t\t\t\tif beastmen_player.agent_actions == agent_actions_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_the_no_unit_loss\");\n\t\t\t\tend\n\t\t\tend"
+    },
+    {
+      "evidence_id": "4fb21be88ca5d71bbd42a040",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 202,
+      "source_end_line": 208,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "c9c2315599462b484497b066489f7b0791afeabd76de6e0f03a947a18cb78f97",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_the_no_unit_loss\", {(beastmen_player.agent_actions)});\n\t\t\t\t\n\t\t\t\tif beastmen_player.agent_actions == agent_actions_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_the_no_unit_loss\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_the_no_unit_loss\");\n\t\t\t\tend\n\t\t\tend"
+    },
+    {
+      "evidence_id": "229399e80a90eb1add2c8d95",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 224,
+      "source_end_line": 230,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "c65edbd970f6318ab83f4848476f40b727708810aa57a35effa7057fec9f0667",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_high_elves_locked\", {(beastmen_player.percentage_wins)});\n\t\t\t\t\t\t\t\n\t\t\t\tif beastmen_player.percentage_wins == ambush_battle_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");"
+    },
+    {
+      "evidence_id": "af991e88d31ac7d6906221b6",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 225,
+      "source_end_line": 231,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "bb7250856634f29743aa07245bc5ca0a512921d70842ee3478d723ca06494ef8",
+      "text": "\t\t\t\t\t\t\t\n\t\t\t\tif beastmen_player.percentage_wins == ambush_battle_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");"
+    },
+    {
+      "evidence_id": "1a653f8f46a84efdc561f63e",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 226,
+      "source_end_line": 232,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "fe5633bb8d73f38e92a94a956fbe38a617713890a31b03d8f90239034ae3595a",
+      "text": "\t\t\t\tif beastmen_player.percentage_wins == ambush_battle_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_high_elves_locked\");"
+    },
+    {
+      "evidence_id": "776699dc4795a229acb62153",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 227,
+      "source_end_line": 233,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "a85dd6108be8c254505b60a1adfb8bf3099811abde42436245a4502ded22eabc",
+      "text": "\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\tend\t"
+    },
+    {
+      "evidence_id": "2b1822c7cf7e9bc1ddcb49a3",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 228,
+      "source_end_line": 234,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "5e68b0a0b9945db6936d2005b01fe0f8611ac8ea9e4d333b7ae777dbeb0c2c1d",
+      "text": "\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_1\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_2\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_3\");\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_high_elves_4\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_high_elves_locked\");\n\t\t\t\tend\t\n\t\t\tend"
+    },
+    {
+      "evidence_id": "1b4b9b1b9826b9c401039de4",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 242,
+      "source_end_line": 248,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "f302b65c14c6354205e61436a6916351ed349c955d1478805394c583bbb06d51",
+      "text": "\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_unfavoured_battle\", {(beastmen_player.unfavoured_counter)});\n\t\t\n\t\tif beastmen_player.unfavoured_counter == unfavoured_variable then\n\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_unfavoured_battle\");\n\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_unfavoured_battle\");\n\t\tend\n\tend"
+    },
+    {
+      "evidence_id": "dbed8e44090aca257adc67b9",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 307,
+      "source_end_line": 313,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "f5ee8c86c162c65e6aceedb0ac858024ab75560c6ed7b2f398a89972f663e6f3",
+      "text": "\t\t\t\t\t\t\tout(\"FACTION LEADER BATTLE\");\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tif beastmen_player.faction_leader_counter == faction_leader_variable then\n\t\t\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_chariot_only\");\n\t\t\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_chariot_only\");\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\t\t"
+    },
+    {
+      "evidence_id": "43deb83ce1afb440eab0514b",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 388,
+      "source_end_line": 394,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "5392534956ff40b9424b2128bf1566307182b87bee7c18ca903c2cdf8f3247f7",
+      "text": "\t\t\tout(beastmen_player.summon_counter);\n\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_fifteen_spells\", {(beastmen_player.summon_counter)});\n\t\t\tif cm:char_is_general_with_army(character) and beastmen_player.summon_counter >= summon_threshold then\n\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_fifteen_spells\");\n\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_fifteen_spells\");\n\t\t\tend\n\t\tend,"
+    },
+    {
+      "evidence_id": "0fe7379b9a23a3e0fc2dc8fa",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 415,
+      "source_end_line": 421,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "906317177e39d780de7298f41e3efdda600dca2d886eaedd82929aa5b5619ad0",
+      "text": "\t\t\t\t\t\tbeastmen_player.climates_counter = beastmen_player.climates_counter +1;\n\t\t\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_bloodgrounds_everywhere\", {(beastmen_player.climates_counter)});\n\t\t\t\t\t\tif beastmen_player.climates_counter == climates_counter_variable then\n\t\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_bloodgrounds_everywhere\");\n\t\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_bloodgrounds_everywhere\");\n\t\t\t\t\t\tend\n\t\t\t\t\tend"
+    },
+    {
+      "evidence_id": "5ade11a694fe3b5f308c1750",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 452,
+      "source_end_line": 458,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "9a1a607e691d2ee60abc97f86a9406f0e87f0c98b3677883146a4b9fba4520d7",
+      "text": "\t\t\t\t\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_wipe_out_faction\", {(beastmen_player.culture_counter)});\n\n\t\t\t\t\t\t\t\tif beastmen_player.culture_counter == culture_counter_variable then\n\t\t\t\t\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_wipe_out_faction\");\n\t\t\t\t\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_wipe_out_faction\");\n\t\t\t\t\t\t\t\tend\n\t\t\t\t\t\t\tend"
+    },
+    {
+      "evidence_id": "1f2dd58a415ceb0222676390",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 482,
+      "source_end_line": 488,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "f00289570526f04d4309ddb6c3ce1ff4c7ee9ae70feabaa88cd2156af9745ad3",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(key, \"tech_dlc17_bst_four_battles\", {(beastmen_player.same_turn_battle_wins)});\n\t\t\t\t\n\t\t\t\tif beastmen_player.same_turn_battle_wins == same_turn_battles_win_variable then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_four_battles\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_four_battles\");\n\t\t\t\tend\n\t\t\tend"
+    },
+    {
+      "evidence_id": "d4730b01cd984a2ab546f988",
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_start_line": 523,
+      "source_end_line": 529,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "927a30c24c1a4c0506bad8b4abab0dd8faaf96facfd1df258cb94055cf27166a",
+      "text": "\t\t\tfor i = 1, #listener_cache[\"heroes_army\"][2] do\n\t\t\t\tlocal key = cm:get_military_force_by_cqi(listener_cache[\"heroes_army\"][2][i]):faction():name();\n\t\t\t\tif cm:pending_battle_cache_attacker_victory() == true then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_the_single_entity_tech\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_the_single_entity_tech\");\n\t\t\t\tend\n\t\t\tend"
+    },
+    {
+      "evidence_id": "b4125a6979bcfcbb30abff87",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 3,
+      "source_end_line": 4,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "527c73dc40cae5ade881e1312709afacd8bc63f9b13a200a09a3fd55df00df49",
+      "text": "\t\twh3_main_combi_region_naggarond = {\n\t\t\twh_dlc08_tech_nor_nw_02 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "e8c2c5b5c44259ba9c11afc6",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 6,
+      "source_end_line": 7,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "04953179dbedc0cb14ee5444cf1b640e6759902c50606970603d544ea640a1a8",
+      "text": "\t\twh3_main_combi_region_lothern = {\n\t\t\twh_dlc08_tech_nor_nw_04 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "7e8bc8ef2a8a3ebe94c35098",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 9,
+      "source_end_line": 10,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "b7a73a0b48f02393703c217fda0c420f0c6d90128b95184e9a5fc8d9e174f0cf",
+      "text": "\t\twh3_main_combi_region_hexoatl = {\n\t\t\twh_dlc08_tech_nor_nw_06 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "b10d9e3d93395cd00aadc3fc",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 12,
+      "source_end_line": 13,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "a46ab30dd3d2966608f64c3e5c6a85d0f0280257c86593bfa07b53c37566757e",
+      "text": "\t\twh3_main_combi_region_skavenblight = {\n\t\t\twh_dlc08_tech_nor_nw_08 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "1c42b9dc9da81bba682e9428",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 15,
+      "source_end_line": 16,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "b960be5c5c867869b1faa2010559ad6c68e3a83128875e74b7302c5ae9bbba7c",
+      "text": "\t\twh3_main_combi_region_khemri = {\n\t\t\twh_dlc08_tech_nor_nw_10 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "90d803c2c5b984c18a4b30d8",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 18,
+      "source_end_line": 19,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "e586de6a9703259fc36008edebbe72e71a2a944c4b7d7f69b3eb73031c4d5566",
+      "text": "\t\twh3_main_combi_region_the_awakening = {\n\t\t\twh_dlc08_tech_nor_nw_20 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "7c0153586c80b214e1588ef2",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 21,
+      "source_end_line": 22,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "37d8f9ebcd5fc90245d7e27abd21892c2ff24f4795c2f715e84a5a991040beed",
+      "text": "\t\twh3_main_combi_region_couronne = {\n\t\t\twh_dlc08_tech_nor_other_07 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "b9c687557e78c044e88a965f",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 24,
+      "source_end_line": 25,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "2ae19b7cd23e47882729dba8d8b7eb10eac2666985ef457fd48f8464bf52e7eb",
+      "text": "\t\twh3_main_combi_region_karaz_a_karak = {\n\t\t\twh_dlc08_tech_nor_other_11 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "8d52e05442fdadf6675a2a63",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 27,
+      "source_end_line": 28,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "736ce4c4864b2d95f69c62bf87e5abb899f56356f0e3d0de738e1f39388768d9",
+      "text": "\t\twh3_main_combi_region_altdorf = {\n\t\t\twh_dlc08_tech_nor_other_14 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "504ab90a1af83ad41ab1b8f7",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 30,
+      "source_end_line": 31,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "fa25bbb960a3e1f8a50db6fbeafe73e4e64efd01a307eeee53ea4153194dcfc9",
+      "text": "\t\twh3_main_combi_region_castle_drakenhof = {\n\t\t\twh_dlc08_tech_nor_other_16 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "a4e2c99b95066811a934a204",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 33,
+      "source_end_line": 34,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "f850cbe3876ad1cb852d0fc74f1f9b71fa2724f3f203d346089580d30480a4b7",
+      "text": "\t\twh3_main_combi_region_black_crag = {\n\t\t\twh_dlc08_tech_nor_other_18 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "c8854a9b26fc73289b8823af",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 36,
+      "source_end_line": 37,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "d16a02c3fa95dfe36a07508b42913dffd434b54ddc4b1aed4db4f5eada222549",
+      "text": "\t\twh3_main_combi_region_great_hall_of_greasus = {\n\t\t\twh3_main_ie_tech_nor_darklands_hate_ogre_kingdoms = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "14376e595581c8239dba62b5",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 39,
+      "source_end_line": 40,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "8753c2a36c07796215882bc340d08bd77ba87f4f22bf0c540b508f809629f178",
+      "text": "\t\twh3_main_combi_region_the_oak_of_ages = {\n\t\t\twh_dlc08_tech_nor_other_20 = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "b1add7f20b251a8f8a0d066c",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 42,
+      "source_end_line": 43,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "f2340d7427f4fafdece9b81c42bcea135ffec96da2de31de15bc7d052f97f928",
+      "text": "\t\twh3_main_combi_region_zharr_naggrund = {\n\t\t\twh3_main_ie_tech_nor_darklands_hate_chaos_dwarfs = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "2febbfd2dec999dd5df1687a",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 45,
+      "source_end_line": 46,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "2cfd46ca3b4fd2a12be03a3df24d06aebf5a50f4675b1d46758e9302d69259a8",
+      "text": "\t\twh3_main_combi_region_kislev = {\n\t\t\twh3_main_ie_tech_nor_oldworld_hate_kislev = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false},"
+    },
+    {
+      "evidence_id": "afdab16af8e0ace77bfd5eef",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 48,
+      "source_end_line": 49,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "3616768837d240fce88bc0b8ef72989a6c76206b4d477900edb70a7f27e141fd",
+      "text": "\t\twh3_main_combi_region_wei_jin = {\n\t\t\twh3_main_ie_tech_nor_darklands_hate_cathay = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "4ecbe89803980b60efd846f0",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 51,
+      "source_end_line": 52,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "6591f7c1dfbd41a0ebf9afe13dbd9e2e5d2373c710f1451b791aae3391ab75e1",
+      "text": "\t\twh3_main_combi_region_tor_achare = {\n\t\t\twh3_dlc27_tech_nor_cul_slaanesh = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false}"
+    },
+    {
+      "evidence_id": "356e5592b0d222102f029f94",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 54,
+      "source_end_line": 55,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "9fb26c0aac1743a368aed57faae205423796b460c08c537f16263d07c03da8a2",
+      "text": "\t\twh3_main_combi_region_dragon_fang_mount = {\n\t\t\twh3_dlc27_tech_nor_cul_nurgle = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false},"
+    },
+    {
+      "evidence_id": "6b9d91dcec4f948ee2caf321",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 57,
+      "source_end_line": 58,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "6296d18a24f0a2d2b7498eab3f9c24d77b8c95d1d6f87ad54b232eba69ddff0a",
+      "text": "\t\twh3_main_combi_region_fateweavers_crevasse = {\n\t\t\twh3_dlc27_tech_nor_cul_tzeentch = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false},"
+    },
+    {
+      "evidence_id": "a30f3cc9652771ceabef12f7",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 60,
+      "source_end_line": 61,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "aed09c1d936c6ef93d6877abe9db79b3fc85c0cb2cd06ed964280d235b7e9cd4",
+      "text": "\t\twh3_main_combi_region_deff_gorge = {\n\t\t\twh3_dlc27_tech_nor_cul_khorne = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false},"
+    },
+    {
+      "evidence_id": "63272a6ff70d40937cab013d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 63,
+      "source_end_line": 64,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "c88a024434d653f438a0743d8e1b9796432dd55029f462baed98c76f87ee048f",
+      "text": "\t\twh3_main_combi_region_the_writhing_fortress = {\n\t\t\twh3_dlc27_tech_nor_cul_chaos = {culture = \"wh_dlc08_nor_norsca\", allow_allies = false},"
+    },
+    {
+      "evidence_id": "c2110823698a8703e838673a",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 69,
+      "source_end_line": 69,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "21e6ca3cbe15b8046b5ffc9286ebbfc031a51dac395058785aca05e8aec16234",
+      "text": "\t\twh2_dlc11_tech_cst_firearms_07 =\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_powder_monkey\"}, count = 1},"
+    },
+    {
+      "evidence_id": "97b2861883442df595d844a8",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 70,
+      "source_end_line": 70,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "54c5760274ca175d997aac40104c33e392805f2a1159228c62a015df6f569d0a",
+      "text": "\t\twh2_dlc11_tech_cst_firearms_08 =\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_master_gunner\"}, count = 1},"
+    },
+    {
+      "evidence_id": "aea5b2bb7c27089b49bc23f7",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 71,
+      "source_end_line": 71,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "9b9b7fa88e80e7952a91b82b6db11800e963ea42ac4d993141b179defdd02638",
+      "text": "\t\twh2_dlc11_tech_cst_firearms_09 =\t{ancillaries = {\"wh2_dlc11_anc_magic_standard_throwing_bombs\"}, count = 1},"
+    },
+    {
+      "evidence_id": "df586e04874b99e0798e42fc",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 72,
+      "source_end_line": 72,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "b941226fadfdcb215f471acedf63f07da0e09e52fbefa1e273775f2a73722bfa",
+      "text": "\t\twh2_dlc11_tech_cst_vampiric_10 =\t{ancillaries = {\"wh2_dlc11_anc_magic_standard_spell_of_the_necromancers_apprentice\"}, count = 1},"
+    },
+    {
+      "evidence_id": "e7dd839effc28007f2268824",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 73,
+      "source_end_line": 73,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "8783c6585d6af80d0945e758cd6a81f80ad6ab72b6f4999c073ca6c822862d8e",
+      "text": "\t\twh2_dlc11_tech_cst_vampiric_11 =\t{ancillaries = {\"wh2_dlc11_anc_magic_standard_skull_and_crossbones\"}, count = 1},"
+    },
+    {
+      "evidence_id": "5ee5c320449f022ee67f9db5",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 74,
+      "source_end_line": 74,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "909327cce519430d0f315ff17480baa25cabd49473ad08b87fe284d1a4d874b7",
+      "text": "\t\twh2_dlc11_tech_cst_vampiric_12 =\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_carpenter\"}, count = 1},"
+    },
+    {
+      "evidence_id": "a1bad89b935d0b8d74fbbf18",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 75,
+      "source_end_line": 75,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "c70bc62af021f85db00a2981e668f6df71a3f98ab4d458b75d583d3f4f8f9e25",
+      "text": "\t\twh2_dlc11_tech_cst_command_10 =\t\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_quartermaster\"}, count = 1},"
+    },
+    {
+      "evidence_id": "71d8b2335de12687ae9da237",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 76,
+      "source_end_line": 76,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "f017c0f4622f9e33e7f36dc2fed8eb7147dc58a0f797b9d129aadf4d6bdbc2bf",
+      "text": "\t\twh2_dlc11_tech_cst_command_11 =\t\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_first_mate\"}, count = 1},"
+    },
+    {
+      "evidence_id": "f2109fec685bd26c45cb1e41",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 77,
+      "source_end_line": 77,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "bd7c06abf669131aeed4ec0452c9f12c3998599993f6f19d341e9e62b272d964",
+      "text": "\t\twh2_dlc11_tech_cst_command_12 =\t\t{ancillaries = {\"wh2_dlc11_anc_follower_cst_sea_artist\"}, count = 1},"
+    },
+    {
+      "evidence_id": "c143ce04584a6cb734f25ebd",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 78,
+      "source_end_line": 78,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "17dca0576e80ac1ca89a0457b51a6dd718cb940e765a977363326cbec0a7e777",
+      "text": "\t\twh3_main_tech_cth_2 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_banner_of_feng_shi\"}, count = 1},"
+    },
+    {
+      "evidence_id": "d3fba6cf11877bbda5e7d2df",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 79,
+      "source_end_line": 79,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "2d1ffd7e27940e0305576554dcb69b7c78520ca60aaf9f78cd5d371e14403f84",
+      "text": "\t\twh3_main_tech_cth_22 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_banner_of_the_moon_empress\"}, count = 1},"
+    },
+    {
+      "evidence_id": "e4252e66c9a2d90d8ed99cc5",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 80,
+      "source_end_line": 83,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "5f97126d4cd9e4404c7bc08887e1b0abcd9c92d8e1ede98922f40b6d59d99d6b",
+      "text": "\t\twh3_main_tech_cth_50 =\t\t\t\t{ancillaries = {\n\t\t\t\"wh3_main_anc_magic_standard_the_great_celestial_banner\",\n\t\t\t\"wh3_main_anc_magic_standard_banner_of_the_empress_eye\"\n\t\t}, count = 1},"
+    },
+    {
+      "evidence_id": "05b6c3b0900fb1fbd0903927",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 84,
+      "source_end_line": 84,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "18af48344e46652713ce796a894eb503cb8fbb9a5d6673d0562a67736c188824",
+      "text": "\t\twh3_main_tech_kho_1_5 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_blood_feasters_banner\"}, count = 1},"
+    },
+    {
+      "evidence_id": "096da1c1e5ddf3d003f8af4c",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 85,
+      "source_end_line": 85,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "7b720cdf3673cfd8cfc78c887db3ded5eccabb038f15df47c29c4d4ff437caa5",
+      "text": "\t\twh3_main_tech_kho_3_5 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_trophy_of_killers\"}, count = 1},"
+    },
+    {
+      "evidence_id": "4fa34c31be30136659e92a59",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 86,
+      "source_end_line": 86,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "176a168c211622399812057cc3fc88dffc35e682f1b1158577050ace87579cd2",
+      "text": "\t\twh3_main_tech_kho_4_3 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_khornes_gift\"}, count = 1},"
+    },
+    {
+      "evidence_id": "47e69e5ef812f6b58b9d2f04",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 87,
+      "source_end_line": 87,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "a120a7ddc3a3199ba08d0cbcd2866522ca82376f25637eb571ea19c57f52fa22",
+      "text": "\t\twh3_main_tech_kho_6_2 =\t\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_lifetaker_banner\"}, count = 1},"
+    },
+    {
+      "evidence_id": "39a88bd408565445e8e959dd",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 88,
+      "source_end_line": 88,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "68d6fa7c7adf86dd356b89eb636c48eb5fe3c275108db2eeec239c3d1dd27c6d",
+      "text": "\t\twh3_main_tech_ksl_4_14 =\t\t\t{ancillaries = {\"wh3_main_anc_magic_standard_banner_of_the_orthodoxy\"}, count = 3}"
+    },
+    {
+      "evidence_id": "63ca0d65bcc91ad204edaceb",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 91,
+      "source_end_line": 91,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "efab543aaa724e14a624246f312849a4ca026ba9ddb264e5f4b73b2c299d3531",
+      "text": "\t\twh3_main_tech_kho_1_4 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "3ae1ecac26c0e41072dd662c",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 92,
+      "source_end_line": 92,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "8611bb72da48c5e1392db38deb4ba412ead6c92aae310c99a8a57debd2d1b1ff",
+      "text": "\t\twh3_main_tech_kho_3_3 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "ad159cd5871914b6e8950bab",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 93,
+      "source_end_line": 93,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "bc83ca9b1c8be7e20d8cd931e2969865e3508e2cff91a9052f1ba5b4844d8c84",
+      "text": "\t\twh3_main_tech_kho_2_3 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "610c36c03aedbd83ad359f85",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 94,
+      "source_end_line": 94,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "739ebdbe4ccc03508866eba9ee6096c7dc38cdc52d319cadc8173950ab0575e2",
+      "text": "\t\twh3_main_tech_kho_1_8 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "ac2900bdda50a7dce19fc530",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 95,
+      "source_end_line": 95,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "5530202eba0223cfa7276c64562498b47a8a37a42802f279d31d8b9bda118d71",
+      "text": "\t\twh3_main_tech_kho_3_4 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "18a5f292f52586d0e7ef8ad5",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 96,
+      "source_end_line": 96,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "b72daf6e30f04f7ef60246778faf022eb3980a62f80f69c26ebed0d75db64adb",
+      "text": "\t\twh3_main_tech_kho_2_8 = {culture = \"wh3_main_kho_khorne\", value = 5},"
+    },
+    {
+      "evidence_id": "15b3004b2076080d9fd55127",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 97,
+      "source_end_line": 97,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "b9030176a6c257bb09efb418c94a1d41417f874fa5c2cd00d90a9935ae84ba7d",
+      "text": "\t\twh3_main_tech_kho_2_4 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "0d4a1dd65fde263d5a5967ed",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 98,
+      "source_end_line": 98,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "aa808a0baa86fa30f6d10c6028bfa8ddc9851a02043f3d824d863b9f574e707c",
+      "text": "\t\twh3_main_tech_kho_4_8 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "48252677ad25919e50eeabf0",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 99,
+      "source_end_line": 99,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "4205a009d7bf2d2ad3bf93c58d7c65504a85663b59a28b2bb8b99d6ede73650c",
+      "text": "\t\twh3_main_tech_kho_8_4 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "1cb818f45b98f852c88a1ea7",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 100,
+      "source_end_line": 100,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "ba450127642b3a122ef109961558c416c90710a6847ea7fb454d317e32b1a520",
+      "text": "\t\twh3_dlc26_tech_kho_campaign_4_3 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "3a25a40aae6d2dcda68414ca",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 101,
+      "source_end_line": 101,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "2c793fafef6d4c5ce16f5c5bf8e0822fed0f7f403e24514b9f02bbc0047b6aed",
+      "text": "\t\twh3_main_tech_kho_3_7 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "a3aff67704cb4a9272a2b1c8",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 102,
+      "source_end_line": 102,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "4e9acedc13dc0d5c5a432f95032e55859e3295dac15d3b8d31564ad31780d3af",
+      "text": "\t\twh3_main_tech_kho_3_2 = {culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "cf2295364bc02337595aecab",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 103,
+      "source_end_line": 103,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "e34af1062662b6c061b4516e4407909f80c8eccb1f5800d85c390558338250e9",
+      "text": "\t\twh3_main_tech_kho_2_2 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "632796cf8e5ffaceac5bc10d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 104,
+      "source_end_line": 104,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "996a2a1f5585468d2600e75389ef222b8cdca3109130d8cf517bc6ae9893cf79",
+      "text": "\t\twh3_main_tech_kho_1_2 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "92e512392c4204bb06ee3d14",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 105,
+      "source_end_line": 105,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "da2116552742765d06d0db2389f9bf4cf745442c08489f85fd2c1a6927b50c23",
+      "text": "\t\twh3_main_tech_kho_8_8 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "1cc03f4be67a496e644ef39f",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 106,
+      "source_end_line": 106,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "ff6704600beb43c11cf9d6017ab5c7c39efcf62642a985c94cfe8762e350c68e",
+      "text": "\t\twh3_main_tech_kho_8_3 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "70d6f63943032a80a8795620",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 107,
+      "source_end_line": 107,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "3688ca9d2b802c8f77f23c955696fd5454a7ac5db256a628e05c8e874db0654b",
+      "text": "\t\twh3_dlc26_tech_kho_blood_hosts_1 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "2c45e8009d3cfce6f1d9af37",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 108,
+      "source_end_line": 108,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "e1a6af082ca901dc6b566a5a5534a4d5884f16b99a341ed95562d0dbfadc2579",
+      "text": "\t\twh3_main_tech_kho_1_6 = {culture = \"wh3_main_kho_khorne\", value = 15},"
+    },
+    {
+      "evidence_id": "f4d2c8b2acf1ab6c648000d1",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 109,
+      "source_end_line": 109,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "1bb0eb3a04db9c89b27786b3905bd6e75b943e6394c03cadf29d9c017cf7c58c",
+      "text": "\t\twh3_main_tech_kho_8_5 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "35c52d12992f26d356c0ab0f",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 110,
+      "source_end_line": 110,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "6a2a87aee9dcd06521c81a030d0fc4cb3321943eb89dee06834b1fed078284d0",
+      "text": "\t\twh3_main_tech_kho_3_8 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "ac969db54a849168b166da1d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 111,
+      "source_end_line": 111,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "65ead36ede07ea4b25193d55dc2a9489b7b751c68b104b89030f0f626652e911",
+      "text": "\t\twh3_main_tech_kho_6_3 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "179a4a330bc5b9c44d1dfd33",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 112,
+      "source_end_line": 112,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "3f35e6dee2152a85e97d667b03df12a17beeac3709d8bb783595c11e1ef861d8",
+      "text": "\t\twh3_main_tech_kho_6_6 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "1aad2c7b4e5602763fec2412",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 113,
+      "source_end_line": 113,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "7a3ae80ebdb3aa6915d356b9f86230197dc8f85b7b76245103202c9f2fd47929",
+      "text": "\t\twh3_main_tech_kho_8_6 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "9099182d6c44eb9071f6665d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 114,
+      "source_end_line": 114,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "464f0c1079b6417dcd0d73dd72c96143ebf6c466bba3599e79fae55df3bb0e76",
+      "text": "\t\twh3_main_tech_kho_5_7 = {culture = \"wh3_main_kho_khorne\", value = 20},"
+    },
+    {
+      "evidence_id": "321a952a10f283981501ee15",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 115,
+      "source_end_line": 115,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "4b1cd240b030c016ac863ca035d6c2b73baae34918102a5adf7600634a54820d",
+      "text": "\t\twh3_main_tech_kho_6_7 = {culture = \"wh3_main_kho_khorne\", value = 25},"
+    },
+    {
+      "evidence_id": "ae46e8e5615e5742ad72a6fa",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 116,
+      "source_end_line": 116,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "d0dd0a1d0adcd0b33faef0868ef97f4a47b2e1e2324a424d72e7bae5c96ddd28",
+      "text": "\t\twh3_main_tech_kho_5_8 = {culture = \"wh3_main_kho_khorne\", value = 25},"
+    },
+    {
+      "evidence_id": "3bf186751acd570c862b7b00",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 117,
+      "source_end_line": 117,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "c26941b5c1a54b1e87f1428f4f9d1c1fc273b8c9a7e59cf2c8e0255fb0d2fd15",
+      "text": "\t\twh3_main_tech_kho_4_4 = {culture = \"wh3_main_kho_khorne\", value = 25},"
+    },
+    {
+      "evidence_id": "8fc043c97d74af549caea02f",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 118,
+      "source_end_line": 118,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "e227ddb95163682d672c60d9454ea1e2dd0e413728290dc8e077bb4de0901eef",
+      "text": "\t\twh3_main_tech_kho_5_2 = {culture = \"wh3_main_kho_khorne\", value = 25},"
+    },
+    {
+      "evidence_id": "b94112b7b6b94c0577900269",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 119,
+      "source_end_line": 119,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "44b5d52b5f19a242565b04db9e09c04f1fe0e4ae0c9d8c0fe2a6412265d8f5a3",
+      "text": "\t\twh3_main_tech_kho_6_5 = {culture = \"wh3_main_kho_khorne\", value = 25},"
+    },
+    {
+      "evidence_id": "1b07c2656a585790a26cb6b7",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 120,
+      "source_end_line": 120,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "ea7bbbde9da0a1f6c54674ae5ff6ec68580b49a98de0fef7fdc08cc0d6ab64ee",
+      "text": "\t\twh3_main_tech_kho_5_5 = {culture = \"wh3_main_kho_khorne\", value = 25}"
+    },
+    {
+      "evidence_id": "3b748544caff8c90c64279d6",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 123,
+      "source_end_line": 123,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "004cb7e9c32fb673cbde63fbf0f40dd93922b153a6c2a19e438ef8adcc412ada",
+      "text": "\t\twh_dlc08_tech_nor_nw_08 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_main_skv_skaven\", value = 10},"
+    },
+    {
+      "evidence_id": "5a4ae7230c1254fccc34de73",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 124,
+      "source_end_line": 124,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "0c1bbade90d3779056d8b014839e028ace96d0596b9ff79b0206241c6756b62e",
+      "text": "\t\twh_dlc08_tech_nor_nw_20 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_dlc11_cst_vampire_coast\", value = 10},"
+    },
+    {
+      "evidence_id": "7b848227bfb0d6aa8b89debc",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 125,
+      "source_end_line": 125,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "6f4e4e380091c498208a94d50e8b5ac1f0b06eaa192fb81f8b2f0478daaceccf",
+      "text": "\t\twh_dlc08_tech_nor_other_20 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_dlc05_wef_wood_elves\", value = 10},"
+    },
+    {
+      "evidence_id": "5583d77d22f4023b3c101eb9",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 126,
+      "source_end_line": 126,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "5e1ab3361f3a45c9f8c4c702f4baf853d7330c0987b81626b036065f03030e90",
+      "text": "\t\twh_dlc08_tech_nor_nw_04 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_main_hef_high_elves\", value = 10},"
+    },
+    {
+      "evidence_id": "0f20b7c7f6bbfc8c7a7a3e76",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 127,
+      "source_end_line": 127,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "507b83e51694f167ce943715a893edb4acf68b97d63e380a94a7b6fbd9e2ca69",
+      "text": "\t\twh3_main_ie_tech_nor_darklands_hate_cathay = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_cth_cathay\", value = 10},"
+    },
+    {
+      "evidence_id": "4761d47209c788e91b7c6129",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 128,
+      "source_end_line": 128,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "f343005585123b79377d267f0d1c69899686c4b50fa062aceaca2655ada78786",
+      "text": "\t\twh3_dlc27_tech_nor_cul_slaanesh = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_sla_slaanesh\", value = 10},"
+    },
+    {
+      "evidence_id": "859cd9ffb3b2384258fccbaa",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 129,
+      "source_end_line": 129,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "3bcbb85f2778a641ebbc346ce79160ce812946b374080ca50394f74166175831",
+      "text": "\t\twh3_main_ie_tech_nor_darklands_hate_chaos_dwarfs = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_dlc23_chd_chaos_dwarfs\", value = 10},"
+    },
+    {
+      "evidence_id": "e74b31eeff107e3a3d16735a",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 130,
+      "source_end_line": 130,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "fb2d6be359cc49f783c216a63d046683ba61ea95c3f2e0d10e26a69687a90230",
+      "text": "\t\twh3_main_ie_tech_nor_oldworld_hate_kislev = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_ksl_kislev\", value = 10},"
+    },
+    {
+      "evidence_id": "6e7b9efc05408f751636c984",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 131,
+      "source_end_line": 131,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "d62795136ec9e4102bdf235c18ceadc476c975912abc9606ca15c645c6cc2f50",
+      "text": "\t\twh_dlc08_tech_nor_other_07 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_brt_bretonnia\", value = 10},"
+    },
+    {
+      "evidence_id": "1c4022721deda2bd05c7f3f4",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 132,
+      "source_end_line": 132,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "6bbab0389e33901f6951eba77155038cc743882954e4f6c5a6b6fcb958cd06f7",
+      "text": "\t\twh_dlc08_tech_nor_nw_02 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_main_def_dark_elves\", value = 10},"
+    },
+    {
+      "evidence_id": "3e93d36ff7e8e75a9777d29f",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 133,
+      "source_end_line": 133,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "bb2364a4120cb49df89d33d149042e3751f0f8763dbc2fddf4d03ff41d11a986",
+      "text": "\t\twh3_dlc27_tech_nor_cul_beastmen = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_dlc03_bst_beastmen\", value = 10},"
+    },
+    {
+      "evidence_id": "ea4d75b58eaa4c3fe53fdc4d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 134,
+      "source_end_line": 134,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "2c99f1d2cd181510236496c2bc630cf22580c2d617a7f9a233547dcb27c38153",
+      "text": "\t\twh_dlc08_tech_nor_nw_06 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_main_lzd_lizardmen\", value = 10},"
+    },
+    {
+      "evidence_id": "4f359a8be7bbf86d73eb6809",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 135,
+      "source_end_line": 135,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "1b54a902da806544059f1a655979faae41aea4d4a39d2ebeeb63a51a3a1afa0d",
+      "text": "\t\twh_dlc08_tech_nor_nw_10 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh2_dlc09_tmb_tomb_kings\", value = 10},"
+    },
+    {
+      "evidence_id": "35af0de3aafea62a6eb59a66",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 136,
+      "source_end_line": 136,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "36181f74a2674f102a93470e56e7cf2a49ce6327023d1b2369432646dbddf6ec",
+      "text": "\t\twh_dlc08_tech_nor_other_11 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_dwf_dwarfs\", value = 10},"
+    },
+    {
+      "evidence_id": "37ade52f4352291a24c18f9b",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 137,
+      "source_end_line": 137,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "73f6174c9342618a53714e656407775ea16b9cd7a4df09a28afa56c009a16ee1",
+      "text": "\t\twh_dlc08_tech_nor_other_14 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_emp_empire\", value = 10},"
+    },
+    {
+      "evidence_id": "e25d3f126334fa4c2d514810",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 138,
+      "source_end_line": 138,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "8edaec865696298c174dfccae596adbe7ce9de8a221a05b9fce74c76307b6d1b",
+      "text": "\t\twh3_dlc27_tech_nor_cul_nurgle = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_nur_nurgle\", value = 10},"
+    },
+    {
+      "evidence_id": "417bcb4020953229496bb5aa",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 139,
+      "source_end_line": 139,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "c95c5a6023b439af700157c89d8c7282419ac270a5468b9f6b034fffbabc65a4",
+      "text": "\t\twh_dlc08_tech_nor_other_16 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_vmp_vampire_counts\", value = 10},"
+    },
+    {
+      "evidence_id": "19f289ba3baa85323cb1e5e8",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 140,
+      "source_end_line": 140,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "ede8b5b43345aed9cf3d5722e49d61f7b05a91ba6cc5d6a9a8ebedd2273e6517",
+      "text": "\t\twh_dlc08_tech_nor_other_18 = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_grn_greenskins\", value = 10},"
+    },
+    {
+      "evidence_id": "db71e12e7961269f336e5ea5",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 141,
+      "source_end_line": 141,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "410c75d5bf511f0fb2d87d6157781736d4549b5ce421c795ed83c1562610006e",
+      "text": "\t\twh3_main_ie_tech_nor_darklands_hate_ogre_kingdoms = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_ogr_ogre_kingdoms\", value = 10},"
+    },
+    {
+      "evidence_id": "12b56f4e334bb0d66bdd5658",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 142,
+      "source_end_line": 142,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "9cfa08341d7e4e89d39b13056402032f9ca7aa6f8ceb63bf017490f8e1f4b017",
+      "text": "\t\twh3_dlc27_tech_nor_cul_norsca = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_dlc08_nor_norsca\", value = 10},"
+    },
+    {
+      "evidence_id": "5a8347e1e1f66d9dd26d9da2",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 143,
+      "source_end_line": 143,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "bef0c1a76a85bb5efb6e0a4f40e7e07baae552c57ba924efa670d525a3aaf559",
+      "text": "\t\twh3_dlc27_tech_nor_cul_tzeentch = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_tze_tzeentch\", value = 10},"
+    },
+    {
+      "evidence_id": "5644e3749b54491537ff368e",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 144,
+      "source_end_line": 144,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "8bf632cfbeae8eea94f8582f1fe1549ac5d42e9b1736f3f06588e77de51f5516",
+      "text": "\t\twh3_dlc27_tech_nor_cul_khorne = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh3_main_kho_khorne\", value = 10},"
+    },
+    {
+      "evidence_id": "f3ead0b3f8238d733887c68a",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 145,
+      "source_end_line": 145,
+      "role": "literal_mechanic_definition",
+      "excerpt_sha256": "93694bf34e4af2700f8a7f774d3c6bd77f4351f48f12aa3ad24d1c6e04c9ce55",
+      "text": "\t\twh3_dlc27_tech_nor_cul_chaos = {culture = \"wh_dlc08_nor_norsca\", target_culture = \"wh_main_chs_chaos\", value = 10},"
+    },
+    {
+      "evidence_id": "2755f5babe4a98818ad572e1",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 193,
+      "source_end_line": 211,
+      "role": "initialization_order_region_then_battle",
+      "excerpt_sha256": "752959f868f56c162726b6eaa24ec0f622412da4ac0be617b2cf5bef8264c53d",
+      "text": "function scripted_technology_tree:start_technology_listeners()\n\tif cm:is_new_game() then\n\t\tfor region_key, technologies in pairs(self.region_mapping) do\n\t\t\tlocal region = cm:get_region(region_key)\n\t\t\t\n\t\t\tif region then\n\t\t\t\t-- lock the technology for all factions\n\t\t\t\tself:toggle_technology(technologies)\n\t\t\t\t\n\t\t\t\t-- unlock it for the owner in the start pos\n\t\t\t\t\n\t\t\t\tif not region:is_abandoned() then\n\t\t\t\t\tself:toggle_technology(technologies, region:owning_faction())\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\n\t\tself:toggle_technology(self.khorne_techs_battle_wins)\n\t\tself:toggle_technology(self.norsca_techs_battle_wins)"
+    },
+    {
+      "evidence_id": "10e2a7100fcb86528c9d264a",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 215,
+      "source_end_line": 237,
+      "role": "research_reward_listener",
+      "excerpt_sha256": "6773d01d10f40652cc0fb53c08ca4cb96c17053d1cccc660bad8a550019e3fe1",
+      "text": "\t\t\"tech_researched_ancillary_provided\",\n\t\t\"ResearchCompleted\",\n\t\ttrue,\n\t\tfunction(context)\n\t\t\tlocal ancillary_map = self.ancillary_mapping[context:technology()]\n\t\t\t\t\n\t\t\tif ancillary_map then\n\t\t\t\tlocal ancillaries = ancillary_map.ancillaries\n\t\t\t\tlocal count = ancillary_map.count\n\t\t\t\t\n\t\t\t\tfor ancillary_index = 1, #ancillaries do\n\t\t\t\t\tlocal ancillary = ancillaries[ancillary_index]\n\t\t\t\t\tfor i = 1, count do\n\t\t\t\t\t\tcm:add_ancillary_to_faction(context:faction(), ancillary, false)\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend,\n\t\ttrue\n\t)\n\t\n\tcore:add_listener(\n\t\t\"region_changed_technology_unlock\","
+    },
+    {
+      "evidence_id": "dbf59efce48a9b25bdc8986e",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 280,
+      "source_end_line": 308,
+      "role": "khorne_winner_counter",
+      "excerpt_sha256": "7a8a6c78830eed686b0cdd57e6ae9962c48e81d92b50476fcb771527bd664345",
+      "text": "\t\t\"khorne_battle_victory_technology_unlock\",\n\t\t\"BattleCompleted\",\n\t\tfunction()\n\t\t\treturn cm:pending_battle_cache_culture_is_involved(\"wh3_main_kho_khorne\")\n\t\tend,\n\t\tfunction()\n\t\t\tlocal winning_factions = {}\n\t\t\tif cm:pending_battle_cache_attacker_victory() then\n\t\t\t\tfor i = 1, cm:pending_battle_cache_num_attackers() do\n\t\t\t\t\tlocal char_cqi, mf_cqi, faction_key = cm:pending_battle_cache_get_attacker(i)\n\t\t\t\t\twinning_factions[faction_key] = true\n\t\t\t\tend\n\t\t\telseif cm:pending_battle_cache_defender_victory() then\n\t\t\t\tfor i = 1, cm:pending_battle_cache_num_defenders() do\n\t\t\t\t\tlocal char_cqi, mf_cqi, faction_key = cm:pending_battle_cache_get_defender(i)\n\t\t\t\t\twinning_factions[faction_key] = true\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tfor faction_key, _ in pairs(winning_factions) do\n\t\t\t\tself:check_conditions_tech_battle_victories(faction_key, \"wh3_main_kho_khorne\", self.khorne_techs_battle_wins)\n\t\t\tend\n\t\tend,\n\t\ttrue\n\t)\n\n\t-- added dlc27 \n\tcore:add_listener(\n\t\t\"norsca_battle_victory_technology_unlock\","
+    },
+    {
+      "evidence_id": "04f835b19326239d338b2f6d",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 308,
+      "source_end_line": 356,
+      "role": "norsca_last_opponent_assignment",
+      "excerpt_sha256": "0503a49ed113cdbb392a7e9186c9f8633afb040cc5f61d5a225a79c711f7edcc",
+      "text": "\t\t\"norsca_battle_victory_technology_unlock\",\n\t\t\"BattleCompleted\",\n\t\tfunction()\n\t\t\tfor key, data in dpairs(self.norsca_techs_battle_wins) do \n\t\t\t\tif cm:pending_battle_cache_culture_is_involved(data.target_culture) and cm:pending_battle_cache_culture_is_involved(\"wh_dlc08_nor_norsca\") then\n\t\t\t\t\treturn true\n\t\t\t\tend\n\t\t\tend\n\t\tend,\n\t\tfunction()\n\t\t\tlocal all_winner_faction_to_loser_culture_pairs = {}\n\t\t\tif cm:pending_battle_cache_attacker_victory() then\n\t\t\t\tfor i = 1, cm:pending_battle_cache_num_attackers() do\n\t\t\t\t\tlocal _, _, faction_key = cm:pending_battle_cache_get_attacker(i)\n\t\t\t\t\tfor j = 1, cm:pending_battle_cache_num_defenders() do\n\t\t\t\t\t\tlocal _, _, target_faction = cm:pending_battle_cache_get_defender(j)\n\t\t\t\t\t\tif target_faction ~= \"rebels\" then \n\t\t\t\t\t\tlocal faction = cm:get_faction(target_faction)\t\t\t\t\t\t\n\t\t\t\t\t\t\tif not faction:is_null_interface() then \n\t\t\t\t\t\t\t\tall_winner_faction_to_loser_culture_pairs[faction_key] = faction:culture()\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend \t\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\telseif cm:pending_battle_cache_defender_victory() then\n\t\t\t\tfor i = 1, cm:pending_battle_cache_num_defenders() do\n\t\t\t\t\tlocal _, _, faction_key = cm:pending_battle_cache_get_defender(i)\n\t\t\t\t\tfor j = 1, cm:pending_battle_cache_num_attackers() do\n\t\t\t\t\t\tlocal _, _, target_faction = cm:pending_battle_cache_get_attacker(j)\n\t\t\t\t\t\tif target_faction ~= \"rebels\" then \n\t\t\t\t\t\t\tlocal faction = cm:get_faction(target_faction)\n\t\t\t\t\t\t\tif not faction:is_null_interface() then \n\t\t\t\t\t\t\t\tall_winner_faction_to_loser_culture_pairs[faction_key] = faction:culture()\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tfor faction_key, target_culture in pairs(all_winner_faction_to_loser_culture_pairs) do\n\t\t\t\tself:check_conditions_tech_battle_victories(faction_key, \"wh_dlc08_nor_norsca\", self.norsca_techs_battle_wins, target_culture)\n\t\t\tend\n\t\tend,\n\t\ttrue\n\t)\nend\n\n-- added dlc27 \nfunction scripted_technology_tree:check_conditions_tech_battle_victories(faction_key, faction_culture, faction_tech_battles_unlock_table, target_culture)"
+    },
+    {
+      "evidence_id": "5459e4e52eee46a739220bcf",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 356,
+      "source_end_line": 395,
+      "role": "battle_counter_and_threshold",
+      "excerpt_sha256": "cebf7aa73eabafaf84a0b438a32c0f6d4550f699f8fe4b272c36807f9b5bb4c0",
+      "text": "function scripted_technology_tree:check_conditions_tech_battle_victories(faction_key, faction_culture, faction_tech_battles_unlock_table, target_culture)\n\tlocal faction = cm:get_faction(faction_key)\n\n\tif not faction or faction:is_rebel() then\n\t\treturn\n\tend\n\n\tif faction:culture() ~= faction_culture then\n\t\treturn\n\tend\n\n\t-- get and update the wins count\n\tlocal wins_count = self:get_battle_wins_count(faction_key, target_culture)\n\twins_count = wins_count + 1\n\tself:set_battle_wins_count(faction_key, target_culture, wins_count)\n\n\tfor technology_key, details in pairs(faction_tech_battles_unlock_table) do\n\t\t--if there is a target culture we only increment those\n\t\tif target_culture then\n\t\t\tif details.value and details.target_culture == target_culture then\n\t\t\t\tself:count_tech_battle_victories(wins_count, details.value, faction_key, technology_key)\n\t\t\tend\n\t\telse\n\t\t\tif details.value then\n\t\t\t\tself:count_tech_battle_victories(wins_count, details.value, faction_key, technology_key)\n\t\t\tend\n\t\tend\n\tend\nend\n\n-- modified dlc27 \nfunction scripted_technology_tree:count_tech_battle_victories(wins, value, faction_key, technology_key)\n\tif wins >= value then\n\t\tcm:unlock_technology(faction_key, technology_key)\n\telse\n\t\tcm:update_technology_unlock_progress_values(faction_key, technology_key, {value, wins})\n\tend\nend\n\nfunction scripted_technology_tree:resolve_diplomatic_event(proposer, recipient)"
+    },
+    {
+      "evidence_id": "6f77a04f298206467254a5db",
+      "source_file": "script/campaign/wh3_campaign_tech_tree.lua",
+      "source_sha256": "f0a7080fdfc40d9bef4cdedcd839022c208ef5ccf76698a71ff2ab3929823323",
+      "source_start_line": 417,
+      "source_end_line": 466,
+      "role": "region_toggle_actual_predicate",
+      "excerpt_sha256": "b79cc4daad4c3def64ac1057aeb56641e2b0a7c0d43ac37cddd1b98cfd0aba45",
+      "text": "function scripted_technology_tree:toggle_technology(technologies, region_owner)\n\t-- unlock each technology tied to the region for the new owner and allies if needed\n\tif region_owner and not region_owner:is_rebel() then\n\t\tlocal faction_culture = region_owner:culture()\n\t\t-- build a list of allies and vassals\n\t\tlocal ally_list = {}\n\t\tfor _, current_faction in model_pairs(region_owner:factions_allied_with()) do\n\t\t\ttable.insert(ally_list, current_faction)\n\t\tend\n\t\tfor _, current_faction in model_pairs(region_owner:vassals()) do\n\t\t\ttable.insert(ally_list, current_faction)\n\t\tend\n\t\t\n\t\tfor technology_key, details in pairs(technologies) do\n\t\t\tif faction_culture == details.culture then\n\t\t\t\tcm:unlock_technology(region_owner:name(), technology_key)\n\t\t\tend\n\t\t\t\n\t\t\tif details.allow_allies then\n\t\t\t\tfor i = 1, #ally_list do\n\t\t\t\t\tlocal current_ally = ally_list[i]\n\t\t\t\t\t\n\t\t\t\t\tif current_ally:culture() == details.culture then\n\t\t\t\t\t\tcm:unlock_technology(current_ally:name(), technology_key)\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\n\t\n\t-- lock the technology for every other faction, excluding allies if needed, of that culture\n\tlocal faction_list = cm:get_faction_list()\n\t\n\tfor _, current_faction in model_pairs(faction_list) do\n\t\tlocal current_faction_culture = current_faction:culture()\n\t\t\n\t\tfor technology_key, details in pairs(technologies) do\n\t\t\tif current_faction_culture == details.culture and region_owner ~= current_faction and (not region_owner or (details.allow_allies and region_owner and not region_owner:is_ally_vassal_or_client_state_of(current_faction))) then\n\t\t\t\tcm:lock_technology(current_faction:name(), technology_key)\n\n\t\t\t\tif details.value then\n\t\t\t\t\tcm:update_technology_unlock_progress_values(current_faction:name(), technology_key, {details.value, 0})\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend\n\n--------------------------------------------------------------\n----------------------- SAVING / LOADING ---------------------"
+    },
+    {
+      "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_start_line": 235,
+      "source_end_line": 267,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "95ae735215038ef7ba23251f868e9e4a5ab2a8d107c5da85e496cc9bfab24726",
+      "text": "function mother_ostankya_features:initialise()\n\tlocal ostankya_faction_obj = cm:get_faction(self.ostankya_faction)\n\tif not ostankya_faction_obj then return false end\n\t\n\tif cm:is_new_game() then\n\t\t-- unlock starting ingredients\n\t\tfor ingredient, data in pairs(self.ingredient_unlocks) do\n\t\t\tif data.start_unlocked then\n\t\t\t\tself:unlock_ingredient(ingredient, true)\n\t\t\tend\n\t\tend\n\t\t\n\t\t-- unlock recipes\n\t\tlocal faction_cco = cco(\"CcoCampaignFaction\", self.ostankya_faction)\n\t\t\n\t\tfor i = 0, faction_cco:Call(\"CookingSystem.GetPossibleRecipeRecords.Size\") - 1 do\n\t\t\tcm:unlock_cooking_recipe(ostankya_faction_obj, faction_cco:Call(\"CookingSystem.GetPossibleRecipeRecords.At(\" .. i .. \").Key\"))\n\t\tend\n\t\n\t\t-- tracks the spirit essence pooled resource for the faction\n\t\tcm:start_pooled_resource_tracker_for_faction(self.ostankya_faction)\n\n\t\t-- lock buildings\n\t\tfor i = 1, #self.restricted_kislev_buildings do\n\t\t\tcm:add_event_restricted_building_record_for_faction(self.restricted_kislev_buildings[i], self.ostankya_faction, \"ostankya_building_lock\");\n\t\tend\n\t\t\n\t\t-- lock techs\n\t\tfor hex, data in pairs(self.hex_data) do\n\t\t\tcm:lock_technology(self.ostankya_faction, data.tech)\n\t\tend\n\tend\n\t"
+    },
+    {
+      "evidence_id": "1529480131babd55d66a7064",
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_start_line": 290,
+      "source_end_line": 322,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "437a0208ac6836f94fea6e6c5e1f2e3ec4c43d1353a77bfed21428aafa9382b7",
+      "text": "\t)\n\t\n\tif ostankya_faction_obj:is_human() then\n\t\t-- unlock hex when mission completes\n\t\tcore:add_listener(\n\t\t\t\"hex_unlock_mission\",\n\t\t\t\"MissionSucceeded\",\n\t\t\tfunction(context)\n\t\t\t\treturn context:faction():name() == self.ostankya_faction\n\t\t\tend,\n\t\t\tfunction(context)\n\t\t\t\tlocal mission_key = context:mission():mission_record_key()\n\t\t\t\tlocal unlocked_hex_data = false\n\t\t\t\t\n\t\t\t\t-- lookup the respective hex data\n\t\t\t\tfor hex, data in pairs(self.hex_data) do\n\t\t\t\t\tif data.mission[cm:get_campaign_name()] == mission_key then\n\t\t\t\t\t\tunlocked_hex_data = data\n\t\t\t\t\t\tbreak\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\t\n\t\t\t\tif unlocked_hex_data then\n\t\t\t\t\tlocal faction = context:faction()\n\t\t\t\t\tlocal faction_name = faction:name()\n\t\t\t\t\tlocal count = cm:get_saved_value(\"hexes_unlocked_count\") or 0\n\t\t\t\t\t\n\t\t\t\t\tself:unlock_hex(unlocked_hex_data.hex)\n\t\t\t\t\t\n\t\t\t\t\tcm:unlock_technology(faction_name, unlocked_hex_data.tech)\n\t\t\t\t\t\n\t\t\t\t\tcm:trigger_incident(faction_name, unlocked_hex_data.story_panel, true, true)\n\t\t\t\t\tcount = count + 1"
+    },
+    {
+      "evidence_id": "fbc90b2d75aeaffd27d79e95",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 55,
+      "source_end_line": 62,
+      "role": "campaign_rift_map",
+      "excerpt_sha256": "ee0079d2c165a5533929f442c627a9f101eaeba117fa1fed1a10cf447c703d81",
+      "text": "\t\twh3_main_chaos = {\n\t\t\twh3_dlc24_tech_the_changeling_rift_1_roc = \"wh3_dlc24_the_changeling_rifts_chaos_the_empire_fort_solace\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_2_roc = \"wh3_dlc24_the_changeling_rifts_chaos_kislev\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_4_roc = \"wh3_dlc24_the_changeling_rifts_chaos_darklands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_10a_roc = \"wh3_dlc24_the_changeling_rifts_chaos_chaos_wastes_cliff_of_beasts\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_8_roc = \"wh3_dlc24_the_changeling_rifts_chaos_grand_cathay\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_10b_roc = \"wh3_dlc24_the_changeling_rifts_chaos_chaos_wastes_the_volary\"\n\t\t},"
+    },
+    {
+      "evidence_id": "2f34ca3d821da9c04360cefe",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 63,
+      "source_end_line": 73,
+      "role": "campaign_rift_map",
+      "excerpt_sha256": "4a9e33fb46f52a81faeefeff701ec4633e4dd7bbfcb01e6efc885b6e56fbbc7b",
+      "text": "\t\tmain_warhammer = {\n\t\t\twh3_dlc24_tech_the_changeling_rift_1 = \"wh3_dlc24_the_changeling_rifts_combi_the_empire_wreckers_point\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_2 = \"wh3_dlc24_the_changeling_rifts_combi_kislev\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_3 = \"wh3_dlc24_the_changeling_rifts_combi_bretonnia\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_4 = \"wh3_dlc24_the_changeling_rifts_combi_darklands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_5 = \"wh3_dlc24_the_changeling_rifts_combi_southlands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_6 = \"wh3_dlc24_the_changeling_rifts_combi_naggaroth\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_7 = \"wh3_dlc24_the_changeling_rifts_combi_ulthuan\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_8 = \"wh3_dlc24_the_changeling_rifts_combi_grand_cathay\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_9 = \"wh3_dlc24_the_changeling_rifts_combi_lustria\"\n\t\t}"
+    },
+    {
+      "evidence_id": "f92f4df973cba02c3a79af68",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 1683,
+      "source_end_line": 1715,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "6311c76e3f17e35ef83c7ee0717142ae50a8a1cb621b431af6dfe1d136351377",
+      "text": "\tcult_region_composite_scene = \"wh3_dlc24_campaign_changeling_settlement\",\n\tcult_region_vfx_prefix = \"changeling_cult_\",\n}\n\nfunction the_changeling_features:initialise()\n\n\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\t\n\tlocal faction_cqi = faction:command_queue_index()\n\n\tif cm:is_new_game() then\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= \"wh3_dlc24_tze_the_changeling\" and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)\n\t\tend\n\t\t\n\t\t-- Set the startpos characters to be immune to trespassing"
+    },
+    {
+      "evidence_id": "b0fa1476b0199fdc98b19ca5",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 1689,
+      "source_end_line": 1712,
+      "role": "campaign_runtime_map_selection",
+      "excerpt_sha256": "e38f5a1f99a9c7a313733bb1c7a1b4bff26fb214e967455245517333db5c2f10",
+      "text": "\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\t\n\tlocal faction_cqi = faction:command_queue_index()\n\n\tif cm:is_new_game() then\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= \"wh3_dlc24_tze_the_changeling\" and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)"
+    },
+    {
+      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 2366,
+      "source_end_line": 2398,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "57f608dee415ff9ea2530fe238f7b9953f11d8eda17aaa92b7223155a4d9e98b",
+      "text": "\t\t\t\t\tlocal player_free_forms = self.formless_horror.player_free_forms\n\t\t\t\t\tlocal turn_1_free_form = player_free_forms[cm:random_number(#player_free_forms)]\n\t\t\t\t\tself:grant_formless_horror_form(turn_1_free_form)\n\t\t\t\tend\n\t\t\t\t\n\t\t\t\tif string.match(mission_key, \"mission_schemes\") then\n\n\t\t\t\t\t-- Grant rift gems as a scheme reward\n\t\t\t\t\tif self.schemes.rift_gem_missions[mission_key] then\n\t\t\t\t\t\tcm:faction_add_pooled_resource(self.faction_key, \"wh3_dlc24_tze_rift_gems\", \"schemes\", 1)\n\t\t\t\t\tend\n\n\t\t\t\t\t-- Grant hidden cultists as a scheme reward\n\t\t\t\t\tif self.schemes.hidden_cultist_missions[mission_key] then\n\t\t\t\t\t\tcm:faction_add_pooled_resource(self.faction_key, \"wh3_dlc24_tze_hidden_cultists\", \"schemes\", 1)\n\t\t\t\t\tend\n\t\t\t\t\t\n\t\t\t\t\t-- Initial rift scheme in sylvania which grants a rift gem and opens the first rift\n\t\t\t\t\tif mission_key == \"wh3_dlc24_mission_schemes_the_empire_minor_2\" then\n\t\t\t\t\t\tif self.campaign_name == \"main_warhammer\" then\n\t\t\t\t\t\t\tself:open_rift(\"wh3_dlc24_the_changeling_rifts_combi_the_empire_castle_drakenhof\")\n\t\t\t\t\t\telseif self.campaign_name == \"wh3_main_chaos\" then\n\t\t\t\t\t\t\tself:open_rift(\"wh3_dlc24_the_changeling_rifts_chaos_the_empire_castle_drakenhof\")\n\t\t\t\t\t\tend\n\t\t\t\t\t\tlocal tech_unlocked = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\t\t\t\t\tif not tech_unlocked then\n\t\t\t\t\t\t\tcm:set_saved_value(\"the_changeling_rift_tech_unlock\", true)\n\t\t\t\t\t\t\tcore:remove_listener(\"the_changeling_rift_tech_unlock\")\n\t\t\t\t\t\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\t\t\t\t\t\tcm:unlock_technology(self.faction_key, tech_key)\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend"
+    },
+    {
+      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_start_line": 2553,
+      "source_end_line": 2585,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "8f910ab7c1f81d138b942209a85b3b3f68e9adf62d0168f9f8e4021713a563d3",
+      "text": "\t\t\t\t\t\t\t\t\tcm:trigger_mission(self.faction_key, quest_battle, true)\n\t\t\t\t\t\t\t\tend\n\t\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\n\t\t\t\t\tself.schemes.schemes_complete[mission_key] = true\n\t\t\t\t\tcm:set_saved_value(\"the_changeling_schemes_complete\", self.schemes.schemes_complete)\n\t\t\t\tend\n\n\t\t\tend,\n\t\t\ttrue\n\t\t)\n\n\t\t-- Listener for the rift tech unlocks when the player has 2 rift gems\n\t\tlocal tech_unlocked = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\tif not tech_unlocked then\n\t\t\tcore:add_listener(\n\t\t\t\t\"the_changeling_rift_tech_unlock\",\n\t\t\t\t\"PooledResourceChanged\",\n\t\t\t\tfunction(context)\n\t\t\t\t\treturn context:resource():key() == \"wh3_dlc24_tze_rift_gems\" and context:resource():value() >= 2 and context:faction():name() == self.faction_key\n\t\t\t\tend,\n\t\t\t\tfunction()\n\t\t\t\t\tlocal tech_unlock = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\t\t\t\tif not tech_unlock then\n\t\t\t\t\t\tcm:set_saved_value(\"the_changeling_rift_tech_unlock\", true)\n\t\t\t\t\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\t\t\t\t\tcm:unlock_technology(self.faction_key, tech_key)\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend,"
+    }
+  ],
+  "unmodeled_lock_sites": [
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 55,
+      "operation": "lock_technology",
+      "evidence_id": "3e24e7cdcdd67f1377728755",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 110,
+      "operation": "unlock_technology",
+      "evidence_id": "105d50280092d424928d1d0d",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 111,
+      "operation": "unlock_technology",
+      "evidence_id": "d66c30899bcc633e58088a89",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 112,
+      "operation": "unlock_technology",
+      "evidence_id": "51c34091c58ac6d51c7be39e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 113,
+      "operation": "unlock_technology",
+      "evidence_id": "12514885edeb77004b2d10b8",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 114,
+      "operation": "unlock_technology",
+      "evidence_id": "5e864d66b9c01d6ff378d760",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 135,
+      "operation": "unlock_technology",
+      "evidence_id": "ea9102a6bb4a7edb0ab7d349",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 136,
+      "operation": "unlock_technology",
+      "evidence_id": "7edcca13f877f916c7b81984",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 137,
+      "operation": "unlock_technology",
+      "evidence_id": "f0e8b810eab87458b00d3255",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 138,
+      "operation": "unlock_technology",
+      "evidence_id": "2196ce92fde6824978d7e9a4",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 139,
+      "operation": "unlock_technology",
+      "evidence_id": "fa843dea5083cdfc460a1b15",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 159,
+      "operation": "unlock_technology",
+      "evidence_id": "0cfae5ba8f5dfdd0250673b5",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 160,
+      "operation": "unlock_technology",
+      "evidence_id": "d461dd3ff28183dade88e0ec",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 161,
+      "operation": "unlock_technology",
+      "evidence_id": "da09b728e07417b552518d1f",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 162,
+      "operation": "unlock_technology",
+      "evidence_id": "8f736554877f71341468fe04",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 163,
+      "operation": "unlock_technology",
+      "evidence_id": "a33bb60ba172636dcac67a30",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 184,
+      "operation": "unlock_technology",
+      "evidence_id": "2af62ec0ffd831af026abff0",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 205,
+      "operation": "unlock_technology",
+      "evidence_id": "4fb21be88ca5d71bbd42a040",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 227,
+      "operation": "unlock_technology",
+      "evidence_id": "229399e80a90eb1add2c8d95",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 228,
+      "operation": "unlock_technology",
+      "evidence_id": "af991e88d31ac7d6906221b6",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 229,
+      "operation": "unlock_technology",
+      "evidence_id": "1a653f8f46a84efdc561f63e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 230,
+      "operation": "unlock_technology",
+      "evidence_id": "776699dc4795a229acb62153",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 231,
+      "operation": "unlock_technology",
+      "evidence_id": "2b1822c7cf7e9bc1ddcb49a3",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 245,
+      "operation": "unlock_technology",
+      "evidence_id": "1b4b9b1b9826b9c401039de4",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 310,
+      "operation": "unlock_technology",
+      "evidence_id": "dbed8e44090aca257adc67b9",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 391,
+      "operation": "unlock_technology",
+      "evidence_id": "43deb83ce1afb440eab0514b",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 418,
+      "operation": "unlock_technology",
+      "evidence_id": "0fe7379b9a23a3e0fc2dc8fa",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 455,
+      "operation": "unlock_technology",
+      "evidence_id": "5ade11a694fe3b5f308c1750",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 485,
+      "operation": "unlock_technology",
+      "evidence_id": "1f2dd58a415ceb0222676390",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
+      "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
+      "source_line": 526,
+      "operation": "unlock_technology",
+      "evidence_id": "d4730b01cd984a2ab546f988",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_line": 264,
+      "operation": "lock_technology",
+      "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
+      "limitation": "Hex unlock progression is not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
+      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_line": 319,
+      "operation": "unlock_technology",
+      "evidence_id": "1529480131babd55d66a7064",
+      "limitation": "Hex unlock progression is not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 1712,
+      "operation": "lock_technology",
+      "evidence_id": "f92f4df973cba02c3a79af68",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 2395,
+      "operation": "unlock_technology",
+      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
+      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+      "source_line": 2582,
+      "operation": "unlock_technology",
+      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    }
+  ],
+  "no_research_tree_evidence_id": "b7b40de5db0e08a55866f364"
+}

@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe the six factions' constructible building levels, base costs and times, prerequisites, and standardized income, Growth, control, trade, recruitment, and upkeep outputs. The normalized unit file and typed lookups already describe roster permissions, unit statistics, abilities, attributes, weapons, and mounts. The 24 character files already contain the skill trees for the six legendary lords, generic characters, and Black Ark commanders, including Names of Power nodes and dilemma grants. Those facts are not repeated here. This document records the pooled-resource loops, mobile-Black-Ark rules, loyalty, scripted faction mechanics, and campaign-only substitutions needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

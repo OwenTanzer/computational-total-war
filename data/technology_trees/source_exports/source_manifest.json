@@ -1,0 +1,507 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "executable_version": "8.1.1.0",
+  "appmanifest_sha256": "79a5f4233d06fc7e3309a6d2d05b32f8143b7ceefc2194b430916db84583c302",
+  "decoder": "RPFM 5.0.6",
+  "table_folders_requested": [
+    "agent_subtypes_tables",
+    "ancillaries_tables",
+    "audio_technologies_tables",
+    "building_levels_tables",
+    "cai_personalities_technology_research_path_junctions_tables",
+    "cai_personalities_technology_research_policies_tables",
+    "cai_personalities_technology_research_policy_strategic_context_junctions_tables",
+    "cai_personalities_technology_researches_tables",
+    "campaign_ai_technology_managers_tables",
+    "campaign_ai_technology_path_junctions_tables",
+    "campaign_effect_list_effect_junctions_tables",
+    "campaign_effect_lists_tables",
+    "campaign_effect_scopes_tables",
+    "campaign_faction_feature_forest_overrides_tables",
+    "campaign_features_tables",
+    "campaigns_tables",
+    "character_trait_levels_tables",
+    "cultures_subcultures_tables",
+    "cultures_tables",
+    "effect_bundles_tables",
+    "effect_bundles_to_effects_junctions_tables",
+    "effects_tables",
+    "faction_feature_forests_tables",
+    "faction_feature_set_military_force_types_tables",
+    "faction_feature_tree_to_transitions_tables",
+    "faction_feature_trees_tables",
+    "factions_tables",
+    "feature_set_to_faction_features_tables",
+    "feature_set_transition_handlers_tables",
+    "feature_set_transitions_tables",
+    "feature_sets_tables",
+    "feature_tree_to_feature_forests_tables",
+    "frontend_faction_leaders_tables",
+    "initiatives_tables",
+    "mercenary_pool_to_groups_junctions_tables",
+    "mercenary_unit_groups_tables",
+    "pooled_resource_factor_junctions_tables",
+    "pooled_resource_factors_tables",
+    "pooled_resources_tables",
+    "resource_cost_pooled_resource_junctions_tables",
+    "resource_costs_tables",
+    "technologies_tables",
+    "technology_category_modules_tables",
+    "technology_character_traits_junctions_tables",
+    "technology_effects_junction_tables",
+    "technology_initiative_effects_tables",
+    "technology_node_links_tables",
+    "technology_node_sets_tables",
+    "technology_nodes_tables",
+    "technology_nodes_to_ancillaries_junctions_tables",
+    "technology_required_building_levels_junctions_tables",
+    "technology_required_technology_junctions_tables",
+    "technology_script_lock_reasons_tables",
+    "technology_ui_groups_tables",
+    "technology_ui_groups_to_technology_nodes_junctions_tables",
+    "technology_ui_tabs_tables",
+    "technology_ui_tabs_to_technology_nodes_junctions_tables",
+    "ui_feature_to_subcultures_tables",
+    "ui_features_tables",
+    "ui_features_to_cultures_tables",
+    "ui_features_to_factions_tables",
+    "ui_resource_transaction_pooled_resource_junctions_tables",
+    "unit_upgrade_to_tech_requirements_tables",
+    "unit_upgrade_to_unit_groups_tables"
+  ],
+  "localisation_files_requested": [
+    "text/db/ancillaries__.loc",
+    "text/db/character_trait_levels__.loc",
+    "text/db/effects__.loc",
+    "text/db/effects_additional_tooltip_details__.loc",
+    "text/db/factions__.loc",
+    "text/db/frontend_factions__.loc",
+    "text/db/initiatives__.loc",
+    "text/db/pooled_resources__.loc",
+    "text/db/technologies__.loc",
+    "text/db/technology_node_sets__.loc",
+    "text/db/technology_nodes_to_ancillaries_junctions__.loc",
+    "text/db/technology_script_lock_reasons__.loc",
+    "text/db/technology_ui_groups__.loc",
+    "text/db/technology_ui_tabs__.loc"
+  ],
+  "files": [
+    {
+      "path": "db/agent_subtypes_tables/data__.tsv",
+      "bytes": 159599,
+      "sha256": "fe7741ad3267f7cee5e4a5112c16349e20d949802d34e9519dd1ccd1b77aabe1"
+    },
+    {
+      "path": "db/ancillaries_tables/data__.tsv",
+      "bytes": 569122,
+      "sha256": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e"
+    },
+    {
+      "path": "db/audio_technologies_tables/data__.tsv",
+      "bytes": 573,
+      "sha256": "942f593f23599e76eb89217e8e127f42c4d1128f3b39810453040511229637ff"
+    },
+    {
+      "path": "db/building_levels_tables/data__.tsv",
+      "bytes": 976836,
+      "sha256": "f554a818f83b55ab4be2027b2ab172728b02ebc630495bd78a7399523a51b5db"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_path_junctions_tables/data__.tsv",
+      "bytes": 2160,
+      "sha256": "cd32e5942d4987262d135ced76f573c7000f65e1002b0c81fc647b8d227d0509"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_policies_tables/data__.tsv",
+      "bytes": 465,
+      "sha256": "e1042e36b9d2d756ab0557b126687ff68f6fd7d0f3809c8f682db92364946eb4"
+    },
+    {
+      "path": "db/cai_personalities_technology_research_policy_strategic_context_junctions_tables/data__.tsv",
+      "bytes": 1243,
+      "sha256": "9bd4ec198afc07fee4b849abbb27e86d8db8d126ab0a4fff1b384c64989707b0"
+    },
+    {
+      "path": "db/cai_personalities_technology_researches_tables/data__.tsv",
+      "bytes": 298,
+      "sha256": "aff7665c444ec494526f41e24359df4b58129589eb9fe311e54865b71144caa9"
+    },
+    {
+      "path": "db/campaign_ai_technology_managers_tables/data__.tsv",
+      "bytes": 267,
+      "sha256": "5d2656d256a912941eb0e717c3133f852a56748a003b4b6dcc83230ec57a3c8a"
+    },
+    {
+      "path": "db/campaign_ai_technology_path_junctions_tables/data__.tsv",
+      "bytes": 4483,
+      "sha256": "83ad3a879f937ad9ebf94307c03064c6f1b067fb2345fa56e978df7ef02aec46"
+    },
+    {
+      "path": "db/campaign_effect_list_effect_junctions_tables/data__.tsv",
+      "bytes": 221000,
+      "sha256": "ffbc121dbe64743b28f5fd74217a49b13d9ed4f27234affa6816c3346e4efca5"
+    },
+    {
+      "path": "db/campaign_effect_lists_tables/data__.tsv",
+      "bytes": 50045,
+      "sha256": "a2df1d7c48808c33c9ffe891239d2dba5d8d701d1c44c4b4409e20b5c7077b1a"
+    },
+    {
+      "path": "db/campaign_effect_scopes_tables/data__.tsv",
+      "bytes": 35373,
+      "sha256": "4cc555cf80c8daf9ed52a6021d716fa7d812733e9663319cc465217d80b3f8a0"
+    },
+    {
+      "path": "db/campaign_faction_feature_forest_overrides_tables/data__.tsv",
+      "bytes": 387,
+      "sha256": "01da8d41fb9c510119cfa9907704705325ea1d28f48f2243a24f5a01076e0766"
+    },
+    {
+      "path": "db/campaign_features_tables/data__.tsv",
+      "bytes": 9110,
+      "sha256": "70cb777e5b4539f48c7975b4c0bc8d95a7e0bc5a96e8bc56a4c496cb216dfdca"
+    },
+    {
+      "path": "db/campaigns_tables/data__.tsv",
+      "bytes": 621,
+      "sha256": "76f1165a0b53648ac537ec129a095e2e1d7666a5583c76e6769722869cc9ed8d"
+    },
+    {
+      "path": "db/character_trait_levels_tables/data__.tsv",
+      "bytes": 84588,
+      "sha256": "46d4bf7cf146994bf2db4fb341443efb86ad56c5951bfd27245c359961a90d47"
+    },
+    {
+      "path": "db/cultures_subcultures_tables/data__.tsv",
+      "bytes": 2390,
+      "sha256": "9755046455f30f00c485edc1a0f84d9747f7db7de4953e1d8371c97a321e4425"
+    },
+    {
+      "path": "db/cultures_tables/data__.tsv",
+      "bytes": 2357,
+      "sha256": "2d467aeaf8bdfb010f0f51046359954bb96e7bf0832b9bc0026d1c449778229e"
+    },
+    {
+      "path": "db/effect_bundles_tables/data__.tsv",
+      "bytes": 1051685,
+      "sha256": "40f7144583e1fadd72ddb4d2346e8c129221f02c39e9e91dd97b1192b765cce2"
+    },
+    {
+      "path": "db/effect_bundles_to_effects_junctions_tables/data__.tsv",
+      "bytes": 2469504,
+      "sha256": "6c6661e5a71d64d8995aa3f27de0af6101f95a2d1276fd24277e9f729661c5f5"
+    },
+    {
+      "path": "db/effects_tables/data__.tsv",
+      "bytes": 1571155,
+      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+    },
+    {
+      "path": "db/faction_feature_forests_tables/data__.tsv",
+      "bytes": 203,
+      "sha256": "6f2d5e4bcea5722da95f7bf94cf79c0ee9e572788068366581803588939db962"
+    },
+    {
+      "path": "db/faction_feature_set_military_force_types_tables/data__.tsv",
+      "bytes": 300,
+      "sha256": "4d52a46f61c191e329217d2790c12a0c1a6b97641b27a1587ae1ecb2e7092fd0"
+    },
+    {
+      "path": "db/faction_feature_tree_to_transitions_tables/data__.tsv",
+      "bytes": 266,
+      "sha256": "ae016b346704d4f33104d5ddcb54efae0968d8ecec712b50645b54f7091d31db"
+    },
+    {
+      "path": "db/faction_feature_trees_tables/data__.tsv",
+      "bytes": 211,
+      "sha256": "343169d943f8d453f200276c6c4bed71b3e163f7d2de3412f2b515a7b9cbe699"
+    },
+    {
+      "path": "db/factions_tables/data__.tsv",
+      "bytes": 403358,
+      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+    },
+    {
+      "path": "db/feature_set_to_faction_features_tables/data__.tsv",
+      "bytes": 621,
+      "sha256": "390aa25d8e03130baec37094c662a8e5277aafbba1e0f027b052104d6abf4ca6"
+    },
+    {
+      "path": "db/feature_set_transition_handlers_tables/data__.tsv",
+      "bytes": 212,
+      "sha256": "d43e0c001bc9a79e20762996a08f7a613fd2389f25f71674baf681abc759056d"
+    },
+    {
+      "path": "db/feature_set_transitions_tables/data__.tsv",
+      "bytes": 374,
+      "sha256": "56be999013a5ff4477b432ba5eeb30c1cbca4228bf3819be540314e016d17c9f"
+    },
+    {
+      "path": "db/feature_sets_tables/data__.tsv",
+      "bytes": 340,
+      "sha256": "9d3d4f193afeafe016f21bca9cf9ff9b63b2d2e2b8452de49e07989e53155944"
+    },
+    {
+      "path": "db/feature_tree_to_feature_forests_tables/data__.tsv",
+      "bytes": 698,
+      "sha256": "242e176bed8dbd036e016f9f69796f3bff1a116a2f7a527bdeee185431cac733"
+    },
+    {
+      "path": "db/frontend_faction_leaders_tables/data__.tsv",
+      "bytes": 53250,
+      "sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f"
+    },
+    {
+      "path": "db/initiatives_tables/data__.tsv",
+      "bytes": 136463,
+      "sha256": "55f3c39be81e92864d933268064230fa7879e7b805fed775e02b18e0f239bfc5"
+    },
+    {
+      "path": "db/mercenary_pool_to_groups_junctions_tables/data__.tsv",
+      "bytes": 95757,
+      "sha256": "d69e1a34df349706c41d150a5a13decacc577130ab661f38e964c16360b22633"
+    },
+    {
+      "path": "db/mercenary_unit_groups_tables/data__.tsv",
+      "bytes": 64591,
+      "sha256": "a398d7d227825455c034249cb48e19dd8cce9c904864ee984db933601927eb7a"
+    },
+    {
+      "path": "db/pooled_resource_factor_junctions_tables/data__.tsv",
+      "bytes": 119085,
+      "sha256": "786c58ad044fe6f18102758b55eb00ac8ace692b94a466ed6ea323f0fee05815"
+    },
+    {
+      "path": "db/pooled_resource_factors_tables/data__.tsv",
+      "bytes": 14098,
+      "sha256": "3739b34ca8da577d84bfb3f5441a6f7544080abbdf3f7e09e10450e50eea128e"
+    },
+    {
+      "path": "db/pooled_resources_tables/data__.tsv",
+      "bytes": 32678,
+      "sha256": "b1afe5cd94ed46955c2981cbdc301f7d60ef7e89dbe98c9d460395d2638083f0"
+    },
+    {
+      "path": "db/resource_cost_pooled_resource_junctions_tables/data__.tsv",
+      "bytes": 191150,
+      "sha256": "dd53de44ed0949bbb21a802590718e141f75ceb8326af60fa47529b8079acb9f"
+    },
+    {
+      "path": "db/resource_costs_tables/data__.tsv",
+      "bytes": 177368,
+      "sha256": "289a9219a03b444de7c767ccacfc76055f4456ad88cc989c9de07d932c9c8da1"
+    },
+    {
+      "path": "db/technologies_tables/data__.tsv",
+      "bytes": 253673,
+      "sha256": "48d7803ef6538f67a283b62e6bae83ac98dadeb15a7350680ebeff8f482692b9"
+    },
+    {
+      "path": "db/technology_category_modules_tables/data__.tsv",
+      "bytes": 371,
+      "sha256": "6cf4e8f46b1ccaec9809731a7986e97ea17a4920b990f6576b4482b80faec44e"
+    },
+    {
+      "path": "db/technology_character_traits_junctions_tables/data__.tsv",
+      "bytes": 848,
+      "sha256": "49a01f45524dd0b2bdc1663fec528f9605c7357093516a28891a74cfc44869f5"
+    },
+    {
+      "path": "db/technology_effects_junction_tables/data__.tsv",
+      "bytes": 438903,
+      "sha256": "c424729a4999fd1af0245da1ff43237e83a10c01eeaf28b6c81dc3a94af2dbd7"
+    },
+    {
+      "path": "db/technology_initiative_effects_tables/data__.tsv",
+      "bytes": 34718,
+      "sha256": "ea3b2f70657b08d5eb0bcf32974b3a90d5dacf4215ceab3d476f64a035b5bc87"
+    },
+    {
+      "path": "db/technology_node_links_tables/data__.tsv",
+      "bytes": 140931,
+      "sha256": "2215ef630d4e45c33d151838a9d76b710787049360660eae5c6d7066bf1d451b"
+    },
+    {
+      "path": "db/technology_node_sets_tables/data__.tsv",
+      "bytes": 1823,
+      "sha256": "72248fc894c65810e19d1b6ca0bc8c429d86e6059371ce6804f067682fea9402"
+    },
+    {
+      "path": "db/technology_nodes_tables/data__.tsv",
+      "bytes": 191506,
+      "sha256": "6ef2f6968d83573904a2b8eb8bc3afc89714bbf0d76c214dc04fac12468612ab"
+    },
+    {
+      "path": "db/technology_nodes_to_ancillaries_junctions_tables/data__.tsv",
+      "bytes": 1979,
+      "sha256": "3380b8618b1014efb2005c5f7755ecf0dfad5156b34ab987ffaf9f856e6d00f9"
+    },
+    {
+      "path": "db/technology_required_building_levels_junctions_tables/data__.tsv",
+      "bytes": 5078,
+      "sha256": "abbccfd90ad49631ac8257b84fc2d5ebef4c2c5577daee0c3ef9c7cde581dba3"
+    },
+    {
+      "path": "db/technology_required_technology_junctions_tables/data__.tsv",
+      "bytes": 6999,
+      "sha256": "86a5dc025c4393d698d4bc2a04321446090599a27268c66170298ff177bbee3e"
+    },
+    {
+      "path": "db/technology_script_lock_reasons_tables/data__.tsv",
+      "bytes": 2787,
+      "sha256": "45c69499c41ba8a2f7dc389c65b38bab3e41e1c730fa78aaeed21651b0e033fe"
+    },
+    {
+      "path": "db/technology_ui_groups_tables/data__.tsv",
+      "bytes": 3026,
+      "sha256": "c60e7974b1d5543545ce41cb9d89f65e78fddbe14f797a910c5da2c40518d460"
+    },
+    {
+      "path": "db/technology_ui_groups_to_technology_nodes_junctions_tables/data__.tsv",
+      "bytes": 11006,
+      "sha256": "201ee3e271c07ed3a92face46b457137bdce0a634bd66c7098a5dfdaf7170abc"
+    },
+    {
+      "path": "db/technology_ui_tabs_tables/data__.tsv",
+      "bytes": 517,
+      "sha256": "4d98aa5ad70784b229e1800eb2a24fa9f9ef9bc91622dbe4d925b6c93eb2a6ce"
+    },
+    {
+      "path": "db/technology_ui_tabs_to_technology_nodes_junctions_tables/data__.tsv",
+      "bytes": 32330,
+      "sha256": "13ed262ee71ef0cc8e5deaae8b77c1e4692be74f20691f0e29563155a6a8ce69"
+    },
+    {
+      "path": "db/ui_feature_to_subcultures_tables/data__.tsv",
+      "bytes": 193,
+      "sha256": "6fe3cfd4426a09389574191738741952e1f7f4f89b8de8e69e85cc67a574f3bb"
+    },
+    {
+      "path": "db/ui_features_tables/data__.tsv",
+      "bytes": 1173,
+      "sha256": "cf6230b404e716c09d53db792ad9c0256193837085b683a7d391c5f2ac09d6a1"
+    },
+    {
+      "path": "db/ui_features_to_cultures_tables/data__.tsv",
+      "bytes": 1427,
+      "sha256": "92b3f80e40d8457f4b83291869fad395a26bccd6bdcb0af78fa46622a237101e"
+    },
+    {
+      "path": "db/ui_features_to_factions_tables/data__.tsv",
+      "bytes": 5317,
+      "sha256": "6ff4ba306f9aedab1a5996b0e2ddee2ca369cc657d01e7ffd887e06a292e3e48"
+    },
+    {
+      "path": "db/ui_resource_transaction_pooled_resource_junctions_tables/data__.tsv",
+      "bytes": 278,
+      "sha256": "701e47f6592d1659589cbe260853d629c4b34e9110be5ca24c2eb57dbcae375a"
+    },
+    {
+      "path": "db/unit_upgrade_to_tech_requirements_tables/data__.tsv",
+      "bytes": 11659,
+      "sha256": "3360b4822d26ceb0de40c4a6012dec0472931f4d522f4848e7157a8c35507682"
+    },
+    {
+      "path": "db/unit_upgrade_to_unit_groups_tables/data__.tsv",
+      "bytes": 23126,
+      "sha256": "78bfa66ef5d11425d3e8b62767f9cd21fa1b8c7f66046d28941ae175e0411f85"
+    },
+    {
+      "path": "decoded_schema.json",
+      "bytes": 686593,
+      "sha256": "74e2aae665b1a301b81f0444ff5a0d8633162bdfe042f9e5a3722de9b87c13b5"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 205182,
+      "sha256": "6e954cdf5d5c318ca40b8a7348de8be6d1c2c55c5b6a6b313341e436375253d5"
+    },
+    {
+      "path": "node_set_precedence.json",
+      "bytes": 9463,
+      "sha256": "8d61b0111ccf5ba451be7d394b49e4afda2685be4e81980533c5814ad9d86a64"
+    },
+    {
+      "path": "script_evidence.json",
+      "bytes": 118220,
+      "sha256": "da001ca8256c6c69d84f9ad982f3fc7195e51c21834dc4c94886ffd417c85c99"
+    },
+    {
+      "path": "script_mechanics.csv",
+      "bytes": 50843,
+      "sha256": "620aedda25849b705b4b42d3173d449c09475e71c99a97bc8820de8038dcc402"
+    },
+    {
+      "path": "text/db/ancillaries__.loc.tsv",
+      "bytes": 996769,
+      "sha256": "edf229248ca6ef97a9ad63205f42ddc5a7be0432a74d8758a02657be7067b43f"
+    },
+    {
+      "path": "text/db/character_trait_levels__.loc.tsv",
+      "bytes": 450418,
+      "sha256": "1508fda858bdb6e39b79e0e74b869decec7649112ffc514cca9679751f504f3b"
+    },
+    {
+      "path": "text/db/effects__.loc.tsv",
+      "bytes": 2050603,
+      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+    },
+    {
+      "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
+      "bytes": 73434,
+      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+    },
+    {
+      "path": "text/db/factions__.loc.tsv",
+      "bytes": 297539,
+      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+    },
+    {
+      "path": "text/db/frontend_factions__.loc.tsv",
+      "bytes": 90478,
+      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+    },
+    {
+      "path": "text/db/initiatives__.loc.tsv",
+      "bytes": 166991,
+      "sha256": "c6e067f260f25eb206b6ef09cf83e1d18230651f176d85165c0e49cd41705efa"
+    },
+    {
+      "path": "text/db/pooled_resources__.loc.tsv",
+      "bytes": 146709,
+      "sha256": "7f4ad9a341f73e7a1576aa71fcf8f5e68ae91815cde806e497ac2f2f7d06eaea"
+    },
+    {
+      "path": "text/db/technologies__.loc.tsv",
+      "bytes": 751607,
+      "sha256": "f4d23295935ab049e24f7ec4288bcb35c6760d42080eafa6e9ef004dfdc6c279"
+    },
+    {
+      "path": "text/db/technology_node_sets__.loc.tsv",
+      "bytes": 6545,
+      "sha256": "d423da05d8c6269aa0cdfdb98c1135b49d65a7b9e0229a80d9bfbd12482d74ea"
+    },
+    {
+      "path": "text/db/technology_nodes_to_ancillaries_junctions__.loc.tsv",
+      "bytes": 5822,
+      "sha256": "84835e27d5203777b6cb422c0a9cbddae1917f96eb397291a09b7af1ff181b18"
+    },
+    {
+      "path": "text/db/technology_script_lock_reasons__.loc.tsv",
+      "bytes": 14747,
+      "sha256": "c4a64ecbc59f3e07700ddee629578d426ebf215af2da62240712d39f44f0558d"
+    },
+    {
+      "path": "text/db/technology_ui_groups__.loc.tsv",
+      "bytes": 19370,
+      "sha256": "8179027cfa323d1f6167660ce302731bf9e30e7046314386b79bc4dc969d4baa"
+    },
+    {
+      "path": "text/db/technology_ui_tabs__.loc.tsv",
+      "bytes": 5838,
+      "sha256": "cbf0ade9b7ea349485afdbc61b97c85f565db57f5f9c826f395d8282635cfe89"
+    }
+  ]
+}

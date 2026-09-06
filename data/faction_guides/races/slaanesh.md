@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe constructible building levels, base construction costs and times, prerequisites, and standardized outputs for all three playable factions. The normalized unit files and typed lookups describe the roster, faction permissions, unit statistics, abilities, and attributes. The character files contain the complete skill trees for N'Kari, the Masque, Dechala, Styrkaar, and every generic Slaanesh character. Those rows are not repeated here. This guide records pooled-resource loops, campaign actions, foreign-slot lifecycle, acquisition and replacement rules, human/AI branches, and faction-specific systems needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere
@@ -21,7 +23,7 @@ Every current Gift applies +5 Slaanesh corruption in the gifted character's prov
 - The Masque's Gift has the same -10% Seduce Units cost and supplies 5 Devotees per turn, or 25 with the upgraded faction effect, but it does not add N'Kari's Seductive Influence.
 - Dechala's Gift reduces the Thrall cost of corrupted units in that character's army by 10% and supplies 5 Thralls per turn, or 25 with the upgraded faction effect.
 
-The upgrade sources themselves are technology/skill effects represented in the existing character and economy material; the tag's trigger, persistence, removal, and faction-specific outputs are the uncataloged relationships recorded here.
+The upgrade sources themselves are technology/skill effects represented in the technology-tree and character datasets; the tag's trigger, persistence, removal, and faction-specific outputs are the uncataloged relationships recorded here.
 
 ### N'Kari: Devotees and Seductive Influence
 

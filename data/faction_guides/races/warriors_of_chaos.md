@@ -6,6 +6,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The eight economy exports already contain the ordinary Dark Fortress and minor-settlement building levels, construction costs and times, prerequisites, and standardized effects. The normalized unit file and typed lookups already contain roster permissions, unit statistics, abilities, mounts, and attributes. The 33 character files already contain the eight legendary-lord trees, Harald Hammerstorm, generic Undivided and marked characters, and the four challenger proxies. Those records are not repeated here. This guide supplies the campaign-state rules needed to interpret them: settlement eligibility, local Warband pools and upgrades, Souls and Gifts, Authority, Path to Glory replacement, faction mechanics, vassal/confederation behavior, unique-character access, human/AI branches, and campaign-specific victory state.
 
 ## Mechanically relevant material not captured elsewhere

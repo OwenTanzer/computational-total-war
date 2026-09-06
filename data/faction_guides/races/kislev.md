@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The four Kislev economy CSVs already describe buildings, construction gates and costs, ordinary province outputs, recruitment access, and standardized modifiers. The normalized unit catalog and typed roster/ability lookups cover unit permissions, statistics, and battle abilities; the 17 Kislev character files cover skill nodes and their numeric effects. Those facts are not repeated here. The material below concerns campaign resources, scripted progression, character acquisition and governance, and faction/campaign branches that those catalogs do not encode.
 
 ## Mechanically relevant material not captured elsewhere

@@ -6,6 +6,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The four economy CSVs already describe constructible building variants, their normal tiers, costs, construction times, prerequisites, fixed income, Growth, control, trade, and broad recruitment/upkeep effects. The normalized unit file and typed lookups already describe roster membership, faction permissions, unit statistics, weapons, abilities, attributes, and mounts. The character index and 26 Wood Elf character files already describe the static skill trees for legendary, generic, and special characters. Those records are not repeated here. This guide records the scripted forest-health loop, travel and ritual lifecycle, encounters and invasions, special acquisition and replacement rules, councils, faction-specific campaign systems, conditional recruitment pools, human/AI branches, and campaign setup/victory exceptions needed to interpret the catalogs.
 
 ## Mechanically relevant material not captured elsewhere

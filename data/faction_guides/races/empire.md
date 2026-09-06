@@ -11,6 +11,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The five faction economy CSVs already enumerate enabled building levels, costs, construction times, prerequisites, standardized outputs, and ordinary recruitment effects. The normalized unit file and typed lookups already cover Empire unit statistics, abilities, attributes, weapons, mounts, military-group membership, and faction permissions. The 27 character files already contain the skill trees of the five legendary lords, the four Hunters, Ulrika Magdova, Theodore Bruckner, and the generic Empire characters. Those rows are not repeated here. This document records campaign systems, acquisition rules, resource loops, faction branches, and scripted availability rules that the catalogs cannot express.
 
 ## Mechanically relevant material not captured elsewhere

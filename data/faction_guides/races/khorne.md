@@ -5,6 +5,8 @@
 
 ## Catalog boundary
 
+Ordinary technology nodes, costs, prerequisites, effects and direct unlock junctions are now owned by `data/technology_trees/`. Read its audit before interpreting conditional variants; the scripted campaign rules below remain relevant where static records do not resolve runtime behavior.
+
 The economy CSVs already describe the 207 applicable building-level rows for each playable faction, including ordinary costs, build times, prerequisites, and standardized outputs. The normalized unit file and typed lookups already describe Khorne's roster, faction permissions, unit statistics, and battle abilities. The character files already contain the skill trees for all 13 indexed Khorne lords and heroes. Those rows are not repeated here. This document records the scripted resources, force state, settlement rules, foreign-slot network, progression counters, and faction-specific campaign lifecycles needed to interpret those catalogs.
 
 ## Mechanically relevant material not captured elsewhere

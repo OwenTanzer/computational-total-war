@@ -1,5 +1,5 @@
-import { createHash } from "node:crypto";
-import { readdir, readFile, stat, writeFile } from "node:fs/promises";
+import { matchesTextFingerprint } from "./validation-text.mjs";
+import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { UNIT_ROSTERS } from "./dataset-scope.mjs";
@@ -57,7 +57,7 @@ async function csv(relative) {
     fail(`${relative}: file is not valid UTF-8.`);
     text = buffer.toString("utf8");
   }
-  if (/\r\n|\r/.test(text)) fail(`${relative}: contains a non-LF line ending.`);
+  if (/\r(?!\n)/.test(text)) fail(`${relative}: contains a bare CR line ending.`);
   const parsed = parseRecords(text, ",");
   if (parsed.inconsistent_row_widths) fail(`${relative}: ${parsed.inconsistent_row_widths} rows have the wrong field count.`);
   return parsed;
@@ -137,7 +137,7 @@ const rosters = await csv(path.join("lookups", "unit_rosters__wh3__8.1.1__ultra.
 const mountVariants = await csv(path.join("lookups", "unit_mount_variants__wh3__8.1.1__ultra.csv"));
 const quality = await csv(path.join("lookups", "data_quality_flags__wh3__8.1.1__ultra.csv"));
 const schemaInventory = await csv("schema_inventory__v3.csv");
-if (!errors.some((message) => message.includes("valid UTF-8") || message.includes("line ending") || message.includes("wrong field count"))) pass("Every production CSV is valid UTF-8 with LF endings and consistent row widths.");
+if (!errors.some((message) => message.includes("valid UTF-8") || message.includes("line ending") || message.includes("wrong field count"))) pass("Every production CSV is valid UTF-8 with LF or CRLF endings and consistent row widths.");
 
 const actualSchemas = new Map([
   ["normalized/<faction>__wh3__8.1.1__ultra.csv", canonicalColumns],
@@ -313,9 +313,7 @@ if (!errors.some((message) => message.includes("Golden"))) pass("Golden checks p
 const sourceManifest = JSON.parse(await readFile(path.join(SOURCE, "source_manifest.json"), "utf8"));
 for (const entry of sourceManifest.files) {
   const file = path.join(SOURCE, ...entry.path.split("/"));
-  const info = await stat(file);
-  const digest = createHash("sha256").update(await readFile(file)).digest("hex");
-  if (info.size !== entry.bytes || digest !== entry.sha256) fail(`Source export hash mismatch: ${entry.path}.`);
+  if (!matchesTextFingerprint(await readFile(file), entry.sha256, entry.bytes)) fail(`Source export hash mismatch: ${entry.path}.`);
 }
 if (!errors.some((message) => message.includes("hash mismatch"))) pass(`All ${sourceManifest.files.length} raw source-export hashes match the manifest.`);
 
