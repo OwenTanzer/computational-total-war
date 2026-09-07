@@ -21,3 +21,6 @@
 # Technology artifacts and their compact evidence/TSV sources are hashed byte-for-byte.
 # Preserve decoder/builder line endings on checkout so recorded hashes remain valid.
 /data/technology_trees/** -text -whitespace
+
+# Preserve bounded game-script evidence, including its original trailing spaces.
+/data/campaign_map/starting_positions/source_exports/** -text -whitespace
