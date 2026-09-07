@@ -8,6 +8,8 @@
 *.tex  text eol=lf
 *.tsv  text eol=lf
 *.ps1  text eol=lf
+*.py   text eol=lf
+*.lua  text eol=lf
 
 # GeoPackages are SQLite databases and must never receive text conversion.
 *.gpkg binary
