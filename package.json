@@ -19,7 +19,11 @@
     "validate:technologies": "node scripts/validate-technology-trees.mjs data/technology_trees/source_exports data/technology_trees",
     "test:technologies": "node scripts/test-technology-trees.mjs",
     "verify:technology-extraction": "node scripts/verify-technology-extraction.mjs",
-    "test:validation-text": "node scripts/test-validation-text.mjs"
+    "test:validation-text": "node scripts/test-validation-text.mjs",
+    "audit:effect-foundation": "node scripts/audit-effect-foundation.mjs",
+    "extract:effect-source": "powershell.exe -NoProfile -File scripts/extract-effect-source.ps1",
+    "validate:effect-source": "node scripts/validate-effect-source.mjs",
+    "test:effect-foundation": "node --test scripts/test-effect-foundation.mjs"
   },
   "license": "MIT"
 }
