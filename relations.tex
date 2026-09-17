@@ -336,13 +336,27 @@ area, calibration distance, accuracy, and marksmanship are strongly supported
 by record layout and accessors but have not been traced completely through
 the generated database deserializer.  Some modifiers and branch predicates
 remain unidentified.  The executable identity and function addresses are
-recorded in Section~\ref{sec:native-provenance}; its correspondence to the
-repository's patch/build baseline remains a provenance check, not an
-assumption supplied by these equations.
+recorded in Section~\ref{sec:native-provenance}.  Steam's installed-build
+manifest agrees with the repository baseline; this is installed-build
+evidence, not a depot-level integrity attestation for the executable.
 
 The route has two distinct randomization stages: a target-local aim-point
-offset and angular perturbations of the launch vector.  Other callers,
+offset and angular perturbations of the launch vector.  A preceding
+target-prediction branch can lead a moving target without in-flight homing.
+Other callers,
 projectile categories, and homing branches can add different behavior.
+
+\subsection{Prelaunch target prediction}
+
+In the inspected branch with a null homing-parameter pointer, the code
+solves an initial trajectory, obtains its flight-time estimate, and advances
+the target position by that time multiplied by target motion components.
+Height/terrain adjustment, final aim offset, and a final trajectory solve
+follow.  This is prelaunch target leading, not steering toward the target
+after launch.  It does not establish that every target class or projectile
+uses the same prediction routine.  The local jitter below should therefore
+be understood relative to the branch's chosen or predicted target point,
+not necessarily the target's current position.
 
 \subsection{Target-local aim-point offset}
 
@@ -373,7 +387,8 @@ offset across a burst, so shot-to-shot independence must not be assumed.
 \subsection{Precision factor and effective calibration scale}
 
 Define $\operatorname{clamp}_{\ell}^{u}(x)=\min(u,\max(\ell,x))$.
-For distance $r\geq0.01$, the reconstructed precision factor is
+For the inspected shooter-present branch and distance $r\geq0.01$, the
+reconstructed precision factor is
 \begin{align}
   G(\theta)&=1-\frac{\operatorname{clamp}_{-90}^{90}
                          (\theta_{\mathrm{deg}})}{180},\\
@@ -390,7 +405,11 @@ is the stored launch elevation.  The symbol $M$ collects two multiplicative
 accessor results, $V$ is another unit modifier entering the distance ratio,
 and $\pi_{\mathrm{pen}}$ is a conditional penalty.  Their complete semantic
 mapping and live values remain unresolved.  For $r<0.01$, the inspected
-function returns $F=1$ before this calculation.  In particular, $F$ is
+function returns $F=1$ before this calculation.  When the shooter pointer
+is null, the caller does not invoke this function: it retains a separate
+key-value default previously associated with the tower-accuracy parameter.
+Equation~\ref{eq:missile-precision} must not be extended to that branch.
+In particular, $F$ is
 \emph{not} a hit probability despite its numerical bounds.
 
 For the record scalar $C$ interpreted as calibration area, an unsigned
@@ -403,7 +422,9 @@ counter $n$ produces
   \end{cases}
 \end{equation}
 The counter's meaning is unresolved; it must not be called unit rank or
-burst index without further evidence.  The subsequent arithmetic is
+burst index without further evidence.  Its upstream launch-input constructor
+initializes the field to zero, but this does not establish that subsequent
+writers leave it zero for ordinary shots.  The subsequent arithmetic is
 \begin{equation}
   S(r)=\frac{C_{\mathrm{eff}}}{F(r)},\qquad L(r)=\sqrt{S(r)}.
   \label{eq:missile-calibration-scale}
@@ -426,13 +447,17 @@ The vector helper adds these perturbations to azimuth and elevation and
 preserves the launch vector's magnitude.  The aspect scalar is stored as
 $k=1$ in the inspected image, without a dynamic-write audit; the traced
 ordinary caller supplies $s_\alpha=1$.  The denominator is reconstructed as
-$D=\max(|v_y|,r)$, where the loaded component is consistent with vertical
-launch velocity.  This apparently mixed-unit expression is retained from
-the instructions rather than silently replaced by $r$; its interpretation
-needs further checking.  The inverse-tangent identification is supported by
+$D=\max(|v_y|,r)$.  A follow-up trace of the ordinary ballistic solution
+places vertical launch velocity at state offset \texttt{+4} and horizontal
+distance at \texttt{+0xa0}; the traced firing route reaches scatter without
+overwriting that velocity vector.  This strengthens the operand mapping,
+but does not explain the apparently mixed-unit comparison.  We retain the
+native expression rather than silently replacing it by $r$.
+The inverse-tangent identification is supported by
 the helper's range reduction and ballistic uses, not a separate runtime test.
 
-With $M=V=1$, $\pi_{\mathrm{pen}}=0$, $\theta=0$, $n=0$, and $a+b>0$,
+Within the shooter-present branch, with $M=V=1$, $\pi_{\mathrm{pen}}=0$,
+$\theta=0$, $n=0$, and $a+b>0$,
 between the clamps in Equation~\ref{eq:missile-precision},
 \begin{equation}
   S(r)=\frac{100C}{a+b}\left(\frac{r}{d}\right)^2.
@@ -515,7 +540,10 @@ virtual addresses, not live relocated addresses.  Executable SHA-256
 b7315fa718fd84e2e018e2c4df06600e9\\
 df0076156b474f148d9d558c939aa55
 \end{quote}
-The binary's patch/build correspondence requires independent confirmation.
+Steam's \texttt{appmanifest\_1142710.acf} reports
+both \texttt{buildid} and \texttt{TargetBuildID} as 24237342, with
+\texttt{StateFlags} equal to 4, matching the repository's Steam-build baseline.
+This does not independently attest the executable against depot hashes.
 The arithmetic was inspected with Capstone 5.0.9 and pefile 2024.8.26 without
 executing the binary or observing a live battle.
 
@@ -528,14 +556,30 @@ Probable projectile-record constructor & \texttt{0x1404d75cc}\\
 Named aiming-size parameter registration & \texttt{0x1405348db}\\
 Target-local random offsets & \texttt{0x142f698d0}\\
 Target-facing offset transform & \texttt{0x142f657a4}\\
+Prediction and final-solve route & \texttt{0x142f63674}\\
+Target-motion prediction helper & \texttt{0x142e4b4bc}\\
 Precision-factor arithmetic & \texttt{0x142d1df1c}\\
 Launch-elevation modifier & \texttt{0x142f64350}\\
 Calibration-to-angular-width route & \texttt{0x142f654dc}\\
 Angular random draws & \texttt{0x142f65300}\\
 Direction perturbation helper & \texttt{0x142f62d14}\\
+Ordinary firing route & \texttt{0x142f7c754}\\
+Launch-input default constructor & \texttt{0x142f5ce2c}\\
 \bottomrule
 \end{tabular}
 \end{center}
+
+In the ballistic solution, \texttt{0x142f63eae} stores launch elevation,
+\texttt{0x142f63ef5} stores the velocity-vector portion containing the vertical
+component, and \texttt{0x142f63efc} stores horizontal distance.
+The firing route reaches calibration/scatter at \texttt{0x142f7c956}.
+The predictor uses flight time at state \texttt{+0xa4} and target motion
+components at \texttt{+0xe0}, \texttt{+0xe4}, and \texttt{+0xe8}.
+The area-reduction counter at state \texttt{+0x74} traces through
+\texttt{0x142f5c990} and \texttt{0x142f5cd14} to launch-input \texttt{+0x4c},
+initialized to zero by an eight-byte store at \texttt{+0x48}.
+Writers of that input or the corresponding firing-object field
+\texttt{+0x64} remain inspection targets; the counter's meaning is unresolved.
 
 The constructor copies source offsets \texttt{+0xa0} and \texttt{+0xa4} to
 record offsets \texttt{+0x88} and \texttt{+0x8c}, interpreted as calibration
