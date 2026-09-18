@@ -328,13 +328,15 @@ separate event-level terms.
 
 \subsection{Evidence and scope}
 
-A static inspection on 17 September 2026 recovered the following arithmetic
-from one native firing route.  This is a reconstruction, not an official
+A static inspection on 17--18 September 2026 recovered the following arithmetic
+and several caller branches.  This is a reconstruction, not an official
 engine specification or a runtime-validated hit model.  Instruction-level
 operations and constants are directly observed; the mappings to calibration
-area, calibration distance, accuracy, and marksmanship are strongly supported
-by record layout and accessors but have not been traced completely through
-the generated database deserializer.  Some modifiers and branch predicates
+area, calibration distance, and marksmanship are corroborated by a generated
+row reader matching the version-53 projectile export and by runtime constructor
+copies.  The reader's registration has not been linked completely to a named
+table.  Effective shooter accuracy remains an accessor interpretation.
+Some modifiers and branch predicates
 remain unidentified.  The executable identity and function addresses are
 recorded in Section~\ref{sec:native-provenance}.  Steam's installed-build
 manifest agrees with the repository baseline; this is installed-build
@@ -345,6 +347,12 @@ offset and angular perturbations of the launch vector.  A preceding
 target-prediction branch can lead a moving target without in-flight homing.
 Other callers,
 projectile categories, and homing branches can add different behavior.
+The category lookup identifies the special category-8 scatter branch as
+rockets; the inspected arrow and Horror-bolt profiles use arrow (1) and axe
+(4), respectively.  Both use the \texttt{dual\_low\_fixed} trajectory setting,
+whose selector resolves to fixed or low according to a runtime state field.
+These shared exclusions and settings do not establish identical complete
+unit firing paths.
 
 \subsection{Prelaunch target prediction}
 
@@ -413,20 +421,22 @@ In particular, $F$ is
 \emph{not} a hit probability despite its numerical bounds.
 
 For the record scalar $C$ interpreted as calibration area, an unsigned
-counter $n$ produces
+firing-history counter $n(t)$ produces
 \begin{equation}
-  C_{\mathrm{eff}}=
+  C_{\mathrm{eff}}(t)=
   \begin{cases}
-    C, & n=0,\\
-    \max\{C(1-0.1n),\,0.5C\}, & n>0.
+    C, & n(t)=0,\\
+    \max\{C[1-0.1n(t)],\,0.5C\}, & n(t)>0.
   \end{cases}
 \end{equation}
-The counter's meaning is unresolved; it must not be called unit rank or
-burst index without further evidence.  Its upstream launch-input constructor
-initializes the field to zero, but this does not establish that subsequent
-writers leave it zero for ordinary shots.  The subsequent arithmetic is
+The counter is copied from a shooter field that is incremented in a
+firing/reload completion branch and cleared by separate state-management
+routines.  Its exact event granularity and reset conditions remain unresolved:
+it is not established as unit rank, burst index, or one increment per unit
+volley.  A zero-initialized launch input does not establish a permanently zero
+counter.  The subsequent arithmetic is
 \begin{equation}
-  S(r)=\frac{C_{\mathrm{eff}}}{F(r)},\qquad L(r)=\sqrt{S(r)}.
+  S(r,t)=\frac{C_{\mathrm{eff}}(t)}{F(r)},\qquad L(r,t)=\sqrt{S(r,t)}.
   \label{eq:missile-calibration-scale}
 \end{equation}
 The quantity $S$ is an internal area-like dispersion scale, not a measured
@@ -446,7 +456,10 @@ and $D$ the native denominator.  The recovered widths are
 The vector helper adds these perturbations to azimuth and elevation and
 preserves the launch vector's magnitude.  The aspect scalar is stored as
 $k=1$ in the inspected image, without a dynamic-write audit; the traced
-ordinary caller supplies $s_\alpha=1$.  The denominator is reconstructed as
+batch caller supplies $s_\alpha=1$.  An entity firing caller instead reads
+the scale from the shooter and can skip the immediate scatter helper.
+Equation~\ref{eq:missile-angular-scatter} is conditional on that helper being
+invoked.  The denominator is reconstructed as
 $D=\max(|v_y|,r)$.  A follow-up trace of the ordinary ballistic solution
 places vertical launch velocity at state offset \texttt{+4} and horizontal
 distance at \texttt{+0xa0}; the traced firing route reaches scatter without
@@ -456,11 +469,20 @@ native expression rather than silently replacing it by $r$.
 The inverse-tangent identification is supported by
 the helper's range reduction and ballistic uses, not a separate runtime test.
 
+The traced entity setup has one branch that writes $s_\alpha=1$ and another
+that writes zero or a settings-derived value according to the action state.
+The skip flag starts cleared and subsequently receives an action-descriptor
+bit; it also affects packed launch flags.  Neither constructor defaults nor
+projectile category alone establish which settings a particular unit receives.
+For finite ordinary inputs, zero scale removes this angular contribution,
+not target-local jitter or all other branches.  Skipping one helper call is
+likewise not a guarantee of perfect accuracy.
+
 Within the shooter-present branch, with $M=V=1$, $\pi_{\mathrm{pen}}=0$,
-$\theta=0$, $n=0$, and $a+b>0$,
+$\theta=0$, $n(t)=0$, and $a+b>0$,
 between the clamps in Equation~\ref{eq:missile-precision},
 \begin{equation}
-  S(r)=\frac{100C}{a+b}\left(\frac{r}{d}\right)^2.
+  S(r,t)=\frac{100C}{a+b}\left(\frac{r}{d}\right)^2.
   \label{eq:missile-quadratic-regime}
 \end{equation}
 Thus quadratic scaling has a native-code basis within a specified regime;
@@ -532,7 +554,8 @@ uncertainty in launch dispersion; it does not remove these limitations.
 \subsection{Native-inspection provenance}
 \label{sec:native-provenance}
 
-Static inspection of \texttt{Warhammer3.exe}, 17 September 2026.
+Static inspection of \texttt{Warhammer3.exe}, 17--18 September 2026;
+the executable hash was rechecked on 18 September.
 The image base is \texttt{0x140000000}; addresses below are preferred-image
 virtual addresses, not live relocated addresses.  Executable SHA-256
 (concatenate the two lines):
@@ -563,7 +586,7 @@ Launch-elevation modifier & \texttt{0x142f64350}\\
 Calibration-to-angular-width route & \texttt{0x142f654dc}\\
 Angular random draws & \texttt{0x142f65300}\\
 Direction perturbation helper & \texttt{0x142f62d14}\\
-Ordinary firing route & \texttt{0x142f7c754}\\
+Batch firing route & \texttt{0x142f7c754}\\
 Launch-input default constructor & \texttt{0x142f5ce2c}\\
 \bottomrule
 \end{tabular}
@@ -578,12 +601,33 @@ components at \texttt{+0xe0}, \texttt{+0xe4}, and \texttt{+0xe8}.
 The area-reduction counter at state \texttt{+0x74} traces through
 \texttt{0x142f5c990} and \texttt{0x142f5cd14} to launch-input \texttt{+0x4c},
 initialized to zero by an eight-byte store at \texttt{+0x48}.
-Writers of that input or the corresponding firing-object field
-\texttt{+0x64} remain inspection targets; the counter's meaning is unresolved.
+The entity launch builder \texttt{0x142f19f10} subsequently copies shooter
+\texttt{+0xd54} into input \texttt{+0x4c}.  Entity firing/reload route
+\texttt{0x142f4d588} increments that shooter field at \texttt{0x142f4dc94};
+\texttt{0x14312d2df} and \texttt{0x14312d43b} clear it.  The reset-state names
+and increment granularity remain unresolved.
+
+The entity route calls scatter at \texttt{0x142f4db39} with scale from
+shooter \texttt{+0xc88}, unless byte \texttt{+0xd04} skips the call.
+Setter \texttt{0x142f32b0c} writes scale 1; \texttt{0x142f2b930} writes an
+argument supplied by action update \texttt{0x142f48a04}.  That argument is
+zero unless action field \texttt{+0x78} equals 6 and flag bit 0 at
+\texttt{+0xa0} is set, in which case it reads settings field \texttt{+0x218}.
+The choice between the two setters additionally depends on action flags and
+a global-value comparison; their game-mode semantics remain unresolved.
+Action kind 6 is not projectile category 6.
+Function \texttt{0x142f438d0} copies action flag bit 3 into the shooter skip
+byte, and \texttt{0x142f19f10} also uses that byte to alter launch flags.
 
 The constructor copies source offsets \texttt{+0xa0} and \texttt{+0xa4} to
-record offsets \texttt{+0x88} and \texttt{+0x8c}, interpreted as calibration
-distance and area.  Marksmanship is interpreted at record \texttt{+0x68}.
+record offsets \texttt{+0x88} and \texttt{+0x8c}, corroborated as calibration
+distance and area.  Source \texttt{+0x80} maps to marksmanship at record
+\texttt{+0x68}.  Generated reader \texttt{0x14063973c}, registered through
+thunk \texttt{0x140639734} by \texttt{0x1406f3b28}, matches these fields'
+version-53 serialized order.  Category converter \texttt{0x1404d919c} uses
+the table at \texttt{0x143bbf750}.  Trajectory selector
+\texttt{0x142f6f980} resolves \texttt{dual\_low\_fixed} (3) to fixed (2)
+when state \texttt{+0x78}>0, otherwise low (0).
 The target-offset routine reads \texttt{+0x9c}, \texttt{+0xa0}, and
 \texttt{[target+0x2d8]+0x64}.  The named aiming parameter is
 \texttt{projectile\_aiming\_target\_size\_modifier}.
