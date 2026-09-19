@@ -1,6 +1,7 @@
 """Behavior tests for retrieval boundaries and dangerous targeting edge cases."""
 import importlib.util
 import json
+import shlex
 import subprocess
 import sys
 import unittest
@@ -64,6 +65,27 @@ class Targeting(unittest.TestCase):
 
 
 class FullSnapshot(unittest.TestCase):
+    def test_unit_detail_link_preserves_source_filters(self):
+        for owner,kind in [('wh_main_emp_karl_franz','skill'),
+                           ('wh_main_emp_karl_franz',None),(None,'skill'),(None,None)]:
+            with self.subTest(owner=owner,kind=kind):
+                result=self.unit_query('wh_main_emp_cha_karl_franz_0',owner=owner,
+                                       source_kind=kind,bonus='melee_attack_mod')
+                entry=next(e for e in result['candidates']['entries']
+                           if e['effect_key']=='wh_main_effect_character_stat_melee_attack')
+                command=shlex.split(entry['details_query'])
+                self.assertEqual('--owner' in command,owner is not None)
+                self.assertEqual('--source-kind' in command,kind is not None)
+                detail=subprocess.run([sys.executable,str(ROOT/'scripts/query-modifier-reference.py'),
+                                       *command,'--data',str(DATA),'--limit','100'],
+                                      check=True,capture_output=True,text=True)
+                actual=json.loads(detail.stdout)['sources']
+                expected=query_module.query(SimpleNamespace(command='effect',key=entry['effect_key'],
+                    data=DATA,owner=owner,source_kind=kind,limit=100,offset=0))['sources']
+                self.assertEqual(actual,expected)
+                if owner:
+                    self.assertEqual(actual['total'],4)
+
     def unit_query(self,key='wh2_main_hef_inf_lothern_sea_guard_0',**kwargs):
         args=dict(command='unit',key=key,data=DATA,modifiers=True,bonus=None,rank=None,source_kind=None,owner='wh2_main_hef_teclis',limit=100,offset=0,evidence=False)
         args.update(kwargs)

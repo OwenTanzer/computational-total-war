@@ -109,6 +109,10 @@ def query(args):
                 candidate_path['rank_status'] = activation['rank_status'] if activation else 'rank_not_queried' if args.rank is None else 'rank_predicate_match' if candidate_path['rank_match'] is True else 'rank_predicate_mismatch' if candidate_path['rank_match'] is False else 'no_rank_predicate_in_target_path'
                 candidate_path['eligibility'] = 'unresolved_activation' if activation else 'candidate_only'
             entry['details_query'] = 'effect '+entry['effect_key']
+            if args.owner:
+                entry['details_query'] += ' --owner '+args.owner
+            if args.source_kind:
+                entry['details_query'] += ' --source-kind '+args.source_kind
         envelope.update(unit=dict(unit),filters={'bonus':args.bonus,'unit_rank':args.rank,'source_kind':args.source_kind,'source_owner':args.owner},
                         view='evidence' if evidence else 'ordinary_unit_candidates',
                         scope_policy='known personal-source identity mismatches omitted; unresolved identities/scopes explicitly retained; --evidence retains mismatches' if not evidence else 'all source scopes and identity mismatches retained as evidence',
