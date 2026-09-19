@@ -11,7 +11,7 @@ import sqlite3
 import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
-from modifier_reference import ROOT, SELECTORS, compact, digest, family, records, selector_match, membership_status
+from modifier_reference import ROOT, SELECTORS, compact, digest, family, records, selector_match, membership_status, scope_classification
 
 
 def build(source, output):
@@ -66,6 +66,10 @@ def build(source, output):
     CREATE TABLE source_occurrences(id INTEGER PRIMARY KEY,source_id INTEGER REFERENCES sources,owner_id INTEGER REFERENCES owners,source_row INTEGER,node_key TEXT,node_set_key TEXT,variant_key TEXT,campaign_key TEXT);
     CREATE INDEX occurrences_source ON source_occurrences(source_id,owner_id);
     CREATE INDEX occurrences_owner ON source_occurrences(owner_id,source_id);
+    CREATE TABLE scope_classifications(scope_key TEXT PRIMARY KEY,recipient TEXT,classification TEXT,record_id INTEGER REFERENCES source_records);
+    CREATE VIEW classified_sources AS SELECT s.*,COALESCE(sc.classification,'unresolved_scope') scope_classification,sc.recipient,sc.record_id scope_record_id FROM sources s LEFT JOIN scope_classifications sc USING(scope_key);
+    CREATE VIEW classified_source_occurrences AS SELECT so.*,s.scope_key,s.scope_classification,s.scope_record_id FROM source_occurrences so JOIN classified_sources s ON s.id=so.source_id;
+    CREATE TABLE binding_activation(binding_id INTEGER PRIMARY KEY REFERENCES bindings,status TEXT,rank_status TEXT,evidence_json TEXT);
     CREATE TABLE source_gaps(owner_id INTEGER REFERENCES owners,source_row INTEGER,record_type TEXT,status TEXT,detail_json TEXT);
     CREATE TABLE set_coverage(set_key TEXT PRIMARY KEY REFERENCES target_sets,selector_count INTEGER,candidate_units INTEGER,excluded_units INTEGER,status TEXT);
     CREATE VIEW unit_binding_candidates AS
@@ -124,6 +128,9 @@ def build(source, output):
     for rid, r in loaded['effects_tables']:
         db.execute('INSERT INTO effects VALUES(?,?,?,?,?)', (r['effect'], r['category'], '', rid, 'source_defined'))
         known_effects.add(r['effect'])
+    for rid, r in loaded['campaign_effect_scopes_tables']:
+        db.execute('INSERT INTO scope_classifications VALUES(?,?,?,?)',
+                   (r['key'],r['target'],scope_classification(r),rid))
 
     # Exact source classification fields, never the curated tactical category.
     def raw_external(table, key):
@@ -204,6 +211,14 @@ def build(source, output):
         'unit_missile_weapon_junctions_tables': ('unit','unit'),
     }
     binding_id = 0
+    # Weapons/projectiles are already retained in unit_stats. Follow those typed
+    # relations for evidence, without treating a sibling set's rank as a weapon gate.
+    weapon_evidence = {}
+    for table in ('missile_weapons_tables','missile_weapons_to_projectiles_tables','projectiles_tables'):
+        weapon_evidence[table] = []
+        for path in sorted((ROOT/'data/unit_stats/source_exports/db'/table).glob('*.tsv')):
+            for line, row in records(lock(path),'\t'):
+                weapon_evidence[table].append({'path':path.relative_to(ROOT).as_posix(),'row':line,'fields':row})
     for table in sorted(loaded):
         if family(table) != 'effect_bindings':
             continue
@@ -235,6 +250,27 @@ def build(source, output):
             db.execute('INSERT INTO bindings VALUES(?,?,?,?,?,?,?,?,?)', (binding_id,effect,bonus,target_table,ref[1],target_key,route,status,rid))
             if target:
                 db.execute('INSERT INTO binding_targets VALUES(?,?,?,?)', (binding_id,*target))
+            if target_table == 'unit_missile_weapon_junctions_tables':
+                evidence = [{'record_id':rid,'role':'effect_binding'}]
+                for junction_id, junction in loaded[target_table]:
+                    if junction[ref[1]] != target_key:
+                        continue
+                    evidence.append({'record_id':junction_id,'role':'unit_weapon_junction'})
+                    weapon = junction['missile_weapon']
+                    projectiles = set()
+                    for item in weapon_evidence['missile_weapons_tables']:
+                        if item['fields']['key'] == weapon:
+                            evidence.append(dict(item,role='missile_weapon'))
+                            projectiles.add(item['fields']['default_projectile'])
+                    for item in weapon_evidence['missile_weapons_to_projectiles_tables']:
+                        if item['fields']['missile_weapon'] == weapon:
+                            evidence.append(dict(item,role='additional_projectile_relation'))
+                            projectiles.add(item['fields']['projectile'])
+                    for item in weapon_evidence['projectiles_tables']:
+                        if item['fields']['key'] in projectiles:
+                            evidence.append(dict(item,role='projectile'))
+                db.execute('INSERT INTO binding_activation VALUES(?,?,?,?)',
+                           (binding_id,'unresolved_weapon_activation','unresolved_rank_activation',compact(evidence)))
     print(f'Preserved all {binding_id} effect bindings', flush=True)
 
     # Source definitions are deduplicated; occurrences retain faction/character,
@@ -276,6 +312,9 @@ def build(source, output):
         'source_tables': len(loaded), 'source_rows': raw_id, 'units': len(units),
         'effects': len(known_effects), 'bindings': binding_id,
         'source_definitions': source_id, 'source_occurrences': occurrence_id,
+        'source_scope_classifications': dict(db.execute('SELECT scope_classification,COUNT(*) FROM classified_sources GROUP BY 1')),
+        'occurrence_scope_classifications': dict(db.execute('SELECT scope_classification,COUNT(*) FROM classified_source_occurrences GROUP BY 1')),
+        'binding_activation_statuses': dict(db.execute('SELECT status,COUNT(*) FROM binding_activation GROUP BY 1')),
         'binding_statuses': dict(db.execute('SELECT status,COUNT(*) FROM bindings GROUP BY status')),
         'target_set_statuses': dict(db.execute('SELECT status,COUNT(*) FROM set_coverage GROUP BY status')),
         'schema_reference_statuses': dict(db.execute('SELECT status,COUNT(*) FROM schema_links GROUP BY status')),
@@ -289,6 +328,8 @@ def build(source, output):
         'unindexed_binding_target_types': dict(db.execute("SELECT target_table,COUNT(*) FROM bindings WHERE status!='unit_target_indexed' GROUP BY target_table ORDER BY COUNT(*) DESC,target_table")),
         'limitations': [
             'All indexed relationships are potential relevance, never proof of acquisition or active scope.',
+            'Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.',
+            'Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.',
             'Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.',
             'Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.',
             'Bindings without a supported unit target remain in shared queries and coverage; an empty unit result is not proof of no modifiers.',
@@ -320,7 +361,7 @@ def build(source, output):
             z.write(payload)
     dbpath.unlink()
     manifest = {
-        'schema_version':1,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
+        'schema_version':2,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
         'source_manifest_sha256':digest((source/'source_manifest.json').read_bytes()),
         'source_exports':'source_exports','database_sha256':digest(payload),
         'sqlite_version':sqlite3.sqlite_version,'source_input_locks':inputs,

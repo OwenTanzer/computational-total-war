@@ -6,6 +6,21 @@
   "bindings": 23110,
   "source_definitions": 19241,
   "source_occurrences": 153930,
+  "source_scope_classifications": {
+    "character_only": 10182,
+    "faction_context": 1176,
+    "force_or_army": 6255,
+    "unresolved_scope": 1628
+  },
+  "occurrence_scope_classifications": {
+    "character_only": 105513,
+    "faction_context": 3614,
+    "force_or_army": 37578,
+    "unresolved_scope": 7225
+  },
+  "binding_activation_statuses": {
+    "unresolved_weapon_activation": 254
+  },
   "binding_statuses": {
     "requires_context_or_target_resolution": 8260,
     "unit_target_indexed": 14850
@@ -86,6 +101,8 @@
   },
   "limitations": [
     "All indexed relationships are potential relevance, never proof of acquisition or active scope.",
+    "Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.",
+    "Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.",
     "Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.",
     "Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.",
     "Bindings without a supported unit target remain in shared queries and coverage; an empty unit result is not proof of no modifiers.",

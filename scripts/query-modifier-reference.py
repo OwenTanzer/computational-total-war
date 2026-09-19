@@ -49,13 +49,17 @@ def query(args):
             where.append("(c.kind!='unit_set' OR ts.rank_enabled!='true' OR (? BETWEEN CAST(ts.min_rank AS INTEGER) AND CAST(ts.max_rank AS INTEGER)))")
             params.append(args.rank)
         sw,sp = [],[]
+        evidence = getattr(args,'evidence',False)
+        omit_personal = not evidence and unit['source_caste'] not in ('lord','hero')
         if args.source_kind:
             sw.append('s.kind=?');sp.append(args.source_kind)
         if args.owner:
             sw.append('o.owner_key=?');sp.append(args.owner)
         if sw:
-            where.append('EXISTS(SELECT 1 FROM sources s JOIN source_occurrences so ON so.source_id=s.id JOIN owners o ON o.id=so.owner_id WHERE s.effect_key=b.effect_key AND '+' AND '.join(sw)+')')
+            where.append('EXISTS(SELECT 1 FROM classified_sources s JOIN source_occurrences so ON so.source_id=s.id JOIN owners o ON o.id=so.owner_id WHERE s.effect_key=b.effect_key AND '+' AND '.join(sw)+(" AND s.scope_classification!='character_only'" if omit_personal else '')+')')
             params.extend(sp)
+        elif omit_personal:
+            where.append("(NOT EXISTS(SELECT 1 FROM sources s WHERE s.effect_key=b.effect_key) OR EXISTS(SELECT 1 FROM classified_sources s WHERE s.effect_key=b.effect_key AND s.scope_classification!='character_only'))")
         common = ' FROM unit_binding_candidates c JOIN bindings b ON b.id=c.binding_id JOIN effects e ON e.effect_key=b.effect_key LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE '+' AND '.join(where)
         sql = 'SELECT DISTINCT b.id binding_id,b.effect_key,e.label,b.bonus_key,b.route,b.record_id'+common+' ORDER BY b.effect_key,b.bonus_key,b.id'
         result = page(db,sql,params,args.limit,args.offset)
@@ -66,12 +70,22 @@ def query(args):
             if sw:
                 source_filter += ' AND EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND '+' AND '.join(sw)+')'
                 source_params.extend(sp)
-            entry['matching_source_counts'] = dict(db.execute('SELECT s.kind,COUNT(*) FROM sources s WHERE '+source_filter+' GROUP BY s.kind',source_params))
-            entry['scope_keys_to_check'] = [r[0] for r in db.execute('SELECT DISTINCT s.scope_key FROM sources s WHERE '+source_filter+' ORDER BY s.scope_key',source_params)]
+            entry['omitted_character_only_source_count'] = db.execute("SELECT COUNT(*) FROM classified_sources s WHERE "+source_filter+" AND s.scope_classification='character_only'",source_params).fetchone()[0] if omit_personal else 0
+            if omit_personal:
+                source_filter += " AND s.scope_classification!='character_only'"
+            entry['matching_source_counts'] = dict(db.execute('SELECT s.kind,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.kind',source_params))
+            entry['scope_keys_to_check'] = [r[0] for r in db.execute('SELECT DISTINCT s.scope_key FROM classified_sources s WHERE '+source_filter+' ORDER BY s.scope_key',source_params)]
+            entry['source_scope_classifications'] = dict(db.execute('SELECT s.scope_classification,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.scope_classification',source_params)) or {'unresolved_source':0}
+            activation = db.execute('SELECT status,rank_status,evidence_json FROM binding_activation WHERE binding_id=?',(entry['binding_id'],)).fetchone()
+            entry['activation_status'] = activation['status'] if activation else 'not_evaluated'
             for candidate_path in entry['candidate_paths']:
                 candidate_path['rank_match'] = None if args.rank is None or candidate_path['rank_enabled'] != 'true' else int(candidate_path['min_rank']) <= args.rank <= int(candidate_path['max_rank'])
+                candidate_path['rank_status'] = activation['rank_status'] if activation else 'rank_not_queried' if args.rank is None else 'rank_predicate_match' if candidate_path['rank_match'] is True else 'rank_predicate_mismatch' if candidate_path['rank_match'] is False else 'no_rank_predicate_in_target_path'
+                candidate_path['eligibility'] = 'unresolved_activation' if activation else 'candidate_only'
             entry['details_query'] = 'effect '+entry['effect_key']
         envelope.update(unit=dict(unit),filters={'bonus':args.bonus,'unit_rank':args.rank,'source_kind':args.source_kind,'source_owner':args.owner},
+                        view='evidence' if evidence else 'ordinary_unit_candidates',
+                        scope_policy='character-only sources omitted for non-character units; unknown scopes retained; effect/source queries preserve all evidence' if omit_personal else 'all source scopes retained; source owner is not recipient or mount identity',
                         filter_meaning='owner selects source ownership, not proof that this owner can recruit or buff this unit',
                         bonus_groups=page(db,'SELECT b.bonus_key,COUNT(DISTINCT b.id) candidate_bindings'+common+' GROUP BY b.bonus_key ORDER BY candidate_bindings DESC,b.bonus_key',params,min(args.limit,10),args.offset),
                         candidates=result,
@@ -87,10 +101,15 @@ def query(args):
         if args.owner:
             source_filter += ' AND EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND o.owner_key=?)';params.append(args.owner)
         envelope.update(effect=dict(effect),bindings=page(db,'SELECT * FROM bindings WHERE effect_key=? ORDER BY id',[args.key],args.limit,args.offset),
-                        sources=page(db,'SELECT s.id,s.kind,s.source_key,s.label,s.skill_level,s.scope_key,s.value,s.record_type,s.conditions_json FROM sources s WHERE '+source_filter+' ORDER BY s.kind,s.source_key,s.skill_level,s.id',params,args.limit,args.offset),
+                        sources=page(db,'SELECT s.id,s.kind,s.source_key,s.label,s.skill_level,s.scope_key,s.scope_classification,s.scope_record_id,s.value,s.record_type,s.conditions_json FROM classified_sources s WHERE '+source_filter+' ORDER BY s.kind,s.source_key,s.skill_level,s.id',params,args.limit,args.offset),
                         source_details='source <id> returns owner/variant/node references; levels are alternatives, not independent bonuses')
+        for binding in envelope['bindings']['entries']:
+            activation = db.execute('SELECT * FROM binding_activation WHERE binding_id=?',(binding['id'],)).fetchone()
+            if activation:
+                activation=dict(activation);activation['evidence']=json.loads(activation.pop('evidence_json'))
+                binding['activation']=activation
     elif args.command == 'source':
-        row = db.execute('SELECT * FROM sources WHERE id=?',(args.key,)).fetchone()
+        row = db.execute('SELECT * FROM classified_sources WHERE id=?',(args.key,)).fetchone()
         if row is None:
             raise ValueError('Unknown source id')
         source = dict(row);source.pop('canonical_key')
@@ -142,6 +161,7 @@ def main():
     p.add_argument('key',nargs='?')
     p.add_argument('--data',type=Path,default=DEFAULT_DATA)
     p.add_argument('--modifiers',action='store_true')
+    p.add_argument('--evidence',action='store_true',help='Unit modifier view including character-only sources; does not disable an explicit rank filter')
     p.add_argument('--bonus')
     p.add_argument('--rank',type=int)
     p.add_argument('--source-kind',choices=['skill','technology'])
@@ -154,7 +174,7 @@ def main():
         p.error('A key is required')
     if not 1 <= args.limit <= 100 or args.offset < 0 or (args.rank is not None and args.rank < 0):
         p.error('Use limit 1–100, nonnegative offset and rank')
-    if args.command == 'unit' and not args.modifiers and (args.bonus or args.rank is not None or args.source_kind or args.owner):
+    if args.command == 'unit' and not args.modifiers and (args.bonus or args.rank is not None or args.source_kind or args.owner or args.evidence):
         p.error('Add --modifiers when filtering modifier relationships')
     try:
         print(json.dumps(query(args),ensure_ascii=False,indent=2))

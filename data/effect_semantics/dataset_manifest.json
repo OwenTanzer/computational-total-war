@@ -1,11 +1,11 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "game": "warhammer_3",
   "patch": "8.1.1",
   "steam_build_id": "24237342",
   "source_manifest_sha256": "fd8eabe1b1ea0c18076b5c1d5c00cf3a6ee5aa40d0c478b7b79a5b9c6e89f701",
   "source_exports": "source_exports",
-  "database_sha256": "8e94a01b5788d902d7299135396c11f90c2b9435a1f0c0e83c5ceed877e7a407",
+  "database_sha256": "f2858ba3857cee646392dea8017786b63080c0d0380a2e768a26393f64241086",
   "sqlite_version": "3.53.1",
   "source_input_locks": {
     "data/unit_stats/source_exports/db/main_units_tables/data__.tsv": "85e2b00194b5408c14967d14a7bf3bc4ed3a61ab15ab0205bc41d5dc41cc780f",
@@ -36,6 +36,9 @@
     "data/unit_stats/normalized/wood_elves__wh3__8.1.1__ultra.csv": "04fcd8e265f6affc0304c104e5b83904221f6cce62de95bc0459e9449baacca2",
     "data/unit_stats/lookups/unit_abilities__wh3__8.1.1__ultra.csv": "1c40d51977c3dd6bac7c744e801326ced9443dec583a5ec9465cd142d048d93c",
     "data/unit_stats/lookups/unit_attributes__wh3__8.1.1__ultra.csv": "29784678164507ffe5f94136386e1e74dd60dedfab354bef6bf0231c71fec303",
+    "data/unit_stats/source_exports/db/missile_weapons_tables/data__.tsv": "eaf7070f02b119d11e95dae85ab13fe238cfa712c82cecdbe0d33f26952ef63d",
+    "data/unit_stats/source_exports/db/missile_weapons_to_projectiles_tables/data__.tsv": "91041da9c1c4a1bed86748770d53bce99cfb7f22f0ef5b57a284764cd9aa523e",
+    "data/unit_stats/source_exports/db/projectiles_tables/data__.tsv": "2264a4656190c26b2d2abfca5c279880749139017239cec7a494e4e5f638f4f1",
     "data/skill_trees/characters/beastmen/Beastlord.csv": "1525fad563faa2d3b24bc2f7b3febf89667063cb0ef73c8893810afce6c14e93",
     "data/skill_trees/characters/beastmen/Bray_Shaman_Beasts.csv": "17af41328790b44f583c65ddb15817769b7026f9744f6e0f0dfc3c6ed2d251f3",
     "data/skill_trees/characters/beastmen/Bray_Shaman_Death.csv": "1d6023498572d037b13f8ac1493965126da113e32e1e086b84fb6b2f23946f14",
@@ -647,16 +650,16 @@
   "scope": "Full extraction preserved; per-unit candidate targeting plus existing skill/technology source links. No acquired-build simulation.",
   "artifacts": {
     "coverage_report.json": {
-      "sha256": "7e4a272aba3ed8805edb928f6197ebbf140525be654c4e2826f1e334bb6ca5f3",
-      "bytes": 3860
+      "sha256": "f338ecadef3ba5ccdf7bfa5f59011a16c7c32f2cce3c81b574b0d02bfd7fb801",
+      "bytes": 4591
     },
     "reference.sqlite.gz": {
-      "sha256": "4744eaef9367bef34734cb237e1da6cfbfffe9e728b655fe9edb6e09e5e19f7a",
-      "bytes": 16322315
+      "sha256": "cee6eeae90830c6a0c5c3c1b8f966efb492b68c7465578e9b07c630a93b6706c",
+      "bytes": 16365141
     },
     "schema_inventory.json": {
-      "sha256": "bd5db734f02c3df7523065ee41cfb6ef221f3f15df6b1eae11f682ba9a0725fc",
-      "bytes": 11605
+      "sha256": "fc7536830b3c7970f3ab32d89e1d8fbead6092697ce31067d70006a374a1b26b",
+      "bytes": 14905
     },
     "table_inventory.json": {
       "sha256": "90429a192974201086511678598fb7f841374118cfb8b7364eb53a924c26ee81",

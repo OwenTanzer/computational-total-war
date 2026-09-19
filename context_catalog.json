@@ -113,7 +113,7 @@
       "source_manifest": "data/effect_semantics/source_exports/source_manifest.json",
       "primary_records": "data/effect_semantics/reference.sqlite.gz",
       "preferred_access": "Keep base questions in unit_stats. For modifiers, query one unit with the paginated scripts/query-modifier-reference.py tool; follow effect/source/record IDs only as needed. Source-owner and rank filters narrow candidate relevance, not active campaign applicability.",
-      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. No acquired-build simulation or final-stat arithmetic."
+      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. Recipient-based personal-source filtering with explicit evidence mode; unknown scopes and weapon activation remain unresolved. No owner-to-character/mount identity, acquired-build simulation or final-stat arithmetic."
     }
   },
   "out_of_scope": [

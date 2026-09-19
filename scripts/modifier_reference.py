@@ -12,6 +12,17 @@ SELECTORS = {'unit_record': 'unit_key', 'unit_class': 'source_unit_class',
              'unit_category': 'source_category', 'unit_caste': 'source_caste'}
 
 
+def scope_classification(fields):
+    """Classify the retained recipient field, never the scope key or label.
+
+    Conditional character/force enums are deliberately unresolved until their
+    propagation semantics are established. This is not an applicability engine.
+    """
+    target = (fields or {}).get('target')
+    return {'character': 'character_only', 'force': 'force_or_army',
+            'army': 'force_or_army', 'faction': 'faction_context'}.get(target, 'unresolved_scope')
+
+
 def digest(data):
     return hashlib.sha256(data).hexdigest()
 

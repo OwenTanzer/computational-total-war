@@ -1,4 +1,26 @@
 {
+  "binding_activation": [
+    {
+      "name": "binding_id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "rank_status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "evidence_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
   "binding_targets": [
     {
       "name": "binding_id",
@@ -64,6 +86,135 @@
     },
     {
       "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "classified_source_occurrences": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "node_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "node_set_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "variant_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "campaign_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_classification",
+      "type": "",
+      "primary_key": false
+    },
+    {
+      "name": "scope_record_id",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "classified_sources": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "label",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "skill_level",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "value",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_type",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "conditions_json",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "canonical_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_classification",
+      "type": "",
+      "primary_key": false
+    },
+    {
+      "name": "recipient",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_record_id",
       "type": "INTEGER",
       "primary_key": false
     }
@@ -220,6 +371,28 @@
     {
       "name": "status",
       "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "scope_classifications": [
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "recipient",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "classification",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_id",
+      "type": "INTEGER",
       "primary_key": false
     }
   ],

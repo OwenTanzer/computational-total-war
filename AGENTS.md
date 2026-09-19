@@ -60,6 +60,13 @@ an empty result is not proof of absence. No stacking or final-stat arithmetic is
 certified by this first pass. Unit progression/ability evidence is retained here
 as source material; future normalized progression stays owned by unit_stats.
 
+Default ordinary-unit modifier queries omit sources whose retained scope targets
+only characters; `--evidence` restores them. Unknown scopes remain visible.
+Effect/source detail queries preserve all source scopes. Character queries do not
+resolve source-owner identity across characters or mounts. Weapon-junction routes
+carry explicit unresolved activation/rank even when a sibling unit-set binding
+has a rank gate; never transfer that gate or infer one from a key suffix.
+
 ## Repository maintenance
 
 Production data under `data/` is generated and must not be edited manually.

@@ -4,7 +4,7 @@ import json
 import subprocess
 from collections import Counter
 from pathlib import Path
-from modifier_reference import ROOT, digest, records, open_reference, compact, family
+from modifier_reference import ROOT, digest, records, open_reference, compact, family, scope_classification
 
 
 def check(condition, message):
@@ -46,6 +46,21 @@ def validate(data, source):
     check(expected_tables=={r[0] for r in db.execute('SELECT table_key FROM source_tables')},'Table coverage mismatch')
     check(bindings==db.execute('SELECT COUNT(*) FROM bindings').fetchone()[0],'Binding rows dropped or duplicated')
     check(db.execute('SELECT COUNT(DISTINCT record_id) FROM bindings').fetchone()[0]==bindings,'Duplicate binding provenance')
+    for r in db.execute('SELECT s.*,r.payload_json FROM scope_classifications s JOIN source_records r ON r.id=s.record_id'):
+        raw=json.loads(r['payload_json'])
+        check(r['scope_key']==raw['key'] and r['recipient']==raw['target'] and r['classification']==scope_classification(raw),'Scope classification lacks recipient evidence')
+    check(db.execute('SELECT COUNT(*) FROM classified_source_occurrences').fetchone()[0]==db.execute('SELECT COUNT(*) FROM source_occurrences').fetchone()[0],'Scope occurrence coverage differs')
+    evidence_files={}
+    for r in db.execute('SELECT a.*,b.target_table FROM binding_activation a JOIN bindings b ON b.id=a.binding_id'):
+        check(r['target_table']=='unit_missile_weapon_junctions_tables' and r['status']=='unresolved_weapon_activation' and r['rank_status']=='unresolved_rank_activation','Unsupported activation claim')
+        for item in json.loads(r['evidence_json']):
+            if 'path' in item:
+                if item['path'] not in evidence_files:
+                    evidence_files[item['path']]=dict(records(ROOT/item['path'],'\t'))
+                check(evidence_files[item['path']].get(item['row'])==item['fields'],'Weapon evidence changed')
+            else:
+                check(db.execute('SELECT 1 FROM source_records WHERE id=?',(item['record_id'],)).fetchone() is not None,'Missing activation record')
+    check(db.execute("SELECT COUNT(*) FROM bindings WHERE target_table='unit_missile_weapon_junctions_tables'").fetchone()[0]==db.execute('SELECT COUNT(*) FROM binding_activation').fetchone()[0],'Unclassified weapon route')
     all_units=set()
     for p in sorted((ROOT/'data/unit_stats/normalized').glob('*.csv')):
         for line,r in records(p):

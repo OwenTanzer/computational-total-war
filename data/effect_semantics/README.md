@@ -48,6 +48,17 @@ An effect page retains all of that effect's target bindings even when source
 ownership is filtered. Scope may restrict a nominal unit-set match to the lord,
 an army or another recipient: inspect it before treating a candidate as a buff.
 
+The default unit view now omits **character-only source occurrences** for units
+whose source caste is neither lord nor hero. Classification uses the retained
+scope's `target` field, not its key or English label. An effect with both personal
+and army sources keeps its army sources. `--evidence` restores personal sources;
+`effect` and `source` always preserve them. Unknown/conditional recipient enums
+remain visible as `unresolved_scope`. Force/army and faction classifications
+describe recipients, not proof of active applicability. Character queries retain
+personal sources, but **owner-to-character/mount identity is not resolved**: an
+unrelated lord's source-owner filter is not proof that it can buff this character.
+The compact CSV index counts unfiltered evidence, not this filtered query view.
+
 ## Files and ownership
 
 | File | Role |
@@ -104,11 +115,33 @@ normalized progression/ability datasets remain owned by `data/unit_stats/`.
   references are never treated as proof of who receives an effect.
 - Ability grants are indexed by explicit recipient sets. Newly granted abilities
   are not recursively propagated into all later ability-modifier possibilities.
-- Scope and acquisition remain unevaluated. A `selector_match` is a static source
+- Scope recipient classification separates demonstrably personal sources; active
+  scope and acquisition remain unevaluated. A `selector_match` is a static source
   match, not a statement that the effect is active. Skill levels are alternatives;
   their values must not be summed. Faction variants are not simultaneous bonuses.
 - Identifiers such as `*_mod` and `*_mult` are preserved as bonus keys; their
   spelling is not used to infer engine arithmetic, rounding, stacking or caps.
+
+### Weapon activation and rank are separate questions
+
+Every missile-weapon junction binding has `unresolved_weapon_activation` and
+`unresolved_rank_activation`, with independently traced junction, weapon and
+projectile evidence available on its effect page. These retained records establish
+which weapon belongs to which unit; they do not establish the engine's activation
+predicate. Such candidates remain visible at both queried ranks with null
+`rank_match` and explicit unresolved eligibility. A route without a modeled rank
+predicate is never labelled rank-eligible. Explicit unit-set rank predicates are
+still applied, independently, and only certify that predicate rather than a buff.
+
+For Seasoned Militia, both Sea Guard junctions lead to
+`wh3_dlc27_hef_sea_guard_bow_anti_infantry`, whose default projectile is
+`wh3_dlc27_hef_sea_guard_arrow_anti_infantry`. The retained weapon fields, projectile
+fields and additional-projectile relation provide no rank activation predicate.
+The reload binding independently targets `wh3_dlc27_hef_all_bow_inf_r7` with an
+explicit 7–9 range. We do **not** transfer that range to the weapon-enable binding
+or derive it from `_r7`/localized text. The unresolved question is the engine rule
+governing the enabled weapon's rank-dependent selection, not a demonstrated game bug.
+No additional extraction was performed or prescribed by this audit.
 
 ## First full coverage result
 
@@ -119,6 +152,9 @@ normalized progression/ability datasets remain owned by `data/unit_stats/`.
   completeness certificate for all campaign modifiers.
 - 19,241 distinct skill/technology effect-source definitions link to 153,930
   owner occurrences without flattening rank, node or faction-variant context.
+- Scope recipients classify 10,182 definitions as character-only, 6,255 as
+  force/army, 1,176 as faction context and 1,628 as unresolved recipient semantics.
+  All 254 missile-weapon-junction bindings retain unresolved activation evidence.
 - Among effects used by those sources, 4,908 have a supported unit-reference
   binding, 1,526 have retained bindings without that route, and 400 have no binding
   in this extraction. These are unique effect counts, not occurrence counts.
@@ -160,6 +196,8 @@ occurrence with the source snapshots, checks hashes and foreign keys, verifies t
 compact index counts, and prevents explicit exclusions from leaking into candidates.
 Focused tests cover Sea Guard variants vs spearmen, rank filtering, compound
 selectors, exclusions, source-level alternatives, pagination and base-query isolation.
+They also cover personal/army separation, mixed and unknown scopes, independently
+unresolved weapon activation at ranks 6/7, and actual variant-specific bindings.
 
 This fulfills the first organization pass under issue #7. It does not close that
 issue: complete acquisition/compatibility, bespoke campaign systems, native rank
