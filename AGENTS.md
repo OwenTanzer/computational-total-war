@@ -66,7 +66,12 @@ Effect/source detail queries preserve all source scopes. Self-character sources
 use explicit base-body anchors and compare mount grants with custom-battle identity
 paths. Only distinct supported base identities justify exclusion; conflicting or
 incomplete paths remain unresolved. Custom-battle evidence never proves campaign
-acquisition. Forms outside normalized coverage retain evidence, without base-query links.
+acquisition. Every known form has modifier access, including forms outside normalized coverage;
+only base-stat query links require normalized coverage. Use `owner <owner_key>` for
+all effect-bearing source occurrences, including unbound/unresolved effects and
+separate indirect references. Read `character_source_reconciliation.json` for
+per-owner coverage. Unknown target fields and conflicting identities remain
+unresolved. Supplemental predicate/ability/attribute paths use retained raw rows.
 Use `character <subtype_key>` to inspect supported forms and mount acquisition
 without relying on effect bindings. Mount node and skill-level rank fields stay
 separate; no effective unlock rank is inferred. Other character-recipient scopes

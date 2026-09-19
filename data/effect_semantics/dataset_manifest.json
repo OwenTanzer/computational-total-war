@@ -1,11 +1,11 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "game": "warhammer_3",
   "patch": "8.1.1",
   "steam_build_id": "24237342",
   "source_manifest_sha256": "fd8eabe1b1ea0c18076b5c1d5c00cf3a6ee5aa40d0c478b7b79a5b9c6e89f701",
   "source_exports": "source_exports",
-  "database_sha256": "40a3de4f4da75654c81ff85b44611b03bd9dfe0b551741c2816467342a91d327",
+  "database_sha256": "5ca06e4582545264cd27d92eae9ba77110638a4179a2532016fea5ff114e4997",
   "sqlite_version": "3.53.1",
   "source_input_locks": {
     "data/unit_stats/source_exports/db/main_units_tables/data__.tsv": "85e2b00194b5408c14967d14a7bf3bc4ed3a61ab15ab0205bc41d5dc41cc780f",
@@ -646,23 +646,29 @@
     "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv": "fe7741ad3267f7cee5e4a5112c16349e20d949802d34e9519dd1ccd1b77aabe1",
     "data/skill_trees/source_exports/db/ancillaries_tables/data__.tsv": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e",
     "data/unit_stats/source_exports/db/units_custom_battle_mounts_tables/data__.tsv": "bc41d66b3823e31676dafab4ecafe711ccb8880b55398750274957c0d6c93487",
+    "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv": "a027a2fe0379c1ff43d03d2854691b0226d7f9556ded4a741ef4bd23f9ee39c6",
+    "data/unit_stats/source_exports/db/unit_attributes_to_groups_junctions_tables/data__.tsv": "68015e2284d7de70c0c3b89de69d39fd5f7bc2f0ff322ac160b4f55a1fc2233a",
     "data/unit_stats/dataset_manifest.json": "824ed9bc63d58cc8acb544983d72b70b86ab372ac3c83a5fb314d38f664dc825",
     "data/skill_trees/dataset_manifest.json": "66981efc24d6f19353e646c28f0f1448fde5ca28fc1e0cf01d644010be6ae7d6",
     "data/technology_trees/dataset_manifest.json": "bb77006530c2745b8287f8094ecc65a04e732635b24d3bd0203b9b4fba8e1d2f"
   },
   "scope": "Full extraction preserved; per-unit candidate targeting plus existing skill/technology source links. No acquired-build simulation.",
   "artifacts": {
+    "character_source_reconciliation.json": {
+      "sha256": "e2e8a24764a6747a7cda33babfd9202b6a8317fe46247466ea63513b20f35189",
+      "bytes": 215432
+    },
     "coverage_report.json": {
-      "sha256": "94566009a21043de06bea0ac2a360a14888fe8d4f28b9952be4d6ff7c3bc6c5f",
-      "bytes": 5570
+      "sha256": "f46c68842c0c565cf5faae85103abbb3f6cb216789438da106816545a8a80060",
+      "bytes": 6161
     },
     "reference.sqlite.gz": {
-      "sha256": "5403bb498468db958d689e6aa22b9ececdc1701e824d970a0c947ae58d4da02f",
-      "bytes": 16801424
+      "sha256": "02fee89bf88d3b3a84f7f75d821b50b166e4b08899bbbfaa97e1e4617beb0680",
+      "bytes": 17486653
     },
     "schema_inventory.json": {
-      "sha256": "9000ba5f9e181d113818d0f7cb2e538207e908648029a97d6e7d34543f5e9258",
-      "bytes": 17564
+      "sha256": "393be1729edf012c5811e8855f39252040ed840c5cb164bc68bdd9e5e19246ab",
+      "bytes": 21650
     },
     "table_inventory.json": {
       "sha256": "90429a192974201086511678598fb7f841374118cfb8b7364eb53a924c26ee81",

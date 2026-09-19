@@ -8,6 +8,18 @@
   "character_form_relations_without_normalized_stats": 534,
   "character_owners_with_forms_without_normalized_stats": 229,
   "custom_battle_identity_paths": 681,
+  "queryable_forms_outside_normalized_roster": 461,
+  "character_source_reconciliation": {
+    "status": "passed",
+    "scope": "Every effect-bearing row in every authoritative character CSV, including unbound effects; source ownership does not establish target applicability.",
+    "owners": 500,
+    "effect_occurrences": 140413,
+    "target_access_statuses": {
+      "binding_retained_target_unresolved": 86619,
+      "no_binding_in_extraction": 1071,
+      "typed_unit_target_available": 52723
+    }
+  },
   "source_tables": 220,
   "source_rows": 109408,
   "units": 1669,
@@ -119,7 +131,7 @@
     "All indexed relationships are potential relevance, never proof of acquisition or active scope.",
     "Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.",
     "Personal identity exclusions require distinct explicit base anchors and corroborated mounted target paths. Conflicting or incomplete identity remains unresolved; custom-battle paths do not prove campaign acquisition.",
-    "Character forms outside normalized coverage retain source evidence, but cannot supply base-stat queries.",
+    "Character forms outside normalized coverage support modifier and owner-effect queries through retained raw targeting evidence, but cannot supply normalized base-stat queries.",
     "Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.",
     "Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.",
     "Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.",

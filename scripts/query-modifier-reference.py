@@ -26,6 +26,8 @@ def identity_evidence(context):
     result={k:context[k] for k in ('status','base_units','grant_base_units','custom_battle_base_units')}
     result['form_paths']=[dict(owner_key=r['owner_key'],relation=r['relation'],evidence=reference(json.loads(r['evidence_json'])),base_anchor_evidence=[reference(json.loads(a['evidence_json'])) for a in context['anchors'].get(r['owner_id'],[])]) for r in context['forms']]
     result['custom_battle_paths']=[reference(json.loads(r['evidence_json'])) for r in context['custom_battle_paths']]
+    grants=set(context['grant_base_units']);custom=set(context['custom_battle_base_units'])
+    result['path_comparison']={'classification':'equal' if grants==custom else 'overlapping_nonidentical' if grants&custom else 'disjoint' if grants and custom else 'one_path_missing', 'shared_base_units':sorted(grants&custom),'grant_only_base_units':sorted(grants-custom),'custom_battle_only_base_units':sorted(custom-grants)}
     result['custom_battle_meaning']='identity corroboration/conflict only; not campaign acquisition'
     return result
 
@@ -51,12 +53,14 @@ def base_unit(key):
 def query(args):
     if args.command == 'character' and (getattr(args,'rank',None) is not None or any(getattr(args,k,None) for k in ('bonus','modifiers','evidence','owner','source_kind'))):
         raise ValueError('Character queries take an owner key and pagination only; --rank filters unit experience, not mount unlocks')
+    if args.command == 'owner' and any(getattr(args,k,None) for k in ('rank','bonus','modifiers','evidence','owner')):
+        raise ValueError('Owner queries take an owner key, optional --source-kind, and pagination only')
     if args.command == 'unit' and not args.modifiers:
         return base_unit(args.key)  # No modifier database is opened for base queries.
     db, manifest = open_reference(args.data)
     envelope = {'patch':manifest['patch'],'interpretation':'potential relevance only; acquisition, active scope and stacking are not evaluated'}
     if args.command == 'unit':
-        unit = db.execute('SELECT * FROM units WHERE unit_key=?',(args.key,)).fetchone()
+        unit = db.execute('SELECT * FROM query_units WHERE unit_key=?',(args.key,)).fetchone()
         if unit is None:
             raise ValueError('Unknown roster unit key: '+args.key)
         where,params = ['c.unit_key=?'],[args.key]
@@ -83,11 +87,11 @@ def query(args):
             if not sw:
                 candidate_allowed="(NOT EXISTS(SELECT 1 FROM sources s WHERE s.effect_key=b.effect_key) OR "+candidate_allowed+")"
             where.append(candidate_allowed);params.extend(allowed_params)
-        common = ' FROM unit_binding_candidates c JOIN bindings b ON b.id=c.binding_id JOIN effects e ON e.effect_key=b.effect_key LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE '+' AND '.join(where)
+        common = ' FROM query_binding_candidates c JOIN bindings b ON b.id=c.binding_id JOIN effects e ON e.effect_key=b.effect_key LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE '+' AND '.join(where)
         sql = 'SELECT DISTINCT b.id binding_id,b.effect_key,e.label,b.bonus_key,b.route,b.record_id'+common+' ORDER BY b.effect_key,b.bonus_key,b.id'
         result = page(db,sql,params,args.limit,args.offset)
         for entry in result['entries']:
-            entry['candidate_paths'] = dicts(db.execute('SELECT c.kind,c.target_key,c.status,ts.rank_enabled,ts.min_rank,ts.max_rank,ts.special_category FROM unit_binding_candidates c LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE c.unit_key=? AND c.binding_id=? ORDER BY c.kind,c.target_key',(args.key,entry['binding_id'])))
+            entry['candidate_paths'] = dicts(db.execute('SELECT c.kind,c.target_key,c.status,ts.rank_enabled,ts.min_rank,ts.max_rank,ts.special_category FROM query_binding_candidates c LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE c.unit_key=? AND c.binding_id=? ORDER BY c.kind,c.target_key',(args.key,entry['binding_id'])))
             source_filter = 's.effect_key=? AND '+source_allowed
             source_params = [entry['effect_key'],*allowed_params]
             # Count omitted definitions only if NONE of their selected owner
@@ -115,6 +119,9 @@ def query(args):
                         filter_meaning='owner selects source ownership, not proof that this owner can recruit or buff this unit',
                         bonus_groups=page(db,'SELECT b.bonus_key,COUNT(DISTINCT b.id) candidate_bindings'+common+' GROUP BY b.bonus_key ORDER BY candidate_bindings DESC,b.bonus_key',params,min(args.limit,10),args.offset),
                         candidates=result,
+                        source_owner_retrieval='owner '+args.owner if args.owner else 'owner <owner_key> includes unbound and unresolved source effects',
+                        target_predicate_evidence=[dict(path=e['path'],row=e['row'],fields={k:v for k,v in e['fields'].items() if k in ('unit','land_unit','key','class','category','caste','attribute_group')}) for row in db.execute('SELECT evidence_json FROM supplemental_forms WHERE unit_key=?',(args.key,)) for e in json.loads(row[0])],
+                        supplemental_base_relation_coverage='exact retained land-unit abilities and attribute-group relations; no normalized stat card' if unit['normalized_base_stat_coverage']=='unavailable' else 'normalized roster lookups',
                         shared_bindings_not_indexed_per_unit=db.execute("SELECT COUNT(*) FROM bindings WHERE status!='unit_target_indexed'").fetchone()[0],
                         gaps_query='gaps --kind bindings')
     elif args.command == 'character':
@@ -127,6 +134,8 @@ def query(args):
             form['normalized_base_stat_coverage']='available' if form.pop('normalized_unit_key') is not None else 'unavailable'
             if form['normalized_base_stat_coverage']=='available':
                 form['base_query']='unit '+form['unit_key']
+            form['modifier_query']='unit '+form['unit_key']+' --modifiers --owner '+args.key
+            form['owner_effects_query']='owner '+args.key+' --source-kind skill'
             form['identity_resolution']=identity_evidence(identity_context(db,form['unit_key']))
         acquisitions=page(db,'SELECT m.*,o.source_path FROM mount_acquisitions m JOIN owners o ON o.id=m.owner_id WHERE o.owner_key=? ORDER BY m.unit_key,m.node_set_key,m.node_key,m.id',[args.key],args.limit,args.offset)
         for mount in acquisitions['entries']:
@@ -135,8 +144,26 @@ def query(args):
             mount['effective_unlock_rank']=None
             mount['availability']='skill_grant_route_present; acquisition/prerequisites not evaluated'
         envelope.update(character_owners=owners,forms=forms,mount_acquisitions=acquisitions,
-                        form_policy='Subtype body overrides and owner skill-tree mount grants establish form candidates; custom-battle paths corroborate or conflict with identity only, never establish campaign acquisition. Missing/conflicting identity is retained. Base queries exist only for normalized roster coverage; evidence fields retain usable source path/row references.',
+                        form_policy='Subtype body overrides and owner skill-tree mount grants establish form candidates; custom-battle paths corroborate or conflict with identity only, never establish campaign acquisition. Missing/conflicting identity is retained. Every form has a modifier query plus owner-level source retrieval. Base queries exist only for normalized roster coverage; evidence fields retain usable source path/row references.',
                         rank_policy='node_rank and level_unlocked_at_rank retain distinct source fields; even agreement does not establish effective unlock rank. --rank is unit experience, not character rank.')
+    elif args.command == 'owner':
+        owners=dicts(db.execute('SELECT * FROM owners WHERE owner_key=? ORDER BY id',(args.key,)))
+        if not owners:
+            raise ValueError('Unknown source owner: '+args.key)
+        selected_kind=getattr(args,'source_kind',None)
+        owner_where='owner_key=?'+(' AND owner_kind=?' if selected_kind else '')
+        owner_params=[args.key]+([selected_kind] if selected_kind else [])
+        owners=[o for o in owners if not selected_kind or o['kind']==selected_kind]
+        result=page(db,'SELECT * FROM owner_effect_access WHERE '+owner_where+' ORDER BY source_path,source_row',owner_params,args.limit,args.offset)
+        for entry in result['entries']:
+            entry['conditions']=json.loads(entry.pop('conditions_json'))
+            entry['effect_query']='effect '+entry['effect_key']+' --owner '+args.key+' --source-kind '+entry['owner_kind']
+            entry['source_query']='source '+str(entry['source_id'])+' --owner '+args.key
+        envelope.update(owners=owners,effect_occurrences=result,
+                        target_access_summary=dict(db.execute('SELECT target_access_status,COUNT(*) FROM owner_effect_access WHERE '+owner_where+' GROUP BY 1',owner_params)),
+                        indirect_references=page(db,'SELECT o.source_path,g.* FROM source_gaps g JOIN owners o ON o.id=g.owner_id WHERE o.owner_key=?'+(' AND o.kind=?' if selected_kind else '')+' ORDER BY source_path,source_row',owner_params,args.limit,args.offset),
+                        character_query='character '+args.key,
+                        completeness='Every effect-bearing owner CSV row is independently reconciled; unbound/unresolved effects remain retrievable. This list includes personal, army and contextual effects, not proof of target applicability.')
     elif args.command == 'effect':
         effect = db.execute('SELECT * FROM effects WHERE effect_key=?',(args.key,)).fetchone()
         if effect is None:
@@ -203,7 +230,7 @@ def query(args):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('command',choices=['unit','effect','source','record','table','gaps','inventory','character'])
+    p.add_argument('command',choices=['unit','effect','source','record','table','gaps','inventory','character','owner'])
     p.add_argument('key',nargs='?')
     p.add_argument('--data',type=Path,default=DEFAULT_DATA)
     p.add_argument('--modifiers',action='store_true')

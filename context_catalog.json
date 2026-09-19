@@ -112,8 +112,9 @@
       "index": "data/effect_semantics/unit_index.csv",
       "source_manifest": "data/effect_semantics/source_exports/source_manifest.json",
       "primary_records": "data/effect_semantics/reference.sqlite.gz",
-      "preferred_access": "Keep base questions in unit_stats. For modifiers, query one unit with the paginated scripts/query-modifier-reference.py tool; follow effect/source/record IDs only as needed. Source-owner and rank filters narrow candidate relevance, not active campaign applicability. For character forms and mount grants, use character <subtype_key>; it does not depend on effect bindings.",
-      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. Character identity requires explicit base anchors and mount-path agreement; conflicting or incomplete paths stay unresolved. Out-of-roster forms retain evidence without base-stat queries. Custom-battle identity evidence is not campaign acquisition. No acquired-build simulation or final-stat arithmetic."
+      "preferred_access": "Keep base questions in unit_stats. For modifiers, query one unit with the paginated scripts/query-modifier-reference.py tool; follow effect/source/record IDs only as needed. Source-owner and rank filters narrow candidate relevance, not active campaign applicability. For character forms and mount grants, use character <subtype_key>; it does not depend on effect bindings. Every known form has a modifier query; owner <owner_key> exposes all effect occurrences including unbound effects and separate indirect references.",
+      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. Character identity requires explicit base anchors and mount-path agreement; conflicting or incomplete paths stay unresolved. All known out-of-roster forms support modifier queries from retained target evidence, without base-stat cards. Character source occurrences are independently reconciled; target/applicability decoding remains partial. Custom-battle identity evidence is not campaign acquisition. No acquired-build simulation or final-stat arithmetic.",
+      "source_reconciliation": "data/effect_semantics/character_source_reconciliation.json"
     }
   },
   "out_of_scope": [

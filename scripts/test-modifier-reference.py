@@ -11,7 +11,8 @@ import modifier_reference
 from unittest.mock import patch
 from pathlib import Path
 from types import SimpleNamespace
-from character_reference import identity_status, identity_context
+from character_reference import identity_status, identity_context, personal_allowed_sql
+from reference_access import reconcile_character_sources, validate_form_access
 from modifier_reference import ROOT, selector_match, membership_status, open_reference, scope_classification
 
 DATA=Path(sys.argv.pop(1)).resolve() if len(sys.argv)>1 and not sys.argv[1].startswith('-') else ROOT/'data/effect_semantics'
@@ -36,6 +37,14 @@ class Targeting(unittest.TestCase):
         row=dict(unit_record='a',unit_class='',unit_category='',unit_caste='lord')
         self.assertEqual(selector_match(row,dict(unit_key='a',source_caste='infantry')),'possible')
         self.assertEqual(selector_match(row,dict(unit_key='a',source_caste='lord')),'match')
+
+    def test_missing_selector_fields_and_caste_remain_unknown(self):
+        row=dict(unit_record='',unit_class='com',unit_category='',unit_caste='')
+        self.assertEqual(selector_match(row,dict(unit_key='unknown',source_unit_class=None)),'unresolved')
+        self.assertEqual(membership_status(['match'],['unresolved']),'conditional_selector')
+        unit=dict(unit_key='unknown',source_caste=None)
+        self.assertEqual(identity_status(None,1,unit),'unresolved_character_identity')
+        self.assertEqual(personal_allowed_sql(None,unit),('1',[]))
 
     def test_exclusion_and_special_category(self):
         self.assertEqual(membership_status(['match'],['match']),'excluded')
@@ -259,6 +268,8 @@ class FullSnapshot(unittest.TestCase):
             while offset is not None:
                 result=query_module.query(SimpleNamespace(command='character',key=owner,data=DATA,limit=100,offset=offset))
                 for form in result['forms']['entries']:
+                    self.assertEqual(form['modifier_query'],'unit '+form['unit_key']+' --modifiers --owner '+owner)
+                    self.assertEqual(form['owner_effects_query'],'owner '+owner+' --source-kind skill')
                     if form['unit_key'] in actual:
                         self.assertEqual(form['base_query'],'unit '+form['unit_key'])
                         self.assertEqual(form['normalized_base_stat_coverage'],'available')
@@ -273,6 +284,82 @@ class FullSnapshot(unittest.TestCase):
         self.assertEqual((len(missing),relations,len(owners)),(461,534,229))
         self.assertEqual(len(missing),coverage['character_forms_without_normalized_stats'])
         self.assertIn('wh2_dlc17_bst_cha_beastlord_2',missing)
+
+    @patch.object(query_module,'open_reference')
+    def test_every_supplemental_form_has_working_modifier_access(self,open_db):
+        dbpath=self.db.execute('PRAGMA database_list').fetchone()[2]
+        manifest=json.loads((DATA/'dataset_manifest.json').read_text())
+        def connection(_):
+            db=sqlite3.connect(Path(dbpath).as_uri()+'?mode=ro',uri=True);db.row_factory=sqlite3.Row
+            return db,manifest
+        open_db.side_effect=connection
+        forms=self.db.execute('SELECT DISTINCT cf.unit_key,o.owner_key FROM character_forms cf JOIN owners o ON o.id=cf.owner_id JOIN supplemental_forms u USING(unit_key)').fetchall()
+        for key,owner in forms:
+            result=self.unit_query(key,owner=owner,limit=1)
+            self.assertEqual(result['unit']['normalized_base_stat_coverage'],'unavailable')
+            self.assertIn('candidates',result)
+            self.assertEqual(result['source_owner_retrieval'],'owner '+owner)
+        self.assertEqual(len({r[0] for r in forms}),461)
+
+    def test_independent_reconciliation_catches_missing_occurrence_and_owner(self):
+        report=reconcile_character_sources(self.db)
+        self.assertEqual(report['owners'],500)
+        self.assertEqual(report,json.loads((DATA/'character_source_reconciliation.json').read_text()))
+        db=sqlite3.connect(':memory:');self.db.backup(db);db.row_factory=sqlite3.Row
+        oid=db.execute("SELECT id FROM owners WHERE kind='skill' ORDER BY id LIMIT 1").fetchone()[0]
+        db.execute('SAVEPOINT mutate')
+        db.execute('DELETE FROM source_occurrences WHERE id=(SELECT MIN(id) FROM source_occurrences WHERE owner_id=?)',(oid,))
+        with self.assertRaisesRegex(ValueError,'Missing character source occurrence'):
+            reconcile_character_sources(db)
+        db.execute('ROLLBACK TO mutate')
+        db.execute('DELETE FROM owners WHERE id=?',(oid,))
+        with self.assertRaisesRegex(ValueError,'Missing character source owner'):
+            reconcile_character_sources(db)
+        db.close()
+
+    def test_source_target_oracle_detects_deleted_targets_and_routes(self):
+        self.assertEqual(validate_form_access(self.db)['forms'],461)
+        db=sqlite3.connect(':memory:');self.db.backup(db);db.row_factory=sqlite3.Row
+        db.execute('SAVEPOINT mutate')
+        db.execute('DELETE FROM supplemental_targets WHERE rowid=(SELECT MIN(rowid) FROM supplemental_targets)')
+        with self.assertRaisesRegex(ValueError,'Supplemental target reconciliation differs'):
+            validate_form_access(db)
+        db.execute('ROLLBACK TO mutate')
+        db.execute("UPDATE supplemental_targets SET status='selector_match' WHERE rowid=(SELECT MIN(rowid) FROM supplemental_targets)")
+        with self.assertRaisesRegex(ValueError,'Supplemental target reconciliation differs'):
+            validate_form_access(db)
+        db.execute('ROLLBACK TO mutate')
+        db.execute('DELETE FROM binding_targets WHERE rowid=(SELECT MIN(rowid) FROM binding_targets)')
+        with self.assertRaisesRegex(ValueError,'Typed binding target coverage differs'):
+            validate_form_access(db)
+        db.close()
+
+    @patch.object(query_module,'open_reference')
+    def test_all_owner_effects_paginate_including_unbound(self,open_db):
+        dbpath=self.db.execute('PRAGMA database_list').fetchone()[2]
+        manifest=json.loads((DATA/'dataset_manifest.json').read_text())
+        def connection(_):
+            db=sqlite3.connect(Path(dbpath).as_uri()+'?mode=ro',uri=True);db.row_factory=sqlite3.Row
+            return db,manifest
+        open_db.side_effect=connection
+        unbound=0
+        for owner in self.db.execute("SELECT owner_key,source_path FROM owners WHERE kind='skill'"):
+            expected={n:r['effect_key'] for n,r in query_module.records(ROOT/owner['source_path']) if r.get('effect_key')}
+            actual={};offset=0
+            while offset is not None:
+                result=query_module.query(SimpleNamespace(command='owner',key=owner['owner_key'],data=DATA,source_kind='skill',limit=100,offset=offset))
+                for entry in result['effect_occurrences']['entries']:
+                    self.assertNotIn(entry['source_row'],actual)
+                    actual[entry['source_row']]=entry['effect_key']
+                    self.assertTrue(entry['effect_query'].startswith('effect '))
+                    self.assertIn('--source-kind skill',entry['effect_query'])
+                    self.assertEqual(entry['owner_kind'],'skill')
+                    if entry['target_access_status']=='no_binding_in_extraction': unbound+=1
+                offset=result['effect_occurrences']['next_offset']
+            self.assertEqual(actual,expected)
+        self.assertGreater(unbound,0)
+        mixed=query_module.query(SimpleNamespace(command='owner',key='wh2_dlc17_bst_taurox',data=DATA,limit=1,offset=0))
+        self.assertEqual({o['kind'] for o in mixed['owners']},{'skill','technology'})
 
     def test_all_identity_conflicts_remain_visible(self):
         expected=set()

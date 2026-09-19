@@ -103,6 +103,8 @@ def identity_context(db, unit_key):
 
 
 def identity_status(db, owner_id, unit, context=None):
+    if unit['source_caste'] in (None,''):
+        return 'unresolved_character_identity'
     if unit['source_caste'] not in ('lord','hero'):
         return 'recipient_is_not_character'
     ctx=context or identity_context(db,unit['unit_key'])
@@ -123,6 +125,8 @@ def identity_status(db, owner_id, unit, context=None):
 
 def personal_allowed_sql(db, unit, context=None):
     """Occurrence-level predicate; Python status and SQL exclusion share one rule."""
+    if unit['source_caste'] in (None,''):
+        return '1',[]
     if unit['source_caste'] not in ('lord','hero'):
         return '0',[]
     ctx=context or identity_context(db,unit['unit_key'])

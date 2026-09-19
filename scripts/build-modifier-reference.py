@@ -15,6 +15,9 @@ from character_reference import build_characters, character_coverage
 from modifier_reference import ROOT, SELECTORS, compact, digest, family, records, selector_match, membership_status, scope_classification
 
 
+from reference_access import build_form_access, reconcile_character_sources
+
+
 def build(source, output):
     source, output = Path(source).resolve(), Path(output).resolve()
     if not output.is_relative_to(ROOT / 'work'):
@@ -305,6 +308,9 @@ def build(source, output):
                 occurrence_id += 1
                 db.execute('INSERT INTO source_occurrences VALUES(?,?,?,?,?,?,?,?)', (occurrence_id,sid,owner_id,line,r.get('node_key',''),r.get('node_set_key',''),r.get('variant_key',''),r.get('campaign_key') or r.get('node_set_campaign_key','')))
     build_characters(db, lock)
+    build_form_access(db, lock)
+    reconciliation=reconcile_character_sources(db)
+    (output/'character_source_reconciliation.json').write_text(json.dumps(reconciliation,indent=2)+'\n')
     print(f'Linked {source_id} source definitions / {occurrence_id} owner occurrences', flush=True)
     for dataset in ('unit_stats','skill_trees','technology_trees'):
         lock(ROOT / 'data' / dataset / 'dataset_manifest.json')
@@ -312,6 +318,8 @@ def build(source, output):
         raise ValueError('Foreign-key failure')
     coverage = {
         **character_coverage(db),
+        'queryable_forms_outside_normalized_roster': db.execute('SELECT COUNT(*) FROM supplemental_forms').fetchone()[0],
+        'character_source_reconciliation': {k:v for k,v in reconciliation.items() if k!='owner_reports'},
         'source_tables': len(loaded), 'source_rows': raw_id, 'units': len(units),
         'effects': len(known_effects), 'bindings': binding_id,
         'source_definitions': source_id, 'source_occurrences': occurrence_id,
@@ -336,7 +344,7 @@ def build(source, output):
             'All indexed relationships are potential relevance, never proof of acquisition or active scope.',
             'Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.',
             'Personal identity exclusions require distinct explicit base anchors and corroborated mounted target paths. Conflicting or incomplete identity remains unresolved; custom-battle paths do not prove campaign acquisition.',
-            'Character forms outside normalized coverage retain source evidence, but cannot supply base-stat queries.',
+            'Character forms outside normalized coverage support modifier and owner-effect queries through retained raw targeting evidence, but cannot supply normalized base-stat queries.',
             'Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.',
             'Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.',
             'Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.',
@@ -369,7 +377,7 @@ def build(source, output):
             z.write(payload)
     dbpath.unlink()
     manifest = {
-        'schema_version':4,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
+        'schema_version':5,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
         'source_manifest_sha256':digest((source/'source_manifest.json').read_bytes()),
         'source_exports':'source_exports','database_sha256':digest(payload),
         'sqlite_version':sqlite3.sqlite_version,'source_input_locks':inputs,

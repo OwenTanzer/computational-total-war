@@ -52,11 +52,13 @@ def records(path, delimiter=','):
 
 def selector_match(selector, unit):
     """Three-valued match; never invent AND/OR for multi-field selectors."""
-    predicates = [unit.get(dest) == selector[src] for src, dest in SELECTORS.items() if selector[src]]
+    predicates = [None if unit.get(dest) in (None, '') else unit.get(dest) == selector[src] for src, dest in SELECTORS.items() if selector[src]]
     if not predicates:
         return 'unresolved'
-    if all(predicates):
+    if all(p is True for p in predicates):
         return 'match'
+    if None in predicates:
+        return 'unresolved'
     if any(predicates):
         return 'possible'
     return 'no_match'

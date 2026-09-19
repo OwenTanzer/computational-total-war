@@ -413,6 +413,103 @@
       "primary_key": false
     }
   ],
+  "owner_effect_access": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "node_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "node_set_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "variant_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "campaign_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "owner_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "owner_kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_path",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "skill_level",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "value",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_type",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "conditions_json",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_access_status",
+      "type": "",
+      "primary_key": false
+    }
+  ],
   "owners": [
     {
       "name": "id",
@@ -447,6 +544,65 @@
     {
       "name": "source_path",
       "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "query_binding_candidates": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "binding_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "query_units": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "unit_name",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_unit_class",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_caste",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "normalized_base_stat_coverage",
+      "type": "",
       "primary_key": false
     }
   ],
@@ -761,6 +917,65 @@
     },
     {
       "name": "canonical_key",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "supplemental_forms": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "unit_name",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_unit_class",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_caste",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "evidence_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "supplemental_targets": [
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "evidence_json",
       "type": "TEXT",
       "primary_key": false
     }

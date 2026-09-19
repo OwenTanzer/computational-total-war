@@ -8,6 +8,9 @@ from character_reference import validate_characters, character_coverage
 from modifier_reference import ROOT, digest, records, open_reference, compact, family, scope_classification
 
 
+from reference_access import reconcile_character_sources, validate_form_access
+
+
 def check(condition, message):
     if not condition:
         raise ValueError(message)
@@ -62,6 +65,11 @@ def validate(data, source):
             else:
                 check(db.execute('SELECT 1 FROM source_records WHERE id=?',(item['record_id'],)).fetchone() is not None,'Missing activation record')
     check(db.execute("SELECT COUNT(*) FROM bindings WHERE target_table='unit_missile_weapon_junctions_tables'").fetchone()[0]==db.execute('SELECT COUNT(*) FROM binding_activation').fetchone()[0],'Unclassified weapon route')
+    validate_form_access(db)
+    reconciliation=reconcile_character_sources(db)
+    check(reconciliation==json.loads((data/'character_source_reconciliation.json').read_text()),'Character source reconciliation report differs')
+    missing={r[0] for r in db.execute('SELECT DISTINCT cf.unit_key FROM character_forms cf LEFT JOIN units u USING(unit_key) WHERE u.unit_key IS NULL')}
+    check(missing=={r[0] for r in db.execute('SELECT unit_key FROM supplemental_forms')},'Supplemental form coverage differs')
     mount_count=validate_characters(db,check)
     all_units=set()
     for p in sorted((ROOT/'data/unit_stats/normalized').glob('*.csv')):

@@ -2,7 +2,8 @@
 
 Patch **8.1.1**, Steam build **24237342**. This first pass organizes the **entire
 220-table extraction**, preserves all 109,408 decoded rows, and applies one
-retrieval model across all 1,669 distinct units in the existing normalized roster.
+retrieval model across all 1,669 distinct units in the existing normalized roster,
+plus modifier access for all 461 known character forms outside that roster.
 It is a source-backed reference, not an active campaign-state or final-stat calculator.
 
 ## Retrieve only the layer needed
@@ -95,8 +96,49 @@ bodies have corroborated identity and 444 have supported base identity.
 
 Every form has `normalized_base_stat_coverage`. Only `available` forms emit
 `base_query`; unavailable forms retain their usable source path/row evidence and
-identity paths. There are 461 distinct forms outside normalized coverage, spanning
+identity paths. Every form emits a working `modifier_query` and `owner_effects_query`,
+including forms without normalized stats. Supplemental queries use exact retained
+main/land-unit classification, abilities and attribute-group relations. All 461
+forms have those main/land rows in this snapshot. Unknown predicate fields remain
+unresolved; an unknown caste never silently excludes personal sources.
+There are 461 distinct forms outside normalized coverage, spanning
 534 relations and 229 owners. No statistics are fabricated for them.
+
+```bash
+# A form without a normalized base-stat card still has modifier retrieval.
+python3 scripts/query-modifier-reference.py unit wh2_dlc17_bst_cha_beastlord_2 --modifiers --owner wh_dlc03_bst_beastlord
+# Browse EVERY effect-bearing owner occurrence, including effects without bindings.
+python3 scripts/query-modifier-reference.py owner wh_dlc03_bst_beastlord --source-kind skill --limit 10
+```
+
+`owner --source-kind skill` selects character records. Some game keys are shared
+by a character and a faction; without this filter both kinds are retained and
+explicitly labelled by `owner_kind` and source path.
+
+`owner` queries paginate exact effect, value, scope, skill level, node context and
+source path/row. Each entry links to shared effect/source detail and states whether
+its target route is typed, unresolved, or absent from this extraction. Separate
+paginated `indirect_references` retain contextual source gaps. These lists include
+army and contextual effects as well as personal effects; presence does not establish
+applicability to a particular form. Query access does not require a decoded target.
+
+`character_source_reconciliation.json` independently starts from all 500 character
+files and reconciles all **140,413 effect-bearing occurrences**: 52,723 have a typed
+unit-target route, 86,619 retain bindings whose targets are not unit-resolved, and
+1,071 have no binding in the extraction. These are occurrence counts, with rank/node
+alternatives retained. The report does not claim every campaign modifier is decoded;
+indirect source references and runtime behavior remain separate boundaries.
+
+The nine identity disagreements were checked against underlying skill-node,
+node-set/subtype, enabled set-item, and skill-level ancillary-grant rows. All 15
+owner/form paths match those raw relations: no normalized-join error was found.
+Five bodies have overlapping path sets (grant anchors strictly contain custom-battle
+anchors: Overseer Taurus/Lammasu, Magistrate horse, two Fleet Admiral forms). Four
+Prophetess bodies have disjoint Life/Heavens path sets. `path_comparison` exposes
+shared, grant-only and custom-battle-only bases. Shared bodies/partial custom-battle
+coverage can explain overlap; the disjoint sets remain unresolved. No name-based
+remapping or campaign acquisition claim is warranted. Affected personal modifier
+candidates retain the conflict status and source-owner detail links.
 
 Forms within normalized coverage keep their own base stats, attributes and abilities.
 A body with an ancillary but no indexed grant remains `unconfirmed_acquisition`
@@ -120,6 +162,7 @@ does not filter character acquisition; use the `character` query for its evidenc
 | `table_inventory.json` | All 220 source tables, classification and row totals |
 | `schema_inventory.json` | Generated tables/views and their columns |
 | `coverage_report.json` | Coverage, unresolved paths, counts and interpretation boundaries |
+| `character_source_reconciliation.json` | Independent all-character occurrence counts and per-owner retrieval links |
 | `validation_report.json` | Latest successful reconciliation, locked to the dataset manifest |
 | `dataset_manifest.json` | Hashes, input locks, snapshot and generator environment |
 | `source_exports/` | Complete unchanged validated extraction, its schema and source manifest |
@@ -242,6 +285,12 @@ passes; preserve source bytes unchanged. Update catalog, manifest, schema invent
 README and coverage together. Build twice in the same Python/SQLite environment
 to check byte reproducibility; cross-version SQLite serialization can differ even
 when logical data is identical. Gzip timestamps and filenames are fixed.
+
+Validation independently recomputes all supplemental targets from raw selectors,
+classification fields, abilities and attribute groups; tests deliberately delete
+a target and a typed binding route to ensure omissions fail. All form links and
+all owner effect pages are exercised, including unbound effects. Separate mutation
+tests remove an entire owner or one source occurrence.
 
 Validation reconciles every source row, every unit record and every owner effect
 occurrence with the source snapshots, checks hashes and foreign keys, verifies the
