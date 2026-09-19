@@ -100,3 +100,41 @@ Pegasus preserves 11/11 and Deathclaw 15/15. Effective unlock ranks remain null
 in every case; prerequisites and engine rank interpretation are not evaluated.
 The forms retain distinct base stats and attribute/ability memberships: no foot
 record or mount trait is copied across bodies. All lists remain candidates.
+
+## Identity conflicts and missing normalized forms
+
+The generalization review and adversarial pass exposed two blockers; the schema-4
+candidate addresses both across the dataset. Life and Heavens Prophetess queries
+now retain all ten candidate bindings, including the six personal bindings that
+were formerly suppressed. Both the campaign skill-grant path and custom-battle
+base-to-mount path remain visible; disagreement is not repaired by changing keys.
+
+Negative personal identity now requires a retained explicit source base-body
+anchor and a distinct target base identity. Mounted targets require agreement
+between retained grant-derived and custom-battle base identities; unanchored grant
+owners prevent negative proof. Shared base identities, missing evidence and
+conflicting paths remain unresolved. A grant pair does not override a conflicting
+or incomplete global target identity. Removing the Necrotect shared-body anchor
+therefore changes match to unresolved; deleting a Prophetess conflicting
+custom-battle path also remains unresolved rather than becoming a positive match.
+Franz's four supported forms retain his personal bonuses and omit Teclis's.
+
+The full raw custom-battle table has 681 paths. Nine form bodies have differing
+path sets: the four Prophetess bodies, two Vampire Fleet Admiral bodies, the
+Overseer's Great Taurus and Lammasu, and the Lord Magistrate mounted body.
+These are evidence disagreements, including potentially partial coverage or
+shared-body usage, not nine asserted gameplay defects. Another 655 mounted bodies
+have corroborated identity and 444 have supported base identities. Custom-battle
+relations remain identity evidence only, never proof of campaign acquisition.
+
+All 500 character-owner outputs are checked against normalized unit CSV keys.
+The 461 forms outside that roster (534 relations across 229 owners) now say
+`normalized_base_stat_coverage: unavailable`, retain their source path/row evidence,
+and offer no failing base query. The Beastlord's `wh2_dlc17_bst_cha_beastlord_2`
+provides a non-Franz regression. No statistics or further extraction were added.
+
+The expanded 26-test suite includes the original 20 controls, eight Prophetess
+owner/form combinations, both evidence-removal cases, the full conflict and
+navigation audits, and concurrent first-open cache reads. The latter reproduced
+a shared-temporary-file race during validation; each reader now publishes its
+verified database through a unique temporary file and atomic replacement.

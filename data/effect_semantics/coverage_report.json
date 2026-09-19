@@ -1,4 +1,13 @@
 {
+  "character_identity_statuses": {
+    "conflicting_character_identity": 9,
+    "corroborated_mount_identity": 655,
+    "supported_base_identity": 444
+  },
+  "character_forms_without_normalized_stats": 461,
+  "character_form_relations_without_normalized_stats": 534,
+  "character_owners_with_forms_without_normalized_stats": 229,
+  "custom_battle_identity_paths": 681,
   "source_tables": 220,
   "source_rows": 109408,
   "units": 1669,
@@ -109,6 +118,8 @@
   "limitations": [
     "All indexed relationships are potential relevance, never proof of acquisition or active scope.",
     "Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.",
+    "Personal identity exclusions require distinct explicit base anchors and corroborated mounted target paths. Conflicting or incomplete identity remains unresolved; custom-battle paths do not prove campaign acquisition.",
+    "Character forms outside normalized coverage retain source evidence, but cannot supply base-stat queries.",
     "Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.",
     "Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.",
     "Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.",

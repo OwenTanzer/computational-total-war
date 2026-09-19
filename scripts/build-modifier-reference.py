@@ -11,7 +11,7 @@ import sqlite3
 import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
-from character_reference import build_characters
+from character_reference import build_characters, character_coverage
 from modifier_reference import ROOT, SELECTORS, compact, digest, family, records, selector_match, membership_status, scope_classification
 
 
@@ -311,6 +311,7 @@ def build(source, output):
     if db.execute('PRAGMA foreign_key_check').fetchall():
         raise ValueError('Foreign-key failure')
     coverage = {
+        **character_coverage(db),
         'source_tables': len(loaded), 'source_rows': raw_id, 'units': len(units),
         'effects': len(known_effects), 'bindings': binding_id,
         'source_definitions': source_id, 'source_occurrences': occurrence_id,
@@ -334,6 +335,8 @@ def build(source, output):
         'limitations': [
             'All indexed relationships are potential relevance, never proof of acquisition or active scope.',
             'Default ordinary-unit queries omit character-only source occurrences using recipient fields; evidence mode retains them. Unknown recipients remain unresolved.',
+            'Personal identity exclusions require distinct explicit base anchors and corroborated mounted target paths. Conflicting or incomplete identity remains unresolved; custom-battle paths do not prove campaign acquisition.',
+            'Character forms outside normalized coverage retain source evidence, but cannot supply base-stat queries.',
             'Weapon routes retain traced weapon/projectile evidence but unresolved activation and rank; missing rank predicates do not establish eligibility.',
             'Special-category predicates, selector combinations and exclusion precedence require engine verification; candidate rules are explicit.',
             'Ability/attribute reverse lookup covers existing base abilities/attributes; grants are indexed by their explicit recipient sets, not recursively propagated.',
@@ -366,7 +369,7 @@ def build(source, output):
             z.write(payload)
     dbpath.unlink()
     manifest = {
-        'schema_version':3,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
+        'schema_version':4,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
         'source_manifest_sha256':digest((source/'source_manifest.json').read_bytes()),
         'source_exports':'source_exports','database_sha256':digest(payload),
         'sqlite_version':sqlite3.sqlite_version,'source_input_locks':inputs,

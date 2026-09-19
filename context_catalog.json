@@ -113,7 +113,7 @@
       "source_manifest": "data/effect_semantics/source_exports/source_manifest.json",
       "primary_records": "data/effect_semantics/reference.sqlite.gz",
       "preferred_access": "Keep base questions in unit_stats. For modifiers, query one unit with the paginated scripts/query-modifier-reference.py tool; follow effect/source/record IDs only as needed. Source-owner and rank filters narrow candidate relevance, not active campaign applicability. For character forms and mount grants, use character <subtype_key>; it does not depend on effect bindings.",
-      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. Recipient-based filtering and explicit character body/mount identity with evidence mode. Unknown identities, other character-recipient contexts, effective mount unlock ranks and weapon activation remain unresolved. No acquired-build simulation or final-stat arithmetic."
+      "coverage_boundary": "Full source retention and all normalized roster units; partial unit-target resolution. Character identity requires explicit base anchors and mount-path agreement; conflicting or incomplete paths stay unresolved. Out-of-roster forms retain evidence without base-stat queries. Custom-battle identity evidence is not campaign acquisition. No acquired-build simulation or final-stat arithmetic."
     }
   },
   "out_of_scope": [

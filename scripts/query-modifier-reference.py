@@ -2,7 +2,7 @@
 import argparse
 import json
 from pathlib import Path
-from character_reference import personal_allowed_sql, identity_status
+from character_reference import personal_allowed_sql, identity_status, identity_context
 from modifier_reference import ROOT, DEFAULT_DATA, open_reference, records
 
 
@@ -14,6 +14,20 @@ def page(db, sql, params, limit, offset):
     total = db.execute('SELECT COUNT(*) FROM (' + sql + ')', params).fetchone()[0]
     entries = dicts(db.execute(sql + ' LIMIT ? OFFSET ?', [*params,limit,offset]))
     return {'total':total,'offset':offset,'limit':limit,'next_offset':offset+limit if offset+limit<total else None,'entries':entries}
+
+
+def identity_evidence(context):
+    def reference(e):
+        if 'path' not in e:
+            return {k:reference(v) for k,v in e.items()}
+        keys=('key','agent_subtype_key','ancillary_key','associated_unit_override',
+              'provided_bodyguard_unit','base_unit','mounted_unit')
+        return dict(path=e['path'],row=e['row'],fields={k:e['fields'][k] for k in keys if e['fields'].get(k)})
+    result={k:context[k] for k in ('status','base_units','grant_base_units','custom_battle_base_units')}
+    result['form_paths']=[dict(owner_key=r['owner_key'],relation=r['relation'],evidence=reference(json.loads(r['evidence_json'])),base_anchor_evidence=[reference(json.loads(a['evidence_json'])) for a in context['anchors'].get(r['owner_id'],[])]) for r in context['forms']]
+    result['custom_battle_paths']=[reference(json.loads(r['evidence_json'])) for r in context['custom_battle_paths']]
+    result['custom_battle_meaning']='identity corroboration/conflict only; not campaign acquisition'
+    return result
 
 
 def base_unit(key):
@@ -57,7 +71,8 @@ def query(args):
             sw.append('s.kind=?');sp.append(args.source_kind)
         if args.owner:
             sw.append('o.owner_key=?');sp.append(args.owner)
-        identity_sql,identity_params=personal_allowed_sql(unit)
+        identity_context_data=identity_context(db,args.key)
+        identity_sql,identity_params=personal_allowed_sql(db,unit,identity_context_data)
         occurrence_filter=' AND '.join(sw) if sw else '1'
         allowed_occurrence=occurrence_filter + (" AND (s.scope_classification!='character_only' OR "+identity_sql+")" if not evidence else '')
         allowed_params=sp + (identity_params if not evidence else [])
@@ -79,7 +94,7 @@ def query(args):
             # occurrences passes; shared generic skills can have several owners.
             entry['omitted_character_only_source_count'] = db.execute("SELECT COUNT(*) FROM classified_sources s WHERE s.effect_key=? AND s.scope_classification='character_only' AND EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND "+occurrence_filter+") AND NOT ("+source_allowed+")",[entry['effect_key'],*sp,*allowed_params]).fetchone()[0] if not evidence else 0
             personal_owners=db.execute("SELECT DISTINCT o.id,s.personal_identity_policy FROM classified_sources s JOIN source_occurrences so ON so.source_id=s.id JOIN owners o ON o.id=so.owner_id WHERE s.effect_key=? AND s.scope_classification='character_only' AND "+allowed_occurrence,[entry['effect_key'],*allowed_params]).fetchall()
-            entry['personal_source_identity_statuses']=sorted({identity_status(db,o['id'],unit) if o['personal_identity_policy']=='same_source_character' else 'character_recipient_context_unresolved' for o in personal_owners})
+            entry['personal_source_identity_statuses']=sorted({identity_status(db,o['id'],unit,identity_context_data) if o['personal_identity_policy']=='same_source_character' else 'character_recipient_context_unresolved' for o in personal_owners})
             entry['matching_source_counts'] = dict(db.execute('SELECT s.kind,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.kind',source_params))
             entry['scope_keys_to_check'] = [r[0] for r in db.execute('SELECT DISTINCT s.scope_key FROM classified_sources s WHERE '+source_filter+' ORDER BY s.scope_key',source_params)]
             entry['source_scope_classifications'] = dict(db.execute('SELECT s.scope_classification,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.scope_classification',source_params)) or {'unresolved_source':0}
@@ -93,6 +108,7 @@ def query(args):
         envelope.update(unit=dict(unit),filters={'bonus':args.bonus,'unit_rank':args.rank,'source_kind':args.source_kind,'source_owner':args.owner},
                         view='evidence' if evidence else 'ordinary_unit_candidates',
                         scope_policy='known personal-source identity mismatches omitted; unresolved identities/scopes explicitly retained; --evidence retains mismatches' if not evidence else 'all source scopes and identity mismatches retained as evidence',
+                        character_identity_resolution=identity_evidence(identity_context_data),
                         character_identities=dicts(db.execute('SELECT DISTINCT o.owner_key,cf.relation FROM character_forms cf JOIN owners o ON o.id=cf.owner_id WHERE cf.unit_key=? ORDER BY o.owner_key,cf.relation',(args.key,))),
                         mount_records=page(db,"SELECT mr.ancillary_key,CASE WHEN EXISTS(SELECT 1 FROM mount_acquisitions ma WHERE ma.ancillary_key=mr.ancillary_key) THEN 'skill_grant_route_present' ELSE 'unconfirmed_acquisition' END acquisition_status,mr.evidence_json FROM mount_records mr WHERE mr.unit_key=? ORDER BY mr.ancillary_key",[args.key],args.limit,args.offset),
                         character_query='character <owner_key> follows supported forms and independent mount acquisition evidence',
@@ -105,10 +121,13 @@ def query(args):
         owners=dicts(db.execute("SELECT * FROM owners WHERE kind='skill' AND owner_key=? ORDER BY id",(args.key,)))
         if not owners:
             raise ValueError('Unknown character owner: '+args.key)
-        forms=page(db,'SELECT cf.unit_key,u.unit_name,cf.relation,cf.evidence_json FROM character_forms cf JOIN owners o ON o.id=cf.owner_id LEFT JOIN units u ON u.unit_key=cf.unit_key WHERE o.owner_key=? ORDER BY cf.unit_key,cf.relation',[args.key],args.limit,args.offset)
+        forms=page(db,'SELECT cf.unit_key,u.unit_name,u.unit_key normalized_unit_key,cf.relation,cf.evidence_json FROM character_forms cf JOIN owners o ON o.id=cf.owner_id LEFT JOIN units u ON u.unit_key=cf.unit_key WHERE o.owner_key=? ORDER BY cf.unit_key,cf.relation',[args.key],args.limit,args.offset)
         for form in forms['entries']:
             form['evidence']=json.loads(form.pop('evidence_json'))
-            form['base_query']='unit '+form['unit_key']
+            form['normalized_base_stat_coverage']='available' if form.pop('normalized_unit_key') is not None else 'unavailable'
+            if form['normalized_base_stat_coverage']=='available':
+                form['base_query']='unit '+form['unit_key']
+            form['identity_resolution']=identity_evidence(identity_context(db,form['unit_key']))
         acquisitions=page(db,'SELECT m.*,o.source_path FROM mount_acquisitions m JOIN owners o ON o.id=m.owner_id WHERE o.owner_key=? ORDER BY m.unit_key,m.node_set_key,m.node_key,m.id',[args.key],args.limit,args.offset)
         for mount in acquisitions['entries']:
             mount['level_evidence']=json.loads(mount.pop('level_evidence_json'))
@@ -116,7 +135,7 @@ def query(args):
             mount['effective_unlock_rank']=None
             mount['availability']='skill_grant_route_present; acquisition/prerequisites not evaluated'
         envelope.update(character_owners=owners,forms=forms,mount_acquisitions=acquisitions,
-                        form_policy='Only explicit subtype body overrides and actual owner skill-tree mount grants establish character forms. Other mount records stay unconfirmed; no key-prefix or label inference.',
+                        form_policy='Subtype body overrides and owner skill-tree mount grants establish form candidates; custom-battle paths corroborate or conflict with identity only, never establish campaign acquisition. Missing/conflicting identity is retained. Base queries exist only for normalized roster coverage; evidence fields retain usable source path/row references.',
                         rank_policy='node_rank and level_unlocked_at_rank retain distinct source fields; even agreement does not establish effective unlock rank. --rank is unit experience, not character rank.')
     elif args.command == 'effect':
         effect = db.execute('SELECT * FROM effects WHERE effect_key=?',(args.key,)).fetchone()

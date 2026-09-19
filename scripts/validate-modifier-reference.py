@@ -4,7 +4,7 @@ import json
 import subprocess
 from collections import Counter
 from pathlib import Path
-from character_reference import validate_characters
+from character_reference import validate_characters, character_coverage
 from modifier_reference import ROOT, digest, records, open_reference, compact, family, scope_classification
 
 
@@ -94,6 +94,8 @@ def validate(data, source):
     coverage=json.loads((data/'coverage_report.json').read_text())
     for key,value in [('source_tables',len(expected_tables)),('source_rows',total),('units',len(all_units)),('bindings',bindings),('source_occurrences',occurrence_total),('mount_acquisition_occurrences',mount_count)]:
         check(coverage[key]==value,'Coverage report mismatch: '+key)
+    for key,value in character_coverage(db).items():
+        check(coverage[key]==value,'Character coverage report mismatch: '+key)
     db.close()
     return dict(status='passed',errors=[],dataset_manifest_sha256=digest((data/'dataset_manifest.json').read_bytes()),source_tables=len(expected_tables),source_rows=total,units=len(all_units),bindings=bindings,source_occurrences=occurrence_total)
 

@@ -258,6 +258,23 @@
       "primary_key": false
     }
   ],
+  "custom_battle_mounts": [
+    {
+      "name": "base_unit",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "mounted_unit",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "evidence_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
   "effect_coverage": [
     {
       "name": "effect_key",

@@ -9,6 +9,8 @@ def build_characters(db, lock):
     CREATE TABLE character_scope_policies(scope_key TEXT PRIMARY KEY,identity_policy TEXT);
     CREATE TABLE character_forms(owner_id INTEGER REFERENCES owners,unit_key TEXT,relation TEXT,evidence_json TEXT,PRIMARY KEY(owner_id,unit_key,relation));
     CREATE INDEX character_form_unit ON character_forms(unit_key,owner_id);
+    CREATE TABLE custom_battle_mounts(base_unit TEXT,mounted_unit TEXT,evidence_json TEXT,PRIMARY KEY(base_unit,mounted_unit));
+    CREATE INDEX custom_battle_mount_unit ON custom_battle_mounts(mounted_unit);
     CREATE TABLE mount_records(ancillary_key TEXT PRIMARY KEY,unit_key TEXT,evidence_json TEXT);
     CREATE TABLE mount_acquisitions(id INTEGER PRIMARY KEY,owner_id INTEGER REFERENCES owners,unit_key TEXT,ancillary_key TEXT REFERENCES mount_records,skill_key TEXT,skill_level TEXT,node_key TEXT,node_set_key TEXT,source_row INTEGER,node_rank TEXT,rank_status TEXT,level_evidence_json TEXT,effect_keys_json TEXT);
     CREATE INDEX mount_owner ON mount_acquisitions(owner_id,unit_key);
@@ -31,6 +33,10 @@ def build_characters(db, lock):
         if r['category']=='mount' and r['provided_bodyguard_unit']:
             mounts[r['key']]=(r,e)
             db.execute('INSERT INTO mount_records VALUES(?,?,?)',(r['key'],r['provided_bodyguard_unit'],compact(e)))
+    for path in sorted((ROOT/'data/unit_stats/source_exports/db/units_custom_battle_mounts_tables').glob('*.tsv')):
+        for line,r in records(lock(path),'\t'):
+            e=dict(path=path.relative_to(ROOT).as_posix(),row=line,fields=r)
+            db.execute('INSERT INTO custom_battle_mounts VALUES(?,?,?)',(r['base_unit'],r['mounted_unit'],compact(e)))
     for owner_id,owner_key,path in db.execute("SELECT id,owner_key,source_path FROM owners WHERE kind='skill' ORDER BY id").fetchall():
         subtype=subtypes.get(owner_key)
         if subtype and subtype[0]['associated_unit_override']:
@@ -56,21 +62,86 @@ def build_characters(db, lock):
             db.execute('INSERT OR IGNORE INTO character_forms VALUES(?,?,?,?)',(owner_id,unit,'skill_granted_mount',compact(evidence)))
 
 
-def identity_status(db, owner_id, unit):
+def _rows(cursor):
+    keys=[c[0] for c in cursor.description]
+    return [dict(zip(keys,r)) for r in cursor]
+
+
+def identity_context(db, unit_key):
+    """Resolve target base identities without assuming the form list exhaustive.
+
+    Custom-battle paths corroborate identity only, never campaign acquisition.
+    Missing owner anchors poison negative proof instead of silently disappearing.
+    """
+    forms=_rows(db.execute('SELECT cf.*,o.owner_key FROM character_forms cf JOIN owners o ON o.id=cf.owner_id WHERE cf.unit_key=? ORDER BY o.owner_key,cf.relation',(unit_key,)))
+    anchors={}
+    for r in _rows(db.execute("SELECT * FROM character_forms WHERE relation='associated_unit_override'")):
+        anchors.setdefault(r['owner_id'],[]).append(dict(r))
+    grants=[r for r in forms if r['relation']=='skill_granted_mount']
+    custom=_rows(db.execute('SELECT * FROM custom_battle_mounts WHERE mounted_unit=? ORDER BY base_unit',(unit_key,)))
+    grant_bases={a['unit_key'] for r in grants for a in anchors.get(r['owner_id'],[])}
+    custom_bases={r['base_unit'] for r in custom}
+    missing_anchor=any(not anchors.get(r['owner_id']) for r in grants)
+    # A custom-battle base must itself have retained subtype-anchor evidence.
+    known_bases={r['unit_key'] for rows in anchors.values() for r in rows}
+    incomplete=missing_anchor or bool(custom_bases-known_bases)
+    direct=any(r['relation']=='associated_unit_override' for r in forms)
+    conflict=bool(grant_bases and custom_bases and grant_bases!=custom_bases)
+    if direct and (grant_bases or custom_bases):
+        conflict=conflict or bool((grant_bases|custom_bases)-{unit_key})
+    if conflict:
+        status='conflicting_character_identity';bases=set()
+    elif incomplete:
+        status='incomplete_character_identity';bases=set()
+    elif direct:
+        status='supported_base_identity';bases={unit_key}
+    elif grant_bases and custom_bases and grant_bases==custom_bases:
+        status='corroborated_mount_identity';bases=grant_bases
+    else:
+        status='incomplete_character_identity';bases=set()
+    return dict(status=status,base_units=sorted(bases),grant_base_units=sorted(grant_bases),custom_battle_base_units=sorted(custom_bases),forms=forms,custom_battle_paths=custom,anchors=anchors)
+
+
+def identity_status(db, owner_id, unit, context=None):
     if unit['source_caste'] not in ('lord','hero'):
         return 'recipient_is_not_character'
-    if db.execute('SELECT 1 FROM character_forms WHERE owner_id=? AND unit_key=?',(owner_id,unit['unit_key'])).fetchone():
+    ctx=context or identity_context(db,unit['unit_key'])
+    if ctx['status']=='conflicting_character_identity':
+        return 'conflicting_character_identity'
+    if ctx['status']=='incomplete_character_identity':
+        return 'unresolved_character_identity'
+    if any(r['owner_id']==owner_id for r in ctx['forms']):
         return 'source_character_identity_match'
-    owner_known=db.execute('SELECT 1 FROM character_forms WHERE owner_id=?',(owner_id,)).fetchone()
-    unit_known=db.execute('SELECT 1 FROM character_forms WHERE unit_key=?',(unit['unit_key'],)).fetchone()
-    return 'source_character_identity_mismatch' if owner_known and unit_known else 'unresolved_character_identity'
+    source_bases={r['unit_key'] for r in ctx['anchors'].get(owner_id,[])}
+    target_bases=set(ctx['base_units'])
+    # Distinct explicit base identities, with corroborated mounted target paths,
+    # are negative evidence. Missing pairs, shared bases and partial paths aren't.
+    if len(source_bases)==1 and target_bases and source_bases.isdisjoint(target_bases):
+        return 'source_character_identity_mismatch'
+    return 'unresolved_character_identity'
 
 
-def personal_allowed_sql(unit):
-    """Predicate for occurrence alias o; unresolved identities remain explicit."""
+def personal_allowed_sql(db, unit, context=None):
+    """Occurrence-level predicate; Python status and SQL exclusion share one rule."""
     if unit['source_caste'] not in ('lord','hero'):
         return '0',[]
-    return "(s.personal_identity_policy!='same_source_character' OR EXISTS(SELECT 1 FROM character_forms cf WHERE cf.owner_id=o.id AND cf.unit_key=?) OR NOT EXISTS(SELECT 1 FROM character_forms cf WHERE cf.owner_id=o.id) OR NOT EXISTS(SELECT 1 FROM character_forms cf WHERE cf.unit_key=?))",[unit['unit_key'],unit['unit_key']]
+    ctx=context or identity_context(db,unit['unit_key'])
+    rejected=[r[0] for r in db.execute('SELECT id FROM owners') if identity_status(db,r[0],unit,ctx)=='source_character_identity_mismatch']
+    if not rejected:
+        return '1',[]
+    return "(s.personal_identity_policy!='same_source_character' OR o.id NOT IN ("+','.join('?' for _ in rejected)+'))',rejected
+
+
+def character_coverage(db):
+    statuses=defaultdict(int)
+    for (key,) in db.execute('SELECT DISTINCT unit_key FROM character_forms'):
+        statuses[identity_context(db,key)['status']]+=1
+    missing=db.execute('SELECT COUNT(DISTINCT cf.unit_key),COUNT(*),COUNT(DISTINCT cf.owner_id) FROM character_forms cf LEFT JOIN units u USING(unit_key) WHERE u.unit_key IS NULL').fetchone()
+    return dict(character_identity_statuses=dict(sorted(statuses.items())),
+                character_forms_without_normalized_stats=missing[0],
+                character_form_relations_without_normalized_stats=missing[1],
+                character_owners_with_forms_without_normalized_stats=missing[2],
+                custom_battle_identity_paths=db.execute('SELECT COUNT(*) FROM custom_battle_mounts').fetchone()[0])
 
 
 def validate_characters(db, check):
@@ -94,6 +165,13 @@ def validate_characters(db, check):
         own=(fields['source'],fields['target'],fields['location'],fields['ownership'])==('character','character','character','yours')
         check(row['identity_policy']==('same_source_character' if own else 'recipient_context_unresolved'),'Character identity scope policy mismatch')
     check(db.execute('SELECT COUNT(*) FROM character_scope_policies').fetchone()[0]==db.execute('SELECT COUNT(*) FROM scope_classifications').fetchone()[0],'Character identity scope coverage differs')
+    actual_custom=set()
+    for row in db.execute('SELECT * FROM custom_battle_mounts'):
+        e=json.loads(row['evidence_json']);evidence(e)
+        check(e['fields']['base_unit']==row['base_unit'] and e['fields']['mounted_unit']==row['mounted_unit'],'Custom-battle identity evidence mismatch')
+        actual_custom.add((row['base_unit'],row['mounted_unit']))
+    expected_custom={(r['base_unit'],r['mounted_unit']) for path in (ROOT/'data/unit_stats/source_exports/db/units_custom_battle_mounts_tables').glob('*.tsv') for _,r in records(path,'\t')}
+    check(actual_custom==expected_custom,'Custom-battle identity coverage mismatch')
     subtypes={}
     for path in sorted((ROOT/'data/skill_trees/source_exports/db/agent_subtypes_tables').glob('*.tsv')):
         for _,r in records(path,'\t'):

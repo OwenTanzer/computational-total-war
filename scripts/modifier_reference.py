@@ -4,6 +4,7 @@ import gzip
 import hashlib
 import json
 import sqlite3
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -108,9 +109,21 @@ def open_reference(data=DEFAULT_DATA):
         payload = gzip.decompress(packed)
         if digest(payload) != key:
             raise ValueError('Modifier reference database hash mismatch')
-        temp = dbfile.with_suffix('.tmp')
-        temp.write_bytes(payload)
-        temp.replace(dbfile)
+        # Concurrent first readers must not rename or truncate one another's
+        # temporary file. Each verified payload replaces the cache atomically.
+        with tempfile.NamedTemporaryFile(dir=cache,suffix='.tmp',delete=False) as f:
+            temp=Path(f.name)
+            f.write(payload)
+        try:
+            try:
+                temp.replace(dbfile)
+            except PermissionError:
+                # Windows may deny replacing a verified cache already opened
+                # by another reader. Accept only that exact completed payload.
+                if not dbfile.is_file() or digest(dbfile.read_bytes()) != key:
+                    raise
+        finally:
+            temp.unlink(missing_ok=True)
     db = sqlite3.connect(dbfile.as_uri() + '?mode=ro', uri=True)
     db.row_factory = sqlite3.Row
     return db, manifest

@@ -63,8 +63,10 @@ as source material; future normalized progression stays owned by unit_stats.
 Default ordinary-unit modifier queries omit sources whose retained scope targets
 only characters; `--evidence` restores them. Unknown scopes remain visible.
 Effect/source detail queries preserve all source scopes. Self-character sources
-match explicit subtype bodies and actual skill-granted mount forms; known other
-characters are omitted by default, while unmapped identity remains unresolved.
+use explicit base-body anchors and compare mount grants with custom-battle identity
+paths. Only distinct supported base identities justify exclusion; conflicting or
+incomplete paths remain unresolved. Custom-battle evidence never proves campaign
+acquisition. Forms outside normalized coverage retain evidence, without base-query links.
 Use `character <subtype_key>` to inspect supported forms and mount acquisition
 without relying on effect bindings. Mount node and skill-level rank fields stay
 separate; no effective unlock rank is inferred. Other character-recipient scopes

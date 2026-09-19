@@ -5,9 +5,13 @@ import subprocess
 import sys
 import unittest
 import sqlite3
+import tempfile
+from concurrent.futures import ThreadPoolExecutor
+import modifier_reference
 from unittest.mock import patch
 from pathlib import Path
 from types import SimpleNamespace
+from character_reference import identity_status, identity_context
 from modifier_reference import ROOT, selector_match, membership_status, open_reference, scope_classification
 
 DATA=Path(sys.argv.pop(1)).resolve() if len(sys.argv)>1 and not sys.argv[1].startswith('-') else ROOT/'data/effect_semantics'
@@ -197,6 +201,88 @@ class FullSnapshot(unittest.TestCase):
         # their source owner. Only source=self, location=character is personal.
         self.assertEqual(self.db.execute("SELECT identity_policy FROM character_scope_policies WHERE scope_key='character_to_character_own'").fetchone()[0],'same_source_character')
         self.assertEqual(self.db.execute("SELECT identity_policy FROM character_scope_policies WHERE scope_key='faction_to_character_own'").fetchone()[0],'recipient_context_unresolved')
+
+    def test_concurrent_first_reads_publish_independent_cache_files(self):
+        # Isolate the cache so both readers exercise first-open decompression.
+        with tempfile.TemporaryDirectory() as folder, patch.object(modifier_reference,'ROOT',Path(folder)):
+            def read():
+                db,_=open_reference(DATA)
+                result=db.execute('PRAGMA integrity_check').fetchone()[0]
+                db.close()
+                return result
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                self.assertEqual(list(pool.map(lambda _:read(),range(2))),['ok','ok'])
+            self.assertFalse(list(Path(folder).rglob('*.tmp')))
+
+    def test_prophetess_conflicts_retain_personal_candidates(self):
+        for owner in ('wh_dlc07_brt_prophetess_life','wh_dlc07_brt_prophetess_heavens'):
+            for key in ('wh_dlc07_brt_cha_prophetess_2','wh_dlc07_brt_cha_prophetess_3','wh_dlc07_brt_cha_prophetess_heavens_2','wh_dlc07_brt_cha_prophetess_heavens_3'):
+                result=self.unit_query(key,owner=owner)
+                ctx=result['character_identity_resolution']
+                self.assertEqual(ctx['status'],'conflicting_character_identity')
+                self.assertTrue(ctx['form_paths']);self.assertTrue(ctx['custom_battle_paths'])
+                personal=[x for x in result['candidates']['entries'] if 'character_only' in x['source_scope_classifications']]
+                self.assertTrue(personal)
+                self.assertTrue(all('conflicting_character_identity' in x['personal_source_identity_statuses'] for x in personal))
+                self.assertEqual(result['candidates']['total'],self.unit_query(key,owner=owner,evidence=True)['candidates']['total'])
+
+    def test_removing_shared_base_anchor_cannot_create_negative_identity(self):
+        db=sqlite3.connect(':memory:');self.db.backup(db);db.row_factory=sqlite3.Row
+        owner=db.execute("SELECT id FROM owners WHERE owner_key='wh2_dlc09_tmb_necrotect'").fetchone()[0]
+        unit=db.execute("SELECT * FROM units WHERE unit_key='wh2_dlc09_tmb_cha_necrotect_0'").fetchone()
+        self.assertEqual(identity_status(db,owner,unit),'source_character_identity_match')
+        db.execute('DELETE FROM character_forms WHERE owner_id=? AND unit_key=?',(owner,unit['unit_key']))
+        self.assertEqual(identity_status(db,owner,unit),'unresolved_character_identity')
+        db.close()
+
+    def test_removing_conflicting_path_cannot_create_positive_identity(self):
+        db=sqlite3.connect(':memory:');self.db.backup(db);db.row_factory=sqlite3.Row
+        owner=db.execute("SELECT id FROM owners WHERE owner_key='wh_dlc07_brt_prophetess_heavens'").fetchone()[0]
+        unit=db.execute("SELECT * FROM units WHERE unit_key='wh_dlc07_brt_cha_prophetess_2'").fetchone()
+        self.assertEqual(identity_status(db,owner,unit),'conflicting_character_identity')
+        db.execute('DELETE FROM custom_battle_mounts WHERE mounted_unit=?',(unit['unit_key'],))
+        self.assertEqual(identity_status(db,owner,unit),'unresolved_character_identity')
+        db.close()
+
+    @patch.object(query_module,'open_reference')
+    def test_character_navigation_matches_entire_normalized_roster(self,open_db):
+        dbpath=self.db.execute('PRAGMA database_list').fetchone()[2]
+        manifest=json.loads((DATA/'dataset_manifest.json').read_text())
+        def connection(_):
+            db=sqlite3.connect(Path(dbpath).as_uri()+'?mode=ro',uri=True);db.row_factory=sqlite3.Row
+            return db,manifest
+        open_db.side_effect=connection
+        actual={r['unit_key'] for p in (ROOT/'data/unit_stats/normalized').glob('*.csv') for _,r in query_module.records(p)}
+        missing=set();owners=set();relations=0
+        for (owner,) in self.db.execute("SELECT owner_key FROM owners WHERE kind='skill'"):
+            offset=0
+            while offset is not None:
+                result=query_module.query(SimpleNamespace(command='character',key=owner,data=DATA,limit=100,offset=offset))
+                for form in result['forms']['entries']:
+                    if form['unit_key'] in actual:
+                        self.assertEqual(form['base_query'],'unit '+form['unit_key'])
+                        self.assertEqual(form['normalized_base_stat_coverage'],'available')
+                    else:
+                        missing.add(form['unit_key']);owners.add(owner);relations+=1
+                        self.assertNotIn('base_query',form)
+                        self.assertEqual(form['normalized_base_stat_coverage'],'unavailable')
+                        refs=form['evidence'];refs=[refs] if 'path' in refs else list(refs.values())
+                        self.assertTrue(all((ROOT/e['path']).is_file() and e['row']>0 for e in refs))
+                offset=result['forms']['next_offset']
+        coverage=json.loads((DATA/'coverage_report.json').read_text())
+        self.assertEqual((len(missing),relations,len(owners)),(461,534,229))
+        self.assertEqual(len(missing),coverage['character_forms_without_normalized_stats'])
+        self.assertIn('wh2_dlc17_bst_cha_beastlord_2',missing)
+
+    def test_all_identity_conflicts_remain_visible(self):
+        expected=set()
+        for (unit,) in self.db.execute('SELECT DISTINCT mounted_unit FROM custom_battle_mounts'):
+            grants={r[0] for r in self.db.execute("SELECT a.unit_key FROM character_forms m JOIN character_forms a ON a.owner_id=m.owner_id AND a.relation='associated_unit_override' WHERE m.relation='skill_granted_mount' AND m.unit_key=?",(unit,))}
+            customs={r[0] for r in self.db.execute('SELECT base_unit FROM custom_battle_mounts WHERE mounted_unit=?',(unit,))}
+            if grants and customs and grants!=customs:
+                expected.add(unit)
+                self.assertEqual(identity_context(self.db,unit)['status'],'conflicting_character_identity')
+        self.assertEqual(len(expected),9)
 
     def test_coverage_includes_entire_extraction(self):
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM source_tables').fetchone()[0],220)

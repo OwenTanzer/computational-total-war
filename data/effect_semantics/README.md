@@ -79,7 +79,26 @@ prefixes establish identity or availability. `character_forms`, `mount_records`
 and `mount_acquisitions` preserve the evidence; `character_scope_policies` derives
 self-recipient scope only from source, target, location and ownership fields.
 
-All source-supported forms keep their own base stats, attributes and abilities.
+Identity comparison uses explicit base-body anchors. A mounted target requires
+agreement between skill-grant base identities and retained custom-battle base-to-
+mount relations. Distinct source and target base anchors support a negative
+identity conclusion only when target evidence is complete and consistent.
+Missing source anchors, shared anchors without an owner pair, or incomplete target
+paths remain `unresolved_character_identity`. Disagreeing path sets remain
+`conflicting_character_identity`, including positive grant pairs; no names or
+key suffixes resolve them. Custom-battle evidence corroborates identity only and
+never establishes campaign acquisition. Both paths and their original row evidence
+are returned in `character_identity_resolution` / form `identity_resolution`.
+Path-set disagreement can reflect partial coverage or shared bodies, not necessarily
+a game-data error. Nine bodies have disagreements in this snapshot; 655 mounted
+bodies have corroborated identity and 444 have supported base identity.
+
+Every form has `normalized_base_stat_coverage`. Only `available` forms emit
+`base_query`; unavailable forms retain their usable source path/row evidence and
+identity paths. There are 461 distinct forms outside normalized coverage, spanning
+534 relations and 229 owners. No statistics are fabricated for them.
+
+Forms within normalized coverage keep their own base stats, attributes and abilities.
 A body with an ancillary but no indexed grant remains `unconfirmed_acquisition`
 in its unit view; it is not added to a character's supported forms. A grant route
 still does not prove current acquisition, faction access or prerequisite satisfaction.
