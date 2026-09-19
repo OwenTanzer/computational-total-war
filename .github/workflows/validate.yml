@@ -11,7 +11,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
       - run: npm run test:validation-text
       - run: npm run validate
       - run: npm run test:technologies
       - run: npm run test:effect-foundation
+      - run: npm run test:modifiers

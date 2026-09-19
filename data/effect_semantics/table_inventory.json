@@ -1,0 +1,1102 @@
+[
+  {
+    "table_key": "_kv_experience_bonuses_tables",
+    "family": "experience",
+    "row_count": 7
+  },
+  {
+    "table_key": "abilities_tables",
+    "family": "supporting_relation",
+    "row_count": 9
+  },
+  {
+    "table_key": "action_results_additional_outcomes_tables",
+    "family": "supporting_relation",
+    "row_count": 75
+  },
+  {
+    "table_key": "action_results_tables",
+    "family": "supporting_relation",
+    "row_count": 74
+  },
+  {
+    "table_key": "agent_ability_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "agent_actions_tables",
+    "family": "supporting_relation",
+    "row_count": 176
+  },
+  {
+    "table_key": "agent_attributes_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "agents_tables",
+    "family": "supporting_relation",
+    "row_count": 9
+  },
+  {
+    "table_key": "area_of_effect_displays_tables",
+    "family": "supporting_relation",
+    "row_count": 144
+  },
+  {
+    "table_key": "armory_item_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 8
+  },
+  {
+    "table_key": "army_special_abilities_tables",
+    "family": "supporting_relation",
+    "row_count": 254
+  },
+  {
+    "table_key": "audio_abilities_tables",
+    "family": "supporting_relation",
+    "row_count": 489
+  },
+  {
+    "table_key": "audio_armour_types_tables",
+    "family": "supporting_relation",
+    "row_count": 10
+  },
+  {
+    "table_key": "audio_campaign_environment_reverbs_tables",
+    "family": "supporting_relation",
+    "row_count": 5
+  },
+  {
+    "table_key": "audio_entity_actors_tables",
+    "family": "supporting_relation",
+    "row_count": 135
+  },
+  {
+    "table_key": "audio_entity_focus_pools_tables",
+    "family": "supporting_relation",
+    "row_count": 81
+  },
+  {
+    "table_key": "audio_entity_looping_sounds_tables",
+    "family": "supporting_relation",
+    "row_count": 174
+  },
+  {
+    "table_key": "audio_entity_random_vocalisations_tables",
+    "family": "supporting_relation",
+    "row_count": 1159
+  },
+  {
+    "table_key": "audio_entity_type_limitations_tables",
+    "family": "supporting_relation",
+    "row_count": 18
+  },
+  {
+    "table_key": "audio_entity_types_tables",
+    "family": "supporting_relation",
+    "row_count": 745
+  },
+  {
+    "table_key": "audio_explosions_tables",
+    "family": "supporting_relation",
+    "row_count": 153
+  },
+  {
+    "table_key": "audio_group_focus_pools_tables",
+    "family": "supporting_relation",
+    "row_count": 4
+  },
+  {
+    "table_key": "audio_group_sound_groupings_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "audio_group_sounds_tables",
+    "family": "supporting_relation",
+    "row_count": 1492
+  },
+  {
+    "table_key": "audio_materials_tables",
+    "family": "supporting_relation",
+    "row_count": 6
+  },
+  {
+    "table_key": "audio_music_sync_events_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "audio_projectile_bombardments_tables",
+    "family": "supporting_relation",
+    "row_count": 42
+  },
+  {
+    "table_key": "audio_sphere_of_influence_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 4
+  },
+  {
+    "table_key": "audio_sphere_of_influence_one_shots_tables",
+    "family": "supporting_relation",
+    "row_count": 8
+  },
+  {
+    "table_key": "audio_sphere_of_influences_tables",
+    "family": "supporting_relation",
+    "row_count": 16
+  },
+  {
+    "table_key": "autoresolver_usages_tables",
+    "family": "supporting_relation",
+    "row_count": 11
+  },
+  {
+    "table_key": "battle_ai_abilities_usage_group_names_tables",
+    "family": "supporting_relation",
+    "row_count": 2
+  },
+  {
+    "table_key": "battle_ai_abilities_usage_template_names_tables",
+    "family": "supporting_relation",
+    "row_count": 90
+  },
+  {
+    "table_key": "battle_animations_table_tables",
+    "family": "supporting_relation",
+    "row_count": 1356
+  },
+  {
+    "table_key": "battle_camera_shake_parameters_tables",
+    "family": "supporting_relation",
+    "row_count": 53
+  },
+  {
+    "table_key": "battle_context_army_special_ability_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 6
+  },
+  {
+    "table_key": "battle_context_unit_ability_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 8
+  },
+  {
+    "table_key": "battle_context_unit_attribute_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 88
+  },
+  {
+    "table_key": "battle_entity_stats_tables",
+    "family": "supporting_relation",
+    "row_count": 98
+  },
+  {
+    "table_key": "battle_personalities_tables",
+    "family": "supporting_relation",
+    "row_count": 931
+  },
+  {
+    "table_key": "battle_secondary_currency_types_tables",
+    "family": "supporting_relation",
+    "row_count": 7
+  },
+  {
+    "table_key": "battle_skeletons_tables",
+    "family": "supporting_relation",
+    "row_count": 330
+  },
+  {
+    "table_key": "battle_vortex_collision_responses_tables",
+    "family": "supporting_relation",
+    "row_count": 2
+  },
+  {
+    "table_key": "battle_vortex_composite_scene_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 167
+  },
+  {
+    "table_key": "battle_vortex_launch_sources_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "battle_vortex_shapes_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "battle_vortexs_tables",
+    "family": "supporting_relation",
+    "row_count": 288
+  },
+  {
+    "table_key": "battlefield_deployable_siege_items_tables",
+    "family": "supporting_relation",
+    "row_count": 44
+  },
+  {
+    "table_key": "battlefield_engines_tables",
+    "family": "supporting_relation",
+    "row_count": 148
+  },
+  {
+    "table_key": "battlefield_siege_vehicles_tables",
+    "family": "supporting_relation",
+    "row_count": 49
+  },
+  {
+    "table_key": "building_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 280
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_battle_type_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 6
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_culture_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 227
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_faction_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 5
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_force_status_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 11
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_ground_type_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 11
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_specifiers_tables",
+    "family": "battle_conditions",
+    "row_count": 92
+  },
+  {
+    "table_key": "campaign_bonus_value_battle_context_territory_status_junctions_tables",
+    "family": "battle_conditions",
+    "row_count": 10
+  },
+  {
+    "table_key": "campaign_bonus_value_ids_initiative_set_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "campaign_composite_scenes_tables",
+    "family": "supporting_relation",
+    "row_count": 180
+  },
+  {
+    "table_key": "campaign_effect_list_chains_tables",
+    "family": "supporting_relation",
+    "row_count": 25
+  },
+  {
+    "table_key": "campaign_effect_lists_tables",
+    "family": "supporting_relation",
+    "row_count": 1031
+  },
+  {
+    "table_key": "campaign_effect_scope_agent_junctions_tables",
+    "family": "scope_definitions",
+    "row_count": 50
+  },
+  {
+    "table_key": "campaign_effect_scope_categories_tables",
+    "family": "scope_definitions",
+    "row_count": 8
+  },
+  {
+    "table_key": "campaign_effect_scope_character_force_relationship_junctions_tables",
+    "family": "scope_definitions",
+    "row_count": 1
+  },
+  {
+    "table_key": "campaign_effect_scope_territories_tables",
+    "family": "scope_definitions",
+    "row_count": 5
+  },
+  {
+    "table_key": "campaign_effect_scopes_tables",
+    "family": "scope_definitions",
+    "row_count": 435
+  },
+  {
+    "table_key": "campaign_ground_types_tables",
+    "family": "supporting_relation",
+    "row_count": 21
+  },
+  {
+    "table_key": "campaign_map_attrition_damages_tables",
+    "family": "supporting_relation",
+    "row_count": 30
+  },
+  {
+    "table_key": "campaign_map_attritions_tables",
+    "family": "supporting_relation",
+    "row_count": 58
+  },
+  {
+    "table_key": "campaign_payloads_tables",
+    "family": "supporting_relation",
+    "row_count": 292
+  },
+  {
+    "table_key": "campaign_stances_tables",
+    "family": "supporting_relation",
+    "row_count": 23
+  },
+  {
+    "table_key": "campaign_unit_stat_bonuses_tables",
+    "family": "stat_rule_definitions",
+    "row_count": 43
+  },
+  {
+    "table_key": "character_training_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 2
+  },
+  {
+    "table_key": "commodity_unit_names_tables",
+    "family": "supporting_relation",
+    "row_count": 12
+  },
+  {
+    "table_key": "composite_scene_files_tables",
+    "family": "supporting_relation",
+    "row_count": 337
+  },
+  {
+    "table_key": "cursors_tables",
+    "family": "supporting_relation",
+    "row_count": 163
+  },
+  {
+    "table_key": "custom_splines_tables",
+    "family": "supporting_relation",
+    "row_count": 11
+  },
+  {
+    "table_key": "diplomatic_faction_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 10
+  },
+  {
+    "table_key": "diplomatic_manipulation_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 5
+  },
+  {
+    "table_key": "effect_bonus_value_agent_action_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 326
+  },
+  {
+    "table_key": "effect_bonus_value_agent_junction_tables",
+    "family": "effect_bindings",
+    "row_count": 645
+  },
+  {
+    "table_key": "effect_bonus_value_agent_subtype_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 457
+  },
+  {
+    "table_key": "effect_bonus_value_armory_item_category_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 5
+  },
+  {
+    "table_key": "effect_bonus_value_attrition_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 612
+  },
+  {
+    "table_key": "effect_bonus_value_basic_junction_tables",
+    "family": "effect_bindings",
+    "row_count": 647
+  },
+  {
+    "table_key": "effect_bonus_value_battle_context_army_special_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 6
+  },
+  {
+    "table_key": "effect_bonus_value_battle_context_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 440
+  },
+  {
+    "table_key": "effect_bonus_value_battle_context_unit_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 6
+  },
+  {
+    "table_key": "effect_bonus_value_battle_context_unit_attribute_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 66
+  },
+  {
+    "table_key": "effect_bonus_value_building_chain_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 21
+  },
+  {
+    "table_key": "effect_bonus_value_building_set_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 247
+  },
+  {
+    "table_key": "effect_bonus_value_character_training_group_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 2
+  },
+  {
+    "table_key": "effect_bonus_value_diplomacy_manipulation_category_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 20
+  },
+  {
+    "table_key": "effect_bonus_value_faction_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 63
+  },
+  {
+    "table_key": "effect_bonus_value_id_action_results_additional_outcomes_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 42
+  },
+  {
+    "table_key": "effect_bonus_value_ids_unit_sets_tables",
+    "family": "effect_bindings",
+    "row_count": 8347
+  },
+  {
+    "table_key": "effect_bonus_value_initiative_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 108
+  },
+  {
+    "table_key": "effect_bonus_value_initiative_set_categories_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 4
+  },
+  {
+    "table_key": "effect_bonus_value_initiative_set_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 88
+  },
+  {
+    "table_key": "effect_bonus_value_loyalty_event_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 41
+  },
+  {
+    "table_key": "effect_bonus_value_military_force_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 382
+  },
+  {
+    "table_key": "effect_bonus_value_missile_weapon_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 254
+  },
+  {
+    "table_key": "effect_bonus_value_name_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 283
+  },
+  {
+    "table_key": "effect_bonus_value_plague_component_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 52
+  },
+  {
+    "table_key": "effect_bonus_value_plague_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 4
+  },
+  {
+    "table_key": "effect_bonus_value_pooled_resource_factor_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 667
+  },
+  {
+    "table_key": "effect_bonus_value_pooled_resource_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 61
+  },
+  {
+    "table_key": "effect_bonus_value_pre_battle_unit_targeted_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 11
+  },
+  {
+    "table_key": "effect_bonus_value_province_growth_factor_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 35
+  },
+  {
+    "table_key": "effect_bonus_value_provincial_initiative_effect_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 55
+  },
+  {
+    "table_key": "effect_bonus_value_public_order_provider_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 55
+  },
+  {
+    "table_key": "effect_bonus_value_recruitment_source_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 5
+  },
+  {
+    "table_key": "effect_bonus_value_resource_junction_tables",
+    "family": "effect_bindings",
+    "row_count": 17
+  },
+  {
+    "table_key": "effect_bonus_value_ritual_category_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 23
+  },
+  {
+    "table_key": "effect_bonus_value_ritual_chains_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 9
+  },
+  {
+    "table_key": "effect_bonus_value_ritual_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 932
+  },
+  {
+    "table_key": "effect_bonus_value_scripted_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 328
+  },
+  {
+    "table_key": "effect_bonus_value_siege_item_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 221
+  },
+  {
+    "table_key": "effect_bonus_value_special_ability_group_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 381
+  },
+  {
+    "table_key": "effect_bonus_value_special_ability_phase_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 40
+  },
+  {
+    "table_key": "effect_bonus_value_stance_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 51
+  },
+  {
+    "table_key": "effect_bonus_value_subculture_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 500
+  },
+  {
+    "table_key": "effect_bonus_value_teleportation_node_template_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 17
+  },
+  {
+    "table_key": "effect_bonus_value_unit_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 4707
+  },
+  {
+    "table_key": "effect_bonus_value_unit_attribute_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 57
+  },
+  {
+    "table_key": "effect_bonus_value_unit_components_animation_table_override_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 16
+  },
+  {
+    "table_key": "effect_bonus_value_unit_list_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 26
+  },
+  {
+    "table_key": "effect_bonus_value_unit_record_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 381
+  },
+  {
+    "table_key": "effect_bonus_value_unit_set_special_ability_phase_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 72
+  },
+  {
+    "table_key": "effect_bonus_value_unit_set_unit_ability_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 618
+  },
+  {
+    "table_key": "effect_bonus_value_unit_set_unit_attribute_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 414
+  },
+  {
+    "table_key": "effect_bonus_value_unit_upgrade_to_unit_group_junctions_tables",
+    "family": "effect_bindings",
+    "row_count": 243
+  },
+  {
+    "table_key": "effect_bundle_advancement_stages_tables",
+    "family": "supporting_relation",
+    "row_count": 8
+  },
+  {
+    "table_key": "effect_bundles_tables",
+    "family": "supporting_relation",
+    "row_count": 5854
+  },
+  {
+    "table_key": "effect_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "effects_tables",
+    "family": "effect_definitions",
+    "row_count": 15064
+  },
+  {
+    "table_key": "faction_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 203
+  },
+  {
+    "table_key": "first_person_engines_tables",
+    "family": "supporting_relation",
+    "row_count": 29
+  },
+  {
+    "table_key": "initiative_set_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 28
+  },
+  {
+    "table_key": "initiative_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 117
+  },
+  {
+    "table_key": "initiatives_tables",
+    "family": "supporting_relation",
+    "row_count": 619
+  },
+  {
+    "table_key": "loyalty_event_effects_tables",
+    "family": "supporting_relation",
+    "row_count": 19
+  },
+  {
+    "table_key": "loyalty_factors_tables",
+    "family": "supporting_relation",
+    "row_count": 10
+  },
+  {
+    "table_key": "message_events_tables",
+    "family": "supporting_relation",
+    "row_count": 34
+  },
+  {
+    "table_key": "military_force_types_tables",
+    "family": "supporting_relation",
+    "row_count": 28
+  },
+  {
+    "table_key": "models_sieges_tables",
+    "family": "supporting_relation",
+    "row_count": 46
+  },
+  {
+    "table_key": "modifiable_unit_stats_tables",
+    "family": "stat_rule_definitions",
+    "row_count": 51
+  },
+  {
+    "table_key": "names_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 29
+  },
+  {
+    "table_key": "names_tables",
+    "family": "supporting_relation",
+    "row_count": 6884
+  },
+  {
+    "table_key": "particle_effects_tables",
+    "family": "supporting_relation",
+    "row_count": 1966
+  },
+  {
+    "table_key": "plague_component_types_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "plague_components_tables",
+    "family": "supporting_relation",
+    "row_count": 57
+  },
+  {
+    "table_key": "plague_parameters_tables",
+    "family": "supporting_relation",
+    "row_count": 39
+  },
+  {
+    "table_key": "plagues_tables",
+    "family": "supporting_relation",
+    "row_count": 20
+  },
+  {
+    "table_key": "pooled_resource_battle_conversions_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "pooled_resource_factor_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 1103
+  },
+  {
+    "table_key": "pooled_resource_factors_tables",
+    "family": "supporting_relation",
+    "row_count": 420
+  },
+  {
+    "table_key": "pooled_resources_tables",
+    "family": "supporting_relation",
+    "row_count": 246
+  },
+  {
+    "table_key": "pre_battle_unit_targeted_abilities_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "pre_battle_unit_targeted_ability_types_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "projectile_bombardment_launch_sources_tables",
+    "family": "supporting_relation",
+    "row_count": 6
+  },
+  {
+    "table_key": "projectile_bombardments_tables",
+    "family": "supporting_relation",
+    "row_count": 126
+  },
+  {
+    "table_key": "projectile_shrapnels_tables",
+    "family": "supporting_relation",
+    "row_count": 25
+  },
+  {
+    "table_key": "projectiles_explosions_tables",
+    "family": "supporting_relation",
+    "row_count": 412
+  },
+  {
+    "table_key": "province_growth_factors_tables",
+    "family": "supporting_relation",
+    "row_count": 32
+  },
+  {
+    "table_key": "public_order_providers_tables",
+    "family": "supporting_relation",
+    "row_count": 55
+  },
+  {
+    "table_key": "recruitment_sources_tables",
+    "family": "supporting_relation",
+    "row_count": 24
+  },
+  {
+    "table_key": "region_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 621
+  },
+  {
+    "table_key": "resource_costs_tables",
+    "family": "supporting_relation",
+    "row_count": 1851
+  },
+  {
+    "table_key": "resources_tables",
+    "family": "supporting_relation",
+    "row_count": 75
+  },
+  {
+    "table_key": "ritual_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 184
+  },
+  {
+    "table_key": "ritual_category_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 11
+  },
+  {
+    "table_key": "ritual_chains_tables",
+    "family": "supporting_relation",
+    "row_count": 91
+  },
+  {
+    "table_key": "ritual_faction_target_criterias_tables",
+    "family": "supporting_relation",
+    "row_count": 24
+  },
+  {
+    "table_key": "ritual_flag_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 6
+  },
+  {
+    "table_key": "ritual_military_force_target_criterias_context_expressions_tables",
+    "family": "supporting_relation",
+    "row_count": 5
+  },
+  {
+    "table_key": "ritual_military_force_target_criterias_tables",
+    "family": "supporting_relation",
+    "row_count": 84
+  },
+  {
+    "table_key": "ritual_payloads_tables",
+    "family": "supporting_relation",
+    "row_count": 1326
+  },
+  {
+    "table_key": "ritual_region_target_criterias_context_expressions_tables",
+    "family": "supporting_relation",
+    "row_count": 2
+  },
+  {
+    "table_key": "ritual_region_target_criterias_tables",
+    "family": "supporting_relation",
+    "row_count": 37
+  },
+  {
+    "table_key": "ritual_targets_tables",
+    "family": "supporting_relation",
+    "row_count": 146
+  },
+  {
+    "table_key": "rituals_tables",
+    "family": "supporting_relation",
+    "row_count": 1326
+  },
+  {
+    "table_key": "scoped_resource_costs_tables",
+    "family": "supporting_relation",
+    "row_count": 28
+  },
+  {
+    "table_key": "scripted_bonus_value_ids_tables",
+    "family": "stat_rule_definitions",
+    "row_count": 303
+  },
+  {
+    "table_key": "slot_set_types_tables",
+    "family": "supporting_relation",
+    "row_count": 13
+  },
+  {
+    "table_key": "slot_sets_tables",
+    "family": "supporting_relation",
+    "row_count": 77
+  },
+  {
+    "table_key": "slot_templates_tables",
+    "family": "supporting_relation",
+    "row_count": 646
+  },
+  {
+    "table_key": "slot_types_tables",
+    "family": "supporting_relation",
+    "row_count": 6
+  },
+  {
+    "table_key": "special_abilities_specific_formation_types_tables",
+    "family": "supporting_relation",
+    "row_count": 13
+  },
+  {
+    "table_key": "special_ability_behaviour_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 17
+  },
+  {
+    "table_key": "special_ability_displays_tables",
+    "family": "supporting_relation",
+    "row_count": 93
+  },
+  {
+    "table_key": "special_ability_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 112
+  },
+  {
+    "table_key": "special_unit_categories_tables",
+    "family": "supporting_relation",
+    "row_count": 8
+  },
+  {
+    "table_key": "spline_types_tables",
+    "family": "supporting_relation",
+    "row_count": 3
+  },
+  {
+    "table_key": "teleportation_node_double_click_events_tables",
+    "family": "supporting_relation",
+    "row_count": 1
+  },
+  {
+    "table_key": "teleportation_node_templates_tables",
+    "family": "supporting_relation",
+    "row_count": 34
+  },
+  {
+    "table_key": "ui_info_ritual_target_criterias_tables",
+    "family": "supporting_relation",
+    "row_count": 53
+  },
+  {
+    "table_key": "unit_castes_tables",
+    "family": "supporting_relation",
+    "row_count": 13
+  },
+  {
+    "table_key": "unit_category_tables",
+    "family": "supporting_relation",
+    "row_count": 9
+  },
+  {
+    "table_key": "unit_class_tables",
+    "family": "supporting_relation",
+    "row_count": 18
+  },
+  {
+    "table_key": "unit_component_animation_table_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 10
+  },
+  {
+    "table_key": "unit_experience_bonuses_tables",
+    "family": "experience",
+    "row_count": 5
+  },
+  {
+    "table_key": "unit_experience_threshold_modifiers_tables",
+    "family": "experience",
+    "row_count": 18
+  },
+  {
+    "table_key": "unit_experience_thresholds_tables",
+    "family": "experience",
+    "row_count": 18
+  },
+  {
+    "table_key": "unit_lists_tables",
+    "family": "supporting_relation",
+    "row_count": 28
+  },
+  {
+    "table_key": "unit_missile_weapon_junctions_tables",
+    "family": "supporting_relation",
+    "row_count": 331
+  },
+  {
+    "table_key": "unit_set_special_ability_phase_junctions_tables",
+    "family": "unit_targets",
+    "row_count": 76
+  },
+  {
+    "table_key": "unit_set_to_unit_junctions_tables",
+    "family": "unit_targets",
+    "row_count": 21476
+  },
+  {
+    "table_key": "unit_set_unit_ability_junctions_tables",
+    "family": "unit_targets",
+    "row_count": 605
+  },
+  {
+    "table_key": "unit_set_unit_attribute_junctions_tables",
+    "family": "unit_targets",
+    "row_count": 436
+  },
+  {
+    "table_key": "unit_sets_tables",
+    "family": "unit_targets",
+    "row_count": 3332
+  },
+  {
+    "table_key": "unit_special_abilities_tables",
+    "family": "supporting_relation",
+    "row_count": 2894
+  },
+  {
+    "table_key": "unit_stat_localisations_tables",
+    "family": "supporting_relation",
+    "row_count": 56
+  },
+  {
+    "table_key": "unit_stat_modifiers_tables",
+    "family": "stat_rule_definitions",
+    "row_count": 5
+  },
+  {
+    "table_key": "unit_stats_land_experience_bonuses_tables",
+    "family": "experience",
+    "row_count": 10
+  },
+  {
+    "table_key": "unit_upgrade_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 93
+  },
+  {
+    "table_key": "unit_upgrade_to_unit_groups_tables",
+    "family": "supporting_relation",
+    "row_count": 151
+  },
+  {
+    "table_key": "variants_tables",
+    "family": "supporting_relation",
+    "row_count": 3242
+  },
+  {
+    "table_key": "warscape_animated_tables",
+    "family": "supporting_relation",
+    "row_count": 339
+  }
+]
