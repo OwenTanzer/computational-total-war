@@ -1,5 +1,7 @@
 # Disposable build outputs, downloaded tooling, and local dependency caches.
 /work/
+__pycache__/
+*.pyc
 
 # Local configuration and credentials.
 .env
@@ -32,4 +34,3 @@ Desktop.ini
 *.run.xml
 *.synctex.gz
 *.toc
-

@@ -1,0 +1,627 @@
+{
+  "binding_targets": [
+    {
+      "name": "binding_id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "evidence_record",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "bindings": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "bonus_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_table",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_column",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "route",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "effect_coverage": [
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "binding_count",
+      "type": "",
+      "primary_key": false
+    },
+    {
+      "name": "source_count",
+      "type": "",
+      "primary_key": false
+    },
+    {
+      "name": "indexed_bindings",
+      "type": "",
+      "primary_key": false
+    }
+  ],
+  "effects": [
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "label",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "owners": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "owner_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "label",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "race_slug",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "faction_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_path",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "schema_fields": [
+    {
+      "name": "table_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "column_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "field_type",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "is_key",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "reference_table",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "reference_column",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "annotations_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "schema_links": [
+    {
+      "name": "table_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "column_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "target_table",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_column",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "selector_matches": [
+    {
+      "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "set_coverage": [
+    {
+      "name": "set_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "selector_count",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "candidate_units",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "excluded_units",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "source_gaps": [
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "record_type",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "detail_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "source_occurrences": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "source_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "node_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "node_set_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "variant_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "campaign_key",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "source_records": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "table_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "payload_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "source_tables": [
+    {
+      "name": "table_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "family",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "row_count",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "source_path",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "sha256",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "version",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "columns_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "label",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "skill_level",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "effect_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "value",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_type",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "conditions_json",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "canonical_key",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "target_selectors": [
+    {
+      "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "set_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "exclude",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "predicate_count",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "unit_record",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "unit_class",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "unit_category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "unit_caste",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "target_sets": [
+    {
+      "name": "set_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "rank_enabled",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "min_rank",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "max_rank",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "special_category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "record_id",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "unit_binding_candidates": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "binding_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "unit_records": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "race_slug",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "source_path",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    }
+  ],
+  "unit_targets": [
+    {
+      "name": "kind",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "target_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "units": [
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "unit_name",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_unit_class",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_category",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_caste",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ]
+}

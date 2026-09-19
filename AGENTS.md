@@ -40,6 +40,26 @@ mechanics.
 - In faction technology files, filter by `variant_key`. Faction-specific overrides replace generic fallbacks according to `source_exports/node_set_precedence.json`; only legitimate campaign variants are emitted.
 - Read `script_audit.json` and `audit_report.json` before asserting research availability. Typed scripted requirements and rewards retain their scopes, triggers and targets; bounded script references are evidence pointers, not unconditional effects; the Daemon Prince explicitly has no ordinary research tree.
 
+## Optional modifier retrieval
+
+Ordinary unit comparisons continue to use `data/unit_stats/` without loading the
+modifier reference. For modifier questions, read `data/effect_semantics/README.md`
+and its coverage report, then use `unit_index.csv` or the paginated query tool.
+Start with `query:modifiers -- unit <unit_key> --modifiers`; filter by bonus,
+source kind or exact source owner when useful. Follow an effect, source or record
+ID only for the details needed. Numeric IDs are snapshot-local; game keys are
+canonical across datasets. Never dump the full database into context.
+
+The generated reference preserves all 220 extracted tables, but per-unit results
+are candidate relevance, not active campaign buffs. `--owner` filters the owner
+of the source, not recruitment legality or scope. Skill levels are alternatives;
+technology variants and conditional initiatives remain distinct. Read scope,
+rank bounds, special-category requirements and owner prerequisites before using
+a value. Unindexed relations remain available through effect/table/gaps queries;
+an empty result is not proof of absence. No stacking or final-stat arithmetic is
+certified by this first pass. Unit progression/ability evidence is retained here
+as source material; future normalized progression stays owned by unit_stats.
+
 ## Repository maintenance
 
 Production data under `data/` is generated and must not be edited manually.

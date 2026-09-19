@@ -18,6 +18,7 @@ This is an unofficial research project and is not affiliated with Creative Assem
 - Economy: 104 playable-faction CSVs containing the standardized building catalog
 - Campaign atlas: one Immortal Empires GeoPackage containing 641 regions, 214 provinces, 104 playable starts, effective victory objectives, topology, and battle-map relations
 - Faction mechanics: 24 source-grounded race guides covering all 104 playable factions and bespoke campaign systems omitted from the standardized catalogs
+- Modifier reference: all 220 extracted tables, with optional candidate-modifier retrieval for all 1,669 distinct roster units
 
 Faction-specific military groups remain inside their parent race dataset. Normalized unit rows carry structured scope, exclusivity, and availability counts; the typed roster lookup preserves exact military-group memberships and faction permissions without storing lists in cells or creating separate faction CSVs.
 
@@ -28,6 +29,7 @@ Faction-specific military groups remain inside their parent race dataset. Normal
 - `data/technology_trees/` — authoritative technology sources and self-contained faction trees, including explicit faction overrides, structured scripted requirements/rewards and bounded evidence.
 - `data/economy/` — one narrow building-economy CSV per playable faction, plus the faction index, schema inventory, raw source exports, manifest, and audit reports.
 - `data/campaign_map/` — the compact Immortal Empires GeoPackage, documentation, and validation reports.
+- `data/effect_semantics/` — shared modifier evidence and a compact per-unit index; ordinary base-stat analysis continues to use `unit_stats`.
 - `scripts/` — repeatable extraction, build, and validation programs for all production datasets.
 - `work/` — downloaded tooling, dependency caches, and disposable intermediate builds. Nothing here should be treated as production data.
 - `relations.tex` — project notes on combat-stat relationships and interpretation.
@@ -41,10 +43,11 @@ Each production dataset has its own `README.md`. Start with:
 - `data/technology_trees/README.md`
 - `data/economy/README.md`
 - `data/campaign_map/README.md`
+- `data/effect_semantics/README.md`
 
 ## Validation
 
-The scripts require Node.js 24 or newer. They use only Node.js built-in modules; no package installation is required for validation.
+The scripts require Node.js 24 or newer and Python 3.10 or newer for the modifier reference. They use only standard-library modules; no package installation is required for validation. On Windows, use the installed Python executable for the modifier commands if `python3` is unavailable.
 
 Text fingerprints accept an exact LF or CRLF representation with the recorded
 SHA-256 and byte count, so Git's checkout conversion works on Windows and Linux.
@@ -67,9 +70,10 @@ node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill
 node scripts/validate-technology-trees.mjs data/technology_trees/source_exports data/technology_trees
 node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy
 node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg data/campaign_map
+python3 scripts/validate-modifier-reference.py data/effect_semantics
 ```
 
-Each validator writes machine-readable and Markdown audit reports into its production dataset directory. A production dataset is ready only when its audit status is `passed` and its error list is empty.
+Validators write machine-readable audit reports into their production dataset directories; the established Node.js dataset validators also write Markdown reports. A production dataset is ready only when its audit status is `passed` and its error list is empty.
 
 ## Rebuilding
 
@@ -88,6 +92,7 @@ Relevant scripts:
 - Technology trees: `extract-technology-source.mjs`, `build-technology-trees.mjs`, `validate-technology-trees.mjs` (plus `npm run test:technologies` for corruption tests)
 - Economy: `extract-economy-source.mjs`, `build-economy-dataset.mjs`, `validate-economy-dataset.mjs`
 - Campaign atlas: `extract-campaign-atlas-source.mjs`, `build-campaign-atlas.mjs`, `validate-campaign-atlas.mjs`
+- Modifier reference: `extract-effect-source.ps1`, `build-modifier-reference.py`, `validate-modifier-reference.py` (plus `npm run test:modifiers` for retrieval and targeting checks)
 
 Do not edit generated CSVs by hand. Stable database keys are the canonical identifiers; localized English labels are descriptive metadata and may be absent for hidden or scripted game records.
 

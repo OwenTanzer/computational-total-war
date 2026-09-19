@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "errors": [],
+  "dataset_manifest_sha256": "f2cc0c9c642659dd5ae24c7ae22c0d87a167c75a3123faee2bfa64d3acecec40",
+  "source_tables": 220,
+  "source_rows": 109408,
+  "units": 1669,
+  "bindings": 23110,
+  "source_occurrences": 153930
+}
