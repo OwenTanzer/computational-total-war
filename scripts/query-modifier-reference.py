@@ -2,6 +2,7 @@
 import argparse
 import json
 from pathlib import Path
+from character_reference import personal_allowed_sql, identity_status
 from modifier_reference import ROOT, DEFAULT_DATA, open_reference, records
 
 
@@ -34,6 +35,8 @@ def base_unit(key):
 
 
 def query(args):
+    if args.command == 'character' and (getattr(args,'rank',None) is not None or any(getattr(args,k,None) for k in ('bonus','modifiers','evidence','owner','source_kind'))):
+        raise ValueError('Character queries take an owner key and pagination only; --rank filters unit experience, not mount unlocks')
     if args.command == 'unit' and not args.modifiers:
         return base_unit(args.key)  # No modifier database is opened for base queries.
     db, manifest = open_reference(args.data)
@@ -50,29 +53,33 @@ def query(args):
             params.append(args.rank)
         sw,sp = [],[]
         evidence = getattr(args,'evidence',False)
-        omit_personal = not evidence and unit['source_caste'] not in ('lord','hero')
         if args.source_kind:
             sw.append('s.kind=?');sp.append(args.source_kind)
         if args.owner:
             sw.append('o.owner_key=?');sp.append(args.owner)
-        if sw:
-            where.append('EXISTS(SELECT 1 FROM classified_sources s JOIN source_occurrences so ON so.source_id=s.id JOIN owners o ON o.id=so.owner_id WHERE s.effect_key=b.effect_key AND '+' AND '.join(sw)+(" AND s.scope_classification!='character_only'" if omit_personal else '')+')')
-            params.extend(sp)
-        elif omit_personal:
-            where.append("(NOT EXISTS(SELECT 1 FROM sources s WHERE s.effect_key=b.effect_key) OR EXISTS(SELECT 1 FROM classified_sources s WHERE s.effect_key=b.effect_key AND s.scope_classification!='character_only'))")
+        identity_sql,identity_params=personal_allowed_sql(unit)
+        occurrence_filter=' AND '.join(sw) if sw else '1'
+        allowed_occurrence=occurrence_filter + (" AND (s.scope_classification!='character_only' OR "+identity_sql+")" if not evidence else '')
+        allowed_params=sp + (identity_params if not evidence else [])
+        source_allowed='EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND '+allowed_occurrence+')'
+        if sw or not evidence:
+            candidate_allowed='EXISTS(SELECT 1 FROM classified_sources s WHERE s.effect_key=b.effect_key AND '+source_allowed+')'
+            # Binding-only evidence must survive without an owner filter.
+            if not sw:
+                candidate_allowed="(NOT EXISTS(SELECT 1 FROM sources s WHERE s.effect_key=b.effect_key) OR "+candidate_allowed+")"
+            where.append(candidate_allowed);params.extend(allowed_params)
         common = ' FROM unit_binding_candidates c JOIN bindings b ON b.id=c.binding_id JOIN effects e ON e.effect_key=b.effect_key LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE '+' AND '.join(where)
         sql = 'SELECT DISTINCT b.id binding_id,b.effect_key,e.label,b.bonus_key,b.route,b.record_id'+common+' ORDER BY b.effect_key,b.bonus_key,b.id'
         result = page(db,sql,params,args.limit,args.offset)
         for entry in result['entries']:
             entry['candidate_paths'] = dicts(db.execute('SELECT c.kind,c.target_key,c.status,ts.rank_enabled,ts.min_rank,ts.max_rank,ts.special_category FROM unit_binding_candidates c LEFT JOIN target_sets ts ON c.kind=\'unit_set\' AND ts.set_key=c.target_key WHERE c.unit_key=? AND c.binding_id=? ORDER BY c.kind,c.target_key',(args.key,entry['binding_id'])))
-            source_filter = 's.effect_key=?'
-            source_params = [entry['effect_key']]
-            if sw:
-                source_filter += ' AND EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND '+' AND '.join(sw)+')'
-                source_params.extend(sp)
-            entry['omitted_character_only_source_count'] = db.execute("SELECT COUNT(*) FROM classified_sources s WHERE "+source_filter+" AND s.scope_classification='character_only'",source_params).fetchone()[0] if omit_personal else 0
-            if omit_personal:
-                source_filter += " AND s.scope_classification!='character_only'"
+            source_filter = 's.effect_key=? AND '+source_allowed
+            source_params = [entry['effect_key'],*allowed_params]
+            # Count omitted definitions only if NONE of their selected owner
+            # occurrences passes; shared generic skills can have several owners.
+            entry['omitted_character_only_source_count'] = db.execute("SELECT COUNT(*) FROM classified_sources s WHERE s.effect_key=? AND s.scope_classification='character_only' AND EXISTS(SELECT 1 FROM source_occurrences so JOIN owners o ON o.id=so.owner_id WHERE so.source_id=s.id AND "+occurrence_filter+") AND NOT ("+source_allowed+")",[entry['effect_key'],*sp,*allowed_params]).fetchone()[0] if not evidence else 0
+            personal_owners=db.execute("SELECT DISTINCT o.id,s.personal_identity_policy FROM classified_sources s JOIN source_occurrences so ON so.source_id=s.id JOIN owners o ON o.id=so.owner_id WHERE s.effect_key=? AND s.scope_classification='character_only' AND "+allowed_occurrence,[entry['effect_key'],*allowed_params]).fetchall()
+            entry['personal_source_identity_statuses']=sorted({identity_status(db,o['id'],unit) if o['personal_identity_policy']=='same_source_character' else 'character_recipient_context_unresolved' for o in personal_owners})
             entry['matching_source_counts'] = dict(db.execute('SELECT s.kind,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.kind',source_params))
             entry['scope_keys_to_check'] = [r[0] for r in db.execute('SELECT DISTINCT s.scope_key FROM classified_sources s WHERE '+source_filter+' ORDER BY s.scope_key',source_params)]
             entry['source_scope_classifications'] = dict(db.execute('SELECT s.scope_classification,COUNT(*) FROM classified_sources s WHERE '+source_filter+' GROUP BY s.scope_classification',source_params)) or {'unresolved_source':0}
@@ -85,12 +92,32 @@ def query(args):
             entry['details_query'] = 'effect '+entry['effect_key']
         envelope.update(unit=dict(unit),filters={'bonus':args.bonus,'unit_rank':args.rank,'source_kind':args.source_kind,'source_owner':args.owner},
                         view='evidence' if evidence else 'ordinary_unit_candidates',
-                        scope_policy='character-only sources omitted for non-character units; unknown scopes retained; effect/source queries preserve all evidence' if omit_personal else 'all source scopes retained; source owner is not recipient or mount identity',
+                        scope_policy='known personal-source identity mismatches omitted; unresolved identities/scopes explicitly retained; --evidence retains mismatches' if not evidence else 'all source scopes and identity mismatches retained as evidence',
+                        character_identities=dicts(db.execute('SELECT DISTINCT o.owner_key,cf.relation FROM character_forms cf JOIN owners o ON o.id=cf.owner_id WHERE cf.unit_key=? ORDER BY o.owner_key,cf.relation',(args.key,))),
+                        mount_records=page(db,"SELECT mr.ancillary_key,CASE WHEN EXISTS(SELECT 1 FROM mount_acquisitions ma WHERE ma.ancillary_key=mr.ancillary_key) THEN 'skill_grant_route_present' ELSE 'unconfirmed_acquisition' END acquisition_status,mr.evidence_json FROM mount_records mr WHERE mr.unit_key=? ORDER BY mr.ancillary_key",[args.key],args.limit,args.offset),
+                        character_query='character <owner_key> follows supported forms and independent mount acquisition evidence',
                         filter_meaning='owner selects source ownership, not proof that this owner can recruit or buff this unit',
                         bonus_groups=page(db,'SELECT b.bonus_key,COUNT(DISTINCT b.id) candidate_bindings'+common+' GROUP BY b.bonus_key ORDER BY candidate_bindings DESC,b.bonus_key',params,min(args.limit,10),args.offset),
                         candidates=result,
                         shared_bindings_not_indexed_per_unit=db.execute("SELECT COUNT(*) FROM bindings WHERE status!='unit_target_indexed'").fetchone()[0],
                         gaps_query='gaps --kind bindings')
+    elif args.command == 'character':
+        owners=dicts(db.execute("SELECT * FROM owners WHERE kind='skill' AND owner_key=? ORDER BY id",(args.key,)))
+        if not owners:
+            raise ValueError('Unknown character owner: '+args.key)
+        forms=page(db,'SELECT cf.unit_key,u.unit_name,cf.relation,cf.evidence_json FROM character_forms cf JOIN owners o ON o.id=cf.owner_id LEFT JOIN units u ON u.unit_key=cf.unit_key WHERE o.owner_key=? ORDER BY cf.unit_key,cf.relation',[args.key],args.limit,args.offset)
+        for form in forms['entries']:
+            form['evidence']=json.loads(form.pop('evidence_json'))
+            form['base_query']='unit '+form['unit_key']
+        acquisitions=page(db,'SELECT m.*,o.source_path FROM mount_acquisitions m JOIN owners o ON o.id=m.owner_id WHERE o.owner_key=? ORDER BY m.unit_key,m.node_set_key,m.node_key,m.id',[args.key],args.limit,args.offset)
+        for mount in acquisitions['entries']:
+            mount['level_evidence']=json.loads(mount.pop('level_evidence_json'))
+            mount['related_effect_keys']=json.loads(mount.pop('effect_keys_json'))
+            mount['effective_unlock_rank']=None
+            mount['availability']='skill_grant_route_present; acquisition/prerequisites not evaluated'
+        envelope.update(character_owners=owners,forms=forms,mount_acquisitions=acquisitions,
+                        form_policy='Only explicit subtype body overrides and actual owner skill-tree mount grants establish character forms. Other mount records stay unconfirmed; no key-prefix or label inference.',
+                        rank_policy='node_rank and level_unlocked_at_rank retain distinct source fields; even agreement does not establish effective unlock rank. --rank is unit experience, not character rank.')
     elif args.command == 'effect':
         effect = db.execute('SELECT * FROM effects WHERE effect_key=?',(args.key,)).fetchone()
         if effect is None:
@@ -157,7 +184,7 @@ def query(args):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('command',choices=['unit','effect','source','record','table','gaps','inventory'])
+    p.add_argument('command',choices=['unit','effect','source','record','table','gaps','inventory','character'])
     p.add_argument('key',nargs='?')
     p.add_argument('--data',type=Path,default=DEFAULT_DATA)
     p.add_argument('--modifiers',action='store_true')

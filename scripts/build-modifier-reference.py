@@ -11,6 +11,7 @@ import sqlite3
 import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
+from character_reference import build_characters
 from modifier_reference import ROOT, SELECTORS, compact, digest, family, records, selector_match, membership_status, scope_classification
 
 
@@ -303,6 +304,7 @@ def build(source, output):
                 sid = source_ids[canonical]
                 occurrence_id += 1
                 db.execute('INSERT INTO source_occurrences VALUES(?,?,?,?,?,?,?,?)', (occurrence_id,sid,owner_id,line,r.get('node_key',''),r.get('node_set_key',''),r.get('variant_key',''),r.get('campaign_key') or r.get('node_set_campaign_key','')))
+    build_characters(db, lock)
     print(f'Linked {source_id} source definitions / {occurrence_id} owner occurrences', flush=True)
     for dataset in ('unit_stats','skill_trees','technology_trees'):
         lock(ROOT / 'data' / dataset / 'dataset_manifest.json')
@@ -312,6 +314,9 @@ def build(source, output):
         'source_tables': len(loaded), 'source_rows': raw_id, 'units': len(units),
         'effects': len(known_effects), 'bindings': binding_id,
         'source_definitions': source_id, 'source_occurrences': occurrence_id,
+        'character_form_relations': db.execute('SELECT COUNT(*) FROM character_forms').fetchone()[0],
+        'mount_acquisition_occurrences': db.execute('SELECT COUNT(*) FROM mount_acquisitions').fetchone()[0],
+        'mount_rank_statuses': dict(db.execute('SELECT rank_status,COUNT(*) FROM mount_acquisitions GROUP BY rank_status')),
         'source_scope_classifications': dict(db.execute('SELECT scope_classification,COUNT(*) FROM classified_sources GROUP BY 1')),
         'occurrence_scope_classifications': dict(db.execute('SELECT scope_classification,COUNT(*) FROM classified_source_occurrences GROUP BY 1')),
         'binding_activation_statuses': dict(db.execute('SELECT status,COUNT(*) FROM binding_activation GROUP BY 1')),
@@ -361,7 +366,7 @@ def build(source, output):
             z.write(payload)
     dbpath.unlink()
     manifest = {
-        'schema_version':2,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
+        'schema_version':3,'game':'warhammer_3','patch':'8.1.1','steam_build_id':'24237342',
         'source_manifest_sha256':digest((source/'source_manifest.json').read_bytes()),
         'source_exports':'source_exports','database_sha256':digest(payload),
         'sqlite_version':sqlite3.sqlite_version,'source_input_locks':inputs,

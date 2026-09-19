@@ -78,6 +78,25 @@ or phase-transition relationship. Do not promote that into an unconditional
 mana contribution. A complete ability-to-phase/usage-condition trace remains a
 separate unresolved question; this exercise did not extract more tables.
 
-Character-owner identity across lord/hero bodies and mounts also remains
-unresolved. Scope classification addresses ordinary troops, not that identity
-mapping. All resulting lists remain candidates rather than active buffs.
+## Karl Franz: identity and mount acquisition
+
+`character wh_main_emp_karl_franz` returns the subtype's foot body (`_0`) and
+three owner-tree mount grants: Barded Warhorse (`_4`), Imperial Pegasus (`_2`)
+and Deathclaw (`_1`). Each follows a real ancillary-grant record to the ancillary's
+provided bodyguard unit. All three related mount-unlock effects have zero effect
+bindings, so this retrieval explicitly operates independently of those bindings.
+The ordinary Warhorse body (`_3`) retains its mount ancillary but no Franz tree
+grant; its acquisition and character identity remain unconfirmed. No label/key
+similarity is promoted into a selectable form.
+
+For all four supported forms, Franz's own personal attack and defence sources
+remain in default queries. Teclis's self-character sources are omitted there and
+restored with explicit identity mismatch in `--evidence`. Shared generic skills
+are checked per owner occurrence. Other character-recipient scopes (factionwide,
+area effects, and unknown context) are not assumed to target their source owner.
+
+Barded Warhorse preserves node rank 6 and level rank 3 as distinct evidence.
+Pegasus preserves 11/11 and Deathclaw 15/15. Effective unlock ranks remain null
+in every case; prerequisites and engine rank interpretation are not evaluated.
+The forms retain distinct base stats and attribute/ability memberships: no foot
+record or mount trait is copied across bodies. All lists remain candidates.

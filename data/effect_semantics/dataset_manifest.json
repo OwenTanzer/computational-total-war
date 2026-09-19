@@ -1,11 +1,11 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "game": "warhammer_3",
   "patch": "8.1.1",
   "steam_build_id": "24237342",
   "source_manifest_sha256": "fd8eabe1b1ea0c18076b5c1d5c00cf3a6ee5aa40d0c478b7b79a5b9c6e89f701",
   "source_exports": "source_exports",
-  "database_sha256": "f2858ba3857cee646392dea8017786b63080c0d0380a2e768a26393f64241086",
+  "database_sha256": "0c05f6a1630776382c348193ea6c6c0285e7218934411c3b061040c5a0717db0",
   "sqlite_version": "3.53.1",
   "source_input_locks": {
     "data/unit_stats/source_exports/db/main_units_tables/data__.tsv": "85e2b00194b5408c14967d14a7bf3bc4ed3a61ab15ab0205bc41d5dc41cc780f",
@@ -643,6 +643,8 @@
     "data/technology_trees/factions/wood_elves/wh2_dlc16_wef_sisters_of_twilight.csv": "7d0849c633415ee7422603fb30a19b8f8f7cd0491f70971122074cdddb625e28",
     "data/technology_trees/factions/wood_elves/wh_dlc05_wef_argwylon.csv": "0b059dc234bddc4132894b3a87d74c0ebf4310cb82ab8b4ea20e85c15855713a",
     "data/technology_trees/factions/wood_elves/wh_dlc05_wef_wood_elves.csv": "144b075064ab20ad67b43259f69c589cc58d11ae688c206845c76c85dc173198",
+    "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv": "fe7741ad3267f7cee5e4a5112c16349e20d949802d34e9519dd1ccd1b77aabe1",
+    "data/skill_trees/source_exports/db/ancillaries_tables/data__.tsv": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e",
     "data/unit_stats/dataset_manifest.json": "824ed9bc63d58cc8acb544983d72b70b86ab372ac3c83a5fb314d38f664dc825",
     "data/skill_trees/dataset_manifest.json": "66981efc24d6f19353e646c28f0f1448fde5ca28fc1e0cf01d644010be6ae7d6",
     "data/technology_trees/dataset_manifest.json": "bb77006530c2745b8287f8094ecc65a04e732635b24d3bd0203b9b4fba8e1d2f"
@@ -650,16 +652,16 @@
   "scope": "Full extraction preserved; per-unit candidate targeting plus existing skill/technology source links. No acquired-build simulation.",
   "artifacts": {
     "coverage_report.json": {
-      "sha256": "f338ecadef3ba5ccdf7bfa5f59011a16c7c32f2cce3c81b574b0d02bfd7fb801",
-      "bytes": 4591
+      "sha256": "56ea29ab78c9e470a7dc2317b7460de6265a441b338e07ac8ac6408f8239bd0e",
+      "bytes": 4854
     },
     "reference.sqlite.gz": {
-      "sha256": "cee6eeae90830c6a0c5c3c1b8f966efb492b68c7465578e9b07c630a93b6706c",
-      "bytes": 16365141
+      "sha256": "11964ef51f058270517c2c3951e71e96dd5cae2a4e318c54429dcbe667451bbf",
+      "bytes": 16759907
     },
     "schema_inventory.json": {
-      "sha256": "fc7536830b3c7970f3ab32d89e1d8fbead6092697ce31067d70006a374a1b26b",
-      "bytes": 14905
+      "sha256": "bf8e8d97c2717c35ed608eba5e04b086461741c02c49e89b3ac5c97c13c6a86c",
+      "bytes": 17243
     },
     "table_inventory.json": {
       "sha256": "90429a192974201086511678598fb7f841374118cfb8b7364eb53a924c26ee81",

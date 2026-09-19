@@ -6,6 +6,13 @@
   "bindings": 23110,
   "source_definitions": 19241,
   "source_occurrences": 153930,
+  "character_form_relations": 1244,
+  "mount_acquisition_occurrences": 798,
+  "mount_rank_statuses": {
+    "rank_evidence_incomplete": 10,
+    "rank_fields_agree_effective_rank_unresolved": 480,
+    "rank_fields_differ_effective_rank_unresolved": 308
+  },
   "source_scope_classifications": {
     "character_only": 10182,
     "faction_context": 1176,

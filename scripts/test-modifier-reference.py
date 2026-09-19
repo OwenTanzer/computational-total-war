@@ -16,6 +16,12 @@ query_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(query
 
 
 class Targeting(unittest.TestCase):
+    def test_character_rank_filter_fails_with_clear_message(self):
+        result=subprocess.run([sys.executable,str(ROOT/'scripts/query-modifier-reference.py'),'character','wh_main_emp_karl_franz','--rank','6'],capture_output=True,text=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('--rank filters unit experience, not mount unlocks',result.stderr)
+        self.assertNotIn('Traceback',result.stderr)
+
     def test_scope_is_recipient_based_not_label_based(self):
         self.assertEqual(scope_classification({'key':'army_buff','target':'character'}),'character_only')
         self.assertEqual(scope_classification({'key':'personal','target':'force'}),'force_or_army')
@@ -150,6 +156,47 @@ class FullSnapshot(unittest.TestCase):
         self.assertTrue(all('character_only' not in x['source_scope_classifications'] for x in high['entries']))
         difference={x['bonus_key'] for x in high['entries'] if x['binding_id'] not in {x['binding_id'] for x in low['entries']}}
         self.assertEqual(difference,{'morale','unit_damage_resistance_missile_mod','mod_land_movement_battle'})
+
+    def test_franz_identity_across_supported_mounts(self):
+        for suffix in ('0','4','2','1'):
+            key='wh_main_emp_cha_karl_franz_'+suffix
+            own=self.unit_query(key,owner='wh_main_emp_karl_franz')['candidates']['entries']
+            self.assertTrue(any(x['bonus_key']=='melee_attack_mod' and 'source_character_identity_match' in x['personal_source_identity_statuses'] for x in own))
+            self.assertTrue(any(x['bonus_key']=='melee_defence_mod' and 'source_character_identity_match' in x['personal_source_identity_statuses'] for x in own))
+            other=self.unit_query(key,owner='wh2_main_hef_teclis')['candidates']['entries']
+            raw=self.unit_query(key,owner='wh2_main_hef_teclis',evidence=True)['candidates']['entries']
+            wrong={x['binding_id'] for x in raw if 'source_character_identity_mismatch' in x['personal_source_identity_statuses']}
+            self.assertTrue(wrong)
+            self.assertFalse(wrong & {x['binding_id'] for x in other})
+
+    def test_franz_mount_acquisition_is_independent_of_effect_binding(self):
+        args=SimpleNamespace(command='character',key='wh_main_emp_karl_franz',data=DATA,limit=100,offset=0)
+        result=query_module.query(args)
+        self.assertEqual({x['unit_key'] for x in result['forms']['entries']},{'wh_main_emp_cha_karl_franz_'+x for x in ('0','1','2','4')})
+        mounts=result['mount_acquisitions']['entries']
+        self.assertEqual(len(mounts),3)
+        horse=next(x for x in mounts if x['unit_key'].endswith('_4'))
+        self.assertEqual(horse['node_rank'],'6')
+        self.assertEqual({x['fields']['level_unlocked_at_rank'] for x in horse['level_evidence']},{'3'})
+        self.assertEqual(horse['rank_status'],'rank_fields_differ_effective_rank_unresolved')
+        self.assertIsNone(horse['effective_unlock_rank'])
+        for mount in mounts:
+            self.assertTrue(mount['related_effect_keys'])
+            for effect in mount['related_effect_keys']:
+                self.assertEqual(self.db.execute('SELECT COUNT(*) FROM bindings WHERE effect_key=?',(effect,)).fetchone()[0],0)
+        unsupported=self.unit_query('wh_main_emp_cha_karl_franz_3',owner='wh_main_emp_karl_franz')
+        self.assertEqual(unsupported['character_identities'],[])
+        self.assertEqual({r['acquisition_status'] for r in unsupported['mount_records']['entries']},{'unconfirmed_acquisition'})
+        self.assertTrue(any('unresolved_character_identity' in x['personal_source_identity_statuses'] for x in unsupported['candidates']['entries']))
+
+    def test_character_forms_do_not_copy_base_abilities(self):
+        foot={r[0] for r in self.db.execute("SELECT target_key FROM unit_targets WHERE unit_key='wh_main_emp_cha_karl_franz_0' AND kind='attribute'")}
+        deathclaw={r[0] for r in self.db.execute("SELECT target_key FROM unit_targets WHERE unit_key='wh_main_emp_cha_karl_franz_1' AND kind='attribute'")}
+        self.assertNotEqual(foot,deathclaw)
+        # Technology/area-wide character recipients must not be equated with
+        # their source owner. Only source=self, location=character is personal.
+        self.assertEqual(self.db.execute("SELECT identity_policy FROM character_scope_policies WHERE scope_key='character_to_character_own'").fetchone()[0],'same_source_character')
+        self.assertEqual(self.db.execute("SELECT identity_policy FROM character_scope_policies WHERE scope_key='faction_to_character_own'").fetchone()[0],'recipient_context_unresolved')
 
     def test_coverage_includes_entire_extraction(self):
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM source_tables').fetchone()[0],220)

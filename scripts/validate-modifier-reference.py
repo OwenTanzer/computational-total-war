@@ -4,6 +4,7 @@ import json
 import subprocess
 from collections import Counter
 from pathlib import Path
+from character_reference import validate_characters
 from modifier_reference import ROOT, digest, records, open_reference, compact, family, scope_classification
 
 
@@ -61,6 +62,7 @@ def validate(data, source):
             else:
                 check(db.execute('SELECT 1 FROM source_records WHERE id=?',(item['record_id'],)).fetchone() is not None,'Missing activation record')
     check(db.execute("SELECT COUNT(*) FROM bindings WHERE target_table='unit_missile_weapon_junctions_tables'").fetchone()[0]==db.execute('SELECT COUNT(*) FROM binding_activation').fetchone()[0],'Unclassified weapon route')
+    mount_count=validate_characters(db,check)
     all_units=set()
     for p in sorted((ROOT/'data/unit_stats/normalized').glob('*.csv')):
         for line,r in records(p):
@@ -90,7 +92,7 @@ def validate(data, source):
     counts=dict(db.execute('SELECT unit_key,COUNT(DISTINCT binding_id) FROM unit_binding_candidates GROUP BY unit_key'))
     check(set(indexed)==all_units and all(indexed[k]==counts.get(k,0) for k in all_units),'Compact per-unit index mismatch')
     coverage=json.loads((data/'coverage_report.json').read_text())
-    for key,value in [('source_tables',len(expected_tables)),('source_rows',total),('units',len(all_units)),('bindings',bindings),('source_occurrences',occurrence_total)]:
+    for key,value in [('source_tables',len(expected_tables)),('source_rows',total),('units',len(all_units)),('bindings',bindings),('source_occurrences',occurrence_total),('mount_acquisition_occurrences',mount_count)]:
         check(coverage[key]==value,'Coverage report mismatch: '+key)
     db.close()
     return dict(status='passed',errors=[],dataset_manifest_sha256=digest((data/'dataset_manifest.json').read_bytes()),source_tables=len(expected_tables),source_rows=total,units=len(all_units),bindings=bindings,source_occurrences=occurrence_total)

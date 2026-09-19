@@ -54,10 +54,43 @@ scope's `target` field, not its key or English label. An effect with both person
 and army sources keeps its army sources. `--evidence` restores personal sources;
 `effect` and `source` always preserve them. Unknown/conditional recipient enums
 remain visible as `unresolved_scope`. Force/army and faction classifications
-describe recipients, not proof of active applicability. Character queries retain
-personal sources, but **owner-to-character/mount identity is not resolved**: an
-unrelated lord's source-owner filter is not proof that it can buff this character.
+describe recipients, not proof of active applicability. For lord/hero units,
+self-character scopes additionally match the source owner's supported body forms.
+A known different character is omitted by default and retained by `--evidence`.
+Unmapped bodies/owners remain explicitly `unresolved_character_identity`.
+Character-targeted faction/area scopes remain `character_recipient_context_unresolved`;
+they are not mistaken for self-character effects. Matching occurs per source-owner
+occurrence, so shared skills retain legitimate sources without admitting another
+owner's personal effects.
 The compact CSV index counts unfiltered evidence, not this filtered query view.
+
+## Character forms and mount acquisition
+
+```bash
+python3 scripts/query-modifier-reference.py character wh_main_emp_karl_franz
+python3 scripts/query-modifier-reference.py unit wh_main_emp_cha_karl_franz_1 --modifiers --owner wh_main_emp_karl_franz
+```
+
+`character` queries return paginated forms and independent mount-grant records,
+even where the mount-unlock effect has no effect binding. Identity follows
+`agent_subtypes.associated_unit_override` and actual owner-tree `ancillary_grant`
+rows to `ancillaries.provided_bodyguard_unit`. Neither matching names nor unit-key
+prefixes establish identity or availability. `character_forms`, `mount_records`
+and `mount_acquisitions` preserve the evidence; `character_scope_policies` derives
+self-recipient scope only from source, target, location and ownership fields.
+
+All source-supported forms keep their own base stats, attributes and abilities.
+A body with an ancillary but no indexed grant remains `unconfirmed_acquisition`
+in its unit view; it is not added to a character's supported forms. A grant route
+still does not prove current acquisition, faction access or prerequisite satisfaction.
+
+Mount records retain `node_rank`, the exact skill-level records (including
+`level_unlocked_at_rank` and their campaign/faction conditions), and a rank status.
+`effective_unlock_rank` remains null: the reference does not select one field,
+take their maximum or add a rank offset. Franz's Barded Warhorse retains **6 vs 3**;
+Pegasus retains **11 vs 11**, Deathclaw **15 vs 15**. Agreement is reported without
+certifying engine unlock semantics. `--rank` remains unit experience rank and
+does not filter character acquisition; use the `character` query for its evidence.
 
 ## Files and ownership
 
@@ -198,6 +231,8 @@ Focused tests cover Sea Guard variants vs spearmen, rank filtering, compound
 selectors, exclusions, source-level alternatives, pagination and base-query isolation.
 They also cover personal/army separation, mixed and unknown scopes, independently
 unresolved weapon activation at ranks 6/7, and actual variant-specific bindings.
+Franz regressions verify supported forms, personal-source owner isolation,
+unconfirmed Warhorse status and conflicting mount-rank evidence.
 
 This fulfills the first organization pass under issue #7. It does not close that
 issue: complete acquisition/compatibility, bespoke campaign systems, native rank

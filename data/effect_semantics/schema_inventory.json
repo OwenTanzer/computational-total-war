@@ -90,6 +90,40 @@
       "primary_key": false
     }
   ],
+  "character_forms": [
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "relation",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "evidence_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "character_scope_policies": [
+    {
+      "name": "scope_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "identity_policy",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
   "classified_source_occurrences": [
     {
       "name": "id",
@@ -217,6 +251,11 @@
       "name": "scope_record_id",
       "type": "INTEGER",
       "primary_key": false
+    },
+    {
+      "name": "personal_identity_policy",
+      "type": "",
+      "primary_key": false
     }
   ],
   "effect_coverage": [
@@ -269,6 +308,90 @@
     },
     {
       "name": "status",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "mount_acquisitions": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "primary_key": true
+    },
+    {
+      "name": "owner_id",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "ancillary_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "skill_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "skill_level",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "node_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "node_set_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "source_row",
+      "type": "INTEGER",
+      "primary_key": false
+    },
+    {
+      "name": "node_rank",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "rank_status",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "level_evidence_json",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "effect_keys_json",
+      "type": "TEXT",
+      "primary_key": false
+    }
+  ],
+  "mount_records": [
+    {
+      "name": "ancillary_key",
+      "type": "TEXT",
+      "primary_key": true
+    },
+    {
+      "name": "unit_key",
+      "type": "TEXT",
+      "primary_key": false
+    },
+    {
+      "name": "evidence_json",
       "type": "TEXT",
       "primary_key": false
     }

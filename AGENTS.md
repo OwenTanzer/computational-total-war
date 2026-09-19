@@ -62,8 +62,13 @@ as source material; future normalized progression stays owned by unit_stats.
 
 Default ordinary-unit modifier queries omit sources whose retained scope targets
 only characters; `--evidence` restores them. Unknown scopes remain visible.
-Effect/source detail queries preserve all source scopes. Character queries do not
-resolve source-owner identity across characters or mounts. Weapon-junction routes
+Effect/source detail queries preserve all source scopes. Self-character sources
+match explicit subtype bodies and actual skill-granted mount forms; known other
+characters are omitted by default, while unmapped identity remains unresolved.
+Use `character <subtype_key>` to inspect supported forms and mount acquisition
+without relying on effect bindings. Mount node and skill-level rank fields stay
+separate; no effective unlock rank is inferred. Other character-recipient scopes
+remain contextual rather than being equated to the source character. Weapon-junction routes
 carry explicit unresolved activation/rank even when a sibling unit-set binding
 has a rank gate; never transfer that gate or infer one from a key suffix.
 
