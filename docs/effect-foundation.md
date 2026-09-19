@@ -3,8 +3,42 @@
 Tracks [issue #7](https://github.com/OwenTanzer/computational-total-war/issues/7).
 This increment supplies executable source discovery, a read-only extractor and
 source-integrity validation. **It does not install a new production dataset or
-resolve campaign stat semantics.** Live extraction and inspection are the next
-gate before designing normalized bindings from actual columns.
+resolve campaign stat semantics.** Live extraction and initial source inspection
+passed on 2026-09-19 after the validator fixes described below. Normalized bindings
+remain a subsequent implementation gate.
+
+## Live exercise: 2026-09-19
+
+Ran the unmodified extractor from PR head
+`fc7a7bd83d1c9bcb0af07bbc87bae6bf2b75cb16` against the verified Windows
+installation (build 24237342, executable 8.1.1.0, Node 24.15.0). The local RPFM
+server handshake and all 220 packed-file exports succeeded. The full installed
+schema expanded the 80 root tables into 220 tables, compared with the partial
+offline audit's 81. The candidate has 222 manifest-covered files, 14,488,501 bytes
+and 109,408 data rows. Nothing was promoted to production.
+
+The original validator rejected valid exports for two reasons: RPFM puts key
+columns before other fields, and combines schema-annotated RGB fields into hex
+columns in five supporting tables. Validation now checks exact unique column
+membership by name and explicitly validates the supported RGB projection and
+six-digit hex values. Missing, extra and duplicate columns still fail. Unknown
+colour layouts fail; decoder projections are reported rather than represented
+as unchanged binary fields. No original colour values are reconstructed.
+
+The corrected validator passes file hashes, exact manifest coverage,
+schema/version and packed-path reconciliation, and source-key uniqueness for
+the whole candidate. Nine focused tests cover the live export shapes and their
+negative cases. The compact record in
+[`effect-foundation-live-validation.json`](effect-foundation-live-validation.json)
+includes the source-manifest hash, dependency boundary counts and sampled
+stat-related schemas/rows. Candidate exports remain under ignored
+`work/source_effect_exercise_20260919` in the isolated MSI exercise checkout.
+
+Initial inspection recovered explicit scope components; effect-to-bonus bindings;
+unit-set membership selectors and exclusion flags; experience-level filters;
+and native experience parameter tables. These establish source structure, not
+the engine's evaluation or stacking rules. The next task is typed normalization
+and semantic verification, not restoring host access.
 
 ## Existing-source audit
 
@@ -63,8 +97,8 @@ selected-table and packed-file reconciliation, exported schema versions/headers 
 source-key conflicts. Duplicate keys fail for precedence inspection; they are
 not silently overwritten. This gate **does not certify** target resolution,
 foreign-key semantics, native experience formulas, arithmetic order or legal
-campaign builds. A live server handshake/extraction has not yet been exercised
-for this increment; unexpected server response shapes fail closed.
+campaign builds. The live server handshake/extraction was exercised successfully
+on 2026-09-19; unexpected server response shapes still fail closed.
 
 ## Next normalization gate
 

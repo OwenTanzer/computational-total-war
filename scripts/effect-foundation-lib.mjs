@@ -7,6 +7,34 @@ export const SNAPSHOT = { game: "warhammer_3", patch: "8.1.1", steam_build_id: "
 export const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 export const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 
+// Observed RPFM TSV projection: annotated RGB groups become one hex column.
+// This describes export shape, not a lossless reconstruction of binary values.
+export function exportShape(definition) {
+  const groups = new Map(), columns = [], colours = [];
+  for (const field of definition.fields) {
+    if (field.is_part_of_colour == null) columns.push(field.name);
+    else {
+      const id = field.is_part_of_colour;
+      if (!groups.has(id)) groups.set(id, []);
+      groups.get(id).push(field);
+    }
+  }
+  for (const fields of groups.values()) {
+    const red = fields.find(f => f.name.endsWith("_r"));
+    const prefix = red?.name.slice(0, -2);
+    if (!red || fields.length !== 3 ||
+        !["r", "g", "b"].every(c => fields.some(f => f.name === `${prefix}_${c}`)) ||
+        fields.some(f => f.is_key || f.is_reference)) {
+      throw new Error("Unsupported RPFM colour schema projection");
+    }
+    const column = `${prefix}_hex`;
+    columns.push(column);
+    colours.push({ column, source_fields: fields.map(f => f.name) });
+  }
+  if (new Set(columns).size !== columns.length) throw new Error("Duplicate projected schema column");
+  return { columns, colours };
+}
+
 export function family(table) {
   if (/^effect_bonus_value_/.test(table)) return "effect_bindings";
   if (/^campaign_bonus_value_battle_context_/.test(table)) return "battle_conditions";

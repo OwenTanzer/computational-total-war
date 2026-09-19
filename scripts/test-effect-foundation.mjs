@@ -6,7 +6,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { SNAPSHOT, discover, family, sha256, verifyManifest } from "./effect-foundation-lib.mjs";
+import { SNAPSHOT, discover, family, sha256, verifyManifest, exportShape } from "./effect-foundation-lib.mjs";
 
 test("only inventory-observed tables become discovery roots", () => {
   const p = discover(["db/effect_bonus_value_basic_junction_tables/data__", "db/unrelated_tables/data__"]);
@@ -71,16 +71,20 @@ test("manifest path traversal and duplicate entries are rejected",()=>fixture(as
 test("source validator checks schema, packed-file completeness and conflicting keys", async () => {
   const dir = await mkdtemp(path.join(tmpdir(), "ctw-effect-source-test-"));
   const table = "effects_tables", packed = ["db/effects_tables/a", "db/effects_tables/b"];
-  const schema = { [table]: [{ version: 0, fields: [{ name: "effect", is_key: true }] }] };
+  // Actual exporter behavior: key column precedes the schema's first field;
+  // schema-annotated RGB fields are represented as one hex column.
+  const fields = [{ name: "value" }, { name: "effect", is_key: true },
+    ...["r", "g", "b"].map(c => ({name:`colour_${c}`, is_part_of_colour:1}))];
+  const schema = { [table]: [{ version: 0, fields }] };
   const discovery = { ...discover(packed, schema), db_paths: packed, selected_paths: packed };
   const run = () => execFileSync(process.execPath, [fileURLToPath(new URL("./validate-effect-source.mjs", import.meta.url)), dir], { encoding: "utf8", stdio: "pipe" });
-  async function writeCandidate({ duplicate = false, missing = false, wrongHeader = false } = {}) {
+  async function writeCandidate({ duplicate = false, missing = false, wrongHeader = false, header, hex = "00FF00" } = {}) {
     await rm(dir, { recursive: true, force: true });
     await mkdir(path.join(dir, "db", table), { recursive: true });
     const contents = {
       "decoded_schema.json": JSON.stringify(schema), "discovery.json": JSON.stringify(discovery),
-      "db/effects_tables/a.tsv": `${wrongHeader ? "wrong" : "effect"}\n#${table};0;${packed[0]}\nsynthetic_a\n`,
-      ...(!missing ? { "db/effects_tables/b.tsv": `effect\n#${table};0;${packed[1]}\n${duplicate ? "synthetic_a" : "synthetic_b"}\n` } : {}),
+      "db/effects_tables/a.tsv": `${header ?? (wrongHeader ? "wrong\tvalue\tcolour_hex" : "effect\tvalue\tcolour_hex")}\n#${table};0;${packed[0]}\nsynthetic_a\t1\t${hex}\n`,
+      ...(!missing ? { "db/effects_tables/b.tsv": `effect\tvalue\tcolour_hex\n#${table};0;${packed[1]}\n${duplicate ? "synthetic_a" : "synthetic_b"}\t2\tFFFFFF\n` } : {}),
     };
     const files = [];
     for (const [relative, content] of Object.entries(contents)) {
@@ -91,12 +95,29 @@ test("source validator checks schema, packed-file completeness and conflicting k
   }
   try {
     await writeCandidate();
-    assert.equal(JSON.parse(run()).campaign_ceiling_ready, false);
+    const result = JSON.parse(run());
+    assert.equal(result.campaign_ceiling_ready, false);
+    assert.equal(result.rows, 2);
+    assert.deepEqual(result.export_projections[0].colours[0].source_fields, ["colour_r", "colour_g", "colour_b"]);
     await writeCandidate({ duplicate: true });
     assert.throws(run, /Unresolved source-key precedence/);
     await writeCandidate({ missing: true });
     assert.throws(run, /Selected packed paths not fully exported/);
     await writeCandidate({ wrongHeader: true });
     assert.throws(run, /Header\/schema mismatch/);
+    await writeCandidate({ header: "effect\teffect\tcolour_hex" });
+    assert.throws(run, /Header\/schema mismatch/);
+    await writeCandidate({ header: "effect\tvalue\tunexpected" });
+    assert.throws(run, /Header\/schema mismatch/);
+    await writeCandidate({ hex: "not-a-colour" });
+    assert.throws(run, /Invalid exported RGB hex/);
   } finally { await rm(dir, { recursive: true, force: true }); }
+});
+
+test("unsupported colour projections fail instead of hiding source columns", () => {
+  const fields = ["r", "g", "b"].map(c => ({name:`colour_${c}`, is_part_of_colour:1}));
+  assert.throws(() => exportShape({fields:fields.slice(0,2)}), /Unsupported/);
+  assert.throws(() => exportShape({fields:[...fields, {...fields[0], name:"colour_a"}]}), /Unsupported/);
+  assert.throws(() => exportShape({fields:fields.map(f => ({...f, is_key:true}))}), /Unsupported/);
+  assert.throws(() => exportShape({fields:[...fields, {name:"colour_hex"}]}), /Duplicate projected/);
 });
